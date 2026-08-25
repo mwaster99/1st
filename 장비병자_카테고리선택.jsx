@@ -932,7 +932,8 @@ export default function GearWizard() {
   return (
     <div style={{ minHeight: "100%", background: "#14161A", color: "#ECECEA", fontFamily: "'Inter', system-ui, sans-serif", padding: "40px 20px 60px", display: "flex", justifyContent: "center" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+        :lang(ko) { font-family: 'Noto Sans KR', sans-serif !important; }
         .gw-card { background: #1D2024; border: 1px solid #2A2E34; border-radius: 10px; padding: 20px 18px; cursor: pointer; transition: border-color 120ms ease, transform 120ms ease, background 120ms ease; text-align: left; }
         .gw-card:hover { border-color: #FFB020; background: #23262B; transform: translateY(-2px); }
         .gw-card:disabled:hover { border-color: #2A2E34; background: #1D2024; transform: none; }
