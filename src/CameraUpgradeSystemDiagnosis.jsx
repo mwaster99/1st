@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import CameraBodyPicker from "./CameraBodyPicker.jsx";
 import { CAMERA_LENSES, LENS_BY_NAME, createUnknownLens } from "./cameraData.js";
 import { buildScenarioExplanation, generateUpgradeScenarios } from "./cameraScenarioEngine.js";
+import { DESIGN_OPTIONS } from "./cameraDesign.js";
 
 const PAIN_OPTIONS = ["더 가볍고 작은 카메라를 원해요", "화질을 더 높이고 싶어요", "AF가 더 좋아졌으면 해요", "영상 성능을 높이고 싶어요", "배터리가 오래 갔으면 해요", "렌즈 선택지가 아쉬워요", "새로운 촬영 경험이 필요해요"];
 const PORTABILITY_DETAIL_OPTIONS = ["바디 무게", "렌즈 무게", "전체 부피", "가방에 넣기 어려움", "장시간 들고 다니기 힘듦"];
@@ -35,7 +36,11 @@ function StepHeader({ current, total, phase, title, hint }) {
 }
 
 function ChoiceGrid({ options, selected, multi, onSelect }) {
-  return <div className="gw-grid">{options.map((option) => { const active = multi ? selected.includes(option) : selected === option; return <button key={option} className="gw-card" onClick={() => onSelect(option)} style={active ? { borderColor: "#FFB020", background: "rgba(255,176,32,0.1)" } : undefined}>{option}{active ? "  ✓" : ""}</button>; })}</div>;
+  return <div className="gw-grid">{options.map((option) => { const value = typeof option === "string" ? option : option.value; const label = typeof option === "string" ? option : option.label; const active = multi ? selected.includes(value) : selected === value; return <button key={value} className="gw-card" onClick={() => onSelect(value)} style={active ? { borderColor: "#FFB020", background: "rgba(255,176,32,0.1)" } : undefined}>{label}{active ? "  ✓" : ""}</button>; })}</div>;
+}
+
+function isValidBudget(value) {
+  return String(value).trim() !== "" && Number.isFinite(Number(value)) && Number(value) >= 0;
 }
 
 function DiagnosisSummary({ body, primaryLens, pains, portabilityDetails, extraBudget, budgetTouched }) {
@@ -43,7 +48,7 @@ function DiagnosisSummary({ body, primaryLens, pains, portabilityDetails, extraB
   if (body) items.push({ label: "현재", value: (body.brand !== "기타" ? body.brand + " " : "") + (body.model || body.name) + (primaryLens ? " + " + primaryLens.name : "") });
   if (pains.length) items.push({ label: "목표", value: pains.join(" · ") });
   if (portabilityDetails.length) items.push({ label: "휴대성", value: portabilityDetails.join(" · ") });
-  if (budgetTouched) items.push({ label: "추가 예산", value: Number(extraBudget || 0) + "만원" });
+  if (budgetTouched) items.push({ label: "추가 예산", value: isValidBudget(extraBudget) ? Number(extraBudget) + "만원" : "금액 확인 필요" });
   if (!items.length) return null;
   return <div style={{ background: "#191C20", border: "1px solid #292E35", borderRadius: 10, padding: "10px 12px", display: "grid", gap: 5, marginBottom: 8 }}>{items.map((item) => <div key={item.label} style={{ display: "grid", gridTemplateColumns: "54px 1fr", gap: 8, fontSize: 11, lineHeight: 1.45 }}><span style={{ color: "#656B74", ...mono }}>{item.label}</span><span style={{ color: "#AEB2B9" }}>{item.value}</span></div>)}</div>;
 }
@@ -67,7 +72,7 @@ function combinationName(scenario) {
 }
 
 function collectChanges(scenario) {
-  const all = [...scenario.capability.wanted, ...scenario.capability.constraints, ...scenario.capability.tradeoffs, ...scenario.lensComparison];
+  const all = scenario.changes || [...scenario.capability.wanted, ...scenario.capability.constraints, ...scenario.capability.tradeoffs, ...scenario.lensComparison];
   const seen = new Set();
   return all.filter((item) => {
     const key = item.key + "|" + item.status + "|" + item.summary;
@@ -100,27 +105,35 @@ function MainMetric({ label, value, detail, accent = "#ECECEA" }) {
 
 function mainImprovement(scenario) {
   const improved = scenario.capability.wanted.filter((item) => item.status === "improved").sort((a, b) => (b.strength || 0) - (a.strength || 0));
-  return improved[0] || scenario.capability.wanted.find((item) => item.status === "maintained") || null;
+  return improved[0] || null;
 }
 
 function mainLoss(scenario) {
-  return scenario.capability.violations[0] || scenario.capability.tradeoffs.find((item) => item.status === "degraded") || scenario.lensComparison.find((item) => item.status === "degraded") || null;
+  return [...scenario.capability.violations, ...scenario.capability.wanted, ...scenario.capability.constraints, ...scenario.capability.tradeoffs, ...scenario.lensComparison]
+    .filter((item) => item.status === "degraded")
+    .sort((a, b) => Math.abs(b.strength || 0) - Math.abs(a.strength || 0))[0] || null;
 }
 
 function recommendationLabel(scenario) {
   if (scenario.kind === "hold") return "현재 구성 유지 권장";
   if (scenario.capability.violations.length) return "유지 조건 확인 필요";
+  if (!mainImprovement(scenario)) return "목표 개선 확인 필요";
   if (scenario.scores.total >= 85) return "추천도 매우 높음";
   if (scenario.scores.total >= 70) return "추천도 높음";
   return "조건부 검토";
 }
 
 function EquipmentTransition({ scenario }) {
-  return <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 7, marginTop: 12 }}><GearColumn code="KEEP" label="그대로 사용" items={scenario.keep} /><GearColumn code="SELL" label="판매" items={scenario.sell} /><GearColumn code="BUY" label="새로 구매" items={scenario.buy} /></div>;
+  const systemName = (system) => [system.body.model || system.body.name, ...system.lenses.map((lens) => lens.name)].join(" + ");
+  return <div style={{ marginTop: 12 }}><div style={{ color: "#8B8F98", fontSize: 11, lineHeight: 1.6 }}>현재 시스템 · {systemName(scenario.currentSystem)}</div><div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 7, marginTop: 7 }}><GearColumn code="KEEP" label="그대로 사용" items={scenario.keep} /><GearColumn code="SELL" label="판매" items={scenario.sell} /><GearColumn code="BUY" label="새로 구매" items={scenario.buy} /></div><div style={{ color: "#AEB2B9", fontSize: 11, lineHeight: 1.6, marginTop: 7 }}>→ 목표 시스템 · {systemName(scenario.targetSystem)}</div></div>;
 }
 
 function ScoreDetails({ scenario }) {
-  return <div style={{ display: "flex", flexWrap: "wrap", gap: 7, marginTop: 12 }}>{Object.entries(scenario.scores).filter(([key]) => key !== "total").map(([key, value]) => <span key={key} style={{ color: "#8B8F98", background: "#14161A", borderRadius: 999, padding: "5px 8px", fontSize: 10 }}>{({ objective: "목표", constraints: "유지조건", usage: "용도", budget: "예산", simplicity: "전환 간결성" })[key]} {value}</span>)}</div>;
+  const evidenceLabel = (key) => {
+    const items = key === "objective" ? scenario.capability.wanted : key === "constraints" ? scenario.capability.constraints : null;
+    return items?.length ? ` · 확인 ${items.filter((item) => item.status !== "unknown").length}/${items.length}` : "";
+  };
+  return <div style={{ marginTop: 12 }}><div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>{Object.entries(scenario.scores).filter(([key]) => key !== "total").map(([key, value]) => <span key={key} style={{ color: "#8B8F98", background: "#14161A", borderRadius: 999, padding: "5px 8px", fontSize: 10 }}>{({ objective: "목표", constraints: "유지조건", usage: "용도", budget: "예산", simplicity: "전환 간결성", design: "디자인 선호" })[key] || key} {Number.isFinite(value) ? value : "데이터 부족"}{evidenceLabel(key)}</span>)}</div><div style={{ color: "#777D86", fontSize: 10, lineHeight: 1.5, marginTop: 6 }}>점수는 확인된 항목 기준의 MVP 판단값이며 실제 성능 향상률이 아닙니다. 미확인 목표와 유지 조건은 충족한 것으로 계산하지 않습니다.</div></div>;
 }
 
 function HeroScenarioCard({ scenario, extraBudget }) {
@@ -167,7 +180,7 @@ function AlternativeScenarioCard({ scenario, index, extraBudget }) {
 
 export default function CameraUpgradeSystemDiagnosis({ onBack }) {
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState({ body: null, lenses: [], lensInput: "", primaryLensId: "", pains: [], portabilityDetails: [], preserve: [], subjects: [], ratio: "", lensIntent: "", brandIntent: "", extraBudget: 100, budgetTouched: false });
+  const [answers, setAnswers] = useState({ body: null, lenses: [], lensInput: "", primaryLensId: "", pains: [], portabilityDetails: [], preserve: [], subjects: [], ratio: "", lensIntent: "", brandIntent: "", designPreference: "any", extraBudget: 100, budgetTouched: false });
   const body = answers.body;
   const availableLenses = body?.mount ? CAMERA_LENSES.filter((lens) => lens.mount === body.mount) : CAMERA_LENSES;
   const selectedLenses = useMemo(() => answers.lenses.map((name) => LENS_BY_NAME[name] || createUnknownLens(name, body?.mount || null)), [answers.lenses, body?.mount]);
@@ -182,6 +195,7 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
     { key: "ratio", phase: "사용 목적", title: "사진과 영상의 비중은 어떤가요?", hint: "사진과 영상 중 실제로 더 자주 쓰는 쪽에 추천 가중치를 둘게요.", options: RATIO_OPTIONS },
     { key: "lensIntent", phase: "전환 조건", title: "현재 렌즈는 어떻게 하고 싶나요?", hint: "기존 렌즈를 유지할지에 따라 기변 비용과 추천 시스템이 크게 달라집니다.", options: LENS_INTENT_OPTIONS },
     { key: "brandIntent", phase: "전환 조건", title: "현재 브랜드를 유지하고 싶나요?", hint: "타 브랜드를 허용하면 기존 렌즈 판매를 포함한 전체 시스템 전환안도 비교할게요.", options: BRAND_INTENT_OPTIONS },
+    { key: "designPreference", phase: "전환 조건", title: "선호하는 카메라 디자인이 있나요?", hint: "조건이 비슷하면 선호하는 형태를 우대합니다. 디자인이 달라도 목표와 예산에 잘 맞는 후보는 함께 비교할게요.", options: DESIGN_OPTIONS },
   ];
   const questionStart = 2;
   const budgetStep = questionStart + questions.length;
@@ -191,7 +205,7 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
 
   const toggle = (key, value) => setAnswers((prev) => {
     if (key === "preserve" && value === "특별히 없음") return { ...prev, preserve: prev.preserve.includes(value) ? [] : ["특별히 없음"] };
-    if (key === "preserve") return { ...prev, preserve: [...prev.preserve.filter((item) => item !== "특별히 없음"), ...(prev.preserve.includes(value) ? [] : [value])].filter((item, index, array) => array.indexOf(item) === index) };
+    if (key === "preserve") return { ...prev, preserve: prev.preserve.includes(value) ? prev.preserve.filter((item) => item !== value) : [...prev.preserve.filter((item) => item !== "특별히 없음"), value] };
     const current = prev[key];
     const next = current.includes(value) ? current.filter((item) => item !== value) : [...current, value];
     const extra = key === "pains" && value === "더 가볍고 작은 카메라를 원해요" && !next.includes(value) ? { portabilityDetails: [] } : {};
@@ -225,10 +239,10 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
     return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={step + 1} total={totalSteps} phase={activeQuestion.phase} title={activeQuestion.title} hint={activeQuestion.hint} /><ChoiceGrid options={activeQuestion.options} selected={selected} multi={activeQuestion.multi} onSelect={choose} />{activeQuestion.multi && <NextButton disabled={!selected.length} onClick={() => setStep((current) => current + 1)}>선택 완료 ({selected.length})</NextButton>}</>;
   }
 
-  if (step === budgetStep) return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={totalSteps} total={totalSteps} phase="예산" title="판매금에 얼마까지 더 보탤 수 있나요?" hint="실제로 판매하는 장비의 중고 참고가만 포함하고, 가격 미확인 장비가 있으면 정확한 합계처럼 표시하지 않을게요." /><div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>{[0, 50, 100, 200, 300, 500].map((value) => <button key={value} onClick={() => setAnswers((prev) => ({ ...prev, extraBudget: value, budgetTouched: true }))} style={chipStyle(Number(answers.extraBudget) === value)}>{value === 0 ? "추가 지출 없음" : value === 500 ? "500만원+" : value + "만원"}</button>)}</div><input type="number" min="0" value={answers.extraBudget} onChange={(event) => setAnswers((prev) => ({ ...prev, extraBudget: event.target.value, budgetTouched: true }))} style={{ ...inputStyle, marginTop: 14 }} /><NextButton onClick={() => setStep(resultStep)}>시스템 기변 시나리오 보기</NextButton></>;
+  if (step === budgetStep) return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={totalSteps} total={totalSteps} phase="예산" title="판매금에 얼마까지 더 보탤 수 있나요?" hint="실제로 판매하는 장비의 중고 참고가만 포함하고, 가격 미확인 장비가 있으면 정확한 합계처럼 표시하지 않을게요." /><div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>{[0, 50, 100, 200, 300, 500].map((value) => <button key={value} onClick={() => setAnswers((prev) => ({ ...prev, extraBudget: value, budgetTouched: true }))} style={chipStyle(Number(answers.extraBudget) === value)}>{value === 0 ? "추가 지출 없음" : value === 500 ? "500만원+" : value + "만원"}</button>)}</div><input type="number" min="0" value={answers.extraBudget} onChange={(event) => setAnswers((prev) => ({ ...prev, extraBudget: event.target.value, budgetTouched: true }))} style={{ ...inputStyle, marginTop: 14 }} />{!isValidBudget(answers.extraBudget) && <p role="alert" style={{ color: "#FFB020", fontSize: 11 }}>추가 예산은 0 이상의 유효한 금액을 입력해주세요.</p>}<NextButton disabled={!isValidBudget(answers.extraBudget)} onClick={() => { if (isValidBudget(answers.extraBudget)) setStep(resultStep); }}>시스템 기변 시나리오 보기</NextButton></>;
 
-  const scenarios = generateUpgradeScenarios({ currentBody: body, currentLenses: selectedLenses, primaryLens, pains: answers.pains, portabilityDetails: answers.portabilityDetails, preserve: answers.preserve.filter((item) => item !== "특별히 없음"), subjects: answers.subjects, ratio: answers.ratio, lensIntent: answers.lensIntent, brandIntent: answers.brandIntent, extraBudget: answers.extraBudget });
+  const scenarios = generateUpgradeScenarios({ currentBody: body, currentLenses: selectedLenses, primaryLens, pains: answers.pains, portabilityDetails: answers.portabilityDetails, preserve: answers.preserve.filter((item) => item !== "특별히 없음"), subjects: answers.subjects, ratio: answers.ratio, lensIntent: answers.lensIntent, brandIntent: answers.brandIntent, designPreference: answers.designPreference, extraBudget: Number(answers.extraBudget) });
   const top = scenarios[0];
-  const topVerdict = top.kind === "hold" ? "현재 시스템 유지" : top.capability.violations.length ? "조건부 기변" : "기변 후보 발견";
+  const topVerdict = top.kind === "hold" ? "현재 시스템 유지" : top.capability.violations.length ? "조건부 기변" : mainImprovement(top) ? "목표 개선 후보 발견" : "기변 효과 확인 필요";
   return <><button className="gw-back" onClick={() => setStep(0)}>← 진단 다시 하기</button><div style={{ marginTop: 18, color: "#3DDC97", ...mono, fontSize: 11 }}>SYSTEM UPGRADE · RESULT</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 23, margin: "10px 0 6px" }}>결론: <span style={{ color: top.kind === "hold" ? "#8BC5FF" : "#3DDC97" }}>{topVerdict}</span></h2><p style={{ color: "#AEB2B9", fontSize: 13, lineHeight: 1.65, marginBottom: 16 }}><b style={{ color: "#ECECEA" }}>{body.brand} {body.model || body.name}</b>에서 무엇을 바꾸는 게 가장 합리적인지 먼저 결론부터 보여드릴게요.</p><HeroScenarioCard scenario={top} extraBudget={answers.extraBudget} />{scenarios.length > 1 && <section style={{ marginTop: 23 }}><h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 17, margin: "0 0 10px" }}>다른 선택지</h3><p style={{ color: "#777D86", fontSize: 11, lineHeight: 1.55, margin: "0 0 10px" }}>비용, 바디 유지, 시스템 전환처럼 다른 타협점을 가진 대안입니다. 눌러서 세부 내용을 확인할 수 있어요.</p><div style={{ display: "grid", gap: 9 }}>{scenarios.slice(1).map((scenario, index) => <AlternativeScenarioCard key={scenario.id} scenario={scenario} index={index + 2} extraBudget={answers.extraBudget} />)}</div></section>}<p style={{ color: "#656B74", fontSize: 11, lineHeight: 1.6, marginTop: 14 }}>데이터가 없는 성능이나 가격은 숨기거나 0으로 표시하지 않고 ‘비교 데이터 부족’ 또는 ‘정확한 계산 불가’로 표시합니다.</p></>;
 }
