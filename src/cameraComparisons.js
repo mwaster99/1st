@@ -36,7 +36,7 @@ export function compareNumber(key, before, after, { label = CAPABILITY_LABEL[key
     summary: `${formatNumber(before)}${unit} → ${formatNumber(after)}${unit}`, details: [percent === null ? `변화 ${formatNumber(difference)}${unit}` : `${difference > 0 ? "+" : ""}${formatNumber(difference)}${unit} (${percent > 0 ? "+" : ""}${percent}%)`] };
 }
 
-const SENSOR_RANK = { 마이크로포서드: 1, "APS-C": 2, 풀프레임: 3 };
+const SENSOR_RANK = { "1인치": 0, 마이크로포서드: 1, "APS-C": 2, 풀프레임: 3 };
 const CROP_FACTOR = { 마이크로포서드: 2, "APS-C": 1.5, 풀프레임: 1 };
 
 export function compareCapability(key, before, after, beforeWeight, afterWeight) {
@@ -94,6 +94,9 @@ export function compareCapability(key, before, after, beforeWeight, afterWeight)
 }
 
 function equivalentFocal(lens, body) {
+  // Fixed lenses can have an explicitly published equivalent. Avoid replacing it
+  // with an approximate sensor-format multiplier (e.g. GR IIIx 40 mm).
+  if (Number.isFinite(lens?.equivalentFocal?.min) && Number.isFinite(lens?.equivalentFocal?.max)) return lens.equivalentFocal;
   if (!body?.sensor || !Number.isFinite(lens?.focal?.min) || !Number.isFinite(lens?.focal?.max)) return null;
   const factor = Number.isFinite(body.sensor.cropFactor) ? body.sensor.cropFactor : body.sensor.format === "APS-C" && body.brand === "Canon" ? 1.6 : CROP_FACTOR[body.sensor.format];
   return factor ? { min: Math.round(lens.focal.min * factor * 10) / 10, max: Math.round(lens.focal.max * factor * 10) / 10 } : null;

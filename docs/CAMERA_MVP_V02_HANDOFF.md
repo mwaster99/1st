@@ -1,5 +1,7 @@
 # 카메라 MVP v0.2 인수인계
 
+2026-09-18 Objective DB 확장 완료. 최신 데이터 구조·출처·한계는 [OBJECTIVE_DB.md](./OBJECTIVE_DB.md), 중단/재개 기록은 [OBJECTIVE_DB_PROGRESS.md](./OBJECTIVE_DB_PROGRESS.md)를 확인한다.
+
 현재 코드를 기준으로 다음 UI 작업의 경계를 정리한 문서입니다. 기존 `PRODUCT_CONTEXT.md`에는 과거 카테고리 구조와 작업 맥락이 남아 있으므로 현재 구현의 최종 기준으로 사용하지 않습니다.
 
 ## 현재 범위
@@ -12,7 +14,9 @@
 
 | 파일 | 책임 |
 | --- | --- |
-| `src/cameraData.js` | 기변용 바디·렌즈 데이터, 검색, 미등록 장비 생성 |
+| `src/data/cameraProducts.json` | 세 플로우가 공유하는 객관 사양·가격·출처 원본 |
+| `src/cameraCatalog.js` / `src/cameraCatalogViews.js` | 기존 엔진·화면용 호환 뷰, 가격 단위 변환, 내장 렌즈 |
+| `src/cameraData.js` | 카탈로그 export, 검색, 미등록 장비 생성 |
 | `src/cameraDesign.js` | 공통 디자인 선택값과 선호 일치 평가 |
 | `src/cameraComparisons.js` | 사양·렌즈·역할·사진영상 비교와 unknown 판정 |
 | `src/cameraScenarioEngine.js` | 기변 후보 생성, 장비 전환, 평가, 다양성 선택, 설명 |
@@ -56,13 +60,13 @@
 
 ## 데이터 한계
 
-- 현재 기변 DB는 바디 7개·렌즈 11개인 시연 데이터입니다. 브랜드별 후보 수와 사양 충족도가 다르며 가격 출처·시세 자동 갱신은 없습니다.
-- 휴대 무게는 **바디 + 대표 렌즈 1개**입니다. 보유 렌즈 수와 역할은 별도 계산하며, 전체 가방 무게라고 표시하면 안 됩니다.
+- 공통 DB는 바디 37개·교환렌즈 36개입니다. 공식 확인 필드와 기존 미검증 값은 분리 기록합니다. 기존 가격은 미검증 참고값, 신규 가격은 null이며 시세 자동 갱신은 없습니다.
+- 휴대 무게는 **바디 + 대표 렌즈 1개**입니다. 고정렌즈는 카메라 무게에 렌즈가 포함돼 따로 더하지 않습니다. 보유 렌즈 수와 역할은 별도 계산하며, 전체 가방 무게라고 표시하면 안 됩니다.
 - 바디 크기가 있는 경우 바디 부피만 비교합니다. 렌즈 치수·장착 길이가 없어 전체 조합 부피는 unknown입니다.
 - AF는 확인된 인식 기능, 영상은 등록된 기록 사양을 비교합니다. 누락이나 엇갈린 장단점을 종합적인 성능 향상으로 단정하지 않습니다. 렌즈 화각은 센서 형식을 고려한 35mm 환산값입니다.
 - DR·고감도·AF 속도/정확도·발열·롤링셔터·조작성·색감·내구성·실제 렌즈 생태계 범위는 충분한 근거가 없습니다. `capabilities.lowLight`, `versatility`, `lensEcosystem`은 확장용 `null` 필드이며 점수를 임의로 채우지 않았습니다.
 - 미등록 장비의 무게·가격은 `null`입니다. 판매 또는 구매 항목에 가격 미확인이 있으면 정확한 추가금도 `null`이며 확인된 부분 합계와 구분합니다.
-- 첫 구매의 X-S20/R8 바디 무게는 미등록입니다. 해당 보유 렌즈 대체 구성에 기존 경량 설명을 재사용하지 않습니다.
+- 첫 구매의 X-S20/R8 바디 무게는 공통 DB의 491g/461g을 참조합니다. 첫 구매 구성 정책은 여전히 5개이며 신규 DB 전체를 자동 추천하지 않습니다.
 
 ## 다음 UI 작업에서 변경 가능한 영역
 
@@ -77,6 +81,7 @@
 - `cameraComparisons.js`: `compareCapability`, `compareLens`, `scoreRoleCoverage`, `scorePhotoVideo`, 환산·무게·unknown 처리.
 - `firstPurchaseEngine.js`: `FIRST_PURCHASE_SYSTEMS`, `rankFirstPurchaseSystems`와 구성 계산.
 - `cameraDesign.js`: 디자인 키와 `scoreDesignPreference`; `cameraData.js`: 장비 ID·마운트·사양·가격·unknown 생성 함수.
+- `src/data/*`, `cameraCatalog.js`, `cameraCatalogViews.js`: 공통 데이터 및 호환 계약도 UI 작업에서 임의로 바꾸지 않습니다.
 - `tests/*.test.js`: UI 변경을 통과시키기 위해 추천 품질·소유권·unknown 검증을 삭제하거나 완화하지 않습니다.
 
 ## 검증
@@ -91,3 +96,5 @@ pnpm build
 테스트는 A~F(타 브랜드 후보, 현재 브랜드 제한, AF 목표, 디자인 선호, unknown 렌즈, 현상 유지 우위), 소유권 중복 방지, 보존 조건, 화각 환산, 첫 구매 렌즈 대체 등을 다룹니다. UI 작업 뒤에는 명령 검증에 더해 질문 → 결과를 브라우저에서 확인합니다. 빌드 성공만으로 추천 의미나 화면 동작이 검증되지는 않습니다.
 
 v0.2 검증 기록: Node 테스트 26개 통과. 첫 구매·기변의 질문부터 결과까지 브라우저 확인, 보존 조건 선택 해제와 음수 예산 차단 확인. Sony A7 IV + FE 24–70mm F2.8 GM II에서 렌즈 무게·전체 부피 불만, 브랜드 자유, 렌즈 교체 허용 조건을 입력하면 Sony 조정안과 Fujifilm 전환안, 현재 유지안을 함께 표시합니다. 전체 부피는 여전히 데이터 부족으로 표시합니다.
+
+Objective DB 확장 검증(2026-09-18): 테스트 38개 통과, pnpm build 성공, 세 플로우·신규 브랜드·고정렌즈·미등록 장비의 브라우저 검증 완료. 상세 사례와 데이터 미수집 항목은 OBJECTIVE_DB.md에 기록했습니다.

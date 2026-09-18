@@ -1,15 +1,21 @@
-import { BODY_BY_ID, CAMERA_LENSES, LENS_BY_NAME, createUnknownLens } from "./cameraData.js";
+import { LEGACY_CAMERA_POLICY } from "./cameraCatalog.js";
+import { BODY_BY_ID, LENS_BY_ID, CAMERA_LENSES, LENS_BY_NAME, createUnknownLens } from "./cameraData.js";
 import { DESIGN_OPTIONS, scoreDesignPreference } from "./cameraDesign.js";
 
-// 기존 첫 구매 구성 5개를 유지합니다. 무게는 저장소에 있던 값만 사용하며,
-// X-S20/R8의 미등록 바디 무게와 미확인 capability는 추정하지 않습니다.
-export const FIRST_PURCHASE_SYSTEMS = [
-  { name: "Sony A7C II + FE 28-60mm", style: "휴대성 중심", type: "interchange", mount: "Sony E", body: "Sony A7C II", bodyWeight: BODY_BY_ID["sony-a7c-ii"].weight, designTags: ["rangefinder", "minimal"], lens: "FE 28-60mm F4-5.6", defaultLensId: "sony-fe-28-60", bodyNew: 269, lensNew: 35, bodyUsed: 210, lensUsed: 22, uses: ["여행 · 일상", "인물", "브이로그 · 영상"], portable: 3, video: 3, why: "작고 가벼운 풀프레임 구성으로 여행과 일상에 부담이 적어요." },
-  { name: "Fujifilm X-S20 + XF 18-55mm", style: "균형 중심", type: "interchange", mount: "Fujifilm X", body: "Fujifilm X-S20", bodyWeight: null, designTags: ["slr"], lens: "XF 18-55mm F2.8-4", defaultLensId: "fuji-xf-18-55", bodyNew: 185, lensNew: 52, bodyUsed: 145, lensUsed: 38, uses: ["여행 · 일상", "인물", "브이로그 · 영상"], portable: 2, video: 3, why: "밝은 표준줌을 포함해 사진과 영상을 균형 있게 시작하기 좋아요." },
-  { name: "Canon EOS R8 + RF 24-50mm", style: "화질 중심", type: "interchange", mount: "Canon RF", body: "Canon EOS R8", bodyWeight: null, designTags: ["slr"], lens: "RF 24-50mm F4.5-6.3", defaultLensId: "canon-rf-24-50", bodyNew: 205, lensNew: 35, bodyUsed: 160, lensUsed: 23, uses: ["여행 · 일상", "인물", "가족 · 반려동물"], portable: 2, video: 2, why: "풀프레임 화질과 인물 촬영을 비교적 가벼운 구성으로 가져갈 수 있어요." },
-  { name: "Fujifilm X100VI", style: "올인원 스냅", type: "fixed", mount: null, body: "Fujifilm X100VI", bodyWeight: 521, designTags: ["rangefinder", "classic"], lens: "23mm F2 고정 렌즈", bodyNew: 224, lensNew: 0, bodyUsed: 255, lensUsed: 0, uses: ["여행 · 일상", "인물", "풍경"], portable: 3, video: 1, why: "렌즈 선택에 시간을 쓰지 않고 사진 경험 자체에 집중하기 좋은 구성입니다." },
-  { name: "Ricoh GR IIIx", style: "최소 휴대성", type: "fixed", mount: null, body: "Ricoh GR IIIx", bodyWeight: 262, designTags: ["minimal"], lens: "40mm 상당 고정 렌즈", bodyNew: 139, lensNew: 0, bodyUsed: 125, lensUsed: 0, uses: ["여행 · 일상", "인물"], portable: 4, video: 0, why: "매일 들고 다니며 자연스러운 스냅을 남기고 싶을 때 역할이 분명해요." },
-].map((system) => ({ ...system, capabilities: { lowLight: null, versatility: null, lensEcosystem: null } }));
+// Keep the five curated policies; resolve every physical value and price by ID.
+export const FIRST_PURCHASE_SYSTEMS = LEGACY_CAMERA_POLICY.firstPurchase.map((policy) => {
+  const body = BODY_BY_ID[policy.bodyId];
+  const lens = LENS_BY_ID[policy.defaultLensId];
+  const fixed = body.kind === "fixed";
+  return { ...policy, name: lens ? `${body.brand} ${body.model} + ${lens.name}` : `${body.brand} ${body.model}`,
+    type: fixed ? "fixed" : "interchange", mount: body.mount,
+    body: `${body.brand} ${body.model}`, bodyWeight: body.weight, designTags: body.designTags,
+    lens: lens?.name || body.specs.fixedLens?.label || "내장 렌즈",
+    bodyNew: body.newPrice, bodyUsed: body.usedPrice,
+    lensNew: fixed ? 0 : lens.newPrice, lensUsed: fixed ? 0 : lens.usedPrice,
+    price: body.price, capabilities: body.capabilities,
+  };
+});
 
 const isKnown = (value) => typeof value === "number" && Number.isFinite(value);
 const lensById = Object.fromEntries(CAMERA_LENSES.map((lens) => [lens.id, lens]));
@@ -34,7 +40,9 @@ export function rankFirstPurchaseSystems(answers, { advanced = false, systems = 
   return systems.map((system) => {
     const ownedLens = system.type === "interchange" ? lenses.find((lens) => lens.mount && lens.mount === system.mount) : null;
     const effectiveLens = ownedLens || lensById[system.defaultLensId] || null;
-    const isUsed = answers.condition === "중고 우선" || (answers.condition === "신품·중고 모두 고려" && system.bodyUsed + system.lensUsed < system.bodyNew + system.lensNew);
+    const totalFor = (body, lens) => isKnown(body) && (ownedLens || isKnown(lens)) ? body + (ownedLens ? 0 : lens) : null;
+    const newTotal = totalFor(system.bodyNew, system.lensNew), usedTotal = totalFor(system.bodyUsed, system.lensUsed);
+    const isUsed = answers.condition === "중고 우선" || (answers.condition === "신품·중고 모두 고려" && usedTotal !== null && (newTotal === null || usedTotal < newTotal));
     const bodyPrice = isUsed ? system.bodyUsed : system.bodyNew;
     // 보유 렌즈의 신규 구매 비용만 0입니다. 렌즈 자체의 가격/무게를 0으로 추정하지 않습니다.
     const lensPrice = ownedLens ? 0 : (isUsed ? system.lensUsed : system.lensNew);
@@ -73,7 +81,11 @@ export function rankFirstPurchaseSystems(answers, { advanced = false, systems = 
       const mediaText = `보유 렌즈의 사진/영상 참고 점수는 ${lensPhotoScore ?? "미확인"}/${ownedLens.videoScore ?? "미확인"}(각 5점 기준)이며 구성 평가에 반영했습니다.`;
       why = `보유 렌즈를 활용해 새 렌즈 구매 비용을 줄이는 구성입니다. ${weightText} ${roleText} ${mediaText}`;
     }
-    if (designBonus > 0) why += ` 선호한 ${DESIGN_OPTIONS.find((option) => option.value === answers.designPreference)?.label} 디자인에 맞습니다.`;
+    if (designBonus > 0) {
+      const preferences = Array.isArray(answers.designPreference) ? answers.designPreference : [answers.designPreference];
+      const matchedLabels = preferences.filter((value) => system.designTags?.includes(value)).map((value) => DESIGN_OPTIONS.find((option) => option.value === value)?.label).filter(Boolean);
+      why += ` 선호한 ${matchedLabels.join(" 또는 ")} 디자인에 맞습니다.`;
+    }
     return { ...system, name: ownedLens ? `${system.body} + ${ownedLens.name}` : system.name, style: ownedLens ? "보유 렌즈 활용" : system.style, lens: ownedLens ? `${ownedLens.name} (보유)` : system.lens, total, bodyPrice, lensPrice, priceType: isUsed ? "중고" : "신품", uses, portable, video, lensPhotoScore, systemWeight, purposeFit, portabilityLabel: portabilityLabel(portable, systemWeight, Boolean(ownedLens)), mediaFit, mediaScore, designPreferenceScore, designBonus, why, score };
   }).filter((system) => system.total !== null && system.total <= Number(answers.budget || 0) && (!advanced || (!answers.bodyBudget || system.bodyPrice <= Number(answers.bodyBudget)) && (!answers.lensBudget || system.lensPrice <= Number(answers.lensBudget))))
     .sort((a, b) => b.score - a.score || a.total - b.total);

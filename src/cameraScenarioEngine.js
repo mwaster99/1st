@@ -1,4 +1,4 @@
-import { CAMERA_BODIES, CAMERA_LENSES } from "./cameraData.js";
+import { CAMERA_BODIES, CAMERA_LENSES, getIntegratedLens } from "./cameraData.js";
 import { scoreDesignPreference } from "./cameraDesign.js";
 import { clamp, percentChange, compareNumber, compareCapability, compareLens, scoreRoleCoverage, scorePhotoVideo, unknownCapability } from "./cameraComparisons.js";
 export { CAPABILITY_LABEL, RATIO_WEIGHTS, compareCapability, compareLens, scoreRoleCoverage } from "./cameraComparisons.js";
@@ -45,23 +45,24 @@ export function generateBodyCandidates({ currentBody, brandIntent }, catalog = d
 }
 
 export function generateLensCandidates({ body, currentLenses = [] }, catalog = defaultCatalog) {
+  if (body.kind === "fixed") return [getIntegratedLens(body)];
   if (!body.mount) return [];
   return uniqueItems([...catalog.lenses, ...currentLenses]).filter((lens) => lens.mount && lens.mount === body.mount);
 }
 
 function usefulLens(lens, subjects) {
-  return lens.dataStatus === "unknown" || !subjects.length || (lens.roles || []).some((role) => subjects.includes(role));
+  return lens.dataStatus === "unknown" || !Array.isArray(lens.roles) || !subjects.length || lens.roles.some((role) => subjects.includes(role));
 }
 
 // A single identity can occupy exactly one transition column; existing copies are reused.
 export function buildEquipmentTransition(currentSystem, proposedSystem) {
-  const current = uniqueItems([currentSystem.body, ...currentSystem.lenses]);
+  const current = uniqueItems([currentSystem.body, ...currentSystem.lenses.filter((lens) => !lens.includedInBodyId)]);
   const owned = new Map(current.map((item) => [item.id, item]));
   const body = owned.get(proposedSystem.body.id) || proposedSystem.body;
   const lenses = uniqueItems(proposedSystem.lenses).map((lens) => owned.get(lens.id) || lens);
   const primaryLens = lenses.find((lens) => lens.id === proposedSystem.primaryLens.id);
   if (!primaryLens) throw new Error("대표 렌즈는 목표 렌즈 구성에 포함되어야 합니다.");
-  const target = [body, ...lenses];
+  const target = [body, ...lenses.filter((lens) => !lens.includedInBodyId)];
   const targetIds = new Set(target.map((item) => item.id));
   return {
     targetSystem: { body, lenses, primaryLens },
@@ -99,7 +100,12 @@ export function generateScenarioCandidates(input, catalog = defaultCatalog) {
     const sameBody = body.id === currentSystem.body.id;
     const sameMount = Boolean(body.mount && body.mount === currentSystem.body.mount);
     if (sameBody || sameMount) add(body, currentSystem.lenses, currentSystem.primaryLens);
-    if (!sameMount && !sameBody && intent.keepAllLenses) continue;
+    if (!sameMount && !sameBody && intent.keepAllLenses && currentSystem.lenses.some((lens) => !lens.includedInBodyId)) continue;
+    if (body.kind === "fixed") {
+      const integrated = getIntegratedLens(body);
+      add(body, [integrated], integrated);
+      continue;
+    }
     if (!body.mount) continue; // Unknown mount cannot establish new lens compatibility.
     for (const lens of generateLensCandidates({ body, currentLenses: sameMount || sameBody ? currentSystem.lenses : [] }, catalog)) {
       if (!sameMount && !sameBody) { add(body, [lens], lens); continue; }
@@ -120,6 +126,7 @@ function sumPrice(items, field) {
   return { known: items.reduce((sum, item) => sum + (Number.isFinite(item[field]) ? item[field] : 0), 0), missing: items.filter((item) => !Number.isFinite(item[field])).map((item) => item.name) };
 }
 function combinationWeight(system) {
+  if (system.body.kind === "fixed") return Number.isFinite(system.body.weight) ? system.body.weight : null;
   return Number.isFinite(system.body.weight) && Number.isFinite(system.primaryLens.weight) ? system.body.weight + system.primaryLens.weight : null;
 }
 function weightChange(before, after) {
@@ -172,7 +179,9 @@ export function evaluateScenario(base, input) {
       : metric);
   capability.tradeoffs.push(...lensComparison.filter((metric) => metric.status === "degraded" && ["focal", "aperture"].includes(metric.key) && !retainsPreviousPrimary));
   const coverage = { beforeSubjectScore: scoreRoleCoverage(intent.subjects, current.body, current.lenses), subjectScore: scoreRoleCoverage(intent.subjects, target.body, target.lenses), beforePhotoVideoScore: scorePhotoVideo(intent.ratio, current.body, current.lenses), photoVideoScore: scorePhotoVideo(intent.ratio, target.body, target.lenses) };
-  const lensCount = { before: current.lenses.length, after: target.lenses.length, difference: target.lenses.length - current.lenses.length };
+  const beforeLensCount = current.lenses.filter((lens) => !lens.includedInBodyId).length;
+  const afterLensCount = target.lenses.filter((lens) => !lens.includedInBodyId).length;
+  const lensCount = { before: beforeLensCount, after: afterLensCount, difference: afterLensCount - beforeLensCount };
   const costChange = netCost === null ? unknownCapability("cost", "판매 또는 구매할 장비에 가격 미확인 항목이 있어 정확한 추가금을 계산하지 않습니다.", "추가 비용") : {
     key: "cost", label: "추가 비용", status: netCost > 0 ? "degraded" : netCost < 0 ? "improved" : "maintained", strength: 0,
     summary: netCost < 0 ? `추가금 0만원 · 판매 후 ${-netCost}만원 남음` : `추가금 ${netCost}만원`, details: [`판매 ${sellValue.known}만원 · 구매 ${buyValue.known}만원`, "중고 참고가 기준이며 거래 수수료 등은 제외합니다."] };
@@ -203,7 +212,7 @@ export function evaluateScenario(base, input) {
   // Affordable changes still cost money; exceeding budget has a larger penalty.
   const budgetPenalty = extra === null ? 8 : Math.min(12, extra / Math.max(50, intent.budget) * 8) + Math.min(35, Math.max(0, extra - intent.budget) / Math.max(50, intent.budget) * 25);
   const isHold = base.kind === "hold";
-  const crossMount = current.body.mount !== target.body.mount;
+  const crossMount = base.kind === "cross-mount-system";
   const transactionPenalty = isHold ? 0 : (base.sell.length + base.buy.length) * 0.6 + (crossMount ? 2 : 0);
   const lensPreferencePenalty = intent.keepUsefulLenses ? base.sell.filter((item) => item.id !== current.body.id && usefulLens(item, intent.subjects)).length * 3 : 0;
   const tradeoffPenalty = capability.tradeoffs.reduce((sum, metric) => sum + (metric.strength || 0) / 100 * (metric.key === "aperture" || metric.key === "focal" ? 8 : 6), 0);
@@ -266,7 +275,7 @@ export function buildScenarioExplanation(scenario, extraBudget) {
   if (scenario.currentSystem.body.mount && scenario.currentSystem.body.mount === scenario.targetSystem.body.mount) {
     const kept = scenario.keep.filter((item) => item.id !== scenario.currentSystem.body.id);
     if (kept.length) lines.push(`기존 렌즈 ${kept.map((item) => item.name).join(", ")}을 재사용하며 다시 구매하지 않습니다.`);
-  } else if (scenario.kind !== "hold") lines.push(`${scenario.targetSystem.body.mount} 시스템으로 전환하는 안입니다. 어댑터 호환은 평가하지 않아 기존 장비 판매와 새 렌즈 구매를 계산했습니다.`);
+  } else if (scenario.kind !== "hold") lines.push(scenario.targetSystem.body.kind === "fixed" ? "고정렌즈 카메라로 전환하는 안입니다. 내장 렌즈의 비용과 무게는 카메라에 포함되며 교환렌즈를 장착할 수 없습니다." : `${scenario.targetSystem.body.mount} 시스템으로 전환하는 안입니다. 어댑터 호환은 평가하지 않아 기존 장비 판매와 새 렌즈 구매를 계산했습니다.`);
   if (scenario.cost.additionalCost === null) lines.push("가격 미확인 장비가 있어 정확한 추가금은 계산할 수 없습니다.");
   else if (scenario.cost.additionalCost > Number(extraBudget || 0)) lines.push(`추가금 ${scenario.cost.additionalCost}만원으로 예산보다 ${scenario.cost.additionalCost - Number(extraBudget || 0)}만원 더 필요합니다.`);
   else lines.push(`예상 추가금 ${scenario.cost.additionalCost}만원으로 설정한 예산 안입니다.${scenario.cost.releasedFunds > 0 ? ` 판매 후 ${scenario.cost.releasedFunds}만원이 남는 참고 계산입니다.` : ""}`);

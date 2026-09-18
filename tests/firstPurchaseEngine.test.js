@@ -32,6 +32,23 @@ test("design breaks comparable ties without excluding better mismatching systems
   assert.equal(differentPurpose.length, 2);
 });
 
+test("multiple design preferences match once without stacking the design bonus", () => {
+  const body = { designTags: ["rangefinder", "minimal"] };
+  assert.equal(scoreDesignPreference(body, ["slr", "rangefinder"]), 100);
+  assert.equal(scoreDesignPreference(body, ["slr", "classic"]), 0);
+  assert.equal(scoreDesignPreference(body, ["any", "rangefinder"]), 0);
+  assert.equal(scoreDesignPreference(body, null), 0);
+
+  const single = rankFirstPurchaseSystems({ ...base, designPreference: "rangefinder" });
+  const multiple = rankFirstPurchaseSystems({ ...base, designPreference: ["rangefinder", "minimal"] });
+  const singleSony = sony(single);
+  const multipleSony = sony(multiple);
+  assert.equal(singleSony.designBonus, 1);
+  assert.equal(multipleSony.designBonus, 1);
+  assert.equal(singleSony.score, multipleSony.score);
+  assert.match(multipleSony.why, /레인지파인더형 또는 컴팩트 \/ 미니멀/);
+});
+
 test("heavy owned lens replaces preset role, weight and explanation", () => {
   const defaultSony = sony(rankFirstPurchaseSystems(base));
   const heavy = sony(rankFirstPurchaseSystems({ ...base, ownedLenses: ["Sony FE 70-200mm F2.8 GM II"] }));

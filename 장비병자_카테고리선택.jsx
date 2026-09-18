@@ -1,6 +1,7 @@
+import { CAMERA_ITEMS, CAMERA_DETAILS, calculateFunding } from "./src/cameraCatalogViews.js";
 import { useState } from "react";
 import CameraUpgradeEngineDiagnosis from "./src/CameraUpgradeSystemDiagnosis.jsx";
-import { DESIGN_OPTIONS } from "./src/cameraDesign.js";
+import CameraDesignPicker from "./src/CameraDesignPicker.jsx";
 import { rankFirstPurchaseSystems } from "./src/firstPurchaseEngine.js";
 import { CAMERA_LENSES as CAMERA_LENS_DATABASE, LENS_BY_NAME as CAMERA_LENS_BY_NAME, createUnknownLens as createUnknownCameraLens } from "./src/cameraData.js";
 
@@ -91,9 +92,9 @@ const FAMILY_OPTIONS = ["똑딱이", "렌즈교환식"];
 
 const CAMERA_FACETS = {
   type: ["컴팩트", "미러리스", "DSLR", "필름카메라"],
-  brand: ["캐논", "니콘", "소니", "후지필름", "파나소닉", "라이카", "리코/펜탁스"],
+  brand: [...new Set(CAMERA_ITEMS.map((item) => item.brand))],
   sensor: ["1인치 이하", "마이크로포서드", "APS-C", "풀프레임"],
-  price: ["100만원 이하", "100~200만원", "200~400만원", "400만원 이상"],
+  price: ["100만원 이하", "100~200만원", "200~400만원", "400만원 이상", "가격 미확인"],
   purpose: ["인물 촬영", "풍경 촬영", "일상 스냅", "영상 촬영"],
 };
 
@@ -106,41 +107,6 @@ const CAMERA_FACET_LABEL = {
 };
 
 const PURPOSE_QUICK_CHIPS = ["인물 촬영", "여행 / 풍경 사진", "브이로그 / 영상", "데일리 스냅", "이벤트 / 행사 촬영"];
-
-const CAMERA_ITEMS = [
-  { name: "소니 RX100 VII", family: "똑딱이", type: "컴팩트", brand: "소니", sensor: "1인치 이하", price: "100~200만원", isCompactBody: true, purpose: ["일상 스냅", "영상 촬영"] },
-  { name: "후지필름 X100VI", family: "똑딱이", type: "컴팩트", brand: "후지필름", sensor: "APS-C", price: "200~400만원", isCompactBody: true, purpose: ["일상 스냅", "인물 촬영"] },
-  { name: "리코 GR IIIx", family: "똑딱이", type: "컴팩트", brand: "리코/펜탁스", sensor: "APS-C", price: "100~200만원", isCompactBody: true, purpose: ["일상 스냅", "풍경 촬영"] },
-  { name: "라이카 Q3", family: "똑딱이", type: "컴팩트", brand: "라이카", sensor: "풀프레임", price: "400만원 이상", isCompactBody: true, purpose: ["일상 스냅", "인물 촬영"] },
-  { name: "캐논 EOS R6 Mark II", family: "렌즈교환식", type: "미러리스", brand: "캐논", sensor: "풀프레임", price: "200~400만원", isCompactBody: false, purpose: ["인물 촬영", "영상 촬영"] },
-  { name: "소니 A7 IV", family: "렌즈교환식", type: "미러리스", brand: "소니", sensor: "풀프레임", price: "200~400만원", isCompactBody: false, purpose: ["인물 촬영", "풍경 촬영", "영상 촬영"] },
-  { name: "소니 A7C II", family: "렌즈교환식", type: "미러리스", brand: "소니", sensor: "풀프레임", price: "200~400만원", isCompactBody: true, purpose: ["인물 촬영", "풍경 촬영", "영상 촬영"] },
-  { name: "후지필름 X-T5", family: "렌즈교환식", type: "미러리스", brand: "후지필름", sensor: "APS-C", price: "200~400만원", isCompactBody: false, purpose: ["풍경 촬영", "일상 스냅"] },
-  { name: "후지필름 X-E4", family: "렌즈교환식", type: "미러리스", brand: "후지필름", sensor: "APS-C", price: "100~200만원", isCompactBody: true, purpose: ["일상 스냅", "풍경 촬영"] },
-  { name: "파나소닉 루믹스 G9 II", family: "렌즈교환식", type: "미러리스", brand: "파나소닉", sensor: "마이크로포서드", price: "200~400만원", isCompactBody: false, purpose: ["영상 촬영", "풍경 촬영"] },
-  { name: "파나소닉 루믹스 GX85", family: "렌즈교환식", type: "미러리스", brand: "파나소닉", sensor: "마이크로포서드", price: "100만원 이하", isCompactBody: true, purpose: ["일상 스냅"] },
-  { name: "니콘 Z6 III", family: "렌즈교환식", type: "미러리스", brand: "니콘", sensor: "풀프레임", price: "200~400만원", isCompactBody: false, purpose: ["인물 촬영", "영상 촬영"] },
-  { name: "캐논 EOS 90D", family: "렌즈교환식", type: "DSLR", brand: "캐논", sensor: "APS-C", price: "100~200만원", isCompactBody: false, purpose: ["인물 촬영", "풍경 촬영"] },
-  { name: "니콘 D780", family: "렌즈교환식", type: "DSLR", brand: "니콘", sensor: "풀프레임", price: "200~400만원", isCompactBody: false, purpose: ["풍경 촬영", "인물 촬영"] },
-];
-
-// 시연용 참고가입니다. 실제 서비스에서는 판매처·중고 거래 API로 교체할 수 있습니다.
-const CAMERA_DETAILS = {
-  "소니 RX100 VII": { newPrice: 142, usedPrice: 95, weight: "302g", strength: "주머니에 넣는 고화질 여행 카메라", caution: "작은 센서와 높은 신품 가격" },
-  "후지필름 X100VI": { newPrice: 224, usedPrice: 255, weight: "521g", strength: "필름 감성과 뛰어난 일상 스냅", caution: "고정 렌즈·품귀로 웃돈 가능" },
-  "리코 GR IIIx": { newPrice: 139, usedPrice: 125, weight: "262g", strength: "가볍고 자연스러운 스냅", caution: "망원·영상 활용은 제한적" },
-  "라이카 Q3": { newPrice: 890, usedPrice: 760, weight: "743g", strength: "풀프레임 고정렌즈의 완성도", caution: "매우 높은 초기 비용" },
-  "캐논 EOS R6 Mark II": { newPrice: 299, usedPrice: 220, weight: "670g", strength: "인물·영상 모두 안정적인 균형", caution: "렌즈 예산을 별도로 고려해야 함" },
-  "소니 A7 IV": { newPrice: 319, usedPrice: 240, weight: "659g", strength: "검증된 풀프레임 하이브리드", caution: "바디와 렌즈를 합치면 무거워짐" },
-  "소니 A7C II": { newPrice: 269, usedPrice: 210, weight: "514g", strength: "풀프레임인데 휴대성이 좋음", caution: "그립과 조작계가 작은 편" },
-  "후지필름 X-T5": { newPrice: 249, usedPrice: 195, weight: "557g", strength: "고해상도 APS-C 사진 작업", caution: "영상 연속 촬영 조건 확인 필요" },
-  "후지필름 X-E4": { newPrice: 125, usedPrice: 150, weight: "364g", strength: "가벼운 렌즈교환식 스냅", caution: "단종·중고 시세 변동이 큼" },
-  "파나소닉 루믹스 G9 II": { newPrice: 239, usedPrice: 180, weight: "658g", strength: "강력한 영상 기능과 연사", caution: "저조도는 큰 센서보다 불리" },
-  "파나소닉 루믹스 GX85": { newPrice: 75, usedPrice: 48, weight: "426g", strength: "부담 없는 입문 영상·스냅", caution: "최신 AF 성능은 제한적" },
-  "니콘 Z6 III": { newPrice: 319, usedPrice: 280, weight: "760g", strength: "빠른 AF와 영상 성능", caution: "무게와 렌즈 비용 확인 필요" },
-  "캐논 EOS 90D": { newPrice: 150, usedPrice: 90, weight: "701g", strength: "광학 뷰파인더와 긴 배터리", caution: "DSLR 렌즈군과 영상 AF 특성 고려" },
-  "니콘 D780": { newPrice: 230, usedPrice: 135, weight: "840g", strength: "탄탄한 DSLR 조작성과 화질", caution: "휴대성과 미러리스 확장성은 낮음" },
-};
 
 function chipStyle(active) {
   return {
@@ -155,10 +121,50 @@ function chipStyle(active) {
   };
 }
 
+function FirstPurchaseStepHeader({ current, total, title, hint, multi = false }) {
+  const progress = Math.round((current / total) * 100);
+  return <div className="gw-flow-progress"><div className="gw-progress-meta"><span>FIRST PURCHASE · {current}/{total}</span><span>첫 구매 진단</span></div><div className="gw-progress-track" role="progressbar" aria-label="첫 구매 진단 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow={progress}><div className="gw-progress-value" style={{ width: `${progress}%` }} /></div><h2 className="gw-question-title">{title}</h2><p className="gw-helper">{hint}</p>{multi !== null && <div className="gw-selection-guide">{multi ? "복수 선택 · 모두 고른 뒤 완료를 누르세요" : "단일 선택 · 고르면 다음 질문으로 이동합니다"}</div>}</div>;
+}
+
+const isKnownPrice = (value) => typeof value === "number" && Number.isFinite(value);
+const sumKnownPrices = (body, lens) => isKnownPrice(body) && isKnownPrice(lens) ? body + lens : null;
+const formatReferencePrice = (value, approximate = false) => isKnownPrice(value) ? `${approximate ? "약 " : ""}${value}만원` : "가격 데이터 없음";
+const formatSystemReferencePrice = (system) => formatReferencePrice(system.total, system.priceType === "중고");
+
+function firstPurchasePriceOptions(system) {
+  const usesOwnedLens = system.style === "보유 렌즈 활용";
+  const newLens = usesOwnedLens ? 0 : system.lensNew;
+  const usedLens = usesOwnedLens ? 0 : system.lensUsed;
+  return {
+    newBody: system.bodyNew,
+    newLens,
+    newTotal: sumKnownPrices(system.bodyNew, newLens),
+    usedBody: system.bodyUsed,
+    usedLens,
+    usedTotal: sumKnownPrices(system.bodyUsed, usedLens),
+  };
+}
+
+function FirstPurchasePriceSummary({ system, condition, compact = false }) {
+  const prices = firstPurchasePriceOptions(system);
+  const selectedLabel = condition === "신품 우선" ? "신품 참고가 우선" : condition === "중고 우선" ? "중고 참고가 우선" : "신품·중고 함께 비교";
+  if (compact) return <div className="gw-alternative-price"><div className="gw-alternative-cost">{formatSystemReferencePrice(system)}</div><div className="gw-metric-label">{system.priceType} 참고가 · {selectedLabel}</div></div>;
+
+  return <div className="gw-price-panel">
+    <div className="gw-price-context"><span>선택한 구매 방식</span><b>{condition}</b><small>{selectedLabel} 기준으로 추천 순위와 예산을 계산했습니다.</small></div>
+    <div className={`gw-price-grid gw-price-grid--${condition === "신품·중고 모두 고려" ? "compare" : "focused"}`}>
+      {condition === "신품 우선" && <><div className="gw-price-cell"><div className="gw-price-label">BODY · 신품 참고가</div><div className="gw-price-value">{formatReferencePrice(prices.newBody)}</div></div><div className="gw-price-cell"><div className="gw-price-label">LENS · 신품 참고가</div><div className="gw-price-value">{formatReferencePrice(prices.newLens)}</div></div><div className="gw-price-cell is-total"><div className="gw-price-label">신품 예상 총비용</div><div className="gw-price-value">{formatReferencePrice(prices.newTotal)}</div></div></>}
+      {condition === "중고 우선" && <><div className="gw-price-cell"><div className="gw-price-label">BODY · 중고 참고가</div><div className="gw-price-value">{formatReferencePrice(prices.usedBody, true)}</div></div><div className="gw-price-cell"><div className="gw-price-label">LENS · 중고 참고가</div><div className="gw-price-value">{formatReferencePrice(prices.usedLens, true)}</div></div><div className="gw-price-cell is-total"><div className="gw-price-label">중고 예상 총비용</div><div className="gw-price-value">{formatReferencePrice(prices.usedTotal, true)}</div></div></>}
+      {condition === "신품·중고 모두 고려" && <><div className="gw-price-cell"><div className="gw-price-label">신품 예상 총비용</div><div className="gw-price-value">{formatReferencePrice(prices.newTotal)}</div><div className="gw-metric-detail">바디 {formatReferencePrice(prices.newBody)} · 렌즈 {formatReferencePrice(prices.newLens)}</div></div><div className="gw-price-cell"><div className="gw-price-label">중고 예상 총비용</div><div className="gw-price-value">{formatReferencePrice(prices.usedTotal, true)}</div><div className="gw-metric-detail">바디 {formatReferencePrice(prices.usedBody, true)} · 렌즈 {formatReferencePrice(prices.usedLens, true)}</div></div><div className="gw-price-cell is-total"><div className="gw-price-label">추천 계산 기준</div><div className="gw-price-value">{system.priceType} {formatSystemReferencePrice(system)}</div><div className="gw-metric-detail">현재 데이터에서 더 낮은 총비용</div></div></>}
+    </div>
+    <div className="gw-price-data-note"><b>가격 데이터 범위</b><span>중고 거래 최소·최대 범위 없음 · 가격 출처와 기준일 미등록</span><span>현재 표시값은 DB에 저장된 MVP 참고가이며 공식 정가나 실시간 시세가 아닙니다.</span></div>
+  </div>;
+}
+
 function FirstPurchaseSystemDiagnosis({ onBack }) {
   const [step, setStep] = useState(0);
   const [advanced, setAdvanced] = useState(false);
-  const [answers, setAnswers] = useState({ type: "", ownsLenses: "", ownedLenses: [], lensInput: "", subject: [], video: "", portability: "", lensCount: "", designPreference: "any", budget: 200, condition: "신품·중고 모두 고려", bodyBudget: "", lensBudget: "" });
+  const [answers, setAnswers] = useState({ type: "", ownsLenses: "", ownedLenses: [], lensInput: "", subject: [], video: "", portability: "", lensCount: "", designPreference: ["any"], budget: 200, condition: "신품·중고 모두 고려", bodyBudget: "", lensBudget: "" });
   const questions = [
     { key: "type", title: "어떤 방식의 카메라를 원하시나요?", hint: "아직 모르겠다면 장비병자가 두 방식을 함께 비교해드릴게요.", options: ["렌즈교환식으로 시작하고 싶어요", "고정 렌즈 카메라가 좋아요", "아직 잘 모르겠어요"] },
     ...(answers.type === "렌즈교환식으로 시작하고 싶어요" ? [{ key: "ownsLenses", title: "이미 가지고 있거나 따로 쓸 렌즈가 있나요?", hint: "있다면 마운트만 고르지 않고 실제 렌즈 모델을 등록합니다.", options: ["보유 렌즈 없음", "보유 렌즈 있음"] }] : []),
@@ -166,28 +172,36 @@ function FirstPurchaseSystemDiagnosis({ onBack }) {
     { key: "subject", title: "무엇을 가장 많이 찍고 싶나요?", hint: "여러 개를 골라도 됩니다.", multi: true, options: ["여행 · 일상", "인물", "풍경", "브이로그 · 영상", "가족 · 반려동물"] },
     { key: "video", title: "사진과 영상의 비중은 어떤가요?", hint: "사진·영상 비중에 맞는 구성을 우선해요. 비교 정보가 부족한 부분은 결과에 표시합니다.", options: ["사진 위주", "사진과 영상 반반", "영상 비중이 높아요"] },
     { key: "portability", title: "휴대성은 얼마나 중요하나요?", hint: "카메라를 자주 쓰게 되는 가장 현실적인 조건이에요.", options: ["매일 가볍게 들고 다니고 싶어요", "여행이나 약속 때 챙길 거예요", "무게보다 결과물이 중요해요"] },
-    { key: "designPreference", title: "어떤 카메라 디자인을 선호하나요?", hint: "비슷한 조건에서는 취향을 반영해요. 다른 디자인도 추천될 수 있습니다.", options: DESIGN_OPTIONS.map((option) => option.label) },
+    { key: "designPreference", title: "어떤 카메라 디자인을 선호하나요?", hint: "좋아하는 형태를 여러 개 골라도 됩니다. 정보 버튼을 누르면 외관상의 차이를 확인할 수 있어요.", designPicker: true, multi: true },
     ...(answers.type !== "고정 렌즈 카메라가 좋아요" ? [{ key: "lensCount", title: "렌즈를 여러 개 들고 다니는 건 어떤가요?", hint: "첫 추천은 렌즈 1개 구성이며, 이후 렌즈를 늘릴 의향을 추천에 반영해요.", options: ["한 개로 끝내고 싶어요", "두 개 정도는 괜찮아요", "여러 개 교환해도 괜찮아요"] }] : []),
   ];
   const question = questions[step];
   const ownedLenses = answers.ownedLenses.map((name) => CAMERA_LENS_BY_NAME[name] || createUnknownCameraLens(name));
   const hasLens = ownedLenses.length > 0;
   const candidates = rankFirstPurchaseSystems(answers, { advanced, ownedLenses });
-  function choose(value) { setAnswers((prev) => ({ ...prev, [question.key]: question.key === "designPreference" ? DESIGN_OPTIONS.find((option) => option.label === value).value : value, ...(question.key === "ownsLenses" && value === "보유 렌즈 없음" ? { ownedLenses: [], lensInput: "" } : {}) })); setStep((prev) => prev + 1); }
+  function choose(value) { setAnswers((prev) => ({ ...prev, [question.key]: value, ...(question.key === "ownsLenses" && value === "보유 렌즈 없음" ? { ownedLenses: [], lensInput: "" } : {}) })); setStep((prev) => prev + 1); }
   function toggleSubject(value) { setAnswers((prev) => ({ ...prev, subject: prev.subject.includes(value) ? prev.subject.filter((item) => item !== value) : [...prev.subject, value] })); }
 
   if (step < questions.length && question.lensSearch) {
     const addLens = () => { const value = answers.lensInput.trim(); if (value && !answers.ownedLenses.includes(value)) setAnswers((prev) => ({ ...prev, ownedLenses: [...prev.ownedLenses, value], lensInput: "" })); };
-    return <><button className="gw-back" onClick={() => setStep((prev) => prev - 1)}>← 이전 질문</button><div style={{ marginTop: 18, color: "#3DDC97", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>첫 구매 진단 · {step + 1}/{questions.length + 1}</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, margin: "10px 0 6px" }}>{question.title}</h2><p style={{ color: "#8B8F98", fontSize: 13, lineHeight: 1.6 }}>{question.hint}</p><div style={{ display: "flex", gap: 8 }}><input list="first-purchase-lens-list" value={answers.lensInput} onChange={(event) => setAnswers((prev) => ({ ...prev, lensInput: event.target.value }))} onKeyDown={(event) => { if (event.key === "Enter") { event.preventDefault(); addLens(); } }} placeholder="예: Sony FE 40mm F2.5 G" style={{ flex: 1, padding: 11, borderRadius: 8, background: "#1D2024", border: "1px solid #2A2E34", color: "#ECECEA" }} /><button onClick={addLens} style={{ padding: "0 14px", borderRadius: 8, border: "none", background: "#FFB020", color: "#14161A", fontWeight: 700 }}>추가</button></div><datalist id="first-purchase-lens-list">{CAMERA_LENS_DATABASE.map((lens) => <option key={lens.id} value={lens.name}>{lens.mount}</option>)}</datalist><div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 14 }}>{ownedLenses.map((lens) => <span key={lens.id} style={{ display: "inline-flex", alignItems: "center", gap: 7, padding: "8px 10px", borderRadius: 999, background: "#23262B", color: "#ECECEA", fontSize: 12 }}>{lens.name}{lens.dataStatus === "unknown" ? " · 마운트 미확인" : ""}<button onClick={() => setAnswers((prev) => ({ ...prev, ownedLenses: prev.ownedLenses.filter((name) => name !== lens.name) }))} style={{ border: "none", background: "transparent", color: "#8B8F98", cursor: "pointer", padding: 0 }}>×</button></span>)}</div>{ownedLenses.some((lens) => lens.dataStatus === "unknown") && <p style={{ color: "#FFB020", fontSize: 11 }}>DB에 없는 렌즈는 마운트를 임의로 추정하지 않아 호환 시스템의 가격을 0원으로 만들지 않습니다.</p>}<button disabled={!ownedLenses.length} onClick={() => setStep((prev) => prev + 1)} style={{ marginTop: 18, padding: "11px 18px", border: "none", borderRadius: 8, background: "#FFB020", color: "#14161A", fontWeight: 700, opacity: ownedLenses.length ? 1 : .45 }}>렌즈 등록 완료 ({ownedLenses.length})</button></>;
+    return <><button type="button" className="gw-back" onClick={() => setStep((prev) => prev - 1)}>← 이전 질문</button><FirstPurchaseStepHeader current={step + 1} total={questions.length + 1} title={question.title} hint={question.hint} multi /><div className="gw-input-row"><input className="gw-input" list="first-purchase-lens-list" value={answers.lensInput} onChange={(event) => setAnswers((prev) => ({ ...prev, lensInput: event.target.value }))} onKeyDown={(event) => { if (event.key === "Enter") { event.preventDefault(); addLens(); } }} placeholder="예: Sony FE 40mm F2.5 G" /><button type="button" className="gw-button gw-button--primary" onClick={addLens}>추가</button></div><datalist id="first-purchase-lens-list">{CAMERA_LENS_DATABASE.map((lens) => <option key={lens.id} value={lens.name}>{lens.mount}</option>)}</datalist><div className="gw-chip-row" style={{ marginTop: 14 }}>{ownedLenses.map((lens) => <span key={lens.id} style={{ display: "inline-flex", alignItems: "center", gap: 7, padding: "8px 10px", borderRadius: 999, background: "#23262B", color: "#ECECEA", fontSize: 12 }}>{lens.name}{lens.dataStatus === "unknown" ? " · 마운트 미확인" : ""}<button type="button" aria-label={`${lens.name} 삭제`} onClick={() => setAnswers((prev) => ({ ...prev, ownedLenses: prev.ownedLenses.filter((name) => name !== lens.name) }))} style={{ border: "none", background: "transparent", color: "#8B8F98", cursor: "pointer", padding: 0 }}>×</button></span>)}</div>{ownedLenses.some((lens) => lens.dataStatus === "unknown") && <p className="gw-notice">DB에 없는 렌즈는 마운트를 임의로 추정하지 않아 호환 시스템의 가격을 0원으로 만들지 않습니다.</p>}<div className="gw-actions"><button type="button" className="gw-button gw-button--primary" disabled={!ownedLenses.length} onClick={() => setStep((prev) => prev + 1)}>렌즈 등록 완료 ({ownedLenses.length})</button></div></>;
   }
-  if (step < questions.length) return <><button className="gw-back" onClick={step === 0 ? onBack : () => setStep((prev) => prev - 1)}>← {step === 0 ? "시작 화면으로" : "이전 질문"}</button><div style={{ marginTop: 18, color: "#3DDC97", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>첫 구매 진단 · {step + 1}/{questions.length + 1}</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, margin: "10px 0 6px" }}>{question.title}</h2><p style={{ color: "#8B8F98", fontSize: 13, margin: "0 0 20px" }}>{question.hint}</p><div className="gw-grid">{question.options.map((option) => <button key={option} className="gw-card" onClick={() => question.multi ? toggleSubject(option) : choose(option)} style={question.multi && answers.subject.includes(option) ? { borderColor: "#FFB020", background: "rgba(255,176,32,0.1)" } : undefined}><div style={{ fontSize: 14, fontWeight: 600 }}>{option}{question.multi && answers.subject.includes(option) ? "  ✓" : ""}</div></button>)}</div>{question.multi && <button disabled={!answers.subject.length} onClick={() => setStep((prev) => prev + 1)} style={{ marginTop: 18, padding: "11px 18px", border: "none", borderRadius: 8, background: "#FFB020", color: "#14161A", fontWeight: 700, opacity: answers.subject.length ? 1 : .45 }}>선택 완료 ({answers.subject.length})</button>}</>;
-  if (step === questions.length) return <><button className="gw-back" onClick={() => setStep((prev) => prev - 1)}>← 이전 질문</button><div style={{ marginTop: 18, color: "#3DDC97", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>첫 구매 진단 · 마지막</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, margin: "10px 0 6px" }}>카메라 시스템 전체 예산은 얼마인가요?</h2><p style={{ color: "#8B8F98", fontSize: 13, lineHeight: 1.6 }}>바디와 기본 렌즈를 포함한 총예산입니다. 적절한 예산 배분은 장비병자가 제안할게요.</p><div style={{ display: "flex", flexWrap: "wrap", gap: 8, margin: "15px 0" }}>{[100, 150, 200, 300, 500].map((value) => <button key={value} onClick={() => setAnswers((prev) => ({ ...prev, budget: value }))} style={chipStyle(Number(answers.budget) === value)}>{value === 500 ? "500만원+" : `${value}만원`}</button>)}<button onClick={() => setAnswers((prev) => ({ ...prev, budget: "" }))} style={chipStyle(answers.budget === "")}>직접 입력</button></div><input type="number" min="0" value={answers.budget} placeholder="전체 예산 (만원)" onChange={(e) => setAnswers((prev) => ({ ...prev, budget: e.target.value }))} style={{ width: "100%", padding: 12, borderRadius: 8, background: "#1D2024", border: "1px solid #2A2E34", color: "#ECECEA" }} /><div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 15 }}>{["신품 우선", "신품·중고 모두 고려", "중고 우선"].map((option) => <button key={option} onClick={() => setAnswers((prev) => ({ ...prev, condition: option }))} style={chipStyle(answers.condition === option)}>{option}</button>)}</div><button className="gw-back" style={{ color: "#FFB020", marginTop: 16 }} onClick={() => setAdvanced((value) => !value)}>{advanced ? "− 고급 예산 설정 닫기" : "+ 바디와 렌즈 예산을 직접 나눌래요"}</button>{advanced && <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 9, marginTop: 8 }}><input type="number" min="0" placeholder="바디 최대 (만원)" value={answers.bodyBudget} onChange={(e) => setAnswers((prev) => ({ ...prev, bodyBudget: e.target.value }))} style={{ padding: 10, borderRadius: 8, background: "#1D2024", border: "1px solid #2A2E34", color: "#ECECEA" }} /><input type="number" min="0" placeholder="렌즈 최대 (만원)" value={answers.lensBudget} onChange={(e) => setAnswers((prev) => ({ ...prev, lensBudget: e.target.value }))} style={{ padding: 10, borderRadius: 8, background: "#1D2024", border: "1px solid #2A2E34", color: "#ECECEA" }} /></div>}<button onClick={() => setStep((prev) => prev + 1)} style={{ marginTop: 20, padding: "11px 18px", border: "none", borderRadius: 8, background: "#FFB020", color: "#14161A", fontWeight: 700 }}>내 카메라 시스템 보기</button></>;
+  if (step < questions.length) {
+    const multiValues = question.designPicker ? answers.designPreference.filter((value) => value !== "any") : answers.subject;
+    return <><button type="button" className="gw-back" onClick={step === 0 ? onBack : () => setStep((prev) => prev - 1)}>← {step === 0 ? "시작 화면으로" : "이전 질문"}</button><FirstPurchaseStepHeader current={step + 1} total={questions.length + 1} title={question.title} hint={question.hint} multi={Boolean(question.multi)} />{question.designPicker ? <CameraDesignPicker value={answers.designPreference} onChange={(designPreference) => setAnswers((prev) => ({ ...prev, designPreference }))} /> : <div className="gw-grid">{question.options.map((option) => { const active = question.multi && answers.subject.includes(option); return <button type="button" key={option} className={`gw-choice${active ? " is-selected" : ""}`} aria-pressed={active} onClick={() => question.multi ? toggleSubject(option) : choose(option)}><span className="gw-choice-inner"><span className="gw-choice-label">{option}</span><span className="gw-choice-mark" aria-hidden="true">✓</span></span></button>; })}</div>}{question.multi && <div className="gw-actions"><button type="button" className="gw-button gw-button--primary" disabled={!question.designPicker && !multiValues.length} onClick={() => setStep((prev) => prev + 1)}>선택 완료 ({question.designPicker ? (multiValues.length || "상관없음") : multiValues.length})</button></div>}</>;
+  }
+  if (step === questions.length) return <><button type="button" className="gw-back" onClick={() => setStep((prev) => prev - 1)}>← 이전 질문</button><FirstPurchaseStepHeader current={questions.length + 1} total={questions.length + 1} title="카메라 시스템 전체 예산은 얼마인가요?" hint="바디와 기본 렌즈를 포함한 총예산입니다. 적절한 예산 배분은 장비병자가 제안할게요." multi={null} /><div className="gw-selection-guide">금액 하나와 구매 방식을 선택하세요</div><div className="gw-chip-row">{[100, 150, 200, 300, 500].map((value) => <button type="button" key={value} aria-pressed={Number(answers.budget) === value} onClick={() => setAnswers((prev) => ({ ...prev, budget: value }))} style={chipStyle(Number(answers.budget) === value)}>{value === 500 ? "500만원+" : `${value}만원`}</button>)}<button type="button" aria-pressed={answers.budget === ""} onClick={() => setAnswers((prev) => ({ ...prev, budget: "" }))} style={chipStyle(answers.budget === "")}>직접 입력</button></div><input className="gw-input" aria-label="전체 예산 직접 입력" type="number" min="0" value={answers.budget} placeholder="전체 예산 (만원)" onChange={(e) => setAnswers((prev) => ({ ...prev, budget: e.target.value }))} style={{ marginTop: 14 }} /><div className="gw-chip-row" style={{ marginTop: 15 }}>{["신품 우선", "신품·중고 모두 고려", "중고 우선"].map((option) => <button type="button" key={option} aria-pressed={answers.condition === option} onClick={() => setAnswers((prev) => ({ ...prev, condition: option }))} style={chipStyle(answers.condition === option)}>{option}</button>)}</div><button type="button" className="gw-back" style={{ color: "#FFB020", marginTop: 16 }} onClick={() => setAdvanced((value) => !value)}>{advanced ? "− 고급 예산 설정 닫기" : "+ 바디와 렌즈 예산을 직접 나눌래요"}</button>{advanced && <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 9, marginTop: 8 }}><input className="gw-input" type="number" min="0" aria-label="바디 최대 예산" placeholder="바디 최대 (만원)" value={answers.bodyBudget} onChange={(e) => setAnswers((prev) => ({ ...prev, bodyBudget: e.target.value }))} /><input className="gw-input" type="number" min="0" aria-label="렌즈 최대 예산" placeholder="렌즈 최대 (만원)" value={answers.lensBudget} onChange={(e) => setAnswers((prev) => ({ ...prev, lensBudget: e.target.value }))} /></div>}<div className="gw-actions"><button type="button" className="gw-button gw-button--primary" onClick={() => setStep((prev) => prev + 1)}>내 카메라 시스템 보기</button></div></>;
   const best = candidates[0];
   const alternatives = candidates.slice(1);
-  return <><button className="gw-back" onClick={() => setStep(0)}>← 진단 다시 하기</button><div style={{ marginTop: 18, color: "#3DDC97", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>FIRST PURCHASE · SYSTEM RESULT</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 23, margin: "10px 0 6px" }}>가장 먼저 볼 구성을 정리했어요.</h2><p style={{ color: "#8B8F98", fontSize: 13, lineHeight: 1.6 }}>{answers.subject.join(" · ")} · 총예산 {answers.budget}만원 · {hasLens ? "보유 렌즈 활용" : "기본 렌즈 포함"}</p>
-    {best ? <><section style={{ marginTop: 16, background: "linear-gradient(145deg, rgba(255,176,32,0.13), #1D2024 42%)", border: "2px solid #FFB020", borderRadius: 15, padding: 19 }}><div style={{ color: "#FFB020", fontFamily: "'JetBrains Mono', monospace", fontSize: 11, fontWeight: 700 }}>BEST FIRST SYSTEM · 가장 추천하는 첫 시스템</div><h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, margin: "10px 0 2px" }}>{best.body}</h3><div style={{ color: "#ECECEA", fontSize: 14 }}>{best.lens}</div><div style={{ color: "#3DDC97", fontSize: 12, fontWeight: 700, marginTop: 6 }}>{best.style}</div><div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(125px, 1fr))", gap: 8, marginTop: 14 }}><div style={{ background: "#14161A", borderRadius: 9, padding: 11 }}><div style={{ color: "#777D86", fontSize: 9 }}>예상 총가격</div><div style={{ color: "#3DDC97", fontSize: 18, fontWeight: 750, marginTop: 6 }}>{best.total}만원</div><div style={{ color: "#777D86", fontSize: 10, marginTop: 4 }}>{best.priceType} · 예산 잔액 {Number(answers.budget) - best.total}만원</div></div><div style={{ background: "#14161A", borderRadius: 9, padding: 11 }}><div style={{ color: "#777D86", fontSize: 9 }}>촬영 목적 적합도</div><div style={{ color: "#ECECEA", fontSize: 17, fontWeight: 750, marginTop: 6 }}>{best.purposeFit === null ? "데이터 부족" : `${best.purposeFit}%`}</div><div style={{ color: "#777D86", fontSize: 10, marginTop: 4 }}>{answers.subject.join(" · ")}</div></div><div style={{ background: "#14161A", borderRadius: 9, padding: 11 }}><div style={{ color: "#777D86", fontSize: 9 }}>휴대성</div><div style={{ color: "#ECECEA", fontSize: 15, fontWeight: 750, marginTop: 6 }}>{best.portabilityLabel}</div></div><div style={{ background: "#14161A", borderRadius: 9, padding: 11 }}><div style={{ color: "#777D86", fontSize: 9 }}>사진·영상 적합도</div><div style={{ color: "#ECECEA", fontSize: 14, fontWeight: 750, marginTop: 6 }}>{best.mediaFit}</div></div></div><div style={{ background: "rgba(20,22,26,0.72)", borderRadius: 9, padding: "12px 13px", marginTop: 12 }}><b style={{ fontSize: 12 }}>왜 이 시스템인가요?</b><p style={{ color: "#B8BCC3", fontSize: 12, lineHeight: 1.65, margin: "5px 0 0" }}>{best.why}</p></div></section>
-      {alternatives.length > 0 && <section style={{ marginTop: 23 }}><h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 17, margin: "0 0 10px" }}>다른 첫 구매 대안</h3><div style={{ display: "grid", gap: 9 }}>{alternatives.map((system, index) => <details key={system.name} style={{ background: "#1D2024", border: "1px solid #2A2E34", borderRadius: 11, padding: "0 14px" }}><summary style={{ cursor: "pointer", padding: "14px 2px" }}><div style={{ display: "inline-grid", width: "calc(100% - 14px)", gridTemplateColumns: "1fr auto", gap: 10, verticalAlign: "middle" }}><div><div style={{ color: "#FFB020", fontFamily: "'JetBrains Mono', monospace", fontSize: 9 }}>대안 {index + 2} · {system.style}</div><div style={{ fontWeight: 700, fontSize: 14, marginTop: 5 }}>{system.body} + {system.lens}</div></div><div style={{ color: "#3DDC97", fontWeight: 750, fontSize: 14 }}>{system.total}만원</div></div></summary><div style={{ borderTop: "1px solid #2A2E34", padding: "11px 0 14px" }}><p style={{ color: "#AEB2B9", fontSize: 11, lineHeight: 1.6, marginTop: 0 }}>{system.why}</p><div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}><span style={chipStyle(false)}>촬영 목적 {system.purposeFit === null ? "데이터 부족" : `${system.purposeFit}%`}</span><span style={chipStyle(false)}>{system.portabilityLabel}</span><span style={chipStyle(false)}>{system.mediaFit}</span></div><div style={{ color: "#777D86", fontSize: 10, marginTop: 10 }}>{system.priceType} · 예산 잔액 {Number(answers.budget) - system.total}만원</div></div></details>)}</div></section>}</> : <div style={{ marginTop: 16, background: "#1D2024", border: "1px solid #2A2E34", borderRadius: 10, padding: 16, color: "#8B8F98", fontSize: 13 }}>현재 조건과 총예산 안에서는 추천 시스템을 찾지 못했어요. 예산 또는 구매 방식을 조정해 보세요.</div>}
-    <p style={{ color: "#656B74", fontSize: 11, lineHeight: 1.6, marginTop: 14 }}>가격과 구성은 MVP용 참고 데이터입니다. 점수보다 추천 이유와 실제 총비용을 먼저 확인해주세요.</p></>;
+  const budgetLimit = Number(answers.budget || 0);
+  const stretchCandidates = answers.condition === "신품 우선" ? [] : rankFirstPurchaseSystems({ ...answers, budget: budgetLimit + 50 }, { advanced, ownedLenses })
+    .filter((system) => system.total > budgetLimit && system.total <= budgetLimit + 50 && !candidates.some((candidate) => candidate.name === system.name))
+    .slice(0, 2);
+  return <><button type="button" className="gw-back" onClick={() => setStep(0)}>← 진단 다시 하기</button><header className="gw-result-head"><div className="gw-eyebrow">FIRST PURCHASE · SYSTEM RESULT</div><h2 className="gw-result-title">첫 시스템 추천 결과</h2><p className="gw-copy">{answers.subject.join(" · ")} · 총예산 {answers.budget}만원 · {hasLens ? "보유 렌즈 활용" : "기본 렌즈 포함"}</p></header>
+    {best ? <><section className="gw-result-hero"><div className="gw-result-kicker">BEST FIRST SYSTEM · 가장 추천하는 첫 구성</div><h3 className="gw-result-name">{best.body}</h3><div className="gw-copy" style={{ color: "#ECECEA" }}>{best.lens}</div><div className="gw-verdict-badge">✓ {best.style}</div><div className="gw-goal-card"><div className="gw-goal-card-label">이 구성을 먼저 볼 이유</div><div className="gw-goal-card-value">{best.portabilityLabel} · {best.mediaFit}</div><div className="gw-goal-card-detail">{best.why}</div></div><FirstPurchasePriceSummary system={best} condition={answers.condition} /><div className="gw-metric-grid"><div className="gw-metric"><div className="gw-metric-label">촬영 목적 적합도</div><div className="gw-metric-value">{best.purposeFit === null ? "데이터 부족" : `${best.purposeFit}%`}</div><div className="gw-metric-detail">{answers.subject.join(" · ")}</div></div><div className="gw-metric"><div className="gw-metric-label">대표 조합 무게</div><div className="gw-metric-value">{best.systemWeight === null ? "데이터 부족" : `${best.systemWeight}g`}</div><div className="gw-metric-detail">{best.portabilityLabel}</div></div><div className="gw-metric"><div className="gw-metric-label">예산 잔액</div><div className="gw-metric-value">{Number(answers.budget) - best.total}만원</div><div className="gw-metric-detail">{best.priceType} 추천 계산 가격 기준</div></div></div></section>
+      {stretchCandidates.length > 0 && <section className="gw-budget-stretch"><div><div className="gw-result-kicker">BUDGET EDGE · 예산 경계의 후보</div><h3 className="gw-section-title">조금 더 투자하면 보이는 구성</h3><p className="gw-section-copy">기본 추천을 바꾸지 않고, 현재 예산보다 50만원 이내에 있는 후보만 최대 2개 보여드립니다.</p></div><div className="gw-budget-stretch-list">{stretchCandidates.map((system) => <div className="gw-budget-stretch-item" key={system.name}><div><b>+{system.priceType === "중고" ? "약 " : ""}{system.total - budgetLimit}만원</b><span>{system.body} + {system.lens}</span></div><span>{system.priceType} 참고가 {formatSystemReferencePrice(system)}</span></div>)}</div></section>}
+      {alternatives.length > 0 && <section className="gw-alternatives"><h3 className="gw-section-title">다른 첫 구매 대안</h3><p className="gw-section-copy">가격, 휴대성, 사진·영상 성격이 다른 후보입니다. 추천 순위와 구성은 그대로 유지했습니다.</p><div className="gw-alternative-list">{alternatives.map((system, index) => <details key={system.name} className="gw-alternative"><summary><div className="gw-alternative-summary"><div><div className="gw-result-kicker">대안 {index + 2} · {system.style}</div><div className="gw-alternative-name">{system.body} + {system.lens}</div><div className="gw-alternative-reason">{system.portabilityLabel} · {system.mediaFit}</div></div><FirstPurchasePriceSummary system={system} condition={answers.condition} compact /></div></summary><div className="gw-alternative-body"><p className="gw-section-copy">{system.why}</p><FirstPurchasePriceSummary system={system} condition={answers.condition} /><div className="gw-metric-grid"><div className="gw-metric"><div className="gw-metric-label">촬영 목적</div><div className="gw-metric-value">{system.purposeFit === null ? "데이터 부족" : `${system.purposeFit}%`}</div></div><div className="gw-metric"><div className="gw-metric-label">대표 조합 무게</div><div className="gw-metric-value">{system.systemWeight === null ? "데이터 부족" : `${system.systemWeight}g`}</div></div><div className="gw-metric"><div className="gw-metric-label">예산 잔액</div><div className="gw-metric-value">{Number(answers.budget) - system.total}만원</div></div></div></div></details>)}</div></section>}</> : <div className="gw-notice" style={{ marginTop: 16 }}>현재 조건과 총예산 안에서는 추천 시스템을 찾지 못했어요. 예산 또는 구매 방식을 조정해 보세요.</div>}
+    <p className="gw-section-copy" style={{ marginTop: 14 }}>가격과 구성은 MVP용 참고 데이터입니다. 추천 이유와 선택한 구매 방식에 따른 실제 표시 가격을 함께 확인해주세요.</p></>;
 }
 
 function CameraFilterPanel({ onBack, journey }) {
@@ -238,7 +252,7 @@ function CameraFilterPanel({ onBack, journey }) {
     if (family === "렌즈교환식" && compactOnly && !item.isCompactBody) return false;
     return Object.entries(filters).every(([facet, selected]) => {
       if (selected.length === 0) return true;
-      if (facet === "purpose") return item.purpose.some((p) => selected.includes(p));
+      if (facet === "purpose") return (item.purpose || []).some((p) => selected.includes(p));
       return selected.includes(item[facet]);
     });
   });
@@ -258,7 +272,7 @@ function CameraFilterPanel({ onBack, journey }) {
         cameras: selected.map((item) => {
           const detail = CAMERA_DETAILS[item.name];
           return { name: item.name, values: {
-            "신품 참고가": `${detail.newPrice}만원`, "중고 참고가": `${detail.usedPrice}만원`,
+            "신품 참고가": formatReferencePrice(detail.newPrice), "중고 참고가": formatReferencePrice(detail.usedPrice, true),
             "센서": item.sensor, "무게": detail.weight,
             "이 용도의 장점": detail.strength, "고려할 점": detail.caution,
           }};
@@ -273,8 +287,8 @@ function CameraFilterPanel({ onBack, journey }) {
 
   return (
     <>
-      <button className="gw-back" onClick={onBack}>← 시작 화면으로</button>
-      {journey && <div style={{ marginTop: 12, padding: "13px 15px", borderRadius: 10, background: "rgba(255,176,32,0.08)", border: "1px solid rgba(255,176,32,0.24)" }}><div style={{ color: "#FFB020", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }}>{journey.kicker}</div><div style={{ color: "#ECECEA", fontSize: 14, fontWeight: 600, marginTop: 5 }}>{journey.title}</div><div style={{ color: "#8B8F98", fontSize: 12, marginTop: 5, lineHeight: 1.5 }}>{journey.description}</div></div>}
+      <button type="button" className="gw-back" onClick={onBack}>← 시작 화면으로</button>
+      {journey && <header className="gw-result-head"><div className="gw-eyebrow">{journey.kicker}</div><h2 className="gw-question-title">{journey.title}</h2><p className="gw-helper">{journey.description}</p><div className="gw-selection-guide">복수 선택 · 기존 장비와 다른 역할을 찾을 조건을 고르세요</div></header>}
 
       {/* 똑딱이 / 렌즈교환식 */}
       <div style={{ marginTop: 16, marginBottom: 18 }}>
@@ -284,7 +298,10 @@ function CameraFilterPanel({ onBack, journey }) {
         <div style={{ display: "flex", gap: 10 }}>
           {FAMILY_OPTIONS.map((f) => (
             <button
+              type="button"
               key={f}
+              className={`gw-choice${family === f ? " is-selected" : ""}`}
+              aria-pressed={family === f}
               onClick={() => pickFamily(f)}
               style={{
                 flex: 1,
@@ -318,7 +335,7 @@ function CameraFilterPanel({ onBack, journey }) {
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {CAMERA_FACETS[facet].map((value) => (
-              <button key={value} onClick={() => toggleFacet(facet, value)} style={chipStyle(filters[facet].includes(value))}>
+              <button type="button" key={value} aria-pressed={filters[facet].includes(value)} onClick={() => toggleFacet(facet, value)} style={chipStyle(filters[facet].includes(value))}>
                 {value}
               </button>
             ))}
@@ -327,25 +344,24 @@ function CameraFilterPanel({ onBack, journey }) {
       ))}
 
       {activeCount > 0 && (
-        <button className="gw-back" style={{ color: "#FFB020" }} onClick={clearAll}>
+        <button type="button" className="gw-back" style={{ color: "#FFB020" }} onClick={clearAll}>
           ↺ 필터 초기화 ({activeCount})
         </button>
       )}
 
       {/* 결과 */}
-      <div style={{ marginTop: 22, borderTop: "1px solid #2A2E34", paddingTop: 18 }}>
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#3DDC97", marginBottom: 12 }}>
-          {"> "}{results.length}개 매칭됨 · 비교 담기 {compareList.length}/4
-        </div>
+      <section className="gw-alternatives" style={{ paddingTop: 18, borderTop: "1px solid #2A2E34" }}>
+        <h3 className="gw-section-title">역할 추가 후보</h3>
+        <p className="gw-section-copy">{results.length}개 매칭 · 비교 목록 {compareList.length}/4 · 주요 제원과 가격대는 현재 제공되는 데이터만 표시합니다. 새 모델의 용도·컴팩트 분류가 미확인인 경우 해당 필터에서는 제외됩니다.</p>
 
         {results.length === 0 ? (
           <p style={{ color: "#8B8F98", fontSize: 13 }}>조건에 맞는 카메라가 없어요. 필터를 조금 줄여보세요.</p>
         ) : (
-          <div style={{ display: "grid", gap: 10 }}>
+          <div className="gw-alternative-list">
             {results.map((item) => {
               const inCompare = compareList.includes(item.name);
               return (
-                <div key={item.name} style={{ background: "#1D2024", border: inCompare ? "1px solid #3DDC97" : "1px solid #2A2E34", borderRadius: 10, padding: "14px 16px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
+                <div key={item.name} className="gw-card" style={{ borderColor: inCompare ? "#3DDC97" : undefined, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, cursor: "default" }}>
                   <div>
                     <div style={{ fontSize: 15, fontWeight: 600 }}>{item.name}</div>
                     <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#8B8F98", marginTop: 6 }}>
@@ -353,6 +369,8 @@ function CameraFilterPanel({ onBack, journey }) {
                     </div>
                   </div>
                   <button
+                    type="button"
+                    aria-pressed={inCompare}
                     onClick={() => toggleCompare(item.name)}
                     disabled={!inCompare && compareList.length >= 4}
                     style={{
@@ -378,27 +396,27 @@ function CameraFilterPanel({ onBack, journey }) {
         <p style={{ color: "#8B8F98", fontSize: 12, marginTop: 14, lineHeight: 1.6 }}>
           가격은 시연용 참고가(만원)예요. 실제 구매 전에는 판매처와 중고 시세를 꼭 확인하세요.
         </p>
-      </div>
+      </section>
 
       {compareList.length > 0 && (() => {
         const choice = CAMERA_DETAILS[compareList[0]];
-        const shortfall = Math.max(0, choice.newPrice - Number(cash || 0));
-        const months = Number(monthlySaving) > 0 ? Math.ceil(shortfall / Number(monthlySaving)) : "-";
-        return <div style={{ marginTop: 22, background: "#1D2024", border: "1px solid #2A2E34", borderRadius: 10, padding: 18 }}>
-          <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 17, fontWeight: 700 }}>첫 선택 기준 <span style={{ color: "#FFB020" }}>자금 계획</span></div>
-          <p style={{ color: "#8B8F98", fontSize: 12, margin: "7px 0 14px" }}>{compareList[0]} 신품 참고가 {choice.newPrice}만원 기준</p>
+        const { shortfall, months } = calculateFunding(choice.newPrice, cash, monthlySaving);
+        return <section className="gw-result-hero" style={{ marginTop: 22 }}>
+          <div className="gw-result-kicker">첫 선택 기준 · 자금 계획</div>
+          <h3 className="gw-section-title" style={{ marginTop: 8 }}>{compareList[0]}</h3>
+          <p style={{ color: "#8B8F98", fontSize: 12, margin: "7px 0 14px" }}>{compareList[0]} 신품 참고가 {formatReferencePrice(choice.newPrice)} 기준</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
             <label style={{ color: "#8B8F98", fontSize: 12 }}>현재 마련한 금액 (만원)<input type="number" min="0" value={cash} onChange={(e) => setCash(e.target.value)} style={{ ...{ width: "100%", marginTop: 6, padding: 9, borderRadius: 7, background: "#14161A", border: "1px solid #2A2E34", color: "#ECECEA" } }} /></label>
             <label style={{ color: "#8B8F98", fontSize: 12 }}>월 저축 가능액 (만원)<input type="number" min="0" value={monthlySaving} onChange={(e) => setMonthlySaving(e.target.value)} style={{ ...{ width: "100%", marginTop: 6, padding: 9, borderRadius: 7, background: "#14161A", border: "1px solid #2A2E34", color: "#ECECEA" } }} /></label>
           </div>
-          <div style={{ color: "#3DDC97", fontFamily: "'JetBrains Mono', monospace", fontSize: 12, marginTop: 14 }}>부족액 {shortfall}만원 · 목표까지 약 {months}개월</div>
-        </div>;
+          <div className="gw-goal-card"><div className="gw-goal-card-label">현재 자금 기준</div><div className="gw-goal-card-value">{shortfall === null ? "부족액 계산 불가" : `부족액 ${shortfall}만원`}</div><div className="gw-goal-card-detail">{months === null ? "가격 또는 저축액을 확인해주세요" : `월 저축액 기준 목표까지 약 ${months}개월`}</div></div>
+        </section>;
       })()}
 
       {/* AI 비교하기 */}
       {compareList.length >= 2 && (
-        <div style={{ marginTop: 22, borderTop: "1px solid #2A2E34", paddingTop: 18 }}>
-          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 18, fontWeight: 700, margin: "0 0 10px" }}>
+        <section className="gw-alternatives" style={{ borderTop: "1px solid #2A2E34", paddingTop: 18 }}>
+          <h2 className="gw-section-title">
             카메라 <span style={{ color: "#FFB020" }}>AI 비교하기</span>
           </h2>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#8B8F98", marginBottom: 10 }}>
@@ -433,6 +451,8 @@ function CameraFilterPanel({ onBack, journey }) {
           />
 
           <button
+            type="button"
+            className="gw-button gw-button--primary"
             onClick={runAiComparison}
             disabled={aiLoading}
             style={{
@@ -454,7 +474,7 @@ function CameraFilterPanel({ onBack, journey }) {
           {aiError && <p style={{ color: "#FF6B6B", fontSize: 13, marginTop: 12 }}>{aiError}</p>}
 
           {aiResult && (
-            <div style={{ marginTop: 18, overflowX: "auto" }}>
+            <div style={{ marginTop: 18, overflowX: "auto" }} tabIndex="0" aria-label="카메라 비교표">
               <table style={{ borderCollapse: "collapse", width: "100%", fontSize: 13 }}>
                 <thead>
                   <tr>
@@ -485,7 +505,7 @@ function CameraFilterPanel({ onBack, journey }) {
               </table>
             </div>
           )}
-        </div>
+        </section>
       )}
     </>
   );
@@ -861,17 +881,17 @@ const CAMERA_JOURNEYS = [
 
 function CameraMvpHome({ onBegin }) {
   return <>
-    <div style={{ fontFamily: "'JetBrains Mono', monospace", color: "#3DDC97", fontSize: 11, letterSpacing: "0.08em", marginBottom: 15 }}>CAMERA MVP · 0.1</div>
-    <div role="note" style={{ marginBottom: 18, padding: "11px 13px", border: "1px solid rgba(255,176,32,0.34)", borderRadius: 9, background: "rgba(255,176,32,0.08)", color: "#D8C7A2", fontSize: 12, lineHeight: 1.55 }}>
+    <div className="gw-eyebrow">CAMERA MVP · 0.2</div>
+    <div role="note" className="gw-notice gw-home-note" style={{ marginTop: 15 }}>
       초기 MVP입니다. 현재 일부 카메라와 렌즈만 지원하며 가격은 참고 데이터입니다.
     </div>
-    <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 30, lineHeight: 1.18, margin: "0 0 12px" }}>카메라 구매,<br /><span style={{ color: "#FFB020" }}>바꾸기 전에 판단하세요.</span></h1>
-    <p style={{ color: "#AEB2B9", fontSize: 14, margin: "0 0 29px", lineHeight: 1.7 }}>장비병자는 무엇을 사야 할지뿐 아니라, 지금 사는 게 맞는지까지 함께 판단합니다.</p>
-    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#8B8F98", letterSpacing: "0.06em", marginBottom: 10 }}>무엇을 도와드릴까요?</div>
-    <div style={{ display: "grid", gap: 10 }}>
-      {CAMERA_JOURNEYS.map((journey) => <button key={journey.id} className="gw-card" disabled={journey.comingSoon} onClick={() => onBegin(journey)} style={{ display: "flex", alignItems: "center", gap: 15, opacity: journey.comingSoon ? 0.5 : 1, cursor: journey.comingSoon ? "not-allowed" : "pointer" }}>
-        <div style={{ color: journey.comingSoon ? "#8B8F98" : "#FFB020", fontFamily: "'JetBrains Mono', monospace", fontSize: 13, fontWeight: 700 }}>{journey.icon}</div>
-        <div style={{ textAlign: "left" }}><div style={{ fontSize: 15, fontWeight: 600 }}>{journey.title}</div><div style={{ color: "#8B8F98", fontSize: 12, marginTop: 5, lineHeight: 1.45 }}>{journey.description}</div></div>
+    <h1 className="gw-page-title">카메라 구매,<br /><span style={{ color: "#FFB020" }}>바꾸기 전에 판단하세요.</span></h1>
+    <p className="gw-copy" style={{ margin: "0 0 29px" }}>장비병자는 무엇을 사야 할지뿐 아니라, 지금 사는 게 맞는지까지 함께 판단합니다.</p>
+    <div className="gw-badge" style={{ marginBottom: 10 }}>무엇을 도와드릴까요?</div>
+    <div className="gw-journey-list">
+      {CAMERA_JOURNEYS.map((journey) => <button type="button" key={journey.id} className="gw-card gw-journey-card" disabled={journey.comingSoon} onClick={() => onBegin(journey)}>
+        <div className="gw-journey-number" style={{ color: journey.comingSoon ? "#8B8F98" : undefined }}>{journey.icon}</div>
+        <div><div className="gw-journey-title">{journey.title}</div><div className="gw-journey-description">{journey.description}</div></div><div className="gw-journey-arrow" aria-hidden="true">→</div>
       </button>)}
     </div>
     <p style={{ color: "#656B74", fontSize: 11, marginTop: 18, lineHeight: 1.55 }}>현재는 카메라 의사결정 MVP에 집중하고 있어요. PC·주변기기 기능은 이후 단계에서 다시 추가할 예정입니다.</p>
@@ -907,26 +927,8 @@ export default function GearWizard() {
   function beginCameraJourney(journey) { setCameraJourney(journey); setCategory("camera"); setStep(1); }
 
   return (
-    <div style={{ minHeight: "100%", background: "#14161A", color: "#ECECEA", fontFamily: "'Inter', system-ui, sans-serif", padding: "40px 20px 60px", display: "flex", justifyContent: "center" }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
-        :lang(ko) { font-family: 'Noto Sans KR', sans-serif !important; }
-        .gw-card { background: #1D2024; border: 1px solid #2A2E34; border-radius: 10px; padding: 20px 18px; cursor: pointer; transition: border-color 120ms ease, transform 120ms ease, background 120ms ease; text-align: left; }
-        .gw-card:hover { border-color: #FFB020; background: #23262B; transform: translateY(-2px); }
-        .gw-card:disabled:hover { border-color: #2A2E34; background: #1D2024; transform: none; }
-        .gw-card:focus-visible { outline: 2px solid #FFB020; outline-offset: 2px; }
-        .gw-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8B8F98; }
-        .gw-back { background: none; border: none; color: #8B8F98; font-family: 'JetBrains Mono', monospace; font-size: 12px; cursor: pointer; padding: 6px 0; }
-        .gw-back:hover { color: #ECECEA; }
-        .gw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
-        @media (max-width: 520px) {
-          .gw-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
-          .gw-card { padding: 15px 12px; min-width: 0; }
-          details > summary { overflow-wrap: anywhere; }
-        }
-      `}</style>
-
-      <div style={{ width: "100%", maxWidth: 640 }}>
+    <div className="gw-app">
+      <div className="gw-shell">
         {step > 0 && !isFilterMode && !isCustomFlow && (
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28, fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.06em", color: "#8B8F98", flexWrap: "wrap" }}>
             {STEP_LABEL.map((label, i) => (
@@ -946,8 +948,8 @@ export default function GearWizard() {
         )}
 
         {step === 0 ? <CameraMvpHome onBegin={beginCameraJourney} /> : <>
-          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 26, margin: "0 0 6px" }}>장비병자 <span style={{ color: "#FFB020" }}>카메라 진단</span></h1>
-          <p style={{ color: "#8B8F98", fontSize: 14, margin: "0 0 26px" }}>선택한 시작점에 맞춰 후보를 좁혀볼게요. 조건은 여러 개 골라도 됩니다.</p>
+          <h1 className="gw-page-title" style={{ fontSize: 28 }}>장비병자 <span style={{ color: "#FFB020" }}>카메라 진단</span></h1>
+          <p className="gw-copy" style={{ margin: "0 0 26px" }}>선택한 시작점에 맞춰 후보를 좁혀볼게요. 각 질문에서 단일·복수 선택 여부를 안내합니다.</p>
         </>}
 
         {step === 1 && isFilterMode && cameraJourney?.id === "first" && <FirstPurchaseSystemDiagnosis onBack={reset} />}

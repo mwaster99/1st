@@ -154,6 +154,9 @@ test("CASE D: rangefinder preference breaks comparable ties with a bounded soft 
   assert.equal(scoreFor(neutral, slr.id), scoreFor(neutral, rangefinder.id), "any must not favor a design tag");
   assert.ok(scoreFor(preferred, rangefinder.id) > scoreFor(preferred, slr.id));
   assert.ok(scoreFor(preferred, rangefinder.id) - scoreFor(neutral, rangefinder.id) <= 3, "design cannot dominate the primary decision");
+  const multiple = scoredCandidates({ ...input, designPreference: ["slr", "rangefinder"] }, catalog);
+  assert.ok(scoreFor(multiple, rangefinder.id) - scoreFor(neutral, rangefinder.id) <= 3, "multiple matches must not stack the design bonus");
+  assert.ok(scoreFor(multiple, slr.id) - scoreFor(neutral, slr.id) <= 3, "each acceptable style keeps the original bonus ceiling");
   assert.equal(generateUpgradeScenarios({ ...input, designPreference: "rangefinder" }, catalog)[0].targetSystem.body.id, rangefinder.id);
 
   const inferior = { ...rangefinder, weight: 1100, usedPrice: 1000 };
@@ -201,8 +204,8 @@ test("KEEP/SELL/BUY are disjoint ownership transitions with unique target lenses
   const raw = generateScenarioCandidates(input);
   assert.ok(raw.some((scenario) => scenario.kind === "lens-only" && scenario.targetSystem.primaryLens.id === ownedLightLens.id), "switching to an already owned lens is a real option");
   for (const scenario of raw) {
-    const currentIds = new Set([scenario.currentSystem.body, ...scenario.currentSystem.lenses].map((item) => item.id));
-    const targetItems = [scenario.targetSystem.body, ...scenario.targetSystem.lenses];
+    const currentIds = new Set([scenario.currentSystem.body, ...scenario.currentSystem.lenses.filter((lens) => !lens.includedInBodyId)].map((item) => item.id));
+    const targetItems = [scenario.targetSystem.body, ...scenario.targetSystem.lenses.filter((lens) => !lens.includedInBodyId)];
     const targetIds = new Set(targetItems.map((item) => item.id));
     assert.equal(targetIds.size, targetItems.length, `${scenario.id}: duplicate target gear`);
     const groups = [scenario.keep, scenario.sell, scenario.buy].map((items) => new Set(items.map((item) => item.id)));

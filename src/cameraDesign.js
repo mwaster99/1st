@@ -8,7 +8,9 @@ export const DESIGN_OPTIONS = [
 ];
 
 export function scoreDesignPreference(body, preference = "any") {
-  if (!preference || preference === "any") return 0;
+  const preferences = Array.isArray(preference) ? [...new Set(preference.filter(Boolean))] : preference ? [preference] : [];
+  if (!preferences.length || preferences.includes("any")) return 0;
   if (!Array.isArray(body?.designTags) || !body.designTags.length) return null;
-  return body.designTags.includes(preference) ? 100 : 0;
+  // 복수 선호는 하나라도 일치하면 기존과 같은 점수입니다. 일치 개수만큼 중복 가산하지 않습니다.
+  return preferences.some((item) => body.designTags.includes(item)) ? 100 : 0;
 }

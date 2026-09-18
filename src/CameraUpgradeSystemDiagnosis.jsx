@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import CameraBodyPicker from "./CameraBodyPicker.jsx";
-import { CAMERA_LENSES, LENS_BY_NAME, createUnknownLens } from "./cameraData.js";
+import CameraDesignPicker from "./CameraDesignPicker.jsx";
+import { CAMERA_LENSES, LENS_BY_NAME, createUnknownLens, getIntegratedLens } from "./cameraData.js";
 import { buildScenarioExplanation, generateUpgradeScenarios } from "./cameraScenarioEngine.js";
-import { DESIGN_OPTIONS } from "./cameraDesign.js";
 
 const PAIN_OPTIONS = ["더 가볍고 작은 카메라를 원해요", "화질을 더 높이고 싶어요", "AF가 더 좋아졌으면 해요", "영상 성능을 높이고 싶어요", "배터리가 오래 갔으면 해요", "렌즈 선택지가 아쉬워요", "새로운 촬영 경험이 필요해요"];
 const PORTABILITY_DETAIL_OPTIONS = ["바디 무게", "렌즈 무게", "전체 부피", "가방에 넣기 어려움", "장시간 들고 다니기 힘듦"];
@@ -21,22 +21,22 @@ function chipStyle(active) {
 }
 
 function NextButton({ disabled = false, children, onClick }) {
-  return <button disabled={disabled} onClick={onClick} style={{ marginTop: 18, padding: "11px 18px", border: "none", borderRadius: 8, background: "#FFB020", color: "#14161A", fontWeight: 700, cursor: disabled ? "not-allowed" : "pointer", opacity: disabled ? 0.45 : 1 }}>{children}</button>;
+  return <div className="gw-actions"><button type="button" className="gw-button gw-button--primary" disabled={disabled} onClick={onClick}>{children}</button></div>;
 }
 
 function StepHeader({ current, total, phase, title, hint }) {
   const progress = Math.round((current / total) * 100);
-  return <div style={{ marginTop: 16 }}>
-    <div style={{ display: "flex", justifyContent: "space-between", gap: 10, color: "#3DDC97", ...mono, fontSize: 10 }}><span>SYSTEM UPGRADE · {current}/{total}</span><span>{phase}</span></div>
-    <div style={{ height: 4, borderRadius: 999, background: "#252930", marginTop: 8, overflow: "hidden" }}><div style={{ width: progress + "%", height: "100%", borderRadius: 999, background: "#FFB020", transition: "width 180ms ease" }} /></div>
-    <div style={{ display: "flex", gap: 6, marginTop: 7, color: "#656B74", ...mono, fontSize: 8, flexWrap: "wrap" }}>{PHASES.map((item, index) => <span key={item} style={{ color: item === phase ? "#FFB020" : "#656B74" }}>{item}{index < PHASES.length - 1 ? " →" : ""}</span>)}</div>
-    <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, margin: "14px 0 6px" }}>{title}</h2>
-    <p style={{ color: "#8B8F98", fontSize: 13, lineHeight: 1.6, marginTop: 0 }}>{hint}</p>
+  return <div className="gw-flow-progress">
+    <div className="gw-progress-meta"><span>SYSTEM UPGRADE · {current}/{total}</span><span>{phase}</span></div>
+    <div className="gw-progress-track" role="progressbar" aria-label="기변 진단 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow={progress}><div className="gw-progress-value" style={{ width: progress + "%" }} /></div>
+    <div className="gw-progress-phases" aria-hidden="true">{PHASES.map((item, index) => <span key={item} className={item === phase ? "is-current" : undefined}>{item}{index < PHASES.length - 1 ? " →" : ""}</span>)}</div>
+    <h2 className="gw-question-title">{title}</h2>
+    <p className="gw-helper">{hint}</p>
   </div>;
 }
 
 function ChoiceGrid({ options, selected, multi, onSelect }) {
-  return <div className="gw-grid">{options.map((option) => { const value = typeof option === "string" ? option : option.value; const label = typeof option === "string" ? option : option.label; const active = multi ? selected.includes(value) : selected === value; return <button key={value} className="gw-card" onClick={() => onSelect(value)} style={active ? { borderColor: "#FFB020", background: "rgba(255,176,32,0.1)" } : undefined}>{label}{active ? "  ✓" : ""}</button>; })}</div>;
+  return <><div className="gw-selection-guide">{multi ? "복수 선택 · 모두 고른 뒤 완료를 누르세요" : "단일 선택 · 고르면 다음 질문으로 이동합니다"}</div><div className="gw-grid">{options.map((option) => { const value = typeof option === "string" ? option : option.value; const label = typeof option === "string" ? option : option.label; const active = multi ? selected.includes(value) : selected === value; return <button type="button" key={value} className={`gw-choice${active ? " is-selected" : ""}`} aria-pressed={active} onClick={() => onSelect(value)}><span className="gw-choice-inner"><span className="gw-choice-label">{label}</span><span className="gw-choice-mark" aria-hidden="true">✓</span></span></button>; })}</div></>;
 }
 
 function isValidBudget(value) {
@@ -50,21 +50,22 @@ function DiagnosisSummary({ body, primaryLens, pains, portabilityDetails, extraB
   if (portabilityDetails.length) items.push({ label: "휴대성", value: portabilityDetails.join(" · ") });
   if (budgetTouched) items.push({ label: "추가 예산", value: isValidBudget(extraBudget) ? Number(extraBudget) + "만원" : "금액 확인 필요" });
   if (!items.length) return null;
-  return <div style={{ background: "#191C20", border: "1px solid #292E35", borderRadius: 10, padding: "10px 12px", display: "grid", gap: 5, marginBottom: 8 }}>{items.map((item) => <div key={item.label} style={{ display: "grid", gridTemplateColumns: "54px 1fr", gap: 8, fontSize: 11, lineHeight: 1.45 }}><span style={{ color: "#656B74", ...mono }}>{item.label}</span><span style={{ color: "#AEB2B9" }}>{item.value}</span></div>)}</div>;
+  return <div className="gw-summary">{items.map((item) => <div key={item.label} className="gw-summary-row"><span className="gw-summary-label">{item.label}</span><span className="gw-summary-value">{item.value}</span></div>)}</div>;
 }
 
 function GearColumn({ code, label, items }) {
-  return <div style={{ background: "#14161A", borderRadius: 8, padding: 9 }}><span style={{ color: "#8B8F98", ...mono, fontSize: 9 }}>{label} · {code}</span><div style={{ color: "#ECECEA", marginTop: 5, lineHeight: 1.5, fontSize: 11 }}>{items.map((item) => item.name).join(" · ") || "—"}</div></div>;
+  return <div className="gw-gear-column" data-action={code.toLowerCase()}><span className="gw-gear-code">{code} · {label}</span><ul className="gw-gear-items">{items.length ? items.map((item) => <li key={item.id || item.name}>• {item.name}</li>) : <li>해당 장비 없음</li>}</ul></div>;
 }
 
-function formatPrice(value) {
-  if (!value.missing.length) return value.known + "만원";
+function formatPrice(value, approximate = false) {
+  if (!value.missing.length) return (approximate && value.known > 0 ? "약 " : "") + value.known + "만원";
   const missing = value.missing.join(", ");
   return value.known > 0 ? "최소 " + value.known + "만원 + 가격 미확인" : "계산 불가 · " + missing + " 가격 미확인";
 }
 
 function formatAdditionalCost(scenario) {
-  return scenario.cost.additionalCost === null ? "정확한 계산 불가" : scenario.cost.additionalCost + "만원";
+  if (scenario.cost.additionalCost === null) return "정확한 계산 불가";
+  return (scenario.cost.additionalCost > 0 ? "약 " : "") + scenario.cost.additionalCost + "만원";
 }
 
 function combinationName(scenario) {
@@ -83,10 +84,10 @@ function collectChanges(scenario) {
 }
 
 function ChangeGroup({ status, title, items }) {
-  const colors = { improved: "#3DDC97", maintained: "#8BC5FF", degraded: "#FF8A80", unknown: "#AEB2B9" };
   const icons = { improved: "↑", maintained: "=", degraded: "↓", unknown: "?" };
+  const labels = { improved: "개선", maintained: "유지", degraded: "저하", unknown: "데이터 부족" };
   if (!items.length) return null;
-  return <div style={{ marginTop: 12 }}><div style={{ color: colors[status], ...mono, fontSize: 10, fontWeight: 700 }}>{icons[status]} {title}</div><div style={{ display: "grid", gap: 6, marginTop: 7 }}>{items.map((item, index) => <div key={item.key + "-" + index} style={{ background: "#14161A", borderRadius: 8, padding: "9px 10px" }}><div style={{ display: "flex", justifyContent: "space-between", gap: 9, flexWrap: "wrap", fontSize: 11 }}><b>{item.label}</b><span style={{ color: colors[status] }}>{item.summary}</span></div><div style={{ color: "#777D86", fontSize: 10, lineHeight: 1.5, marginTop: 4 }}>{(item.details || [item.detail]).filter(Boolean).join(" · ")}</div></div>)}</div></div>;
+  return <section className="gw-change-group"><div className={`gw-status gw-status--${status}`}>{icons[status]} {labels[status]} · {title}</div><div className="gw-change-list">{items.map((item, index) => <div key={item.key + "-" + index} className="gw-change-item"><div className="gw-change-main"><b>{item.label}</b><span className="gw-change-summary">{item.summary}</span></div><div className="gw-change-detail">{(item.details || [item.detail]).filter(Boolean).join(" · ")}</div></div>)}</div></section>;
 }
 
 function ChangeGroups({ scenario }) {
@@ -100,7 +101,28 @@ function ChangeGroups({ scenario }) {
 }
 
 function MainMetric({ label, value, detail, accent = "#ECECEA" }) {
-  return <div style={{ background: "#14161A", borderRadius: 9, padding: "11px 12px", minHeight: 76 }}><div style={{ color: "#777D86", ...mono, fontSize: 9 }}>{label}</div><div style={{ color: accent, fontSize: 16, fontWeight: 750, marginTop: 7, lineHeight: 1.3 }}>{value}</div>{detail && <div style={{ color: "#777D86", fontSize: 10, marginTop: 5, lineHeight: 1.45 }}>{detail}</div>}</div>;
+  return <div className="gw-metric"><div className="gw-metric-label">{label}</div><div className="gw-metric-value" style={{ color: accent }}>{value}</div>{detail && <div className="gw-metric-detail">{detail}</div>}</div>;
+}
+
+function PriceSummary({ scenario, overBudget = false }) {
+  const purchaseLabel = scenario.purchaseCondition === "new" ? "신품 참고가" : "중고 참고가";
+  return <div className="gw-price-grid" aria-label="기변 비용 요약">
+    <div className="gw-price-cell"><div className="gw-price-label">SELL · 중고 판매 참고가</div><div className="gw-price-value">{formatPrice(scenario.cost.sellValue, true)}</div></div>
+    <div className="gw-price-cell"><div className="gw-price-label">BUY · {purchaseLabel}</div><div className="gw-price-value">{formatPrice(scenario.cost.buyValue, scenario.purchaseCondition !== "new")}</div></div>
+    <div className={`gw-price-cell is-total${overBudget ? " is-warning" : ""}`}><div className="gw-price-label">참고가 기준 추가금</div><div className="gw-price-value">{formatAdditionalCost(scenario)}</div></div>
+  </div>;
+}
+
+function TargetBodySpecs({ body }) {
+  const specs = [
+    ["센서", body.sensor?.format],
+    ["화소", Number.isFinite(body.sensor?.megapixels) ? `${body.sensor.megapixels}MP` : null],
+    ["바디 무게", Number.isFinite(body.weight) ? `${body.weight}g` : null],
+    ["마운트", body.mount],
+    ["최대 영상", body.video?.max],
+  ].filter(([, value]) => value);
+  if (!specs.length) return null;
+  return <dl className="gw-specs" aria-label="추천 바디 주요 제원">{specs.map(([label, value]) => <div className="gw-spec" key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>;
 }
 
 function mainImprovement(scenario) {
@@ -125,7 +147,7 @@ function recommendationLabel(scenario) {
 
 function EquipmentTransition({ scenario }) {
   const systemName = (system) => [system.body.model || system.body.name, ...system.lenses.map((lens) => lens.name)].join(" + ");
-  return <div style={{ marginTop: 12 }}><div style={{ color: "#8B8F98", fontSize: 11, lineHeight: 1.6 }}>현재 시스템 · {systemName(scenario.currentSystem)}</div><div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 7, marginTop: 7 }}><GearColumn code="KEEP" label="그대로 사용" items={scenario.keep} /><GearColumn code="SELL" label="판매" items={scenario.sell} /><GearColumn code="BUY" label="새로 구매" items={scenario.buy} /></div><div style={{ color: "#AEB2B9", fontSize: 11, lineHeight: 1.6, marginTop: 7 }}>→ 목표 시스템 · {systemName(scenario.targetSystem)}</div></div>;
+  return <div className="gw-transition"><div className="gw-system-name">현재 시스템 · {systemName(scenario.currentSystem)}</div><div className="gw-transition-grid"><GearColumn code="KEEP" label="그대로 사용" items={scenario.keep} /><GearColumn code="SELL" label="판매" items={scenario.sell} /><GearColumn code="BUY" label="새로 구매" items={scenario.buy} /></div><div className="gw-system-name gw-system-name--target">→ 목표 시스템 · {systemName(scenario.targetSystem)}</div></div>;
 }
 
 function ScoreDetails({ scenario }) {
@@ -144,22 +166,25 @@ function HeroScenarioCard({ scenario, extraBudget }) {
   const weightValue = scenario.weight.before === null || scenario.weight.after === null ? "비교 데이터 부족" : scenario.weight.before + "g → " + scenario.weight.after + "g";
   const weightDetail = scenario.weight.percent === null ? "대표 렌즈 또는 바디 무게 미등록" : (scenario.weight.difference > 0 ? "+" : "") + scenario.weight.difference + "g · " + (scenario.weight.percent > 0 ? "+" : "") + scenario.weight.percent + "%";
 
-  return <section style={{ background: "linear-gradient(145deg, rgba(255,176,32,0.13), #1D2024 42%)", border: "2px solid #FFB020", borderRadius: 15, padding: 19 }}>
-    <div style={{ color: "#FFB020", ...mono, fontSize: 11, fontWeight: 700 }}>BEST MATCH · 가장 추천하는 선택</div>
-    <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 23, lineHeight: 1.25, margin: "10px 0 4px" }}>{combinationName(scenario)}</h3>
-    <div style={{ color: scenario.capability.violations.length ? "#FFB020" : "#3DDC97", fontSize: 12, fontWeight: 700 }}>{recommendationLabel(scenario)}</div>
+  return <section className="gw-result-hero">
+    <div className="gw-result-kicker">BEST MATCH · 가장 추천하는 선택</div>
+    <h3 className="gw-result-name">{combinationName(scenario)}</h3>
+    <div className="gw-verdict-badge">{scenario.capability.violations.length ? "△" : "✓"} {recommendationLabel(scenario)}</div>
 
-    <div style={{ marginTop: 15, padding: "13px 14px", background: "rgba(20,22,26,0.7)", borderRadius: 10 }}><div style={{ color: "#ECECEA", fontSize: 12, fontWeight: 700 }}>왜 추천하나요?</div>{explanation.slice(0, 3).map((line) => <p key={line} style={{ color: "#B8BCC3", fontSize: 12, lineHeight: 1.65, margin: "6px 0 0" }}>{line}</p>)}</div>
+    <div className="gw-goal-card"><div className="gw-goal-card-label">원했던 변화에서 가장 분명한 개선</div><div className="gw-goal-card-value">{improvement ? improvement.label : "확인된 개선 없음"}</div><div className="gw-goal-card-detail">{improvement?.summary || "현재 데이터만으로 목표가 좋아진다고 단정하기 어렵습니다."}</div></div>
+    <PriceSummary scenario={scenario} overBudget={overBudget} />
 
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(135px, 1fr))", gap: 8, marginTop: 12 }}>
-      <MainMetric label="예상 추가금" value={formatAdditionalCost(scenario)} detail={"판매 " + formatPrice(scenario.cost.sellValue) + " · 구매 " + formatPrice(scenario.cost.buyValue)} accent={overBudget ? "#FFB020" : "#3DDC97"} />
+    <div className="gw-metric-grid">
       <MainMetric label="대표 조합 무게" value={weightValue} detail={weightDetail} />
-      <MainMetric label="가장 크게 좋아지는 점" value={improvement ? improvement.label : "확인된 개선 없음"} detail={improvement?.summary} accent="#3DDC97" />
       <MainMetric label="가장 큰 손해" value={loss ? loss.label : "확인된 큰 손해 없음"} detail={loss?.summary} accent={loss ? "#FF8A80" : "#8BC5FF"} />
+      <MainMetric label="판단 점수" value={`${scenario.scores.total}점`} detail="확인된 항목을 바탕으로 한 MVP 비교값" accent="#ECECEA" />
     </div>
 
-    <details style={{ marginTop: 14, borderTop: "1px solid rgba(255,176,32,0.25)", paddingTop: 12 }}>
-      <summary style={{ color: "#ECECEA", fontSize: 12, cursor: "pointer", fontWeight: 700 }}>세부 판단과 장비 이동 보기</summary>
+    <div className="gw-explanation"><div className="gw-explanation-title">왜 이 선택인가요?</div>{explanation.slice(0, 3).map((line) => <p key={line}>{line}</p>)}</div>
+    <TargetBodySpecs body={scenario.targetSystem.body} />
+
+    <details className="gw-detail">
+      <summary>좋아지는 점·손해·장비 이동 근거 보기</summary>
       <ChangeGroups scenario={scenario} />
       <EquipmentTransition scenario={scenario} />
       <ScoreDetails scenario={scenario} />
@@ -172,19 +197,19 @@ function AlternativeScenarioCard({ scenario, index, extraBudget }) {
   const improvement = mainImprovement(scenario);
   const loss = mainLoss(scenario);
   const explanation = buildScenarioExplanation(scenario, extraBudget);
-  return <details style={{ background: "#1D2024", border: "1px solid #2A2E34", borderRadius: 11, padding: "0 14px" }}>
-    <summary style={{ cursor: "pointer", listStylePosition: "outside", padding: "14px 2px" }}><div style={{ display: "inline-grid", width: "calc(100% - 14px)", gridTemplateColumns: "1fr auto", gap: 10, verticalAlign: "middle" }}><div><div style={{ color: "#FFB020", ...mono, fontSize: 9 }}>대안 {index} · {scenario.strategy}</div><div style={{ color: "#ECECEA", fontWeight: 700, fontSize: 14, marginTop: 5 }}>{combinationName(scenario)}</div><div style={{ color: "#8B8F98", fontSize: 10, marginTop: 4 }}>{improvement ? improvement.label + " 개선" : recommendationLabel(scenario)}{loss ? " · " + loss.label + " 주의" : ""}</div></div><div style={{ textAlign: "right" }}><div style={{ color: scenario.cost.additionalCost === null ? "#FFB020" : "#3DDC97", fontWeight: 750, fontSize: 14 }}>{formatAdditionalCost(scenario)}</div><div style={{ color: "#656B74", fontSize: 9, marginTop: 4 }}>예상 추가금</div></div></div></summary>
-    <div style={{ borderTop: "1px solid #2A2E34", padding: "12px 0 14px" }}><p style={{ color: "#AEB2B9", fontSize: 11, lineHeight: 1.65, marginTop: 0 }}>{explanation[0]}</p><ChangeGroups scenario={scenario} /><EquipmentTransition scenario={scenario} /><ScoreDetails scenario={scenario} /><div style={{ color: "#777D86", fontSize: 10, lineHeight: 1.55, marginTop: 10 }}>판매 예상금 {formatPrice(scenario.cost.sellValue)} · 구매 예상금 {formatPrice(scenario.cost.buyValue)}</div></div>
+  return <details className="gw-alternative">
+    <summary><div className="gw-alternative-summary"><div><div className="gw-result-kicker">대안 {index} · {scenario.strategy}</div><div className="gw-alternative-name">{combinationName(scenario)}</div><div className="gw-alternative-reason">{improvement ? `${improvement.label} 개선` : recommendationLabel(scenario)}{loss ? ` · ${loss.label} 주의` : " · 확인된 큰 손해 없음"}</div></div><div><div className="gw-alternative-cost">{formatAdditionalCost(scenario)}</div><div className="gw-metric-label">예상 추가금</div></div></div></summary>
+    <div className="gw-alternative-body"><p className="gw-section-copy">{explanation[0]}</p><PriceSummary scenario={scenario} /><TargetBodySpecs body={scenario.targetSystem.body} /><ChangeGroups scenario={scenario} /><EquipmentTransition scenario={scenario} /><ScoreDetails scenario={scenario} /></div>
   </details>;
 }
 
 export default function CameraUpgradeSystemDiagnosis({ onBack }) {
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState({ body: null, lenses: [], lensInput: "", primaryLensId: "", pains: [], portabilityDetails: [], preserve: [], subjects: [], ratio: "", lensIntent: "", brandIntent: "", designPreference: "any", extraBudget: 100, budgetTouched: false });
+  const [answers, setAnswers] = useState({ body: null, lenses: [], lensInput: "", primaryLensId: "", pains: [], portabilityDetails: [], preserve: [], subjects: [], ratio: "", lensIntent: "", brandIntent: "", designPreference: ["any"], extraBudget: 100, budgetTouched: false });
   const body = answers.body;
   const availableLenses = body?.mount ? CAMERA_LENSES.filter((lens) => lens.mount === body.mount) : CAMERA_LENSES;
-  const selectedLenses = useMemo(() => answers.lenses.map((name) => LENS_BY_NAME[name] || createUnknownLens(name, body?.mount || null)), [answers.lenses, body?.mount]);
-  const primaryLens = selectedLenses.find((lens) => lens.id === answers.primaryLensId);
+  const selectedLenses = useMemo(() => body?.kind === "fixed" ? [getIntegratedLens(body)] : answers.lenses.map((name) => LENS_BY_NAME[name] || createUnknownLens(name, body?.mount || null)), [answers.lenses, body]);
+  const primaryLens = body?.kind === "fixed" ? selectedLenses[0] : selectedLenses.find((lens) => lens.id === answers.primaryLensId);
   const hasPortabilityQuestion = answers.pains.includes("더 가볍고 작은 카메라를 원해요");
 
   const questions = [
@@ -195,7 +220,7 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
     { key: "ratio", phase: "사용 목적", title: "사진과 영상의 비중은 어떤가요?", hint: "사진과 영상 중 실제로 더 자주 쓰는 쪽에 추천 가중치를 둘게요.", options: RATIO_OPTIONS },
     { key: "lensIntent", phase: "전환 조건", title: "현재 렌즈는 어떻게 하고 싶나요?", hint: "기존 렌즈를 유지할지에 따라 기변 비용과 추천 시스템이 크게 달라집니다.", options: LENS_INTENT_OPTIONS },
     { key: "brandIntent", phase: "전환 조건", title: "현재 브랜드를 유지하고 싶나요?", hint: "타 브랜드를 허용하면 기존 렌즈 판매를 포함한 전체 시스템 전환안도 비교할게요.", options: BRAND_INTENT_OPTIONS },
-    { key: "designPreference", phase: "전환 조건", title: "선호하는 카메라 디자인이 있나요?", hint: "조건이 비슷하면 선호하는 형태를 우대합니다. 디자인이 달라도 목표와 예산에 잘 맞는 후보는 함께 비교할게요.", options: DESIGN_OPTIONS },
+    { key: "designPreference", phase: "전환 조건", title: "선호하는 카메라 디자인이 있나요?", hint: "여러 형태를 함께 고를 수 있습니다. 정보 버튼을 누르면 외관상의 차이를 확인할 수 있어요.", designPicker: true, multi: true },
   ];
   const questionStart = 2;
   const budgetStep = questionStart + questions.length;
@@ -214,7 +239,9 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
   const goBack = () => setStep((current) => Math.max(0, current - 1));
   const summary = step > 0 && step < resultStep ? <DiagnosisSummary body={body} primaryLens={primaryLens} pains={answers.pains} portabilityDetails={answers.portabilityDetails} extraBudget={answers.extraBudget} budgetTouched={answers.budgetTouched} /> : null;
 
-  if (step === 0) return <><button className="gw-back" onClick={onBack}>← 시작 화면으로</button><StepHeader current={1} total={totalSteps} phase="현재 장비" title="현재 사용하는 카메라 바디는 무엇인가요?" hint="브랜드, 시리즈, 모델 순으로 찾거나 모델명을 바로 검색할 수 있어요." /><CameraBodyPicker value={body} allowUnknown onChange={(selected) => setAnswers((prev) => ({ ...prev, body: selected, lenses: selected?.id === prev.body?.id ? prev.lenses : [], primaryLensId: selected?.id === prev.body?.id ? prev.primaryLensId : "" }))} /><NextButton disabled={!body} onClick={() => setStep(1)}>현재 바디 확인</NextButton></>;
+  if (step === 0) return <><button type="button" className="gw-back" onClick={onBack}>← 시작 화면으로</button><StepHeader current={1} total={totalSteps} phase="현재 장비" title="현재 사용하는 카메라 바디는 무엇인가요?" hint="브랜드, 시리즈, 모델 순으로 찾거나 모델명을 바로 검색할 수 있어요." /><CameraBodyPicker value={body} allowUnknown onChange={(selected) => setAnswers((prev) => ({ ...prev, body: selected, lenses: selected?.id === prev.body?.id ? prev.lenses : [], primaryLensId: selected?.id === prev.body?.id ? prev.primaryLensId : "" }))} /><NextButton disabled={!body} onClick={() => setStep(1)}>현재 바디 확인</NextButton></>;
+
+  if (step === 1 && body?.kind === "fixed") return <><button type="button" className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={2} total={totalSteps} phase="현재 장비" title="내장 렌즈를 포함한 카메라로 비교합니다." hint="고정렌즈 카메라는 렌즈를 따로 등록하지 않습니다. 무게와 매매 비용에 내장 렌즈가 포함됩니다." /><NextButton onClick={() => setStep(questionStart)}>현재 장비 등록 완료</NextButton></>;
 
   if (step === 1) {
     const addLens = () => {
@@ -230,19 +257,20 @@ export default function CameraUpgradeSystemDiagnosis({ onBack }) {
       const remaining = names.map((name) => LENS_BY_NAME[name] || createUnknownLens(name, body.mount || null));
       return { ...prev, lenses: names, primaryLensId: prev.primaryLensId === lens.id ? (remaining[0]?.id || "") : prev.primaryLensId };
     });
-    return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={2} total={totalSteps} phase="현재 장비" title="현재 보유 렌즈와 대표 렌즈를 알려주세요." hint="렌즈를 추가한 뒤 가장 자주 바디에 물려 쓰는 렌즈를 선택해주세요. 대표 조합의 무게는 이 렌즈를 기준으로 계산합니다." /><div style={{ display: "flex", gap: 8 }}><input list="upgrade-lens-list" value={answers.lensInput} onChange={(event) => setAnswers((prev) => ({ ...prev, lensInput: event.target.value }))} onKeyDown={(event) => { if (event.key === "Enter") { event.preventDefault(); addLens(); } }} placeholder="렌즈명 검색 또는 직접 입력" style={{ ...inputStyle, flex: 1 }} /><button onClick={addLens} style={{ padding: "0 14px", borderRadius: 8, border: "none", background: "#FFB020", color: "#14161A", fontWeight: 700 }}>추가</button></div><datalist id="upgrade-lens-list">{availableLenses.map((lens) => <option key={lens.id} value={lens.name}>{lens.roles.join(" · ")}</option>)}</datalist><div style={{ display: "grid", gap: 8, marginTop: 14 }}>{selectedLenses.map((lens) => { const active = primaryLens?.id === lens.id; return <button key={lens.id} type="button" onClick={() => setAnswers((prev) => ({ ...prev, primaryLensId: lens.id }))} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8, padding: "10px 11px", borderRadius: 9, border: active ? "1px solid #FFB020" : "1px solid #2A2E34", background: active ? "rgba(255,176,32,0.1)" : "#1D2024", color: "#ECECEA", textAlign: "left", cursor: "pointer" }}><span><b>{lens.name}</b><span style={{ display: "block", color: lens.dataStatus === "unknown" ? "#FFB020" : "#8B8F98", fontSize: 10, marginTop: 3 }}>{active ? "대표 렌즈 · " : ""}{lens.dataStatus === "unknown" ? "상세 데이터 미등록" : (lens.roles || []).join(" · ")}</span></span><span onClick={(event) => { event.stopPropagation(); removeLens(lens); }} style={{ color: "#8B8F98", padding: 5 }}>×</span></button>; })}</div>{selectedLenses.some((lens) => lens.dataStatus === "unknown") && <p style={{ color: "#FFB020", fontSize: 11, lineHeight: 1.55 }}>직접 입력한 렌즈는 무게·가격이 미확인 상태로 저장됩니다. 필요한 계산도 ‘계산 불가’로 표시됩니다.</p>}<NextButton disabled={!selectedLenses.length || !primaryLens} onClick={() => setStep(questionStart)}>현재 장비 등록 완료</NextButton></>;
+    return <><button type="button" className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={2} total={totalSteps} phase="현재 장비" title="현재 보유 렌즈와 대표 렌즈를 알려주세요." hint="렌즈를 추가한 뒤 가장 자주 바디에 물려 쓰는 렌즈를 선택해주세요. 대표 조합의 무게는 이 렌즈를 기준으로 계산합니다." /><div className="gw-selection-guide">복수 등록 · 대표 렌즈는 하나를 선택하세요</div><div className="gw-input-row"><input className="gw-input" list="upgrade-lens-list" value={answers.lensInput} onChange={(event) => setAnswers((prev) => ({ ...prev, lensInput: event.target.value }))} onKeyDown={(event) => { if (event.key === "Enter") { event.preventDefault(); addLens(); } }} placeholder="렌즈명 검색 또는 직접 입력" /><button type="button" className="gw-button gw-button--primary" onClick={addLens}>추가</button></div><datalist id="upgrade-lens-list">{availableLenses.map((lens) => <option key={lens.id} value={lens.name}>{(lens.roles || []).join(" · ")}</option>)}</datalist><div style={{ display: "grid", gap: 8, marginTop: 14 }}>{selectedLenses.map((lens) => { const active = primaryLens?.id === lens.id; return <button key={lens.id} type="button" className={`gw-choice${active ? " is-selected" : ""}`} aria-pressed={active} onClick={() => setAnswers((prev) => ({ ...prev, primaryLensId: lens.id }))}><span className="gw-choice-inner"><span><b>{lens.name}</b><span className="gw-choice-sub" style={{ color: lens.dataStatus === "unknown" ? "#FFB020" : undefined }}>{active ? "대표 렌즈 · " : ""}{lens.dataStatus === "unknown" ? "상세 데이터 미등록" : (lens.roles || []).join(" · ")}</span></span><span role="button" aria-label={`${lens.name} 삭제`} tabIndex="0" onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); event.stopPropagation(); removeLens(lens); } }} onClick={(event) => { event.stopPropagation(); removeLens(lens); }} style={{ color: "#8B8F98", padding: 5 }}>×</span></span></button>; })}</div>{selectedLenses.some((lens) => lens.dataStatus === "unknown") && <p className="gw-notice">직접 입력한 렌즈는 무게·가격이 미확인 상태로 저장됩니다. 필요한 계산도 ‘계산 불가’로 표시됩니다.</p>}<NextButton disabled={!selectedLenses.length || !primaryLens} onClick={() => setStep(questionStart)}>현재 장비 등록 완료</NextButton></>;
   }
 
   if (step >= questionStart && step < budgetStep) {
     const selected = answers[activeQuestion.key];
     const choose = (value) => activeQuestion.multi ? toggle(activeQuestion.key, value) : (setAnswers((prev) => ({ ...prev, [activeQuestion.key]: value })), setStep((current) => current + 1));
-    return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={step + 1} total={totalSteps} phase={activeQuestion.phase} title={activeQuestion.title} hint={activeQuestion.hint} /><ChoiceGrid options={activeQuestion.options} selected={selected} multi={activeQuestion.multi} onSelect={choose} />{activeQuestion.multi && <NextButton disabled={!selected.length} onClick={() => setStep((current) => current + 1)}>선택 완료 ({selected.length})</NextButton>}</>;
+    const selectedDesignCount = activeQuestion.designPicker ? selected.filter((value) => value !== "any").length : 0;
+    return <><button type="button" className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={step + 1} total={totalSteps} phase={activeQuestion.phase} title={activeQuestion.title} hint={activeQuestion.hint} />{activeQuestion.designPicker ? <CameraDesignPicker value={selected} onChange={(designPreference) => setAnswers((prev) => ({ ...prev, designPreference }))} /> : <ChoiceGrid options={activeQuestion.options} selected={selected} multi={activeQuestion.multi} onSelect={choose} />}{activeQuestion.multi && <NextButton disabled={!activeQuestion.designPicker && !selected.length} onClick={() => setStep((current) => current + 1)}>선택 완료 ({activeQuestion.designPicker ? (selectedDesignCount || "상관없음") : selected.length})</NextButton>}</>;
   }
 
-  if (step === budgetStep) return <><button className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={totalSteps} total={totalSteps} phase="예산" title="판매금에 얼마까지 더 보탤 수 있나요?" hint="실제로 판매하는 장비의 중고 참고가만 포함하고, 가격 미확인 장비가 있으면 정확한 합계처럼 표시하지 않을게요." /><div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>{[0, 50, 100, 200, 300, 500].map((value) => <button key={value} onClick={() => setAnswers((prev) => ({ ...prev, extraBudget: value, budgetTouched: true }))} style={chipStyle(Number(answers.extraBudget) === value)}>{value === 0 ? "추가 지출 없음" : value === 500 ? "500만원+" : value + "만원"}</button>)}</div><input type="number" min="0" value={answers.extraBudget} onChange={(event) => setAnswers((prev) => ({ ...prev, extraBudget: event.target.value, budgetTouched: true }))} style={{ ...inputStyle, marginTop: 14 }} />{!isValidBudget(answers.extraBudget) && <p role="alert" style={{ color: "#FFB020", fontSize: 11 }}>추가 예산은 0 이상의 유효한 금액을 입력해주세요.</p>}<NextButton disabled={!isValidBudget(answers.extraBudget)} onClick={() => { if (isValidBudget(answers.extraBudget)) setStep(resultStep); }}>시스템 기변 시나리오 보기</NextButton></>;
+  if (step === budgetStep) return <><button type="button" className="gw-back" onClick={goBack}>← 이전 질문</button>{summary}<StepHeader current={totalSteps} total={totalSteps} phase="예산" title="판매금에 얼마까지 더 보탤 수 있나요?" hint="실제로 판매하는 장비의 중고 참고가만 포함하고, 가격 미확인 장비가 있으면 정확한 합계처럼 표시하지 않을게요." /><div className="gw-selection-guide">하나 선택 · 직접 금액을 입력해도 됩니다</div><div className="gw-chip-row">{[0, 50, 100, 200, 300, 500].map((value) => <button type="button" key={value} aria-pressed={Number(answers.extraBudget) === value} onClick={() => setAnswers((prev) => ({ ...prev, extraBudget: value, budgetTouched: true }))} style={chipStyle(Number(answers.extraBudget) === value)}>{value === 0 ? "추가 지출 없음" : value === 500 ? "500만원+" : value + "만원"}</button>)}</div><input className="gw-input" aria-label="추가 예산 직접 입력" type="number" min="0" value={answers.extraBudget} onChange={(event) => setAnswers((prev) => ({ ...prev, extraBudget: event.target.value, budgetTouched: true }))} style={{ marginTop: 14 }} />{!isValidBudget(answers.extraBudget) && <p role="alert" style={{ color: "#FFB020", fontSize: 11 }}>추가 예산은 0 이상의 유효한 금액을 입력해주세요.</p>}<NextButton disabled={!isValidBudget(answers.extraBudget)} onClick={() => { if (isValidBudget(answers.extraBudget)) setStep(resultStep); }}>시스템 기변 시나리오 보기</NextButton></>;
 
   const scenarios = generateUpgradeScenarios({ currentBody: body, currentLenses: selectedLenses, primaryLens, pains: answers.pains, portabilityDetails: answers.portabilityDetails, preserve: answers.preserve.filter((item) => item !== "특별히 없음"), subjects: answers.subjects, ratio: answers.ratio, lensIntent: answers.lensIntent, brandIntent: answers.brandIntent, designPreference: answers.designPreference, extraBudget: Number(answers.extraBudget) });
   const top = scenarios[0];
   const topVerdict = top.kind === "hold" ? "현재 시스템 유지" : top.capability.violations.length ? "조건부 기변" : mainImprovement(top) ? "목표 개선 후보 발견" : "기변 효과 확인 필요";
-  return <><button className="gw-back" onClick={() => setStep(0)}>← 진단 다시 하기</button><div style={{ marginTop: 18, color: "#3DDC97", ...mono, fontSize: 11 }}>SYSTEM UPGRADE · RESULT</div><h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 23, margin: "10px 0 6px" }}>결론: <span style={{ color: top.kind === "hold" ? "#8BC5FF" : "#3DDC97" }}>{topVerdict}</span></h2><p style={{ color: "#AEB2B9", fontSize: 13, lineHeight: 1.65, marginBottom: 16 }}><b style={{ color: "#ECECEA" }}>{body.brand} {body.model || body.name}</b>에서 무엇을 바꾸는 게 가장 합리적인지 먼저 결론부터 보여드릴게요.</p><HeroScenarioCard scenario={top} extraBudget={answers.extraBudget} />{scenarios.length > 1 && <section style={{ marginTop: 23 }}><h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 17, margin: "0 0 10px" }}>다른 선택지</h3><p style={{ color: "#777D86", fontSize: 11, lineHeight: 1.55, margin: "0 0 10px" }}>비용, 바디 유지, 시스템 전환처럼 다른 타협점을 가진 대안입니다. 눌러서 세부 내용을 확인할 수 있어요.</p><div style={{ display: "grid", gap: 9 }}>{scenarios.slice(1).map((scenario, index) => <AlternativeScenarioCard key={scenario.id} scenario={scenario} index={index + 2} extraBudget={answers.extraBudget} />)}</div></section>}<p style={{ color: "#656B74", fontSize: 11, lineHeight: 1.6, marginTop: 14 }}>데이터가 없는 성능이나 가격은 숨기거나 0으로 표시하지 않고 ‘비교 데이터 부족’ 또는 ‘정확한 계산 불가’로 표시합니다.</p></>;
+  return <><button type="button" className="gw-back" onClick={() => setStep(0)}>← 진단 다시 하기</button><header className="gw-result-head"><div className="gw-eyebrow">SYSTEM UPGRADE · RESULT</div><h2 className="gw-result-title">기변 판단: <span className="gw-result-verdict">{topVerdict}</span></h2><p className="gw-copy"><b style={{ color: "#ECECEA" }}>{body.brand} {body.model || body.name}</b>에서 원했던 변화, 필요한 비용, 잃는 점 순서로 확인하세요.</p><div className="gw-price-basis"><b>기변 가격 계산 기준 · 중고 참고가</b><span>판매와 구매 모두 DB의 중고 참고값을 사용합니다. 거래 범위·출처·기준일 데이터는 없습니다.</span></div></header><HeroScenarioCard scenario={top} extraBudget={answers.extraBudget} />{scenarios.length > 1 && <section className="gw-alternatives"><h3 className="gw-section-title">다른 선택지</h3><p className="gw-section-copy">비용, 바디 유지, 시스템 전환처럼 다른 타협점을 가진 대안입니다. 펼치면 추천안과 무엇이 다른지 확인할 수 있어요.</p><div className="gw-alternative-list">{scenarios.slice(1).map((scenario, index) => <AlternativeScenarioCard key={scenario.id} scenario={scenario} index={index + 2} extraBudget={answers.extraBudget} />)}</div></section>}<p className="gw-section-copy" style={{ marginTop: 14 }}>데이터가 없는 성능이나 가격은 숨기거나 0으로 표시하지 않고 ‘비교 데이터 부족’ 또는 ‘정확한 계산 불가’로 표시합니다.</p></>;
 }
