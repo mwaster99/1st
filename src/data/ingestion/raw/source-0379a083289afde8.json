@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "source-0379a083289afde8",
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+  "publisher": "Sony",
+  "documentTitle": "ILCE-7M4 Specifications",
+  "documentVersion": null,
+  "region": "global",
+  "accessedAt": "2026-09-14T00:00:00.000Z",
+  "evidenceScope": "Specifications > Weight",
+  "contentDigest": "48ec2363992b2db41e925f06385bc7b1015f5bec04423b128202b5188f739541",
+  "evidenceExcerpt": [
+    { "field": "Weight (including battery and memory card)", "value": 658, "unit": "g" },
+    { "field": "Weight basis", "value": "battery-and-card", "unit": null }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7m4",
+      "manufacturerModelCode": "ILCE-7M4",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7 IV",
+        "brand": "Sony",
+        "series": "α7",
+        "model": "A7 IV",
+        "aliases": ["sony a7 iv", "sony a7iv", "소니 a7 iv", "a74", "a7m4"],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.weight",
+          "evidenceRef": 0,
+          "rawValue": 658,
+          "rawUnit": "g",
+          "locator": { "section": "Specifications", "row": "Weight (including battery and memory card)" },
+          "conditions": { "region": "global", "variant": null, "weightBasis": "battery-and-card" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-14",
+          "reviewer": "objective-db-v0.3-migration"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 1,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": { "section": "Specifications", "row": "Weight (including battery and memory card)" },
+          "conditions": { "region": "global", "variant": null },
+          "verification": "verified",
+          "reviewedAt": "2026-09-14",
+          "reviewer": "objective-db-v0.3-migration"
+        }
+      ]
+    }
+  ]
+}

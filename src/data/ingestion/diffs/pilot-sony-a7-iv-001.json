@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "batchId": "pilot-sony-a7-iv-001",
+  "canonicalBaselineDigest": "871e79d42eac665c1a83b8d3a818260238c1517012c69b2bfe0de45220e59969",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "pilot-sony-a7-iv-001",
+      "productId": "sony-a7-iv",
+      "productName": "소니 A7 IV",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "9dbf4d04403137dbd1a7a7144a83c5d4c1cec6005129ca3267bb685930f22ade",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 658,
+          "incomingValue": 658,
+          "unit": "g",
+          "claimId": "claim-4261aa0eaa965b0de24e",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.weightBasis"
+              ],
+              "note": ""
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-0379a083289afde8",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "Weight (including battery and memory card)"
+            },
+            "conditions": {
+              "region": "global",
+              "variant": null,
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-140cb46bf0cab064c633",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.weightBasis"
+              ],
+              "note": ""
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-0379a083289afde8",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "Weight (including battery and memory card)"
+            },
+            "conditions": {
+              "region": "global",
+              "variant": null
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}
