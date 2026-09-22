@@ -12,6 +12,7 @@ import {
   createSourceId,
   digestValue,
   formatCanonicalDiff,
+  normalizeClaimValue,
   normalizeRawDocument,
   validateStaging,
   validateStagingBatch,
@@ -81,6 +82,32 @@ test("unit conversion is deterministic and UNKNOWN remains null", () => {
   assert.equal(staging.claims[0].value, null);
   assert.equal(staging.claims[0].unknown, true);
   assert.equal(validateStaging(staging, contextFor(unknown)).valid, true);
+});
+
+test("subject recognition arrays normalize as unitless verified text", () => {
+  assert.deepEqual(normalizeClaimValue("specs.autofocus.subjects", [" Human ", "Bird", "Human"], null), {
+    value: ["Human", "Bird"],
+    unit: null,
+    unknown: false,
+  });
+  assert.throws(() => normalizeClaimValue("specs.autofocus.subjects", ["Human", 1], null), /Invalid text array/);
+  assert.throws(() => normalizeClaimValue("specs.autofocus.subjects", ["Human"], "count"), /must not have a unit/);
+
+  const withSubjects = rebuiltRaw((raw) => {
+    raw.evidenceExcerpt.push({ field: "Recognition Target", value: ["사람", "동물", "조류"], unit: null });
+    raw.items[0].observations.push({
+      path: "specs.autofocus.subjects",
+      evidenceRef: raw.evidenceExcerpt.length - 1,
+      rawValue: ["사람", "동물", "조류"],
+      rawUnit: null,
+      locator: { section: "Focus System", row: "Recognition Target" },
+      conditions: {},
+      verification: "verified",
+      reviewedAt: "2026-09-22",
+      reviewer: "objective-ingest-test",
+    });
+  });
+  assert.equal(validateStaging(normalize(withSubjects), contextFor(withSubjects)).valid, true);
 });
 
 test("valid pilot passes ID, alias, type, mount, physical and provenance checks", () => {

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-001",
+  "scope": "Sony current Tier 1 bodies: A7 IV revalidation and A1 II new product",
+  "tier": 1,
+  "baselineCommit": "dec6da3",
+  "canonicalBaselineDigest": "871e79d42eac665c1a83b8d3a818260238c1517012c69b2bfe0de45220e59969",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "sony-ilce-7m4-stage4",
+      "productId": "sony-a7-iv",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-70f5774bc2ac65e2"
+      ],
+      "rawDigests": [
+        "5ae00c6aa94a5bd5a5fad649a23ef78ca9bac3ca3467846deae8b71adf43e692"
+      ],
+      "stagingDigest": "f8eb1201f8ee650f381285f130f1336057558a37ad31c24cc001018787aa7b87",
+      "diffDigest": "2f251e04fda87027addf5cee04cf02aa403331a781103dd3f7924d74537d3b08",
+      "issues": [],
+      "updatedAt": "2026-09-22T04:22:23.044Z"
+    },
+    {
+      "itemKey": "sony-ilce-1m2",
+      "productId": "sony-a1-ii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-d5b5949496029854"
+      ],
+      "rawDigests": [
+        "f372204804ab3d81276e73b1757ed62ab9b9ebb8d450bb8679fc72121f098b0c"
+      ],
+      "stagingDigest": "a5dee6e880275cd632fbfeb80fec4f96cdab3581abf1bbb0f3df8ecf20799028",
+      "diffDigest": "2f251e04fda87027addf5cee04cf02aa403331a781103dd3f7924d74537d3b08",
+      "issues": [],
+      "updatedAt": "2026-09-22T04:22:23.044Z"
+    }
+  ],
+  "updatedAt": "2026-09-22T04:22:23.044Z",
+  "expectedCanonicalDigest": "2f3794736da0dbc94c9089040620247cf51551e1d40db296811b1d474c7a2771",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-468a5de1f161b6aeb1704f50d020b6b769a02a35e5b6a0453fad60eedf2d713d",
+    "completedAt": "2026-09-22T04:22:23.044Z",
+    "transaction": "transactions/production-sony-bodies-001"
+  }
+}

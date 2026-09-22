@@ -40,7 +40,7 @@ test("atomic evidence promotion preserves all physical values, validates whole D
   assert.ok(product.sources.some((s) => s.sourceId && s.fields.includes("specs.weight")));
   const evidence = await readJson(path.join(f.p.transaction, "evidence.json"));
   assert.deepEqual(evidence.bundle.stagings[0].claims[0].locator, { section: "Specifications", row: "Weight (including battery and memory card)" });
-  assert.equal(product.fieldEvidence["specs.weight"].claimIds[0], evidence.bundle.stagings[0].claims[0].claimId);
+  assert.ok(product.fieldEvidence["specs.weight"].claimIds.includes(evidence.bundle.stagings[0].claims[0].claimId));
   assert.equal(validateCanonical(data, await readJson(path.join(f.p.ingestion, "vocab.json"))), true);
   const manifestBeforeRetry = await readFile(f.p.manifest, "utf8");
   assert.equal(JSON.parse(manifestBeforeRetry).items[0].state, "canonicalized");
@@ -207,8 +207,9 @@ test("null-fill needs approval and unknown incoming never clears a known value",
   assert.equal(approval.decisions.find((d) => d.path === "specs.bodyOnlyWeight").category, "null-fill");
   await applyBatch(f.root, batchId);
   const p = (await readJson(f.p.canonical)).bodies[0];
+  const beforeProduct = JSON.parse(f.before).bodies.find((product) => product.id === "sony-a7-iv");
   assert.equal(p.specs.weight, 658); assert.equal(p.specs.bodyOnlyWeight, 600);
-  assert.equal(p.fieldEvidence["specs.weight"], undefined);
+  assert.deepEqual(p.fieldEvidence?.["specs.weight"], beforeProduct.fieldEvidence?.["specs.weight"]);
 });
 
 test("staging rebuilt from invalid raw types cannot pass approval even after Stage 1 checkpoints", async (t) => {

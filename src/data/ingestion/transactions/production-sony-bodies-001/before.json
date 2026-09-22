@@ -67,12 +67,7 @@
         "releaseDate": null,
         "bodyOnlyWeight": null,
         "batteryConditions": null,
-        "ibis": {
-          "present": true,
-          "axes": 5,
-          "stops": 5.5,
-          "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
-        },
+        "ibis": null,
         "evf": null,
         "lcd": null,
         "burst": null,
@@ -91,24 +86,6 @@
             "specs.weightBasis"
           ],
           "note": ""
-        },
-        {
-          "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
-          "type": "manufacturer",
-          "accessedOn": "2026-09-22",
-          "fields": [
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.sensor.format",
-            "specs.sensor.megapixels",
-            "specs.video.bitDepth",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-70f5774bc2ac65e2",
-          "documentVersion": null
         }
       ],
       "legacyFields": [
@@ -116,68 +93,15 @@
         "autofocus.description",
         "autofocus.subjects",
         "batteryShots",
+        "dimensions",
+        "sensor.format",
         "sensor.generation",
+        "sensor.megapixels",
+        "video.bitDepth",
         "video.cropAtMax",
-        "video.log"
-      ],
-      "fieldEvidence": {
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-adbef3217640a01688ed"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c17c57b1f2d58f948d8f"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-01a7d23f5b7e84a27492"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c2bd859d5dbd48b32e10"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-55415f6239a96e9539d8"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d939ce90bbd01b5a5487"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-dd9f0e5f8989a471bebd"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-cbffb89bc6616e5c1640"
-          ],
-          "checkedAt": "2026-09-22"
-        }
-      }
+        "video.log",
+        "video.max"
+      ]
     },
     {
       "id": "sony-a7c-ii",
@@ -3023,226 +2947,6 @@
         }
       ],
       "legacyFields": []
-    },
-    {
-      "id": "sony-a1-ii",
-      "name": "소니 A1 II",
-      "brand": "Sony",
-      "series": "α1",
-      "model": "A1 II",
-      "aliases": [
-        "sony a1 ii",
-        "sony alpha 1 ii",
-        "소니 a1 ii",
-        "ilce-1m2"
-      ],
-      "mount": "Sony E",
-      "kind": "interchangeable",
-      "bodyStyle": "slr",
-      "price": {
-        "new": {
-          "value": null,
-          "currency": "KRW",
-          "asOf": null,
-          "sourceType": "unknown",
-          "sourceUrl": null
-        },
-        "used": {
-          "low": null,
-          "typical": null,
-          "high": null,
-          "currency": "KRW",
-          "asOf": null,
-          "sourceType": "unknown",
-          "sourceUrl": null
-        }
-      },
-      "specs": {
-        "sensor": {
-          "format": "풀프레임",
-          "megapixels": 50.1,
-          "generation": "Exmor RS CMOS",
-          "sizeMm": null
-        },
-        "weight": 743,
-        "weightBasis": "battery-and-card",
-        "bodyOnlyWeight": 658,
-        "dimensions": [
-          136.1,
-          96.9,
-          82.9
-        ],
-        "autofocus": {
-          "aiUnit": null,
-          "subjects": [
-            "자동",
-            "사람",
-            "동물",
-            "조류",
-            "곤충",
-            "자동차",
-            "기차",
-            "비행기"
-          ],
-          "description": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)"
-        },
-        "video": {
-          "max": "8K 30p",
-          "bitDepth": 10,
-          "log": null,
-          "cropAtMax": null
-        },
-        "batteryShots": 520,
-        "releaseDate": null,
-        "batteryConditions": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
-        "ibis": {
-          "present": true,
-          "axes": 5,
-          "stops": 8.5,
-          "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
-        },
-        "evf": null,
-        "lcd": null,
-        "burst": null,
-        "shutter": null,
-        "cardSlots": null,
-        "weatherSealing": null,
-        "fixedLens": null
-      },
-      "sources": [
-        {
-          "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
-          "type": "manufacturer",
-          "accessedOn": "2026-09-22",
-          "fields": [
-            "identity",
-            "specs.autofocus.description",
-            "specs.autofocus.subjects",
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.video.bitDepth",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Identity evidence retained in ingestion transaction archive",
-          "sourceId": "source-d5b5949496029854",
-          "documentVersion": null
-        }
-      ],
-      "identityEvidence": {
-        "verification": "verified",
-        "evidenceId": "identity-5a4827e1da955b5f9542",
-        "sourceId": "source-d5b5949496029854",
-        "checkedAt": "2026-09-22"
-      },
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d88d9c475b5c2a3ec0f5"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-411bc5abbed7affd2f8a"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-11876dc1309d9e370fbb"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-2a19fb2e063fd94ecaf8"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-17a0ba181b32c2190fd4"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-f5e59d6c8bb88e4729a4"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6b67d97951147b522310"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.autofocus.subjects": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a4955617b8f3ba8a5d2c"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.autofocus.description": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-1dc448d0e8df5e16cd64"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e32463e95a8cb26a1cac"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-fc6fee9d313875893ed7"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8a5e718168d50ddccb88"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-0aad385f300f42302404"
-          ],
-          "checkedAt": "2026-09-22"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6da76037165736dd8a38"
-          ],
-          "checkedAt": "2026-09-22"
-        }
-      }
     }
   ],
   "lenses": [

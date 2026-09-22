@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "source-70f5774bc2ac65e2",
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+  "publisher": "Sony",
+  "documentTitle": "ILCE-7M4 Specifications",
+  "documentVersion": null,
+  "region": "USA",
+  "accessedAt": "2026-09-22T04:14:37.000Z",
+  "evidenceScope": "Lens; Image Sensor; Recording System (movie); Image Stabilization; Size & Weight",
+  "contentDigest": "3cdf8ce3992b8ef2e77e4e1e3a35cce9ca9ee8f297bf6327702fc04d7d962cff",
+  "evidenceExcerpt": [
+    { "field": "Sensor Type", "value": "풀프레임", "unit": null },
+    { "field": "Number Of Pixels (Effective)", "value": 33, "unit": "MP" },
+    { "field": "Weight (with battery and memory card included)", "value": 658, "unit": "g" },
+    { "field": "Weight basis", "value": "battery-and-card", "unit": null },
+    { "field": "Dimensions (W x H x D)", "value": [131.3, 96.4, 79.8], "unit": "mm" },
+    { "field": "Maximum movie recording mode", "value": "4K 60p", "unit": null },
+    { "field": "Maximum movie bit depth", "value": 10, "unit": null },
+    {
+      "field": "Image Stabilization",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5.5,
+        "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7m4-stage4",
+      "manufacturerModelCode": "ILCE-7M4",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7 IV",
+        "brand": "Sony",
+        "series": "α7",
+        "model": "A7 IV",
+        "aliases": ["sony a7 iv", "sony a7iv", "소니 a7 iv", "a74", "a7m4"],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": { "section": "Image Sensor", "row": "Sensor Type" },
+          "conditions": { "officialText": "35 mm full frame (35.9 x 23.9 mm), Exmor R CMOS sensor" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 33,
+          "rawUnit": "MP",
+          "locator": { "section": "Image Sensor", "row": "Number Of Pixels (Effective)" },
+          "conditions": { "use": "effective pixels" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 658,
+          "rawUnit": "g",
+          "locator": { "section": "Size & Weight", "row": "Weight (with battery and memory card included)" },
+          "conditions": { "region": "USA", "variant": "ILCE-7M4", "weightBasis": "battery-and-card" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": { "section": "Size & Weight", "row": "Weight (with battery and memory card included)" },
+          "conditions": { "region": "USA", "variant": "ILCE-7M4" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 4,
+          "rawValue": [131.3, 96.4, 79.8],
+          "rawUnit": "mm",
+          "locator": { "section": "Size & Weight", "row": "Dimensions (W x H x D)" },
+          "conditions": { "measurement": "full depth; separate grip-to-monitor depth 69.7 mm is not promoted" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 5,
+          "rawValue": "4K 60p",
+          "rawUnit": null,
+          "locator": { "section": "Recording System (movie)", "row": "4K recording formats" },
+          "conditions": { "officialRates": "59.94p/50p" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 6,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": { "section": "Recording System (movie)", "row": "4K 4:2:2 10 bit formats" },
+          "conditions": { "chroma": "4:2:2" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 7,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5.5,
+            "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+          },
+          "rawUnit": null,
+          "locator": { "section": "Image Stabilization", "row": "Type; Compensation Effect" },
+          "conditions": { "standard": "CIPA", "lens": "Planar T* FE 50mm F1.4 ZA", "longExposureNr": "off" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        }
+      ]
+    }
+  ]
+}

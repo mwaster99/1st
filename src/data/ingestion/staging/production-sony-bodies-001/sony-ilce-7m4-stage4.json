@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-001",
+  "itemKey": "sony-ilce-7m4-stage4",
+  "manufacturerModelCode": "ILCE-7M4",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7M4",
+    "productId": "sony-a7-iv",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "sony-a7-iv",
+    "name": "소니 A7 IV",
+    "brand": "Sony",
+    "model": "A7 IV",
+    "aliases": [
+      "sony a7 iv",
+      "소니 a7 iv",
+      "a74",
+      "a7m4"
+    ],
+    "mount": "Sony E",
+    "series": "α7",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 33
+      },
+      "weight": 658,
+      "weightBasis": "battery-and-card",
+      "dimensions": [
+        131.3,
+        96.4,
+        79.8
+      ],
+      "video": {
+        "max": "4K 60p",
+        "bitDepth": 10
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 5.5,
+        "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-70f5774bc2ac65e2",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+    "publisher": "Sony",
+    "documentTitle": "ILCE-7M4 Specifications",
+    "documentVersion": null,
+    "region": "USA",
+    "accessedAt": "2026-09-22T04:14:37.000Z",
+    "evidenceScope": "Lens; Image Sensor; Recording System (movie); Image Stabilization; Size & Weight",
+    "contentDigest": "3cdf8ce3992b8ef2e77e4e1e3a35cce9ca9ee8f297bf6327702fc04d7d962cff"
+  },
+  "claims": [
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "officialText": "35 mm full frame (35.9 x 23.9 mm), Exmor R CMOS sensor"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-adbef3217640a01688ed"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.sensor.megapixels",
+      "value": 33,
+      "unit": "MP",
+      "rawValue": 33,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Number Of Pixels (Effective)"
+      },
+      "conditions": {
+        "use": "effective pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-c17c57b1f2d58f948d8f"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.weight",
+      "value": 658,
+      "unit": "g",
+      "rawValue": 658,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "region": "USA",
+        "variant": "ILCE-7M4",
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-01a7d23f5b7e84a27492"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "region": "USA",
+        "variant": "ILCE-7M4"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-c2bd859d5dbd48b32e10"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.dimensions",
+      "value": [
+        131.3,
+        96.4,
+        79.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        131.3,
+        96.4,
+        79.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Dimensions (W x H x D)"
+      },
+      "conditions": {
+        "measurement": "full depth; separate grip-to-monitor depth 69.7 mm is not promoted"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-55415f6239a96e9539d8"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.video.max",
+      "value": "4K 60p",
+      "unit": null,
+      "rawValue": "4K 60p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "4K recording formats"
+      },
+      "conditions": {
+        "officialRates": "59.94p/50p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-d939ce90bbd01b5a5487"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "4K 4:2:2 10 bit formats"
+      },
+      "conditions": {
+        "chroma": "4:2:2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-dd9f0e5f8989a471bebd"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5.5,
+        "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 5.5,
+        "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-70f5774bc2ac65e2",
+      "locator": {
+        "section": "Image Stabilization",
+        "row": "Type; Compensation Effect"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "lens": "Planar T* FE 50mm F1.4 ZA",
+        "longExposureNr": "off"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-cbffb89bc6616e5c1640"
+    }
+  ]
+}

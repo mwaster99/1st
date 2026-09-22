@@ -1,0 +1,699 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-001",
+  "canonicalBaselineDigest": "871e79d42eac665c1a83b8d3a818260238c1517012c69b2bfe0de45220e59969",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-001",
+      "productId": "sony-a7-iv",
+      "productName": "소니 A7 IV",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "9dbf4d04403137dbd1a7a7144a83c5d4c1cec6005129ca3267bb685930f22ade",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-adbef3217640a01688ed",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "officialText": "35 mm full frame (35.9 x 23.9 mm), Exmor R CMOS sensor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 33,
+          "incomingValue": 33,
+          "unit": "MP",
+          "claimId": "claim-c17c57b1f2d58f948d8f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Number Of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "effective pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 658,
+          "incomingValue": 658,
+          "unit": "g",
+          "claimId": "claim-01a7d23f5b7e84a27492",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.weightBasis"
+              ],
+              "note": ""
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "region": "USA",
+              "variant": "ILCE-7M4",
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-c2bd859d5dbd48b32e10",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.weightBasis"
+              ],
+              "note": ""
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "region": "USA",
+              "variant": "ILCE-7M4"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "same-value/new-evidence",
+          "canonicalValue": [
+            131.3,
+            96.4,
+            79.8
+          ],
+          "incomingValue": [
+            131.3,
+            96.4,
+            79.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-55415f6239a96e9539d8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {
+              "measurement": "full depth; separate grip-to-monitor depth 69.7 mm is not promoted"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "4K 60p",
+          "incomingValue": "4K 60p",
+          "unit": null,
+          "claimId": "claim-d939ce90bbd01b5a5487",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording formats"
+            },
+            "conditions": {
+              "officialRates": "59.94p/50p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 10,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-dd9f0e5f8989a471bebd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K 4:2:2 10 bit formats"
+            },
+            "conditions": {
+              "chroma": "4:2:2"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5.5,
+            "conditions": "CIPA standard; pitch/yaw; Planar T* FE 50mm F1.4 ZA; long exposure NR off"
+          },
+          "unit": null,
+          "claimId": "claim-cbffb89bc6616e5c1640",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-70f5774bc2ac65e2",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {
+              "standard": "CIPA",
+              "lens": "Planar T* FE 50mm F1.4 ZA",
+              "longExposureNr": "off"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-001",
+      "productId": "sony-a1-ii",
+      "productName": "소니 A1 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a1-ii",
+        "name": "소니 A1 II",
+        "brand": "Sony",
+        "series": "α1",
+        "model": "A1 II",
+        "aliases": [
+          "sony a1 ii",
+          "sony alpha 1 ii",
+          "소니 a1 ii",
+          "ilce-1m2"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 50.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": null
+          },
+          "weight": 743,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 658,
+          "dimensions": [
+            136.1,
+            96.9,
+            82.9
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": [
+              "자동",
+              "사람",
+              "동물",
+              "조류",
+              "곤충",
+              "자동차",
+              "기차",
+              "비행기"
+            ],
+            "description": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)"
+          },
+          "video": {
+            "max": "8K 30p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 520,
+          "releaseDate": null,
+          "batteryConditions": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 8.5,
+            "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+          },
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-22",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-d5b5949496029854",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-5a4827e1da955b5f9542",
+          "sourceId": "source-d5b5949496029854",
+          "checkedAt": "2026-09-22"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-5a4827e1da955b5f9542",
+        "sourceId": "source-d5b5949496029854",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Sony Support ILCE-1M2 / Specifications",
+          "row": "General: Camera Type; Lens Mount"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-22",
+        "reviewer": "codex-sol-stage4-official-review",
+        "source": {
+          "sourceId": "source-d5b5949496029854",
+          "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+          "documentTitle": "ILCE-1M2 Specifications",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-d88d9c475b5c2a3ec0f5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "officialText": "35-mm full frame (35.9 x 24.0 mm), Exmor RS CMOS sensor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50.1,
+          "unit": "MP",
+          "claimId": "claim-411bc5abbed7affd2f8a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Number Of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "still images",
+              "movieMegapixels": 42
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-11876dc1309d9e370fbb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "officialText": "Exmor RS CMOS sensor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 743,
+          "unit": "g",
+          "claimId": "claim-2a19fb2e063fd94ecaf8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "region": "USA",
+              "variant": "ILCE-1M2",
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-17a0ba181b32c2190fd4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "region": "USA",
+              "variant": "ILCE-1M2"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 658,
+          "unit": "g",
+          "claimId": "claim-f5e59d6c8bb88e4729a4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Body Only"
+            },
+            "conditions": {
+              "region": "USA",
+              "variant": "ILCE-1M2",
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            136.1,
+            96.9,
+            82.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-6b67d97951147b522310",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {
+              "measurement": "full depth; separate grip-to-monitor depth 72.8 mm is not promoted"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            "자동",
+            "사람",
+            "동물",
+            "조류",
+            "곤충",
+            "자동차",
+            "기차",
+            "비행기"
+          ],
+          "unit": null,
+          "claimId": "claim-a4955617b8f3ba8a5d2c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Recognition Target (still images and movies)"
+            },
+            "conditions": {
+              "officialLabels": [
+                "Auto",
+                "Human",
+                "Animal",
+                "Bird",
+                "Insect",
+                "Car",
+                "Train",
+                "Airplane"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)",
+          "unit": null,
+          "claimId": "claim-1dc448d0e8df5e16cd64",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Focus Type"
+            },
+            "conditions": {
+              "officialText": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8K 30p",
+          "unit": null,
+          "claimId": "claim-e32463e95a8cb26a1cac",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "Movie Recording Format (XAVC HS 8K)"
+            },
+            "conditions": {
+              "officialRates": "29.97p/25p/23.98p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-fc6fee9d313875893ed7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "Movie Recording Format (XAVC HS 8K)"
+            },
+            "conditions": {
+              "chroma": "4:2:2",
+              "resolution": "7680 x 4320"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 520,
+          "unit": null,
+          "claimId": "claim-8a5e718168d50ddccb88",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "display": "LCD monitor",
+              "standard": "CIPA",
+              "viewfinderShots": 420
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+          "unit": null,
+          "claimId": "claim-0aad385f300f42302404",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "officialText": "Approx. 420 shots (Viewfinder) / Approx. 520 shots (LCD monitor) (CIPA standard)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8.5,
+            "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+          },
+          "unit": null,
+          "claimId": "claim-6da76037165736dd8a38",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d5b5949496029854",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {
+              "standard": "CIPA2024",
+              "centerStops": 8.5,
+              "peripheryStops": 7,
+              "lens": "FE 50mm F1.2 GM",
+              "longExposureNr": "off"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

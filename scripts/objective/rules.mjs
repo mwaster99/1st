@@ -118,6 +118,11 @@ export function normalizeClaimValue(path, rawValue, rawUnit) {
     return { value: null, unit, unknown: true };
   }
   if (Array.isArray(rawValue)) {
+    if (path === "specs.autofocus.subjects") {
+      if (rawUnit !== null && rawUnit !== undefined) throw new Error(`Text array must not have a unit for ${path}`);
+      if (!rawValue.every((value) => typeof value === "string" && value.trim())) throw new Error(`Invalid text array for ${path}`);
+      return { value: uniqueAliases(rawValue), unit: null, unknown: false };
+    }
     if (path !== "specs.dimensions") throw new Error(`Array value is not supported for ${path}`);
     if (!rawValue.every((value) => typeof value === "number" && Number.isFinite(value))) throw new Error(`Invalid numeric array for ${path}`);
     return { value: rawValue.map((value) => convertNumber(value, rawUnit, unit)), unit, unknown: false };
@@ -362,7 +367,7 @@ function validatePhysicalClaims(staging, issues) {
       continue;
     }
     if (value === null) continue;
-    const numericValues = Array.isArray(value) ? value : typeof value === "number" ? [value] : [];
+    const numericValues = Array.isArray(value) ? value.filter((entry) => typeof entry === "number") : typeof value === "number" ? [value] : [];
     if (numericValues.some((number) => !finiteNonnegative(number))) addIssue(issues, "NEGATIVE_OR_INVALID_NUMBER", `${path} contains an invalid or negative number`, path);
     if ((["specs.weight", "specs.bodyOnlyWeight", "specs.minFocusM", "specs.filterMm", "specs.sensor.megapixels"].includes(path)
       || /^specs\.(?:fixedLens\.)?(?:focal|aperture)\.(?:min|max|wide|tele)$/.test(path))

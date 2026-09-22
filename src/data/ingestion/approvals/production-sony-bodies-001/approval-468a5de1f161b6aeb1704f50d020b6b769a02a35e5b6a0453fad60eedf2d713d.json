@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-001",
+  "productIds": [
+    "sony-a7-iv",
+    "sony-a1-ii"
+  ],
+  "approvedAt": "2026-09-22T04:22:18.238Z",
+  "approvedBy": {
+    "name": "Codex Sol Stage 4 official-source review",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN",
+  "diffDigest": "2f251e04fda87027addf5cee04cf02aa403331a781103dd3f7924d74537d3b08",
+  "diffFileDigest": "ee66ead1b75a783d57133bf5ba463af85e0c32e3206c0757b47cf022b988eeb0",
+  "baselineCanonicalDigest": "871e79d42eac665c1a83b8d3a818260238c1517012c69b2bfe0de45220e59969",
+  "expectedCanonicalDigest": "2f3794736da0dbc94c9089040620247cf51551e1d40db296811b1d474c7a2771",
+  "incomingDigest": "d53f1464df935d44c61c02d125e2aee0b3d46bc1ed6bf610788d20b36b09bcf3",
+  "incomingArtifactDigests": {
+    "vocab.json": "8da0bdfe22496b9fa8e8d5eb3728f741044eb797dd54ab4fa10908c10f5fc9af",
+    "identity-map.json": "0b091183cac11f2ca578f01d173040766a6970fc49d8ecc5577f2c727af41e71",
+    "diffs/production-sony-bodies-001.json": "ee66ead1b75a783d57133bf5ba463af85e0c32e3206c0757b47cf022b988eeb0",
+    "staging/production-sony-bodies-001/sony-ilce-7m4-stage4.json": "eff875a1795a9c52adfbc0fde945a34d108d6e07f6edc274824201024a1748ef",
+    "raw/source-70f5774bc2ac65e2.json": "f3b2d8093c8876527ae80b240898956c6279734b849a0145a710c5a1339a871c",
+    "staging/production-sony-bodies-001/sony-ilce-1m2.json": "674e13255aada5ca877d4b82ae39a3a27fa3aa10f97d1dc72a106b41029d635e",
+    "raw/source-d5b5949496029854.json": "40b2eab4be0c4a88d9580cdab56165bf4ce4027cf1d5db24a8cb62a14ab5e400"
+  },
+  "productOperations": [
+    {
+      "productId": "sony-a7-iv",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "9dbf4d04403137dbd1a7a7144a83c5d4c1cec6005129ca3267bb685930f22ade",
+      "identityEvidenceId": null,
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "a0d43023beb803d6035a68d85e37f9cd461768349c77e67e014c2fd7c62a1448",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-5a4827e1da955b5f9542",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.sensor.format",
+      "claimId": "claim-adbef3217640a01688ed",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-c17c57b1f2d58f948d8f",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.weight",
+      "claimId": "claim-01a7d23f5b7e84a27492",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.weightBasis",
+      "claimId": "claim-c2bd859d5dbd48b32e10",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.dimensions",
+      "claimId": "claim-55415f6239a96e9539d8",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.video.max",
+      "claimId": "claim-d939ce90bbd01b5a5487",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-dd9f0e5f8989a471bebd",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a7-iv",
+      "path": "specs.ibis",
+      "claimId": "claim-cbffb89bc6616e5c1640",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.format",
+      "claimId": "claim-d88d9c475b5c2a3ec0f5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-411bc5abbed7affd2f8a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-11876dc1309d9e370fbb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.weight",
+      "claimId": "claim-2a19fb2e063fd94ecaf8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.weightBasis",
+      "claimId": "claim-17a0ba181b32c2190fd4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-f5e59d6c8bb88e4729a4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.dimensions",
+      "claimId": "claim-6b67d97951147b522310",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.autofocus.subjects",
+      "claimId": "claim-a4955617b8f3ba8a5d2c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.autofocus.description",
+      "claimId": "claim-1dc448d0e8df5e16cd64",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.video.max",
+      "claimId": "claim-e32463e95a8cb26a1cac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-fc6fee9d313875893ed7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.batteryShots",
+      "claimId": "claim-8a5e718168d50ddccb88",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-0aad385f300f42302404",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.ibis",
+      "claimId": "claim-6da76037165736dd8a38",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Sony official current product and specification pages reviewed; accept A7 IV same-value evidence and IBIS null-fill, and create A1 II with verified supported fields while leaving unsupported or unverified fields UNKNOWN"
+    }
+  ],
+  "approvalId": "approval-468a5de1f161b6aeb1704f50d020b6b769a02a35e5b6a0453fad60eedf2d713d"
+}

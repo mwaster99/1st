@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-001",
+  "itemKey": "sony-ilce-1m2",
+  "manufacturerModelCode": "ILCE-1M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-1M2",
+    "productId": "sony-a1-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-5a4827e1da955b5f9542",
+    "sourceId": "source-d5b5949496029854",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Sony Support ILCE-1M2 / Specifications",
+      "row": "General: Camera Type; Lens Mount"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-22",
+    "reviewer": "codex-sol-stage4-official-review"
+  },
+  "product": {
+    "id": "sony-a1-ii",
+    "name": "소니 A1 II",
+    "brand": "Sony",
+    "model": "A1 II",
+    "aliases": [
+      "sony a1 ii",
+      "sony alpha 1 ii",
+      "소니 a1 ii",
+      "ilce-1m2"
+    ],
+    "mount": "Sony E",
+    "series": "α1",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 50.1,
+        "generation": "Exmor RS CMOS"
+      },
+      "weight": 743,
+      "weightBasis": "battery-and-card",
+      "bodyOnlyWeight": 658,
+      "dimensions": [
+        136.1,
+        96.9,
+        82.9
+      ],
+      "autofocus": {
+        "subjects": [
+          "자동",
+          "사람",
+          "동물",
+          "조류",
+          "곤충",
+          "자동차",
+          "기차",
+          "비행기"
+        ],
+        "description": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)"
+      },
+      "video": {
+        "max": "8K 30p",
+        "bitDepth": 10
+      },
+      "batteryShots": 520,
+      "batteryConditions": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 8.5,
+        "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-d5b5949496029854",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+    "publisher": "Sony",
+    "documentTitle": "ILCE-1M2 Specifications",
+    "documentVersion": null,
+    "region": "USA",
+    "accessedAt": "2026-09-22T04:14:37.000Z",
+    "evidenceScope": "General; Camera Section; Recording System; Focus System; Image Stabilization; Power; Size & Weight",
+    "contentDigest": "a86da45e33f403960c91faa0af884e9be5fe7d25625beb8412bc4de223a0942c"
+  },
+  "claims": [
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "officialText": "35-mm full frame (35.9 x 24.0 mm), Exmor RS CMOS sensor"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-d88d9c475b5c2a3ec0f5"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 50.1,
+      "unit": "MP",
+      "rawValue": 50.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Number Of Pixels (Effective)"
+      },
+      "conditions": {
+        "use": "still images",
+        "movieMegapixels": 42
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-411bc5abbed7affd2f8a"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor RS CMOS",
+      "unit": null,
+      "rawValue": "Exmor RS CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "officialText": "Exmor RS CMOS sensor"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-11876dc1309d9e370fbb"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.weight",
+      "value": 743,
+      "unit": "g",
+      "rawValue": 743,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "region": "USA",
+        "variant": "ILCE-1M2",
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-2a19fb2e063fd94ecaf8"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "region": "USA",
+        "variant": "ILCE-1M2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-17a0ba181b32c2190fd4"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 658,
+      "unit": "g",
+      "rawValue": 658,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Body Only"
+      },
+      "conditions": {
+        "region": "USA",
+        "variant": "ILCE-1M2",
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-f5e59d6c8bb88e4729a4"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.dimensions",
+      "value": [
+        136.1,
+        96.9,
+        82.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        136.1,
+        96.9,
+        82.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Dimensions (W x H x D)"
+      },
+      "conditions": {
+        "measurement": "full depth; separate grip-to-monitor depth 72.8 mm is not promoted"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-6b67d97951147b522310"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.autofocus.subjects",
+      "value": [
+        "자동",
+        "사람",
+        "동물",
+        "조류",
+        "곤충",
+        "자동차",
+        "기차",
+        "비행기"
+      ],
+      "unit": null,
+      "rawValue": [
+        "자동",
+        "사람",
+        "동물",
+        "조류",
+        "곤충",
+        "자동차",
+        "기차",
+        "비행기"
+      ],
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Focus System",
+        "row": "Recognition Target (still images and movies)"
+      },
+      "conditions": {
+        "officialLabels": [
+          "Auto",
+          "Human",
+          "Animal",
+          "Bird",
+          "Insect",
+          "Car",
+          "Train",
+          "Airplane"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-a4955617b8f3ba8a5d2c"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.autofocus.description",
+      "value": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)",
+      "unit": null,
+      "rawValue": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Focus System",
+        "row": "Focus Type"
+      },
+      "conditions": {
+        "officialText": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-1dc448d0e8df5e16cd64"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.video.max",
+      "value": "8K 30p",
+      "unit": null,
+      "rawValue": "8K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "Movie Recording Format (XAVC HS 8K)"
+      },
+      "conditions": {
+        "officialRates": "29.97p/25p/23.98p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-e32463e95a8cb26a1cac"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "Movie Recording Format (XAVC HS 8K)"
+      },
+      "conditions": {
+        "chroma": "4:2:2",
+        "resolution": "7680 x 4320"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-fc6fee9d313875893ed7"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.batteryShots",
+      "value": 520,
+      "unit": null,
+      "rawValue": 520,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {
+        "display": "LCD monitor",
+        "standard": "CIPA",
+        "viewfinderShots": 420
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-8a5e718168d50ddccb88"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.batteryConditions",
+      "value": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+      "unit": null,
+      "rawValue": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {
+        "officialText": "Approx. 420 shots (Viewfinder) / Approx. 520 shots (LCD monitor) (CIPA standard)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-0aad385f300f42302404"
+    },
+    {
+      "productId": "sony-a1-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8.5,
+        "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 8.5,
+        "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5b5949496029854",
+      "locator": {
+        "section": "Image Stabilization",
+        "row": "Type; Compensation Effect"
+      },
+      "conditions": {
+        "standard": "CIPA2024",
+        "centerStops": 8.5,
+        "peripheryStops": 7,
+        "lens": "FE 50mm F1.2 GM",
+        "longExposureNr": "off"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-22",
+      "reviewer": "codex-sol-stage4-official-review",
+      "claimId": "claim-6da76037165736dd8a38"
+    }
+  ]
+}

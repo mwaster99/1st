@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "source-d5b5949496029854",
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+  "publisher": "Sony",
+  "documentTitle": "ILCE-1M2 Specifications",
+  "documentVersion": null,
+  "region": "USA",
+  "accessedAt": "2026-09-22T04:14:37.000Z",
+  "evidenceScope": "General; Camera Section; Recording System; Focus System; Image Stabilization; Power; Size & Weight",
+  "contentDigest": "a86da45e33f403960c91faa0af884e9be5fe7d25625beb8412bc4de223a0942c",
+  "evidenceExcerpt": [
+    {
+      "field": "Product identity",
+      "value": {
+        "manufacturerModelCode": "ILCE-1M2",
+        "productType": "body",
+        "identity": {
+          "name": "소니 A1 II",
+          "brand": "Sony",
+          "series": "α1",
+          "model": "A1 II",
+          "aliases": ["sony a1 ii", "sony alpha 1 ii", "소니 a1 ii", "ilce-1m2"],
+          "mount": "E-mount",
+          "kind": "interchangeable",
+          "bodyStyle": "slr"
+        }
+      },
+      "unit": null
+    },
+    { "field": "Sensor Type", "value": "풀프레임", "unit": null },
+    { "field": "Number Of Pixels (Effective), still images", "value": 50.1, "unit": "MP" },
+    { "field": "Sensor generation", "value": "Exmor RS CMOS", "unit": null },
+    { "field": "Weight (with battery and memory card included)", "value": 743, "unit": "g" },
+    { "field": "Weight basis", "value": "battery-and-card", "unit": null },
+    { "field": "Body Only", "value": 658, "unit": "g" },
+    { "field": "Dimensions (W x H x D)", "value": [136.1, 96.9, 82.9], "unit": "mm" },
+    { "field": "Recognition Target", "value": ["자동", "사람", "동물", "조류", "곤충", "자동차", "기차", "비행기"], "unit": null },
+    { "field": "Focus Type", "value": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)", "unit": null },
+    { "field": "Maximum movie recording mode", "value": "8K 30p", "unit": null },
+    { "field": "Maximum movie bit depth", "value": 10, "unit": null },
+    { "field": "Battery Life (Still Images), LCD monitor", "value": 520, "unit": null },
+    { "field": "Battery conditions", "value": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매", "unit": null },
+    {
+      "field": "Image Stabilization",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8.5,
+        "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-1m2",
+      "manufacturerModelCode": "ILCE-1M2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A1 II",
+        "brand": "Sony",
+        "series": "α1",
+        "model": "A1 II",
+        "aliases": ["sony a1 ii", "sony alpha 1 ii", "소니 a1 ii", "ilce-1m2"],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "identityEvidence": {
+        "evidenceRef": 0,
+        "locator": { "section": "Sony Support ILCE-1M2 / Specifications", "row": "General: Camera Type; Lens Mount" },
+        "verification": "verified",
+        "reviewedAt": "2026-09-22",
+        "reviewer": "codex-sol-stage4-official-review"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 1,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": { "section": "Camera Section", "row": "Sensor Type" },
+          "conditions": { "officialText": "35-mm full frame (35.9 x 24.0 mm), Exmor RS CMOS sensor" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 2,
+          "rawValue": 50.1,
+          "rawUnit": "MP",
+          "locator": { "section": "Camera Section", "row": "Number Of Pixels (Effective)" },
+          "conditions": { "use": "still images", "movieMegapixels": 42 },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 3,
+          "rawValue": "Exmor RS CMOS",
+          "rawUnit": null,
+          "locator": { "section": "Camera Section", "row": "Sensor Type" },
+          "conditions": { "officialText": "Exmor RS CMOS sensor" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 743,
+          "rawUnit": "g",
+          "locator": { "section": "Size & Weight", "row": "Weight (with battery and memory card included)" },
+          "conditions": { "region": "USA", "variant": "ILCE-1M2", "weightBasis": "battery-and-card" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": { "section": "Size & Weight", "row": "Weight (with battery and memory card included)" },
+          "conditions": { "region": "USA", "variant": "ILCE-1M2" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 658,
+          "rawUnit": "g",
+          "locator": { "section": "Size & Weight", "row": "Body Only" },
+          "conditions": { "region": "USA", "variant": "ILCE-1M2", "weightBasis": "body-only" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [136.1, 96.9, 82.9],
+          "rawUnit": "mm",
+          "locator": { "section": "Size & Weight", "row": "Dimensions (W x H x D)" },
+          "conditions": { "measurement": "full depth; separate grip-to-monitor depth 72.8 mm is not promoted" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "evidenceRef": 8,
+          "rawValue": ["자동", "사람", "동물", "조류", "곤충", "자동차", "기차", "비행기"],
+          "rawUnit": null,
+          "locator": { "section": "Focus System", "row": "Recognition Target (still images and movies)" },
+          "conditions": { "officialLabels": ["Auto", "Human", "Animal", "Bird", "Insect", "Car", "Train", "Airplane"] },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 9,
+          "rawValue": "고속 하이브리드 AF(위상차 검출 AF/콘트라스트 검출 AF)",
+          "rawUnit": null,
+          "locator": { "section": "Focus System", "row": "Focus Type" },
+          "conditions": { "officialText": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 10,
+          "rawValue": "8K 30p",
+          "rawUnit": null,
+          "locator": { "section": "Recording System (movie)", "row": "Movie Recording Format (XAVC HS 8K)" },
+          "conditions": { "officialRates": "29.97p/25p/23.98p" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 11,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": { "section": "Recording System (movie)", "row": "Movie Recording Format (XAVC HS 8K)" },
+          "conditions": { "chroma": "4:2:2", "resolution": "7680 x 4320" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 12,
+          "rawValue": 520,
+          "rawUnit": null,
+          "locator": { "section": "Power", "row": "Battery Life (Still Images)" },
+          "conditions": { "display": "LCD monitor", "standard": "CIPA", "viewfinderShots": 420 },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 13,
+          "rawValue": "LCD 모니터 사용 시 CIPA 기준 520매; 뷰파인더 사용 시 420매",
+          "rawUnit": null,
+          "locator": { "section": "Power", "row": "Battery Life (Still Images)" },
+          "conditions": { "officialText": "Approx. 420 shots (Viewfinder) / Approx. 520 shots (LCD monitor) (CIPA standard)" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 14,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8.5,
+            "conditions": "중앙 8.5스톱/주변 7.0스톱; CIPA2024; pitch/yaw/roll; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+          },
+          "rawUnit": null,
+          "locator": { "section": "Image Stabilization", "row": "Type; Compensation Effect" },
+          "conditions": { "standard": "CIPA2024", "centerStops": 8.5, "peripheryStops": 7, "lens": "FE 50mm F1.2 GM", "longExposureNr": "off" },
+          "verification": "verified",
+          "reviewedAt": "2026-09-22",
+          "reviewer": "codex-sol-stage4-official-review"
+        }
+      ]
+    }
+  ]
+}

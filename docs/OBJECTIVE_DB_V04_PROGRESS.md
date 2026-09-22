@@ -1,5 +1,56 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 첫 production batch 완료 — 2026-09-22
+
+공식 제조사 자료 → cheap-worker 추출 보조 → 메인 모델 검증 → raw → normalize → validate → diff 검토 → 명시적 승인 → atomic apply의 첫 실제 운영 흐름을 `production-sony-bodies-001` batch로 끝까지 실행했다. **Sony 현행 Tier 1 바디 2개만** 처리했으며 추천 엔진과 UI는 변경하지 않았다.
+
+### 제품 선택과 공식 근거
+
+- 기존 제품: `sony-a7-iv` / Sony A7 IV (`ILCE-7M4`). Sony Korea의 현행 제품·지원 페이지가 유지되는 제품으로, 기존 canonical 값 재검증과 provenance 강화 표본으로 선택했다.
+- 신규 제품: `sony-a1-ii` / Sony α1 II (`ILCE-1M2`). Sony Korea 현행 렌즈 교환식 카메라 목록에 노출되는 제품이고 canonical에 없어서 신규 제품 production 생성 경로 표본으로 선택했다.
+- 현행성 확인: `https://www.sony.co.kr/interchangeable-lens-cameras`, A7 IV 제품 `https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7m4`, α1 II 제품 `https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-1m2?locale=ko_KR`.
+- spec source: A7 IV `https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications`, α1 II `https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications`.
+- 가격은 이번 범위에서 승격하지 않았다. α1 II의 신품·중고 가격은 `unknown`, A7 IV의 기존 `legacy-unverified` 가격은 그대로 유지했다.
+
+### 실제 diff와 canonical 결과
+
+- A7 IV: 센서 포맷/유효 화소, 배터리·카드 포함 658g과 weight basis, 131.3×96.4×79.8mm, 4K 60p/10-bit는 `same-value/new-evidence`였다. 5축/5.5스톱 IBIS와 공식 측정 조건은 `null-fill`로 추가했다. 값 충돌은 없었다.
+- α1 II: 신규 identity와 Sony E mount, 50.1MP 풀프레임 Exmor RS CMOS, 배터리·카드 포함 743g, body-only 658g, 136.1×96.9×82.9mm, 공식 인식 대상/고속 하이브리드 AF, 8K 30p/10-bit, LCD CIPA 520매와 EVF 420매 조건, 5축 중앙 8.5스톱/주변 7.0스톱 조건을 추가했다.
+- α1 II의 release date, AI unit 여부, log/crop, EVF/LCD 상세, burst, shutter, card slots, weather sealing, 가격은 현재 batch에서 안전하게 승격하지 않고 `null`로 남겼다. 공식 센서 크기 35.9×24.0mm는 canonical skeleton에 `sizeMm`가 있지만 ingestion vocab claim path가 없어 승격하지 않았다.
+- 시작 canonical: 바디 37 / 렌즈 36, 총 73. 완료 canonical: 바디 38 / 렌즈 36, 총 74.
+- 시작 SHA-256: `871e79d42eac665c1a83b8d3a818260238c1517012c69b2bfe0de45220e59969`.
+- 완료 SHA-256: `2f3794736da0dbc94c9089040620247cf51551e1d40db296811b1d474c7a2771`.
+- 승인 ID: `approval-468a5de1f161b6aeb1704f50d020b6b769a02a35e5b6a0453fad60eedf2d713d`. batch의 두 item과 journal은 `canonicalized`다. apply 재실행은 `already-canonicalized`와 같은 canonical digest를 반환했다.
+
+### Cheap-worker 측정
+
+- task: `objective-v04-stage4-sony-extraction-001`. 공개 Sony 공식 발췌와 허용 필드 목록만 담은 일회성 `.cheap-worker-stage4-sony-public.txt`를 전달했다. 소스코드·Objective DB·프로젝트 설정은 전달하지 않았고 호출 후 probe를 삭제했다.
+- 결과: 첫 실제 호출 성공. input 1,271 / output 710 / total 1,981 tokens, cache hit 128.
+- 채택: A7 IV에서 IBIS·배터리·AF 자료가 제공되지 않았다는 누락 판정, 두 깊이 측정값 구분, body-only와 operational weight 분리, 배터리 LCD/EVF 조건 보존, editorial identity와 공식 claim 분리 경고를 검토 체크리스트로 채택했다.
+- 메인 모델 수정/판단: worker는 live source를 조회하지 못했고 raw JSON 자체를 반환하지 않았다. 공식 페이지 신뢰성, current 여부, canonical ID/동일 제품 판정, alias, 한국어 정규화, `battery-and-card` 대표값, 8K 표기, UNKNOWN, approval/apply는 직접 검증했다.
+
+### 첫 운영 batch에서 발견한 pipeline 문제
+
+1. `specs.autofocus.subjects`는 vocab/validator에는 있었지만 normalizer가 모든 배열을 dimensions로 간주해 거부했다. 문자열 배열 정규화와 validation false positive를 수정하고 회귀 테스트를 추가했다.
+2. 기존 promotion 테스트 두 개가 production A7 IV에 field evidence가 아직 없다는 전제에 묶여 있었다. 기존 provenance를 보존하면서 새 claim이 합쳐지는지를 검사하도록 수정했다.
+3. Stage 1의 한 item당 raw source 1개 제한 때문에 현행 제품 페이지, 상세 specs, release 자료를 한 제품에 함께 연결할 수 없다. 이번에는 상세 spec source 하나를 raw claim source로 쓰고 현행성은 별도 공식 페이지로 사람이 확인했다. 다음 5–10개 batch 전에 multi-source item을 지원하는 편이 좋다.
+4. vocab에는 `specs.evf`, `lcd`, `burst`, `shutter`, `cardSlots`, `weatherSealing` 경로가 있지만 canonical validator는 이 필드의 non-null 형태를 정의하지 않았다. `specs.sensor.sizeMm`는 canonical에 있으나 vocab claim path에는 없다. 이 상태에서 대량 수집하면 공식 값이 있어도 UNKNOWN으로 남거나 batch별 임의 객체가 생길 수 있으므로 먼저 작은 schema 계약 보완이 필요하다.
+5. raw `evidenceExcerpt`는 구조화된 정규값과 locator를 보존하지만 원문 전체 snapshot은 저장하지 않는다. 한국어 enum 매핑과 30p/29.97p 같은 표현은 `conditions.officialText`/`officialRates`로 보완했다. 제품 수가 늘면 원문 발췌 보존 형식을 명시하는 것이 좋다.
+6. diff는 값·source·locator·category를 충분히 보여 승인 판단에는 사용 가능했다. 다만 문자열 배열을 `×`로 표시해 AF 인식 대상이 치수처럼 보이는 표현은 후속 가독성 개선 후보이며 안전성 차단 문제는 아니다.
+
+### 생성·수정 artifact
+
+- 신규 batch/raw/staging/diff: `src/data/ingestion/batches/production-sony-bodies-001.json`, 두 Sony raw source, 두 staging artifact, production diff.
+- 신규 approval/transaction archive: 현재 승인과 승인 이력, before/after/evidence/journal snapshot.
+- 수정: `src/data/ingestion/identity-map.json`, `src/data/cameraProducts.json`, `scripts/objective/rules.mjs`, `tests/objectiveIngest.test.js`, `tests/objectivePromotion.test.js`, 이 문서.
+- 일회성 cheap-worker public probe는 삭제되어 Git에 포함되지 않는다.
+
+### 검증과 다음 시작점
+
+- `pnpm test`: **90/90 통과**. 관련 Objective ingestion/promotion/storage/new-product 검사도 전체 통과했다.
+- canonical 전체 validation 통과. `pnpm build` 성공. 변경 script/test의 `node --check`와 `git diff --check` 통과.
+- 첫 2제품 production 흐름과 원자적/idempotent apply는 정상이다. 다음 batch를 바로 수십 개로 늘리지는 않는다. 먼저 multi-source item과 현재 선언만 있고 승격할 수 없는 spec 경로 계약을 보완한 뒤, 같은 Sony Tier 1 바디를 **5개 이하**로 한 번 더 실행한다. 그 결과가 안정적이면 브랜드별 5–10개 batch로 확대한다.
+
 ## Stage 3 완료 — 2026-09-21
 
 Stage 2의 raw → normalize → validate → diff → explicit approval → atomic apply/recovery 흐름을 그대로 확장하여 **canonical에 없는 신규 바디와 렌즈를 안전하게 생성하는 경로를 완료했다.** 별도 append 우회 경로는 없으며 신규 제품도 같은 artifact digest, baseline, expected digest, journal, 전체 canonical validation을 통과한다. production `cameraProducts.json`, 추천 엔진, UI는 변경하지 않았다. 아래 Stage 2/1 절은 이력이며 최신 재개 지점은 이 절이다.
