@@ -1,6 +1,6 @@
 # Objective DB v0.4 — 수집 파이프라인 기술 설계
 
-상태: 설계안. 이 문서는 구현 파일이나 신규 제품 데이터를 만들지 않는다. 현재 동작의 기준은 `src/data/cameraProducts.json`과 이를 읽는 `src/cameraCatalog.js`다. 실행 순서와 작업 범위는 [OBJECTIVE_DB_V04_PLAN.md](./OBJECTIVE_DB_V04_PLAN.md)에 둔다.
+상태: 기본 설계 및 Stage 1–4 구현 완료. 현재 동작의 기준은 `src/data/cameraProducts.json`과 이를 읽는 `src/cameraCatalog.js`다. 실행 순서와 작업 범위는 [OBJECTIVE_DB_V04_PLAN.md](./OBJECTIVE_DB_V04_PLAN.md)에, 첫 production batch 이후 확정된 multi-source 및 선택 필드 계약은 [OBJECTIVE_DB_V04_FIELD_CONTRACTS.md](./OBJECTIVE_DB_V04_FIELD_CONTRACTS.md)에 둔다.
 
 ## 1. v0.3 기준과 설계 경계
 
@@ -29,10 +29,12 @@ src/data/ingestion/
 scripts/objective/ingest.mjs                 status/normalize/validate/diff/apply CLI
 scripts/objective/rules.mjs                  스키마·단위·규칙과 오류 분류
 scripts/objective/merge.mjs                  결정적 diff·충돌 검사·원자적 병합
+scripts/objective/raw-helper.mjs             raw evidence/source ID 반복 작성 도우미
 tests/objectiveIngest.test.js                파이프라인 경계·재실행·복구 테스트
+tests/objectivePipelineContracts.test.js     multi-source·선택 필드·요약 회귀 테스트
 ```
 
-위 경로는 **추가 제안**이며 현재 존재하지 않는다. `ingestion/`은 Vite 런타임에서 import하지 않는다. 현행 `cameraProducts.json`의 제품 배열·필드·ID를 유지하고, 필요할 때만 검증 메타데이터를 선택적 필드로 더한다. 단일 canonical JSON의 병합은 직렬로 수행한다. 브랜드별 raw/staging 작업은 독립적으로 진행할 수 있다.
+위 핵심 경로는 현재 구현되어 있다. `ingestion/`은 Vite 런타임에서 import하지 않는다. 현행 `cameraProducts.json`의 제품 배열·필드·ID를 유지하고, 필요할 때만 검증 메타데이터를 선택적 필드로 더한다. 단일 canonical JSON의 병합은 직렬로 수행한다. 브랜드별 raw/staging 작업은 독립적으로 진행할 수 있다.
 
 ## 3. 자료 계약: Raw → Staging → Canonical
 
@@ -42,7 +44,7 @@ raw 파일은 출처 문서/페이지의 특정 버전에서 확보한 **불변 
 
 ### Staging: 해석과 검증의 장소
 
-제품 후보는 `itemKey`, 기존/제안 `productId`, 정규화된 정체성, `claims[]`, `issues[]`로 구성한다. 각 claim의 최소 계약은 다음과 같다.
+제품 후보는 `itemKey`, 기존/제안 `productId`, 정규화된 정체성, `claims[]`, `issues[]`로 구성한다. 한 item에 raw source가 여러 개면 각 source의 fragment를 정체성 일치 검증 후 하나로 결합하고 `sources[]` registry를 만든다. 단일 source는 과거 archive 호환을 위해 기존 `source` 형태를 유지한다. 각 claim의 최소 계약은 다음과 같다.
 
 ```json
 {
@@ -61,7 +63,7 @@ raw 파일은 출처 문서/페이지의 특정 버전에서 확보한 **불변 
 }
 ```
 
-예시는 구조 설명이며 실제 특정 제품의 검증값이 아니다. `claimId`는 제품 ID, **정확한 leaf 경로**, 정규화 값·단위·조건, `sourceId`, 원문 위치의 안정적 직렬화에서 산출한다. staging의 허용 상태는 `pending`, `verified`, `rejected`, `conflict`다. `verified`는 모델이 그럴듯하다고 판단했다는 뜻이 아니라 사람이 원문 위치와 제품 변형을 확인했다는 뜻이다. 원본이 애매하면 `pending` 또는 `rejected`로 둔다. 동일 경로에 서로 다른 값이 오면 `conflict`를 남기고 자동 채택하지 않는다.
+예시는 구조 설명이며 실제 특정 제품의 검증값이 아니다. `claimId`는 제품 ID, **정확한 leaf 경로**, 정규화 값·단위·조건, `sourceId`, 원문 위치의 안정적 직렬화에서 산출한다. staging의 허용 상태는 `pending`, `verified`, `rejected`, `conflict`다. `verified`는 모델이 그럴듯하다고 판단했다는 뜻이 아니라 사람이 원문 위치와 제품 변형을 확인했다는 뜻이다. 원본이 애매하면 `pending` 또는 `rejected`로 둔다. 동일 경로·동일 값의 여러 claim은 복수 근거로 보존하고, 동일 경로에 서로 다른 값이 오면 충돌로 승격을 차단한다.
 
 ### Canonical: 서비스에 제공할 사실
 

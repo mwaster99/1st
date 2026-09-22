@@ -1,22 +1,33 @@
-import { createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, validateStagingBatch } from "./rules.mjs";
+import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateStagingBatch } from "./rules.mjs";
 import { jsonBytes, sha256 } from "./storage.mjs";
 
 const requireValue = (ok, message) => { if (!ok) throw Error(message); };
 const equal = (a, b) => stableStringify(a) === stableStringify(b);
 const names = (p) => [p.name, ...(p.model ? [p.model, `${p.brand} ${p.model}`] : []), ...(p.aliases ?? [])];
 const fullDate = (s) => typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s) && new Date(s).toISOString().slice(0, 10) === s;
+const partialDate = (s) => {
+  if (typeof s !== "string") return false;
+  if (/^\d{4}$/.test(s)) return Number(s) >= 1900 && Number(s) <= 2200;
+  if (/^\d{4}-\d{2}$/.test(s)) return Number(s.slice(5)) >= 1 && Number(s.slice(5)) <= 12;
+  return fullDate(s);
+};
 const https = (s) => { try { return new URL(s).protocol === "https:"; } catch { return false; } };
 
-const numberLeaves = /(?:weight|bodyOnlyWeight|minFocusM|filterMm|megapixels|batteryShots|bitDepth|axes|stops|min|max|wide|tele)$/;
-const booleanLeaves = /(?:aiUnit|log|cropAtMax|stabilization|present|weatherSealing)$/;
-const stringLeaves = /(?:format|generation|description|label|weightBasis|batteryConditions|minFocusConditions|conditions|releaseDate)$/;
-const bodyKeys = new Set(["sensor", "weight", "weightBasis", "bodyOnlyWeight", "dimensions", "autofocus", "video", "batteryShots", "releaseDate", "batteryConditions", "ibis", "evf", "lcd", "burst", "shutter", "cardSlots", "weatherSealing", "fixedLens"]);
+const numberLeaves = /(?:weight|bodyOnlyWeight|minFocusM|filterMm|megapixels|batteryShots|bitDepth|axes|stops|min|max|wide|tele|resolutionDots|sizeInches|magnification|maxRefreshHz|maxMechanicalFps|maxElectronicFps|fastestMechanicalSec|fastestElectronicSec|slowestTimedSec)$/;
+const booleanLeaves = /(?:aiUnit|log|cropAtMax|stabilization|present|weatherSealing|mechanical|electronic|bulb|touch)$/;
+const stringLeaves = /(?:format|generation|description|label|weightBasis|batteryConditions|minFocusConditions|conditions|mechanism)$/;
+const bodyKeys = new Set(["sensor", "weight", "weightBasis", "bodyOnlyWeight", "dimensions", "autofocus", "video", "batteryShots", "releaseDate", "batteryConditions", "ibis", "evf", "lcd", "burst", "shutter", "cardSlots", "weatherSealing", "operatingTemperatureC", "fixedLens"]);
 const lensKeys = new Set(["focal", "aperture", "weight", "stabilization", "filterMm", "minFocusM", "minFocusConditions"]);
 const childKeys = {
   "specs.sensor": ["format", "megapixels", "generation", "sizeMm"],
   "specs.autofocus": ["aiUnit", "subjects", "description"],
   "specs.video": ["max", "bitDepth", "log", "cropAtMax"],
   "specs.ibis": ["present", "axes", "stops", "conditions"],
+  "specs.evf": ["present", "resolutionDots", "magnification", "maxRefreshHz"],
+  "specs.lcd": ["present", "sizeInches", "resolutionDots", "mechanism", "touch"],
+  "specs.burst": ["maxMechanicalFps", "maxElectronicFps"],
+  "specs.shutter": ["mechanical", "electronic", "fastestMechanicalSec", "fastestElectronicSec", "slowestTimedSec", "bulb"],
+  "specs.operatingTemperatureC": ["min", "max"],
   "specs.fixedLens": ["focal", "equivalentFocal", "aperture", "label"],
   "specs.focal": ["min", "max"], "specs.aperture": ["wide", "tele"],
   "specs.fixedLens.focal": ["min", "max"], "specs.fixedLens.equivalentFocal": ["min", "max"],
@@ -28,9 +39,26 @@ export function validateSpecValue(value, field) {
     requireValue(Array.isArray(value) && value.length === (field.endsWith("dimensions") ? 3 : 2) && value.every((v) => typeof v === "number" && Number.isFinite(v) && v > 0), `Invalid physical dimensions: ${field}`);
   } else if (field === "specs.autofocus.subjects") {
     requireValue(Array.isArray(value) && value.every((v) => typeof v === "string" && v.length > 0), `Invalid subjects: ${field}`);
+  } else if (field === "specs.cardSlots") {
+    requireValue(value && typeof value === "object" && !Array.isArray(value) && Object.keys(value).every((key) => ["count", "slots"].includes(key)), `Invalid card slots: ${field}`);
+    requireValue(Number.isInteger(value.count) && value.count > 0 && Array.isArray(value.slots) && value.slots.length === value.count, `Card slot count mismatch: ${field}`);
+    const indexes = new Set();
+    for (const slot of value.slots) {
+      requireValue(slot && typeof slot === "object" && !Array.isArray(slot) && Object.keys(slot).every((key) => ["index", "media", "standards"].includes(key)), `Invalid card slot entry: ${field}`);
+      requireValue(Number.isInteger(slot.index) && slot.index > 0 && !indexes.has(slot.index), `Invalid card slot index: ${field}`);
+      indexes.add(slot.index);
+      requireValue(Array.isArray(slot.media) && slot.media.length > 0 && new Set(slot.media).size === slot.media.length && slot.media.every((entry) => typeof entry === "string" && entry.trim()), `Invalid card media: ${field}`);
+      requireValue(slot.standards === null || (Array.isArray(slot.standards) && new Set(slot.standards).size === slot.standards.length && slot.standards.every((entry) => typeof entry === "string" && entry.trim())), `Invalid card standards: ${field}`);
+    }
+    requireValue([...indexes].every((index) => index <= value.count), `Card slot index exceeds count: ${field}`);
+  } else if (field === "specs.releaseDate") {
+    requireValue(partialDate(value), `Invalid release date: ${field}`);
+  } else if (field === "specs.lcd.mechanism") {
+    requireValue(["fixed", "tilt", "vari-angle", "multi-angle"].includes(value), `Invalid LCD mechanism: ${field}`);
+  } else if (field.startsWith("specs.operatingTemperatureC.")) {
+    requireValue(typeof value === "number" && Number.isFinite(value), `Invalid temperature: ${field}`);
   } else if (field === "specs.video.max" || stringLeaves.test(field)) {
     requireValue(typeof value === "string" && value.trim() && value.trim().toUpperCase() !== "UNKNOWN", `Invalid string: ${field}`);
-    if (field.endsWith("releaseDate")) requireValue(fullDate(value), `Invalid date: ${field}`);
   } else if (numberLeaves.test(field)) {
     requireValue(typeof value === "number" && Number.isFinite(value) && value >= 0, `Invalid number: ${field}`);
     if (!/(?:axes|stops)$/.test(field)) requireValue(value > 0, `Physical value must be positive: ${field}`);
@@ -72,6 +100,8 @@ export function validateCanonical(canonical, vocab) {
         const range = getAtPath(p, field);
         if (range) { const [a, b] = field.endsWith("aperture") ? [range.wide, range.tele] : [range.min, range.max]; requireValue(a == null || b == null || a <= b, `Reversed range: ${field}`); }
       }
+      const temperature = getAtPath(p, "specs.operatingTemperatureC");
+      if (temperature) requireValue(temperature.min == null || temperature.max == null || temperature.min <= temperature.max, `Reversed operating temperature: ${p.id}`);
       for (const condition of ["new", "used"]) {
         const quote = p.price?.[condition];
         requireValue(quote?.currency === "KRW" && ["unknown", "legacy-unverified", "manufacturer", "retailer", "used-market"].includes(quote.sourceType), `Invalid price metadata: ${p.id}`);
@@ -95,6 +125,8 @@ export function validateCanonical(canonical, vocab) {
       }
       for (const [field, evidence] of Object.entries(p.fieldEvidence ?? {})) {
         requireValue(getAtPath(p, field) !== undefined && evidence.verification === "verified" && Array.isArray(evidence.claimIds) && evidence.claimIds.length && new Set(evidence.claimIds).size === evidence.claimIds.length && fullDate(evidence.checkedAt), `Invalid field evidence: ${p.id}/${field}`);
+        if (evidence.sourceIds !== undefined) requireValue(Array.isArray(evidence.sourceIds) && evidence.sourceIds.length && new Set(evidence.sourceIds).size === evidence.sourceIds.length
+          && evidence.sourceIds.every((sourceId) => p.sources.some((source) => source.sourceId === sourceId && source.fields.some((sourceField) => field === sourceField || field.startsWith(`${sourceField}.`)))), `Invalid field source links: ${p.id}/${field}`);
       }
     }
   }
@@ -109,17 +141,23 @@ export function verifyIncoming(bundle, canonical) {
   const { manifest, stagings, raws, vocab, identityMap, diff } = bundle;
   requireValue(manifest.items.length > 0 && manifest.items.length === stagings.length, "Invalid incoming item count");
   const seenItems = new Set(), seenProducts = new Set();
-  const regenerated = Object.values(raws).flatMap((raw) => normalizeRawDocument(raw, { batchId: manifest.batchId, vocab, identityMap }));
+  const regeneratedFragments = Object.values(raws).flatMap((raw) => normalizeRawDocument(raw, { batchId: manifest.batchId, vocab, identityMap }));
+  const regeneratedByItem = new Map();
+  for (const fragment of regeneratedFragments) {
+    const fragments = regeneratedByItem.get(fragment.itemKey) ?? [];
+    fragments.push(fragment);
+    regeneratedByItem.set(fragment.itemKey, fragments);
+  }
   for (const item of manifest.items) {
     requireValue(!seenItems.has(item.itemKey) && !seenProducts.has(item.productId), "Duplicate incoming ID/item");
     seenItems.add(item.itemKey); seenProducts.add(item.productId);
     const staged = stagings.find((s) => s.itemKey === item.itemKey);
     requireValue(staged?.batchId === manifest.batchId && staged.product.id === item.productId, "Staging identity mismatch");
     requireValue(item.stagingDigest === digestValue(staged), "Staging checkpoint digest mismatch; normalize and validate again");
-    const generated = regenerated.filter((s) => s.itemKey === item.itemKey);
-    requireValue(generated.length === 1 && equal(generated[0], staged), "Staging does not match normalized raw evidence");
+    const generatedFragments = regeneratedByItem.get(item.itemKey) ?? [];
+    requireValue(generatedFragments.length > 0 && equal(combineStagingFragments(generatedFragments), staged), "Staging does not match normalized raw evidence");
     requireValue(equal(item.rawDigests, item.sourceIds.map((id) => digestValue(raws[id]))), "Raw checkpoint digest mismatch");
-    requireValue(item.sourceIds.includes(staged.source.sourceId), "Unlisted source");
+    requireValue(equal([...item.sourceIds].sort(), stagingSources(staged).map((source) => source.sourceId).sort()), "Staging source registry does not match manifest");
     const products = staged.productType === "body" ? canonical.bodies : canonical.lenses;
     const existing = products.find((p) => p.id === item.productId);
     if (existing) {
@@ -175,22 +213,27 @@ export function proposedCanonical(canonical, bundle, decisions, productOperation
       const decision = allowed.get(`${p.id}:${claim.claimId}`);
       if (decision?.action !== "accept") continue;
       requireValue(claim.value !== null && claim.verification === "verified", "Cannot promote UNKNOWN or unverified evidence");
-      let cursor = p;
-      const parts = claim.path.split(".");
-      for (const key of parts.slice(0, -1)) cursor = cursor[key] ??= {};
-      cursor[parts.at(-1)] = structuredClone(claim.value);
-      const prior = p.fieldEvidence?.[claim.path];
-      // Replaced values retain history in the transaction archive, not as evidence for the new value.
-      const oldValue = getAtPath((staged.productType === "body" ? canonical.bodies : canonical.lenses).find((v) => v.id === p.id), claim.path);
-      if (!equal(oldValue, claim.value)) {
+      const currentValue = getAtPath(p, claim.path);
+      const sameCurrentValue = equal(currentValue, claim.value);
+      const prior = sameCurrentValue ? p.fieldEvidence?.[claim.path] : undefined;
+      if (!sameCurrentValue) {
         const leaves = (field, value) => value && typeof value === "object" && !Array.isArray(value)
           ? Object.entries(value).flatMap(([k, v]) => leaves(`${field}.${k}`, v)) : [field];
         p.sources = p.sources.map((source) => ({ ...source, fields: source.fields.flatMap((field) => claim.path.startsWith(`${field}.`) ? leaves(field, getAtPath(p, field)) : [field]).filter((field) => field !== claim.path) })).filter((source) => source.fields.length);
       }
-      const claimIds = equal(oldValue, claim.value) ? prior?.claimIds ?? [] : [];
+      let cursor = p;
+      const parts = claim.path.split(".");
+      for (const key of parts.slice(0, -1)) cursor = cursor[key] ??= {};
+      cursor[parts.at(-1)] = structuredClone(claim.value);
+      const claimIds = prior?.claimIds ?? [];
       p.fieldEvidence ??= {};
-      p.fieldEvidence[claim.path] = { verification: "verified", claimIds: [...new Set([...claimIds, claim.claimId])].sort(), checkedAt: claim.reviewedAt };
-      const s = staged.source;
+      p.fieldEvidence[claim.path] = {
+        verification: "verified",
+        claimIds: [...new Set([...claimIds, claim.claimId])].sort(),
+        checkedAt: [prior?.checkedAt, claim.reviewedAt].filter(Boolean).sort().at(-1),
+      };
+      const s = stagingSources(staged).find((source) => source.sourceId === claim.sourceId);
+      requireValue(s, `Missing source metadata for claim ${claim.claimId}`);
       let source = p.sources.find((v) => v.sourceId === s.sourceId);
       if (!source) {
         source = { url: s.url, type: "manufacturer", accessedOn: s.accessedAt.slice(0, 10), fields: [], note: "Field evidence retained in ingestion transaction archive", sourceId: s.sourceId, documentVersion: s.documentVersion };

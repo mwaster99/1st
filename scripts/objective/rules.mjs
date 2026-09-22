@@ -84,9 +84,15 @@ function uniqueAliases(values) {
 
 function canonicalUnit(path) {
   if (["specs.weight", "specs.bodyOnlyWeight"].includes(path)) return "g";
-  if (path === "specs.dimensions" || path.startsWith("specs.focal.") || path === "specs.filterMm" || path.startsWith("specs.fixedLens.focal.")) return "mm";
+  if (["specs.dimensions", "specs.sensor.sizeMm"].includes(path) || path.startsWith("specs.focal.") || path === "specs.filterMm" || path.startsWith("specs.fixedLens.focal.")) return "mm";
   if (path === "specs.minFocusM") return "m";
   if (path === "specs.sensor.megapixels") return "MP";
+  if (path.endsWith("resolutionDots")) return "dots";
+  if (path.endsWith("sizeInches")) return "in";
+  if (path.endsWith("maxRefreshHz")) return "Hz";
+  if (path.startsWith("specs.burst.")) return "fps";
+  if (path.startsWith("specs.shutter.") && path.endsWith("Sec")) return "s";
+  if (path.startsWith("specs.operatingTemperatureC.")) return "°C";
   if (path.startsWith("price.")) return "KRW";
   return null;
 }
@@ -123,8 +129,10 @@ export function normalizeClaimValue(path, rawValue, rawUnit) {
       if (!rawValue.every((value) => typeof value === "string" && value.trim())) throw new Error(`Invalid text array for ${path}`);
       return { value: uniqueAliases(rawValue), unit: null, unknown: false };
     }
-    if (path !== "specs.dimensions") throw new Error(`Array value is not supported for ${path}`);
+    if (!["specs.dimensions", "specs.sensor.sizeMm"].includes(path)) throw new Error(`Array value is not supported for ${path}`);
     if (!rawValue.every((value) => typeof value === "number" && Number.isFinite(value))) throw new Error(`Invalid numeric array for ${path}`);
+    const expectedLength = path === "specs.dimensions" ? 3 : 2;
+    if (rawValue.length !== expectedLength) throw new Error(`${path} must contain ${expectedLength} numbers`);
     return { value: rawValue.map((value) => convertNumber(value, rawUnit, unit)), unit, unknown: false };
   }
   if (unit && unit !== "KRW") {
@@ -279,6 +287,66 @@ export function normalizeRawDocument(raw, { batchId, vocab, identityMap }) {
   });
 }
 
+function identityOnly(product, productType) {
+  const keys = productType === "body"
+    ? ["id", "name", "brand", "series", "model", "aliases", "mount", "kind", "bodyStyle"]
+    : ["id", "name", "brand", "model", "aliases", "mount", "type"];
+  return Object.fromEntries(keys.map((key) => [key, product[key]]));
+}
+
+export function stagingSources(staging) {
+  const candidates = staging.sources?.length ? staging.sources : staging.source ? [staging.source] : [];
+  const byId = new Map();
+  for (const source of candidates) {
+    const prior = byId.get(source.sourceId);
+    if (prior && stableStringify(prior) !== stableStringify(source)) throw new Error(`Conflicting source metadata for ${source.sourceId}`);
+    byId.set(source.sourceId, source);
+  }
+  return [...byId.values()].sort((left, right) => left.sourceId.localeCompare(right.sourceId));
+}
+
+// Single-source output remains byte-compatible with Stage 1–4 archives. Multiple
+// fragments gain sources[] while retaining source as the identity/primary source.
+export function combineStagingFragments(fragments) {
+  if (!Array.isArray(fragments) || fragments.length === 0) throw new Error("No staging fragments to combine");
+  if (fragments.length === 1) return fragments[0];
+  const ordered = [...fragments].sort((left, right) => left.source.sourceId.localeCompare(right.source.sourceId));
+  const expected = ordered[0];
+  for (const fragment of ordered.slice(1)) {
+    for (const key of ["schemaVersion", "batchId", "itemKey", "manufacturerModelCode", "productType"]) {
+      if (stableStringify(fragment[key]) !== stableStringify(expected[key])) throw new Error(`Multi-source ${key} mismatch for ${expected.itemKey}`);
+    }
+    if (stableStringify(fragment.identityMapping) !== stableStringify(expected.identityMapping)
+      || stableStringify(identityOnly(fragment.product, fragment.productType)) !== stableStringify(identityOnly(expected.product, expected.productType))) {
+      throw new Error(`Multi-source identity mismatch for ${expected.itemKey}`);
+    }
+  }
+  const identityEvidence = ordered.map((fragment) => fragment.identityEvidence).filter(Boolean);
+  if (identityEvidence.length > 1) throw new Error(`Multiple identity evidence records for ${expected.itemKey}`);
+  const primary = identityEvidence.length
+    ? ordered.find((fragment) => fragment.source.sourceId === identityEvidence[0].sourceId)
+    : ordered[0];
+  const claims = ordered.flatMap((fragment) => fragment.claims).sort((left, right) =>
+    `${left.path}:${left.sourceId}:${left.claimId}`.localeCompare(`${right.path}:${right.sourceId}:${right.claimId}`));
+  const product = identityOnly(primary.product, primary.productType);
+  for (const claim of claims) {
+    if (getAtPath(product, claim.path) === undefined) setAtPath(product, claim.path, structuredClone(claim.value));
+  }
+  return {
+    schemaVersion: primary.schemaVersion,
+    batchId: primary.batchId,
+    itemKey: primary.itemKey,
+    manufacturerModelCode: primary.manufacturerModelCode,
+    productType: primary.productType,
+    identityMapping: structuredClone(primary.identityMapping),
+    identityEvidence: identityEvidence[0] ?? null,
+    product,
+    source: structuredClone(primary.source),
+    sources: ordered.map((fragment) => structuredClone(fragment.source)),
+    claims,
+  };
+}
+
 function allCanonicalProducts(canonical) {
   return [
     ...(canonical.bodies ?? []).map((product) => ({ product, productType: "body" })),
@@ -335,10 +403,11 @@ export function createNewProductSkeleton(staging, { includeClaims = false } = {}
     mount: p.mount, type: p.type, price: unknownPrice(), specs: unknownSpecs("lens"),
   };
   if (includeClaims) for (const claim of staging.claims) setAtPath(product, claim.path, structuredClone(claim.value));
+  const identitySource = stagingSources(staging).find((source) => source.sourceId === staging.identityEvidence?.sourceId) ?? staging.source;
   product.sources = [{
-    url: staging.source.url, type: "manufacturer", accessedOn: staging.source.accessedAt.slice(0, 10),
+    url: identitySource.url, type: "manufacturer", accessedOn: identitySource.accessedAt.slice(0, 10),
     fields: ["identity"], note: "Identity evidence retained in ingestion transaction archive",
-    sourceId: staging.source.sourceId, documentVersion: staging.source.documentVersion,
+    sourceId: identitySource.sourceId, documentVersion: identitySource.documentVersion,
   }];
   product.identityEvidence = {
     verification: "verified",
@@ -368,12 +437,15 @@ function validatePhysicalClaims(staging, issues) {
     }
     if (value === null) continue;
     const numericValues = Array.isArray(value) ? value.filter((entry) => typeof entry === "number") : typeof value === "number" ? [value] : [];
-    if (numericValues.some((number) => !finiteNonnegative(number))) addIssue(issues, "NEGATIVE_OR_INVALID_NUMBER", `${path} contains an invalid or negative number`, path);
+    if (!path.startsWith("specs.operatingTemperatureC.") && numericValues.some((number) => !finiteNonnegative(number))) addIssue(issues, "NEGATIVE_OR_INVALID_NUMBER", `${path} contains an invalid or negative number`, path);
     if ((["specs.weight", "specs.bodyOnlyWeight", "specs.minFocusM", "specs.filterMm", "specs.sensor.megapixels"].includes(path)
       || /^specs\.(?:fixedLens\.)?(?:focal|aperture)\.(?:min|max|wide|tele)$/.test(path))
       && typeof value === "number" && value <= 0) addIssue(issues, "INVALID_PHYSICAL_RANGE", `${path} must be greater than zero`, path);
     if (path === "specs.dimensions" && (!Array.isArray(value) || value.length !== 3 || value.some((number) => !Number.isFinite(number) || number <= 0))) {
       addIssue(issues, "INVALID_DIMENSIONS", "specs.dimensions must contain three positive numbers", path);
+    }
+    if (path === "specs.sensor.sizeMm" && (!Array.isArray(value) || value.length !== 2 || value.some((number) => !Number.isFinite(number) || number <= 0))) {
+      addIssue(issues, "INVALID_SENSOR_SIZE", "specs.sensor.sizeMm must contain width and height in mm", path);
     }
   }
   const orderedPairs = [
@@ -383,6 +455,7 @@ function validatePhysicalClaims(staging, issues) {
     ["price.used.low", "price.used.typical"],
     ["price.used.typical", "price.used.high"],
     ["price.used.low", "price.used.high"],
+    ["specs.operatingTemperatureC.min", "specs.operatingTemperatureC.max"],
   ];
   for (const [lowPath, highPath] of orderedPairs) {
     const low = claimByPath.get(lowPath)?.value;
@@ -393,10 +466,9 @@ function validatePhysicalClaims(staging, issues) {
   }
 }
 
-function sourceIsValid(staging, rawDocuments, vocab, issues) {
-  const source = staging.source;
+function sourceIsValid(source, staging, rawDocuments, vocab, issues) {
   if (!source || !vocab.sourceTypes.includes(source.sourceType)) addIssue(issues, "INVALID_SOURCE_TYPE", `Unsupported source type: ${source?.sourceType}`);
-  if (source?.sourceType !== "manufacturer" && staging.claims.some((claim) => !claim.path.startsWith("price."))) {
+  if (source?.sourceType !== "manufacturer" && staging.claims.some((claim) => claim.sourceId === source?.sourceId && !claim.path.startsWith("price."))) {
     addIssue(issues, "NON_MANUFACTURER_SPEC_SOURCE", "Retail and used-market sources may support price claims only");
   }
   try {
@@ -453,13 +525,24 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
     if (!vocabularyMounts.has(product.mount)) addIssue(issues, "INVALID_MOUNT", `Invalid lens mount: ${product.mount}`);
   }
 
+  let sources = [];
+  try {
+    sources = stagingSources(staging);
+  } catch (error) {
+    addIssue(issues, "SOURCE_REGISTRY_CONFLICT", error.message, "sources");
+  }
+  const sourceIds = new Set(sources.map((source) => source.sourceId));
+  if (!sources.length) addIssue(issues, "SOURCE_REGISTRY_EMPTY", "Staging requires at least one source", "sources");
+  if (staging.source && !sourceIds.has(staging.source.sourceId)) addIssue(issues, "PRIMARY_SOURCE_MISSING", "Primary source is absent from sources[]", "source");
+
   if (!existing) {
     const evidence = staging.identityEvidence;
-    if (staging.source?.sourceType !== "manufacturer") addIssue(issues, "NEW_PRODUCT_IDENTITY_SOURCE", "A new product identity requires a manufacturer source", "source.sourceType");
+    const identitySource = sources.find((source) => source.sourceId === evidence?.sourceId);
+    if (identitySource?.sourceType !== "manufacturer") addIssue(issues, "NEW_PRODUCT_IDENTITY_SOURCE", "A new product identity requires a manufacturer source", "source.sourceType");
     if (!evidence || evidence.verification !== "verified" || !evidence.reviewer || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewedAt ?? "")) {
       addIssue(issues, "NEW_PRODUCT_IDENTITY_UNVERIFIED", "A new product requires reviewed identity evidence", "identityEvidence");
     } else {
-      if (evidence.sourceId !== staging.source?.sourceId) addIssue(issues, "IDENTITY_SOURCE_MISMATCH", "Identity evidence source does not match staging source", "identityEvidence.sourceId");
+      if (!identitySource) addIssue(issues, "IDENTITY_SOURCE_MISMATCH", "Identity evidence source is absent from staging sources", "identityEvidence.sourceId");
       if (!evidence.locator || !Object.values(evidence.locator).some((value) => typeof value === "string" && value.trim())) addIssue(issues, "IDENTITY_LOCATOR_MISSING", "Identity evidence requires a source locator", "identityEvidence.locator");
       const rawItem = rawDocuments.get(evidence.sourceId)?.items?.find((item) => item.itemKey === staging.itemKey);
       const rawReview = rawItem?.identityEvidence;
@@ -488,7 +571,7 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
     else if (owner && owner !== product.id) addIssue(issues, "ALIAS_COLLISION", `${value} collides with ${owner}`);
   }
 
-  sourceIsValid(staging, rawDocuments, vocab, issues);
+  for (const source of sources) sourceIsValid(source, staging, rawDocuments, vocab, issues);
   const stagedWeight = getAtPath(product, "specs.weight");
   const stagedWeightBasis = getAtPath(product, "specs.weightBasis");
   if (productType === "body" && stagedWeight !== undefined && stagedWeight !== null && !vocab.weightBases.includes(stagedWeightBasis)) {
@@ -497,10 +580,17 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   if (productType === "body" && stagedWeightBasis !== undefined && stagedWeightBasis !== null && !vocab.weightBases.includes(stagedWeightBasis)) {
     addIssue(issues, "INVALID_WEIGHT_BASIS", `Unsupported weight basis: ${stagedWeightBasis}`, "specs.weightBasis");
   }
-  const claimPaths = new Set();
+  const claimsByPath = new Map();
+  const claimIds = new Set();
   for (const claim of staging.claims ?? []) {
-    if (claimPaths.has(claim.path)) addIssue(issues, "DUPLICATE_CLAIM_PATH", `Duplicate claim path: ${claim.path}`, claim.path);
-    claimPaths.add(claim.path);
+    const priorClaims = claimsByPath.get(claim.path) ?? [];
+    if (priorClaims.some((prior) => !valuesEqual(prior.value, claim.value) || prior.unit !== claim.unit)) {
+      addIssue(issues, "CONFLICTING_CLAIM_VALUES", `Official sources disagree for ${claim.path}`, claim.path);
+    }
+    priorClaims.push(claim);
+    claimsByPath.set(claim.path, priorClaims);
+    if (claimIds.has(claim.claimId)) addIssue(issues, "DUPLICATE_CLAIM_ID", `Duplicate claim ID: ${claim.claimId}`, claim.path);
+    claimIds.add(claim.claimId);
     if (!vocab.claimPaths.includes(claim.path)) addIssue(issues, "UNSUPPORTED_CLAIM_PATH", `Unsupported claim path: ${claim.path}`, claim.path);
     if (!CLAIM_VERIFICATIONS.has(claim.verification)) addIssue(issues, "INVALID_VERIFICATION", `Invalid verification state: ${claim.verification}`, claim.path);
     else if (claim.verification !== "verified") addIssue(issues, "CLAIM_NOT_VERIFIED", `Claim must be verified before the batch can reach validated: ${claim.path}`, claim.path);
@@ -510,7 +600,7 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
     if (!claim.locator || !Object.values(claim.locator).some((value) => typeof value === "string" && value.trim())) {
       addIssue(issues, "SOURCE_LOCATOR_MISSING", `Claim has no source locator: ${claim.path}`, claim.path);
     }
-    if (claim.sourceId !== staging.source?.sourceId) addIssue(issues, "CLAIM_SOURCE_MISMATCH", `Claim source does not match staging source: ${claim.path}`, claim.path);
+    if (!sourceIds.has(claim.sourceId)) addIssue(issues, "CLAIM_SOURCE_MISMATCH", `Claim source is absent from staging sources: ${claim.path}`, claim.path);
     const rawItem = rawDocuments.get(claim.sourceId)?.items?.find((item) => item.itemKey === staging.itemKey);
     const rawObservation = rawItem?.observations?.find((observation) => observation.path === claim.path);
     if (!rawObservation) addIssue(issues, "RAW_OBSERVATION_MISSING", `No raw observation supports ${claim.path}`, claim.path);
@@ -578,6 +668,7 @@ function valuesEqual(left, right) {
 export function createCanonicalDiff(staging, canonical) {
   const entries = allCanonicalProducts(canonical);
   const existing = entries.find(({ product }) => product.id === staging.product.id)?.product ?? null;
+  const sourcesById = new Map(stagingSources(staging).map((source) => [source.sourceId, source]));
   const changes = staging.claims.map((claim) => {
     const canonicalValue = existing ? getAtPath(existing, claim.path) : undefined;
     let category;
@@ -596,7 +687,7 @@ export function createCanonicalDiff(staging, canonical) {
       canonicalSources: existing?.sources?.filter((source) => (source.fields ?? []).some((field) => claim.path === field || claim.path.startsWith(`${field}.`))) ?? [],
       incomingSource: {
         sourceId: claim.sourceId,
-        url: staging.source.url,
+        url: sourcesById.get(claim.sourceId)?.url ?? null,
         locator: claim.locator,
         conditions: claim.conditions,
       },
@@ -621,19 +712,43 @@ export function createCanonicalDiff(staging, canonical) {
   };
 }
 
-function formatValue(value, unit) {
+export function summarizeCanonicalDiff(changes) {
+  const categories = Object.fromEntries(["same-value/new-evidence", "null-fill", "value-conflict", "new-product", "unknown-no-change", "incoming-unknown"].map((name) => [name, 0]));
+  const seen = new Set();
+  for (const change of changes ?? []) {
+    const key = `${change.path}:${change.category}`;
+    if (!seen.has(key)) categories[change.category] = (categories[change.category] ?? 0) + 1;
+    seen.add(key);
+  }
+  return {
+    fieldCount: new Set((changes ?? []).map((change) => change.path)).size,
+    sourceCount: new Set((changes ?? []).map((change) => change.incomingSource?.sourceId).filter(Boolean)).size,
+    categories,
+  };
+}
+
+function formatValue(value, unit, path) {
   if (value === null || value === undefined) return "UNKNOWN";
-  const rendered = Array.isArray(value) ? value.join(" × ") : typeof value === "object" ? JSON.stringify(value) : String(value);
+  const rendered = Array.isArray(value)
+    ? ["specs.dimensions", "specs.sensor.sizeMm"].includes(path) ? value.join(" × ") : value.join(", ")
+    : typeof value === "object" ? JSON.stringify(value) : String(value);
   return unit ? `${rendered} ${unit}` : rendered;
 }
 
 export function formatCanonicalDiff(diff) {
-  const lines = [`${diff.productName} (${diff.productId})`, `operation: ${diff.operation ?? "update-product"}`, `status: ${diff.status}`];
+  const summary = diff.summary ?? summarizeCanonicalDiff(diff.changes);
+  const c = summary.categories;
+  const lines = [
+    `${diff.productName} (${diff.productId})`,
+    `operation: ${diff.operation ?? "update-product"}`,
+    `status: ${diff.status}`,
+    `summary: ${summary.fieldCount} fields / ${summary.sourceCount} sources | evidence ${c["same-value/new-evidence"] ?? 0} | null-fill ${c["null-fill"] ?? 0} | conflict ${c["value-conflict"] ?? 0} | new ${c["new-product"] ?? 0} | unknown ${((c["unknown-no-change"] ?? 0) + (c["incoming-unknown"] ?? 0))}`,
+  ];
   if (diff.operation === "new-product") {
     lines.push("", "new canonical product:", JSON.stringify(diff.incomingProduct, null, 2), `identity source: ${diff.identityEvidence?.source?.url ?? "UNKNOWN"}`, `identity locator: ${JSON.stringify(diff.identityEvidence?.locator ?? null)}`);
   }
   for (const change of diff.changes) {
-    lines.push("", `${change.path}:`, `  canonical: ${formatValue(change.canonicalValue, change.unit)}`, `  incoming:  ${formatValue(change.incomingValue, change.unit)}`, `  result:    ${change.category}`, `  source:    ${change.incomingSource.url}`, `  locator:   ${JSON.stringify(change.incomingSource.locator)}`);
+    lines.push("", `${change.path}:`, `  canonical: ${formatValue(change.canonicalValue, change.unit, change.path)}`, `  incoming:  ${formatValue(change.incomingValue, change.unit, change.path)}`, `  result:    ${change.category}`, `  source:    ${change.incomingSource.url}`, `  locator:   ${JSON.stringify(change.incomingSource.locator)}`);
   }
   return lines.join("\n");
 }

@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   createCanonicalDiff,
+  combineStagingFragments,
   digestValue,
   formatCanonicalDiff,
   normalizeRawDocument,
@@ -112,13 +113,15 @@ async function runStatus() {
 async function runNormalize() {
   const { manifest, vocab, identityMap } = await loadContext();
   const rawDocuments = await loadRawDocuments(manifest);
-  const normalizedByItem = new Map();
+  const fragmentsByItem = new Map();
   for (const raw of rawDocuments.values()) {
-    for (const staging of normalizeRawDocument(raw, { batchId, vocab, identityMap })) {
-      if (normalizedByItem.has(staging.itemKey)) throw new Error(`Multiple raw sources produced ${staging.itemKey}; Stage 1 expects one source per item`);
-      normalizedByItem.set(staging.itemKey, staging);
+    for (const fragment of normalizeRawDocument(raw, { batchId, vocab, identityMap })) {
+      const fragments = fragmentsByItem.get(fragment.itemKey) ?? [];
+      fragments.push(fragment);
+      fragmentsByItem.set(fragment.itemKey, fragments);
     }
   }
+  const normalizedByItem = new Map([...fragmentsByItem].map(([itemKey, fragments]) => [itemKey, combineStagingFragments(fragments)]));
 
   let manifestChanged = false;
   for (const item of manifest.items) {

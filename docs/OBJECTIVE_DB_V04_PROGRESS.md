@@ -1,5 +1,16 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 production pipeline 보완 완료 — 2026-09-22
+
+첫 production batch에서 확인한 반복 작업 병목을 보완했다. 새 제품이나 canonical 값을 추가하지 않았고 추천 엔진과 UI도 변경하지 않았다. 상세 계약은 [OBJECTIVE_DB_V04_FIELD_CONTRACTS.md](./OBJECTIVE_DB_V04_FIELD_CONTRACTS.md)에 고정했다.
+
+- 한 item의 여러 공식 raw source를 하나의 staging으로 결정적으로 결합한다. 같은 leaf·같은 값의 복수 claim과 source를 보존하고, 값이 다르면 `CONFLICTING_CLAIM_VALUES`로 차단한다. 단일 source staging은 과거 transaction과 호환된다.
+- `sensor.sizeMm`, EVF, LCD, shutter, burst, slot별 복수 media/card standard, weather sealing, 동작 온도, 정밀도별 release date의 선택적 계약과 validation을 추가했다. 기존 74개 제품에는 새 default나 추정값을 넣지 않았다.
+- `raw-helper.mjs`가 evidence dedup, reference, content/source digest를 생성한다. review 정보는 입력에 명시된 경우만 복사한다.
+- 사람용 diff에 unique field/source와 category별 field summary를 추가하고 문자열 배열 표시를 고쳤다. machine-readable diff 구조는 유지했다.
+- cheap-worker에는 프로젝트 코드나 제품 DB 대신 합성 diff fixture만 전달했다. 첫 호출은 malformed response로 거부됐고(input 473/output 479), 같은 task ID의 마지막 재시도가 성공했다(input 496/output 473). 총 1,921 tokens이며 patch는 적용하지 않고 중복 field/source assertion 제안만 검토해 반영했다. 일회성 fixture는 삭제했다.
+- 다음 단계는 Sony 현행 바디 3–5개 production batch다. 제품마다 제품/spec/support source를 필요한 만큼 등록하고, 공식 근거가 없는 선택 필드는 `null`로 유지한다.
+
 ## Stage 4 첫 production batch 완료 — 2026-09-22
 
 공식 제조사 자료 → cheap-worker 추출 보조 → 메인 모델 검증 → raw → normalize → validate → diff 검토 → 명시적 승인 → atomic apply의 첫 실제 운영 흐름을 `production-sony-bodies-001` batch로 끝까지 실행했다. **Sony 현행 Tier 1 바디 2개만** 처리했으며 추천 엔진과 UI는 변경하지 않았다.
