@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ILCE-7SM3 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-23T01:38:07Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "센서 유형",
+      "value": "Exmor R CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 35.6 x 23.8mm",
+      "value": [
+        35.6,
+        23.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효)",
+      "value": 12.1,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": 699,
+      "unit": "g"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "치수(W x H x D)",
+      "value": [
+        128.9,
+        96.9,
+        80.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD 모니터",
+      "value": 600,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지)",
+      "value": "LCD 약 600매 / EVF 약 510매(CIPA)",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7sm3",
+      "manufacturerModelCode": "ILCE-7SM3",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7S III",
+        "brand": "Sony",
+        "series": "α7S",
+        "model": "A7S III",
+        "aliases": [
+          "Sony A7S III"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 1,
+          "rawValue": "Exmor R CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.6,
+            23.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 35.6 x 23.8mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 12.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효)"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 699,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 7,
+          "rawValue": 600,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD 모니터"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "display": "LCD",
+            "evfShots": 510
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 8,
+          "rawValue": "LCD 약 600매 / EVF 약 510매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "6f474de8cb039f77fcb915e4d84e04e02227f63723f8eb5a9c3f5114251ebda6",
+  "sourceId": "source-e061b44ce5d313ac"
+}

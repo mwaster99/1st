@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "DSC-RX100M7 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-23T01:38:07Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "1인치",
+      "unit": null
+    },
+    {
+      "field": "센서 유형",
+      "value": "Exmor RS CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 13.2 x 8.8mm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효)",
+      "value": 20.1,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리와 카드 포함",
+      "value": 302,
+      "unit": "g"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리와 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게(CIPA 준수): 본체만",
+      "value": 275,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D)",
+      "value": [
+        101.6,
+        58.1,
+        42.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 광각 f=9.0mm",
+      "value": 9,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 망원 f=72mm",
+      "value": 72,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산: 광각 24mm",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산: 망원 200mm",
+      "value": 200,
+      "unit": "mm"
+    },
+    {
+      "field": "F값(최대 조리개): 광각",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "F값(최대 조리개): 망원",
+      "value": 4.5,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): 모니터",
+      "value": 260,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지)",
+      "value": "모니터 약 260매 / EVF 약 240매(CIPA)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 최저",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 최고",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-dsc-rx100m7",
+      "manufacturerModelCode": "DSC-RX100M7",
+      "productType": "body",
+      "identity": {
+        "name": "소니 RX100 VII",
+        "brand": "Sony",
+        "series": "RX100",
+        "model": "RX100 VII",
+        "aliases": [],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "1인치",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 1,
+          "rawValue": "Exmor RS CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            13.2,
+            8.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 13.2 x 8.8mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 20.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효)"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 302,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리와 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리와 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 275,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            101.6,
+            58.1,
+            42.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 8,
+          "rawValue": 9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 광각 f=9.0mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 9,
+          "rawValue": 72,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 망원 f=72mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 10,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm 환산: 광각 24mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 11,
+          "rawValue": 200,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm 환산: 망원 200mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 12,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 광각"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 13,
+          "rawValue": 4.5,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 망원"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 14,
+          "rawValue": 260,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): 모니터"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "display": "monitor",
+            "evfShots": 240
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 15,
+          "rawValue": "모니터 약 260매 / EVF 약 240매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 16,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최저"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 17,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최고"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "996d42df2c1493fb78fdbdf0fae51bd71653a070e5b00d130c13f03ebe592cb9",
+  "sourceId": "source-336a7b5d8419864d"
+}

@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "itemKey": "sony-ilce-7sm3",
+  "manufacturerModelCode": "ILCE-7SM3",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7SM3",
+    "productId": "sony-a7s-iii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-dfc37f2ff0d3ff8304a6",
+    "sourceId": "source-eceeb66bbed35c90",
+    "evidenceRef": 2,
+    "locator": {
+      "section": "Product header",
+      "row": "A7S III / ILCE-7SM3"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-production-sony-004-review"
+  },
+  "product": {
+    "id": "sony-a7s-iii",
+    "name": "소니 A7S III",
+    "brand": "Sony",
+    "series": "α7S",
+    "model": "A7S III",
+    "aliases": [
+      "Sony A7S III"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "batteryConditions": "LCD 약 600매 / EVF 약 510매(CIPA)",
+      "batteryShots": 600,
+      "dimensions": [
+        128.9,
+        96.9,
+        80.8
+      ],
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R CMOS",
+        "megapixels": 12.1,
+        "sizeMm": [
+          35.6,
+          23.8
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": true,
+        "max": "4K 120p"
+      },
+      "weight": 699,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-eceeb66bbed35c90",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+    "publisher": "Sony Korea",
+    "documentTitle": "ILCE-7SM3 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T01:38:07Z",
+    "evidenceScope": "Product identity and selected product feature claims",
+    "contentDigest": "6036c1e1f00fcc1fe66dc2930a7cc6b77ebd99c7238ff445bcd0bfc89ce3d989"
+  },
+  "sources": [
+    {
+      "sourceId": "source-d6735607dfc8b324",
+      "sourceType": "manufacturer",
+      "url": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7sm3-b",
+      "publisher": "Sony Electronics USA",
+      "documentTitle": "Sony A7S III product and recording footnotes",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "4K 120p recording crop and card condition footnotes",
+      "contentDigest": "ce719ba286dfe003a45a3b57ca43fb205edf6579334f63217e73a82aedc95b5f"
+    },
+    {
+      "sourceId": "source-e061b44ce5d313ac",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "ILCE-7SM3 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "6f474de8cb039f77fcb915e4d84e04e02227f63723f8eb5a9c3f5114251ebda6"
+    },
+    {
+      "sourceId": "source-eceeb66bbed35c90",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+      "publisher": "Sony Korea",
+      "documentTitle": "ILCE-7SM3 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Product identity and selected product feature claims",
+      "contentDigest": "6036c1e1f00fcc1fe66dc2930a7cc6b77ebd99c7238ff445bcd0bfc89ce3d989"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.batteryConditions",
+      "value": "LCD 약 600매 / EVF 약 510매(CIPA)",
+      "unit": null,
+      "rawValue": "LCD 약 600매 / EVF 약 510매(CIPA)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-a8ae25331d35c50d7f8d"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.batteryShots",
+      "value": 600,
+      "unit": null,
+      "rawValue": 600,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지): LCD 모니터"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "display": "LCD",
+        "evfShots": 510
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-c5e2db7ae8bd781b2cda"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.dimensions",
+      "value": [
+        128.9,
+        96.9,
+        80.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        128.9,
+        96.9,
+        80.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-6a17f88c727a29215d09"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-3fcc8cec24a478e6bd2e"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-c17a4318ca21c27b08e4"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.sensor.megapixels",
+      "value": 12.1,
+      "unit": "MP",
+      "rawValue": 12.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-0229f1b7de35a8a53a7f"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.6,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.6,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 35.6 x 23.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-b4fd0abad071b3c91550"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-eceeb66bbed35c90",
+      "locator": {
+        "section": "Specifications",
+        "row": "Highlights: 10-bit 4:2:2 recording"
+      },
+      "conditions": {
+        "mode": "4K 120p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-459c49c71412f540df68"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d6735607dfc8b324",
+      "locator": {
+        "section": "Specifications",
+        "row": "Overview footnote 5: 120p has a 1.1x crop"
+      },
+      "conditions": {
+        "mode": "4K 120p",
+        "officialText": "120p has a 1.1x crop"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-73776c0b379524f097aa"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.video.max",
+      "value": "4K 120p",
+      "unit": null,
+      "rawValue": "4K 120p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d6735607dfc8b324",
+      "locator": {
+        "section": "Specifications",
+        "row": "Overview footnote 5: 120p has a 1.1x crop"
+      },
+      "conditions": {
+        "officialText": "120p has a 1.1x crop",
+        "requiredMedia": "XAVC S-I S&Q 4K 120p 10-bit 4:2:2 requires CFexpress Type A VPG200 or higher"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-e9d078cfcc3bb261e6a9"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.video.max",
+      "value": "4K 120p",
+      "unit": null,
+      "rawValue": "4K 120p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-eceeb66bbed35c90",
+      "locator": {
+        "section": "Specifications",
+        "row": "Highlights: 4K 120p"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-ca3e48a694361c371d76"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.weight",
+      "value": 699,
+      "unit": "g",
+      "rawValue": 699,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-7b0dd8d14165b51fd0eb"
+    },
+    {
+      "productId": "sony-a7s-iii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e061b44ce5d313ac",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-1536a28d951a562e6f91"
+    }
+  ]
+}

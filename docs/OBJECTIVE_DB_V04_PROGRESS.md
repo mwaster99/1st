@@ -1,5 +1,27 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 네 번째 Sony production batch 완료 — 2026-09-23
+
+미리 선정된 5개 바디를 `production-sony-bodies-004`로 처리했다. Sony 공식 제품·사양·지원 자료 11개를 제품별 독립 cheap-worker task로 검토한 뒤 raw → normalize → validate → diff → 사람 검토 → 명시적 승인 → atomic apply까지 완료했다. 모든 item과 transaction journal은 `canonicalized`이며, 재적용은 `already-canonicalized`와 `canonicalMatches: true`를 반환했다. 추천 엔진·UI·렌즈 제품·가격 promotion은 변경하지 않았다.
+
+| 제품 / canonical ID | 작업 | 공식 source | 핵심 결과 |
+| --- | --- | ---: | --- |
+| ZV-E10 II / `sony-zv-e10-ii` | 신규 | 2 | E-mount APS-C 26MP, body-only 292g, 크기·LCD 배터리 조건. 배터리·카드 포함 무게는 UNKNOWN. |
+| α7S III / `sony-a7s-iii` | 신규 | 3 | E-mount full-frame 12.1MP, 배터리·카드 포함 699g, 4K 120p/10-bit. 120p의 공식 1.1배 crop 조건을 claim에 보존. |
+| RX10 V / `sony-rx10-v` | 신규 fixed | 2 | 1형 20.1MP, 카메라 전체 1111g, 내장 줌의 실제 9.1–210mm / 35mm 환산 24–600mm / F2.4–4.0. |
+| RX1R III / `sony-rx1r-iii` | 신규 fixed | 2 | full-frame 61MP, 카메라 전체 498g, 실제 35mm F2 단렌즈. 환산 초점거리는 공식 직접 근거를 찾지 못해 UNKNOWN. |
+| RX100 VII / `sony-rx100-vii` | 기존 fixed 보강 | 신규 2, canonical 총 3 | 기존 ID·물리값 유지, 센서 세대·크기·배터리 조건·온도 보강, 내장 렌즈 실제 9–72mm / 환산 24–200mm / F2.8–4.5의 공식 근거 추가. |
+
+기존 fixed-lens 정책 그대로 세 제품 모두 `kind: fixed`, `mount: null`, `specs.fixedLens`를 사용한다. 내장 렌즈를 별도 교환식 lens product로 만들지 않았고, compatibility용 통합 렌즈는 `includedInBodyId`를 가지며 자체 무게·가격이 `null`이다. scenario에서는 바디 하나만 구매하고 바디 전체 무게를 한 번만 계산한다. RX1R III는 초점거리와 조리개 범위 양 끝이 같은 단렌즈로 표현했다. 현재 schema에는 내장 렌즈의 optical zoom·filter diameter 필드가 없다. Sony 페이지의 RX10 V 25배 표기와 실제 9.1–210mm 범위의 비율도 달라 해당 값은 canonical에 추정·추가하지 않았다. 공식 72mm(RX10 V)·49mm(RX1R III) 필터 정보 역시 현재 fixedLens 계약으로 승격하지 않았다.
+
+RX100 VII diff는 `same-value/new-evidence` 14건, `null-fill` 6건, `value-conflict` 0건이다. 공식 source 간 동일 필드 값 충돌은 0건이며 기존 값을 자동 덮어쓰지 않았다. 가격, 불명확한 crop/영상 조건, ZV-E10 II의 operational weight, RX1R III의 명시적 환산 초점거리 등은 UNKNOWN으로 유지했다. 무게 claim에 필수 `weightBasis` 조건이 누락된 초기 검증 시도는 pipeline이 거부했고 raw 조건을 보완하여 normalize·validate·diff를 다시 통과시켰다. 이는 canonical 적용 이전에 해결했으며 pipeline 코드 변경은 필요하지 않았다.
+
+cheap-worker는 제품당 1개 task·1회 실제 API 호출, 재시도 0회였다. ZV-E10 II **395/320/715**, α7S III **422/297/719**, RX10 V **437/659/1,096**, RX1R III **417/394/811**, RX100 VII **443/385/828** input/output/total token으로, 총 **2,114/2,055/4,169** token이다. 첫 시도의 공유 worker lock 접근 실패는 `STATE_UNAVAILABLE` 사전 실행 오류로 API 호출이 아니었고, 권한을 보완한 뒤 다섯 호출 모두 성공했다. worker의 무게 기준, 고정 단렌즈·줌 구분, 25배 표기와 실제 range 불일치, 120p crop, UNKNOWN 경고를 검토에 활용했다. 실제 source 확인, identity·alias, field locator, 값 채택, diff와 승인 판단은 메인 모델이 직접 수행했다. 확인되지 않은 worker 추정은 채택하지 않았고 일회성 입력 파일은 삭제했다.
+
+시작 canonical은 바디 41 / 렌즈 36 / 전체 77, SHA-256 `a4e27a06648307846ebdb850d4062289dc32291d591d2b9421658527fdbcb2da`였다. 검토한 diff digest `e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b`를 approval `approval-cc7971b7912b7cd7a51ebffcd210b29a0c5edca58869158c388afb459bb25172`로 승인했고, 완료 canonical은 바디 **45** / 렌즈 **36** / 전체 **81**, SHA-256 `2871c702407e3d02932e24db1d6dd1e469088cb079dd6abb9be5c1c2197ca498`이다.
+
+전체 테스트 **103/103**, Objective 테스트 **64/64**, canonical validation **81/81**, `pnpm build`, Objective script·변경 테스트의 `node --check`, `git diff --check`가 통과했다. fixed-lens 3종의 별도 렌즈 미생성, 중복 무게 미계산, 실제/환산 초점거리 분리, 단렌즈 표현을 확인하는 회귀 테스트를 추가했다. 다음 Sony 5개 batch도 동일한 pipeline으로 계속할 수 있다. 다만 내장 렌즈 filter diameter·optical zoom 승격은 현재 schema 범위 밖이며 별도 설계가 필요하다.
+
 ## Stage 4 세 번째 Sony production batch 완료 — 2026-09-23
 
 시작 commit `09eb2d1`, clean working tree, canonical SHA-256 `602af39634df3102cedc615facefbd4bdb2de46e578919ae33ef6ab3b8c7fa5d`에서 `production-sony-bodies-003`을 실행했다. Sony Korea 공식 현행 제품 페이지와 canonical을 대조해 정확히 5개를 선정했고, 앞선 batch의 A7 IV, α1 II, A7 V, A7R VI, A7C II는 제외했다.

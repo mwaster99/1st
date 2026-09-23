@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "itemKey": "sony-dsc-rx100m7",
+  "manufacturerModelCode": "DSC-RX100M7",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "DSC-RX100M7",
+    "productId": "sony-rx100-vii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-ddbe5cb135875c864339",
+    "sourceId": "source-36b8fbf0c9cc5f18",
+    "evidenceRef": 2,
+    "locator": {
+      "section": "Product header",
+      "row": "RX100 VII / DSC-RX100M7"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-production-sony-004-review"
+  },
+  "product": {
+    "id": "sony-rx100-vii",
+    "name": "소니 RX100 VII",
+    "brand": "Sony",
+    "series": "RX100",
+    "model": "RX100 VII",
+    "aliases": [],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "compact",
+    "specs": {
+      "batteryConditions": "모니터 약 260매 / EVF 약 240매(CIPA)",
+      "batteryShots": 260,
+      "bodyOnlyWeight": 275,
+      "dimensions": [
+        101.6,
+        58.1,
+        42.8
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 4.5,
+          "wide": 2.8
+        },
+        "equivalentFocal": {
+          "max": 200,
+          "min": 24
+        },
+        "focal": {
+          "max": 72,
+          "min": 9
+        }
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "1인치",
+        "generation": "Exmor RS CMOS",
+        "megapixels": 20.1,
+        "sizeMm": [
+          13.2,
+          8.8
+        ]
+      },
+      "weight": 302,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-36b8fbf0c9cc5f18",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7",
+    "publisher": "Sony Korea",
+    "documentTitle": "DSC-RX100M7 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T01:38:07Z",
+    "evidenceScope": "Product identity and selected product feature claims",
+    "contentDigest": "9546a712bca52682588dcca081e19e386c657f1ff40f3813c6dec73d5baa73e2"
+  },
+  "sources": [
+    {
+      "sourceId": "source-336a7b5d8419864d",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX100M7 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "996d42df2c1493fb78fdbdf0fae51bd71653a070e5b00d130c13f03ebe592cb9"
+    },
+    {
+      "sourceId": "source-36b8fbf0c9cc5f18",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX100M7 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Product identity and selected product feature claims",
+      "contentDigest": "9546a712bca52682588dcca081e19e386c657f1ff40f3813c6dec73d5baa73e2"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.batteryConditions",
+      "value": "모니터 약 260매 / EVF 약 240매(CIPA)",
+      "unit": null,
+      "rawValue": "모니터 약 260매 / EVF 약 240매(CIPA)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-f653a05155bbe60ca3bf"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.batteryShots",
+      "value": 260,
+      "unit": null,
+      "rawValue": 260,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지): 모니터"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "display": "monitor",
+        "evfShots": 240
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-a3eb0936adc4b6647a89"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 275,
+      "unit": "g",
+      "rawValue": 275,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-c17ad0bb856d15a6aa20"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.dimensions",
+      "value": [
+        101.6,
+        58.1,
+        42.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        101.6,
+        58.1,
+        42.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-5a529f790b7da014598b"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 4.5,
+      "unit": null,
+      "rawValue": 4.5,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 망원"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-099f654294ed9a4208bf"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 광각"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-4729cabbf2a477ada2c2"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 200,
+      "unit": null,
+      "rawValue": 200,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산: 망원 200mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-735e0bd7b347834ad946"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 200,
+      "unit": null,
+      "rawValue": 200,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-36b8fbf0c9cc5f18",
+      "locator": {
+        "section": "Specifications",
+        "row": "Product highlight: 24-200mm zoom (35mm equivalent)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-f88892df2fb257b6683f"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산: 광각 24mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-f57ab4ea439ee9841cf8"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-36b8fbf0c9cc5f18",
+      "locator": {
+        "section": "Specifications",
+        "row": "Product highlight: 24-200mm zoom (35mm equivalent)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-ad3476befd038e7a19e7"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.focal.max",
+      "value": 72,
+      "unit": "mm",
+      "rawValue": 72,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 망원 f=72mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-2f011ed339053dda3a38"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.fixedLens.focal.min",
+      "value": 9,
+      "unit": "mm",
+      "rawValue": 9,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 광각 f=9.0mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-d71149cc507c63ee3410"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최고"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-60976a7abe2b5d8c0726"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최저"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-72538280ddc5612be554"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.sensor.format",
+      "value": "1인치",
+      "unit": null,
+      "rawValue": "1인치",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-8fd474743b35cd78df64"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor RS CMOS",
+      "unit": null,
+      "rawValue": "Exmor RS CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-7e17e3dfc706b21ef242"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.sensor.megapixels",
+      "value": 20.1,
+      "unit": "MP",
+      "rawValue": 20.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-b81fc3990e93acf96f9f"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        13.2,
+        8.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 13.2 x 8.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-2d73cd89a372fc43ee2c"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.weight",
+      "value": 302,
+      "unit": "g",
+      "rawValue": 302,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리와 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-47e2c6eb710c0299f8fb"
+    },
+    {
+      "productId": "sony-rx100-vii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-336a7b5d8419864d",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리와 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-07f5cf175c8afd0701f1"
+    }
+  ]
+}

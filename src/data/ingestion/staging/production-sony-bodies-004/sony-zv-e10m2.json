@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "itemKey": "sony-zv-e10m2",
+  "manufacturerModelCode": "ZV-E10M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ZV-E10M2",
+    "productId": "sony-zv-e10-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-4a8e51dd9614c54242d4",
+    "sourceId": "source-09cd56676b6bd4b2",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "ZV-E10 II / ZV-E10M2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-production-sony-004-review"
+  },
+  "product": {
+    "id": "sony-zv-e10-ii",
+    "name": "소니 ZV-E10 II",
+    "brand": "Sony",
+    "series": "ZV",
+    "model": "ZV-E10 II",
+    "aliases": [
+      "Sony ZV-E10 II"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "batteryConditions": "LCD 모니터 사용 시 약 610매(CIPA)",
+      "batteryShots": 610,
+      "bodyOnlyWeight": 292,
+      "dimensions": [
+        114.8,
+        67.5,
+        54.2
+      ],
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "APS-C",
+        "generation": "Exmor R CMOS",
+        "megapixels": 26,
+        "sizeMm": [
+          23.3,
+          15.5
+        ]
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-09cd56676b6bd4b2",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2",
+    "publisher": "Sony Korea",
+    "documentTitle": "ZV-E10M2 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T01:38:07Z",
+    "evidenceScope": "Product identity and selected product feature claims",
+    "contentDigest": "2c03f266bb17873208e19e205f904e95643d8c8f24464fb4ca6003a9b54c3143"
+  },
+  "sources": [
+    {
+      "sourceId": "source-09cd56676b6bd4b2",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2",
+      "publisher": "Sony Korea",
+      "documentTitle": "ZV-E10M2 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Product identity and selected product feature claims",
+      "contentDigest": "2c03f266bb17873208e19e205f904e95643d8c8f24464fb4ca6003a9b54c3143"
+    },
+    {
+      "sourceId": "source-bcef3e4f275d2f09",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "ZV-E10M2 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "c3911cfe65e375c46bba1618d70d19c5f566962225cef8451687c4a8885f59bb"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.batteryConditions",
+      "value": "LCD 모니터 사용 시 약 610매(CIPA)",
+      "unit": null,
+      "rawValue": "LCD 모니터 사용 시 약 610매(CIPA)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-ed783b4b570b7b9b7536"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.batteryShots",
+      "value": 610,
+      "unit": null,
+      "rawValue": 610,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지): LCD 모니터"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "display": "LCD"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-2f3a36350c82798541c1"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 292,
+      "unit": "g",
+      "rawValue": 292,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-105f294ffa60c701f124"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.dimensions",
+      "value": [
+        114.8,
+        67.5,
+        54.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        114.8,
+        67.5,
+        54.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D): 그립에서 모니터까지"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-5fbded962aced1fb53a7"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최고"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-cd0d963c767b0e1c5903"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최저"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-36b36bf54545890ba504"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.sensor.format",
+      "value": "APS-C",
+      "unit": null,
+      "rawValue": "APS-C",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-1b1e5e443ebff8adf29b"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-ebf1d76b0a39787e7572"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 26,
+      "unit": "MP",
+      "rawValue": 26,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효): 스틸 이미지"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-691854b51577df2c087d"
+    },
+    {
+      "productId": "sony-zv-e10-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        23.3,
+        15.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        23.3,
+        15.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-bcef3e4f275d2f09",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 23.3 x 15.5mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-bb9c6f0f5de0cf051b05"
+    }
+  ]
+}

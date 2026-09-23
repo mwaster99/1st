@@ -154,6 +154,32 @@ test("fixed lenses are bundled once in trading and weight, and never interchange
   assert.equal(otherFixed.evaluation.transactionPenalty, 3.2, "different fixed cameras share no lens mount despite both mount values being null");
 });
 
+test("production Sony fixed-lens bodies retain integrated optics without a second product or weight", () => {
+  const candidates = generateScenarioCandidates(input());
+  for (const id of ["sony-rx10-v", "sony-rx1r-iii", "sony-rx100-vii"]) {
+    const body = BODY_BY_ID[id];
+    assert.equal(body.kind, "fixed"); assert.equal(body.mount, null);
+    assert.ok(body.specs.fixedLens);
+    assert.ok(!CAMERA_LENSES.some((lens) => lens.id === `${id}-integrated-lens`));
+    const lens = getIntegratedLens(body);
+    assert.equal(lens.includedInBodyId, id);
+    assert.equal(lens.weight, null); assert.equal(lens.newPrice, null); assert.equal(lens.usedPrice, null);
+    assert.deepEqual(generateLensCandidates({ body }).map((item) => item.id), [lens.id]);
+    const candidate = candidates.find((item) => item.targetSystem.body.id === id);
+    const evaluated = evaluateScenario(candidate, input());
+    assert.deepEqual(evaluated.buy.map((item) => item.id), [id]);
+    assert.equal(evaluated.weight.after, body.weight);
+    assert.equal(evaluated.lensCount.after, 0);
+  }
+  const rx10 = BODY_BY_ID["sony-rx10-v"].specs.fixedLens;
+  assert.deepEqual(rx10.focal, { min: 9.1, max: 210 });
+  assert.deepEqual(rx10.equivalentFocal, { min: 24, max: 600 });
+  const rx1r = BODY_BY_ID["sony-rx1r-iii"].specs.fixedLens;
+  assert.equal(rx1r.focal.min, rx1r.focal.max);
+  assert.equal(rx1r.aperture.wide, rx1r.aperture.tele);
+  assert.equal(rx1r.equivalentFocal, undefined);
+});
+
 test("unregistered gear still produces an honest hold with unknown comparisons", () => {
   const body = createUnknownBody("미등록 바디"), lens = createUnknownLens("미등록 렌즈");
   const result = generateUpgradeScenarios(input({ currentBody: body, currentLenses: [lens], primaryLens: lens }));

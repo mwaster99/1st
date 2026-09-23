@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "scope": "Sony current Tier 1: ZV-E10 II, A7S III, RX10 V, RX1R III, RX100 VII",
+  "tier": 1,
+  "baselineCommit": "25e2b8c",
+  "canonicalBaselineDigest": "a4e27a06648307846ebdb850d4062289dc32291d591d2b9421658527fdbcb2da",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "sony-zv-e10m2",
+      "productId": "sony-zv-e10-ii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-09cd56676b6bd4b2",
+        "source-bcef3e4f275d2f09"
+      ],
+      "rawDigests": [
+        "81e9b2c3960dd67ac161e5bbfe345c25c1a3502f7b1e6c1e5e378dd5acc30aeb",
+        "cab6ef77a5ec9588d56b741a276163ddf886c21754d5c8c6b9822441d247d184"
+      ],
+      "stagingDigest": "c3f7819e68f6304124f2c13ce5d11d7cda48a34b43300cf28551a4307696ba53",
+      "diffDigest": "e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b",
+      "issues": [],
+      "updatedAt": "2026-09-23T01:44:32.602Z"
+    },
+    {
+      "itemKey": "sony-ilce-7sm3",
+      "productId": "sony-a7s-iii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-eceeb66bbed35c90",
+        "source-e061b44ce5d313ac",
+        "source-d6735607dfc8b324"
+      ],
+      "rawDigests": [
+        "d8e002b1c9a2bc07870cc75c4566b7f647596ea240ef32d1e97d1632031b8374",
+        "81154f9674cadb86a18a50926ca34977786accf1373d17299c7df2a3057ffc38",
+        "dea2b1094bd21488751a77495c425e15025194e7631bf6a161e19ba4b058aa00"
+      ],
+      "stagingDigest": "756601935a997946ded5d1a19db0495947aa3144c0bec2a51828212f93536a5c",
+      "diffDigest": "e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b",
+      "issues": [],
+      "updatedAt": "2026-09-23T01:44:32.602Z"
+    },
+    {
+      "itemKey": "sony-dsc-rx10m5",
+      "productId": "sony-rx10-v",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-6020373cf0c00c74",
+        "source-abea87435f1da4bc"
+      ],
+      "rawDigests": [
+        "5901cb19e733bd98011594d653cd540c5383db743217fc5bf557807f0848118d",
+        "ae267676577f15f201b18ab74a8878bb9140e768b0ee3ad0fefbb725b0573ffb"
+      ],
+      "stagingDigest": "c9f02a61cb1961a4bc40984f8cec309dcb4edf66d10969ae7f1effc6e3da8bcb",
+      "diffDigest": "e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b",
+      "issues": [],
+      "updatedAt": "2026-09-23T01:44:32.602Z"
+    },
+    {
+      "itemKey": "sony-dsc-rx1rm3",
+      "productId": "sony-rx1r-iii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-cd32d767a41f292b",
+        "source-076e1cd4a088cdd8"
+      ],
+      "rawDigests": [
+        "c6d5c54f1f6c0bd3575d58ecf7c75572ca1ce5893ffe378e7d5f1161ee3faaa6",
+        "216c0448c9ba01b29ae68df9aa7ee1fdfd4b3dd7894b20427cf14e16f76e3499"
+      ],
+      "stagingDigest": "b5af0d14facf026d3705e9d46dd754f1d09334eae7986720fcec4f5a9daa6a30",
+      "diffDigest": "e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b",
+      "issues": [],
+      "updatedAt": "2026-09-23T01:44:32.602Z"
+    },
+    {
+      "itemKey": "sony-dsc-rx100m7",
+      "productId": "sony-rx100-vii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-36b8fbf0c9cc5f18",
+        "source-336a7b5d8419864d"
+      ],
+      "rawDigests": [
+        "3b18604681d1ba4c9528328d3b17b79113ffd3065f8bd0792396845b95b8068c",
+        "0329253edab2b3f4aeca85527697304ff033fefb416fe32014d63988c7ec5deb"
+      ],
+      "stagingDigest": "5af255b225ad61903f283d48bcdbd359a21d604992e2e114c2f5f249075a4ae1",
+      "diffDigest": "e59842b030818b76eda384be269f8f0139f8397cffc6f85af511c09684bf193b",
+      "issues": [],
+      "updatedAt": "2026-09-23T01:44:32.602Z"
+    }
+  ],
+  "updatedAt": "2026-09-23T01:44:32.602Z",
+  "expectedCanonicalDigest": "2871c702407e3d02932e24db1d6dd1e469088cb079dd6abb9be5c1c2197ca498",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-cc7971b7912b7cd7a51ebffcd210b29a0c5edca58869158c388afb459bb25172",
+    "completedAt": "2026-09-23T01:44:32.602Z",
+    "transaction": "transactions/production-sony-bodies-004"
+  }
+}

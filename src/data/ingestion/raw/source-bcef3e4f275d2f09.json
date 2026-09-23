@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ZV-E10M2 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-23T01:38:07Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "센서 유형",
+      "value": "Exmor R CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 23.3 x 15.5mm",
+      "value": [
+        23.3,
+        15.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효): 스틸 이미지",
+      "value": 26,
+      "unit": "MP"
+    },
+    {
+      "field": "본체만",
+      "value": 292,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D): 그립에서 모니터까지",
+      "value": [
+        114.8,
+        67.5,
+        54.2
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD 모니터",
+      "value": 610,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지)",
+      "value": "LCD 모니터 사용 시 약 610매(CIPA)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 최저",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 최고",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-zv-e10m2",
+      "manufacturerModelCode": "ZV-E10M2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 ZV-E10 II",
+        "brand": "Sony",
+        "series": "ZV",
+        "model": "ZV-E10 II",
+        "aliases": [
+          "Sony ZV-E10 II"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 1,
+          "rawValue": "Exmor R CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            23.3,
+            15.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 23.3 x 15.5mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 26,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효): 스틸 이미지"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 292,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            114.8,
+            67.5,
+            54.2
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D): 그립에서 모니터까지"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 6,
+          "rawValue": 610,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD 모니터"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "display": "LCD"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 7,
+          "rawValue": "LCD 모니터 사용 시 약 610매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 8,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최저"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 9,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최고"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "c3911cfe65e375c46bba1618d70d19c5f566962225cef8451687c4a8885f59bb",
+  "sourceId": "source-bcef3e4f275d2f09"
+}

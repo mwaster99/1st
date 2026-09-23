@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7sm3-b",
+  "publisher": "Sony Electronics USA",
+  "documentTitle": "Sony A7S III product and recording footnotes",
+  "documentVersion": null,
+  "region": "US",
+  "accessedAt": "2026-09-23T01:38:07Z",
+  "evidenceScope": "4K 120p recording crop and card condition footnotes",
+  "evidenceExcerpt": [
+    {
+      "field": "Overview footnote 5: 120p has a 1.1x crop",
+      "value": "4K 120p",
+      "unit": null
+    },
+    {
+      "field": "Overview footnote 5: 120p has a 1.1x crop",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7sm3",
+      "manufacturerModelCode": "ILCE-7SM3",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7S III",
+        "brand": "Sony",
+        "series": "α7S",
+        "model": "A7S III",
+        "aliases": [
+          "Sony A7S III"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 120p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "Overview footnote 5: 120p has a 1.1x crop"
+          },
+          "conditions": {
+            "officialText": "120p has a 1.1x crop",
+            "requiredMedia": "XAVC S-I S&Q 4K 120p 10-bit 4:2:2 requires CFexpress Type A VPG200 or higher"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 1,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "Overview footnote 5: 120p has a 1.1x crop"
+          },
+          "conditions": {
+            "mode": "4K 120p",
+            "officialText": "120p has a 1.1x crop"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "ce719ba286dfe003a45a3b57ca43fb205edf6579334f63217e73a82aedc95b5f",
+  "sourceId": "source-d6735607dfc8b324"
+}

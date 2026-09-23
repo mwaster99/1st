@@ -1,0 +1,2146 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "canonicalBaselineDigest": "a4e27a06648307846ebdb850d4062289dc32291d591d2b9421658527fdbcb2da",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-004",
+      "productId": "sony-zv-e10-ii",
+      "productName": "소니 ZV-E10 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-zv-e10-ii",
+        "name": "소니 ZV-E10 II",
+        "brand": "Sony",
+        "series": "ZV",
+        "model": "ZV-E10 II",
+        "aliases": [
+          "Sony ZV-E10 II"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 26,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              23.3,
+              15.5
+            ]
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 292,
+          "dimensions": [
+            114.8,
+            67.5,
+            54.2
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 610,
+          "releaseDate": null,
+          "batteryConditions": "LCD 모니터 사용 시 약 610매(CIPA)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-23",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-09cd56676b6bd4b2",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-4a8e51dd9614c54242d4",
+          "sourceId": "source-09cd56676b6bd4b2",
+          "checkedAt": "2026-09-23"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-4a8e51dd9614c54242d4",
+        "sourceId": "source-09cd56676b6bd4b2",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-E10 II / ZV-E10M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-23",
+        "reviewer": "codex-production-sony-004-review",
+        "source": {
+          "sourceId": "source-09cd56676b6bd4b2",
+          "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2",
+          "documentTitle": "ZV-E10M2 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 610매(CIPA)",
+          "unit": null,
+          "claimId": "claim-ed783b4b570b7b9b7536",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 610,
+          "unit": null,
+          "claimId": "claim-2f3a36350c82798541c1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD 모니터"
+            },
+            "conditions": {
+              "standard": "CIPA",
+              "display": "LCD"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 292,
+          "unit": "g",
+          "claimId": "claim-105f294ffa60c701f124",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            114.8,
+            67.5,
+            54.2
+          ],
+          "unit": "mm",
+          "claimId": "claim-5fbded962aced1fb53a7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 그립에서 모니터까지"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-cd0d963c767b0e1c5903",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-36b36bf54545890ba504",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-1b1e5e443ebff8adf29b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-ebf1d76b0a39787e7572",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 26,
+          "unit": "MP",
+          "claimId": "claim-691854b51577df2c087d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.3,
+            15.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-bb9c6f0f5de0cf051b05",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bcef3e4f275d2f09",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/zv-e10m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 23.3 x 15.5mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-004",
+      "productId": "sony-a7s-iii",
+      "productName": "소니 A7S III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a7s-iii",
+        "name": "소니 A7S III",
+        "brand": "Sony",
+        "series": "α7S",
+        "model": "A7S III",
+        "aliases": [
+          "Sony A7S III"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 12.1,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.6,
+              23.8
+            ]
+          },
+          "weight": 699,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 120p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": 600,
+          "releaseDate": null,
+          "batteryConditions": "LCD 약 600매 / EVF 약 510매(CIPA)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-23",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-eceeb66bbed35c90",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-dfc37f2ff0d3ff8304a6",
+          "sourceId": "source-eceeb66bbed35c90",
+          "checkedAt": "2026-09-23"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-dfc37f2ff0d3ff8304a6",
+        "sourceId": "source-eceeb66bbed35c90",
+        "evidenceRef": 2,
+        "locator": {
+          "section": "Product header",
+          "row": "A7S III / ILCE-7SM3"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-23",
+        "reviewer": "codex-production-sony-004-review",
+        "source": {
+          "sourceId": "source-eceeb66bbed35c90",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+          "documentTitle": "ILCE-7SM3 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 약 600매 / EVF 약 510매(CIPA)",
+          "unit": null,
+          "claimId": "claim-a8ae25331d35c50d7f8d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": null,
+          "claimId": "claim-c5e2db7ae8bd781b2cda",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD 모니터"
+            },
+            "conditions": {
+              "standard": "CIPA",
+              "display": "LCD",
+              "evfShots": 510
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-6a17f88c727a29215d09",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-3fcc8cec24a478e6bd2e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-c17a4318ca21c27b08e4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 12.1,
+          "unit": "MP",
+          "claimId": "claim-0229f1b7de35a8a53a7f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.6,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-b4fd0abad071b3c91550",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 35.6 x 23.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-459c49c71412f540df68",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eceeb66bbed35c90",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+            "locator": {
+              "section": "Specifications",
+              "row": "Highlights: 10-bit 4:2:2 recording"
+            },
+            "conditions": {
+              "mode": "4K 120p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-73776c0b379524f097aa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6735607dfc8b324",
+            "url": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7sm3-b",
+            "locator": {
+              "section": "Specifications",
+              "row": "Overview footnote 5: 120p has a 1.1x crop"
+            },
+            "conditions": {
+              "mode": "4K 120p",
+              "officialText": "120p has a 1.1x crop"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-e9d078cfcc3bb261e6a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6735607dfc8b324",
+            "url": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7sm3-b",
+            "locator": {
+              "section": "Specifications",
+              "row": "Overview footnote 5: 120p has a 1.1x crop"
+            },
+            "conditions": {
+              "officialText": "120p has a 1.1x crop",
+              "requiredMedia": "XAVC S-I S&Q 4K 120p 10-bit 4:2:2 requires CFexpress Type A VPG200 or higher"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-ca3e48a694361c371d76",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eceeb66bbed35c90",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7sm3",
+            "locator": {
+              "section": "Specifications",
+              "row": "Highlights: 4K 120p"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 699,
+          "unit": "g",
+          "claimId": "claim-7b0dd8d14165b51fd0eb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-1536a28d951a562e6f91",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e061b44ce5d313ac",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-004",
+      "productId": "sony-rx10-v",
+      "productName": "소니 RX10 V",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-rx10-v",
+        "name": "소니 RX10 V",
+        "brand": "Sony",
+        "series": "RX10",
+        "model": "RX10 V",
+        "aliases": [
+          "Sony RX10 V"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1인치",
+            "megapixels": 20.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 1111,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 1026,
+          "dimensions": [
+            136.4,
+            94.5,
+            151.3
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 2.4
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 24
+            },
+            "focal": {
+              "max": 210,
+              "min": 9.1
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m5",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-23",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-6020373cf0c00c74",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-c9e158d59a46038be9dd",
+          "sourceId": "source-6020373cf0c00c74",
+          "checkedAt": "2026-09-23"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-c9e158d59a46038be9dd",
+        "sourceId": "source-6020373cf0c00c74",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "RX10 V / DSC-RX10M5"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-23",
+        "reviewer": "codex-production-sony-004-review",
+        "source": {
+          "sourceId": "source-6020373cf0c00c74",
+          "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m5",
+          "documentTitle": "DSC-RX10M5 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1026,
+          "unit": "g",
+          "claimId": "claim-662ae70a7bc601b01dbd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            136.4,
+            94.5,
+            151.3
+          ],
+          "unit": "mm",
+          "claimId": "claim-b6de7514080cc4b00e8e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-634f32c43dc853e48e91",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.4,
+          "unit": null,
+          "claimId": "claim-f9459262011b1c17fb9a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": null,
+          "claimId": "claim-5e3f633e5f448b261590",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-9a6f837d508c031515ea",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 210,
+          "unit": "mm",
+          "claimId": "claim-47fd628e7ac58bc5eac3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "실제 초점 거리: 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 9.1,
+          "unit": "mm",
+          "claimId": "claim-533d735a544634971f87",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "실제 초점 거리: 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-f5747c5e5e389dfca4d7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-98fbe527e8e3172e8279",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-fd70dfe94fff9096886c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-709398d1a5d30e06512e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1111,
+          "unit": "g",
+          "claimId": "claim-c0c4a7cd0364b7bcc184",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-8e3dc83eaa847c577879",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-abea87435f1da4bc",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m5/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-004",
+      "productId": "sony-rx1r-iii",
+      "productName": "소니 RX1R III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-rx1r-iii",
+        "name": "소니 RX1R III",
+        "brand": "Sony",
+        "series": "RX1R",
+        "model": "RX1R III",
+        "aliases": [
+          "Sony RX1R III"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "rangefinder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 61,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.7,
+              23.8
+            ]
+          },
+          "weight": 498,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 454,
+          "dimensions": [
+            113.3,
+            67.9,
+            87.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2,
+              "wide": 2
+            },
+            "focal": {
+              "max": 35,
+              "min": 35
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-23",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-cd32d767a41f292b",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-6c257fcbea4ad4220424",
+          "sourceId": "source-cd32d767a41f292b",
+          "checkedAt": "2026-09-23"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-6c257fcbea4ad4220424",
+        "sourceId": "source-cd32d767a41f292b",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "RX1R III / DSC-RX1RM3"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-23",
+        "reviewer": "codex-production-sony-004-review",
+        "source": {
+          "sourceId": "source-cd32d767a41f292b",
+          "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3",
+          "documentTitle": "DSC-RX1RM3 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 454,
+          "unit": "g",
+          "claimId": "claim-2d5789a625e12cedbd29",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            113.3,
+            67.9,
+            87.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-c42197ccf346c737738e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-94dd9d50a3a334115887",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개) F2: 단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-06fc5dd1bd32650f8377",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개) F2: 단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 35,
+          "unit": "mm",
+          "claimId": "claim-bfdbbd56f8a282040685",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리 f = 35mm: 단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 35,
+          "unit": "mm",
+          "claimId": "claim-fcb36619a50a15a86361",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리 f = 35mm: 단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-d182371d95ab1263c156",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-24d04ee33fd0e1fa789d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 61,
+          "unit": "MP",
+          "claimId": "claim-3dfd57a281ac337f4685",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.7,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-26bb533eb21dacb4aa98",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 35.7 x 23.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 498,
+          "unit": "g",
+          "claimId": "claim-34dc910291a5c5505a27",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-8a16165b2c3e13d3d28e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-076e1cd4a088cdd8",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-004",
+      "productId": "sony-rx100-vii",
+      "productName": "소니 RX100 VII",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "0735c408e84651bdfec60aee26c83889d3aa1dc7b4da757d5e55602599e7a170",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "모니터 약 260매 / EVF 약 240매(CIPA)",
+          "unit": null,
+          "claimId": "claim-f653a05155bbe60ca3bf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 260,
+          "unit": null,
+          "claimId": "claim-a3eb0936adc4b6647a89",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): 모니터"
+            },
+            "conditions": {
+              "standard": "CIPA",
+              "display": "monitor",
+              "evfShots": 240
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 275,
+          "incomingValue": 275,
+          "unit": "g",
+          "claimId": "claim-c17ad0bb856d15a6aa20",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "same-value/new-evidence",
+          "canonicalValue": [
+            101.6,
+            58.1,
+            42.8
+          ],
+          "incomingValue": [
+            101.6,
+            58.1,
+            42.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-5a529f790b7da014598b",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 4.5,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-099f654294ed9a4208bf",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.8,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-4729cabbf2a477ada2c2",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 200,
+          "incomingValue": 200,
+          "unit": null,
+          "claimId": "claim-735e0bd7b347834ad946",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산: 망원 200mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 200,
+          "incomingValue": 200,
+          "unit": null,
+          "claimId": "claim-f88892df2fb257b6683f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-36b8fbf0c9cc5f18",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7",
+            "locator": {
+              "section": "Specifications",
+              "row": "Product highlight: 24-200mm zoom (35mm equivalent)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 24,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-f57ab4ea439ee9841cf8",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산: 광각 24mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 24,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-ad3476befd038e7a19e7",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-36b8fbf0c9cc5f18",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7",
+            "locator": {
+              "section": "Specifications",
+              "row": "Product highlight: 24-200mm zoom (35mm equivalent)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 72,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-2f011ed339053dda3a38",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원 f=72mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 9,
+          "incomingValue": 9,
+          "unit": "mm",
+          "claimId": "claim-d71149cc507c63ee3410",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각 f=9.0mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-60976a7abe2b5d8c0726",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-72538280ddc5612be554",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "1인치",
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-8fd474743b35cd78df64",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-7e17e3dfc706b21ef242",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 20.1,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-b81fc3990e93acf96f9f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-2d73cd89a372fc43ee2c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 302,
+          "incomingValue": 302,
+          "unit": "g",
+          "claimId": "claim-47e2c6eb710c0299f8fb",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리와 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-07f5cf175c8afd0701f1",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/compact-cameras-dsc-rx-series/dsc-rx100m7/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "specs.weight",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions",
+                "specs.fixedLens",
+                "specs.weightBasis",
+                "specs.sensor.megapixels",
+                "specs.sensor.format"
+              ],
+              "note": "Verified fields only. Other imported values remain legacy-unverified."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-336a7b5d8419864d",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx100m7/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리와 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

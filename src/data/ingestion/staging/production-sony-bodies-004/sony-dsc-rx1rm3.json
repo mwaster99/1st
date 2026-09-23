@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-004",
+  "itemKey": "sony-dsc-rx1rm3",
+  "manufacturerModelCode": "DSC-RX1RM3",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "DSC-RX1RM3",
+    "productId": "sony-rx1r-iii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-6c257fcbea4ad4220424",
+    "sourceId": "source-cd32d767a41f292b",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "RX1R III / DSC-RX1RM3"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-production-sony-004-review"
+  },
+  "product": {
+    "id": "sony-rx1r-iii",
+    "name": "소니 RX1R III",
+    "brand": "Sony",
+    "series": "RX1R",
+    "model": "RX1R III",
+    "aliases": [
+      "Sony RX1R III"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "bodyOnlyWeight": 454,
+      "dimensions": [
+        113.3,
+        67.9,
+        87.5
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 2,
+          "wide": 2
+        },
+        "focal": {
+          "max": 35,
+          "min": 35
+        }
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R CMOS",
+        "megapixels": 61,
+        "sizeMm": [
+          35.7,
+          23.8
+        ]
+      },
+      "weight": 498,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-cd32d767a41f292b",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3",
+    "publisher": "Sony Korea",
+    "documentTitle": "DSC-RX1RM3 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T01:38:07Z",
+    "evidenceScope": "Product identity and selected product feature claims",
+    "contentDigest": "c56d9d1d1826bab464ad53f997663426c80dc6ec24a1559f0fa8fea25f158ed1"
+  },
+  "sources": [
+    {
+      "sourceId": "source-076e1cd4a088cdd8",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX1RM3 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "a67c7fce59e99701b2205c38fd616c7f9618f20eccd854614bf4e802be2a261d"
+    },
+    {
+      "sourceId": "source-cd32d767a41f292b",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX1RM3 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:38:07Z",
+      "evidenceScope": "Product identity and selected product feature claims",
+      "contentDigest": "c56d9d1d1826bab464ad53f997663426c80dc6ec24a1559f0fa8fea25f158ed1"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 454,
+      "unit": "g",
+      "rawValue": 454,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-2d5789a625e12cedbd29"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.dimensions",
+      "value": [
+        113.3,
+        67.9,
+        87.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        113.3,
+        67.9,
+        87.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-c42197ccf346c737738e"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 2,
+      "unit": null,
+      "rawValue": 2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개) F2: 단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-94dd9d50a3a334115887"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 2,
+      "unit": null,
+      "rawValue": 2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개) F2: 단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-06fc5dd1bd32650f8377"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.fixedLens.focal.max",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리 f = 35mm: 단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-bfdbbd56f8a282040685"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.fixedLens.focal.min",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리 f = 35mm: 단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-fcb36619a50a15a86361"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-d182371d95ab1263c156"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-24d04ee33fd0e1fa789d"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.sensor.megapixels",
+      "value": 61,
+      "unit": "MP",
+      "rawValue": 61,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효): 스틸 이미지"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-3dfd57a281ac337f4685"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.7,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.7,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 35.7 x 23.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-26bb533eb21dacb4aa98"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.weight",
+      "value": 498,
+      "unit": "g",
+      "rawValue": 498,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-34dc910291a5c5505a27"
+    },
+    {
+      "productId": "sony-rx1r-iii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-076e1cd4a088cdd8",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-production-sony-004-review",
+      "claimId": "claim-8a16165b2c3e13d3d28e"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx1rm3/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "DSC-RX1RM3 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-23T01:38:07Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "센서 유형",
+      "value": "Exmor R CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 35.7 x 23.8mm",
+      "value": [
+        35.7,
+        23.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효): 스틸 이미지",
+      "value": 61,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": 498,
+      "unit": "g"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "본체만",
+      "value": 454,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D)",
+      "value": [
+        113.3,
+        67.9,
+        87.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리 f = 35mm: 단렌즈",
+      "value": 35,
+      "unit": "mm"
+    },
+    {
+      "field": "F값(최대 조리개) F2: 단렌즈",
+      "value": 2,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-dsc-rx1rm3",
+      "manufacturerModelCode": "DSC-RX1RM3",
+      "productType": "body",
+      "identity": {
+        "name": "소니 RX1R III",
+        "brand": "Sony",
+        "series": "RX1R",
+        "model": "RX1R III",
+        "aliases": [
+          "Sony RX1R III"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "rangefinder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 1,
+          "rawValue": "Exmor R CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.7,
+            23.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 35.7 x 23.8mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 61,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효): 스틸 이미지"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 498,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 454,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            113.3,
+            67.9,
+            87.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 8,
+          "rawValue": 35,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리 f = 35mm: 단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 35,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리 f = 35mm: 단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 9,
+          "rawValue": 2,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개) F2: 단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 9,
+          "rawValue": 2,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개) F2: 단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-production-sony-004-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "a67c7fce59e99701b2205c38fd616c7f9618f20eccd854614bf4e802be2a261d",
+  "sourceId": "source-076e1cd4a088cdd8"
+}
