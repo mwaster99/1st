@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-002",
+  "scope": "Sony current Tier 1 bodies: A7 V and A7R VI new products; A7C II provenance update",
+  "tier": 1,
+  "baselineCommit": "807aafe",
+  "canonicalBaselineDigest": "2f3794736da0dbc94c9089040620247cf51551e1d40db296811b1d474c7a2771",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "sony-ilce-7m5",
+      "productId": "sony-a7-v",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-a0522bd38a7ab8b5",
+        "source-713cef02e237f91d",
+        "source-b19f9beab04ab9d2"
+      ],
+      "rawDigests": [
+        "17b5ddfae5b43090d75f6c202b3b3fc7090ba960a5dac0f47f9d21b3049a07a1",
+        "27a48a8dbe8ec3bfa73338ebec7b744e09d5cab5cca29cb1c6e8eb9c07aa5e4c",
+        "c2b6988ea61fd545c4104d4f2d327bf04eabb63f41bec85a7ec935ced6dfc51c"
+      ],
+      "stagingDigest": "a2b811cc18092a0600dd5bc70f80bfd3a6dc5c6511e544ac64392a92f87901fa",
+      "diffDigest": "fb0a2d01ed7a0fafcd2143f488510ee128887cb41a5460ac86eaa4c95640c1b1",
+      "issues": [],
+      "updatedAt": "2026-09-23T00:14:34.870Z"
+    },
+    {
+      "itemKey": "sony-ilce-7rm6",
+      "productId": "sony-a7r-vi",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-69d2701351221c08",
+        "source-9db1a29b165ad7d3"
+      ],
+      "rawDigests": [
+        "e85fe8e11bce293680358b9bf7b6f663b65574dbd878653990fa2282e5bb32d3",
+        "4421f6e83f14405fffda129b960ab8618c1e1b34e3e42d67b73575d2cc3d593e"
+      ],
+      "stagingDigest": "11442a7c967c457610c72c4c4f1a3722622a6ba0d5d2934a83b5400965ebe82f",
+      "diffDigest": "fb0a2d01ed7a0fafcd2143f488510ee128887cb41a5460ac86eaa4c95640c1b1",
+      "issues": [],
+      "updatedAt": "2026-09-23T00:14:34.870Z"
+    },
+    {
+      "itemKey": "sony-ilce-7cm2-batch2",
+      "productId": "sony-a7c-ii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-0852795a6bed49ff",
+        "source-93daf750d6268f61"
+      ],
+      "rawDigests": [
+        "63fe1aa501c3331f6ed4cb55f25705c205546059eaf5ce5b1a14bdee8600f5a4",
+        "a3bb2b80487de0082a942bf532256c6a6636510fdf3603cbc79268a6c5d495a3"
+      ],
+      "stagingDigest": "685c51f4d723a9679c9de5cca1eaf1afaeafe9692c15414fc7cff1141604133d",
+      "diffDigest": "fb0a2d01ed7a0fafcd2143f488510ee128887cb41a5460ac86eaa4c95640c1b1",
+      "issues": [],
+      "updatedAt": "2026-09-23T00:14:34.870Z"
+    }
+  ],
+  "updatedAt": "2026-09-23T00:14:34.870Z",
+  "expectedCanonicalDigest": "602af39634df3102cedc615facefbd4bdb2de46e578919ae33ef6ab3b8c7fa5d",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-c2e0789126d2a6f61647130bf3ebc58933bc0f8d1bea8f3f8e5ef65860fa7a37",
+    "completedAt": "2026-09-23T00:14:34.870Z",
+    "transaction": "transactions/production-sony-bodies-002"
+  }
+}

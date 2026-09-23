@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cm2",
+  "publisher": "Sony Korea",
+  "documentTitle": "Alpha 7C II compact full-frame camera",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-23T01:00:00Z",
+  "evidenceScope": "AI processing; sensor generation; video crop/log",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor generation",
+      "value": "Exmor R BSI CMOS",
+      "unit": null
+    },
+    {
+      "field": "AI processing unit",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "AI subject recognition",
+      "value": "전용 AI 처리 장치 기반 피사체 인식",
+      "unit": null
+    },
+    {
+      "field": "Maximum movie mode",
+      "value": "4K 60p",
+      "unit": null
+    },
+    {
+      "field": "S-Log3",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "Crop at maximum mode",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7cm2-batch2",
+      "manufacturerModelCode": "ILCE-7CM2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7C II",
+        "brand": "Sony",
+        "series": "α7C",
+        "model": "A7C II",
+        "aliases": [
+          "sony a7c ii",
+          "sony a7c2",
+          "소니 a7c ii",
+          "소니 a7c2",
+          "a7c2",
+          "a7cm2"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "rangefinder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 0,
+          "rawValue": "Exmor R BSI CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Highlights",
+            "row": "33.0 MP full-frame back-illuminated Exmor R CMOS image sensor"
+          },
+          "conditions": {
+            "normalizedTerm": "BSI means back-illuminated",
+            "officialText": "back-illuminated Exmor R CMOS"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.autofocus.aiUnit",
+          "evidenceRef": 1,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Highlights",
+            "row": "Innovative AI processing unit"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 2,
+          "rawValue": "전용 AI 처리 장치 기반 피사체 인식",
+          "rawUnit": null,
+          "locator": {
+            "section": "Highlights",
+            "row": "Innovative AI processing unit with more accurate subject recognition"
+          },
+          "conditions": {
+            "normalizedSummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 3,
+          "rawValue": "4K 60p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Highlights",
+            "row": "4K 60p"
+          },
+          "conditions": {
+            "crop": "Super 35mm mode required for 60/50p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 4,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Highlights",
+            "row": "4K 60p, S-Log3"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 5,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Footnotes",
+            "row": "4K 60/50p is available only in Super 35mm mode"
+          },
+          "conditions": {
+            "mode": "4K 60/50p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "91e2f36d5a1c35ee02f0cd71422676f3bb3620ea4fafbfa67182d847421da0b6",
+  "sourceId": "source-0852795a6bed49ff"
+}

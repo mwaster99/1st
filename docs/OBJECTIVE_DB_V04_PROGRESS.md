@@ -1,5 +1,46 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 두 번째 Sony production batch 완료 — 2026-09-23
+
+`production-sony-bodies-002`에서 Sony 현행 Tier 1 바디 3개를 공식 자료로 처리했다. Sony Korea 현행 렌즈 교환식 카메라 목록과 canonical을 대조해 신규 `sony-a7-v`(ILCE-7M5), 신규 `sony-a7r-vi`(ILCE-7RM6), 기존 `sony-a7c-ii`(ILCE-7CM2)를 골랐다. 앞 batch의 A7 IV와 α1 II는 제외했다. 신규 생성과 기존 제품 보강을 한 batch에서 함께 통과시키는 표본이며 추천 엔진·UI·렌즈·가격 promotion은 변경하지 않았다.
+
+### 제품과 공식 근거
+
+- Sony A7 V: Sony Korea 제품 페이지, Sony 공식 specifications, Sony Korea 공식 출시 월 자료의 3개 source를 사용했다. 33MP 풀프레임 센서, 센서 크기, 배터리·카드 포함 695g/body-only 610g, 크기, AF 인식 대상, 4K 120p/10-bit, 배터리, 5축 IBIS 조건, EVF/LCD, 셔터·연사, slot별 저장 매체, 방진방적 설계, 동작 온도와 2025-12 출시 근거를 확보했다. `new-product` 25개, conflict 0, incoming UNKNOWN 0이다.
+- Sony A7R VI: Sony Korea 제품 페이지와 Sony 공식 specifications의 2개 source를 사용했다. 66.8MP 풀프레임 센서, 센서 크기, 배터리·카드 포함 713g/body-only 622g, 크기, AF 인식 대상, 8K 30p/10-bit와 S-Log3, 배터리, 5축 IBIS 조건, EVF/LCD, 셔터·연사, 두 개의 SD/CFexpress Type A 겸용 slot, 동작 온도를 확보했다. `new-product` 24개, conflict 0, incoming UNKNOWN 0이다.
+- Sony A7C II: Sony Korea 제품 페이지와 Sony 공식 specifications의 2개 source를 사용했다. 기존 값 15개에 새 공식 evidence를 연결하고, 센서 크기, 배터리 조건, 5축 7스톱 IBIS 조건, EVF/LCD, 셔터, 단일 SD slot, 동작 온도 등 9개 `null-fill`을 적용했다. AF 설명은 실제 전용 AI 처리 장치 문구가 있는 제품 페이지에 연결했다. 4K 60/50p의 Super 35mm 조건을 보존했고, 공식 10fps 표기가 셔터 방식별 값을 나누지 않으므로 burst에는 억지로 넣지 않았다. conflict 0, incoming UNKNOWN 0이다.
+
+공식 source끼리 같은 leaf에서 다른 값을 주장한 사례는 없어 `CONFLICTING_CLAIM_VALUES`는 발생하지 않았다. 무게는 body-only와 배터리·카드 포함 값을 분리했고, IBIS·영상·EVF 조건과 slot별 media 차이를 claim에 보존했다. A7 V의 log/crop-at-max, A7R VI의 release date/weather sealing/crop-at-max, A7C II의 release date/weather sealing/셔터 방식별 burst는 확인 범위를 넘겨 `null`로 유지했다. 신품·중고 가격은 이번 batch에서 수집·승격하지 않았다.
+
+### Diff, 승인, 적용
+
+- 시작 canonical: 바디 38 / 렌즈 36, 총 74, SHA-256 `2f3794736da0dbc94c9089040620247cf51551e1d40db296811b1d474c7a2771`.
+- 검토한 diff digest: `fb0a2d01ed7a0fafcd2143f488510ee128887cb41a5460ac86eaa4c95640c1b1`. 세 item 모두 validation error/warning과 value conflict가 0이었다.
+- 승인 ID: `approval-c2e0789126d2a6f61647130bf3ebc58933bc0f8d1bea8f3f8e5ef65860fa7a37`. `--allow-new-products`를 포함한 explicit CLI approval 뒤 expected digest와 모든 incoming artifact digest를 고정했다.
+- atomic apply 후 바디 40 / 렌즈 36, 총 76, canonical SHA-256 `602af39634df3102cedc615facefbd4bdb2de46e578919ae33ef6ab3b8c7fa5d`가 됐다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였고 세 item과 journal은 모두 `canonicalized`다.
+
+### Cheap-worker와 사람 작업량
+
+공식 Sony 공개 발췌와 최소 허용 필드 목록만 일회성 파일로 전달했다. 프로젝트 코드, canonical DB, 설정, 개인정보와 secret은 보내지 않았다. task `objective-v04-production-sony-bodies-002-extraction`의 첫 실제 호출은 input 2,054 / output 2,048 tokens에서 응답 길이 제한으로 `INCOMPLETE_RESPONSE`가 됐다. 같은 task ID의 1회 재시도는 source 간 조건·충돌 후보만 요청해 input 2,066 / output 727, 총 2,793 tokens로 성공했다. 두 시도의 합계는 6,895 tokens다.
+
+첫 호출의 잘린 structured extraction은 채택하지 않았다. 재시도의 15개 검토 경고는 모두 확인했고, 그중 13개가 실제 claim·UNKNOWN 결정에 직접 반영됐다(약 87%). 센서의 `partially/fully stacked`와 generic `Exmor RS`를 같은 말로 합치지 않기, 120p/119.88p 표현 보존, body-only/operational weight 분리, IBIS 측정 조건, slot 차이, A7C II Super 35mm crop, 셔터별 근거가 없는 10fps burst 제외, EVF NTSC/PAL 조건, A7R VI release date UNKNOWN을 포함한다.
+
+| 제품 | 공식 source | worker 호출 | Sol의 주요 직접 판단 |
+| --- | ---: | --- | --- |
+| A7 V | 3 | batch 공용 2회(1회 길이 실패 + 1회 성공) | 현행/신규 identity, 출시 월 의미, sensor 표현 범위, 무게·IBIS·영상 조건, 비대칭 slot 구조 |
+| A7R VI | 2 | batch 공용 2회 | 현행/신규 identity, release UNKNOWN, sensor 표현 범위, 셔터·연사·slot·영상 조건 |
+| A7C II | 2 | batch 공용 2회 | 기존 제품 동일성, AF 설명 source 재매핑, Super 35mm crop, 셔터별 burst 미승격, 기존 subject enum 보존 |
+
+호출이 batch 공용이어서 제품별 worker token을 정확히 분리할 수는 없다. 공식 source 2–3개를 읽고 identity, 조건부 사양, UNKNOWN과 diff를 사람이 검토해야 하므로 현재 검토 비용은 제품당 대략 한 번의 집중 검토 묶음이다. raw 반복 입력은 worker가 줄일 수 있지만 최종 provenance와 조건 판단은 아직 사람이 맡아야 한다.
+
+### 운영 판단과 검증
+
+pipeline code 변경이나 신규 회귀 테스트 추가가 필요할 정도의 버그는 발견하지 않았다. 기존 canonical 계약 테스트에 고정된 제품 수는 이번 정상 증가에 맞춰 74에서 76으로 갱신했으며 검증 강도는 그대로다. 새로 드러난 운영 병목은 긴 다제품 worker 응답이 출력 한도에 걸릴 수 있다는 점과, 공식 문구의 조건을 canonical leaf로 옮길 때 사람 검토가 계속 필요하다는 점이다. 다음에는 worker 요청을 제품별 또는 추출/경고 단계로 더 작게 나누는 편이 안전하다.
+
+전체 테스트 **101/101**, Objective pipeline 테스트 **63/63**, canonical validation **76/76**이 통과했다. `pnpm build`, 전체 objective script와 변경 테스트의 `node --check`, `git diff --check`도 성공했다. 신규 pipeline 동작을 추가하지 않았으므로 새 테스트 코드는 0개이며, 이번 세 item의 raw/staging/diff/approval/transaction과 idempotent 재적용이 production batch 검증 자료다.
+
+다음 Sony batch는 **5개 단위**로 확대해도 된다. 10개를 한 요청·한 검토 단위로 바로 처리하면 worker 출력 한도와 사람의 조건 검토 부담이 커지므로, 10개를 처리할 때도 5개짜리 독립 batch 두 개로 나누는 것을 권장한다.
+
 ## Stage 4 production pipeline 보완 완료 — 2026-09-22
 
 첫 production batch에서 확인한 반복 작업 병목을 보완했다. 새 제품이나 canonical 값을 추가하지 않았고 추천 엔진과 UI도 변경하지 않았다. 상세 계약은 [OBJECTIVE_DB_V04_FIELD_CONTRACTS.md](./OBJECTIVE_DB_V04_FIELD_CONTRACTS.md)에 고정했다.

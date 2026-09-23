@@ -188,7 +188,7 @@ test("releaseDate stores official market availability with explicit precision", 
   for (const value of ["2024-13", "announced 2024", "2024-02-30"]) assert.throws(() => validateSpecValue(value, "specs.releaseDate"), /Invalid release date/);
 });
 
-test("the existing 74-product canonical remains valid without mandatory new fields", () => {
-  assert.equal(canonical.bodies.length + canonical.lenses.length, 74);
+test("the existing 76-product canonical remains valid without mandatory new fields", () => {
+  assert.equal(canonical.bodies.length + canonical.lenses.length, 76);
   assert.equal(validateCanonical(canonical, vocab), true);
 });

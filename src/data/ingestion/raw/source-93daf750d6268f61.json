@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cm2/specifications",
+  "publisher": "Sony",
+  "documentTitle": "ILCE-7CM2 Specifications",
+  "documentVersion": null,
+  "region": "USA",
+  "accessedAt": "2026-09-23T01:00:00Z",
+  "evidenceScope": "General; sensor; recording; focus; display; shutter; stabilization; power; size and weight",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor format",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "Sensor dimensions",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Effective pixels",
+      "value": 33,
+      "unit": "MP"
+    },
+    {
+      "field": "Operational weight",
+      "value": 514,
+      "unit": "g"
+    },
+    {
+      "field": "Weight basis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Body-only weight",
+      "value": 429,
+      "unit": "g"
+    },
+    {
+      "field": "Dimensions",
+      "value": [
+        124,
+        71.1,
+        63.4
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Recognition targets",
+      "value": [
+        "사람",
+        "동물",
+        "조류",
+        "곤충",
+        "자동차·기차",
+        "비행기"
+      ],
+      "unit": null
+    },
+    {
+      "field": "Maximum movie bit depth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "Still battery life",
+      "value": 560,
+      "unit": null
+    },
+    {
+      "field": "Battery conditions",
+      "value": "LCD 모니터 사용 시 CIPA 기준 560매; 뷰파인더 사용 시 530매",
+      "unit": null
+    },
+    {
+      "field": "Image stabilization",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA 기준; pitch/yaw; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "unit": null
+    },
+    {
+      "field": "EVF",
+      "value": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "unit": null
+    },
+    {
+      "field": "LCD",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Shutter",
+      "value": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Card slots",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "Operating temperature minimum",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "Operating temperature maximum",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-7cm2-batch2",
+      "manufacturerModelCode": "ILCE-7CM2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A7C II",
+        "brand": "Sony",
+        "series": "α7C",
+        "model": "A7C II",
+        "aliases": [
+          "sony a7c ii",
+          "sony a7c2",
+          "소니 a7c ii",
+          "소니 a7c2",
+          "a7c2",
+          "a7cm2"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "rangefinder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Section",
+            "row": "Sensor Type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            35.9,
+            23.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Camera Section",
+            "row": "Sensor Type"
+          },
+          "conditions": {
+            "order": "width-height"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 2,
+          "rawValue": 33,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Camera Section",
+            "row": "Number of Pixels (Effective)"
+          },
+          "conditions": {
+            "use": "still images"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 514,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Weight (with battery and memory card included)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Weight (with battery and memory card included)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 429,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Body Only"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            124,
+            71.1,
+            63.4
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Dimensions (W x H x D)"
+          },
+          "conditions": {
+            "measurement": "full depth; grip-to-monitor depth 58.6 mm not promoted"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "evidenceRef": 7,
+          "rawValue": [
+            "사람",
+            "동물",
+            "조류",
+            "곤충",
+            "자동차·기차",
+            "비행기"
+          ],
+          "rawUnit": null,
+          "locator": {
+            "section": "Focus System",
+            "row": "Recognition Target"
+          },
+          "conditions": {
+            "officialLabels": [
+              "Human",
+              "Animal",
+              "Bird",
+              "Insect",
+              "Car",
+              "Train",
+              "Airplane"
+            ],
+            "normalization": "Car and Train retain existing combined service label"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 8,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording System (movie)",
+            "row": "4K 4:2:2 10 bit formats"
+          },
+          "conditions": {
+            "chroma": "4:2:2"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 9,
+          "rawValue": 560,
+          "rawUnit": null,
+          "locator": {
+            "section": "Power",
+            "row": "Battery Life (Still Images)"
+          },
+          "conditions": {
+            "display": "LCD monitor",
+            "standard": "CIPA",
+            "viewfinderShots": 530
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 10,
+          "rawValue": "LCD 모니터 사용 시 CIPA 기준 560매; 뷰파인더 사용 시 530매",
+          "rawUnit": null,
+          "locator": {
+            "section": "Power",
+            "row": "Battery Life (Still Images)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 11,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA 기준; pitch/yaw; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Image Stabilization",
+            "row": "Type; Compensation Effect"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 12,
+          "rawValue": {
+            "present": true,
+            "resolutionDots": 2359296,
+            "magnification": 0.7,
+            "maxRefreshHz": 120
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Viewfinder",
+            "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+          },
+          "conditions": {
+            "regionModes": "NTSC max 120fps; PAL max 100fps"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 13,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1036800,
+            "mechanism": "vari-angle",
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "LCD Screen",
+            "row": "Adjustable Angle; Touch Panel; Number of Dots; Monitor Type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.shutter",
+          "evidenceRef": 14,
+          "rawValue": {
+            "mechanical": true,
+            "electronic": true,
+            "fastestMechanicalSec": 0.00025,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Shutter",
+            "row": "Shutter Speed; Shutter Type"
+          },
+          "conditions": {
+            "use": "still images"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 15,
+          "rawValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording System",
+            "row": "Memory Card Slot"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 16,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "Operating Temperature"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 17,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "Operating Temperature"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-002-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "f76a02009fc6bd58712c9be6ef809a2b826b56f689833907b27fdd6da415bf1f",
+  "sourceId": "source-93daf750d6268f61"
+}

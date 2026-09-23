@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-002",
+  "itemKey": "sony-ilce-7cm2-batch2",
+  "manufacturerModelCode": "ILCE-7CM2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7CM2",
+    "productId": "sony-a7c-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "sony-a7c-ii",
+    "name": "소니 A7C II",
+    "brand": "Sony",
+    "series": "α7C",
+    "model": "A7C II",
+    "aliases": [
+      "sony a7c ii",
+      "sony a7c2",
+      "소니 a7c ii",
+      "소니 a7c2",
+      "a7c2",
+      "a7cm2"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "autofocus": {
+        "aiUnit": true,
+        "description": "전용 AI 처리 장치 기반 피사체 인식",
+        "subjects": [
+          "사람",
+          "동물",
+          "조류",
+          "곤충",
+          "자동차·기차",
+          "비행기"
+        ]
+      },
+      "batteryConditions": "LCD 모니터 사용 시 CIPA 기준 560매; 뷰파인더 사용 시 530매",
+      "batteryShots": 560,
+      "bodyOnlyWeight": 429,
+      "cardSlots": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        124,
+        71.1,
+        63.4
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA 기준; pitch/yaw; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "lcd": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R BSI CMOS",
+        "megapixels": 33,
+        "sizeMm": [
+          35.9,
+          23.9
+        ]
+      },
+      "shutter": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": true,
+        "log": true,
+        "max": "4K 60p"
+      },
+      "weight": 514,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-0852795a6bed49ff",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cm2",
+    "publisher": "Sony Korea",
+    "documentTitle": "Alpha 7C II compact full-frame camera",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T01:00:00Z",
+    "evidenceScope": "AI processing; sensor generation; video crop/log",
+    "contentDigest": "91e2f36d5a1c35ee02f0cd71422676f3bb3620ea4fafbfa67182d847421da0b6"
+  },
+  "sources": [
+    {
+      "sourceId": "source-0852795a6bed49ff",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cm2",
+      "publisher": "Sony Korea",
+      "documentTitle": "Alpha 7C II compact full-frame camera",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T01:00:00Z",
+      "evidenceScope": "AI processing; sensor generation; video crop/log",
+      "contentDigest": "91e2f36d5a1c35ee02f0cd71422676f3bb3620ea4fafbfa67182d847421da0b6"
+    },
+    {
+      "sourceId": "source-93daf750d6268f61",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cm2/specifications",
+      "publisher": "Sony",
+      "documentTitle": "ILCE-7CM2 Specifications",
+      "documentVersion": null,
+      "region": "USA",
+      "accessedAt": "2026-09-23T01:00:00Z",
+      "evidenceScope": "General; sensor; recording; focus; display; shutter; stabilization; power; size and weight",
+      "contentDigest": "f76a02009fc6bd58712c9be6ef809a2b826b56f689833907b27fdd6da415bf1f"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.autofocus.aiUnit",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Highlights",
+        "row": "Innovative AI processing unit"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-a75c84096a1a9e3ab25f"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.autofocus.description",
+      "value": "전용 AI 처리 장치 기반 피사체 인식",
+      "unit": null,
+      "rawValue": "전용 AI 처리 장치 기반 피사체 인식",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Highlights",
+        "row": "Innovative AI processing unit with more accurate subject recognition"
+      },
+      "conditions": {
+        "normalizedSummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-4730c4009167ba92edbb"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.autofocus.subjects",
+      "value": [
+        "사람",
+        "동물",
+        "조류",
+        "곤충",
+        "자동차·기차",
+        "비행기"
+      ],
+      "unit": null,
+      "rawValue": [
+        "사람",
+        "동물",
+        "조류",
+        "곤충",
+        "자동차·기차",
+        "비행기"
+      ],
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Focus System",
+        "row": "Recognition Target"
+      },
+      "conditions": {
+        "officialLabels": [
+          "Human",
+          "Animal",
+          "Bird",
+          "Insect",
+          "Car",
+          "Train",
+          "Airplane"
+        ],
+        "normalization": "Car and Train retain existing combined service label"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-dad117af6fa757c1732c"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.batteryConditions",
+      "value": "LCD 모니터 사용 시 CIPA 기준 560매; 뷰파인더 사용 시 530매",
+      "unit": null,
+      "rawValue": "LCD 모니터 사용 시 CIPA 기준 560매; 뷰파인더 사용 시 530매",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-7cc516aa1419ecee2a43"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.batteryShots",
+      "value": 560,
+      "unit": null,
+      "rawValue": 560,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {
+        "display": "LCD monitor",
+        "standard": "CIPA",
+        "viewfinderShots": 530
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-bcb35fab86bbda778929"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 429,
+      "unit": "g",
+      "rawValue": 429,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Body Only"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-233991790c0ddd9b93e0"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Recording System",
+        "row": "Memory Card Slot"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-13f268c37200d1fa5e8b"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.dimensions",
+      "value": [
+        124,
+        71.1,
+        63.4
+      ],
+      "unit": "mm",
+      "rawValue": [
+        124,
+        71.1,
+        63.4
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Dimensions (W x H x D)"
+      },
+      "conditions": {
+        "measurement": "full depth; grip-to-monitor depth 58.6 mm not promoted"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-e75d24c0a01c0b3061ad"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Viewfinder",
+        "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+      },
+      "conditions": {
+        "regionModes": "NTSC max 120fps; PAL max 100fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-8c61c657a4e671eb37e7"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA 기준; pitch/yaw; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA 기준; pitch/yaw; FE 50mm F1.2 GM; 장시간 노출 NR 끔"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Image Stabilization",
+        "row": "Type; Compensation Effect"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-1b40e91307e9fe6982bc"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "LCD Screen",
+        "row": "Adjustable Angle; Touch Panel; Number of Dots; Monitor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-bba0d82da4e992f3872a"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Operating temperature",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-84bd7d4bfca6a5b4e7fa"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Operating temperature",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-39b1bc3db91a20f6ef57"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-5a077c8870ae048b6df0"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R BSI CMOS",
+      "unit": null,
+      "rawValue": "Exmor R BSI CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Highlights",
+        "row": "33.0 MP full-frame back-illuminated Exmor R CMOS image sensor"
+      },
+      "conditions": {
+        "normalizedTerm": "BSI means back-illuminated",
+        "officialText": "back-illuminated Exmor R CMOS"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-e1f58625af979c0aa8a6"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 33,
+      "unit": "MP",
+      "rawValue": 33,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Number of Pixels (Effective)"
+      },
+      "conditions": {
+        "use": "still images"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-cb0bc097d527b8515d79"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.9,
+        23.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "order": "width-height"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-24e8ad6f665c0f11a162"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.shutter",
+      "value": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "unit": null,
+      "rawValue": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Shutter",
+        "row": "Shutter Speed; Shutter Type"
+      },
+      "conditions": {
+        "use": "still images"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-c40575bdc53aa65ee359"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "4K 4:2:2 10 bit formats"
+      },
+      "conditions": {
+        "chroma": "4:2:2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-fb2b5758671921ae8155"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Footnotes",
+        "row": "4K 60/50p is available only in Super 35mm mode"
+      },
+      "conditions": {
+        "mode": "4K 60/50p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-a350549d01b4ae4720e9"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Highlights",
+        "row": "4K 60p, S-Log3"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-f5e4781dce94268bb624"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.video.max",
+      "value": "4K 60p",
+      "unit": null,
+      "rawValue": "4K 60p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-0852795a6bed49ff",
+      "locator": {
+        "section": "Highlights",
+        "row": "4K 60p"
+      },
+      "conditions": {
+        "crop": "Super 35mm mode required for 60/50p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-16441759782297b7a601"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.weight",
+      "value": 514,
+      "unit": "g",
+      "rawValue": 514,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-00a357d5a875a91c7083"
+    },
+    {
+      "productId": "sony-a7c-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-93daf750d6268f61",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-002-review",
+      "claimId": "claim-6d7d5ea383fa566ac16a"
+    }
+  ]
+}
