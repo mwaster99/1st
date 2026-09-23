@@ -1,5 +1,25 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 세 번째 Sony production batch 완료 — 2026-09-23
+
+시작 commit `09eb2d1`, clean working tree, canonical SHA-256 `602af39634df3102cedc615facefbd4bdb2de46e578919ae33ef6ab3b8c7fa5d`에서 `production-sony-bodies-003`을 실행했다. Sony Korea 공식 현행 제품 페이지와 canonical을 대조해 정확히 5개를 선정했고, 앞선 batch의 A7 IV, α1 II, A7 V, A7R VI, A7C II는 제외했다.
+
+- 신규 `sony-a9-iii` / α9 III (`ILCE-9M3`): 공식 제품·사양 2 source, 22개 field. 24.6MP full-frame Exmor RS, 702g operational/617g body-only, 4K 120p 10-bit, 120fps 전자 연사, 1/80000초 전자 셔터, 8-stop IBIS, EVF/LCD, dual SD/CFexpress Type A, 배터리·온도를 추가했다.
+- 기존 `sony-a7r-v` / A7R V (`ILCE-7RM5`): 2 source, 23개 field, same-value/new-evidence 4, null-fill 19. 61MP sensor size/generation, AI AF, 8K 25p 10-bit/S-Log3, 8-stop IBIS, EVF/LCD, dual card slots, 방진·방적 설계 등을 보강했다.
+- 기존 `sony-a7cr` / A7CR (`ILCE-7CR`): 2 source, 23개 field, same-value/new-evidence 4, null-fill 19. AI AF, 4K 60p 10-bit와 Super 35mm 조건, 7-stop IBIS, 430g body-only, EVF/LCD·셔터·slot 등을 보강했다.
+- 기존 `sony-a6700` / A6700 (`ILCE-6700`): 2 source, 22개 field, same-value/new-evidence 4, null-fill 18. APS-C sensor size/generation, AI AF, 4K 120p 10-bit, 5-stop IBIS, 409g body-only, EVF/LCD·셔터·slot 등을 보강했다.
+- 기존 `sony-zv-e1` / ZV-E1 (`ZV-E1`): 제품·사양·4K 120p upgrade support의 3 source, 22개 field, same-value/new-evidence 4, null-fill 18. 4K 120p는 upgrade license 조건을 claim에 보존했고, EVF 없음, 전자 셔터 전용, AI AF, 5-stop IBIS, 399g body-only 등을 보강했다.
+
+공식 source 간 value conflict는 0건이다. 가격과 release date, A7R V body-only weight, α9 III 전용 AI unit, 확인되지 않은 video crop/log와 비특정 shutter별 burst는 UNKNOWN으로 유지했다. α9 III 외 비특정 연사 수치는 shutter별 계약으로 안전하게 분리할 근거가 부족해 넣지 않았다.
+
+cheap-worker는 제품 1개당 독립 task로 운영했다. A7R V 809/689/1,498, A7CR 756/558/1,314, A6700 765/742/1,507, ZV-E1 710/462/1,172 input/output/total token을 사용했다. α9 III는 첫 review 출력이 사실 목록을 누락해 789/169/958 후 같은 task ID로 1회 재시도했고 783/646/1,429를 사용했다. 총 6회 API 호출, 7,878 token이며 모든 호출이 성공했다. worker 요약은 필드 누락·조건 검토에 유용했지만 live source 검증은 하지 못하므로 값 채택, source locator, UNKNOWN, ZV-E1 upgrade 조건, identity와 최종 diff는 메인 모델이 직접 판단했다.
+
+diff digest `be7c14ba7ff2a1cef1c9b72e2d1683ae25eb9b4219750b0ae21d183ef8348d45`를 제품별로 검토한 뒤 approval `approval-093b61484d6dec8a0e7bbefd338b9660b81f5e15a8a9374af310bed81a345328`로 승인했다. atomic apply 후 바디 41 / 렌즈 36 / 총 77, canonical SHA-256 `a4e27a06648307846ebdb850d4062289dc32291d591d2b9421658527fdbcb2da`가 됐다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였고 5개 item과 journal은 모두 `canonicalized`다.
+
+canonical count 검사는 단순 최소값으로 약화하지 않았다. 검토된 inventory 삭제를 잡는 exact total 77을 유지하고 이번 5개 production body의 존재 assertion을 추가했다. 다음 Sony batch도 5개 단위로 동일한 제품별 worker → official review → pipeline 흐름을 사용할 수 있다. 가격·렌즈·추천 엔진·UI는 변경하지 않았다.
+
+검증은 전체 101/101, Objective pipeline 63/63, canonical validation 77/77을 통과했다. `pnpm build`, Objective script 전체 `node --check`, `git diff --check`도 성공했다.
+
 ## Stage 4 두 번째 Sony production batch 완료 — 2026-09-23
 
 `production-sony-bodies-002`에서 Sony 현행 Tier 1 바디 3개를 공식 자료로 처리했다. Sony Korea 현행 렌즈 교환식 카메라 목록과 canonical을 대조해 신규 `sony-a7-v`(ILCE-7M5), 신규 `sony-a7r-vi`(ILCE-7RM6), 기존 `sony-a7c-ii`(ILCE-7CM2)를 골랐다. 앞 batch의 A7 IV와 α1 II는 제외했다. 신규 생성과 기존 제품 보강을 한 batch에서 함께 통과시키는 표본이며 추천 엔진·UI·렌즈·가격 promotion은 변경하지 않았다.

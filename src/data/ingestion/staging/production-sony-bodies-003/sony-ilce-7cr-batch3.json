@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-003",
+  "itemKey": "sony-ilce-7cr-batch3",
+  "manufacturerModelCode": "ILCE-7CR",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7CR",
+    "productId": "sony-a7cr",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-78a3d7420db69ddddfce",
+    "sourceId": "source-e51453515d10d9ab",
+    "evidenceRef": 2,
+    "locator": {
+      "section": "Product header",
+      "row": "A7CR / ILCE-7CR"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-sol-production-sony-003-review"
+  },
+  "product": {
+    "id": "sony-a7cr",
+    "name": "소니 A7CR",
+    "brand": "Sony",
+    "series": "α7C",
+    "model": "A7CR",
+    "aliases": [
+      "Sony A7CR"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "autofocus": {
+        "aiUnit": true,
+        "description": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+        "subjects": [
+          "Human",
+          "Animal",
+          "Bird",
+          "Insect",
+          "Car",
+          "Train",
+          "Airplane"
+        ]
+      },
+      "batteryConditions": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 490매",
+      "batteryShots": 530,
+      "bodyOnlyWeight": 430,
+      "cardSlots": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        124,
+        71.1,
+        63.4
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "lcd": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R CMOS",
+        "megapixels": 61,
+        "sizeMm": [
+          35.7,
+          23.8
+        ]
+      },
+      "shutter": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": true,
+        "max": "4K 60p"
+      },
+      "weight": 515,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-e51453515d10d9ab",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cr?locale=ko_KR",
+    "publisher": "Sony Korea",
+    "documentTitle": "ILCE-7CR | 렌즈 교환식 카메라 | 소니코리아",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T05:00:00Z",
+    "evidenceScope": "Product identity and official product highlights",
+    "contentDigest": "45d1db83358bbb9820c5e7680321028fccfcefba122e7aa143770aef56265114"
+  },
+  "sources": [
+    {
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+      "publisher": "Sony",
+      "documentTitle": "ILCE-7CR Specifications | Sony USA",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-23T05:00:00Z",
+      "evidenceScope": "Official product specifications",
+      "contentDigest": "5f5af6a5873d5071bc281f63a881d8036524db95383405e90c720c6a8c40e443"
+    },
+    {
+      "sourceId": "source-e51453515d10d9ab",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cr?locale=ko_KR",
+      "publisher": "Sony Korea",
+      "documentTitle": "ILCE-7CR | 렌즈 교환식 카메라 | 소니코리아",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T05:00:00Z",
+      "evidenceScope": "Product identity and official product highlights",
+      "contentDigest": "45d1db83358bbb9820c5e7680321028fccfcefba122e7aa143770aef56265114"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.autofocus.aiUnit",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e51453515d10d9ab",
+      "locator": {
+        "section": "Highlights",
+        "row": "Latest AI processing unit"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-3ea8d8e058b703c53772"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.autofocus.description",
+      "value": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+      "unit": null,
+      "rawValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Focus System",
+        "row": "Focus Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-7bf1b2e8f79b328bfce5"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.autofocus.subjects",
+      "value": [
+        "Human",
+        "Animal",
+        "Bird",
+        "Insect",
+        "Car",
+        "Train",
+        "Airplane"
+      ],
+      "unit": null,
+      "rawValue": [
+        "Human",
+        "Animal",
+        "Bird",
+        "Insect",
+        "Car",
+        "Train",
+        "Airplane"
+      ],
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Focus System",
+        "row": "Recognition Target"
+      },
+      "conditions": {
+        "appliesTo": "stills and movies"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-58f8bba5b859ce3f5e88"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.batteryConditions",
+      "value": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 490매",
+      "unit": null,
+      "rawValue": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 490매",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-adff73cf9bda6cd7ab0b"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.batteryShots",
+      "value": 530,
+      "unit": null,
+      "rawValue": 530,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {
+        "basis": "LCD monitor; EVF 490 shots; CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-61fae4ae29ad392dc4ad"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.bodyOnlyWeight",
+      "value": 430,
+      "unit": "g",
+      "rawValue": 430,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Body Only"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-9c9ee27e15366d62bdf9"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Recording System",
+        "row": "Memory Card Slot"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-7f178d26ebf61735c851"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.dimensions",
+      "value": [
+        124,
+        71.1,
+        63.4
+      ],
+      "unit": "mm",
+      "rawValue": [
+        124,
+        71.1,
+        63.4
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Dimensions (W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-d7fddcf50496c37e47a1"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Viewfinder",
+        "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+      },
+      "conditions": {
+        "refresh": "120fps NTSC / 100fps PAL"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-353a67a76efc5bc1a189"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Image Stabilization",
+        "row": "Type; Compensation Effect"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-13d9e44101c910632ff7"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "LCD Screen",
+        "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+      },
+      "conditions": {
+        "angles": "opening 176°, rotation 270°"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-5cf2f51333b120287130"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Operating temperature",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-c20558ff819c4e65685f"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Operating temperature",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-2ed1f7e1f07fc0a94f50"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-a99b5308d9b6074dc116"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-73733fa4963ad7046702"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.sensor.megapixels",
+      "value": 61,
+      "unit": "MP",
+      "rawValue": 61,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Number of Pixels (Effective)"
+      },
+      "conditions": {
+        "use": "still images"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-688f097d8242a858c891"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.7,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.7,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Camera Section",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "order": "width-height"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-cee1824c9edbe1937beb"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.shutter",
+      "value": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "unit": null,
+      "rawValue": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Shutter",
+        "row": "Shutter Type; Shutter Speed"
+      },
+      "conditions": {
+        "bulb": "listed with mechanical shutter"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-821a4eb2b13556e7693e"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "4K recording format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-053be84256ae91dab559"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e51453515d10d9ab",
+      "locator": {
+        "section": "Highlights footnote",
+        "row": "4K 60/50p recording available only in Super 35mm mode"
+      },
+      "conditions": {
+        "appliesTo": "4K 60p/50p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-a05370673ea6615fb1a3"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.video.max",
+      "value": "4K 60p",
+      "unit": null,
+      "rawValue": "4K 60p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "4K recording format"
+      },
+      "conditions": {
+        "rates": "59.94p NTSC / 50p PAL"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-603937cd88ea84be51be"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.weight",
+      "value": 515,
+      "unit": "g",
+      "rawValue": 515,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-93d1f687ee2aad27f390"
+    },
+    {
+      "productId": "sony-a7cr",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ba9fc73591e2f4e",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-d5a65e0986361cdf0b8f"
+    }
+  ]
+}

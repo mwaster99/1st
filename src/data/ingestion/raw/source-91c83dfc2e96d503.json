@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+  "publisher": "Sony",
+  "documentTitle": "ILCE-6700 Specifications | Sony USA",
+  "documentVersion": null,
+  "region": "US",
+  "accessedAt": "2026-09-23T05:00:00Z",
+  "evidenceScope": "Official product specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor Type",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "Sensor Type",
+      "value": [
+        23.3,
+        15.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Number of Pixels (Effective)",
+      "value": 26,
+      "unit": "MP"
+    },
+    {
+      "field": "Sensor Type",
+      "value": "Exmor R CMOS",
+      "unit": null
+    },
+    {
+      "field": "Weight (with battery and memory card included)",
+      "value": 493,
+      "unit": "g"
+    },
+    {
+      "field": "Weight (with battery and memory card included)",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Body Only",
+      "value": 409,
+      "unit": "g"
+    },
+    {
+      "field": "Dimensions (W x H x D)",
+      "value": [
+        122,
+        69,
+        75.1
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Recognition Target",
+      "value": [
+        "Human",
+        "Animal",
+        "Bird",
+        "Insect",
+        "Car",
+        "Train",
+        "Airplane"
+      ],
+      "unit": null
+    },
+    {
+      "field": "Focus Type",
+      "value": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+      "unit": null
+    },
+    {
+      "field": "4K recording format",
+      "value": "4K 120p",
+      "unit": null
+    },
+    {
+      "field": "4K recording format",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "Battery Life (Still Images)",
+      "value": 570,
+      "unit": null
+    },
+    {
+      "field": "Battery Life (Still Images)",
+      "value": "LCD 모니터 사용 시 약 570매(CIPA); EVF 사용 시 약 550매",
+      "unit": null
+    },
+    {
+      "field": "Type; Compensation Effect",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "unit": null
+    },
+    {
+      "field": "Number of Dots; Magnification; Finder Frame Rate Selection",
+      "value": {
+        "present": true,
+        "resolutionDots": 2359296,
+        "magnification": 0.7,
+        "maxRefreshHz": 120
+      },
+      "unit": null
+    },
+    {
+      "field": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1036800,
+        "mechanism": "vari-angle",
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Shutter Type; Shutter Speed",
+      "value": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.00025,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Memory Card Slot",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "Operating Temperature",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "Operating Temperature",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-6700-batch3",
+      "manufacturerModelCode": "ILCE-6700",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A6700",
+        "brand": "Sony",
+        "series": "α6000",
+        "model": "A6700",
+        "aliases": [
+          "Sony A6700"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "rangefinder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Section",
+            "row": "Sensor Type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            23.3,
+            15.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Camera Section",
+            "row": "Sensor Type"
+          },
+          "conditions": {
+            "order": "width-height"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 2,
+          "rawValue": 26,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Camera Section",
+            "row": "Number of Pixels (Effective)"
+          },
+          "conditions": {
+            "use": "still images"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 3,
+          "rawValue": "Exmor R CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Section",
+            "row": "Sensor Type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 493,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Weight (with battery and memory card included)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Weight (with battery and memory card included)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 409,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Body Only"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            122,
+            69,
+            75.1
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Size & Weight",
+            "row": "Dimensions (W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "evidenceRef": 8,
+          "rawValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "rawUnit": null,
+          "locator": {
+            "section": "Focus System",
+            "row": "Recognition Target"
+          },
+          "conditions": {
+            "appliesTo": "stills and movies"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 9,
+          "rawValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Focus System",
+            "row": "Focus Type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 10,
+          "rawValue": "4K 120p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording System (movie)",
+            "row": "4K recording format"
+          },
+          "conditions": {
+            "rates": "119.88p NTSC / 100p PAL"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 11,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording System (movie)",
+            "row": "4K recording format"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 12,
+          "rawValue": 570,
+          "rawUnit": null,
+          "locator": {
+            "section": "Power",
+            "row": "Battery Life (Still Images)"
+          },
+          "conditions": {
+            "basis": "LCD monitor; EVF 550 shots; CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 13,
+          "rawValue": "LCD 모니터 사용 시 약 570매(CIPA); EVF 사용 시 약 550매",
+          "rawUnit": null,
+          "locator": {
+            "section": "Power",
+            "row": "Battery Life (Still Images)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 14,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Image Stabilization",
+            "row": "Type; Compensation Effect"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 15,
+          "rawValue": {
+            "present": true,
+            "resolutionDots": 2359296,
+            "magnification": 0.7,
+            "maxRefreshHz": 120
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Viewfinder",
+            "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+          },
+          "conditions": {
+            "magnification": "0.70x 35mm-equivalent; official actual value 1.07x",
+            "refresh": "120fps NTSC / 100fps PAL"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 16,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1036800,
+            "mechanism": "vari-angle",
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "LCD Screen",
+            "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+          },
+          "conditions": {
+            "angles": "opening 176°, rotation 270°"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.shutter",
+          "evidenceRef": 17,
+          "rawValue": {
+            "mechanical": true,
+            "electronic": true,
+            "fastestMechanicalSec": 0.00025,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Shutter",
+            "row": "Shutter Type; Shutter Speed"
+          },
+          "conditions": {
+            "bulb": "listed with mechanical shutter"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 18,
+          "rawValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording System",
+            "row": "Memory Card Slot"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 19,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "Operating Temperature"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 20,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "Operating Temperature"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-23",
+          "reviewer": "codex-sol-production-sony-003-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "a8bfd1a4652a8e4ec5d21559528f97977b142feeebbcd22e6cc0ebbe723e100d",
+  "sourceId": "source-91c83dfc2e96d503"
+}

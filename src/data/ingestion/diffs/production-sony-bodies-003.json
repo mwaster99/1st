@@ -1,0 +1,3164 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-003",
+  "canonicalBaselineDigest": "602af39634df3102cedc615facefbd4bdb2de46e578919ae33ef6ab3b8c7fa5d",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-003",
+      "productId": "sony-a9-iii",
+      "productName": "소니 A9 III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a9-iii",
+        "name": "소니 A9 III",
+        "brand": "Sony",
+        "series": "α9",
+        "model": "A9 III",
+        "aliases": [
+          "sony a9 iii",
+          "sony alpha 9 iii",
+          "소니 a9 iii",
+          "a9iii",
+          "a9m3",
+          "ilce-9m3"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 24.6,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              35.6,
+              23.8
+            ]
+          },
+          "weight": 702,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 617,
+          "dimensions": [
+            136.1,
+            96.9,
+            82.9
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": [
+              "Human",
+              "Animal",
+              "Bird",
+              "Insect",
+              "Car",
+              "Train",
+              "Airplane"
+            ],
+            "description": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)"
+          },
+          "video": {
+            "max": "4K 120p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 530,
+          "releaseDate": null,
+          "batteryConditions": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 400매",
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "evf": {
+            "present": true,
+            "resolutionDots": 9437184,
+            "magnification": 0.9,
+            "maxRefreshHz": 240
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2095104,
+            "mechanism": "multi-angle",
+            "touch": true
+          },
+          "burst": {
+            "maxMechanicalFps": null,
+            "maxElectronicFps": 120
+          },
+          "shutter": {
+            "mechanical": false,
+            "electronic": true,
+            "fastestMechanicalSec": null,
+            "fastestElectronicSec": 0.0000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-9m3?locale=ko_KR",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-23",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-eb737a259b6dd590",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-2fa0aa17243e81a4ccdb",
+          "sourceId": "source-eb737a259b6dd590",
+          "checkedAt": "2026-09-23"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-2fa0aa17243e81a4ccdb",
+        "sourceId": "source-eb737a259b6dd590",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "A9 III / ILCE-9M3"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-23",
+        "reviewer": "codex-sol-production-sony-003-review",
+        "source": {
+          "sourceId": "source-eb737a259b6dd590",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-9m3?locale=ko_KR",
+          "documentTitle": "ILCE-9M3 | 렌즈 교환식 카메라 | 소니코리아",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.description",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "unit": null,
+          "claimId": "claim-e5a077cc7d313937a648",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Focus Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "unit": null,
+          "claimId": "claim-c318773b0ebadfc3d84a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Recognition Target"
+            },
+            "conditions": {
+              "appliesTo": "still images and movies"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 400매",
+          "unit": null,
+          "claimId": "claim-31117e42a5e81a871d68",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 530,
+          "unit": null,
+          "claimId": "claim-8517485fcd23ad233dda",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "basis": "LCD monitor; EVF 400 shots; CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 617,
+          "unit": "g",
+          "claimId": "claim-23725b26cb3747a0e194",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Body Only"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "maxMechanicalFps": null,
+            "maxElectronicFps": 120
+          },
+          "unit": null,
+          "claimId": "claim-c4722374ff1e46ac2f80",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Drive",
+              "row": "Continuous Drive Speed (approx. max.)"
+            },
+            "conditions": {
+              "mode": "Hi+",
+              "tracking": "full AF/AE tracking per product highlight"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-07ec7927e734202c7455",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Recording System",
+              "row": "Memory Card Slot"
+            },
+            "conditions": {
+              "combination": "each slot is a multi slot"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            136.1,
+            96.9,
+            82.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-e7d58d468f0c05395ca5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {
+              "excludes": "alternate from-grip-to-monitor depth 72.8 mm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 9437184,
+            "magnification": 0.9,
+            "maxRefreshHz": 240
+          },
+          "unit": null,
+          "claimId": "claim-4b5e1ba6dd479fd6b9a0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+            },
+            "conditions": {
+              "refresh": "240fps NTSC / 200fps PAL; 0.90x with 50mm lens at infinity, -1m^-1"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "unit": null,
+          "claimId": "claim-d50f2de8dddf81ac20f4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2095104,
+            "mechanism": "multi-angle",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-047fb06f2f6680a3d48a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "LCD Screen",
+              "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+            },
+            "conditions": {
+              "angles": "up 98°, down 40°, side 180°, rotation 270°"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-c525ed432dcb66ce538c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-51e026434d1eb8e9fb5c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-ef9488f9ee5b1dfdf148",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "officialText": "35 mm full frame (35.6 x 23.8 mm), Exmor RS CMOS sensor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-937e704a3d154895bd46",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.6,
+          "unit": "MP",
+          "claimId": "claim-48e98edf68e285a032e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Number of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "still images"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.6,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-0081043b3538379a6a5d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "order": "width-height"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "mechanical": false,
+            "electronic": true,
+            "fastestMechanicalSec": null,
+            "fastestElectronicSec": 0.0000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "unit": null,
+          "claimId": "claim-104485e84e10ad94d32a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Shutter",
+              "row": "Shutter Type; Shutter Speed"
+            },
+            "conditions": {
+              "stills": "1/80000 to 30 s, Bulb"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-701978a76c0b1a7e4846",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "Movie Recording Format (XAVC S 4K)"
+            },
+            "conditions": {
+              "chroma": "4:2:2",
+              "rates": "119.88p/100p included"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-7e2fa5ec17920ae552c8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "Movie Recording Format (XAVC S 4K)"
+            },
+            "conditions": {
+              "officialRates": "119.88p NTSC / 100p PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 702,
+          "unit": "g",
+          "claimId": "claim-dfbb82df5829e112ca9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-12cfac5e246bf73a85eb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0a343c1b0774c9df",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-9-series/ilce-9m3/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-003",
+      "productId": "sony-a7r-v",
+      "productName": "소니 A7R V",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "d41f28cd42e44698c7916a23eefd15949c4dc3821283362d3cf7403a5f52db28",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-bc8460f0a63f81856288",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d14a432a9f24c88",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7rm5?locale=ko_KR",
+            "locator": {
+              "section": "Highlights",
+              "row": "Newly developed AI processing unit"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "unit": null,
+          "claimId": "claim-3313fef7605211109b6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Focus",
+              "row": "Focus Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "unit": null,
+          "claimId": "claim-0cf92e5b9d70f9a057bc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Focus",
+              "row": "Eye AF / Subject Recognition AF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 440매",
+          "unit": null,
+          "claimId": "claim-c30a45d56173d1c6bb8a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 530,
+          "unit": null,
+          "claimId": "claim-d795c7a9e86a0207fd25",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "basis": "LCD monitor; EVF 440 shots; CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "CFexpress Type A"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-87d629f687fc72db66a2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Recording System",
+              "row": "Memory Card Slot"
+            },
+            "conditions": {
+              "combination": "both are multi slots"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            131.3,
+            96.9,
+            82.4
+          ],
+          "unit": "mm",
+          "claimId": "claim-cdd6b266f0232b01d6a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {
+              "excludes": "alternate from-grip-to-monitor depth 72.3 mm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 9437184,
+            "magnification": 0.9,
+            "maxRefreshHz": 120
+          },
+          "unit": null,
+          "claimId": "claim-d6800235d132c6bb2f3a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+            },
+            "conditions": {
+              "refresh": "120fps NTSC / 100fps PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "unit": null,
+          "claimId": "claim-ea71487eb2207cc24000",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2095104,
+            "mechanism": "multi-angle",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-262e165a3a1df859d7f8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "LCD Screen",
+              "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+            },
+            "conditions": {
+              "angles": "up 98°, down 40°, side 180°, rotation 270°"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-0786f933796a2960fcc0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Others",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-c9fbae32115bcaa29d9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Others",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-605370d60e40bda0ddb3",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-03a96c0cc74478fd8ba7",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 61,
+          "incomingValue": 61,
+          "unit": "MP",
+          "claimId": "claim-3e8c331d18289aa78241",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Number of Pixels (Effective)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.7,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-3cdcafe7fd12a6dafde8",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Image Sensor",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "order": "width-height"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "mechanical": true,
+            "electronic": true,
+            "fastestMechanicalSec": 0.000125,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "unit": null,
+          "claimId": "claim-3d40ecab038d59c619a0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Shutter",
+              "row": "Shutter Type; Shutter Speed"
+            },
+            "conditions": {
+              "officialRange": "1/8000 to 30s and Bulb; source does not split range by shutter type"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-e7617dee3a1bbbe72fff",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "8K recording format"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-130dea52e73f71e6f20d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Recording (still images)",
+              "row": "Picture Profile"
+            },
+            "conditions": {
+              "profile": "S-Log3"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "8K 25p",
+          "unit": null,
+          "claimId": "claim-ac3dc47d840b78950ff7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "8K recording format"
+            },
+            "conditions": {
+              "rates": "24p NTSC / 25p PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weatherSealing",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-d809a9889e45737eb5af",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d14a432a9f24c88",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7rm5?locale=ko_KR",
+            "locator": {
+              "section": "Product introduction transcript",
+              "row": "Dust/moisture resistant design"
+            },
+            "conditions": {
+              "disclaimer": "not guaranteed 100% dust/moisture proof"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 723,
+          "incomingValue": 723,
+          "unit": "g",
+          "claimId": "claim-fd41cc0e108ce74d7837",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-7bca301cc0850c229e96",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-9005dabe50f2462a",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-003",
+      "productId": "sony-a7cr",
+      "productName": "소니 A7CR",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "c88c4639e3b8d63835d69efadc67f0bf5994279c1ac0f822d5e21dbc9272c8cb",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-3ea8d8e058b703c53772",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e51453515d10d9ab",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cr?locale=ko_KR",
+            "locator": {
+              "section": "Highlights",
+              "row": "Latest AI processing unit"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "unit": null,
+          "claimId": "claim-7bf1b2e8f79b328bfce5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Focus Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "unit": null,
+          "claimId": "claim-58f8bba5b859ce3f5e88",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Recognition Target"
+            },
+            "conditions": {
+              "appliesTo": "stills and movies"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 490매",
+          "unit": null,
+          "claimId": "claim-adff73cf9bda6cd7ab0b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 530,
+          "unit": null,
+          "claimId": "claim-61fae4ae29ad392dc4ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "basis": "LCD monitor; EVF 490 shots; CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 430,
+          "unit": "g",
+          "claimId": "claim-9c9ee27e15366d62bdf9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Body Only"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-7f178d26ebf61735c851",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Recording System",
+              "row": "Memory Card Slot"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            124,
+            71.1,
+            63.4
+          ],
+          "unit": "mm",
+          "claimId": "claim-d7fddcf50496c37e47a1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2359296,
+            "magnification": 0.7,
+            "maxRefreshHz": 120
+          },
+          "unit": null,
+          "claimId": "claim-353a67a76efc5bc1a189",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+            },
+            "conditions": {
+              "refresh": "120fps NTSC / 100fps PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "unit": null,
+          "claimId": "claim-13d9e44101c910632ff7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1036800,
+            "mechanism": "vari-angle",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-5cf2f51333b120287130",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "LCD Screen",
+              "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+            },
+            "conditions": {
+              "angles": "opening 176°, rotation 270°"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-c20558ff819c4e65685f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-2ed1f7e1f07fc0a94f50",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-a99b5308d9b6074dc116",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-73733fa4963ad7046702",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 61,
+          "incomingValue": 61,
+          "unit": "MP",
+          "claimId": "claim-688f097d8242a858c891",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Number of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "still images"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.7,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-cee1824c9edbe1937beb",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "order": "width-height"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "mechanical": true,
+            "electronic": true,
+            "fastestMechanicalSec": 0.00025,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "unit": null,
+          "claimId": "claim-821a4eb2b13556e7693e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Shutter",
+              "row": "Shutter Type; Shutter Speed"
+            },
+            "conditions": {
+              "bulb": "listed with mechanical shutter"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-053be84256ae91dab559",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording format"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-a05370673ea6615fb1a3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e51453515d10d9ab",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7cr?locale=ko_KR",
+            "locator": {
+              "section": "Highlights footnote",
+              "row": "4K 60/50p recording available only in Super 35mm mode"
+            },
+            "conditions": {
+              "appliesTo": "4K 60p/50p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "4K 60p",
+          "unit": null,
+          "claimId": "claim-603937cd88ea84be51be",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording format"
+            },
+            "conditions": {
+              "rates": "59.94p NTSC / 50p PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 515,
+          "incomingValue": 515,
+          "unit": "g",
+          "claimId": "claim-93d1f687ee2aad27f390",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-d5a65e0986361cdf0b8f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com.tr/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-3ba9fc73591e2f4e",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7cr/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-003",
+      "productId": "sony-a6700",
+      "productName": "소니 A6700",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "f83b9cfe227ff925404c41d37e2110aedc707f6b5ab85d77771eff28d47951c7",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-905f1db5ff024f04a66c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-01f42426a9b14e2c",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-6700?locale=ko_KR",
+            "locator": {
+              "section": "Highlights",
+              "row": "Innovative AI processing unit"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "unit": null,
+          "claimId": "claim-5028e8b043bd716772d1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Focus Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "unit": null,
+          "claimId": "claim-7affb336cec618da6195",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Recognition Target"
+            },
+            "conditions": {
+              "appliesTo": "stills and movies"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 570매(CIPA); EVF 사용 시 약 550매",
+          "unit": null,
+          "claimId": "claim-dc80ce649fec4f428a9c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 570,
+          "unit": null,
+          "claimId": "claim-6925e3a2a8d2c4e95ea5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Battery Life (Still Images)"
+            },
+            "conditions": {
+              "basis": "LCD monitor; EVF 550 shots; CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 409,
+          "unit": "g",
+          "claimId": "claim-49a35afea8f3ee10057a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Body Only"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-b8aa18bc9131090d8650",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Recording System",
+              "row": "Memory Card Slot"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            122,
+            69,
+            75.1
+          ],
+          "unit": "mm",
+          "claimId": "claim-bc67aa54fe7b95dd4048",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2359296,
+            "magnification": 0.7,
+            "maxRefreshHz": 120
+          },
+          "unit": null,
+          "claimId": "claim-37e5d853ea446395da23",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+            },
+            "conditions": {
+              "magnification": "0.70x 35mm-equivalent; official actual value 1.07x",
+              "refresh": "120fps NTSC / 100fps PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+          },
+          "unit": null,
+          "claimId": "claim-64321af8cd3a496e96dc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Image Stabilization",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1036800,
+            "mechanism": "vari-angle",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-672e25a4372f160248a3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "LCD Screen",
+              "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+            },
+            "conditions": {
+              "angles": "opening 176°, rotation 270°"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-5dedb2bd1164ebf007d7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-76269609e14cf15338bc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "APS-C",
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-2067ed6c7798c80f719f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-4087d4966f9df833ff31",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 26,
+          "incomingValue": 26,
+          "unit": "MP",
+          "claimId": "claim-50fe8199dd31b58f46a4",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Number of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "still images"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.3,
+            15.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-cbe2019a74defb659d14",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "order": "width-height"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "mechanical": true,
+            "electronic": true,
+            "fastestMechanicalSec": 0.00025,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": true
+          },
+          "unit": null,
+          "claimId": "claim-e817b63e680905c6bd05",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Shutter",
+              "row": "Shutter Type; Shutter Speed"
+            },
+            "conditions": {
+              "bulb": "listed with mechanical shutter"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-7298e5148480d4b18d5d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording format"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-ed0e6319b202d5c8bf17",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording format"
+            },
+            "conditions": {
+              "rates": "119.88p NTSC / 100p PAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 493,
+          "incomingValue": 493,
+          "unit": "g",
+          "claimId": "claim-54bd8e007a739b6871b8",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-5cc8fbceca19559969af",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-91c83dfc2e96d503",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6700/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Weight (with battery and memory card included)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-003",
+      "productId": "sony-zv-e1",
+      "productName": "소니 ZV-E1",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "6b5a948f8abfaba9493060bc6cb7777761ac53ad3590a17dd1c075486b292ded",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1bdb2d2d21e875dfdcbb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-87d0274e0084b6e9",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/zv-e1?locale=ko_KR",
+            "locator": {
+              "section": "Highlights",
+              "row": "AI processing unit for broader and more accurate subject recognition"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+          "unit": null,
+          "claimId": "claim-ad4d753c531b6dca55f1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal",
+            "Bird",
+            "Insect",
+            "Car",
+            "Train",
+            "Airplane"
+          ],
+          "unit": null,
+          "claimId": "claim-514e95d7128689101204",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Focus System",
+              "row": "Recognition Target"
+            },
+            "conditions": {
+              "appliesTo": "stills and movies"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "LCD 모니터 사용 시 약 570매(CIPA)",
+          "unit": null,
+          "claimId": "claim-935a9a3ad0d2c65435c0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Still Images"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 570,
+          "unit": null,
+          "claimId": "claim-f27a79b8abd956f98940",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Power",
+              "row": "Still Images"
+            },
+            "conditions": {
+              "basis": "LCD monitor; CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 399,
+          "unit": "g",
+          "claimId": "claim-301e24da1bd91a3823d1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "Body Only"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-0417548dccdcb0d77b61",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Recording System",
+              "row": "Memory Card Slot"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            121,
+            71.9,
+            54.3
+          ],
+          "unit": "mm",
+          "claimId": "claim-3229e88407e3fb92939f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Dimensions",
+              "row": "Dimensions (W x H x D)"
+            },
+            "conditions": {
+              "basis": "from grip to monitor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": false,
+            "resolutionDots": null,
+            "magnification": null,
+            "maxRefreshHz": null
+          },
+          "unit": null,
+          "claimId": "claim-f1daa2deb33a84aa733a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "Type"
+            },
+            "conditions": {
+              "officialValue": "-"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5,
+            "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM"
+          },
+          "unit": null,
+          "claimId": "claim-468739ce0ffc98cecdc6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "SteadyShot Inside",
+              "row": "Type; Compensation Effect"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1036800,
+            "mechanism": "vari-angle",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-4ea0c832e9fb8ac6103f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "LCD Screen",
+              "row": "Type; Number of Dots; Adjustable Angle; Touch Panel"
+            },
+            "conditions": {
+              "angles": "opening 176°, rotation 270°"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-f17b77bde51ea0788e9f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Others",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-7427791fb03dee7102cb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Others",
+              "row": "Operating Temperature"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-c6a51a0429c05988b67c",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-24a859df2519a3e5f20f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 12.1,
+          "incomingValue": 12.1,
+          "unit": "MP",
+          "claimId": "claim-77ef75fe2622252c0a5e",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Number of Pixels (Effective)"
+            },
+            "conditions": {
+              "use": "still images"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.6,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-10da04135e4959ba8031",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Camera Section",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "order": "width-height"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "mechanical": false,
+            "electronic": true,
+            "fastestMechanicalSec": null,
+            "fastestElectronicSec": 0.000125,
+            "slowestTimedSec": 30,
+            "bulb": null
+          },
+          "unit": null,
+          "claimId": "claim-1b4dc649db3b11ddc70c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Shutter",
+              "row": "Shutter Type; Shutter Speed"
+            },
+            "conditions": {
+              "officialRange": "1/8000 to 30s; bulb not stated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-2c5ed594e2f171d4797b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Recording System (movie)",
+              "row": "4K recording format"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-f0935de662d97d652779",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-cd58839bb09a9999",
+            "url": "https://www.sony.com/electronics/support/articles/00294441",
+            "locator": {
+              "section": "Support article 00294441",
+              "row": "4K 120p recording available through an upgrade"
+            },
+            "conditions": {
+              "requires": "Sony 4K 120p Upgrade License for ZV-E1"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 483,
+          "incomingValue": 483,
+          "unit": "g",
+          "claimId": "claim-aaac0ff834456b17d19f",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "With battery and memory card included"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-and-card",
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-50581e89587656f2fce3",
+          "canonicalSources": [
+            {
+              "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-a84161c81070e796",
+            "url": "https://www.sony.com/electronics/support/e-mount-body-zv-e-series/zv-e1/specifications",
+            "locator": {
+              "section": "Size & Weight",
+              "row": "With battery and memory card included"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

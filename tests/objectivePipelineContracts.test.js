@@ -188,7 +188,10 @@ test("releaseDate stores official market availability with explicit precision", 
   for (const value of ["2024-13", "announced 2024", "2024-02-30"]) assert.throws(() => validateSpecValue(value, "specs.releaseDate"), /Invalid release date/);
 });
 
-test("the existing 76-product canonical remains valid without mandatory new fields", () => {
-  assert.equal(canonical.bodies.length + canonical.lenses.length, 76);
+test("the reviewed 77-product canonical inventory remains complete and valid", () => {
+  assert.equal(canonical.bodies.length + canonical.lenses.length, 77);
+  for (const id of ["sony-a9-iii", "sony-a7r-v", "sony-a7cr", "sony-a6700", "sony-zv-e1"]) {
+    assert.ok(canonical.bodies.some((body) => body.id === id), `missing reviewed production body: ${id}`);
+  }
   assert.equal(validateCanonical(canonical, vocab), true);
 });

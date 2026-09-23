@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-003",
+  "itemKey": "sony-ilce-7rm5-batch3",
+  "manufacturerModelCode": "ILCE-7RM5",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7RM5",
+    "productId": "sony-a7r-v",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-f62f5a323cbed1441fc4",
+    "sourceId": "source-7d14a432a9f24c88",
+    "evidenceRef": 2,
+    "locator": {
+      "section": "Product header",
+      "row": "A7R V / ILCE-7RM5"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-23",
+    "reviewer": "codex-sol-production-sony-003-review"
+  },
+  "product": {
+    "id": "sony-a7r-v",
+    "name": "소니 A7R V",
+    "brand": "Sony",
+    "series": "α7R",
+    "model": "A7R V",
+    "aliases": [
+      "Sony A7R V"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "autofocus": {
+        "aiUnit": true,
+        "description": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+        "subjects": [
+          "Human",
+          "Animal",
+          "Bird",
+          "Insect",
+          "Car",
+          "Train",
+          "Airplane"
+        ]
+      },
+      "batteryConditions": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 440매",
+      "batteryShots": 530,
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        131.3,
+        96.9,
+        82.4
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 9437184,
+        "magnification": 0.9,
+        "maxRefreshHz": 120
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "lcd": {
+        "present": true,
+        "sizeInches": 3.2,
+        "resolutionDots": 2095104,
+        "mechanism": "multi-angle",
+        "touch": true
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R CMOS",
+        "megapixels": 61,
+        "sizeMm": [
+          35.7,
+          23.8
+        ]
+      },
+      "shutter": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.000125,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "video": {
+        "bitDepth": 10,
+        "log": true,
+        "max": "8K 25p"
+      },
+      "weatherSealing": true,
+      "weight": 723,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-7d14a432a9f24c88",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7rm5?locale=ko_KR",
+    "publisher": "Sony Korea",
+    "documentTitle": "α7R V 풀프레임 고해상도 카메라 | 소니코리아",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-23T05:00:00Z",
+    "evidenceScope": "Product identity and official product highlights",
+    "contentDigest": "eb3f3480a7e3e2a03851bff43d110584e82594644e6b1ae8f6d9bd37382e8812"
+  },
+  "sources": [
+    {
+      "sourceId": "source-7d14a432a9f24c88",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7rm5?locale=ko_KR",
+      "publisher": "Sony Korea",
+      "documentTitle": "α7R V 풀프레임 고해상도 카메라 | 소니코리아",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-23T05:00:00Z",
+      "evidenceScope": "Product identity and official product highlights",
+      "contentDigest": "eb3f3480a7e3e2a03851bff43d110584e82594644e6b1ae8f6d9bd37382e8812"
+    },
+    {
+      "sourceId": "source-9005dabe50f2462a",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/specifications",
+      "publisher": "Sony",
+      "documentTitle": "ILCE-7RM5 Specifications | Sony USA",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-23T05:00:00Z",
+      "evidenceScope": "Official product specifications",
+      "contentDigest": "f2519c6dbb950d4b58077edd8c0fe58f1a33e45484bd2ec8f9b401a1f40d2f45"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.autofocus.aiUnit",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-7d14a432a9f24c88",
+      "locator": {
+        "section": "Highlights",
+        "row": "Newly developed AI processing unit"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-bc8460f0a63f81856288"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.autofocus.description",
+      "value": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+      "unit": null,
+      "rawValue": "Fast Hybrid AF (phase-detection AF / contrast-detection AF)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Focus",
+        "row": "Focus Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-3313fef7605211109b6f"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.autofocus.subjects",
+      "value": [
+        "Human",
+        "Animal",
+        "Bird",
+        "Insect",
+        "Car",
+        "Train",
+        "Airplane"
+      ],
+      "unit": null,
+      "rawValue": [
+        "Human",
+        "Animal",
+        "Bird",
+        "Insect",
+        "Car",
+        "Train",
+        "Airplane"
+      ],
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Focus",
+        "row": "Eye AF / Subject Recognition AF"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-0cf92e5b9d70f9a057bc"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.batteryConditions",
+      "value": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 440매",
+      "unit": null,
+      "rawValue": "LCD 모니터 사용 시 약 530매(CIPA); EVF 사용 시 약 440매",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-c30a45d56173d1c6bb8a"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.batteryShots",
+      "value": 530,
+      "unit": null,
+      "rawValue": 530,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Power",
+        "row": "Battery Life (Still Images)"
+      },
+      "conditions": {
+        "basis": "LCD monitor; EVF 440 shots; CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-d795c7a9e86a0207fd25"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "CFexpress Type A"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Recording System",
+        "row": "Memory Card Slot"
+      },
+      "conditions": {
+        "combination": "both are multi slots"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-87d629f687fc72db66a2"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.dimensions",
+      "value": [
+        131.3,
+        96.9,
+        82.4
+      ],
+      "unit": "mm",
+      "rawValue": [
+        131.3,
+        96.9,
+        82.4
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Dimensions (W x H x D)"
+      },
+      "conditions": {
+        "excludes": "alternate from-grip-to-monitor depth 72.3 mm"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-cdd6b266f0232b01d6a9"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 9437184,
+        "magnification": 0.9,
+        "maxRefreshHz": 120
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "resolutionDots": 9437184,
+        "magnification": 0.9,
+        "maxRefreshHz": 120
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Viewfinder",
+        "row": "Number of Dots; Magnification; Finder Frame Rate Selection"
+      },
+      "conditions": {
+        "refresh": "120fps NTSC / 100fps PAL"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-d6800235d132c6bb2f3a"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA standard; pitch/yaw; FE 50mm F1.2 GM; long exposure NR off"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Image Stabilization",
+        "row": "Type; Compensation Effect"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-ea71487eb2207cc24000"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3.2,
+        "resolutionDots": 2095104,
+        "mechanism": "multi-angle",
+        "touch": true
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "sizeInches": 3.2,
+        "resolutionDots": 2095104,
+        "mechanism": "multi-angle",
+        "touch": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "LCD Screen",
+        "row": "Monitor Type; Number of Dots; Adjustable Angle; Touch Panel"
+      },
+      "conditions": {
+        "angles": "up 98°, down 40°, side 180°, rotation 270°"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-262e165a3a1df859d7f8"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Others",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-0786f933796a2960fcc0"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Others",
+        "row": "Operating Temperature"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-c9fbae32115bcaa29d9b"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Sensor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-605370d60e40bda0ddb3"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Sensor Type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-03a96c0cc74478fd8ba7"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.sensor.megapixels",
+      "value": 61,
+      "unit": "MP",
+      "rawValue": 61,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Number of Pixels (Effective)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-3e8c331d18289aa78241"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.7,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.7,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Image Sensor",
+        "row": "Sensor Type"
+      },
+      "conditions": {
+        "order": "width-height"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-3cdcafe7fd12a6dafde8"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.shutter",
+      "value": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.000125,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "unit": null,
+      "rawValue": {
+        "mechanical": true,
+        "electronic": true,
+        "fastestMechanicalSec": 0.000125,
+        "fastestElectronicSec": 0.000125,
+        "slowestTimedSec": 30,
+        "bulb": true
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Shutter",
+        "row": "Shutter Type; Shutter Speed"
+      },
+      "conditions": {
+        "officialRange": "1/8000 to 30s and Bulb; source does not split range by shutter type"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-3d40ecab038d59c619a0"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "8K recording format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-e7617dee3a1bbbe72fff"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Recording (still images)",
+        "row": "Picture Profile"
+      },
+      "conditions": {
+        "profile": "S-Log3"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-130dea52e73f71e6f20d"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.video.max",
+      "value": "8K 25p",
+      "unit": null,
+      "rawValue": "8K 25p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Recording System (movie)",
+        "row": "8K recording format"
+      },
+      "conditions": {
+        "rates": "24p NTSC / 25p PAL"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-ac3dc47d840b78950ff7"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.weatherSealing",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-7d14a432a9f24c88",
+      "locator": {
+        "section": "Product introduction transcript",
+        "row": "Dust/moisture resistant design"
+      },
+      "conditions": {
+        "disclaimer": "not guaranteed 100% dust/moisture proof"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-d809a9889e45737eb5af"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.weight",
+      "value": 723,
+      "unit": "g",
+      "rawValue": 723,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-fd41cc0e108ce74d7837"
+    },
+    {
+      "productId": "sony-a7r-v",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9005dabe50f2462a",
+      "locator": {
+        "section": "Size & Weight",
+        "row": "Weight (with battery and memory card included)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-23",
+      "reviewer": "codex-sol-production-sony-003-review",
+      "claimId": "claim-7bca301cc0850c229e96"
+    }
+  ]
+}
