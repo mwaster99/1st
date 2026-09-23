@@ -107,6 +107,16 @@ test("multi-source staging links two official sources and promotes two claims fo
   assert.equal(validateCanonical(result, vocab), true);
 });
 
+test("human diff summary includes a new product's identity-only source", () => {
+  const staging = readJson("src/data/ingestion/staging/production-sony-bodies-003/sony-ilce-9m3.json");
+  const before = readJson("src/data/ingestion/transactions/production-sony-bodies-003/before.json");
+  const diff = createCanonicalDiff(staging, before);
+
+  assert.equal(diff.operation, "new-product");
+  assert.equal(stagingSources(staging).length, 2);
+  assert.match(formatCanonicalDiff(diff), /summary: 22 fields \/ 2 sources \|/);
+});
+
 test("multi-source disagreement is rejected instead of selecting by source order", () => {
   const { staging, rawDocuments } = multiSourceFixture(576);
   const result = validateStaging(staging, { canonical, vocab, rawDocuments });

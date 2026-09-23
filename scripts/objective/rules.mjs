@@ -737,12 +737,16 @@ function formatValue(value, unit, path) {
 
 export function formatCanonicalDiff(diff) {
   const summary = diff.summary ?? summarizeCanonicalDiff(diff.changes);
+  const sourceCount = new Set([
+    ...(diff.changes ?? []).map((change) => change.incomingSource?.sourceId),
+    diff.identityEvidence?.source?.sourceId,
+  ].filter(Boolean)).size;
   const c = summary.categories;
   const lines = [
     `${diff.productName} (${diff.productId})`,
     `operation: ${diff.operation ?? "update-product"}`,
     `status: ${diff.status}`,
-    `summary: ${summary.fieldCount} fields / ${summary.sourceCount} sources | evidence ${c["same-value/new-evidence"] ?? 0} | null-fill ${c["null-fill"] ?? 0} | conflict ${c["value-conflict"] ?? 0} | new ${c["new-product"] ?? 0} | unknown ${((c["unknown-no-change"] ?? 0) + (c["incoming-unknown"] ?? 0))}`,
+    `summary: ${summary.fieldCount} fields / ${sourceCount} sources | evidence ${c["same-value/new-evidence"] ?? 0} | null-fill ${c["null-fill"] ?? 0} | conflict ${c["value-conflict"] ?? 0} | new ${c["new-product"] ?? 0} | unknown ${((c["unknown-no-change"] ?? 0) + (c["incoming-unknown"] ?? 0))}`,
   ];
   if (diff.operation === "new-product") {
     lines.push("", "new canonical product:", JSON.stringify(diff.incomingProduct, null, 2), `identity source: ${diff.identityEvidence?.source?.url ?? "UNKNOWN"}`, `identity locator: ${JSON.stringify(diff.identityEvidence?.locator ?? null)}`);
