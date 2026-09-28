@@ -72,6 +72,23 @@ test("raw helper is deterministic, deduplicates evidence, and never invents revi
   assert.equal(first.items[0].observations[0].evidenceRef, first.items[0].observations[1].evidenceRef);
 });
 
+test("raw helper generates a current UTC timestamp only when accessedAt is omitted", () => {
+  const draft = sourceDraft("https://www.sony.com/fixture/helper-current-accessed-at");
+  delete draft.source.accessedAt;
+
+  const before = Date.now();
+  const generated = buildRawDocument(draft);
+  const after = Date.now();
+
+  assert.match(generated.accessedAt, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/);
+  const generatedMilliseconds = Date.parse(generated.accessedAt);
+  assert.ok(generatedMilliseconds >= before && generatedMilliseconds <= after);
+
+  const explicitMidnightTimestamp = "2026-09-28T00:00:00Z";
+  draft.source.accessedAt = explicitMidnightTimestamp;
+  assert.equal(buildRawDocument(draft).accessedAt, explicitMidnightTimestamp);
+});
+
 test("single-source staging keeps the archived shape for backward compatibility", () => {
   const raw = buildRawDocument(sourceDraft("https://www.sony.com/fixture/single"));
   const [fragment] = normalizeRawDocument(raw, { batchId, vocab, identityMap });

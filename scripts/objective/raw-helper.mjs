@@ -16,6 +16,14 @@ function reviewFields(defaults = {}, override = {}) {
     .filter(([, value]) => value !== undefined));
 }
 
+function sourceWithAccessedAt(source) {
+  const normalizedSource = structuredClone(source);
+  if (normalizedSource.accessedAt === undefined) {
+    normalizedSource.accessedAt = new Date().toISOString();
+  }
+  return normalizedSource;
+}
+
 /**
  * Builds the exact immutable raw document accepted by the ingestion pipeline.
  * Draft observations colocate their evidence label and value; this helper assigns
@@ -26,7 +34,8 @@ export function buildRawDocument(draft) {
   requireValue(draft && typeof draft === "object", "Raw draft must be an object");
   requireValue(draft.source && typeof draft.source === "object", "Raw draft requires source metadata");
   requireValue(Array.isArray(draft.items) && draft.items.length, "Raw draft requires items[]");
-  requireValue(draft.source.sourceId === undefined && draft.source.contentDigest === undefined, "Derived source fields must not be supplied");
+  const source = sourceWithAccessedAt(draft.source);
+  requireValue(source.sourceId === undefined && source.contentDigest === undefined, "Derived source fields must not be supplied");
 
   const evidenceExcerpt = [];
   const evidenceIndex = new Map();
@@ -69,7 +78,7 @@ export function buildRawDocument(draft) {
     return output;
   });
 
-  const raw = { schemaVersion: 1, ...structuredClone(draft.source), evidenceExcerpt, items };
+  const raw = { schemaVersion: 1, ...source, evidenceExcerpt, items };
   raw.contentDigest = digestValue(raw.evidenceExcerpt);
   raw.sourceId = createSourceId(raw);
   return raw;
