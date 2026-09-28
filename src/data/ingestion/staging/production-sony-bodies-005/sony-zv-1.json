@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-005",
+  "itemKey": "sony-zv-1",
+  "manufacturerModelCode": "ZV-1",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ZV-1",
+    "productId": "sony-zv-1",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-7c871cd6e856199efc4f",
+    "sourceId": "source-1354f4c85e1aec26",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "ZV-1 / ZV-1"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-28",
+    "reviewer": "codex-production-sony-005-review"
+  },
+  "product": {
+    "id": "sony-zv-1",
+    "name": "소니 ZV-1",
+    "brand": "Sony",
+    "series": "ZV-1",
+    "model": "ZV-1",
+    "aliases": [
+      "Sony ZV-1"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 267,
+      "dimensions": [
+        105.5,
+        60,
+        43.5
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 2.8,
+          "wide": 1.8
+        },
+        "equivalentFocal": {
+          "max": 70,
+          "min": 24
+        },
+        "focal": {
+          "max": 25.7,
+          "min": 9.4
+        }
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "generation": "Exmor RS CMOS",
+        "megapixels": 20.1,
+        "sizeMm": [
+          13.2,
+          8.8
+        ]
+      },
+      "weight": 294,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-1354f4c85e1aec26",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/compact-cameras/products/zv-1",
+    "publisher": "Sony Korea",
+    "documentTitle": "ZV-1 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-28T00:00:00Z",
+    "evidenceScope": "Current product identity",
+    "contentDigest": "061035f271be95ad0910e5fd53092fb24fadebd80d762d1aaec60b2fee8a60ca"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1354f4c85e1aec26",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/compact-cameras/products/zv-1",
+      "publisher": "Sony Korea",
+      "documentTitle": "ZV-1 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Current product identity",
+      "contentDigest": "061035f271be95ad0910e5fd53092fb24fadebd80d762d1aaec60b2fee8a60ca"
+    },
+    {
+      "sourceId": "source-77b72c6abdd80532",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "ZV-1 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "8b7aa8743a71d49c89393ac5ec760ad04bbd8f769562b6d4e6a1cfa743f47efb"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.bodyOnlyWeight",
+      "value": 267,
+      "unit": "g",
+      "rawValue": 267,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-bb7eb962087b53f537fb"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.dimensions",
+      "value": [
+        105.5,
+        60,
+        43.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        105.5,
+        60,
+        43.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-f989cef17aa3af19118c"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-ec48cf61d37da6670aa6"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-68c6ee30d14fe277187a"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 70,
+      "unit": null,
+      "rawValue": 70,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-04662c53dde2c8734eeb"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-f8659d8327f8ca3270ee"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.focal.max",
+      "value": 25.7,
+      "unit": "mm",
+      "rawValue": 25.7,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-39da2be7709fc004998f"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.fixedLens.focal.min",
+      "value": 9.4,
+      "unit": "mm",
+      "rawValue": 9.4,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-b7ef83462c803039446e"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최고"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-cfeecb4eb04e23e798b4"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최저"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-e789259d40f53c91e4b9"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.sensor.generation",
+      "value": "Exmor RS CMOS",
+      "unit": null,
+      "rawValue": "Exmor RS CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: Exmor RS CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-1595210601ad61a3f6da"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.sensor.megapixels",
+      "value": 20.1,
+      "unit": "MP",
+      "rawValue": 20.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-fd5845cf156581828c33"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        13.2,
+        8.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 13.2 x 8.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-5663cf008644ef26f3e1"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.weight",
+      "value": 294,
+      "unit": "g",
+      "rawValue": 294,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "standard": "CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-a21d2dd8454d408df0d4"
+    },
+    {
+      "productId": "sony-zv-1",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-77b72c6abdd80532",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-cfc8b7ec7d9a4b4edcb5"
+    }
+  ]
+}

@@ -1,0 +1,2275 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-005",
+  "canonicalBaselineDigest": "2871c702407e3d02932e24db1d6dd1e469088cb079dd6abb9be5c1c2197ca498",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-005",
+      "productId": "sony-zv-1-ii",
+      "productName": "소니 ZV-1 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-zv-1-ii",
+        "name": "소니 ZV-1 II",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1 II",
+        "aliases": [
+          "Sony ZV-1 II"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1인치",
+            "megapixels": 20.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 292,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 266,
+          "dimensions": [
+            105.5,
+            60,
+            46.7
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 290,
+          "releaseDate": null,
+          "batteryConditions": "약 290매 촬영(LCD 모니터)(CIPA 표준)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 50,
+              "min": 18
+            },
+            "focal": {
+              "max": 17.6,
+              "min": 6.9
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-f3e82113c2689c26",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-a7d53f8f368033570a95",
+          "sourceId": "source-f3e82113c2689c26",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-a7d53f8f368033570a95",
+        "sourceId": "source-f3e82113c2689c26",
+        "evidenceRef": 3,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-1 II / ZV-1M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review",
+        "source": {
+          "sourceId": "source-f3e82113c2689c26",
+          "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+          "documentTitle": "ZV-1M2 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "약 290매 촬영(LCD 모니터)(CIPA 표준)",
+          "unit": null,
+          "claimId": "claim-e0d1c10c8579d56eea22",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): 조건"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 290,
+          "unit": null,
+          "claimId": "claim-589c9f2bb8d7a67b2e38",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD 모니터"
+            },
+            "conditions": {
+              "standard": "CIPA",
+              "mode": "still image",
+              "display": "LCD monitor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 266,
+          "unit": "g",
+          "claimId": "claim-8b681c15c0e0d81e18be",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            105.5,
+            60,
+            46.7
+          ],
+          "unit": "mm",
+          "claimId": "claim-870c40c829fa868879e0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-4ba5bfc1a7385a394c9e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-b0dc6c12025d21faa159",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": null,
+          "claimId": "claim-c13b611bb039fb50f38e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3e82113c2689c26",
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+            "locator": {
+              "section": "Product highlights",
+              "row": "35mm 환산 초점 거리: 망원 50mm"
+            },
+            "conditions": {
+              "mode": "still images",
+              "note": "Active video stabilization may crop; cropped equivalent is unknown"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 18,
+          "unit": null,
+          "claimId": "claim-6af1e230a3fbaebda88a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3e82113c2689c26",
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+            "locator": {
+              "section": "Product highlights",
+              "row": "35mm 환산 초점 거리: 광각 18mm"
+            },
+            "conditions": {
+              "mode": "still images",
+              "note": "Active video stabilization may crop; cropped equivalent is unknown"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 17.6,
+          "unit": "mm",
+          "claimId": "claim-1fb225b0997ad0e4966b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.9,
+          "unit": "mm",
+          "claimId": "claim-303b0a384cd2c7a08410",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-f29c630ce8f14cb0b525",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-9e7fef82e2e428b8ea63",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-ce1997bef8ab9bf04897",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3e82113c2689c26",
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+            "locator": {
+              "section": "Product highlights",
+              "row": "1.0 타입 이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-2450dcd7a6ea4c9edd89",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: Exmor RS CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-9265e619e3581a544e1e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-6fce63e7931b4707d76a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 292,
+          "unit": "g",
+          "claimId": "claim-3ebbb2df956792864a03",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-9fe8be43d9db3826a917",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2eff65b37bee1915",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-005",
+      "productId": "sony-zv-1f",
+      "productName": "소니 ZV-1F",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-zv-1f",
+        "name": "소니 ZV-1F",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1F",
+        "aliases": [
+          "Sony ZV-1F"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1인치",
+            "megapixels": 20.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 256,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 229,
+          "dimensions": [
+            105.5,
+            60,
+            46.4
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2,
+              "wide": 2
+            },
+            "equivalentFocal": {
+              "max": 20,
+              "min": 20
+            },
+            "focal": {
+              "max": 7.6,
+              "min": 7.6
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1f",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-ce6ee24b3deb6bf4",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-718470ceda6b7f17da5d",
+          "sourceId": "source-ce6ee24b3deb6bf4",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-718470ceda6b7f17da5d",
+        "sourceId": "source-ce6ee24b3deb6bf4",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-1F / ZV-1F"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review",
+        "source": {
+          "sourceId": "source-ce6ee24b3deb6bf4",
+          "url": "https://www.sony.co.kr/compact-cameras/products/zv-1f",
+          "documentTitle": "ZV-1F Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 229,
+          "unit": "g",
+          "claimId": "claim-3f2e835c1ef0bffeddab",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            105.5,
+            60,
+            46.4
+          ],
+          "unit": "mm",
+          "claimId": "claim-d495fac6c742a234419c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-02def8b0111b78d88645",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-4aa21335da5c802e9698",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": null,
+          "claimId": "claim-43b7520dd2fa5c9c920b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": null,
+          "claimId": "claim-059208e1469f23d7fe13",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7.6,
+          "unit": "mm",
+          "claimId": "claim-a46cd8a156933afd6864",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7.6,
+          "unit": "mm",
+          "claimId": "claim-6d3be4d687f0c33d93f1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-10a614c57826bc4f0fd0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-4893c8512e91a7489921",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-bc206b0059f8aab91b3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 1.0 타입"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-b896e5949040d10a95a5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: Exmor RS CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-d365ca2d6858a2b971c3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-c3622602034931101b18",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 256,
+          "unit": "g",
+          "claimId": "claim-e4b8e960746b08568fd7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-e3ce8adf0231c80ce8f5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-341a4adc6b40c243",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1f/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-005",
+      "productId": "sony-zv-1",
+      "productName": "소니 ZV-1",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-zv-1",
+        "name": "소니 ZV-1",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1",
+        "aliases": [
+          "Sony ZV-1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 20.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 294,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 267,
+          "dimensions": [
+            105.5,
+            60,
+            43.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2.8,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 70,
+              "min": 24
+            },
+            "focal": {
+              "max": 25.7,
+              "min": 9.4
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/compact-cameras/products/zv-1",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-1354f4c85e1aec26",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-7c871cd6e856199efc4f",
+          "sourceId": "source-1354f4c85e1aec26",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-7c871cd6e856199efc4f",
+        "sourceId": "source-1354f4c85e1aec26",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-1 / ZV-1"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review",
+        "source": {
+          "sourceId": "source-1354f4c85e1aec26",
+          "url": "https://www.sony.co.kr/compact-cameras/products/zv-1",
+          "documentTitle": "ZV-1 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 267,
+          "unit": "g",
+          "claimId": "claim-bb7eb962087b53f537fb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            105.5,
+            60,
+            43.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-f989cef17aa3af19118c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-ec48cf61d37da6670aa6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-68c6ee30d14fe277187a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": null,
+          "claimId": "claim-04662c53dde2c8734eeb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-f8659d8327f8ca3270ee",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25.7,
+          "unit": "mm",
+          "claimId": "claim-39da2be7709fc004998f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 9.4,
+          "unit": "mm",
+          "claimId": "claim-b7ef83462c803039446e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-cfeecb4eb04e23e798b4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-e789259d40f53c91e4b9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-1595210601ad61a3f6da",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: Exmor RS CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-fd5845cf156581828c33",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-5663cf008644ef26f3e1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 294,
+          "unit": "g",
+          "claimId": "claim-a21d2dd8454d408df0d4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-cfc8b7ec7d9a4b4edcb5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b72c6abdd80532",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-005",
+      "productId": "sony-rx0-ii",
+      "productName": "소니 RX0 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-rx0-ii",
+        "name": "소니 RX0 II",
+        "brand": "Sony",
+        "series": "RX0",
+        "model": "RX0 II",
+        "aliases": [
+          "Sony RX0 II"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 15.3,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 132,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 117,
+          "dimensions": [
+            59,
+            40.5,
+            35
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 4
+            },
+            "equivalentFocal": {
+              "max": 24,
+              "min": 24
+            },
+            "focal": {
+              "max": 7.9,
+              "min": 7.9
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-88434d193d487eb2",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-d4dccd697c5d644479d8",
+          "sourceId": "source-88434d193d487eb2",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-d4dccd697c5d644479d8",
+        "sourceId": "source-88434d193d487eb2",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "RX0 II / DSC-RX0M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review",
+        "source": {
+          "sourceId": "source-88434d193d487eb2",
+          "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2",
+          "documentTitle": "DSC-RX0M2 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 117,
+          "unit": "g",
+          "claimId": "claim-0212037c9f0af5506059",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            59,
+            40.5,
+            35
+          ],
+          "unit": "mm",
+          "claimId": "claim-b176bdbd0694033a5bfd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-4d1b8831fc73200086b2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-97e9eced03051e0012cb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-2788620eaa8e7bff647b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-9cc46844ff085a5ec916",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7.9,
+          "unit": "mm",
+          "claimId": "claim-527c8f8aa8e1e28a69bf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7.9,
+          "unit": "mm",
+          "claimId": "claim-4558c56be9afe8b58060",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-9fdde1f316213aa14971",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-5926320adecc722be24f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-fe2f939564a6ae71afa2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: Exmor RS CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15.3,
+          "unit": "MP",
+          "claimId": "claim-e8e26a8228f453995f3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-67d14ff76241a6ee8ae2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 132,
+          "unit": "g",
+          "claimId": "claim-7137a5dea1710e866dff",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 microSD 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-5801a4cffe9e9bfa1c5a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5dcea9d8a4f25321",
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리 및 microSD 메모리 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-005",
+      "productId": "sony-rx10-iv",
+      "productName": "소니 RX10 IV",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-rx10-iv",
+        "name": "소니 RX10 IV",
+        "brand": "Sony",
+        "series": "RX10",
+        "model": "RX10 IV",
+        "aliases": [
+          "Sony RX10 IV"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 20.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              13.2,
+              8.8
+            ]
+          },
+          "weight": 1095,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 1050,
+          "dimensions": [
+            132.5,
+            94,
+            145
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 2.4
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 24
+            },
+            "focal": {
+              "max": 220,
+              "min": 8.8
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m4",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-83671750e91f5437",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-111c33c16581de73aa5c",
+          "sourceId": "source-83671750e91f5437",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-111c33c16581de73aa5c",
+        "sourceId": "source-83671750e91f5437",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "RX10 IV / DSC-RX10M4"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review",
+        "source": {
+          "sourceId": "source-83671750e91f5437",
+          "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m4",
+          "documentTitle": "DSC-RX10M4 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1050,
+          "unit": "g",
+          "claimId": "claim-26366572230eba056068",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            132.5,
+            94,
+            145
+          ],
+          "unit": "mm",
+          "claimId": "claim-ba23ab4bdb4b15d990b5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D)"
+            },
+            "conditions": {
+              "measurement": "Overall depth 145.0mm; distinct from official lens-front-to-monitor depth 127.4mm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-a529b72500639c61ad68",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.4,
+          "unit": null,
+          "claimId": "claim-50cb1e0275041f056178",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "F값(최대 조리개): 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": null,
+          "claimId": "claim-a7f77e8816e90f2e9419",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-bff37e18f979f23a0e49",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "35mm 환산 초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 220,
+          "unit": "mm",
+          "claimId": "claim-4d3a54d9caf2c1470a11",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 망원/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-8e6598992f1fa6cc7225",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "초점 거리: 광각/단렌즈"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-ac927e59827c6fc7e0d9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최고"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-ec701a2b85d300baf2ef",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 최저"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-2b6c30c7afa00f47837f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: Exmor RS CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-34c79fcbac6b625e43f1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효)"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            13.2,
+            8.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-1a1ad711ac231e14138a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 13.2 x 8.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1095,
+          "unit": "g",
+          "claimId": "claim-b8f8fd1d0aabaeee322e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리와 SDXC 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-dea0e5f175422ff2f625",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ff38be2c2b191320",
+            "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(CIPA 준수): 배터리와 SDXC 카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

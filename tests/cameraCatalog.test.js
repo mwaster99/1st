@@ -156,7 +156,7 @@ test("fixed lenses are bundled once in trading and weight, and never interchange
 
 test("production Sony fixed-lens bodies retain integrated optics without a second product or weight", () => {
   const candidates = generateScenarioCandidates(input());
-  for (const id of ["sony-rx10-v", "sony-rx1r-iii", "sony-rx100-vii"]) {
+  for (const id of ["sony-rx10-v", "sony-rx1r-iii", "sony-rx100-vii", "sony-zv-1-ii", "sony-zv-1f", "sony-zv-1", "sony-rx0-ii", "sony-rx10-iv"]) {
     const body = BODY_BY_ID[id];
     assert.equal(body.kind, "fixed"); assert.equal(body.mount, null);
     assert.ok(body.specs.fixedLens);
@@ -178,6 +178,12 @@ test("production Sony fixed-lens bodies retain integrated optics without a secon
   assert.equal(rx1r.focal.min, rx1r.focal.max);
   assert.equal(rx1r.aperture.wide, rx1r.aperture.tele);
   assert.equal(rx1r.equivalentFocal, undefined);
+  const zv1f = BODY_BY_ID["sony-zv-1f"].specs.fixedLens;
+  assert.deepEqual(zv1f.focal, { min: 7.6, max: 7.6 });
+  assert.deepEqual(zv1f.equivalentFocal, { min: 20, max: 20 });
+  const rx10iv = BODY_BY_ID["sony-rx10-iv"].specs.fixedLens;
+  assert.deepEqual(rx10iv.focal, { min: 8.8, max: 220 });
+  assert.deepEqual(rx10iv.equivalentFocal, { min: 24, max: 600 });
 });
 
 test("unregistered gear still produces an honest hold with unknown comparisons", () => {

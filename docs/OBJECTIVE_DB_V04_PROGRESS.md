@@ -1,5 +1,27 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 다섯 번째 Sony production batch 완료 — 2026-09-28
+
+`production-sony-bodies-005`에서는 batch 001~004와 canonical의 처리 목록을 제외하고 Sony Korea의 현재 컴팩트·프리미엄 컴팩트 카테고리에 올라온 미등록 고정렌즈 바디 5개를 선정했다. 각 제품의 공식 제품 페이지와 상세 사양을 별도 raw source로 등록하고, 제품별 독립 cheap-worker task → normalize → validate → 사람용 diff 검토 → 명시적 approval → atomic apply를 완료했다. 모든 item과 transaction journal은 `canonicalized`이며 재적용은 `already-canonicalized`, `canonicalMatches: true`다. 렌즈·추천 엔진·UI·가격 promotion은 변경하지 않았다.
+
+| 제품 / ID | 공식 source | 객관 필드 | 핵심 승격값 |
+| --- | ---: | ---: | --- |
+| ZV-1 II / `sony-zv-1-ii` | 2 | 18 | 20.1MP·13.2×8.8mm, 292g 배터리·카드 포함/266g 본체, 실제 6.9–17.6mm·사진 35mm 환산 18–50mm·F1.8–4.0, LCD CIPA 290매 |
+| ZV-1F / `sony-zv-1f` | 2 | 16 | 20.1MP, 256/229g, 실제 7.6mm·환산 20mm·F2.0 단렌즈 |
+| ZV-1 / `sony-zv-1` | 2 | 15 | 20.1MP, 294/267g, 실제 9.4–25.7mm·환산 24–70mm·F1.8–2.8 줌 |
+| RX0 II / `sony-rx0-ii` | 2 | 15 | 15.3MP, 132/117g, 실제 7.9mm·환산 24mm·F4 단렌즈. 그립 키트 `DSC-RX0M2G`는 별도 카메라로 만들지 않음 |
+| RX10 IV / `sony-rx10-iv` | 2 | 15 | 20.1MP, 1095/1050g, 실제 8.8–220mm·환산 24–600mm·F2.4–4.0 줌 |
+
+모든 제품은 기존 `kind: fixed`, `mount: null`, `specs.fixedLens` 정책을 사용하며 내장 렌즈를 별도 교환식 lens product로 생성하지 않는다. 무게는 첫 숫자가 CIPA 배터리·카드 포함, 둘째가 본체만이다. ZV-1 II의 환산 18–50mm는 사진 기준이고 Active 영상 손떨림 보정 시 crop 가능성을 claim 조건에 보존했다. RX10 IV 치수는 공식 전체 깊이 145.0mm를 저장하고, 공식의 별도 렌즈 전면~모니터 깊이 127.4mm와 구분하는 조건을 보존했다. 기존 schema에 없는 내장 렌즈 filter diameter·optical zoom과 판매가격은 승격하지 않았다.
+
+공식 두 source 사이의 동일 leaf 값 충돌은 0건, diff의 value-conflict도 0건이다. Sony 자료에 센서 크기 13.2×8.8mm가 있으나 이번에 검증한 field locator에서 `1.0타입`이라는 포맷 표기를 직접 연결하지 않은 ZV-1·RX0 II·RX10 IV의 `specs.sensor.format`은 `null`로 남겼다. 가격, 확인하지 않은 영상·AF·EVF·날씨 보호 세부값도 UNKNOWN이다. 최초 diff 후 일부 센서 포맷의 source locator가 직접 근거보다 넓게 잡힌 것을 사람 검토에서 수정해 raw → normalize → validate → diff를 다시 실행했다. 오래된 diff digest로 한 승인 시도는 CLI가 거부했고, 재검토한 최신 digest만 승인했다. 이번 raw의 `accessedAt`은 조회 당일 `00:00:00Z`로 날짜 정규화한 값이므로 실제 조회 시각의 정밀도는 없다. 다음 batch에서는 실제 UTC 시각을 기록해야 한다. pipeline 코드 변경은 필요하지 않았다.
+
+cheap-worker 실제 호출은 제품당 1회씩 총 5회 모두 성공했다. input/output/total token은 ZV-1 II **504/366/870**, ZV-1F **478/546/1,024**, ZV-1 **476/249/725**, RX0 II **507/393/900**, RX10 IV **516/436/952**, 합계 **2,481/1,990/4,471**이다. API 재시도·실패는 0회다. 최초 공유 worker lock 접근 거부는 API 호출 전 `STATE_UNAVAILABLE`였으며 권한 보완 후 성공했다. worker 경고 중 무게 기준, 단렌즈/줌과 실제/환산 초점거리, RX0 II 그립 키트의 identity, RX10 IV의 깊이 두 기준을 검토에 채택했다. 공식 원문 확인, source locator 정정, UNKNOWN, 최종 diff/approval은 메인 모델이 직접 판단했다. 일회성 worker 입력 5개와 raw 생성 임시 script는 삭제했다.
+
+시작 canonical은 바디 45 / 렌즈 36 / 전체 81, SHA-256 `2871c702407e3d02932e24db1d6dd1e469088cb079dd6abb9be5c1c2197ca498`였다. 검토한 diff digest `6b9104951a4dd0cb0227265794c4d7e9967753e462121a1890060fe95c7a44a0`를 approval `approval-9a6ad9297ad1988e6d79e5742802cc06657a5c54e16b5d05f9b1bcb062e963c8`로 승인했다. 적용 후 바디 **50** / 렌즈 **36** / 전체 **86**, canonical SHA-256 `67b3ffb9ede727b0f3ed7286b5e631f5ed032e5cc4fdf86c213ffa1fd3463bea`다.
+
+고정렌즈 5종이 별도 렌즈 제품·무게 없이 기존 scenario에서 바디 하나로 처리되는 회귀 검사를 확장했다. 전체 테스트 **103/103**, Objective 테스트 **64/64**, canonical validation **86/86**, `pnpm build`, Objective script·변경 테스트의 `node --check`, `git diff --check`가 통과했다. 같은 5개 제품 단위 batch 운영을 계속할 수 있으나, 내장 렌즈의 필터 지름·광학 줌 배율은 추후 별도 schema 논의 전까지 UNKNOWN으로 둔다.
+
 ## Stage 4 네 번째 Sony production batch 완료 — 2026-09-23
 
 미리 선정된 5개 바디를 `production-sony-bodies-004`로 처리했다. Sony 공식 제품·사양·지원 자료 11개를 제품별 독립 cheap-worker task로 검토한 뒤 raw → normalize → validate → diff → 사람 검토 → 명시적 승인 → atomic apply까지 완료했다. 모든 item과 transaction journal은 `canonicalized`이며, 재적용은 `already-canonicalized`와 `canonicalMatches: true`를 반환했다. 추천 엔진·UI·렌즈 제품·가격 promotion은 변경하지 않았다.

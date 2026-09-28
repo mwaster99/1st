@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-005",
+  "itemKey": "sony-dsc-rx10m4",
+  "manufacturerModelCode": "DSC-RX10M4",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "DSC-RX10M4",
+    "productId": "sony-rx10-iv",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-111c33c16581de73aa5c",
+    "sourceId": "source-83671750e91f5437",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "RX10 IV / DSC-RX10M4"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-28",
+    "reviewer": "codex-production-sony-005-review"
+  },
+  "product": {
+    "id": "sony-rx10-iv",
+    "name": "소니 RX10 IV",
+    "brand": "Sony",
+    "series": "RX10",
+    "model": "RX10 IV",
+    "aliases": [
+      "Sony RX10 IV"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 1050,
+      "dimensions": [
+        132.5,
+        94,
+        145
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 4,
+          "wide": 2.4
+        },
+        "equivalentFocal": {
+          "max": 600,
+          "min": 24
+        },
+        "focal": {
+          "max": 220,
+          "min": 8.8
+        }
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "generation": "Exmor RS CMOS",
+        "megapixels": 20.1,
+        "sizeMm": [
+          13.2,
+          8.8
+        ]
+      },
+      "weight": 1095,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-83671750e91f5437",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m4",
+    "publisher": "Sony Korea",
+    "documentTitle": "DSC-RX10M4 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-28T00:00:00Z",
+    "evidenceScope": "Current product identity",
+    "contentDigest": "511d375b19c190867511bf087fab7e7215f10ef21d5df52e9cb6d39bbc9e5c61"
+  },
+  "sources": [
+    {
+      "sourceId": "source-83671750e91f5437",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx10m4",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX10M4 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Current product identity",
+      "contentDigest": "511d375b19c190867511bf087fab7e7215f10ef21d5df52e9cb6d39bbc9e5c61"
+    },
+    {
+      "sourceId": "source-ff38be2c2b191320",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/compact-cameras-dsc-rx-series/dsc-rx10m4/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX10M4 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "d9e3f52bde4b5ba6c6780e88ea385d0ceadabd132a29aee8bc6e6f87547e75ea"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1050,
+      "unit": "g",
+      "rawValue": 1050,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-26366572230eba056068"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.dimensions",
+      "value": [
+        132.5,
+        94,
+        145
+      ],
+      "unit": "mm",
+      "rawValue": [
+        132.5,
+        94,
+        145
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {
+        "measurement": "Overall depth 145.0mm; distinct from official lens-front-to-monitor depth 127.4mm"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-ba23ab4bdb4b15d990b5"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-a529b72500639c61ad68"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 2.4,
+      "unit": null,
+      "rawValue": 2.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-50cb1e0275041f056178"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 600,
+      "unit": null,
+      "rawValue": 600,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-a7f77e8816e90f2e9419"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-bff37e18f979f23a0e49"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.focal.max",
+      "value": 220,
+      "unit": "mm",
+      "rawValue": 220,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-4d3a54d9caf2c1470a11"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.fixedLens.focal.min",
+      "value": 8.8,
+      "unit": "mm",
+      "rawValue": 8.8,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-8e6598992f1fa6cc7225"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최고"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-ac927e59827c6fc7e0d9"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최저"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-ec701a2b85d300baf2ef"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.sensor.generation",
+      "value": "Exmor RS CMOS",
+      "unit": null,
+      "rawValue": "Exmor RS CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: Exmor RS CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-2b6c30c7afa00f47837f"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.sensor.megapixels",
+      "value": 20.1,
+      "unit": "MP",
+      "rawValue": 20.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-34c79fcbac6b625e43f1"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        13.2,
+        8.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 13.2 x 8.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-1a1ad711ac231e14138a"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.weight",
+      "value": 1095,
+      "unit": "g",
+      "rawValue": 1095,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리와 SDXC 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "standard": "CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-b8f8fd1d0aabaeee322e"
+    },
+    {
+      "productId": "sony-rx10-iv",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ff38be2c2b191320",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리와 SDXC 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-dea0e5f175422ff2f625"
+    }
+  ]
+}

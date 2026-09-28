@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-005",
+  "itemKey": "sony-dsc-rx0m2",
+  "manufacturerModelCode": "DSC-RX0M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "DSC-RX0M2",
+    "productId": "sony-rx0-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-d4dccd697c5d644479d8",
+    "sourceId": "source-88434d193d487eb2",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "RX0 II / DSC-RX0M2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-28",
+    "reviewer": "codex-production-sony-005-review"
+  },
+  "product": {
+    "id": "sony-rx0-ii",
+    "name": "소니 RX0 II",
+    "brand": "Sony",
+    "series": "RX0",
+    "model": "RX0 II",
+    "aliases": [
+      "Sony RX0 II"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 117,
+      "dimensions": [
+        59,
+        40.5,
+        35
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 4,
+          "wide": 4
+        },
+        "equivalentFocal": {
+          "max": 24,
+          "min": 24
+        },
+        "focal": {
+          "max": 7.9,
+          "min": 7.9
+        }
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "generation": "Exmor RS CMOS",
+        "megapixels": 15.3,
+        "sizeMm": [
+          13.2,
+          8.8
+        ]
+      },
+      "weight": 132,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-88434d193d487eb2",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2",
+    "publisher": "Sony Korea",
+    "documentTitle": "DSC-RX0M2 Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-28T00:00:00Z",
+    "evidenceScope": "Current product identity",
+    "contentDigest": "c4302727e1beb8f6b38c7818a2c1cfb945b95114a8a26aa112dfd1f7eca398db"
+  },
+  "sources": [
+    {
+      "sourceId": "source-5dcea9d8a4f25321",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX0M2 Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "c1d17f188eab1aeb85735fce929fb35240ec85bab85431ee81777b6e1b98cdc6"
+    },
+    {
+      "sourceId": "source-88434d193d487eb2",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/cyber-shot-compact-cameras/dsc-rx0m2",
+      "publisher": "Sony Korea",
+      "documentTitle": "DSC-RX0M2 Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-28T00:00:00Z",
+      "evidenceScope": "Current product identity",
+      "contentDigest": "c4302727e1beb8f6b38c7818a2c1cfb945b95114a8a26aa112dfd1f7eca398db"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 117,
+      "unit": "g",
+      "rawValue": 117,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-0212037c9f0af5506059"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.dimensions",
+      "value": [
+        59,
+        40.5,
+        35
+      ],
+      "unit": "mm",
+      "rawValue": [
+        59,
+        40.5,
+        35
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W x H x D)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-b176bdbd0694033a5bfd"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-4d1b8831fc73200086b2"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "F값(최대 조리개): 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-97e9eced03051e0012cb"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-2788620eaa8e7bff647b"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": null,
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm 환산 초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-9cc46844ff085a5ec916"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.focal.max",
+      "value": 7.9,
+      "unit": "mm",
+      "rawValue": 7.9,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 망원/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-527c8f8aa8e1e28a69bf"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.fixedLens.focal.min",
+      "value": 7.9,
+      "unit": "mm",
+      "rawValue": 7.9,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "초점 거리: 광각/단렌즈"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-4558c56be9afe8b58060"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최고"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-9fdde1f316213aa14971"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 최저"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-5926320adecc722be24f"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.sensor.generation",
+      "value": "Exmor RS CMOS",
+      "unit": null,
+      "rawValue": "Exmor RS CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: Exmor RS CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-fe2f939564a6ae71afa2"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 15.3,
+      "unit": "MP",
+      "rawValue": 15.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-e8e26a8228f453995f3c"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        13.2,
+        8.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 13.2 x 8.8mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-67d14ff76241a6ee8ae2"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.weight",
+      "value": 132,
+      "unit": "g",
+      "rawValue": 132,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리 및 microSD 메모리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "standard": "CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-7137a5dea1710e866dff"
+    },
+    {
+      "productId": "sony-rx0-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5dcea9d8a4f25321",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(CIPA 준수): 배터리 및 microSD 메모리 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-28",
+      "reviewer": "codex-production-sony-005-review",
+      "claimId": "claim-5801a4cffe9e9bfa1c5a"
+    }
+  ]
+}

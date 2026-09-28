@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/compact-cameras/products/zv-1m2",
+  "publisher": "Sony Korea",
+  "documentTitle": "ZV-1M2 Sony product",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-28T00:00:00Z",
+  "evidenceScope": "Current product identity",
+  "evidenceExcerpt": [
+    {
+      "field": "1.0 타입 이미지 센서",
+      "value": "1인치",
+      "unit": null
+    },
+    {
+      "field": "35mm 환산 초점 거리: 광각 18mm",
+      "value": 18,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산 초점 거리: 망원 50mm",
+      "value": 50,
+      "unit": "mm"
+    },
+    {
+      "field": "Product identity",
+      "value": {
+        "manufacturerModelCode": "ZV-1M2",
+        "productType": "body",
+        "identity": {
+          "name": "소니 ZV-1 II",
+          "brand": "Sony",
+          "series": "ZV-1",
+          "model": "ZV-1 II",
+          "aliases": [
+            "Sony ZV-1 II"
+          ],
+          "mount": null,
+          "kind": "fixed",
+          "bodyStyle": "compact"
+        }
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-zv-1m2",
+      "manufacturerModelCode": "ZV-1M2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 ZV-1 II",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1 II",
+        "aliases": [
+          "Sony ZV-1 II"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "1인치",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product highlights",
+            "row": "1.0 타입 이미지 센서"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 1,
+          "rawValue": 18,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product highlights",
+            "row": "35mm 환산 초점 거리: 광각 18mm"
+          },
+          "conditions": {
+            "mode": "still images",
+            "note": "Active video stabilization may crop; cropped equivalent is unknown"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 2,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product highlights",
+            "row": "35mm 환산 초점 거리: 망원 50mm"
+          },
+          "conditions": {
+            "mode": "still images",
+            "note": "Active video stabilization may crop; cropped equivalent is unknown"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        }
+      ],
+      "identityEvidence": {
+        "evidenceRef": 3,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-1 II / ZV-1M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-005-review"
+      }
+    }
+  ],
+  "contentDigest": "121ba28ddf792d4038de0ad5d7f45206e4a92de7fcb4d35e1214c33711e8cd5b",
+  "sourceId": "source-f3e82113c2689c26"
+}

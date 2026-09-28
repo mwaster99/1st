@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ZV-1 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-28T00:00:00Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형: Exmor RS CMOS",
+      "value": "Exmor RS CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 13.2 x 8.8mm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효)",
+      "value": 20.1,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리 및 메모리 카드 포함",
+      "value": 294,
+      "unit": "g"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리 및 메모리 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게(CIPA 준수): 본체만",
+      "value": 267,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D)",
+      "value": [
+        105.5,
+        60,
+        43.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 광각/단렌즈",
+      "value": 9.4,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 망원/단렌즈",
+      "value": 25.7,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산 초점 거리: 광각/단렌즈",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산 초점 거리: 망원/단렌즈",
+      "value": 70,
+      "unit": "mm"
+    },
+    {
+      "field": "F값(최대 조리개): 광각/단렌즈",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "F값(최대 조리개): 망원/단렌즈",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 최저",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 최고",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-zv-1",
+      "manufacturerModelCode": "ZV-1",
+      "productType": "body",
+      "identity": {
+        "name": "소니 ZV-1",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1",
+        "aliases": [
+          "Sony ZV-1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 0,
+          "rawValue": "Exmor RS CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: Exmor RS CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            13.2,
+            8.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 13.2 x 8.8mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 2,
+          "rawValue": 20.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효)"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 294,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "standard": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 267,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            105.5,
+            60,
+            43.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 7,
+          "rawValue": 9.4,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 광각/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 25.7,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 망원/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 9,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm 환산 초점 거리: 광각/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 10,
+          "rawValue": 70,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm 환산 초점 거리: 망원/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 11,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 광각/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 12,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 망원/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 13,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최저"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 14,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최고"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "8b7aa8743a71d49c89393ac5ec760ad04bbd8f769562b6d4e6a1cfa743f47efb",
+  "sourceId": "source-77b72c6abdd80532"
+}

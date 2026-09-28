@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/compact-cameras-zv-series/zv-1m2/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ZV-1M2 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "accessedAt": "2026-09-28T00:00:00Z",
+  "evidenceScope": "Official detailed specifications",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형: Exmor RS CMOS",
+      "value": "Exmor RS CMOS",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 13.2 x 8.8mm",
+      "value": [
+        13.2,
+        8.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "픽셀 수(유효)",
+      "value": 20.1,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리 및 메모리 카드 포함",
+      "value": 292,
+      "unit": "g"
+    },
+    {
+      "field": "무게(CIPA 준수): 배터리 및 메모리 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게(CIPA 준수): 본체만",
+      "value": 266,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D)",
+      "value": [
+        105.5,
+        60,
+        46.7
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 광각/단렌즈",
+      "value": 6.9,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리: 망원/단렌즈",
+      "value": 17.6,
+      "unit": "mm"
+    },
+    {
+      "field": "F값(최대 조리개): 광각/단렌즈",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "F값(최대 조리개): 망원/단렌즈",
+      "value": 4,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD 모니터",
+      "value": 290,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): 조건",
+      "value": "약 290매 촬영(LCD 모니터)(CIPA 표준)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 최저",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 최고",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-zv-1m2",
+      "manufacturerModelCode": "ZV-1M2",
+      "productType": "body",
+      "identity": {
+        "name": "소니 ZV-1 II",
+        "brand": "Sony",
+        "series": "ZV-1",
+        "model": "ZV-1 II",
+        "aliases": [
+          "Sony ZV-1 II"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 0,
+          "rawValue": "Exmor RS CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: Exmor RS CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            13.2,
+            8.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 13.2 x 8.8mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 2,
+          "rawValue": 20.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효)"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 292,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "standard": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 배터리 및 메모리 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 266,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(CIPA 준수): 본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            105.5,
+            60,
+            46.7
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 7,
+          "rawValue": 6.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 광각/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 17.6,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "초점 거리: 망원/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 9,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 광각/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 10,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "F값(최대 조리개): 망원/단렌즈"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 11,
+          "rawValue": 290,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD 모니터"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "mode": "still image",
+            "display": "LCD monitor"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 12,
+          "rawValue": "약 290매 촬영(LCD 모니터)(CIPA 표준)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): 조건"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 13,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최저"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 14,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 최고"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-005-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "274111098644a85e67bdae947669a70f8d945d94b2dc3cb49098fd967f827332",
+  "sourceId": "source-2eff65b37bee1915"
+}
