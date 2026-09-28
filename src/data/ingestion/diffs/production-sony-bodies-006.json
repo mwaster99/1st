@@ -1,0 +1,1830 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-006",
+  "canonicalBaselineDigest": "67b3ffb9ede727b0f3ed7286b5e631f5ed032e5cc4fdf86c213ffa1fd3463bea",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-006",
+      "productId": "sony-a1",
+      "productName": "소니 A1",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a1",
+        "name": "소니 A1",
+        "brand": "Sony",
+        "series": "α1",
+        "model": "A1",
+        "aliases": [
+          "Sony A1",
+          "Sony Alpha 1"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 50.1,
+            "generation": "Exmor RS CMOS",
+            "sizeMm": [
+              35.9,
+              24
+            ]
+          },
+          "weight": 737,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "8K 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 530,
+          "releaseDate": null,
+          "batteryConditions": "LCD 약 530매 / EVF 약 430매(CIPA)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-1",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-929fee0c7448ae8a",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-2a2adac2edb30dc2ef45",
+          "sourceId": "source-929fee0c7448ae8a",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-2a2adac2edb30dc2ef45",
+        "sourceId": "source-929fee0c7448ae8a",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "A1 / ILCE-1"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-006-review",
+        "source": {
+          "sourceId": "source-929fee0c7448ae8a",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-1",
+          "documentTitle": "ILCE-1 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 약 530매 / EVF 약 430매(CIPA)",
+          "unit": null,
+          "claimId": "claim-36c017e81adec2e3729d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD/EVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 530,
+          "unit": null,
+          "claimId": "claim-4a7e15b1aa134377e82b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD"
+            },
+            "conditions": {
+              "display": "LCD",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-295fc1b508dbe59c8401",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 전체 크기"
+            },
+            "conditions": {
+              "note": "Separate front-to-monitor depth is 69.7mm; stored depth is the main listed overall depth"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-d39d851f83499734c091",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 상한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-ad7e15e767a8db41340a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 하한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-9563cd01f3406be8b81e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor RS CMOS",
+          "unit": null,
+          "claimId": "claim-482b476280ecbb66cd0a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 기술"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50.1,
+          "unit": "MP",
+          "claimId": "claim-f03dfadf880e40547d55",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            24
+          ],
+          "unit": "mm",
+          "claimId": "claim-aace5b24cea4fb65a518",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8K 30p",
+          "unit": null,
+          "claimId": "claim-45f956a988fbf0031464",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-929fee0c7448ae8a",
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-1",
+            "locator": {
+              "section": "Specifications",
+              "row": "제품 하이라이트: 8K 30p 영상"
+            },
+            "conditions": {
+              "mode": "manufacturer highlight",
+              "note": "Codec, crop, duration and thermal conditions not established by this excerpt"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 737,
+          "unit": "g",
+          "claimId": "claim-74be45503909cb4ac420",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-a8d5942f3d292445f6ab",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c0a0cb0be12323bc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-006",
+      "productId": "sony-a6400",
+      "productName": "소니 A6400",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a6400",
+        "name": "소니 A6400",
+        "brand": "Sony",
+        "series": "α6000",
+        "model": "A6400",
+        "aliases": [
+          "Sony A6400"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "rangefinder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 24.2,
+            "generation": "Exmor CMOS",
+            "sizeMm": [
+              23.5,
+              15.6
+            ]
+          },
+          "weight": 403,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            120,
+            66.9,
+            59.7
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-6400",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-45a4d107bd582c37",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-1d413804f16b90307041",
+          "sourceId": "source-45a4d107bd582c37",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-1d413804f16b90307041",
+        "sourceId": "source-45a4d107bd582c37",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "A6400 / ILCE-6400"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-006-review",
+        "source": {
+          "sourceId": "source-45a4d107bd582c37",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-6400",
+          "documentTitle": "ILCE-6400 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            120,
+            66.9,
+            59.7
+          ],
+          "unit": "mm",
+          "claimId": "claim-89662f34d0ac2564f48d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 전체 크기"
+            },
+            "conditions": {
+              "note": "Separate front-to-monitor depth is 49.9mm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-bcedd7b63a3cacb5d9ef",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 상한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-e8ca3353936670baef6e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 하한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-0612bca9854b73f1f600",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor CMOS",
+          "unit": null,
+          "claimId": "claim-7bc7ca7ceaf907c75191",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 기술"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.2,
+          "unit": "MP",
+          "claimId": "claim-225beb7657e934362738",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-7868d3888f453f0b1beb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 403,
+          "unit": "g",
+          "claimId": "claim-c43b54a3192692ef8be0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-22d6e34e975352fc40ab",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3f3a4fff82518bbc",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-006",
+      "productId": "sony-zv-e10",
+      "productName": "소니 ZV-E10",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-zv-e10",
+        "name": "소니 ZV-E10",
+        "brand": "Sony",
+        "series": "ZV",
+        "model": "ZV-E10",
+        "aliases": [
+          "Sony ZV-E10"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 24.2,
+            "generation": "Exmor CMOS",
+            "sizeMm": [
+              23.5,
+              15.6
+            ]
+          },
+          "weight": 343,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            115.2,
+            64.2,
+            44.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 30p",
+            "bitDepth": 8,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 440,
+          "releaseDate": null,
+          "batteryConditions": "LCD 약 440매(CIPA)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/zv-e10",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-c8cb7cc8a3114f84",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-f910386e9f077a09aebb",
+          "sourceId": "source-c8cb7cc8a3114f84",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-f910386e9f077a09aebb",
+        "sourceId": "source-c8cb7cc8a3114f84",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "ZV-E10 / ZV-E10"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-006-review",
+        "source": {
+          "sourceId": "source-c8cb7cc8a3114f84",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/zv-e10",
+          "documentTitle": "ZV-E10 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "LCD 약 440매(CIPA)",
+          "unit": null,
+          "claimId": "claim-9a790786f2d7ab6ab1c8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 440,
+          "unit": null,
+          "claimId": "claim-ff7263aa9d8b5287a78d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 수명(스틸 이미지): LCD"
+            },
+            "conditions": {
+              "display": "LCD",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            115.2,
+            64.2,
+            44.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-8e6948105ce5982a35a6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 그립에서 모니터까지"
+            },
+            "conditions": {
+              "measure": "grip to monitor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-eefc8651e96df34bbb23",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 상한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-e036480efc51a8b8934c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 하한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-fd1a2657b9eaf6fdbf30",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor CMOS",
+          "unit": null,
+          "claimId": "claim-73ae19b13b3cf88b82e8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 기술"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.2,
+          "unit": "MP",
+          "claimId": "claim-d969e892de3de1043830",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-a7fd1e6fdbc0fbf530be",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": null,
+          "claimId": "claim-6a80bf49a37aa3913add",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "영상 레코딩 시스템(XAVC S 4K): 4:2:0 8비트"
+            },
+            "conditions": {
+              "mode": "XAVC S 4K, NTSC 30p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 30p",
+          "unit": null,
+          "claimId": "claim-d4cdd2b33fe66bd47b26",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "영상 레코딩 시스템(XAVC S 4K): NTSC 30p"
+            },
+            "conditions": {
+              "mode": "XAVC S 4K, NTSC",
+              "note": "PAL maximum listed as 25p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 343,
+          "unit": "g",
+          "claimId": "claim-67f47936ad27127ad749",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-5167dcad33aedd328f5b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-047ff0b7f0363d90",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-006",
+      "productId": "sony-fx2",
+      "productName": "소니 FX2",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fx2",
+        "name": "소니 FX2",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX2",
+        "aliases": [
+          "Sony FX2",
+          "ILME-FX2B"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 33,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.9,
+              23.9
+            ]
+          },
+          "weight": 679,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 594,
+          "dimensions": [
+            129.7,
+            77.8,
+            103.7
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-077b1fc21192471d",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-ceea98cdb94a053cb961",
+          "sourceId": "source-077b1fc21192471d",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-ceea98cdb94a053cb961",
+        "sourceId": "source-077b1fc21192471d",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "FX2 / ILME-FX2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-006-review",
+        "source": {
+          "sourceId": "source-077b1fc21192471d",
+          "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2",
+          "documentTitle": "ILME-FX2 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 594,
+          "unit": "g",
+          "claimId": "claim-70f4c01be59b1617979c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129.7,
+            77.8,
+            103.7
+          ],
+          "unit": "mm",
+          "claimId": "claim-5fea99a2116c5cd0d94f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 전체 크기"
+            },
+            "conditions": {
+              "note": "Alternative grip-to-monitor depth 85.0mm is not the stored overall depth"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-cfa54cf074281addc691",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 상한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-ac0bdf5f3c30cefcfd1e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 하한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-546c93dae839be005d7e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-334abc78048ad606bf29",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 기술"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 33,
+          "unit": "MP",
+          "claimId": "claim-999393e40a880cc10965",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            23.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-43bb0165d7a7d8f18dac",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 679,
+          "unit": "g",
+          "claimId": "claim-82f5a329a2f34a0d9440",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "note": "Camera with battery/card; optional supplied XLR handle weight not included in camera specification"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-1de2fa09d80d5c2da2ef",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-995dab9b1ff8219f",
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx2/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-006",
+      "productId": "sony-fx30",
+      "productName": "소니 FX30",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fx30",
+        "name": "소니 FX30",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX30",
+        "aliases": [
+          "Sony FX30"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 26,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              23.3,
+              15.5
+            ]
+          },
+          "weight": 646,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 562,
+          "dimensions": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 120p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 570,
+          "releaseDate": null,
+          "batteryConditions": "스틸 이미지 약 570매(CIPA)",
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx30",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-28",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-afa688d1c532e16d",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-8954af76360f8a700be7",
+          "sourceId": "source-afa688d1c532e16d",
+          "checkedAt": "2026-09-28"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-8954af76360f8a700be7",
+        "sourceId": "source-afa688d1c532e16d",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "FX30 / ILME-FX30"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-28",
+        "reviewer": "codex-production-sony-006-review",
+        "source": {
+          "sourceId": "source-afa688d1c532e16d",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx30",
+          "documentTitle": "ILME-FX30 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "스틸 이미지 약 570매(CIPA)",
+          "unit": null,
+          "claimId": "claim-99ed0dacb0a286f1a270",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 작동 시간: 스틸 이미지"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 570,
+          "unit": null,
+          "claimId": "claim-4a2b67332351ae0f426a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "배터리 작동 시간: 스틸 이미지"
+            },
+            "conditions": {
+              "mode": "still images",
+              "standard": "CIPA"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 562,
+          "unit": "g",
+          "claimId": "claim-851d1ceac3b9f055e382",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(본체만)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-8cd251c526d803757176",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "치수(W x H x D): 돌출부 제외 본체만"
+            },
+            "conditions": {
+              "measure": "body excluding protrusions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-2ac2a1e623aaa1493ab6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 상한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-1f9f17a023b7e02f3446",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "작동 온도: 하한"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-72e1add3b8579b3e1ae1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-8fc6fad5f375627338ee",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 기술"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 26,
+          "unit": "MP",
+          "claimId": "claim-3e596f0def885c64773d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "픽셀 수(유효): 스틸 이미지"
+            },
+            "conditions": {
+              "measure": "effective still pixels"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.3,
+            15.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-99723207c1cb694e9e3e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "센서 유형: 센서 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-6bf6a555f2d760ee3045",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "XAVC HS/S 4K 119.88p: 4:2:2 10비트"
+            },
+            "conditions": {
+              "mode": "XAVC HS or XAVC S 4K 119.88p, 4:2:2"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-748d2359b78b2deec593",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "XAVC HS/S 4K: 119.88p/100p"
+            },
+            "conditions": {
+              "mode": "XAVC HS or XAVC S 4K, NTSC 119.88p / PAL 100p",
+              "note": "Other recording modes not established"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 646,
+          "unit": "g",
+          "claimId": "claim-aadf4ab4952e10518998",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "note": "Camera without XLR handle; 951g figure includes XLR handle, battery and card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-b6e9eaea5bea1d4bd16d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d3be4fb31e508ba5",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+            "locator": {
+              "section": "Specifications",
+              "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

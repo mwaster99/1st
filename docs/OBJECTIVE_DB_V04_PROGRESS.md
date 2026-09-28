@@ -1,5 +1,36 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 여섯 번째 Sony production batch 완료 — 2026-09-28
+
+`production-sony-bodies-006`은 batch 001~005의 manifest·진행 기록과 86개 canonical 제품을 대조한 뒤, Sony Korea 현행 제품 페이지에 있는 미처리 E 마운트 바디 5개를 선정했다. α1, α6400, ZV-E10, FX2, FX30은 모두 신규 제품이며, 각 제품에 공식 제품 페이지(주로 identity)와 공식 상세 사양 페이지(객관 필드)를 독립 source로 연결했다. 두 source가 모든 물리값을 각각 교차 확인했다는 뜻은 아니다. 제품별 독립 cheap-worker 검토 후 raw → normalize → validate → diff → 사람 검토 → 명시적 approval → atomic apply를 완료했다.
+
+| 제품 / canonical ID | 공식 source | 승격 필드 | 핵심 사양 |
+| --- | ---: | ---: | --- |
+| α1 / `sony-a1` (`ILCE-1`) | 2 | 12 | 풀프레임 50.1MP Exmor RS, 배터리·카드 포함 737g, 8K 30p 제품 표기, LCD CIPA 530매 |
+| α6400 / `sony-a6400` (`ILCE-6400`) | 2 | 9 | APS-C 24.2MP Exmor, 배터리·카드 포함 403g, 본체 전체 깊이 59.7mm |
+| ZV-E10 / `sony-zv-e10` | 2 | 13 | APS-C 24.2MP, 343g, XAVC S 4K NTSC 30p/8-bit, LCD CIPA 440매 |
+| FX2 / `sony-fx2` (`ILME-FX2`) | 2 | 10 | 풀프레임 스틸 33.0MP Exmor R, 배터리·카드 포함 679g/본체만 594g |
+| FX30 / `sony-fx30` (`ILME-FX30`) | 2 | 14 | APS-C 스틸 26.0MP Exmor R, 배터리·카드 포함 646g/본체만 562g, XAVC HS/S 4K 119.88p/10-bit |
+
+다섯 제품은 `kind: interchangeable`, `mount: Sony E`로 승격했으며 렌즈 제품은 추가하지 않았다. FX30 공식 사양의 951g은 XLR 핸들·배터리·카드 포함 구성이므로 카메라 본체 운용 무게로 사용하지 않았다. FX2의 본체 전용 SKU `ILME-FX2B`는 별도 카메라로 만들지 않았다. ZV-E10의 NTSC 30p/PAL 25p, FX30의 119.88p·100p 및 해당 XAVC 모드, 무게·치수의 측정 기준은 raw claim `conditions`에 보존했다. α1의 8K 30p는 공식 제품 하이라이트에 근거하되 codec·crop·녹화 시간 조건은 UNKNOWN이다. 공개 페이지의 판매가격은 이번 promotion 대상에서 제외했다.
+
+공식 source 사이 동일 leaf 값 충돌, canonical value conflict, validation 오류·경고는 모두 0건이다. 주요 UNKNOWN은 5개 제품의 신품·중고 가격과 출시일, α6400·FX2의 정밀 video max, 확인되지 않은 AF·IBIS·EVF·카드 세부값, α1·α6400·ZV-E10의 body-only weight다. 검토한 diff digest는 `02ff4e916d730945efc6b44e6b8b8fcd2fe6e31cc253406641d2c8e7243fcdc0`, approval ID는 `approval-380fcdf357fc6e1b6b1a1ad60f8856761216e58dbd4295f044788c28aae236dc`다.
+
+| 제품 | cheap-worker input / output / total token | 실제 호출 |
+| --- | ---: | ---: |
+| α1 | 492 / 815 / 1,307 | 1 |
+| α6400 | 499 / 508 / 1,007 | 1 |
+| ZV-E10 | 488 / 685 / 1,173 | 1 |
+| FX2 | 514 / 414 / 928 | 1 |
+| FX30 | 555 / 928 / 1,483 | 1 |
+| **합계** | **2,548 / 3,350 / 5,898** | **5** |
+
+API 재시도·실패는 없었다. α1 첫 실행의 `STATE_UNAVAILABLE`은 sandbox에서 공용 worker lock에 접근하지 못한 API 이전 실패였고, 권한 보완 뒤 성공했다. worker의 FX30 XLR 핸들 무게 구분, ZV-E10 영상 모드·치수 기준, 스틸/영상 화소 차이 경고를 반영했다. α6400 치수 축 표기와 FX2 SKU 관련 worker의 과도한 불확실성은 Sony 공식 사양 표를 직접 다시 읽고 판단했다. 사람 검토는 제품 선정 5건, 공식 source 10개, worker 결과 5개, 58개 field claim 및 제품별 diff 5건, UNKNOWN·identity·approval 판단을 포함했다. 일회성 worker 입력 5개와 raw 생성 스크립트는 삭제했다.
+
+새 raw 10개의 `accessedAt`은 `raw-helper`가 생성 시 실제 UTC ISO timestamp인 `2026-09-28T04:03:38.601Z`~`2026-09-28T04:03:38.613Z`로 기록했다. 날짜만으로 임의의 자정을 만들지 않았다. 기존 production artifact는 변경하지 않았다. 시작 canonical 바디 50 / 렌즈 36 / 전체 86, SHA-256 `67b3ffb9ede727b0f3ed7286b5e631f5ed032e5cc4fdf86c213ffa1fd3463bea`에서 적용 후 바디 **55** / 렌즈 **36** / 전체 **91**, SHA-256 `1197634a466225094bc162981b7bd7e5ab0e0d03db1760e597f9787b3de878bf`로 늘었다. 5개 item과 journal은 `canonicalized`이며 재적용 결과는 `already-canonicalized`, `canonicalMatches: true`다.
+
+이번 batch에서 새 pipeline 버그는 없었다. 기존 catalog 테스트의 바디 수 상한 50이 정상 증가에 걸려 정확한 55/36 재고 검사로 갱신했다. 전체 테스트 **104/104**, Objective 테스트 **65/65**, canonical validation **91/91**, `pnpm build`, Objective script·변경 테스트의 `node --check`, `git diff --check`가 통과했다. 다음 Sony 5개 batch는 현재 방식으로 계속할 수 있으나, 후보의 현행 여부는 다음 batch 시작 시 공식 목록에서 다시 확인해야 한다.
+
 ## Stage 4 다섯 번째 Sony production batch 완료 — 2026-09-28
 
 `production-sony-bodies-005`에서는 batch 001~004와 canonical의 처리 목록을 제외하고 Sony Korea의 현재 컴팩트·프리미엄 컴팩트 카테고리에 올라온 미등록 고정렌즈 바디 5개를 선정했다. 각 제품의 공식 제품 페이지와 상세 사양을 별도 raw source로 등록하고, 제품별 독립 cheap-worker task → normalize → validate → 사람용 diff 검토 → 명시적 approval → atomic apply를 완료했다. 모든 item과 transaction journal은 `canonicalized`이며 재적용은 `already-canonicalized`, `canonicalMatches: true`다. 렌즈·추천 엔진·UI·가격 promotion은 변경하지 않았다.

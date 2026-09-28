@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-1-series/ilce-1/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ILCE-1 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official detailed specifications",
+  "accessedAt": "2026-09-28T04:03:38.609Z",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 센서 크기",
+      "value": [
+        35.9,
+        24
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "센서 유형: 센서 기술",
+      "value": "Exmor RS CMOS",
+      "unit": null
+    },
+    {
+      "field": "픽셀 수(유효): 스틸 이미지",
+      "value": 50.1,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": 737,
+      "unit": "g"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함): 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "치수(W x H x D): 전체 크기",
+      "value": [
+        128.9,
+        96.9,
+        80.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD",
+      "value": 530,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD/EVF",
+      "value": "LCD 약 530매 / EVF 약 430매(CIPA)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 하한",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 상한",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilce-1",
+      "manufacturerModelCode": "ILCE-1",
+      "productType": "body",
+      "identity": {
+        "name": "소니 A1",
+        "brand": "Sony",
+        "series": "α1",
+        "model": "A1",
+        "aliases": [
+          "Sony A1",
+          "Sony Alpha 1"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            35.9,
+            24
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 2,
+          "rawValue": "Exmor RS CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 기술"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 50.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효): 스틸 이미지"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 737,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            128.9,
+            96.9,
+            80.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D): 전체 크기"
+          },
+          "conditions": {
+            "note": "Separate front-to-monitor depth is 69.7mm; stored depth is the main listed overall depth"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 7,
+          "rawValue": 530,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD"
+          },
+          "conditions": {
+            "display": "LCD",
+            "standard": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 8,
+          "rawValue": "LCD 약 530매 / EVF 약 430매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD/EVF"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 9,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 하한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 10,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 상한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "7acd2bf6f02e1534a8c44be690b6cf068d8eee9d580777110a152ee9a250f9db",
+  "sourceId": "source-c0a0cb0be12323bc"
+}

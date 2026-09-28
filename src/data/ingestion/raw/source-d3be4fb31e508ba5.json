@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ILME-FX30 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official detailed specifications",
+  "accessedAt": "2026-09-28T04:03:38.613Z",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 센서 크기",
+      "value": [
+        23.3,
+        15.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "센서 유형: 센서 기술",
+      "value": "Exmor R CMOS",
+      "unit": null
+    },
+    {
+      "field": "픽셀 수(유효): 스틸 이미지",
+      "value": 26,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": 646,
+      "unit": "g"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함): 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게(본체만)",
+      "value": 562,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D): 돌출부 제외 본체만",
+      "value": [
+        129.7,
+        77.8,
+        84.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "XAVC HS/S 4K: 119.88p/100p",
+      "value": "4K 120p",
+      "unit": null
+    },
+    {
+      "field": "XAVC HS/S 4K 119.88p: 4:2:2 10비트",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "배터리 작동 시간: 스틸 이미지",
+      "value": 570,
+      "unit": null
+    },
+    {
+      "field": "배터리 작동 시간: 스틸 이미지",
+      "value": "스틸 이미지 약 570매(CIPA)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 하한",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 상한",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilme-fx30",
+      "manufacturerModelCode": "ILME-FX30",
+      "productType": "body",
+      "identity": {
+        "name": "소니 FX30",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX30",
+        "aliases": [
+          "Sony FX30"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            23.3,
+            15.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 2,
+          "rawValue": "Exmor R CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 기술"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 26,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효): 스틸 이미지"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 646,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "note": "Camera without XLR handle; 951g figure includes XLR handle, battery and card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 562,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(본체만)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D): 돌출부 제외 본체만"
+          },
+          "conditions": {
+            "measure": "body excluding protrusions"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 8,
+          "rawValue": "4K 120p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "XAVC HS/S 4K: 119.88p/100p"
+          },
+          "conditions": {
+            "mode": "XAVC HS or XAVC S 4K, NTSC 119.88p / PAL 100p",
+            "note": "Other recording modes not established"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 9,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "XAVC HS/S 4K 119.88p: 4:2:2 10비트"
+          },
+          "conditions": {
+            "mode": "XAVC HS or XAVC S 4K 119.88p, 4:2:2"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 10,
+          "rawValue": 570,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 작동 시간: 스틸 이미지"
+          },
+          "conditions": {
+            "mode": "still images",
+            "standard": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 11,
+          "rawValue": "스틸 이미지 약 570매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 작동 시간: 스틸 이미지"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 12,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 하한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 13,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 상한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b0a974016c3f860747b8622790457f73bf997e43d43e359405deffdefc2d7656",
+  "sourceId": "source-d3be4fb31e508ba5"
+}

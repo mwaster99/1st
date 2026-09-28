@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/e-mount-body-zv-e-series/zv-e10/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ZV-E10 Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official detailed specifications",
+  "accessedAt": "2026-09-28T04:03:38.612Z",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "센서 유형: 센서 크기",
+      "value": [
+        23.5,
+        15.6
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "센서 유형: 센서 기술",
+      "value": "Exmor CMOS",
+      "unit": null
+    },
+    {
+      "field": "픽셀 수(유효): 스틸 이미지",
+      "value": 24.2,
+      "unit": "MP"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함)",
+      "value": 343,
+      "unit": "g"
+    },
+    {
+      "field": "무게(배터리 및 메모리 카드 포함): 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "치수(W x H x D): 그립에서 모니터까지",
+      "value": [
+        115.2,
+        64.2,
+        44.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "영상 레코딩 시스템(XAVC S 4K): NTSC 30p",
+      "value": "4K 30p",
+      "unit": null
+    },
+    {
+      "field": "영상 레코딩 시스템(XAVC S 4K): 4:2:0 8비트",
+      "value": 8,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD",
+      "value": 440,
+      "unit": null
+    },
+    {
+      "field": "배터리 수명(스틸 이미지): LCD",
+      "value": "LCD 약 440매(CIPA)",
+      "unit": null
+    },
+    {
+      "field": "작동 온도: 하한",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "작동 온도: 상한",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-zv-e10",
+      "manufacturerModelCode": "ZV-E10",
+      "productType": "body",
+      "identity": {
+        "name": "소니 ZV-E10",
+        "brand": "Sony",
+        "series": "ZV",
+        "model": "ZV-E10",
+        "aliases": [
+          "Sony ZV-E10"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            23.5,
+            15.6
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 2,
+          "rawValue": "Exmor CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "센서 유형: 센서 기술"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 3,
+          "rawValue": 24.2,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "픽셀 수(유효): 스틸 이미지"
+          },
+          "conditions": {
+            "measure": "effective still pixels"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 343,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            115.2,
+            64.2,
+            44.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "치수(W x H x D): 그립에서 모니터까지"
+          },
+          "conditions": {
+            "measure": "grip to monitor"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 7,
+          "rawValue": "4K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "영상 레코딩 시스템(XAVC S 4K): NTSC 30p"
+          },
+          "conditions": {
+            "mode": "XAVC S 4K, NTSC",
+            "note": "PAL maximum listed as 25p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 8,
+          "rawValue": 8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "영상 레코딩 시스템(XAVC S 4K): 4:2:0 8비트"
+          },
+          "conditions": {
+            "mode": "XAVC S 4K, NTSC 30p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 9,
+          "rawValue": 440,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD"
+          },
+          "conditions": {
+            "display": "LCD",
+            "standard": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 10,
+          "rawValue": "LCD 약 440매(CIPA)",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "배터리 수명(스틸 이미지): LCD"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 11,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 하한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 12,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Specifications",
+            "row": "작동 온도: 상한"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-28",
+          "reviewer": "codex-production-sony-006-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "54995d050ea14f88f6e163879387f836a9f1ca4d7831c7ca71f219c0e6369d64",
+  "sourceId": "source-047ff0b7f0363d90"
+}
