@@ -1,5 +1,21 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 첫 Canon production batch — 2026-09-29
+
+Canon Korea의 [렌즈교환식 카메라](https://kr.canon/product/category/141), [컴팩트 카메라](https://kr.canon/product/category/183), [Cinema EOS](https://kr.canon/product/category/268) 공식 제품 카드를 직접 대조하여, 사람이 직접 운용하는 카메라 **29개**(미러리스 15, DSLR 2, 컴팩트 5, Cinema EOS 바디 7)의 [전체 inventory snapshot](../src/data/ingestion/canon-current-camera-gallery-2026-09-29.json)을 저장했다. 시작 시 현행 카드 중 canonical 6개, 미처리 23개였다. Cinema EOS라는 이름만으로 제외하지 않았다. 같은 영상/방송기기 갤러리의 **PTZ 리모트 카메라 17개**는 원격·설치 운용 제품군으로 snapshot에 인접 특수 카테고리로 기록했으며 직접 운용 카메라 29개에는 포함하지 않았다. 따라서 이번 29개 안에서 `deferred-special-category`로 판정한 제품은 없다. EOS R8 Mark II 카드는 목록에 있지만 제품 페이지의 2026-10 출시 예정 정보 때문에 첫 batch에는 선정하지 않았다.
+
+첫 batch `production-canon-bodies-001`은 **EOS R1, EOS R6 Mark III, EOS R100, EOS R50 V, PowerShot V1**의 신규 5개를 처리했다. 상위 풀프레임, 범용 풀프레임, 입문 APS-C, 영상형 APS-C, 고정렌즈를 섞어 Canon 표기와 기존 스키마를 확인했다. 각 제품에 Canon Korea 제품 페이지와 공식 RF Lens World 사양 또는 Canon Inc. PowerShot V1 설명서, 총 **공식 source 2개씩**을 연결했다. `raw → normalize → validate → diff → 사람 검토 → 명시적 승인 → atomic apply`를 완료했고 source/value conflict는 0건이다. canonical은 바디 **64→69**, 렌즈 **36**, 전체 **100→105**개다. 승인 diff digest `2adbe9113317a0512c92502f67b1a2dcca8cbc5ac759d26c4ba698fe42d0baa3`, 적용 후 SHA-256 `708490fef20a116166275353330fb7a330c05577fb14173d39d31a59323f8165`이며 재적용은 `already-canonicalized`, `canonicalMatches: true`다. 이후 일반 카메라 미처리 카드는 **18개**다.
+
+| 제품 | 신규 필드 | 핵심 승격값 / 보류 |
+| --- | ---: | --- |
+| EOS R1 | 11 | 풀프레임 24.2MP, 배터리·카드 포함 1115g, 기계식 12fps·전자식 40fps, 6K DCI 59.94p. |
+| EOS R6 Mark III | 10 | 풀프레임 32.5MP, 배터리·카드 포함 699g, 전자식 40fps, 7K RAW Light 59.94p 조건. |
+| EOS R100 | 8 | APS-C 24.1MP, 배터리·카드 포함 356g, 4K UHD 25p(PAL). 전자선막 6.5fps를 전자식 셔터 필드로 치환하지 않음. |
+| EOS R50 V | 5 | APS-C 24.2MP, 전자식 15fps, 119.3×73.7×45.2mm. 블랙/화이트 무게 차이와 4K 모드별 표기 차이 때문에 단일 무게·최대 영상 leaf는 UNKNOWN. |
+| PowerShot V1 | 18 | `kind: fixed`, `mount: null`, 내장 렌즈 실제 8.2–25.6mm / 사진 35mm 환산 16–50mm, F2.8–4.5, 배터리·카드 포함 426g, 4K 59.94p crop 조건. 별도 렌즈 제품 없음. |
+
+제품별 cheap-worker 독립 호출의 input/output/total token은 R1 **477/288/765**, R6 Mark III **503/773/1,276**, R100 **491/925/1,416**, R50 V **1,008/1,152/2,160**(첫 응답 형식 오류 후 같은 ID로 1회 재시도), PowerShot V1 **560/761/1,321**이다. 합계 **3,039/3,899/6,938 token**, 실제 API 시도 6회·성공 5회·실패 1회다. 처음 R1의 공용 state 접근 오류는 API 이전 단계였고 권한 보완 후 정상 호출했다. Worker는 조건·UNKNOWN 점검에 도움을 주었으며 값의 채택, Canon 제품 identity/ID, R50 V 무게·영상 보류, R100 전자선막 분류, V1 실제/환산 초점거리 분리는 Codex가 공식 원문과 diff를 직접 확인했다. 일회성 공개 발췌 파일은 삭제했고 프로젝트 코드·전체 canonical·secret은 전송하지 않았다. 새 raw `accessedAt`은 실제 UTC ISO 시각으로 기록됐다. 추천 엔진·UI·가격은 변경하지 않았다. 전체 테스트 **109/109**, Objective 및 Canon production 테스트 **67/67**, canonical validation **105/105**, `pnpm build`, Objective scripts·신규 테스트 `node --check`, `git diff --check`를 통과했다.
+
 ## Sony Korea 현행 카메라 coverage audit — 2026-09-29
 
 Sony Korea 공식 현행 갤러리 카드 35개(렌즈교환식 27, 컴팩트 8)를 1:1 대조했다. production batch 001~008에서 canonicalized된 서로 다른 바디 34개가 34개 카드에 대응한다. 남은 FR7 `ILME-FR7`은 설치·원격 운용 중심의 PTZ 시스템으로, 현재 직접 운용하는 바디/렌즈 구매·기변 비교와 다른 제품군이므로 `deferred-special-category`로 명시했다. 따라서 미처리 0, 중복/모호 0이며 Sony Korea 현행 **카메라 제품 coverage 1차 완료**로 판정한다. 사양·가격이 모두 완성됐다는 뜻은 아니다. 공식 목록 snapshot, scope registry, identity·provenance·UNKNOWN 및 batch artifact 검증의 상세 결과는 [Sony coverage audit](OBJECTIVE_DB_SONY_COVERAGE_AUDIT.md)에 기록했다. 이번 감사에서 canonical, 추천 엔진, UI, 기존 production artifact는 변경하지 않았다.

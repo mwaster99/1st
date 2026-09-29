@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-001",
+  "canonicalBaselineDigest": "2f40c2b507787d1afcf5a07fc26aa1aa57117c17e22321dbb2e44e96ae06e44b",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-001",
+      "productId": "canon-r1",
+      "productName": "캐논 EOS R1",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-r1",
+        "name": "캐논 EOS R1",
+        "brand": "Canon",
+        "series": "EOS R",
+        "model": "EOS R1",
+        "aliases": [
+          "Canon EOS R1",
+          "캐논 EOS R1"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 24.2,
+            "generation": "이면조사 적층형 CMOS",
+            "sizeMm": null
+          },
+          "weight": 1115,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 920,
+          "dimensions": [
+            157.6,
+            149.5,
+            87.3
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "6K DCI 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2024-11",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxElectronicFps": 40,
+            "maxMechanicalFps": 12
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/3084CCEEB137439D86A8DE0C67C63665?productNm=EOS_R1",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-210a490be61c2219",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-30428617704184773371",
+          "sourceId": "source-210a490be61c2219",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-30428617704184773371",
+        "sourceId": "source-210a490be61c2219",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS R1"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-canon-001-human-review",
+        "source": {
+          "sourceId": "source-210a490be61c2219",
+          "url": "https://kr.canon/product/content/detail/3084CCEEB137439D86A8DE0C67C63665?productNm=EOS_R1",
+          "documentTitle": "EOS R1 | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 920,
+          "unit": "g",
+          "claimId": "claim-a9d0811b57349e862f58",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "무게 (바디)"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "fps",
+          "claimId": "claim-22ec72726766950ec664",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "고속 연속 촬영+ (전자식 셔터)"
+            },
+            "conditions": {
+              "shutter": "electronic"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 12,
+          "unit": "fps",
+          "claimId": "claim-8746eb8a036d851a6d71",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "고속 연속 촬영+ (기계식 셔터)"
+            },
+            "conditions": {
+              "shutter": "mechanical"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            157.6,
+            149.5,
+            87.3
+          ],
+          "unit": "mm",
+          "claimId": "claim-3492d1a2fd933da36e17",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "크기 (W)×(H)×(D)"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2024-11",
+          "unit": null,
+          "claimId": "claim-61caff30c2c4a1a2f03c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-210a490be61c2219",
+            "url": "https://kr.canon/product/content/detail/3084CCEEB137439D86A8DE0C67C63665?productNm=EOS_R1",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-20c091d5b42767ec784e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 제품 설명",
+              "row": "Sensor format"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "이면조사 적층형 CMOS",
+          "unit": null,
+          "claimId": "claim-29c71a462bc2fe80cb11",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 제품 설명",
+              "row": "Sensor technology"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.2,
+          "unit": "MP",
+          "claimId": "claim-1146088caeae3de7b2fd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "유효 화소 수"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "6K DCI 59.94p",
+          "unit": null,
+          "claimId": "claim-3620d54370a64fa63c55",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "동영상 녹화 크기 (6K DCI)"
+            },
+            "conditions": {
+              "recordingMode": "6K DCI",
+              "frameRate": "59.94 fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1115,
+          "unit": "g",
+          "claimId": "claim-ef2b62f27fd50d48e224",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "무게 (배터리 및 카드 1 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-8fc04042e5d2360dfd81",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ee08fa7429d6cf9e",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R1 > 사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-001",
+      "productId": "canon-r6-iii",
+      "productName": "캐논 EOS R6 Mark III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-r6-iii",
+        "name": "캐논 EOS R6 Mark III",
+        "brand": "Canon",
+        "series": "EOS R6",
+        "model": "EOS R6 Mark III",
+        "aliases": [
+          "Canon EOS R6 Mark III",
+          "캐논 EOS R6 Mark III"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 32.5,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 699,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 609,
+          "dimensions": [
+            138.4,
+            98.4,
+            88.4
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "7K RAW Light 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2025-11",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxElectronicFps": 40,
+            "maxMechanicalFps": 12
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/98903250B8557742B0EB81F2AA73FFBF?productNm=EOS_R6_Mark_III",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-3ce718098d78f376",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-6414be39374ec0af430d",
+          "sourceId": "source-3ce718098d78f376",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-6414be39374ec0af430d",
+        "sourceId": "source-3ce718098d78f376",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS R6 Mark III"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-canon-001-human-review",
+        "source": {
+          "sourceId": "source-3ce718098d78f376",
+          "url": "https://kr.canon/product/content/detail/98903250B8557742B0EB81F2AA73FFBF?productNm=EOS_R6_Mark_III",
+          "documentTitle": "EOS R6 Mark III | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 609,
+          "unit": "g",
+          "claimId": "claim-74192f36230558a386db",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "무게 (바디)"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "fps",
+          "claimId": "claim-421febb72015f00c6b75",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "고속 연속 촬영+ (전자식 셔터)"
+            },
+            "conditions": {
+              "shutter": "electronic"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 12,
+          "unit": "fps",
+          "claimId": "claim-6f306b9678791c802e63",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "고속 연속 촬영+ (기계식 셔터)"
+            },
+            "conditions": {
+              "shutter": "mechanical"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            138.4,
+            98.4,
+            88.4
+          ],
+          "unit": "mm",
+          "claimId": "claim-49f22686933252952cde",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "크기 (W)×(H)×(D)"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2025-11",
+          "unit": null,
+          "claimId": "claim-e6c18453ce0eb5ae830e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ce718098d78f376",
+            "url": "https://kr.canon/product/content/detail/98903250B8557742B0EB81F2AA73FFBF?productNm=EOS_R6_Mark_III",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-64f9409043809568e1aa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 제품 설명",
+              "row": "Sensor format"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 32.5,
+          "unit": "MP",
+          "claimId": "claim-c87d82dcd2edcffb7ad9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "유효 화소 수"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "7K RAW Light 59.94p",
+          "unit": null,
+          "claimId": "claim-7f809ee709c29473575f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "동영상 녹화 크기 7K RAW Light"
+            },
+            "conditions": {
+              "recordingMode": "RAW Light",
+              "frameRate": "59.94 fps",
+              "otherOfficialMode": "7K RAW Standard 29.97 fps; 4K 119.9 fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 699,
+          "unit": "g",
+          "claimId": "claim-2daa546ffea974dcfdcf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "무게 (배터리 및 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-726cf3e4ac02b2cbaf86",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4075c58d96b3855b",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R6 Mark III > 사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-001",
+      "productId": "canon-r100",
+      "productName": "캐논 EOS R100",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-r100",
+        "name": "캐논 EOS R100",
+        "brand": "Canon",
+        "series": "EOS R",
+        "model": "EOS R100",
+        "aliases": [
+          "Canon EOS R100",
+          "캐논 EOS R100"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 24.1,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 356,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 309,
+          "dimensions": [
+            116.3,
+            85.5,
+            68.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 25p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2023-06",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/2FAD43D669E2C007C91A07953BC9F705?productNm=EOS_R100",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-8dd712217c0f1373",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-06da20f3f9c945e29acb",
+          "sourceId": "source-8dd712217c0f1373",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-06da20f3f9c945e29acb",
+        "sourceId": "source-8dd712217c0f1373",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS R100"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-canon-001-human-review",
+        "source": {
+          "sourceId": "source-8dd712217c0f1373",
+          "url": "https://kr.canon/product/content/detail/2FAD43D669E2C007C91A07953BC9F705?productNm=EOS_R100",
+          "documentTitle": "EOS R100 | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 309,
+          "unit": "g",
+          "claimId": "claim-e8980a3704b74bc19a3f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "무게 (바디)"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            116.3,
+            85.5,
+            68.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-cca0d2ede2c4bf9cf5c5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "크기 (W)×(H)×(D)"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2023-06",
+          "unit": null,
+          "claimId": "claim-fb0cc995454446794db1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8dd712217c0f1373",
+            "url": "https://kr.canon/product/content/detail/2FAD43D669E2C007C91A07953BC9F705?productNm=EOS_R100",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-3e5f86dae10e33a8f6b8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 제품 설명",
+              "row": "Sensor format"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.1,
+          "unit": "MP",
+          "claimId": "claim-d711fdb27bee1edd1e6b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "유효 화소 수"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 25p",
+          "unit": null,
+          "claimId": "claim-9b0c61ff542c96cee87d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "4K UHD (PAL)"
+            },
+            "conditions": {
+              "region": "PAL",
+              "ntscMode": "4K UHD 23.98p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 356,
+          "unit": "g",
+          "claimId": "claim-9279f06ff1211d0a8ba6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "무게 (배터리 및 카드 포함)"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-eec617f481ee69246cd4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a5bc100f49dac167",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R100 > 사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-001",
+      "productId": "canon-r50-v",
+      "productName": "캐논 EOS R50 V",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-r50-v",
+        "name": "캐논 EOS R50 V",
+        "brand": "Canon",
+        "series": "EOS R50",
+        "model": "EOS R50 V",
+        "aliases": [
+          "Canon EOS R50 V",
+          "캐논 EOS R50 V"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 24.2,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            119.3,
+            73.7,
+            45.2
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2025-04",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxElectronicFps": 15
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/86EE2E7CCAAD82296E886DF1E569ADDD?productNm=EOS_R50_V",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-bf9345b6e40d607c",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-5d64028e45fcdf189c68",
+          "sourceId": "source-bf9345b6e40d607c",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-5d64028e45fcdf189c68",
+        "sourceId": "source-bf9345b6e40d607c",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS R50 V"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-canon-001-human-review",
+        "source": {
+          "sourceId": "source-bf9345b6e40d607c",
+          "url": "https://kr.canon/product/content/detail/86EE2E7CCAAD82296E886DF1E569ADDD?productNm=EOS_R50_V",
+          "documentTitle": "EOS R50 V | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15,
+          "unit": "fps",
+          "claimId": "claim-5b34dc19f3325b9e09b8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d3c58657866e608",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R50 V > 사양",
+              "row": "고속 연속 촬영+ (전자식 셔터)"
+            },
+            "conditions": {
+              "shutter": "electronic"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            119.3,
+            73.7,
+            45.2
+          ],
+          "unit": "mm",
+          "claimId": "claim-ea58701857bab5b217d0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d3c58657866e608",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R50 V > 사양",
+              "row": "크기 (W)×(H)×(D)"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2025-04",
+          "unit": null,
+          "claimId": "claim-484cee2acac1306baf0d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bf9345b6e40d607c",
+            "url": "https://kr.canon/product/content/detail/86EE2E7CCAAD82296E886DF1E569ADDD?productNm=EOS_R50_V",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-0708e5abad2797c7535d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d3c58657866e608",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R50 V > 제품 설명",
+              "row": "Sensor format"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.2,
+          "unit": "MP",
+          "claimId": "claim-52f2045f229cb422d661",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7d3c58657866e608",
+            "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+            "locator": {
+              "section": "EOS R50 V > 사양",
+              "row": "유효 화소 수"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-001",
+      "productId": "canon-powershot-v1",
+      "productName": "캐논 PowerShot V1",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-powershot-v1",
+        "name": "캐논 PowerShot V1",
+        "brand": "Canon",
+        "series": "PowerShot V",
+        "model": "PowerShot V1",
+        "aliases": [
+          "Canon PowerShot V1",
+          "캐논 PowerShot V1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1.4형",
+            "megapixels": 22.3,
+            "generation": null,
+            "sizeMm": [
+              18.4,
+              12.3
+            ]
+          },
+          "weight": 426,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 379,
+          "dimensions": [
+            118.3,
+            68,
+            52.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": null,
+          "releaseDate": "2025-04",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4.5,
+              "wide": 2.8
+            },
+            "equivalentFocal": {
+              "max": 50,
+              "min": 16
+            },
+            "focal": {
+              "max": 25.6,
+              "min": 8.2
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/E28F97BF8C27FAAAB152EB8BE982D358?productNm=PowerShot_V1",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-bff89bcf32cdae4a",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-b01cf24eaef840eb55bf",
+          "sourceId": "source-bff89bcf32cdae4a",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-b01cf24eaef840eb55bf",
+        "sourceId": "source-bff89bcf32cdae4a",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "PowerShot V1"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-canon-001-human-review",
+        "source": {
+          "sourceId": "source-bff89bcf32cdae4a",
+          "url": "https://kr.canon/product/content/detail/E28F97BF8C27FAAAB152EB8BE982D358?productNm=PowerShot_V1",
+          "documentTitle": "PowerShot V1 | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 379,
+          "unit": "g",
+          "claimId": "claim-a1aaddf9be1e8e2d5bbc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Body-only weight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": "shoe cover and windscreen"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            118.3,
+            68,
+            52.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-f04383daf5889ec9229a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Dimensions W/H/D"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-17cba0d88bb682a6861a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Lens maximum aperture tele"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-56fe8e5a98b0e2c637fa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Lens maximum aperture wide"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": null,
+          "claimId": "claim-cfa1f0c84c86d9227f00",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Still 35mm-equivalent focal tele"
+            },
+            "conditions": {
+              "captureMode": "still without cropping",
+              "focalBasis": "35mm-equivalent"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 16,
+          "unit": null,
+          "claimId": "claim-7a1a33d2e2cbf6a272c8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Still 35mm-equivalent focal wide"
+            },
+            "conditions": {
+              "captureMode": "still without cropping",
+              "focalBasis": "35mm-equivalent"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25.6,
+          "unit": "mm",
+          "claimId": "claim-89bc2b900ed9bc04f7c9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Lens actual focal length tele"
+            },
+            "conditions": {
+              "focalBasis": "actual"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.2,
+          "unit": "mm",
+          "claimId": "claim-a3a4933816ed9d723dba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Lens actual focal length wide"
+            },
+            "conditions": {
+              "focalBasis": "actual"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-cd57587e28a828d6d7dd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Operating temperature maximum"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-1e0e0e4ff1c776308958",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Operating temperature minimum"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2025-04",
+          "unit": null,
+          "claimId": "claim-4a71393613572aa7ba90",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-bff89bcf32cdae4a",
+            "url": "https://kr.canon/product/content/detail/E28F97BF8C27FAAAB152EB8BE982D358?productNm=PowerShot_V1",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1.4형",
+          "unit": null,
+          "claimId": "claim-a2d35f2be5ab3eb4228f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Sensor format"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 22.3,
+          "unit": "MP",
+          "claimId": "claim-94507b8e0cfc439a0457",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Effective pixels for still photos"
+            },
+            "conditions": {
+              "captureMode": "still"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            18.4,
+            12.3
+          ],
+          "unit": "mm",
+          "claimId": "claim-d1cb10d23e835e9ad49d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Image sensor size"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4aeb5f601ac56d992db2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "4K 59.94p crop"
+            },
+            "conditions": {
+              "captureMode": "4K 59.94p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 59.94p",
+          "unit": null,
+          "claimId": "claim-2da84ba8f45814c5a6d3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "4K cropped movie frame rate"
+            },
+            "conditions": {
+              "captureMode": "4K cropped",
+              "region": "NTSC"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 426,
+          "unit": "g",
+          "claimId": "claim-0de181fa9714e5b92afd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Weight with battery and card"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "standard": "CIPA",
+              "excludes": "shoe cover and windscreen"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-ad13397b5e3bb75148cf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-567a7d549e046fd1",
+            "url": "https://global.canon/ja/c-museum/wp-content/uploads/2026/06/dcc914_en.pdf",
+            "locator": {
+              "section": "PowerShot V1 Advanced User Guide specifications",
+              "row": "Weight basis"
+            },
+            "conditions": {
+              "region": "GLOBAL"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

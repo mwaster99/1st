@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-001",
+  "itemKey": "canon-eos-r1",
+  "manufacturerModelCode": "EOS R1",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS R1",
+    "productId": "canon-r1",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-30428617704184773371",
+    "sourceId": "source-210a490be61c2219",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS R1"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-29",
+    "reviewer": "codex-canon-001-human-review"
+  },
+  "product": {
+    "id": "canon-r1",
+    "name": "캐논 EOS R1",
+    "brand": "Canon",
+    "series": "EOS R",
+    "model": "EOS R1",
+    "aliases": [
+      "Canon EOS R1",
+      "캐논 EOS R1"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 920,
+      "burst": {
+        "maxElectronicFps": 40,
+        "maxMechanicalFps": 12
+      },
+      "dimensions": [
+        157.6,
+        149.5,
+        87.3
+      ],
+      "releaseDate": "2024-11",
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "이면조사 적층형 CMOS",
+        "megapixels": 24.2
+      },
+      "video": {
+        "max": "6K DCI 59.94p"
+      },
+      "weight": 1115,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-210a490be61c2219",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/3084CCEEB137439D86A8DE0C67C63665?productNm=EOS_R1",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS R1 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-29T05:13:27.339Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "852bcc9cb1c31cac7ba38b5393e3e8bcbd16d07860faa8a1fa54404b12a52b89"
+  },
+  "sources": [
+    {
+      "sourceId": "source-210a490be61c2219",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/3084CCEEB137439D86A8DE0C67C63665?productNm=EOS_R1",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS R1 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-29T05:13:27.339Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "852bcc9cb1c31cac7ba38b5393e3e8bcbd16d07860faa8a1fa54404b12a52b89"
+    },
+    {
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+      "publisher": "Canon Korea",
+      "documentTitle": "R BODY | RF Lens World | Canon Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-29T05:13:27.339Z",
+      "evidenceScope": "Official EOS R1 detailed objective specifications",
+      "contentDigest": "a193c415ceafbd9f9f91db430a090ed7aafaf58bf46684f22edb60cedc45fca4"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-r1",
+      "path": "specs.bodyOnlyWeight",
+      "value": 920,
+      "unit": "g",
+      "rawValue": 920,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "무게 (바디)"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-a9d0811b57349e862f58"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 40,
+      "unit": "fps",
+      "rawValue": 40,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "고속 연속 촬영+ (전자식 셔터)"
+      },
+      "conditions": {
+        "shutter": "electronic"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-22ec72726766950ec664"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 12,
+      "unit": "fps",
+      "rawValue": 12,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "고속 연속 촬영+ (기계식 셔터)"
+      },
+      "conditions": {
+        "shutter": "mechanical"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-8746eb8a036d851a6d71"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.dimensions",
+      "value": [
+        157.6,
+        149.5,
+        87.3
+      ],
+      "unit": "mm",
+      "rawValue": [
+        157.6,
+        149.5,
+        87.3
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "크기 (W)×(H)×(D)"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-3492d1a2fd933da36e17"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.releaseDate",
+      "value": "2024-11",
+      "unit": null,
+      "rawValue": "2024-11",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-210a490be61c2219",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-61caff30c2c4a1a2f03c"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 제품 설명",
+        "row": "Sensor format"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-20c091d5b42767ec784e"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.sensor.generation",
+      "value": "이면조사 적층형 CMOS",
+      "unit": null,
+      "rawValue": "이면조사 적층형 CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 제품 설명",
+        "row": "Sensor technology"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-29c71a462bc2fe80cb11"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP",
+      "rawValue": 24.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "유효 화소 수"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-1146088caeae3de7b2fd"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.video.max",
+      "value": "6K DCI 59.94p",
+      "unit": null,
+      "rawValue": "6K DCI 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "동영상 녹화 크기 (6K DCI)"
+      },
+      "conditions": {
+        "recordingMode": "6K DCI",
+        "frameRate": "59.94 fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-3620d54370a64fa63c55"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.weight",
+      "value": 1115,
+      "unit": "g",
+      "rawValue": 1115,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "무게 (배터리 및 카드 1 포함)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-ef2b62f27fd50d48e224"
+    },
+    {
+      "productId": "canon-r1",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ee08fa7429d6cf9e",
+      "locator": {
+        "section": "EOS R1 > 사양",
+        "row": "무게 측정 기준"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-canon-001-human-review",
+      "claimId": "claim-8fc04042e5d2360dfd81"
+    }
+  ]
+}

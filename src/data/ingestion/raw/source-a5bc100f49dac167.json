@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+  "publisher": "Canon Korea",
+  "documentTitle": "R BODY | RF Lens World | Canon Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official EOS R100 detailed objective specifications",
+  "accessedAt": "2026-09-29T05:13:27.339Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor format",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "유효 화소 수",
+      "value": 24.1,
+      "unit": "MP"
+    },
+    {
+      "field": "크기 (W)×(H)×(D)",
+      "value": [
+        116.3,
+        85.5,
+        68.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게 (배터리 및 카드 포함)",
+      "value": 356,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게 (바디)",
+      "value": 309,
+      "unit": "g"
+    },
+    {
+      "field": "4K UHD (PAL)",
+      "value": "4K UHD 25p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-r100",
+      "manufacturerModelCode": "EOS R100",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS R100",
+        "brand": "Canon",
+        "series": "EOS R",
+        "model": "EOS R100",
+        "aliases": [
+          "Canon EOS R100"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "EOS R100 > 제품 설명",
+            "row": "Sensor format"
+          },
+          "conditions": {
+            "region": "KR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 24.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "유효 화소 수"
+          },
+          "conditions": {
+            "region": "KR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 2,
+          "rawValue": [
+            116.3,
+            85.5,
+            68.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "크기 (W)×(H)×(D)"
+          },
+          "conditions": {
+            "region": "KR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 356,
+          "rawUnit": "g",
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "무게 (배터리 및 카드 포함)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {
+            "region": "KR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 309,
+          "rawUnit": "g",
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "무게 (바디)"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 6,
+          "rawValue": "4K UHD 25p",
+          "rawUnit": null,
+          "locator": {
+            "section": "EOS R100 > 사양",
+            "row": "4K UHD (PAL)"
+          },
+          "conditions": {
+            "region": "PAL",
+            "ntscMode": "4K UHD 23.98p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-canon-001-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2137f4c757cbc3ebbfc1671e5d5a0524ef4b7ad472db6582e1688c9accbee2fc",
+  "sourceId": "source-a5bc100f49dac167"
+}
