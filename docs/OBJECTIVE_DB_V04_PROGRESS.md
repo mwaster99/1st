@@ -1,5 +1,34 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 여덟 번째 Sony production batch — 2026-09-29
+
+batch 007의 Sony Korea 공식 갤러리 대조 결과 남은 5개 카드 **FX3A, FX3, FR7, α7R III A, FX6**를 그대로 검토했다. 새 제품을 다시 선정하지 않았다. [렌즈교환식 카메라 갤러리](https://www.sony.co.kr/interchangeable-lens-cameras/gallery)에 노출된 카드 수는 다섯이지만, 이번 batch에서 안전하게 canonical로 승격한 것은 **4개**다. FR7은 Sony 공식 [지원](https://www.sony.co.kr/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7)·[사양](https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fr7/specifications)에서 E-mount PTZ 원격 카메라, 본체만 약 4.6kg으로 확인했다. 현행 consumer canonical의 `bodyStyle`(`slr`, `rangefinder`, `compact`)로 PTZ 설치형을 정확히 표현할 수 없고, 배터리·카드 포함 등 허용된 operational weight basis도 없다. 따라서 별도 raw/canonical 제품을 만들지 않고 승격 보류했다. 갤러리 미처리 제품은 **FR7 1개**이며 Sony 전체 coverage audit 준비 완료로 간주하지 않는다.
+
+| 제품 / canonical ID | 공식 source | 신규 필드 | 핵심 승격값 |
+| --- | ---: | ---: | --- |
+| FX3A / `sony-fx3a` (`ILME-FX3A`) | 2 | 11 | 풀프레임 12.1MP(사진), 715g 배터리·카드 포함 / 630g 본체만, 236만 도트 LCD, XAVC HS 4K 119.88p·10-bit 조건. |
+| FX3 / `sony-fx3` (`ILME-FX3`) | 2 | 10 | 풀프레임 35.6×23.8mm, 같은 측정 기준의 715g / 630g, 144만 도트 LCD, XAVC HS 4K 119.88p·10-bit 조건. 사진 유효 화소는 이번 batch에서 UNKNOWN. |
+| α7R III A / `sony-a7r-iii-a` (`ILCE-7RM3A`) | 2 | 8 | 풀프레임 42.4MP, 657g 배터리·카드 포함, 235만 9,296도트 LCD. 원판 `ILCE-7RM3`와 별도 개정 모델 code를 유지했다. |
+| FX6 / `sony-fx6` (`ILME-FX6V`) | 2 | 4 | 풀프레임 E-mount, 890g 본체만, 114×116×153mm 돌출부 제외, 통상 XAVC-I QFHD 59.94p. |
+| FR7 / 승격 보류 (`ILME-FR7`) | 2개 검토 | 0 | PTZ 설치형으로 기존 body style·operational weight 계약에 맞지 않음. |
+
+FX3/FX3A는 Sony 공식 [FX3 사양](https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications)과 [FX3A 사양](https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications)의 별도 모델 코드 및 약 144만/236만 도트 LCD 차이 때문에 한 제품의 alias로 합치지 않았다. 같은 센서·무게 등의 공통값도 각각의 공식 source에서 따로 확인했다. α7R III A 역시 별도 `ILCE-7RM3A` 코드·지원 페이지를 가진 A 개정 제품이다. Sony의 [원판과 A 개정판 차이 설명](https://support.sony.jp/electronics/support/articles/con/00277855)은 LCD가 변경되었고 외형 치수·무게는 같다고 명시한다. Sony Korea의 [원판 사양](https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3/specifications)은 LCD 144만 도트, A 개정판 사양은 2,359,296도트다. 기존 canonical에는 원판 α7R III가 없으며, 원판의 사양을 A 모델의 field evidence로 전용하지 않았다. FX6의 2.59kg은 렌즈·배터리·그립·핸들 등을 포함한 구성 무게여서 `specs.weight`에 넣지 않았다. FX6의 4K 120p는 S&Q 조건이므로 일반 녹화 최대치처럼 사용하지 않고 현 스키마에는 통상 녹화 4K 60p만 승격했다. 네 제품 모두 `kind: interchangeable`, `mount: Sony E`이며 렌즈 제품은 추가하지 않았다.
+
+제품마다 별도의 공개 Sony 발췌만 담은 일회성 파일로 cheap-worker 실제 호출을 1회씩 실행했다. 프로젝트 코드·전체 canonical·secret은 전송하지 않았다. 첫 FX3A 호출에서 공용 lock의 `STATE_UNAVAILABLE`은 API 이전 실패였고 권한 보완 후 성공했다. 이후 FX3, FR7, α7R III A, FX6 호출은 모두 실제 API에 도달했다. FR7은 안전한 승격 불가를 알리는 `needs_information` 반환으로 종료했다. 실제 API 재시도·네트워크 실패는 0회다.
+
+| 제품 | worker input / output / total token | 채택한 검토 경고 |
+| --- | ---: | --- |
+| FX3A | 513 / 744 / 1,257 | FX3와 LCD 차이, 공통값도 제품별 공식 재확인 |
+| FX3 | 474 / 596 / 1,070 | 별도 revision identity, 비디오 codec·frame 조건 보존 |
+| FR7 | 462 / 502 / 964 | PTZ 분류·무게 기준 불일치로 승격 보류 |
+| α7R III A | 479 / 732 / 1,211 | 원판 자료를 A 개정 모델의 field evidence로 사용하지 않음 |
+| FX6 | 497 / 695 / 1,192 | 구성품 포함 무게 제외, S&Q 120p와 일반 녹화 구분 |
+| **합계** | **2,425 / 3,269 / 5,694** | 사람의 공식 원문·locator·diff 재검토 후 채택 |
+
+raw-helper가 네 승격 제품의 8개 raw source에 실제 UTC ISO `accessedAt` **2026-09-29T03:25:04.958Z~03:25:04.962Z**를 자동 기록했다. 원문 간 진짜 값 충돌, 기존 canonical 값 충돌, validation error/warning은 0건이다. 가격, FX6 배터리 포함 카메라 단독 무게, 지원 범위 밖의 codec·출력·crop 세부값 등은 UNKNOWN으로 남겼다. FX3A·FX3의 4K 120p는 NTSC 119.88p/XAVC HS, FX6의 4K 60p는 일반 XAVC-I QFHD 59.94p 조건을 raw claim에 남겼다. 사람은 다섯 identity, 공식 source 10개, 신규 claim 33개, FR7 보류 판단, diff·approval을 직접 검토했다. 신규 pipeline 코드 버그는 없었지만 PTZ 분류와 설치형 무게 기준의 schema 적용 범위 문제가 드러났다.
+
+승격 전 바디 **60** / 렌즈 **36** / 전체 **96**, canonical SHA-256 `4356661a473af4c793a6487da1b4ce51d314075ed9a518990b03ca3c4801f347`였다. 검토한 diff digest `54cd0c6bc22ea64ad754d04d7bb52047e630e2b486c363290c1e4ba69dec144e`를 approval `approval-b8aad6659d35eb099dc5855a2feed7c98fea208b656f408c15e136a3a299c29a`로 승인하고 atomic apply했다. 이후 바디 **64** / 렌즈 **36** / 전체 **100**, SHA-256 `2f40c2b507787d1afcf5a07fc26aa1aa57117c17e22321dbb2e44e96ae06e44b`다. 재적용은 `already-canonicalized`, `canonicalMatches: true`이며 네 item과 journal은 `canonicalized`다. 전체 테스트 **105/105**, Objective 테스트 **65/65**, canonical validation **100/100**, `pnpm build`, Objective script·변경 테스트의 `node --check`, `git diff --check`가 통과했다.
+
 ## Stage 4 일곱 번째 Sony production batch 완료 — 2026-09-29
 
 이번에는 제품 선정 전에 Sony Korea 공식 [렌즈교환식 카메라 갤러리](https://www.sony.co.kr/interchangeable-lens-cameras/gallery)의 27개 제품 카드와 [컴팩트 카메라 갤러리](https://www.sony.co.kr/compact-cameras/gallery)의 8개 제품 카드를 직접 확인했다. 렌즈 키트 SKU는 별도 카메라로 세지 않고, Sony가 FX3와 FX3A처럼 별도 카드로 노출한 모델은 각각 셌다. batch 001~006 manifest·진행 기록의 완료된 25개는 이 공식 목록에 모두 포함된다. 따라서 시작 시 공식 갤러리 35개 중 **미처리 제품 카드 10개**였다. 전체 미처리 목록은 **FX5 (`ILME-FX5`), FX3A (`ILME-FX3A`), FX3 (`ILME-FX3`), α7C (`ILCE-7C`), FR7 (`ILME-FR7`), α9 II (`ILCE-9M2`), α6600 (`ILCE-6600`), α7R IV A (`ILCE-7RM4A`), α7R III A (`ILCE-7RM3A`), FX6 (`ILME-FX6`)**다. 이 중 canonical에 없던 다섯 제품을 `production-sony-bodies-007`로 처리했다.

@@ -27,7 +27,7 @@ test("canonical identifiers, model names and aliases are unique and searchable",
 });
 
 test("body and lens coverage, mount and exterior categories are valid", () => {
-  assert.equal(CAMERA_BODIES.length, 60);
+  assert.equal(CAMERA_BODIES.length, 64);
   assert.equal(CAMERA_LENSES.length, 36);
   for (const mount of mounts.slice(0, 6)) {
     assert.ok(CAMERA_BODIES.some((body) => body.mount === mount));
@@ -40,6 +40,17 @@ test("body and lens coverage, mount and exterior categories are valid", () => {
     assert.ok(body.kind === "fixed" ? body.mount === null : mounts.includes(body.mount));
   }
   for (const lens of CAMERA_LENSES) assert.ok(mounts.includes(lens.mount));
+});
+
+test("FX3 revisions remain distinct and FX6 configured mass is not body weight", () => {
+  const fx3 = CAMERA_PRODUCTS.bodies.find((body) => body.id === "sony-fx3");
+  const fx3a = CAMERA_PRODUCTS.bodies.find((body) => body.id === "sony-fx3a");
+  const fx6 = CAMERA_PRODUCTS.bodies.find((body) => body.id === "sony-fx6");
+  assert.equal(fx3.specs.lcd.resolutionDots, 1440000);
+  assert.equal(fx3a.specs.lcd.resolutionDots, 2360000);
+  assert.equal(fx6.specs.bodyOnlyWeight, 890);
+  assert.equal(fx6.specs.weight, null);
+  assert.ok(!CAMERA_PRODUCTS.bodies.some((body) => body.id === "sony-fr7"));
 });
 
 test("objective numbers are nonnegative, physical ranges ordered and missing values explicit", () => {

@@ -1,0 +1,1179 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-008",
+  "canonicalBaselineDigest": "4356661a473af4c793a6487da1b4ce51d314075ed9a518990b03ca3c4801f347",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-008",
+      "productId": "sony-fx3a",
+      "productName": "소니 FX3A",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fx3a",
+        "name": "소니 FX3A",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX3A",
+        "aliases": [
+          "Sony FX3A",
+          "ILME-FX3A"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 12.1,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.6,
+              23.8
+            ]
+          },
+          "weight": 715,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 630,
+          "dimensions": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 120p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "resolutionDots": 2360000
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx3a",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-718d94cf2557e131",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-6a57f314adb8385c1843",
+          "sourceId": "source-718d94cf2557e131",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-6a57f314adb8385c1843",
+        "sourceId": "source-718d94cf2557e131",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "소니 FX3A / ILME-FX3A"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-production-sony-008-review",
+        "source": {
+          "sourceId": "source-718d94cf2557e131",
+          "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilme-fx3a",
+          "documentTitle": "ILME-FX3A Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 630,
+          "unit": "g",
+          "claimId": "claim-af699b81d8125008b5f9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-3d759db6c6e502931285",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "치수: 돌출부 제외 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2360000,
+          "unit": "dots",
+          "claimId": "claim-3c8bd19245b562b54e1e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "LCD: 약 236만 도트"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-8ae9a38db8348bbc7111",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35mm 풀프레임"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-dea846e9ad6403e279ff",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: Exmor R CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 12.1,
+          "unit": "MP",
+          "claimId": "claim-f79c77d98d0438b642e4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "픽셀: 스틸 이미지용 약 12.1메가픽셀"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.6,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-e0a3190ac9a8f53a756f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35.6 x 23.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-760120de919452a7c013",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "XAVC HS 4K 119.88p: 4:2:2 10비트"
+            },
+            "conditions": {
+              "recordingFormat": "XAVC HS 4K",
+              "frameRate": "119.88p/100p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-48421bfc44daad219fa8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "XAVC HS 4K: 119.88p/100p"
+            },
+            "conditions": {
+              "recordingFormat": "XAVC HS 4K",
+              "frameRate": "119.88p/100p",
+              "mode": "recording"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 715,
+          "unit": "g",
+          "claimId": "claim-c26ef3183758c2e7fc24",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-1b022c921f15cbd8ed63",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6d8b76a6b48c3207",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-008",
+      "productId": "sony-fx3",
+      "productName": "소니 FX3",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fx3",
+        "name": "소니 FX3",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX3",
+        "aliases": [
+          "Sony FX3",
+          "ILME-FX3"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": null,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.6,
+              23.8
+            ]
+          },
+          "weight": 715,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 630,
+          "dimensions": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 120p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "resolutionDots": 1440000
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx3",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-c8a5108d47b37917",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-3912a42e0fc7c28e4f1a",
+          "sourceId": "source-c8a5108d47b37917",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-3912a42e0fc7c28e4f1a",
+        "sourceId": "source-c8a5108d47b37917",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "소니 FX3 / ILME-FX3"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-production-sony-008-review",
+        "source": {
+          "sourceId": "source-c8a5108d47b37917",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx3",
+          "documentTitle": "ILME-FX3 Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 630,
+          "unit": "g",
+          "claimId": "claim-18f5fa89ca3a29f2cf9a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129.7,
+            77.8,
+            84.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-2abd4b2cfd254b488fe2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "치수: 돌출부 제외 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1440000,
+          "unit": "dots",
+          "claimId": "claim-a1c90da7cd7edf1cb09f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "LCD: 약 144만 도트"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-c35837237012fdef77ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35mm 풀프레임"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-dc1286aedece24c3ebae",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: Exmor R CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.6,
+            23.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-a8370debb75b67e81e7c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35.6 x 23.8mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-4f89ceb8dfc289b1081c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "XAVC HS 4K 119.88p: 4:2:2 10비트"
+            },
+            "conditions": {
+              "recordingFormat": "XAVC HS 4K",
+              "frameRate": "119.88p/100p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 120p",
+          "unit": null,
+          "claimId": "claim-573a87d6f6c6f1fe01e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "XAVC HS 4K: 119.88p/100p"
+            },
+            "conditions": {
+              "recordingFormat": "XAVC HS 4K",
+              "frameRate": "119.88p/100p",
+              "mode": "recording"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 715,
+          "unit": "g",
+          "claimId": "claim-527b3db021e15bcb27d5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-cc1d36d56401b9bb8983",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a3d5ce3af3306daf",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-008",
+      "productId": "sony-a7r-iii-a",
+      "productName": "소니 A7R III A",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-a7r-iii-a",
+        "name": "소니 A7R III A",
+        "brand": "Sony",
+        "series": "Alpha 7R",
+        "model": "A7R III A",
+        "aliases": [
+          "Sony A7R III A",
+          "ILCE-7RM3A"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 42.4,
+            "generation": "Exmor R CMOS",
+            "sizeMm": [
+              35.9,
+              24
+            ]
+          },
+          "weight": 657,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            126.9,
+            95.6,
+            73.7
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "resolutionDots": 2359296
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm3a",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-13c8134bf15b8aac",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-f11f96cd93203db37015",
+          "sourceId": "source-13c8134bf15b8aac",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-f11f96cd93203db37015",
+        "sourceId": "source-13c8134bf15b8aac",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "소니 A7R III A / ILCE-7RM3A"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-production-sony-008-review",
+        "source": {
+          "sourceId": "source-13c8134bf15b8aac",
+          "url": "https://www.sony.co.kr/electronics/interchangeable-lens-cameras/ilce-7rm3a",
+          "documentTitle": "ILCE-7RM3A Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            126.9,
+            95.6,
+            73.7
+          ],
+          "unit": "mm",
+          "claimId": "claim-9c780dfb565a16b8c5a3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "치수(W x H x D): 126.9 x 95.6 x 73.7mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2359296,
+          "unit": "dots",
+          "claimId": "claim-4fbf94893e72d29584ee",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "LCD 도트 수: 2,359,296도트"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-14f17c2bb83b58f54abf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35mm 풀프레임"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Exmor R CMOS",
+          "unit": null,
+          "claimId": "claim-1c332a6ae5aabe10d1d8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: Exmor R CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 42.4,
+          "unit": "MP",
+          "claimId": "claim-089ee4436aabf436859c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "픽셀 수(유효): 약 42.4 메가픽셀"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            24
+          ],
+          "unit": "mm",
+          "claimId": "claim-4ab6113fabd0401d009d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35.9 x 24.0mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 657,
+          "unit": "g",
+          "claimId": "claim-64e79bbf0f169bac1753",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-d2220dcc9ab462d1c382",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4f534ed11fc35448",
+            "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7rm3a/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 배터리 및 메모리 카드 포함 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-bodies-008",
+      "productId": "sony-fx6",
+      "productName": "소니 FX6",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fx6",
+        "name": "소니 FX6",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX6",
+        "aliases": [
+          "Sony FX6",
+          "ILME-FX6",
+          "ILME-FX6V"
+        ],
+        "mount": "Sony E",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": null,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 890,
+          "dimensions": [
+            114,
+            116,
+            153
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 60p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx6",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-29",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-c08fc68b9ba6b3bd",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-8b8a0c06133dbc41f7e6",
+          "sourceId": "source-c08fc68b9ba6b3bd",
+          "checkedAt": "2026-09-29"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-8b8a0c06133dbc41f7e6",
+        "sourceId": "source-c08fc68b9ba6b3bd",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product header",
+          "row": "소니 FX6 / ILME-FX6V"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-29",
+        "reviewer": "codex-production-sony-008-review",
+        "source": {
+          "sourceId": "source-c08fc68b9ba6b3bd",
+          "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilme-fx6",
+          "documentTitle": "ILME-FX6V Sony product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 890,
+          "unit": "g",
+          "claimId": "claim-78cbeafb090573c3b284",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c698a3553697f40f",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx6v/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "무게: 본체만 890g"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            114,
+            116,
+            153
+          ],
+          "unit": "mm",
+          "claimId": "claim-58648efef230181741d3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c698a3553697f40f",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx6v/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "치수(W x H x D): 돌출부 제외 본체만"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-32da0a6dd7c83e51d56c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c698a3553697f40f",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx6v/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "센서 유형: 35mm 풀프레임"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 60p",
+          "unit": null,
+          "claimId": "claim-80fb16f7006218c3e46f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c698a3553697f40f",
+            "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx6v/specifications",
+            "locator": {
+              "section": "Official specifications",
+              "row": "XAVC-I QFHD: 3840x2160/59.94p"
+            },
+            "conditions": {
+              "recordingFormat": "XAVC-I QFHD",
+              "frameRate": "59.94p",
+              "mode": "standard-recording"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

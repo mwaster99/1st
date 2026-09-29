@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx6v/specifications",
+  "publisher": "Sony Korea",
+  "documentTitle": "ILME-FX6V Sony specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official detailed specifications",
+  "accessedAt": "2026-09-29T03:25:04.962Z",
+  "evidenceExcerpt": [
+    {
+      "field": "센서 유형: 35mm 풀프레임",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "무게: 본체만 890g",
+      "value": 890,
+      "unit": "g"
+    },
+    {
+      "field": "치수(W x H x D): 돌출부 제외 본체만",
+      "value": [
+        114,
+        116,
+        153
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "XAVC-I QFHD: 3840x2160/59.94p",
+      "value": "4K 60p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-ilme-fx6v",
+      "manufacturerModelCode": "ILME-FX6V",
+      "productType": "body",
+      "identity": {
+        "name": "소니 FX6",
+        "brand": "Sony",
+        "series": "FX",
+        "model": "FX6",
+        "aliases": [
+          "Sony FX6",
+          "ILME-FX6",
+          "ILME-FX6V"
+        ],
+        "mount": "E-mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specifications",
+            "row": "센서 유형: 35mm 풀프레임"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-production-sony-008-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 1,
+          "rawValue": 890,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official specifications",
+            "row": "무게: 본체만 890g"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-production-sony-008-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 2,
+          "rawValue": [
+            114,
+            116,
+            153
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official specifications",
+            "row": "치수(W x H x D): 돌출부 제외 본체만"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-production-sony-008-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 3,
+          "rawValue": "4K 60p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specifications",
+            "row": "XAVC-I QFHD: 3840x2160/59.94p"
+          },
+          "conditions": {
+            "recordingFormat": "XAVC-I QFHD",
+            "frameRate": "59.94p",
+            "mode": "standard-recording"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-29",
+          "reviewer": "codex-production-sony-008-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "3c1e6d109d9528ed71e9dfdcc29bdbe61de214949045b65178284c7d248782e0",
+  "sourceId": "source-c698a3553697f40f"
+}
