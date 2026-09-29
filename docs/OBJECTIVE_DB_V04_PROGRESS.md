@@ -1,5 +1,36 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 일곱 번째 Sony production batch 완료 — 2026-09-29
+
+이번에는 제품 선정 전에 Sony Korea 공식 [렌즈교환식 카메라 갤러리](https://www.sony.co.kr/interchangeable-lens-cameras/gallery)의 27개 제품 카드와 [컴팩트 카메라 갤러리](https://www.sony.co.kr/compact-cameras/gallery)의 8개 제품 카드를 직접 확인했다. 렌즈 키트 SKU는 별도 카메라로 세지 않고, Sony가 FX3와 FX3A처럼 별도 카드로 노출한 모델은 각각 셌다. batch 001~006 manifest·진행 기록의 완료된 25개는 이 공식 목록에 모두 포함된다. 따라서 시작 시 공식 갤러리 35개 중 **미처리 제품 카드 10개**였다. 전체 미처리 목록은 **FX5 (`ILME-FX5`), FX3A (`ILME-FX3A`), FX3 (`ILME-FX3`), α7C (`ILCE-7C`), FR7 (`ILME-FR7`), α9 II (`ILCE-9M2`), α6600 (`ILCE-6600`), α7R IV A (`ILCE-7RM4A`), α7R III A (`ILCE-7RM3A`), FX6 (`ILME-FX6`)**다. 이 중 canonical에 없던 다섯 제품을 `production-sony-bodies-007`로 처리했다.
+
+| 제품 / canonical ID | 공식 source | 신규 객관 필드 | 핵심 승격값 |
+| --- | ---: | ---: | --- |
+| FX5 / `sony-fx5` | 2 | 8 | 풀프레임 35.9×24.0mm Exmor RS; 배터리·카드 포함 734g/본체만 643g. 사진용 유효 화소와 전체 깊이는 UNKNOWN. |
+| α7C / `sony-a7c` | 2 | 11 | 풀프레임 24.2MP; 509g/본체만 424g; 전체 치수 124.0×71.1×59.7mm; LCD CIPA 740매. |
+| α9 II / `sony-a9-ii` | 2 | 13 | 풀프레임 24.2MP; 678g; 전자식 최대 20fps/기계식 최대 10fps; NTSC XAVC S 4K 30p. |
+| α6600 / `sony-a6600` | 2 | 10 | APS-C 24.2MP; 503g; 전체 치수 120.0×66.9×69.3mm; LCD CIPA 810매. |
+| α7R IV A / `sony-a7r-iv-a` | 2 | 12 | 풀프레임 61.0MP; 665g; EVF 576만 도트; NTSC XAVC S 4K 30p; LCD CIPA 660매. A 개정 모델 identity 유지. |
+
+모두 기존 `kind: interchangeable`, `mount: Sony E` 정책에 따라 렌즈 제품 없이 추가했다. 각 제품의 Sony 공식 제품 페이지와 상세 사양 페이지를 별도 raw source로 연결했다. 제품 페이지는 주로 identity, 사양 페이지는 field evidence를 뒷받침하며, 두 source가 모든 수치를 독립 교차검증한다는 의미는 아니다. 무게는 모두 배터리·메모리 카드 포함 기준이고, body-only 값은 별도 필드로 저장했다. 전체 치수와 `그립에서 모니터까지` 등의 대체 깊이를 구분했으며 FX5는 공식 표의 깊이 기준이 전체 치수로 명확하지 않아 dimensions 자체를 승격하지 않았다. α9 II의 연사는 셔터별 값으로 분리하고 영상 NTSC/PAL, LCD/EVF CIPA 조건은 raw claim `conditions`에 남겼다. FX5의 향후 펌웨어 예정 5K 120p/4K 240p는 현행 기능으로 승격하지 않았다. 공개 가격과 사용 중고가는 정책에 따라 모두 UNKNOWN이다.
+
+공식 source 간 동일 필드 충돌, 기존 canonical 값 충돌, validation 오류·경고는 각각 0건이다. 제품별 worker 독립 task는 모두 첫 실제 API 호출 1회로 성공했다. 첫 FX5 실행의 `STATE_UNAVAILABLE`은 공용 lock 접근 불가로 API 이전 실패였고, 권한 보완 후 성공했다. API 재시도와 API 실패는 0회다.
+
+| 제품 | worker input / output / total token |
+| --- | ---: |
+| FX5 | 521 / 388 / 909 |
+| α7C | 490 / 475 / 965 |
+| α9 II | 505 / 499 / 1,004 |
+| α6600 | 501 / 417 / 918 |
+| α7R IV A | 534 / 1,153 / 1,687 |
+| **합계** | **2,551 / 2,932 / 5,483** |
+
+worker는 FX5 화소·깊이의 불명확성, 무게와 치수의 서로 다른 측정 기준, α9 II 셔터별 연사 및 NTSC/PAL 영상 조건을 지적해 검토에 유용했다. 단, worker는 제공된 공개 발췌문만 읽고 원문을 독립 조회하지 않았으므로 값과 locator의 최종 확인은 메인 모델이 공식 사이트에서 직접 했다. 사람 검토량은 공식 현행 카드 35개와 기존 batch 25개 대조, 미처리 10개 선정 판단, 공식 source 10개, 제품별 worker 결과 5개, 객관 claim 54개와 diff 5건, UNKNOWN·identity·approval 판단이다. FX3/FX3A의 별도 공식 카드가 별도 canonical 제품이 되어야 하는지는 다음 batch의 identity 검토 과제로 남긴다. 이번에는 pipeline 신규 버그나 schema 변경이 없었다.
+
+raw-helper가 새 raw source 10개에 실제 UTC ISO `accessedAt`을 `2026-09-29T03:08:00.427Z`~`2026-09-29T03:08:00.431Z`로 기록했다. 검토한 diff digest는 `21a0a0952a2bbf6ae702b741ea1007d1a866f1e0c8e429a93634a93266665e84`, approval ID는 `approval-f344d6fd3ba03dee76853e7ab4cc6e148a0232fba4b122b2c743f9867cdfb61b`다. canonical은 시작 바디 55/렌즈 36/전체 91, SHA-256 `1197634a466225094bc162981b7bd7e5ab0e0d03db1760e597f9787b3de878bf`에서 바디 **60**/렌즈 **36**/전체 **96**, SHA-256 `4356661a473af4c793a6487da1b4ce51d314075ed9a518990b03ca3c4801f347`로 증가했다. 다섯 item과 journal은 `canonicalized`이고 재적용은 `already-canonicalized`, `canonicalMatches: true`다.
+
+전체 테스트 **104/104**, Objective 테스트 **65/65**, canonical validation **96/96**, `pnpm build`, 변경 테스트와 Objective script의 `node --check`, `git diff --check`를 통과했다. 공식 갤러리 기준 미처리 제품 카드는 **5개(FX3A, FX3, FR7, α7R III A, FX6)** 남아 다음 production batch가 필요하다. 그 후 현재 제품 카드 전체의 coverage audit으로 넘어간다.
+
 ## Stage 4 여섯 번째 Sony production batch 완료 — 2026-09-28
 
 `production-sony-bodies-006`은 batch 001~005의 manifest·진행 기록과 86개 canonical 제품을 대조한 뒤, Sony Korea 현행 제품 페이지에 있는 미처리 E 마운트 바디 5개를 선정했다. α1, α6400, ZV-E10, FX2, FX30은 모두 신규 제품이며, 각 제품에 공식 제품 페이지(주로 identity)와 공식 상세 사양 페이지(객관 필드)를 독립 source로 연결했다. 두 source가 모든 물리값을 각각 교차 확인했다는 뜻은 아니다. 제품별 독립 cheap-worker 검토 후 raw → normalize → validate → diff → 사람 검토 → 명시적 approval → atomic apply를 완료했다.

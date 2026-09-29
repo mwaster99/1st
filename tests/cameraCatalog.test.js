@@ -27,7 +27,7 @@ test("canonical identifiers, model names and aliases are unique and searchable",
 });
 
 test("body and lens coverage, mount and exterior categories are valid", () => {
-  assert.equal(CAMERA_BODIES.length, 55);
+  assert.equal(CAMERA_BODIES.length, 60);
   assert.equal(CAMERA_LENSES.length, 36);
   for (const mount of mounts.slice(0, 6)) {
     assert.ok(CAMERA_BODIES.some((body) => body.mount === mount));

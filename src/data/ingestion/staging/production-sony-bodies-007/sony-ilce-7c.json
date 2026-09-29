@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-bodies-007",
+  "itemKey": "sony-ilce-7c",
+  "manufacturerModelCode": "ILCE-7C",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "ILCE-7C",
+    "productId": "sony-a7c",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-973de5b17af98ee24d91",
+    "sourceId": "source-50ac3c6b434440fd",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product header",
+      "row": "A7C / ILCE-7C"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-29",
+    "reviewer": "codex-production-sony-007-review"
+  },
+  "product": {
+    "id": "sony-a7c",
+    "name": "소니 A7C",
+    "brand": "Sony",
+    "series": "Alpha 7C",
+    "model": "A7C",
+    "aliases": [
+      "Sony A7C",
+      "ILCE-7CL"
+    ],
+    "mount": "Sony E",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "batteryShots": 740,
+      "bodyOnlyWeight": 424,
+      "dimensions": [
+        124,
+        71.1,
+        59.7
+      ],
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "Exmor R CMOS",
+        "megapixels": 24.2,
+        "sizeMm": [
+          35.6,
+          23.8
+        ]
+      },
+      "weight": 509,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-50ac3c6b434440fd",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7c",
+    "publisher": "Sony Korea",
+    "documentTitle": "ILCE-7C Sony product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-29T03:08:00.430Z",
+    "evidenceScope": "Current product identity",
+    "contentDigest": "447d64d75cb0ffebb34e8792e83bff224f803d5eadcaa4907babdd9317dfc249"
+  },
+  "sources": [
+    {
+      "sourceId": "source-3ecf00b9e864ce54",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-7-series/ilce-7c/specifications",
+      "publisher": "Sony Korea",
+      "documentTitle": "ILCE-7C Sony specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-29T03:08:00.430Z",
+      "evidenceScope": "Official detailed specifications",
+      "contentDigest": "b22f585efbdb45cb16593c4865fa5d754f79724f44b1197ae9ec19a3b1f5b97a"
+    },
+    {
+      "sourceId": "source-50ac3c6b434440fd",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/interchangeable-lens-cameras/products/ilce-7c",
+      "publisher": "Sony Korea",
+      "documentTitle": "ILCE-7C Sony product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-29T03:08:00.430Z",
+      "evidenceScope": "Current product identity",
+      "contentDigest": "447d64d75cb0ffebb34e8792e83bff224f803d5eadcaa4907babdd9317dfc249"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-a7c",
+      "path": "specs.batteryShots",
+      "value": 740,
+      "unit": null,
+      "rawValue": 740,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "배터리 수명(스틸 이미지): LCD 모니터"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "display": "LCD",
+        "evfShots": 680
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-fd7eaba35bd2bff62b20"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.bodyOnlyWeight",
+      "value": 424,
+      "unit": "g",
+      "rawValue": 424,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "본체만"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-c82612dfbd02b3583e2d"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.dimensions",
+      "value": [
+        124,
+        71.1,
+        59.7
+      ],
+      "unit": "mm",
+      "rawValue": [
+        124,
+        71.1,
+        59.7
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "치수(W X H X D): 전체 크기"
+      },
+      "conditions": {
+        "note": "Alternative 53.5mm grip-to-monitor depth is not the stored overall depth"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-705e3ef4a74be185e510"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 상한"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-073b5ab3e1692a0f8fb0"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "작동 온도: 하한"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-85ce479b8d2ea66891d0"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-5b2adc5775e1274d1ea2"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.sensor.generation",
+      "value": "Exmor R CMOS",
+      "unit": null,
+      "rawValue": "Exmor R CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 센서 기술"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-7c4afc8b91abef70c2ac"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP",
+      "rawValue": 24.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "픽셀 수(유효)"
+      },
+      "conditions": {
+        "measure": "effective still pixels"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-2a8db394eab99864ed85"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.6,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.6,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "센서 유형: 센서 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-3ca3b88d89a607f326ce"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.weight",
+      "value": 509,
+      "unit": "g",
+      "rawValue": 509,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-599923026c41ab24f704"
+    },
+    {
+      "productId": "sony-a7c",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ecf00b9e864ce54",
+      "locator": {
+        "section": "Specifications",
+        "row": "무게(배터리 및 메모리 카드 포함): 측정 기준"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-29",
+      "reviewer": "codex-production-sony-007-review",
+      "claimId": "claim-a29740a4fbfbce2c4a79"
+    }
+  ]
+}
