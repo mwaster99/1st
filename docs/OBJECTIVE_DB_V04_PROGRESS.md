@@ -1,5 +1,9 @@
 # Objective DB v0.4 진행 기록
 
+## Sony Korea 현행 카메라 coverage audit — 2026-09-29
+
+Sony Korea 공식 현행 갤러리 카드 35개(렌즈교환식 27, 컴팩트 8)를 1:1 대조했다. production batch 001~008에서 canonicalized된 서로 다른 바디 34개가 34개 카드에 대응한다. 남은 FR7 `ILME-FR7`은 설치·원격 운용 중심의 PTZ 시스템으로, 현재 직접 운용하는 바디/렌즈 구매·기변 비교와 다른 제품군이므로 `deferred-special-category`로 명시했다. 따라서 미처리 0, 중복/모호 0이며 Sony Korea 현행 **카메라 제품 coverage 1차 완료**로 판정한다. 사양·가격이 모두 완성됐다는 뜻은 아니다. 공식 목록 snapshot, scope registry, identity·provenance·UNKNOWN 및 batch artifact 검증의 상세 결과는 [Sony coverage audit](OBJECTIVE_DB_SONY_COVERAGE_AUDIT.md)에 기록했다. 이번 감사에서 canonical, 추천 엔진, UI, 기존 production artifact는 변경하지 않았다.
+
 ## Stage 4 여덟 번째 Sony production batch — 2026-09-29
 
 batch 007의 Sony Korea 공식 갤러리 대조 결과 남은 5개 카드 **FX3A, FX3, FR7, α7R III A, FX6**를 그대로 검토했다. 새 제품을 다시 선정하지 않았다. [렌즈교환식 카메라 갤러리](https://www.sony.co.kr/interchangeable-lens-cameras/gallery)에 노출된 카드 수는 다섯이지만, 이번 batch에서 안전하게 canonical로 승격한 것은 **4개**다. FR7은 Sony 공식 [지원](https://www.sony.co.kr/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7)·[사양](https://www.sony.co.kr/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fr7/specifications)에서 E-mount PTZ 원격 카메라, 본체만 약 4.6kg으로 확인했다. 현행 consumer canonical의 `bodyStyle`(`slr`, `rangefinder`, `compact`)로 PTZ 설치형을 정확히 표현할 수 없고, 배터리·카드 포함 등 허용된 operational weight basis도 없다. 따라서 별도 raw/canonical 제품을 만들지 않고 승격 보류했다. 갤러리 미처리 제품은 **FR7 1개**이며 Sony 전체 coverage audit 준비 완료로 간주하지 않는다.
