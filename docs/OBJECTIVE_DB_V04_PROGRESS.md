@@ -1,5 +1,9 @@
 # Objective DB v0.4 진행 기록
 
+## Canon Korea 현행 카메라 coverage audit — 2026-09-30
+
+Canon Korea 공식 미러리스 15·DSLR 2·컴팩트 5·직접 운용 Cinema EOS 7개를 재대조해 직접 운용 카드 29개 중 출시 완료 canonical 28개, 출시 예정 EOS R8 Mark II 1개, 출시 완료 미처리 0개, 중복/모호 identity 0개를 확인했다. 인접 PTZ 분류의 17개 카드는 카메라 외 제어기·소프트웨어를 포함하므로 별도 `deferred-special-category`로 추적한다. Batch 001~005의 22개 item과 digest chain은 모두 유효하며 Canon 바디 제품 coverage를 1차 완료로 판정했다. 이전 canonical 6개의 구조화 identity 근거와 일부 객관 필드 null, 영상 조건 표시 및 EF 렌즈 추천 coverage는 별도 후속 과제다. 전체 테스트 129/129, Objective·Canon 테스트 87/87, canonical 122개 validation, build·`node --check`·`git diff --check`를 통과했다. 자세한 분모·근거·심각도·회귀 검증은 [Canon coverage 감사 문서](OBJECTIVE_DB_CANON_COVERAGE_AUDIT.md)에 기록했다.
+
 ## Stage 4 Canon production batch 005 — 2026-09-30
 
 시작 시 git working tree는 clean, canonical은 바디 84 / 렌즈 36 / 전체 120개였다. Canon 공식 inventory snapshot, batch 001~004 artifact·진행 기록, canonical, identity-map, catalog-scope와 field contract를 대조했다. Canon Korea의 현재 Cinema EOS 제품 목록과 개별 제품 페이지에서 **EOS C300 MK III**(한국 출시 2020-06)와 **EOS C500 MK2**(2019-12)가 여전히 출시된 제품임을 확인했다. 이 2개가 정해진 마지막 released/current 일반 카메라 대상이다. EOS R8 Mark II는 공식 출시월 2026-10으로 아직 announced/upcoming이므로 제외한다. 두 제품은 사람이 직접 운용하는 Cinema EOS이며, 기본 EF 마운트를 제품 identity로 기록하고 선택적으로 교체 가능한 PL/EF-C 마운트를 별도 제품이나 기본 사양으로 혼동하지 않는다.
