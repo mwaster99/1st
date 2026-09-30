@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-c400",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "EOS C400 | Canon U.S.A. official",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS C400 objective specifications",
+  "accessedAt": "2026-09-30T02:28:24.073Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor / 6K full-frame BSI stacked CMOS",
+      "value": "Full-frame",
+      "unit": null
+    },
+    {
+      "field": "Frame Rate / 6K 59.94P RAW",
+      "value": "6K RAW 59.94p",
+      "unit": null
+    },
+    {
+      "field": "Dimensions W×H×D",
+      "value": [
+        142,
+        135,
+        135
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Main Body Weight",
+      "value": 1550,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c400",
+      "manufacturerModelCode": "EOS C400",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C400",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C400",
+        "aliases": [
+          "Canon EOS C400"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "Full-frame",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Sensor / 6K full-frame BSI stacked CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 1,
+          "rawValue": "6K RAW 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Frame Rate / 6K 59.94P RAW"
+          },
+          "conditions": {
+            "recording": "normal",
+            "format": "RAW",
+            "sensorMode": "full-frame"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 2,
+          "rawValue": [
+            142,
+            135,
+            135
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Dimensions W×H×D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 3,
+          "rawValue": 1550,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Main Body Weight"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "e863dc440bbf66d50524f78323782bbef3f62f1645f3681cabf51d3dd139cf9e",
+  "sourceId": "source-a1ab0ce51258a9ee"
+}

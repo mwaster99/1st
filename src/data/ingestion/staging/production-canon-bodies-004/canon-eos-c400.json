@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-004",
+  "itemKey": "canon-eos-c400",
+  "manufacturerModelCode": "EOS C400",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C400",
+    "productId": "canon-c400",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-22425c97740cfb087a35",
+    "sourceId": "source-04f7b2c5eb94062b",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C400"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-004-human-review"
+  },
+  "product": {
+    "id": "canon-c400",
+    "name": "캐논 EOS C400",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C400",
+    "aliases": [
+      "Canon EOS C400",
+      "eos c400",
+      "캐논 eos c400"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 1550,
+      "dimensions": [
+        142,
+        135,
+        135
+      ],
+      "releaseDate": "2024-09",
+      "sensor": {
+        "format": "Full-frame"
+      },
+      "video": {
+        "max": "6K RAW 59.94p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-04f7b2c5eb94062b",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/5A3DEC837DDE2D6FD9023B5802E22F5F?productNm=EOS_C400",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C400 | Canon Korea official",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T02:28:24.073Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "26e295c65de7798fe7db7b76b4feff3d2e08f0835dc457b834e2c0ac1cbfc4fc"
+  },
+  "sources": [
+    {
+      "sourceId": "source-04f7b2c5eb94062b",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/5A3DEC837DDE2D6FD9023B5802E22F5F?productNm=EOS_C400",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C400 | Canon Korea official",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:28:24.073Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "26e295c65de7798fe7db7b76b4feff3d2e08f0835dc457b834e2c0ac1cbfc4fc"
+    },
+    {
+      "sourceId": "source-a1ab0ce51258a9ee",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c400",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "EOS C400 | Canon U.S.A. official",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T02:28:24.073Z",
+      "evidenceScope": "Official EOS C400 objective specifications",
+      "contentDigest": "e863dc440bbf66d50524f78323782bbef3f62f1645f3681cabf51d3dd139cf9e"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c400",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1550,
+      "unit": "g",
+      "rawValue": 1550,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-a1ab0ce51258a9ee",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Main Body Weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-f38ebd4d37807caa2b5a"
+    },
+    {
+      "productId": "canon-c400",
+      "path": "specs.dimensions",
+      "value": [
+        142,
+        135,
+        135
+      ],
+      "unit": "mm",
+      "rawValue": [
+        142,
+        135,
+        135
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a1ab0ce51258a9ee",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Dimensions W×H×D"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-28a06f01a6bfb2ca7a95"
+    },
+    {
+      "productId": "canon-c400",
+      "path": "specs.releaseDate",
+      "value": "2024-09",
+      "unit": null,
+      "rawValue": "2024-09",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-04f7b2c5eb94062b",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-c2871ae6139cc0dd2bc7"
+    },
+    {
+      "productId": "canon-c400",
+      "path": "specs.sensor.format",
+      "value": "Full-frame",
+      "unit": null,
+      "rawValue": "Full-frame",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a1ab0ce51258a9ee",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Sensor / 6K full-frame BSI stacked CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-c61ed61291d85de63693"
+    },
+    {
+      "productId": "canon-c400",
+      "path": "specs.video.max",
+      "value": "6K RAW 59.94p",
+      "unit": null,
+      "rawValue": "6K RAW 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a1ab0ce51258a9ee",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Frame Rate / 6K 59.94P RAW"
+      },
+      "conditions": {
+        "recording": "normal",
+        "format": "RAW",
+        "sensorMode": "full-frame"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-8668a8a013d1d5bc3baa"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-c70",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "EOS C70 | Canon U.S.A. official",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS C70 objective specifications",
+  "accessedAt": "2026-09-30T02:28:24.073Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor Size / Super 35mm",
+      "value": "Super 35mm",
+      "unit": null
+    },
+    {
+      "field": "XF-AVC 4096×2160 59.94p",
+      "value": "4K DCI 59.94p",
+      "unit": null
+    },
+    {
+      "field": "Media / two SD card slots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "Body-only dimensions W×H×D",
+      "value": [
+        130.2,
+        160,
+        115.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "RF camera body weight 1.17kg",
+      "value": 1170,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c70",
+      "manufacturerModelCode": "EOS C70",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C70",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C70",
+        "aliases": [
+          "Canon EOS C70"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "Super 35mm",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Sensor Size / Super 35mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 1,
+          "rawValue": "4K DCI 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "XF-AVC 4096×2160 59.94p"
+          },
+          "conditions": {
+            "recording": "normal",
+            "format": "XF-AVC",
+            "sensorMode": "Super 35mm"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 2,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Media / two SD card slots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 3,
+          "rawValue": [
+            130.2,
+            160,
+            115.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Body-only dimensions W×H×D"
+          },
+          "conditions": {
+            "excludes": "cable and grip belt"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 1170,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "RF camera body weight 1.17kg"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "6bf6a4a5102a9be5dd759e4eff5e3101f1f3c5a670bedff711daaa5b546e6a2c",
+  "sourceId": "source-61e3057c1dc069fc"
+}

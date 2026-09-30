@@ -1,5 +1,35 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Canon production batch 004 — 2026-09-30
+
+시작 시 git working tree는 clean, canonical은 바디 79 / 렌즈 36 / 전체 115개였다. Canon Korea 직접 운용 카메라 inventory 29개, batch 001~003 artifact·진행 기록·canonical을 대조해 출시된 미처리 제품 7개와 출시 예정 EOS R8 Mark II 1개를 확인했다. 이번 batch는 canonical에 없는 **PowerShot SX740 HS, IXUS 285 HS A, EOS C400, EOS R5 C, EOS C70**을 선정한다. 고정렌즈 여행용 줌·소형 컴팩트 2종과 직접 운용하는 Cinema EOS 3종을 섞어 실제/환산 초점거리, 색상별 무게, RF 마운트, 시네마 영상 모드/미디어 조건을 검토한다. 공식 inventory의 출시월은 각각 2018-08, 2025-10, 2024-09, 2022-03, 2020-11로 모두 현재 출시됐다. EOS R8 Mark II와 원격 설치형 PTZ는 제외하며, 남은 EOS C300 MK III·EOS C500 MK2는 마지막 잔여 batch 후보로 둔다.
+
+`production-canon-bodies-004`는 Canon Korea 제품/출시 페이지를 각 제품의 identity source로, Canon U.S.A. support 또는 Canon Asia의 모델별 사양을 상세 source로 사용했다. EOS R5 C에는 8K 60p의 외부 전원 조건을 확인하는 Canon UAE 공식 source를 추가했다. 총 **11개 공식 source**, 제품별 2/2/2/3/2개다. 제품별 독립 cheap-worker 실제 API task 5개는 공개 공식 자료의 최소 발췌만 검토했고, 프로젝트 코드·canonical 전체·secret은 전달하지 않았다. raw-helper → normalize → validate → 사람용 diff 검토 → 명시적 approval → atomic apply까지 완료했다. 신규 바디 **5개**, 기존 보강 **0개**로 canonical은 바디 **79→84**, 렌즈 **36 유지**, 전체 **115→120**이다. 신규 claim은 **39개**, source/value conflict는 **0건**이다. 승인 diff digest `9313b1d9ee7fb8d749abc9159bf3b92b5497170c5a97c511ef2662455994d93c`, approval ID `approval-1d8a5b3a62e1a884efa3690f0fbc63d853e8a6b05de1974a88dbe081a32ce453`, 최종 canonical SHA-256 `4b0a9bc760754742a4a930b9c76ee1c87d7b22954edaa217d4a3205c91ba3ed2`다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였다.
+
+| 제품 / ID | source | claim | 주요 승격값과 UNKNOWN |
+| --- | ---: | ---: | --- |
+| PowerShot SX740 HS / `canon-powershot-sx740-hs` | 2 | 12 | `kind: fixed`, `mount: null`; 실제 4.3–172mm / 35mm 환산 24–960mm, F3.3–6.9, 20.3MP, 4K 29.97p, 바디만 275g. 배터리·카드 포함 무게는 UNKNOWN. |
+| IXUS 285 HS A / `canon-ixus-285-hs-a` | 2 | 6 | `kind: fixed`, `mount: null`; 환산 25–300mm, 20.2MP. 공식 Asia 사양의 검정색 변형 146g은 전체 모델 대표 무게로 승격하지 않았다. 실제 초점거리·조리개·영상 fps·대표 무게는 UNKNOWN. |
+| EOS C400 / `canon-c400` | 2 | 5 | RF, 풀프레임 BSI stacked 센서, 일반 모드 6K RAW 59.94p, 바디만 1550g. 4K 120p·180p 특수/S&Q crop은 일반 녹화 최대로 합치지 않았다. 일반 사진용 화소·운영 무게·슬롯 수는 UNKNOWN. |
+| EOS R5 C / `canon-r5-c` | 3 | 10 | RF, 풀프레임 사진 45MP, 기계식/전자선막 12fps·전자식 20fps, 8K 60p는 **외부 전원 필요** 조건을 claim에 보존, 배터리+CFexpress 카드 포함 770g / 바디만 680g. |
+| EOS C70 / `canon-c70` | 2 | 6 | RF, Super 35mm, 일반 XF-AVC 4K DCI 59.94p, SD 계열 2슬롯, 바디만 1170g. 영상 모드별 화소를 대표 화소로 쓰지 않았고 운영 무게는 UNKNOWN. |
+
+고정렌즈 2종의 내장 렌즈는 `specs.fixedLens`에만 있고 별도 lens product를 만들지 않았다. 카메라 전체 무게와 내장 렌즈 무게를 합산하지 않는다. SX740은 실제/환산 초점거리를 구분했고, IXUS는 실제 초점거리를 추정하지 않았다. 현재 schema에 광학 줌 배율을 위한 고정렌즈 leaf가 없으므로 40x/12x는 canonical로 승격하지 않았다. 모든 신품·중고 가격과 미확인 스펙 leaf는 UNKNOWN이다. R5 C의 외부 전원 조건 및 C400/C70 일반 녹화와 S&Q 구분은 staging claim metadata에 남는다. 단일 `specs.video.max` 문자열만 소비하는 화면/추천 로직에는 이 조건이 직접 포함되지 않는 기존 표현 한계가 있어 후속 구조 검토가 필요하며 이번 batch에서 추천 엔진은 건드리지 않았다.
+
+| 제품 | worker input / output / total token | 채택한 검토 경고 |
+| --- | ---: | --- |
+| SX740 HS | 547 / 1,226 / 1,773 | 실제·환산 초점거리 및 바디/운영 무게 구분 |
+| IXUS 285 HS A | 510 / 338 / 848 | 검정색 변형 무게의 일반화 금지, 구형/지역 alias 사양 전용 금지 |
+| EOS C400 | 558 / 491 / 1,049 | 영상 모드별 화소·S&Q/일반 녹화 구분, 바디 무게 |
+| EOS R5 C | 526 / 421 / 947 | 8K 60p 외부 전원 조건, 셔터별 연사, 무게 기준 |
+| EOS C70 | 525 / 1,048 / 1,573 | 영상 모드별 화소와 S&Q 프레임율 분리 |
+
+총 worker **input 2,666 / output 3,524 / total 6,190 token**이다. SX740 task는 공용 worker lock sandbox 접근 때문에 API 호출 **이전** preflight에서 1회 실패했고, 허용된 공용 state 접근으로 같은 task ID의 첫 실제 호출이 성공했다. 실제 API 재시도·실패는 0건, 제품당 성공 호출 1회다. 사람 검토는 출시 상태/ID·alias·kind/mount 5개, 공식 source 11개와 claim 39개, variant/UNKNOWN/조건 및 diff 5건과 approval에 집중됐다. IXUS 146g 제외는 사람이 직접 판단했다. R5 C의 770g claim은 `conditions.weightBasis: battery-and-card`와 제품 `specs.weightBasis`가 일치해 통과했고, 동일 staging의 메모리 변형은 basis 누락 `WEIGHT_BASIS_REQUIRED`, invalid `INVALID_WEIGHT_BASIS`, mismatch `WEIGHT_BASIS_MISMATCH`로 validate 단계에서 모두 차단됐다. raw source 11개에는 raw-helper가 자동 생성한 실제 UTC ISO `accessedAt` `2026-09-30T02:28:24.071Z`~`2026-09-30T02:28:24.073Z`가 기록됐다.
+
+종료 시 Canon 공식 카드 29개 중 canonicalized **26개**, 출시된 일반 카메라 미처리 **2개**(EOS C300 MK III, EOS C500 MK2), 출시 예정 **1개**(EOS R8 Mark II)다. 마지막 잔여 batch를 진행할 수 있다. 가격·추천 엔진·UI·Experience DB 및 pipeline architecture는 변경하지 않았다.
+
+검증: 전체 테스트 **122/122**, Objective+Canon production 테스트 **80/80**, 새 Canon 004 테스트 **4/4**, canonical validation **120/120**, `pnpm build`, 관련 `node --check`, `git diff --check` 모두 통과했다. Build는 기존과 같은 500kB 초과 chunk 경고만 출력했다.
+
 ## Stage 4 Canon production batch 003 — 2026-09-30
 
 시작 시 working tree는 clean, canonical은 바디 74 / 렌즈 36 / 전체 110개였다. Canon Korea 공식 직접 운용 카메라 snapshot 29개와 batch 001~002 artifact·canonical을 대조한 결과 `released-current`이면서 `unprocessed`인 일반 카메라는 12개, `announced-upcoming`은 EOS R8 Mark II 1개다. 이번 batch에는 canonical에 없는 **EOS R5, EOS RP, EOS-1D X Mark III, PowerShot V10, EOS C50**을 선정했다. 고해상도 RF 미러리스, 소형 RF 미러리스, EF 플래그십 DSLR, 고정렌즈 브이로그 카메라, 직접 운용하는 RF Cinema EOS를 섞어 shutter/연사·무게 기준·고정렌즈의 촬영 모드별 화각·Cinema RAW/슬롯 조건을 검토한다. 공식 제품 페이지의 출시월은 각각 2020-07, 2019-03, 2020-02, 2023-06, 2025-12로 현재 모두 출시됐다. EOS R8 Mark II와 PTZ/원격 설치형은 제외했다.

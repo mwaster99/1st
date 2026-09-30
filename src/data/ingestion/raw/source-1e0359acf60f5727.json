@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "EOS R5 C | Canon U.S.A. official",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS R5 C objective specifications",
+  "accessedAt": "2026-09-30T02:28:24.073Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor Size 36×24 mm",
+      "value": "Full-frame",
+      "unit": null
+    },
+    {
+      "field": "Effective Pixels",
+      "value": 45,
+      "unit": "MP"
+    },
+    {
+      "field": "Continuous Shooting mechanical/EFCS",
+      "value": 12,
+      "unit": "fps"
+    },
+    {
+      "field": "Continuous Shooting electronic",
+      "value": 20,
+      "unit": "fps"
+    },
+    {
+      "field": "Dimensions W×H×D",
+      "value": [
+        142,
+        101,
+        111
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Weight battery + CFexpress without body cap",
+      "value": 770,
+      "unit": "g"
+    },
+    {
+      "field": "Weight battery + CFexpress without body cap",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Weight body only without body cap",
+      "value": 680,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-r5-c",
+      "manufacturerModelCode": "EOS R5 C",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS R5 C",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS R5 C",
+        "aliases": [
+          "Canon EOS R5 C"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "Full-frame",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Sensor Size 36×24 mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 45,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Effective Pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 2,
+          "rawValue": 12,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Continuous Shooting mechanical/EFCS"
+          },
+          "conditions": {
+            "shutter": "mechanical-or-electronic-first-curtain"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 3,
+          "rawValue": 20,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Continuous Shooting electronic"
+          },
+          "conditions": {
+            "shutter": "electronic"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 4,
+          "rawValue": [
+            142,
+            101,
+            111
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Dimensions W×H×D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 770,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Weight battery + CFexpress without body cap"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "card": "CFexpress",
+            "bodyCap": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 6,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Weight battery + CFexpress without body cap"
+          },
+          "conditions": {
+            "card": "CFexpress",
+            "bodyCap": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 7,
+          "rawValue": 680,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Weight body only without body cap"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "bodyCap": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-004-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "285afa3e8cae90bcfd26b55f7e625c441bdbf18aea298cb509c9c80d8ccb6622",
+  "sourceId": "source-1e0359acf60f5727"
+}

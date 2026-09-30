@@ -1,0 +1,1488 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-004",
+  "canonicalBaselineDigest": "e615539cfea9e411c18dcc51833f879f91bfe0d06861da29311554720cc7aea8",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-004",
+      "productId": "canon-powershot-sx740-hs",
+      "productName": "캐논 PowerShot SX740 HS",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-powershot-sx740-hs",
+        "name": "캐논 PowerShot SX740 HS",
+        "brand": "Canon",
+        "series": "PowerShot SX",
+        "model": "PowerShot SX740 HS",
+        "aliases": [
+          "Canon PowerShot SX740 HS",
+          "powershot sx740 hs",
+          "캐논 powershot sx740 hs"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.3-inch CMOS",
+            "megapixels": 20.3,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 275,
+          "dimensions": [
+            110.1,
+            63.8,
+            39.9
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 29.97p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2018-08",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 6.9,
+              "wide": 3.3
+            },
+            "equivalentFocal": {
+              "max": 960,
+              "min": 24
+            },
+            "focal": {
+              "max": 172,
+              "min": 4.3
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/D183A043BEEA48965B326D7F7EF634A3?productNm=PowerShot_SX740_HS",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-526fcf420e1231ac",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-98969f62013bc707df75",
+          "sourceId": "source-526fcf420e1231ac",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-98969f62013bc707df75",
+        "sourceId": "source-526fcf420e1231ac",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "PowerShot SX740 HS"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-004-human-review",
+        "source": {
+          "sourceId": "source-526fcf420e1231ac",
+          "url": "https://kr.canon/product/content/detail/D183A043BEEA48965B326D7F7EF634A3?productNm=PowerShot_SX740_HS",
+          "documentTitle": "PowerShot SX740 HS | Canon Korea official",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 275,
+          "unit": "g",
+          "claimId": "claim-04e68b2108736e6a2326",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight body only"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            110.1,
+            63.8,
+            39.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-c7e25f2830b39a7c4618",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Dimensions W×H×D"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.9,
+          "unit": null,
+          "claimId": "claim-97743308d790f4343b2b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Maximum Aperture T"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3.3,
+          "unit": null,
+          "claimId": "claim-a569391096d0a5b3cb1c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Maximum Aperture W"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 960,
+          "unit": null,
+          "claimId": "claim-54bc275f107dd1c4e289",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Lens / 35mm film equivalent T"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-295e108c85f17a9e1fcc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Lens / 35mm film equivalent W"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 172,
+          "unit": "mm",
+          "claimId": "claim-4b21af6727f64f28fd8d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Lens / Focal Length T"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.3,
+          "unit": "mm",
+          "claimId": "claim-a394610d3dbbb1c9fce5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Lens / Focal Length W"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2018-08",
+          "unit": null,
+          "claimId": "claim-5733ce5a24797bca73a4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-526fcf420e1231ac",
+            "url": "https://kr.canon/product/content/detail/D183A043BEEA48965B326D7F7EF634A3?productNm=PowerShot_SX740_HS",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.3-inch CMOS",
+          "unit": null,
+          "claimId": "claim-9c4c2a4449bbcb76d749",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Image Capture Device / Type"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.3,
+          "unit": "MP",
+          "claimId": "claim-19ae4a2207f339599fd6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Effective Pixels"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 29.97p",
+          "unit": null,
+          "claimId": "claim-2f95e0d1ad7f971dea59",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4c9ce37bf4721273",
+            "url": "https://www.usa.canon.com/support/p/powershot-sx740-hs",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Video 3840×2160 29.97fps"
+            },
+            "conditions": {
+              "mode": "normal 4K",
+              "frameRateSystem": "NTSC"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-004",
+      "productId": "canon-ixus-285-hs-a",
+      "productName": "캐논 IXUS 285 HS A",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-ixus-285-hs-a",
+        "name": "캐논 IXUS 285 HS A",
+        "brand": "Canon",
+        "series": "IXUS",
+        "model": "IXUS 285 HS A",
+        "aliases": [
+          "Canon IXUS 285 HS A",
+          "ixus 285 hs a",
+          "캐논 ixus 285 hs a"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.3-inch",
+            "megapixels": 20.2,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            99.6,
+            58,
+            22.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2025-10",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "equivalentFocal": {
+              "max": 300,
+              "min": 25
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/F91CEBF0F62EF930305A16431D42144F?productNm=IXUS_285_HS_A",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-4693c442cd61e154",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-66f2db7f39b843aef048",
+          "sourceId": "source-4693c442cd61e154",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-66f2db7f39b843aef048",
+        "sourceId": "source-4693c442cd61e154",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "IXUS 285 HS A"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-004-human-review",
+        "source": {
+          "sourceId": "source-4693c442cd61e154",
+          "url": "https://kr.canon/product/content/detail/F91CEBF0F62EF930305A16431D42144F?productNm=IXUS_285_HS_A",
+          "documentTitle": "IXUS 285 HS A | Canon Korea official",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            99.6,
+            58,
+            22.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-fa5f76f795db21502626",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9ddd5582e39a6f58",
+            "url": "https://asia.canon/en/consumer/ixus-285-hs-a/black/specification",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Dimensions excluding protrusions W×H×D"
+            },
+            "conditions": {
+              "variant": "black",
+              "excludesProtrusions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 300,
+          "unit": null,
+          "claimId": "claim-5e0a9edd8fcbf4c64bc6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9ddd5582e39a6f58",
+            "url": "https://asia.canon/en/consumer/ixus-285-hs-a/black/specification",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Focal Length (35mm Equivalent) tele"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": null,
+          "claimId": "claim-0bad70933bf21a5c4dca",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9ddd5582e39a6f58",
+            "url": "https://asia.canon/en/consumer/ixus-285-hs-a/black/specification",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Focal Length (35mm Equivalent) wide"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2025-10",
+          "unit": null,
+          "claimId": "claim-b73b3dad20fa75f53f8b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-4693c442cd61e154",
+            "url": "https://kr.canon/product/content/detail/F91CEBF0F62EF930305A16431D42144F?productNm=IXUS_285_HS_A",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.3-inch",
+          "unit": null,
+          "claimId": "claim-1fe9707e2dae8f9f263a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9ddd5582e39a6f58",
+            "url": "https://asia.canon/en/consumer/ixus-285-hs-a/black/specification",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Sensor Size"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.2,
+          "unit": "MP",
+          "claimId": "claim-7c67322ae7d04949eacd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9ddd5582e39a6f58",
+            "url": "https://asia.canon/en/consumer/ixus-285-hs-a/black/specification",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Effective Pixels"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-004",
+      "productId": "canon-c400",
+      "productName": "캐논 EOS C400",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-c400",
+        "name": "캐논 EOS C400",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C400",
+        "aliases": [
+          "Canon EOS C400",
+          "eos c400",
+          "캐논 eos c400"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "Full-frame",
+            "megapixels": null,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 1550,
+          "dimensions": [
+            142,
+            135,
+            135
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "6K RAW 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2024-09",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/5A3DEC837DDE2D6FD9023B5802E22F5F?productNm=EOS_C400",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-04f7b2c5eb94062b",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-22425c97740cfb087a35",
+          "sourceId": "source-04f7b2c5eb94062b",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-22425c97740cfb087a35",
+        "sourceId": "source-04f7b2c5eb94062b",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS C400"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-004-human-review",
+        "source": {
+          "sourceId": "source-04f7b2c5eb94062b",
+          "url": "https://kr.canon/product/content/detail/5A3DEC837DDE2D6FD9023B5802E22F5F?productNm=EOS_C400",
+          "documentTitle": "EOS C400 | Canon Korea official",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1550,
+          "unit": "g",
+          "claimId": "claim-f38ebd4d37807caa2b5a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a1ab0ce51258a9ee",
+            "url": "https://www.usa.canon.com/support/p/eos-c400",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Main Body Weight"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            142,
+            135,
+            135
+          ],
+          "unit": "mm",
+          "claimId": "claim-28a06f01a6bfb2ca7a95",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a1ab0ce51258a9ee",
+            "url": "https://www.usa.canon.com/support/p/eos-c400",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Dimensions W×H×D"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2024-09",
+          "unit": null,
+          "claimId": "claim-c2871ae6139cc0dd2bc7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-04f7b2c5eb94062b",
+            "url": "https://kr.canon/product/content/detail/5A3DEC837DDE2D6FD9023B5802E22F5F?productNm=EOS_C400",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Full-frame",
+          "unit": null,
+          "claimId": "claim-c61ed61291d85de63693",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a1ab0ce51258a9ee",
+            "url": "https://www.usa.canon.com/support/p/eos-c400",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Sensor / 6K full-frame BSI stacked CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "6K RAW 59.94p",
+          "unit": null,
+          "claimId": "claim-8668a8a013d1d5bc3baa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a1ab0ce51258a9ee",
+            "url": "https://www.usa.canon.com/support/p/eos-c400",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Frame Rate / 6K 59.94P RAW"
+            },
+            "conditions": {
+              "recording": "normal",
+              "format": "RAW",
+              "sensorMode": "full-frame"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-004",
+      "productId": "canon-r5-c",
+      "productName": "캐논 EOS R5 C",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-r5-c",
+        "name": "캐논 EOS R5 C",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS R5 C",
+        "aliases": [
+          "Canon EOS R5 C",
+          "eos r5 c",
+          "캐논 eos r5 c"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "Full-frame",
+            "megapixels": 45,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 770,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 680,
+          "dimensions": [
+            142,
+            101,
+            111
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "8K 60p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2022-03",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxElectronicFps": 20,
+            "maxMechanicalFps": 12
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/FAD905E34DA7D4C66C51170C2BAD3513?productNm=EOS_R5_C",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-12a0eb7eab21b074",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-d959f2ce76b6a72c3c04",
+          "sourceId": "source-12a0eb7eab21b074",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-d959f2ce76b6a72c3c04",
+        "sourceId": "source-12a0eb7eab21b074",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS R5 C"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-004-human-review",
+        "source": {
+          "sourceId": "source-12a0eb7eab21b074",
+          "url": "https://kr.canon/product/content/detail/FAD905E34DA7D4C66C51170C2BAD3513?productNm=EOS_R5_C",
+          "documentTitle": "EOS R5 C | Canon Korea official",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 680,
+          "unit": "g",
+          "claimId": "claim-af326b26afd4ad5a5f81",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight body only without body cap"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "bodyCap": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "fps",
+          "claimId": "claim-1383f853c1c9961bd2c5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Continuous Shooting electronic"
+            },
+            "conditions": {
+              "shutter": "electronic"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 12,
+          "unit": "fps",
+          "claimId": "claim-b82d6be67b4e96ea8990",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Continuous Shooting mechanical/EFCS"
+            },
+            "conditions": {
+              "shutter": "mechanical-or-electronic-first-curtain"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            142,
+            101,
+            111
+          ],
+          "unit": "mm",
+          "claimId": "claim-bd921e7ec0690ebf2c3f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Dimensions W×H×D"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2022-03",
+          "unit": null,
+          "claimId": "claim-d6f7de39cf90d52742f6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-12a0eb7eab21b074",
+            "url": "https://kr.canon/product/content/detail/FAD905E34DA7D4C66C51170C2BAD3513?productNm=EOS_R5_C",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Full-frame",
+          "unit": null,
+          "claimId": "claim-418ea7835e20194a1a07",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Sensor Size 36×24 mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45,
+          "unit": "MP",
+          "claimId": "claim-3156002fabe12c1cf40a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Effective Pixels"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8K 60p",
+          "unit": null,
+          "claimId": "claim-ed45edf4931fdf56aabb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa8b0ce9fe65409b",
+            "url": "https://sfcc-service.canon-europe.com/5077C003/5077C003.html",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Details / 8K 30P (60P with external power)"
+            },
+            "conditions": {
+              "externalPowerRequired": true,
+              "recording": "video",
+              "normalPowerMax": "8K 30p"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 770,
+          "unit": "g",
+          "claimId": "claim-70f7673b4dd02ca17292",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight battery + CFexpress without body cap"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "card": "CFexpress",
+              "bodyCap": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-d508cec7dae825757e29",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1e0359acf60f5727",
+            "url": "https://www.usa.canon.com/support/p/eos-r5-c",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight battery + CFexpress without body cap"
+            },
+            "conditions": {
+              "card": "CFexpress",
+              "bodyCap": false
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-004",
+      "productId": "canon-c70",
+      "productName": "캐논 EOS C70",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-c70",
+        "name": "캐논 EOS C70",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C70",
+        "aliases": [
+          "Canon EOS C70",
+          "eos c70",
+          "캐논 eos c70"
+        ],
+        "mount": "Canon RF",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "Super 35mm",
+            "megapixels": null,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 1170,
+          "dimensions": [
+            130.2,
+            160,
+            115.9
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K DCI 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2020-11",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/B87BAD89BAB79A84DD42CB023C4DBAD1?productNm=EOS_C70",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-95470e574ec08c09",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-ddfcc97e049e9eeec53e",
+          "sourceId": "source-95470e574ec08c09",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-ddfcc97e049e9eeec53e",
+        "sourceId": "source-95470e574ec08c09",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS C70"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-004-human-review",
+        "source": {
+          "sourceId": "source-95470e574ec08c09",
+          "url": "https://kr.canon/product/content/detail/B87BAD89BAB79A84DD42CB023C4DBAD1?productNm=EOS_C70",
+          "documentTitle": "EOS C70 | Canon Korea official",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1170,
+          "unit": "g",
+          "claimId": "claim-73b7e82a220b5fe5e28a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-61e3057c1dc069fc",
+            "url": "https://www.usa.canon.com/support/p/eos-c70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "RF camera body weight 1.17kg"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": []
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-ba9c120f65c37b09bc96",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-61e3057c1dc069fc",
+            "url": "https://www.usa.canon.com/support/p/eos-c70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Media / two SD card slots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            130.2,
+            160,
+            115.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-d0d80d576dbd69e081fb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-61e3057c1dc069fc",
+            "url": "https://www.usa.canon.com/support/p/eos-c70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Body-only dimensions W×H×D"
+            },
+            "conditions": {
+              "excludes": "cable and grip belt"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2020-11",
+          "unit": null,
+          "claimId": "claim-46c1a7afff6157df03aa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-95470e574ec08c09",
+            "url": "https://kr.canon/product/content/detail/B87BAD89BAB79A84DD42CB023C4DBAD1?productNm=EOS_C70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Super 35mm",
+          "unit": null,
+          "claimId": "claim-6d6cc3dc1a0d5ec9ade6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-61e3057c1dc069fc",
+            "url": "https://www.usa.canon.com/support/p/eos-c70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Sensor Size / Super 35mm"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K DCI 59.94p",
+          "unit": null,
+          "claimId": "claim-255f1e62ec0141d6a1c5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-61e3057c1dc069fc",
+            "url": "https://www.usa.canon.com/support/p/eos-c70",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "XF-AVC 4096×2160 59.94p"
+            },
+            "conditions": {
+              "recording": "normal",
+              "format": "XF-AVC",
+              "sensorMode": "Super 35mm"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-004",
+  "itemKey": "canon-eos-c70",
+  "manufacturerModelCode": "EOS C70",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C70",
+    "productId": "canon-c70",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-ddfcc97e049e9eeec53e",
+    "sourceId": "source-95470e574ec08c09",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C70"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-004-human-review"
+  },
+  "product": {
+    "id": "canon-c70",
+    "name": "캐논 EOS C70",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C70",
+    "aliases": [
+      "Canon EOS C70",
+      "eos c70",
+      "캐논 eos c70"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 1170,
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          }
+        ]
+      },
+      "dimensions": [
+        130.2,
+        160,
+        115.9
+      ],
+      "releaseDate": "2020-11",
+      "sensor": {
+        "format": "Super 35mm"
+      },
+      "video": {
+        "max": "4K DCI 59.94p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-95470e574ec08c09",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/B87BAD89BAB79A84DD42CB023C4DBAD1?productNm=EOS_C70",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C70 | Canon Korea official",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T02:28:24.073Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "fe8ddd5d26bfd7850c289dd4ee3a28cf1eca9b09119dcf2bcdd766d18eec42d4"
+  },
+  "sources": [
+    {
+      "sourceId": "source-61e3057c1dc069fc",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c70",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "EOS C70 | Canon U.S.A. official",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T02:28:24.073Z",
+      "evidenceScope": "Official EOS C70 objective specifications",
+      "contentDigest": "6bf6a4a5102a9be5dd759e4eff5e3101f1f3c5a670bedff711daaa5b546e6a2c"
+    },
+    {
+      "sourceId": "source-95470e574ec08c09",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/B87BAD89BAB79A84DD42CB023C4DBAD1?productNm=EOS_C70",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C70 | Canon Korea official",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:28:24.073Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "fe8ddd5d26bfd7850c289dd4ee3a28cf1eca9b09119dcf2bcdd766d18eec42d4"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c70",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1170,
+      "unit": "g",
+      "rawValue": 1170,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-61e3057c1dc069fc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "RF camera body weight 1.17kg"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-73b7e82a220b5fe5e28a"
+    },
+    {
+      "productId": "canon-c70",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": []
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-61e3057c1dc069fc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Media / two SD card slots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-ba9c120f65c37b09bc96"
+    },
+    {
+      "productId": "canon-c70",
+      "path": "specs.dimensions",
+      "value": [
+        130.2,
+        160,
+        115.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        130.2,
+        160,
+        115.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-61e3057c1dc069fc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Body-only dimensions W×H×D"
+      },
+      "conditions": {
+        "excludes": "cable and grip belt"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-d0d80d576dbd69e081fb"
+    },
+    {
+      "productId": "canon-c70",
+      "path": "specs.releaseDate",
+      "value": "2020-11",
+      "unit": null,
+      "rawValue": "2020-11",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-95470e574ec08c09",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-46c1a7afff6157df03aa"
+    },
+    {
+      "productId": "canon-c70",
+      "path": "specs.sensor.format",
+      "value": "Super 35mm",
+      "unit": null,
+      "rawValue": "Super 35mm",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-61e3057c1dc069fc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Sensor Size / Super 35mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-6d6cc3dc1a0d5ec9ade6"
+    },
+    {
+      "productId": "canon-c70",
+      "path": "specs.video.max",
+      "value": "4K DCI 59.94p",
+      "unit": null,
+      "rawValue": "4K DCI 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-61e3057c1dc069fc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "XF-AVC 4096×2160 59.94p"
+      },
+      "conditions": {
+        "recording": "normal",
+        "format": "XF-AVC",
+        "sensorMode": "Super 35mm"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-004-human-review",
+      "claimId": "claim-255f1e62ec0141d6a1c5"
+    }
+  ]
+}
