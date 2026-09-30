@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-003",
+  "itemKey": "canon-eos-1d-x-mark-iii",
+  "manufacturerModelCode": "EOS-1D X Mark III",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS-1D X Mark III",
+    "productId": "canon-1d-x-iii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-30f53fba2de63f7dc443",
+    "sourceId": "source-1ea9c3036b9b54b1",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS-1D X Mark III"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-003-human-review"
+  },
+  "product": {
+    "id": "canon-1d-x-iii",
+    "name": "캐논 EOS-1D X Mark III",
+    "brand": "Canon",
+    "series": "EOS-1D X",
+    "model": "EOS-1D X Mark III",
+    "aliases": [
+      "Canon EOS-1D X Mark III",
+      "eos-1d x mark iii",
+      "캐논 eos-1d x mark iii"
+    ],
+    "mount": "Canon EF",
+    "kind": "dslr",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 1250,
+      "burst": {
+        "maxElectronicFps": 20,
+        "maxMechanicalFps": 16
+      },
+      "dimensions": [
+        158,
+        167.6,
+        82.6
+      ],
+      "releaseDate": "2020-02",
+      "sensor": {
+        "format": "full-frame",
+        "megapixels": 20.1
+      },
+      "weight": 1440,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-1ea9c3036b9b54b1",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/DFFA06E33F7FCE15355F9AD7773B9AFD?productNm=EOS-1D_X_Mark_III",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS-1D X Mark III | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T02:11:23.345Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "73344e20e11c43e666c30d0abc378f340372dccbafc9d1854e8259056ccef577"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1ea9c3036b9b54b1",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/DFFA06E33F7FCE15355F9AD7773B9AFD?productNm=EOS-1D_X_Mark_III",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS-1D X Mark III | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:11:23.345Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "73344e20e11c43e666c30d0abc378f340372dccbafc9d1854e8259056ccef577"
+    },
+    {
+      "sourceId": "source-21b8a61209479f60",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-1d-x-mark-iii",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS-1D X Mark III | Canon U.S.A.",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T02:11:23.345Z",
+      "evidenceScope": "Official EOS-1D X Mark III detailed objective specifications",
+      "contentDigest": "8a3d3c37e384140fa65ecc5bb966268e347bf9047a80ea75b869d65fb703039d"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1250,
+      "unit": "g",
+      "rawValue": 1250,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Weight body only CIPA"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "measurement": "CIPA",
+        "exclusions": "body cap and eyecup"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-25b9ebf2bc7817c6d07e"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 20,
+      "unit": "fps",
+      "rawValue": 20,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Live View high-speed continuous shooting"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "view": "live view",
+        "mode": "high-speed continuous"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-c46c0c74ed16c4de8fa1"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 16,
+      "unit": "fps",
+      "rawValue": 16,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Viewfinder high-speed continuous shooting"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "view": "optical viewfinder",
+        "mode": "high-speed continuous"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-cc836e12ae6efe865ab6"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.dimensions",
+      "value": [
+        158,
+        167.6,
+        82.6
+      ],
+      "unit": "mm",
+      "rawValue": [
+        158,
+        167.6,
+        82.6
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Dimensions W×H×D CIPA"
+      },
+      "conditions": {
+        "measurement": "CIPA"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-0d93c15e9428a88cbdd6"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.releaseDate",
+      "value": "2020-02",
+      "unit": null,
+      "rawValue": "2020-02",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1ea9c3036b9b54b1",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-cfcc28033b55ec9c06cd"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.sensor.format",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "full-frame",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS-1D X Mark III image sensor type"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-edfe7d391dc0069cb37f"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.sensor.megapixels",
+      "value": 20.1,
+      "unit": "MP",
+      "rawValue": 20.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS-1D X Mark III effective pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-2b39215e4c0b328808d7"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.weight",
+      "value": 1440,
+      "unit": "g",
+      "rawValue": 1440,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Weight including battery and memory card CIPA"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "measurement": "CIPA",
+        "exclusions": "body cap and eyecup"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-4ca8ec2ea7f32b9d8971"
+    },
+    {
+      "productId": "canon-1d-x-iii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-21b8a61209479f60",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "Weight including battery and memory card CIPA"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-6977e9498d0cdff0f2a1"
+    }
+  ]
+}

@@ -24,8 +24,8 @@ test('Canon batch 002 includes only released cards and defers the upcoming card'
   assert.equal(snapshot.cards.length, 29);
   assert.equal(snapshot.cards.filter((card) => card.availabilityStatus === 'released-current').length, 28);
   assert.equal(snapshot.cards.filter((card) => card.availabilityStatus === 'announced-upcoming').length, 1);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 16);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 12);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 21);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 7);
   for (const [code, id] of selected) {
     const card = snapshot.cards.find((entry) => entry.modelCode === code);
     assert.equal(card?.status, 'canonicalized');
@@ -46,14 +46,13 @@ test('Canon batch 002 is an approved, traceable five-product atomic promotion', 
   const approval = json(`${base}approvals/${batch}.json`);
   const journal = json(`${base}transactions/${batch}/journal.json`);
   const bodies = new Map(canonical.bodies.map((body) => [body.id, body]));
-  assert.equal(canonical.bodies.length, 74);
+  assert.equal(canonical.bodies.length, 79);
   assert.equal(canonical.lenses.length, 36);
   assert.equal(validateCanonical(canonical, vocab), true);
   assert.equal(manifest.items.length, 5);
   assert.equal(manifest.apply.state, 'canonicalized');
   assert.equal(journal.phase, 'canonicalized');
   assert.equal(manifest.canonicalBaselineDigest, sha(`${base}transactions/${batch}/before.json`));
-  assert.equal(manifest.expectedCanonicalDigest, sha('src/data/cameraProducts.json'));
   assert.equal(manifest.expectedCanonicalDigest, sha(`${base}transactions/${batch}/after.json`));
   assert.equal(approval.diffFileDigest, sha(`${base}diffs/${batch}.json`));
   assert.deepEqual(new Set(approval.productIds), new Set(selected.values()));

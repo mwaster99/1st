@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-1d-x-mark-iii",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "Canon Support for EOS-1D X Mark III | Canon U.S.A.",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS-1D X Mark III detailed objective specifications",
+  "accessedAt": "2026-09-30T02:11:23.345Z",
+  "evidenceExcerpt": [
+    {
+      "field": "EOS-1D X Mark III image sensor type",
+      "value": "full-frame",
+      "unit": null
+    },
+    {
+      "field": "EOS-1D X Mark III effective pixels",
+      "value": 20.1,
+      "unit": "MP"
+    },
+    {
+      "field": "Viewfinder high-speed continuous shooting",
+      "value": 16,
+      "unit": "fps"
+    },
+    {
+      "field": "Live View high-speed continuous shooting",
+      "value": 20,
+      "unit": "fps"
+    },
+    {
+      "field": "Dimensions W×H×D CIPA",
+      "value": [
+        158,
+        167.6,
+        82.6
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Weight including battery and memory card CIPA",
+      "value": 1440,
+      "unit": "g"
+    },
+    {
+      "field": "Weight including battery and memory card CIPA",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Weight body only CIPA",
+      "value": 1250,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-1d-x-mark-iii",
+      "manufacturerModelCode": "EOS-1D X Mark III",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS-1D X Mark III",
+        "brand": "Canon",
+        "series": "EOS-1D X",
+        "model": "EOS-1D X Mark III",
+        "aliases": [
+          "Canon EOS-1D X Mark III"
+        ],
+        "mount": "EF mount",
+        "kind": "dslr",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "full-frame",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "EOS-1D X Mark III image sensor type"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "EOS-1D X Mark III effective pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 2,
+          "rawValue": 16,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Viewfinder high-speed continuous shooting"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "view": "optical viewfinder",
+            "mode": "high-speed continuous"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 3,
+          "rawValue": 20,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Live View high-speed continuous shooting"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "view": "live view",
+            "mode": "high-speed continuous"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 4,
+          "rawValue": [
+            158,
+            167.6,
+            82.6
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Dimensions W×H×D CIPA"
+          },
+          "conditions": {
+            "measurement": "CIPA"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 1440,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Weight including battery and memory card CIPA"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "measurement": "CIPA",
+            "exclusions": "body cap and eyecup"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 6,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Weight including battery and memory card CIPA"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 7,
+          "rawValue": 1250,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official technical specifications",
+            "row": "Weight body only CIPA"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "measurement": "CIPA",
+            "exclusions": "body cap and eyecup"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "8a3d3c37e384140fa65ecc5bb966268e347bf9047a80ea75b869d65fb703039d",
+  "sourceId": "source-21b8a61209479f60"
+}

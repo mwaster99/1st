@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+  "publisher": "Canon Korea",
+  "documentTitle": "R BODY | RF Lens World | Canon Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official EOS RP detailed objective specifications",
+  "accessedAt": "2026-09-30T02:11:23.345Z",
+  "evidenceExcerpt": [
+    {
+      "field": "EOS RP 풀프레임 CMOS",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "EOS RP 유효 화소 수 RF/EF 렌즈 사용 시",
+      "value": 26.2,
+      "unit": "MP"
+    },
+    {
+      "field": "EOS RP 크기 W×H×D",
+      "value": [
+        132.5,
+        85,
+        70
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "EOS RP 무게 배터리 및 카드 포함",
+      "value": 485,
+      "unit": "g"
+    },
+    {
+      "field": "EOS RP 무게 배터리 및 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "EOS RP 무게 바디",
+      "value": 440,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-rp",
+      "manufacturerModelCode": "EOS RP",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS RP",
+        "brand": "Canon",
+        "series": "EOS R",
+        "model": "EOS RP",
+        "aliases": [
+          "Canon EOS RP"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 풀프레임 CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 26.2,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 유효 화소 수 RF/EF 렌즈 사용 시"
+          },
+          "conditions": {
+            "lens": "RF/EF 렌즈 사용 시"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 2,
+          "rawValue": [
+            132.5,
+            85,
+            70
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 크기 W×H×D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 485,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 무게 배터리 및 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 무게 배터리 및 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 440,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS RP 무게 바디"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-003-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "e1e598fdc8ddcdf2c87b87d757acd9e77d65b8df2ffd6ae6c81bfde8bedcd3a5",
+  "sourceId": "source-0c5caf6cec1e2ded"
+}

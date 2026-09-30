@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-003",
+  "scope": "Canon Korea released/current direct-operated cameras: EOS R5, EOS RP, EOS-1D X Mark III, PowerShot V10, EOS C50",
+  "tier": 1,
+  "baselineCommit": "915d750",
+  "canonicalBaselineDigest": "ebea608a0893ba0a4f35c2628722d501d5772f2aad385d740600a33ffe925e36",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "canon-eos-r5",
+      "productId": "canon-r5",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-18ebec5b15e7645f",
+        "source-05ceba7593d6988b"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "e1b1445185ef01ead18cfc36cb6d0ff12e947b4340ab4012959a65eb797a19f6",
+        "8af57393cce1952a13c5f533133223a5251b5b1169e82e12d15c3b0545d5a038"
+      ],
+      "stagingDigest": "7a3953111605bef212602362a42e15eabcead2084afc30cfb23c41cd0202e963",
+      "diffDigest": "fca088613ac126f0d3a08981c76fa93e0b11fe43d367ef7b33b029b832ef238f",
+      "updatedAt": "2026-09-30T02:12:43.367Z"
+    },
+    {
+      "itemKey": "canon-eos-rp",
+      "productId": "canon-rp",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-8e2d0f9dc2580c0f",
+        "source-0c5caf6cec1e2ded"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "ce658e4610b9bd414c0699eec27613025e555d65bfd24a16bc5e1cbc891205a2",
+        "387ef9ae32078219b14c559d130bba2b23fc4e24caabd8c79148ef430f296362"
+      ],
+      "stagingDigest": "a4c77aeb55c9ba9a6054a2a27dcb092a69e59ec73e8c1f0b8cb361fc61f57221",
+      "diffDigest": "fca088613ac126f0d3a08981c76fa93e0b11fe43d367ef7b33b029b832ef238f",
+      "updatedAt": "2026-09-30T02:12:43.367Z"
+    },
+    {
+      "itemKey": "canon-eos-1d-x-mark-iii",
+      "productId": "canon-1d-x-iii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-1ea9c3036b9b54b1",
+        "source-21b8a61209479f60"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "8ed5577fa954a53ffd152b340b30b354c546adbdbecb8d41336e8b64d7bb2cd0",
+        "519b6c0262902d92260bbb23ed39d03cb44d1ebbe73d133064b97fe8d4271c06"
+      ],
+      "stagingDigest": "991b3e3370c418e0e0b9f1685ab245ed21a853b39c311dcf3854ce25f64d8d1b",
+      "diffDigest": "fca088613ac126f0d3a08981c76fa93e0b11fe43d367ef7b33b029b832ef238f",
+      "updatedAt": "2026-09-30T02:12:43.367Z"
+    },
+    {
+      "itemKey": "canon-powershot-v10",
+      "productId": "canon-powershot-v10",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-ac8c8335a539a2c0",
+        "source-8b3b1a81b09ee48d"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "bae03bfcfa0d72d8e52b85ba50e56aa0c4b16a138f038923c90aaaa93af491b4",
+        "1f97c3e184faea779693d9603352feaf941c65dcd94e017d3c764130fbb1f3a0"
+      ],
+      "stagingDigest": "7768c93e080c532193c938812251b1f89d0d5524d7bc07c6ee683f547773f384",
+      "diffDigest": "fca088613ac126f0d3a08981c76fa93e0b11fe43d367ef7b33b029b832ef238f",
+      "updatedAt": "2026-09-30T02:12:43.367Z"
+    },
+    {
+      "itemKey": "canon-eos-c50",
+      "productId": "canon-c50",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-904e65e561685514",
+        "source-8e4716ae42395959"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "a3d1731ca614e71a085eb60a0053601892332d1b1ddf2cc357d68c356953a8dc",
+        "2e5e17ebd0c81a547c4382922ada171586e4332c87a7faee5a8b7fe91c6d1f21"
+      ],
+      "stagingDigest": "9a7ee33b66c3aa9998a778b30b6e5fb3ad1794c6eb9bd7fdd72b23f9e51f061f",
+      "diffDigest": "fca088613ac126f0d3a08981c76fa93e0b11fe43d367ef7b33b029b832ef238f",
+      "updatedAt": "2026-09-30T02:12:43.367Z"
+    }
+  ],
+  "updatedAt": "2026-09-30T02:12:43.367Z",
+  "expectedCanonicalDigest": "e615539cfea9e411c18dcc51833f879f91bfe0d06861da29311554720cc7aea8",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-2a0bd6303a1ae4a570cff496e0d94e1d390da642f0bd6f41c6d069a38fc3cba9",
+    "completedAt": "2026-09-30T02:12:43.367Z",
+    "transaction": "transactions/production-canon-bodies-003"
+  }
+}

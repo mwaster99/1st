@@ -23,8 +23,8 @@ test('Canon Korea gallery snapshot tracks every direct-operated camera card and 
   }
   assert.equal(new Set(snapshot.cards.map((card) => card.productUrl)).size, 29);
   assert.equal(new Set(snapshot.cards.map((card) => card.modelCode)).size, 29);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 16);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed').length, 13);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 21);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed').length, 8);
   for (const card of snapshot.cards) {
     assert.ok(card.productUrl.startsWith('https://kr.canon/'));
     if (card.status === 'canonicalized') assert.ok(byId.has(card.canonicalId), card.name);

@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-003",
+  "itemKey": "canon-eos-r5",
+  "manufacturerModelCode": "EOS R5",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS R5",
+    "productId": "canon-r5",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b5df6463e0eda10d755a",
+    "sourceId": "source-18ebec5b15e7645f",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS R5"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-003-human-review"
+  },
+  "product": {
+    "id": "canon-r5",
+    "name": "캐논 EOS R5",
+    "brand": "Canon",
+    "series": "EOS R",
+    "model": "EOS R5",
+    "aliases": [
+      "Canon EOS R5",
+      "eos r5",
+      "캐논 eos r5"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 650,
+      "burst": {
+        "maxElectronicFps": 20,
+        "maxMechanicalFps": 12
+      },
+      "dimensions": [
+        138.5,
+        97.5,
+        88
+      ],
+      "releaseDate": "2020-07",
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 45
+      },
+      "video": {
+        "max": "8K DCI 29.97p"
+      },
+      "weight": 738,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-18ebec5b15e7645f",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/F721ED857A0424EF20A06DB056371273?productNm=EOS_R5",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS R5 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T02:11:23.344Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "e0e91f02e320b7a96f077d6efd943987b8c12a311fea0b7cb7beba2326f92d9f"
+  },
+  "sources": [
+    {
+      "sourceId": "source-05ceba7593d6988b",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+      "publisher": "Canon Korea",
+      "documentTitle": "R BODY | RF Lens World | Canon Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:11:23.344Z",
+      "evidenceScope": "Official EOS R5 detailed objective specifications",
+      "contentDigest": "28585b6664ac67bb0fafdc8acc88c9e5a065ca3517dbf11bd4bee4e9b80c77ca"
+    },
+    {
+      "sourceId": "source-18ebec5b15e7645f",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/F721ED857A0424EF20A06DB056371273?productNm=EOS_R5",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS R5 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:11:23.344Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "e0e91f02e320b7a96f077d6efd943987b8c12a311fea0b7cb7beba2326f92d9f"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-r5",
+      "path": "specs.bodyOnlyWeight",
+      "value": 650,
+      "unit": "g",
+      "rawValue": 650,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 무게 바디"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-967114e6444e44cf9d9c"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 20,
+      "unit": "fps",
+      "rawValue": 20,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 고속 연속 촬영 전자식 셔터"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "lens": "EF-S 렌즈 이외"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-a45e2d04895aa13d9e4c"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 12,
+      "unit": "fps",
+      "rawValue": 12,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 고속 연속 촬영 기계식 셔터"
+      },
+      "conditions": {
+        "shutter": "mechanical"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-81547bc9f71660808726"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.dimensions",
+      "value": [
+        138.5,
+        97.5,
+        88
+      ],
+      "unit": "mm",
+      "rawValue": [
+        138.5,
+        97.5,
+        88
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 크기 W×H×D"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-3c01e41b8c40725ce61d"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.releaseDate",
+      "value": "2020-07",
+      "unit": null,
+      "rawValue": "2020-07",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-18ebec5b15e7645f",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-43a955eec51db87acaad"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 풀프레임 CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-4c15ea75ec05c8e3ae46"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.sensor.megapixels",
+      "value": 45,
+      "unit": "MP",
+      "rawValue": 45,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 유효 화소 수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-75139c2b82c1728305e2"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.video.max",
+      "value": "8K DCI 29.97p",
+      "unit": null,
+      "rawValue": "8K DCI 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 8K DCI 동영상 녹화 크기"
+      },
+      "conditions": {
+        "mode": "8K DCI",
+        "frameRateSystem": "NTSC 29.97p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-d6187a2d33b194fbc9ea"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.weight",
+      "value": 738,
+      "unit": "g",
+      "rawValue": 738,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 무게 배터리 메모리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-7b4d35b448fc3bd8702d"
+    },
+    {
+      "productId": "canon-r5",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-05ceba7593d6988b",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R5 무게 배터리 메모리 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-f18f010015848cb9176f"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-003",
+  "itemKey": "canon-eos-c50",
+  "manufacturerModelCode": "EOS C50",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C50",
+    "productId": "canon-c50",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-cff97b4bad9d684215dc",
+    "sourceId": "source-904e65e561685514",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C50"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-003-human-review"
+  },
+  "product": {
+    "id": "canon-c50",
+    "name": "캐논 EOS C50",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C50",
+    "aliases": [
+      "Canon EOS C50",
+      "eos c50",
+      "캐논 eos c50"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 670,
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "dimensions": [
+        142,
+        88,
+        95
+      ],
+      "releaseDate": "2025-12",
+      "sensor": {
+        "format": "full-frame"
+      },
+      "video": {
+        "max": "7K RAW 59.94p"
+      },
+      "weight": 765,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-904e65e561685514",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/F59D1A236197D6B874632C91EEE9F262?productNm=EOS_C50",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C50 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T02:11:23.346Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "21e3b206064d126ec54121a5e4655d6b91829d68fcea84104ee51c09fc675b62"
+  },
+  "sources": [
+    {
+      "sourceId": "source-8e4716ae42395959",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c50",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS C50 | Canon U.S.A.",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T02:11:23.346Z",
+      "evidenceScope": "Official EOS C50 detailed objective specifications",
+      "contentDigest": "40e23c2e7dfb120276dbf9a4b6c86def505c2e4908864a7c34cf8d74595fc524"
+    },
+    {
+      "sourceId": "source-904e65e561685514",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/F59D1A236197D6B874632C91EEE9F262?productNm=EOS_C50",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C50 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T02:11:23.346Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "21e3b206064d126ec54121a5e4655d6b91829d68fcea84104ee51c09fc675b62"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c50",
+      "path": "specs.bodyOnlyWeight",
+      "value": 670,
+      "unit": "g",
+      "rawValue": 670,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 camera body weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-135cf3b7a83369b543be"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 media overview CFexpress Type B + SD"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-4fc2821f57d10459119e"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.dimensions",
+      "value": [
+        142,
+        88,
+        95
+      ],
+      "unit": "mm",
+      "rawValue": [
+        142,
+        88,
+        95
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 camera body dimensions W×H×D"
+      },
+      "conditions": {
+        "configuration": "camera body only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-9131e40c0171deaaa17e"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.releaseDate",
+      "value": "2025-12",
+      "unit": null,
+      "rawValue": "2025-12",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-904e65e561685514",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-82eb7ea6a0f19b4bb985"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.sensor.format",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "full-frame",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 full frame CMOS sensor"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-618c38089af484dd2c0d"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.video.max",
+      "value": "7K RAW 59.94p",
+      "unit": null,
+      "rawValue": "7K RAW 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 RAW ST/LT 6960×3672 59.94p"
+      },
+      "conditions": {
+        "recording": "internal",
+        "format": "RAW ST/LT",
+        "sensorMode": "full-frame 16:9",
+        "openGate": "3:2 up to 29.97p separate mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-08d65ddee193be5af68c"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.weight",
+      "value": 765,
+      "unit": "g",
+      "rawValue": 765,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 camera + LP-E6P + CFexpress + SD weight"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera without handle or microphone holder"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-58b33459fb87b119c94f"
+    },
+    {
+      "productId": "canon-c50",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-8e4716ae42395959",
+      "locator": {
+        "section": "Official technical specifications",
+        "row": "EOS C50 camera + LP-E6P + CFexpress + SD weight"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-003-human-review",
+      "claimId": "claim-e2a82fe0d6cc8c4bb9c2"
+    }
+  ]
+}
