@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -82,6 +82,46 @@ test("unit conversion is deterministic and UNKNOWN remains null", () => {
   assert.equal(staging.claims[0].value, null);
   assert.equal(staging.claims[0].unknown, true);
   assert.equal(validateStaging(staging, contextFor(unknown)).valid, true);
+});
+
+test("operational weight claims require a valid basis matching the staged product", () => {
+  const weightRaw = ({ productBasis = "battery-and-card", claimBasis = productBasis, weight = 658 } = {}) => rebuiltRaw((raw) => {
+    raw.evidenceExcerpt[0].value = weight;
+    raw.items[0].observations[0].rawValue = weight;
+    raw.evidenceExcerpt[1].value = productBasis;
+    raw.items[0].observations[1].rawValue = productBasis;
+    if (claimBasis === null) delete raw.items[0].observations[0].conditions.weightBasis;
+    else raw.items[0].observations[0].conditions.weightBasis = claimBasis;
+  });
+  const check = (options) => {
+    const raw = weightRaw(options);
+    return validateStaging(normalize(raw), contextFor(raw));
+  };
+
+  for (const basis of vocab.weightBases) {
+    assert.equal(check({ productBasis: basis }).valid, true, basis);
+  }
+  assert.ok(check({ claimBasis: null }).errors.some((error) => error.code === "WEIGHT_BASIS_REQUIRED" && error.path === "specs.weight"));
+  assert.ok(check({ claimBasis: "body-only" }).errors.some((error) => error.code === "INVALID_WEIGHT_BASIS"));
+  assert.ok(check({ claimBasis: "not-a-weight-basis" }).errors.some((error) => error.code === "INVALID_WEIGHT_BASIS"));
+  assert.ok(check({ claimBasis: "battery", productBasis: "battery-and-card" }).errors.some((error) => error.code === "WEIGHT_BASIS_MISMATCH"));
+  assert.equal(check({ claimBasis: null, weight: null }).valid, true);
+});
+
+test("CLI validate rejects a missing weight claim basis before approval", async (t) => {
+  const isolated = await isolatedFixture(t);
+  const rawPath = path.join(isolated.p.ingestion, "raw", `${rawFixture.sourceId}.json`);
+  const raw = JSON.parse(readFileSync(rawPath, "utf8"));
+  delete raw.items[0].observations[0].conditions.weightBasis;
+  writeFileSync(rawPath, `${JSON.stringify(raw, null, 2)}\n`);
+  const cli = path.join(root, "scripts/objective/ingest.mjs");
+  const normalizeResult = spawnSync(process.execPath, [cli, "normalize", "--root", isolated.root, "--batch", batchId], { encoding: "utf8" });
+  assert.equal(normalizeResult.status, 0, normalizeResult.stderr);
+  const validateResult = spawnSync(process.execPath, [cli, "validate", "--root", isolated.root, "--batch", batchId], { encoding: "utf8" });
+  assert.equal(validateResult.status, 1);
+  const result = JSON.parse(validateResult.stdout);
+  assert.equal(result.status, "rejected");
+  assert.ok(result.items[0].errors.some((error) => error.code === "WEIGHT_BASIS_REQUIRED" && error.path === "specs.weight"));
 });
 
 test("subject recognition arrays normalize as unitless verified text", () => {

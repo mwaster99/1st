@@ -583,6 +583,16 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   const claimsByPath = new Map();
   const claimIds = new Set();
   for (const claim of staging.claims ?? []) {
+    if (productType === "body" && claim.value != null && ["specs.weight", "specs.bodyOnlyWeight"].includes(claim.path)) {
+      const claimBasis = claim.conditions?.weightBasis;
+      if (claim.path === "specs.weight" && (claimBasis == null || claimBasis === "")) {
+        addIssue(issues, "WEIGHT_BASIS_REQUIRED", `Known ${claim.path} requires conditions.weightBasis`, claim.path);
+      } else if (claimBasis != null && (claim.path === "specs.weight" ? !vocab.weightBases.includes(claimBasis) : claimBasis !== "body-only")) {
+        addIssue(issues, "INVALID_WEIGHT_BASIS", `Unsupported weight basis for ${claim.path}: ${claimBasis}`, claim.path);
+      } else if (claim.path === "specs.weight" && claimBasis !== stagedWeightBasis) {
+        addIssue(issues, "WEIGHT_BASIS_MISMATCH", `Claim basis disagrees with specs.weightBasis: ${claim.path}`, claim.path);
+      }
+    }
     const priorClaims = claimsByPath.get(claim.path) ?? [];
     if (priorClaims.some((prior) => !valuesEqual(prior.value, claim.value) || prior.unit !== claim.unit)) {
       addIssue(issues, "CONFLICTING_CLAIM_VALUES", `Official sources disagree for ${claim.path}`, claim.path);

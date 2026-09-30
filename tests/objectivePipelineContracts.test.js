@@ -17,6 +17,7 @@ import {
   stagingSources,
   summarizeCanonicalDiff,
   validateStaging,
+  validateStagingBatch,
 } from "../scripts/objective/rules.mjs";
 import { buildRawDocument } from "../scripts/objective/raw-helper.mjs";
 import { sha256, writeJsonAtomic } from "../scripts/objective/storage.mjs";
@@ -122,6 +123,35 @@ test("multi-source staging links two official sources and promotes two claims fo
   assert.equal(product.fieldEvidence["specs.bodyOnlyWeight"].claimIds.length, 2);
   assert.equal(product.sources.filter((source) => source.fields.includes("specs.bodyOnlyWeight")).length, 2);
   assert.equal(validateCanonical(result, vocab), true);
+});
+
+test("body-only weight uses its field contract and validates an explicit claim basis", () => {
+  const check = (value, basis) => {
+    const draft = sourceDraft("https://www.sony.com/fixture/body-only-basis", value);
+    const observation = draft.items[0].observations[0];
+    if (basis === undefined) delete observation.conditions.weightBasis;
+    else observation.conditions.weightBasis = basis;
+    const raw = buildRawDocument(draft);
+    const [staging] = normalizeRawDocument(raw, { batchId, vocab, identityMap });
+    return validateStaging(staging, { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) });
+  };
+  assert.equal(check(575, "body-only").valid, true);
+  assert.equal(check(575, undefined).valid, true); // Archived production body-only claims omit the redundant condition.
+  assert.ok(check(575, "battery-and-card").errors.some((error) => error.code === "INVALID_WEIGHT_BASIS"));
+  assert.equal(check(null, undefined).valid, true);
+});
+
+test("archived production staging remains valid without changing canonical or batch artifacts", () => {
+  for (const batch of ["production-sony-bodies-003", "production-canon-bodies-001", "production-canon-bodies-002"]) {
+    const manifest = readJson(`src/data/ingestion/batches/${batch}.json`);
+    const before = readJson(`src/data/ingestion/transactions/${batch}/before.json`);
+    const stagings = manifest.items.map(({ itemKey }) => readJson(`src/data/ingestion/staging/${batch}/${itemKey}.json`));
+    const sourceIds = new Set(manifest.items.flatMap(({ sourceIds }) => sourceIds));
+    const rawDocuments = new Map([...sourceIds].map((sourceId) => [sourceId, readJson(`src/data/ingestion/raw/${sourceId}.json`)]));
+    const result = validateStagingBatch(stagings, { canonical: before, vocab, rawDocuments });
+    assert.equal(result.valid, true, `${batch}: ${JSON.stringify(result.items.flatMap((item) => item.errors))}`);
+  }
+  assert.equal(validateCanonical(canonical, vocab), true);
 });
 
 test("human diff summary includes a new product's identity-only source", () => {
