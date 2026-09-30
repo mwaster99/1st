@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-005",
+  "canonicalBaselineDigest": "4b0a9bc760754742a4a930b9c76ee1c87d7b22954edaa217d4a3205c91ba3ed2",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-005",
+      "productId": "canon-c300-iii",
+      "productName": "캐논 EOS C300 MK III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-c300-iii",
+        "name": "캐논 EOS C300 MK III",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C300 MK III",
+        "aliases": [
+          "Canon EOS C300 Mark III",
+          "Canon EOS C300 MK III",
+          "캐논 EOS C300 MK III",
+          "EOS C300 Mark III"
+        ],
+        "mount": "Canon EF",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "Super 35mm",
+            "megapixels": null,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 1750,
+          "dimensions": [
+            153,
+            148,
+            168
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K DCI Cinema RAW Light 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2020-06",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/660F00978532E01A2D6736FE74A7F48C?productNm=EOS_C300_MK_III",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-675dd70ba4ad4666",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-cd5530e754381825e975",
+          "sourceId": "source-675dd70ba4ad4666",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-cd5530e754381825e975",
+        "sourceId": "source-675dd70ba4ad4666",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS C300 MK III"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-005-human-review",
+        "source": {
+          "sourceId": "source-675dd70ba4ad4666",
+          "url": "https://kr.canon/product/content/detail/660F00978532E01A2D6736FE74A7F48C?productNm=EOS_C300_MK_III",
+          "documentTitle": "EOS C300 MK III | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1750,
+          "unit": "g",
+          "claimId": "claim-b627e15a3383cd048621",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a2e3ad90792695cc",
+            "url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Other / EF camera body without Camera Grip GR-V1 or thumb rest"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "mount": "Canon EF",
+              "excludes": [
+                "Camera Grip GR-V1",
+                "thumb rest",
+                "battery",
+                "accessories"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-06b60e7f682be074d7f6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-01f201390736d8fc",
+            "url": "https://downloads.canon.com/nw/camera/products/cinema-eos/c300-mark-iii/EOS-C300-Mark-III-White-Paper.pdf",
+            "locator": {
+              "section": "17.0 RECORDING MEDIA FOR EOS C300 MARK III / Figure 47",
+              "row": "two CFexpress cards and an SD card / card slots"
+            },
+            "conditions": {
+              "cfexpressUse": "internal RAW/XF-AVC",
+              "sdUse": "proxy and metadata"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            153,
+            148,
+            168
+          ],
+          "unit": "mm",
+          "claimId": "claim-7e310bca5eef1194791c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a2e3ad90792695cc",
+            "url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Other / Body Only Dimensions W×H×D"
+            },
+            "conditions": {
+              "configuration": "EF body only",
+              "excludes": [
+                "cable",
+                "grip belt"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2020-06",
+          "unit": null,
+          "claimId": "claim-53b3d58e534ab2a36e3d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-675dd70ba4ad4666",
+            "url": "https://kr.canon/product/content/detail/660F00978532E01A2D6736FE74A7F48C?productNm=EOS_C300_MK_III",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Super 35mm",
+          "unit": null,
+          "claimId": "claim-4b0f9174bf358dce1163",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a2e3ad90792695cc",
+            "url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Imaging Sensor / Sensor Size"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K DCI Cinema RAW Light 59.94p",
+          "unit": null,
+          "claimId": "claim-917d08576b5f2fc12552",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a2e3ad90792695cc",
+            "url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Recording Selection / Cinema RAW Light 4096x2160 59.94p"
+            },
+            "conditions": {
+              "recording": "normal",
+              "recordingLocation": "internal",
+              "codec": "Cinema RAW Light",
+              "resolution": "4096x2160",
+              "sensorMode": "Super 35mm",
+              "media": "CFexpress Type B",
+              "frameRate": "59.94p"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-canon-bodies-005",
+      "productId": "canon-c500-ii",
+      "productName": "캐논 EOS C500 MK2",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "canon-c500-ii",
+        "name": "캐논 EOS C500 MK2",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C500 MK2",
+        "aliases": [
+          "Canon EOS C500 Mark II",
+          "Canon EOS C500 MK2",
+          "캐논 EOS C500 MK2",
+          "EOS C500 Mark II"
+        ],
+        "mount": "Canon EF",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "Full-frame",
+            "megapixels": null,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 1750,
+          "dimensions": [
+            153,
+            148,
+            168
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "5.9K Cinema RAW Light 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": "2019-12",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://kr.canon/product/content/detail/ED192224E76DF6AB956F96B84B233129?productNm=EOS_C500_MK2",
+            "type": "manufacturer",
+            "accessedOn": "2026-09-30",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-3ef1e6f1a00c0dda",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-b6717d08e59b7a49fe64",
+          "sourceId": "source-3ef1e6f1a00c0dda",
+          "checkedAt": "2026-09-30"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-b6717d08e59b7a49fe64",
+        "sourceId": "source-3ef1e6f1a00c0dda",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Product header",
+          "row": "EOS C500 MK2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-09-30",
+        "reviewer": "codex-canon-005-human-review",
+        "source": {
+          "sourceId": "source-3ef1e6f1a00c0dda",
+          "url": "https://kr.canon/product/content/detail/ED192224E76DF6AB956F96B84B233129?productNm=EOS_C500_MK2",
+          "documentTitle": "EOS C500 MK2 | Canon Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1750,
+          "unit": "g",
+          "claimId": "claim-c1c6854226618e3c0941",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3cef019fe43d4dce",
+            "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight and Dimensions / body only weight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "mount": "Canon EF",
+              "excludes": [
+                "battery",
+                "handle",
+                "LCD",
+                "accessories"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-199bfef76fb124ba0d9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-15b5b5922cdb3196",
+            "url": "https://downloads.canon.com/nw/learn/white-papers/cinema-eos/EOS_C500_MarkII_White_Paper.pdf",
+            "locator": {
+              "section": "15.0 RECORDING MEDIA FOR EOS C500 Mark II / Figure 42",
+              "row": "two CFexpress cards and an SD card / card slots"
+            },
+            "conditions": {
+              "cfexpressUse": "internal RAW/XF-AVC",
+              "sdUse": "proxy and metadata"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            153,
+            148,
+            168
+          ],
+          "unit": "mm",
+          "claimId": "claim-71d38392f7b25a9e3a4f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3cef019fe43d4dce",
+            "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Weight and Dimensions / body only W×H×D"
+            },
+            "conditions": {
+              "configuration": "body only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2019-12",
+          "unit": null,
+          "claimId": "claim-6d8fce0afc03af6024f1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3ef1e6f1a00c0dda",
+            "url": "https://kr.canon/product/content/detail/ED192224E76DF6AB956F96B84B233129?productNm=EOS_C500_MK2",
+            "locator": {
+              "section": "Product information",
+              "row": "출시일"
+            },
+            "conditions": {
+              "region": "KR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Full-frame",
+          "unit": null,
+          "claimId": "claim-4e37f7f360179197f1a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3cef019fe43d4dce",
+            "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Image Sensing Device / full-frame CMOS"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "5.9K Cinema RAW Light 59.94p",
+          "unit": null,
+          "claimId": "claim-a5c5ba7a151729b3ca93",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-3cef019fe43d4dce",
+            "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+            "locator": {
+              "section": "Technical specifications",
+              "row": "Cinema RAW Light 5952x3140 RAW ST/LT 59.94P"
+            },
+            "conditions": {
+              "recording": "normal",
+              "recordingLocation": "internal",
+              "codec": "Cinema RAW Light",
+              "resolution": "5952x3140",
+              "sensorMode": "full-frame",
+              "rawGrades": [
+                "ST",
+                "LT"
+              ],
+              "rawHQAt59_94p": false,
+              "media": "CFexpress",
+              "frameRate": "59.94p"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

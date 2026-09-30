@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "Canon Support for EOS C500 Mark II | Canon U.S.A.",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS C500 Mark II detailed objective specifications",
+  "accessedAt": "2026-09-30T03:37:04.910Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Image Sensing Device / full-frame CMOS",
+      "value": "Full-frame",
+      "unit": null
+    },
+    {
+      "field": "Cinema RAW Light 5952x3140 RAW ST/LT 59.94P",
+      "value": "5.9K Cinema RAW Light 59.94p",
+      "unit": null
+    },
+    {
+      "field": "Weight and Dimensions / body only W×H×D",
+      "value": [
+        153,
+        148,
+        168
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Weight and Dimensions / body only weight",
+      "value": 1750,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c500-mark-ii",
+      "manufacturerModelCode": "EOS C500 MK2",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C500 MK2",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C500 MK2",
+        "aliases": [
+          "Canon EOS C500 Mark II",
+          "Canon EOS C500 MK2"
+        ],
+        "mount": "EF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "Full-frame",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Image Sensing Device / full-frame CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 1,
+          "rawValue": "5.9K Cinema RAW Light 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Cinema RAW Light 5952x3140 RAW ST/LT 59.94P"
+          },
+          "conditions": {
+            "recording": "normal",
+            "recordingLocation": "internal",
+            "codec": "Cinema RAW Light",
+            "resolution": "5952x3140",
+            "sensorMode": "full-frame",
+            "rawGrades": [
+              "ST",
+              "LT"
+            ],
+            "rawHQAt59_94p": false,
+            "media": "CFexpress",
+            "frameRate": "59.94p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 2,
+          "rawValue": [
+            153,
+            148,
+            168
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Weight and Dimensions / body only W×H×D"
+          },
+          "conditions": {
+            "configuration": "body only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 3,
+          "rawValue": 1750,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Technical specifications",
+            "row": "Weight and Dimensions / body only weight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "mount": "Canon EF",
+            "excludes": [
+              "battery",
+              "handle",
+              "LCD",
+              "accessories"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9f77a241462b192c1ef1f4e33c9bc698e276e3e07467b52d34ce07799d419af4",
+  "sourceId": "source-3cef019fe43d4dce"
+}

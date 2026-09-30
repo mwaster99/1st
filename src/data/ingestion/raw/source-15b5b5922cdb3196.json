@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://downloads.canon.com/nw/learn/white-papers/cinema-eos/EOS_C500_MarkII_White_Paper.pdf",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "EOS C500 Mark II official white paper",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official onboard recording media and physical card-slot configuration",
+  "accessedAt": "2026-09-30T03:38:40.036Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Recording media diagram: two CFexpress slots and one SD slot",
+      "value": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c500-mark-ii",
+      "manufacturerModelCode": "EOS C500 MK2",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C500 MK2",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C500 MK2",
+        "aliases": [
+          "Canon EOS C500 Mark II",
+          "Canon EOS C500 MK2"
+        ],
+        "mount": "EF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 0,
+          "rawValue": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "15.0 RECORDING MEDIA FOR EOS C500 Mark II / Figure 42",
+            "row": "two CFexpress cards and an SD card / card slots"
+          },
+          "conditions": {
+            "cfexpressUse": "internal RAW/XF-AVC",
+            "sdUse": "proxy and metadata"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "800200447f155becbd7089cf94d7d2ce049bcbed0d7767a49a29552f6b4dec38",
+  "sourceId": "source-15b5b5922cdb3196"
+}

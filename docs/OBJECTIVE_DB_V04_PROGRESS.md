@@ -1,5 +1,30 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Canon production batch 005 — 2026-09-30
+
+시작 시 git working tree는 clean, canonical은 바디 84 / 렌즈 36 / 전체 120개였다. Canon 공식 inventory snapshot, batch 001~004 artifact·진행 기록, canonical, identity-map, catalog-scope와 field contract를 대조했다. Canon Korea의 현재 Cinema EOS 제품 목록과 개별 제품 페이지에서 **EOS C300 MK III**(한국 출시 2020-06)와 **EOS C500 MK2**(2019-12)가 여전히 출시된 제품임을 확인했다. 이 2개가 정해진 마지막 released/current 일반 카메라 대상이다. EOS R8 Mark II는 공식 출시월 2026-10으로 아직 announced/upcoming이므로 제외한다. 두 제품은 사람이 직접 운용하는 Cinema EOS이며, 기본 EF 마운트를 제품 identity로 기록하고 선택적으로 교체 가능한 PL/EF-C 마운트를 별도 제품이나 기본 사양으로 혼동하지 않는다.
+
+`production-canon-bodies-005`는 제품별 Canon Korea 제품 페이지, Canon U.S.A. 공식 support 사양, Canon 공식 Cinema EOS white paper의 **공식 source 각 3개, 총 6개**를 연결했다. 제품 페이지는 identity와 한국 출시월, support는 센서·기본 마운트·영상 모드·바디 무게·치수, white paper는 CFexpress 2개와 SD 1개의 매체 구성을 증명한다. 제품별 독립 cheap-worker task는 공개 공식 자료와 최소 field schema만 받았고 프로젝트 코드·canonical 전체·secret은 받지 않았다. 사람 검토 후 raw-helper → normalize → validate → diff → 명시적 approval → atomic apply를 완료했다. 신규 바디 **2개**, 기존 보강 **0개**, 신규 검증 claim **12개**이며 canonical은 바디 **84→86**, 렌즈 **36 유지**, 전체 **120→122**다. 공식 source 간 진짜 값 충돌과 기존 canonical value conflict는 **0건**이다. 승인 diff digest `a179ae2d0c2a75bffff2f4de4c3a7d097e5ef9292f4675235fdce19625b7520e`, approval ID `approval-ac1fea06f157e49f6b3bffdbf5ad91b953059b8548fa2ca237640385bc0504d3`, 적용 후 canonical SHA-256 `3c6c2d52bbe484d71172da7fc4c9cb5af960ce09477fa40d84d802cf7f72b03e`다. 재적용 결과는 `already-canonicalized`, `canonicalMatches: true`였다.
+
+| 제품 / ID | 공식 source | 검증 claim | 주요 승격값과 UNKNOWN |
+| --- | ---: | ---: | --- |
+| EOS C300 Mark III / `canon-c300-iii` | 3 | 6 | 기본 Canon EF 교환식 바디, Super 35mm, 일반 내부 CFexpress 녹화 4K DCI Cinema RAW Light 59.94p, 바디만 1750g, 153×148×168mm, CFexpress Type B 2슬롯 + SD UHS-II 1슬롯, 한국 출시 2020-06. 영상 모드용 화소를 사진용 대표 MP로 승격하지 않았고 운영 무게·일반 bit depth는 UNKNOWN. |
+| EOS C500 Mark II / `canon-c500-ii` | 3 | 6 | 기본 Canon EF 교환식 바디, 풀프레임, 일반 내부 CFexpress 녹화 5.9K Cinema RAW Light 59.94p(RAW ST/LT), 바디만 1750g, 153×148×168mm, CFexpress 2슬롯 + SD 1슬롯, 한국 출시 2019-12. RAW HQ의 59.94p를 주장하지 않았고 SD 표준·운영 무게·일반 MP/bit depth는 UNKNOWN. |
+
+4K 120p/2K 180p(C300)와 2K 120p(C500) 같은 S&Q·crop 촬영 조건은 일반 내부 녹화의 대표 `specs.video.max`에 합치지 않았다. C500 59.94p의 RAW 등급은 ST/LT로 claim `conditions`에 남겼다. 바디 무게는 `specs.bodyOnlyWeight`에만 넣고 EF 본체에서 제외된 그립·배터리·액세서리 조건을 claim에 보존했다. `specs.weight`는 운영 구성에 따라 달라져 `null`이며 모든 가격도 UNKNOWN이다. `specs.cardSlots`의 세 슬롯은 공식 white paper를 추가 확인한 뒤 승격했고, 첫 support 발췌만으로 2개라고 확정하지 않았다. 현행 단일 `specs.video.max` 값을 소비하는 경로는 녹화 방식·RAW 등급·S&Q/전원 조건을 직접 표시하지 못한다. 이는 batch 004의 R5 C와 같은 **후속 표현 개선 후보**이며 이번에 schema·추천 엔진·UI를 변경하지 않았다. 또한 현재 렌즈 catalog에 Canon EF 렌즈가 없어, 이 두 교환식 바디는 기존 장비 구성 후보 생성 경로에서 렌즈와 결합되지 않는다. Objective DB 수집은 완료됐지만 추천 coverage는 별도 과제다.
+
+| 제품 | 실제 API 시도 | input / output / total token | 채택한 검토 경고 |
+| --- | ---: | ---: | --- |
+| EOS C300 Mark III | 1회 성공 | 697 / 537 / 1,234 | 영상 유효 화소를 일반 MP로 쓰지 않기, 일반 녹화와 S&Q 분리, EF 바디 무게와 PL 변형 분리, 매체 슬롯 추가 확인 |
+| EOS C500 Mark II | 1회 실패 + 동일 task ID 1회 재시도 성공 | 1,367 / 925 / 2,292 | 5.9K 59.94p의 RAW HQ 제외, crop/S&Q·변동 bit depth·EF 바디 무게 구분, 매체 슬롯 추가 확인 |
+| **합계** | **3회 실제 호출; 실패 1·재시도 1** | **2,064 / 1,462 / 3,526** | 첫 C500 응답은 `MALFORMED_RESPONSE`로 버리고 성공한 두 번째 결과만 채택 |
+
+사람이 출시 상태와 2개 identity/alias·기본 EF/선택 PL 구성, 공식 source 6개, claim 12개 및 조건·UNKNOWN, worker 결과 2개, canonical diff 2건, approval/apply를 직접 판단했다. Worker의 초기 슬롯 수 미확정 경고를 받아 공식 white paper 2개를 더 확인했고 3슬롯으로 검증했다. C500 첫 응답은 실제 API 결과지만 malformed이므로 값·판단에 반영하지 않았다. C300/C500의 값이 있는 무게 claim은 모두 `conditions.weightBasis: body-only`로 validate를 통과했고, C300 claim의 basis를 `operational` 또는 `battery-and-card`로 바꾼 검증에서는 `INVALID_WEIGHT_BASIS`로 차단됐다. 새 validator/schema 문제는 발견되지 않았다. raw-helper가 실제 조회 시점의 UTC ISO `accessedAt`을 source 6개에 기록했으며 범위는 `2026-09-30T03:37:04.908Z`~`2026-09-30T03:38:40.036Z`다.
+
+종료 시 Canon 공식 직접 운용 카메라 카드 29개 중 canonicalized **28개**, 출시된 일반 카메라 미처리 **0개**, 발표됐지만 출시 예정인 EOS R8 Mark II **1개**다. 현재 snapshot 범위에서는 Canon released/current coverage audit으로 넘어갈 준비가 됐다. PTZ·원격 설치형, 가격, 렌즈 수집, Experience DB, 추천 엔진·UI는 이번 batch 범위가 아니다.
+
+검증: 전체 테스트 **126/126**, Objective+Canon production 테스트 **84/84**, Canon 005 전용 테스트 **4/4**, canonical validation **122/122**, `pnpm build`, 관련 `node --check`, `git diff --check`를 통과했다. Build의 500kB 초과 chunk 경고는 기존과 같다.
+
 ## Stage 4 Canon production batch 004 — 2026-09-30
 
 시작 시 git working tree는 clean, canonical은 바디 79 / 렌즈 36 / 전체 115개였다. Canon Korea 직접 운용 카메라 inventory 29개, batch 001~003 artifact·진행 기록·canonical을 대조해 출시된 미처리 제품 7개와 출시 예정 EOS R8 Mark II 1개를 확인했다. 이번 batch는 canonical에 없는 **PowerShot SX740 HS, IXUS 285 HS A, EOS C400, EOS R5 C, EOS C70**을 선정한다. 고정렌즈 여행용 줌·소형 컴팩트 2종과 직접 운용하는 Cinema EOS 3종을 섞어 실제/환산 초점거리, 색상별 무게, RF 마운트, 시네마 영상 모드/미디어 조건을 검토한다. 공식 inventory의 출시월은 각각 2018-08, 2025-10, 2024-09, 2022-03, 2020-11로 모두 현재 출시됐다. EOS R8 Mark II와 원격 설치형 PTZ는 제외하며, 남은 EOS C300 MK III·EOS C500 MK2는 마지막 잔여 batch 후보로 둔다.

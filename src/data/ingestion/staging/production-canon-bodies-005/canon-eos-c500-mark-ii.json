@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-005",
+  "itemKey": "canon-eos-c500-mark-ii",
+  "manufacturerModelCode": "EOS C500 MK2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C500 MK2",
+    "productId": "canon-c500-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b6717d08e59b7a49fe64",
+    "sourceId": "source-3ef1e6f1a00c0dda",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C500 MK2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-005-human-review"
+  },
+  "product": {
+    "id": "canon-c500-ii",
+    "name": "캐논 EOS C500 MK2",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C500 MK2",
+    "aliases": [
+      "Canon EOS C500 Mark II",
+      "Canon EOS C500 MK2",
+      "캐논 EOS C500 MK2",
+      "EOS C500 Mark II"
+    ],
+    "mount": "Canon EF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 1750,
+      "cardSlots": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "dimensions": [
+        153,
+        148,
+        168
+      ],
+      "releaseDate": "2019-12",
+      "sensor": {
+        "format": "Full-frame"
+      },
+      "video": {
+        "max": "5.9K Cinema RAW Light 59.94p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-3ef1e6f1a00c0dda",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/ED192224E76DF6AB956F96B84B233129?productNm=EOS_C500_MK2",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C500 MK2 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T03:37:04.909Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "1f960b35bc374e5af856ac431eb1f10190fb4fd9d6f881520ef5723865fa640b"
+  },
+  "sources": [
+    {
+      "sourceId": "source-15b5b5922cdb3196",
+      "sourceType": "manufacturer",
+      "url": "https://downloads.canon.com/nw/learn/white-papers/cinema-eos/EOS_C500_MarkII_White_Paper.pdf",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "EOS C500 Mark II official white paper",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T03:38:40.036Z",
+      "evidenceScope": "Official onboard recording media and physical card-slot configuration",
+      "contentDigest": "800200447f155becbd7089cf94d7d2ce049bcbed0d7767a49a29552f6b4dec38"
+    },
+    {
+      "sourceId": "source-3cef019fe43d4dce",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS C500 Mark II | Canon U.S.A.",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T03:37:04.910Z",
+      "evidenceScope": "Official EOS C500 Mark II detailed objective specifications",
+      "contentDigest": "9f77a241462b192c1ef1f4e33c9bc698e276e3e07467b52d34ce07799d419af4"
+    },
+    {
+      "sourceId": "source-3ef1e6f1a00c0dda",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/ED192224E76DF6AB956F96B84B233129?productNm=EOS_C500_MK2",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C500 MK2 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T03:37:04.909Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "1f960b35bc374e5af856ac431eb1f10190fb4fd9d6f881520ef5723865fa640b"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1750,
+      "unit": "g",
+      "rawValue": 1750,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-3cef019fe43d4dce",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Weight and Dimensions / body only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "mount": "Canon EF",
+        "excludes": [
+          "battery",
+          "handle",
+          "LCD",
+          "accessories"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-c1c6854226618e3c0941"
+    },
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-15b5b5922cdb3196",
+      "locator": {
+        "section": "15.0 RECORDING MEDIA FOR EOS C500 Mark II / Figure 42",
+        "row": "two CFexpress cards and an SD card / card slots"
+      },
+      "conditions": {
+        "cfexpressUse": "internal RAW/XF-AVC",
+        "sdUse": "proxy and metadata"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-199bfef76fb124ba0d9b"
+    },
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.dimensions",
+      "value": [
+        153,
+        148,
+        168
+      ],
+      "unit": "mm",
+      "rawValue": [
+        153,
+        148,
+        168
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-3cef019fe43d4dce",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Weight and Dimensions / body only W×H×D"
+      },
+      "conditions": {
+        "configuration": "body only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-71d38392f7b25a9e3a4f"
+    },
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.releaseDate",
+      "value": "2019-12",
+      "unit": null,
+      "rawValue": "2019-12",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3ef1e6f1a00c0dda",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-6d8fce0afc03af6024f1"
+    },
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.sensor.format",
+      "value": "Full-frame",
+      "unit": null,
+      "rawValue": "Full-frame",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3cef019fe43d4dce",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Image Sensing Device / full-frame CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-4e37f7f360179197f1a9"
+    },
+    {
+      "productId": "canon-c500-ii",
+      "path": "specs.video.max",
+      "value": "5.9K Cinema RAW Light 59.94p",
+      "unit": null,
+      "rawValue": "5.9K Cinema RAW Light 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3cef019fe43d4dce",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Cinema RAW Light 5952x3140 RAW ST/LT 59.94P"
+      },
+      "conditions": {
+        "recording": "normal",
+        "recordingLocation": "internal",
+        "codec": "Cinema RAW Light",
+        "resolution": "5952x3140",
+        "sensorMode": "full-frame",
+        "rawGrades": [
+          "ST",
+          "LT"
+        ],
+        "rawHQAt59_94p": false,
+        "media": "CFexpress",
+        "frameRate": "59.94p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-a5c5ba7a151729b3ca93"
+    }
+  ]
+}

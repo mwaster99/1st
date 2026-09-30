@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://downloads.canon.com/nw/camera/products/cinema-eos/c300-mark-iii/EOS-C300-Mark-III-White-Paper.pdf",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "EOS C300 Mark III official white paper",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official onboard recording media and physical card-slot configuration",
+  "accessedAt": "2026-09-30T03:38:40.026Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Recording media diagram: two CFexpress slots and one SD slot",
+      "value": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c300-mark-iii",
+      "manufacturerModelCode": "EOS C300 MK III",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C300 MK III",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C300 MK III",
+        "aliases": [
+          "Canon EOS C300 Mark III",
+          "Canon EOS C300 MK III"
+        ],
+        "mount": "EF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 0,
+          "rawValue": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "CFexpress"
+                ],
+                "standards": [
+                  "CFexpress 2.0 Type B"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "17.0 RECORDING MEDIA FOR EOS C300 MARK III / Figure 47",
+            "row": "two CFexpress cards and an SD card / card slots"
+          },
+          "conditions": {
+            "cfexpressUse": "internal RAW/XF-AVC",
+            "sdUse": "proxy and metadata"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-005-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "496791d50d046040591b388165a1a0ee68a5b7eaa42d09da8ad8500f8d4983d6",
+  "sourceId": "source-01f201390736d8fc"
+}

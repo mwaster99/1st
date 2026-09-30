@@ -27,7 +27,7 @@ test("canonical identifiers, model names and aliases are unique and searchable",
 });
 
 test("body and lens coverage, mount and exterior categories are valid", () => {
-  assert.equal(CAMERA_BODIES.length, 84);
+  assert.equal(CAMERA_BODIES.length, 86);
   assert.equal(CAMERA_LENSES.length, 36);
   for (const mount of mounts.slice(0, 6)) {
     assert.ok(CAMERA_BODIES.some((body) => body.mount === mount));
@@ -138,7 +138,12 @@ test("first purchase uses available condition prices and actual owned-lens costs
 
 test("expanded same/cross mount and fixed candidates are generated without guessing unknown prices", () => {
   const raw = generateScenarioCandidates(input());
-  for (const body of CAMERA_BODIES.filter((body) => body.kind !== "dslr")) assert.ok(raw.some((s) => s.targetSystem.body.id === body.id), body.id);
+  for (const body of CAMERA_BODIES.filter((body) => body.kind !== "dslr" && (body.kind === "fixed" || CAMERA_LENSES.some((lens) => lens.mount === body.mount)))) {
+    assert.ok(raw.some((s) => s.targetSystem.body.id === body.id), body.id);
+  }
+  for (const id of ["canon-c300-iii", "canon-c500-ii"]) {
+    assert.ok(!raw.some((s) => s.targetSystem.body.id === id), `${id} has no compatible catalog lens yet`);
+  }
   for (const scenario of raw) for (const lens of scenario.targetSystem.lenses) assert.ok(lens.includedInBodyId === scenario.targetSystem.body.id || lens.mount === scenario.targetSystem.body.mount);
   const sigma = raw.find((s) => s.targetSystem.body.brand === "Sigma");
   const result = evaluateScenario(sigma, input());

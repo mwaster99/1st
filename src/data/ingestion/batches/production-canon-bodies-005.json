@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-005",
+  "scope": "Canon Korea released/current direct-operated Cinema EOS cameras: EOS C300 MK III and EOS C500 MK2",
+  "tier": 1,
+  "baselineCommit": "51a8f35",
+  "canonicalBaselineDigest": "4b0a9bc760754742a4a930b9c76ee1c87d7b22954edaa217d4a3205c91ba3ed2",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "canon-eos-c300-mark-iii",
+      "productId": "canon-c300-iii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-675dd70ba4ad4666",
+        "source-a2e3ad90792695cc",
+        "source-01f201390736d8fc"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "fe3fecc9d8e02f176b5e0964125c769604ac81a956605ba100dc6249506f9fc8",
+        "6871a95332e800419cfd41a510050714e4da68909285d118b07c9ff580cd57a9",
+        "5fced7e73b8b439a4b12b074f2664f679a06554966815eb21ceac5724e7bd0fe"
+      ],
+      "stagingDigest": "61541b270684052372374fb255607428ccb682de102674bad78a707f141cd6c5",
+      "diffDigest": "a179ae2d0c2a75bffff2f4de4c3a7d097e5ef9292f4675235fdce19625b7520e",
+      "updatedAt": "2026-09-30T03:39:17.583Z"
+    },
+    {
+      "itemKey": "canon-eos-c500-mark-ii",
+      "productId": "canon-c500-ii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-3ef1e6f1a00c0dda",
+        "source-3cef019fe43d4dce",
+        "source-15b5b5922cdb3196"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "2d9ae5e4ec8453165ff8d7b9afb962eb8b96851aeba133d5b95a22352b812c14",
+        "a3343c1782720acaed826dae75bd18559d56c17e45109482d40b9132c83937cd",
+        "c88334453949f9eff31b0ad42a38be058eb0b91492bf049db3944be7fd55bc19"
+      ],
+      "stagingDigest": "64bed1f63e5b2d1ed10672aeef778de50d176e91b673bfa4a6502c72d29df5a9",
+      "diffDigest": "a179ae2d0c2a75bffff2f4de4c3a7d097e5ef9292f4675235fdce19625b7520e",
+      "updatedAt": "2026-09-30T03:39:17.583Z"
+    }
+  ],
+  "updatedAt": "2026-09-30T03:39:17.583Z",
+  "expectedCanonicalDigest": "3c6c2d52bbe484d71172da7fc4c9cb5af960ce09477fa40d84d802cf7f72b03e",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-ac1fea06f157e49f6b3bffdbf5ad91b953059b8548fa2ca237640385bc0504d3",
+    "completedAt": "2026-09-30T03:39:17.583Z",
+    "transaction": "transactions/production-canon-bodies-005"
+  }
+}

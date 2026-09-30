@@ -23,8 +23,8 @@ test('Canon batch 003 promotes five released direct-operated cameras and leaves 
   const snapshot = json(`${base}canon-current-camera-gallery-2026-09-29.json`);
   const canonical = json('src/data/cameraProducts.json');
   assert.equal(snapshot.cards.length, 29);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 26);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 2);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 28);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 0);
   for (const [code, id] of selected) {
     const card = snapshot.cards.find((entry) => entry.modelCode === code);
     assert.equal(card?.availabilityStatus, 'released-current');
@@ -35,7 +35,7 @@ test('Canon batch 003 promotes five released direct-operated cameras and leaves 
   const upcoming = snapshot.cards.find((card) => card.modelCode === 'EOS R8 Mark II');
   assert.equal(upcoming.status, 'unprocessed');
   assert.equal(upcoming.availabilityStatus, 'announced-upcoming');
-  assert.equal(canonical.bodies.length, 84);
+  assert.equal(canonical.bodies.length, 86);
   assert.equal(canonical.lenses.length, 36);
   assert.equal(validateCanonical(canonical, json(`${base}vocab.json`)), true);
 });

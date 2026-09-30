@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-005",
+  "itemKey": "canon-eos-c300-mark-iii",
+  "manufacturerModelCode": "EOS C300 MK III",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C300 MK III",
+    "productId": "canon-c300-iii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-cd5530e754381825e975",
+    "sourceId": "source-675dd70ba4ad4666",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C300 MK III"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-005-human-review"
+  },
+  "product": {
+    "id": "canon-c300-iii",
+    "name": "캐논 EOS C300 MK III",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C300 MK III",
+    "aliases": [
+      "Canon EOS C300 Mark III",
+      "Canon EOS C300 MK III",
+      "캐논 EOS C300 MK III",
+      "EOS C300 Mark III"
+    ],
+    "mount": "Canon EF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 1750,
+      "cardSlots": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        153,
+        148,
+        168
+      ],
+      "releaseDate": "2020-06",
+      "sensor": {
+        "format": "Super 35mm"
+      },
+      "video": {
+        "max": "4K DCI Cinema RAW Light 59.94p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-675dd70ba4ad4666",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/660F00978532E01A2D6736FE74A7F48C?productNm=EOS_C300_MK_III",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C300 MK III | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T03:37:04.908Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "49dc1a0e2e953d67db32b260fe8098e98066c33c4c546fa42daf2c242cd63501"
+  },
+  "sources": [
+    {
+      "sourceId": "source-01f201390736d8fc",
+      "sourceType": "manufacturer",
+      "url": "https://downloads.canon.com/nw/camera/products/cinema-eos/c300-mark-iii/EOS-C300-Mark-III-White-Paper.pdf",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "EOS C300 Mark III official white paper",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T03:38:40.026Z",
+      "evidenceScope": "Official onboard recording media and physical card-slot configuration",
+      "contentDigest": "496791d50d046040591b388165a1a0ee68a5b7eaa42d09da8ad8500f8d4983d6"
+    },
+    {
+      "sourceId": "source-675dd70ba4ad4666",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/660F00978532E01A2D6736FE74A7F48C?productNm=EOS_C300_MK_III",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C300 MK III | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T03:37:04.908Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "49dc1a0e2e953d67db32b260fe8098e98066c33c4c546fa42daf2c242cd63501"
+    },
+    {
+      "sourceId": "source-a2e3ad90792695cc",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS C300 Mark III | Canon U.S.A.",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T03:37:04.909Z",
+      "evidenceScope": "Official EOS C300 Mark III detailed objective specifications",
+      "contentDigest": "ccadb81144692215ec1b0d5d728a4aab9e939e04f8133237c9505419b3a700bd"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1750,
+      "unit": "g",
+      "rawValue": 1.75,
+      "rawUnit": "kg",
+      "unknown": false,
+      "sourceId": "source-a2e3ad90792695cc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Other / EF camera body without Camera Grip GR-V1 or thumb rest"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "mount": "Canon EF",
+        "excludes": [
+          "Camera Grip GR-V1",
+          "thumb rest",
+          "battery",
+          "accessories"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-b627e15a3383cd048621"
+    },
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "CFexpress"
+            ],
+            "standards": [
+              "CFexpress 2.0 Type B"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01f201390736d8fc",
+      "locator": {
+        "section": "17.0 RECORDING MEDIA FOR EOS C300 MARK III / Figure 47",
+        "row": "two CFexpress cards and an SD card / card slots"
+      },
+      "conditions": {
+        "cfexpressUse": "internal RAW/XF-AVC",
+        "sdUse": "proxy and metadata"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-06b60e7f682be074d7f6"
+    },
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.dimensions",
+      "value": [
+        153,
+        148,
+        168
+      ],
+      "unit": "mm",
+      "rawValue": [
+        153,
+        148,
+        168
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a2e3ad90792695cc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Other / Body Only Dimensions W×H×D"
+      },
+      "conditions": {
+        "configuration": "EF body only",
+        "excludes": [
+          "cable",
+          "grip belt"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-7e310bca5eef1194791c"
+    },
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.releaseDate",
+      "value": "2020-06",
+      "unit": null,
+      "rawValue": "2020-06",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-675dd70ba4ad4666",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-53b3d58e534ab2a36e3d"
+    },
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.sensor.format",
+      "value": "Super 35mm",
+      "unit": null,
+      "rawValue": "Super 35mm",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a2e3ad90792695cc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Imaging Sensor / Sensor Size"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-4b0f9174bf358dce1163"
+    },
+    {
+      "productId": "canon-c300-iii",
+      "path": "specs.video.max",
+      "value": "4K DCI Cinema RAW Light 59.94p",
+      "unit": null,
+      "rawValue": "4K DCI Cinema RAW Light 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a2e3ad90792695cc",
+      "locator": {
+        "section": "Technical specifications",
+        "row": "Recording Selection / Cinema RAW Light 4096x2160 59.94p"
+      },
+      "conditions": {
+        "recording": "normal",
+        "recordingLocation": "internal",
+        "codec": "Cinema RAW Light",
+        "resolution": "4096x2160",
+        "sensorMode": "Super 35mm",
+        "media": "CFexpress Type B",
+        "frameRate": "59.94p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-005-human-review",
+      "claimId": "claim-917d08576b5f2fc12552"
+    }
+  ]
+}

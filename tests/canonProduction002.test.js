@@ -24,8 +24,8 @@ test('Canon batch 002 includes only released cards and defers the upcoming card'
   assert.equal(snapshot.cards.length, 29);
   assert.equal(snapshot.cards.filter((card) => card.availabilityStatus === 'released-current').length, 28);
   assert.equal(snapshot.cards.filter((card) => card.availabilityStatus === 'announced-upcoming').length, 1);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 26);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 2);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 28);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed' && card.availabilityStatus === 'released-current').length, 0);
   for (const [code, id] of selected) {
     const card = snapshot.cards.find((entry) => entry.modelCode === code);
     assert.equal(card?.status, 'canonicalized');
@@ -46,7 +46,7 @@ test('Canon batch 002 is an approved, traceable five-product atomic promotion', 
   const approval = json(`${base}approvals/${batch}.json`);
   const journal = json(`${base}transactions/${batch}/journal.json`);
   const bodies = new Map(canonical.bodies.map((body) => [body.id, body]));
-  assert.equal(canonical.bodies.length, 84);
+  assert.equal(canonical.bodies.length, 86);
   assert.equal(canonical.lenses.length, 36);
   assert.equal(validateCanonical(canonical, vocab), true);
   assert.equal(manifest.items.length, 5);
