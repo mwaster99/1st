@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+  "publisher": "Canon Korea",
+  "documentTitle": "R BODY | RF Lens World | Canon Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official EOS R6 V detailed objective specifications",
+  "accessedAt": "2026-09-30T01:43:50.182Z",
+  "evidenceExcerpt": [
+    {
+      "field": "EOS R6 V 풀프레임 CMOS",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "EOS R6 V 유효 화소 수",
+      "value": 32.5,
+      "unit": "MP"
+    },
+    {
+      "field": "EOS R6 V 전자식 셔터 연속 촬영",
+      "value": 40,
+      "unit": "fps"
+    },
+    {
+      "field": "EOS R6 V 7K RAW Light 59.94p",
+      "value": "7K RAW Light 59.94p",
+      "unit": null
+    },
+    {
+      "field": "EOS R6 V 크기 W×H×D",
+      "value": [
+        141.8,
+        83.3,
+        79.7
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "EOS R6 V 무게 배터리 카드 포함",
+      "value": 688,
+      "unit": "g"
+    },
+    {
+      "field": "EOS R6 V 무게 배터리 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "EOS R6 V 무게 바디만",
+      "value": 598,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-r6-v",
+      "manufacturerModelCode": "EOS R6 V",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS R6 V",
+        "brand": "Canon",
+        "series": "EOS R6",
+        "model": "EOS R6 V",
+        "aliases": [
+          "Canon EOS R6 V"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 풀프레임 CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 32.5,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 유효 화소 수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 2,
+          "rawValue": 40,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 전자식 셔터 연속 촬영"
+          },
+          "conditions": {
+            "shutter": "electronic"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 3,
+          "rawValue": "7K RAW Light 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 7K RAW Light 59.94p"
+          },
+          "conditions": {
+            "mode": "7K RAW Light",
+            "frameRateSystem": "NTSC 59.94p",
+            "otherMode": "7K RAW Standard 29.97p; 7K open gate separate mode"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 4,
+          "rawValue": [
+            141.8,
+            83.3,
+            79.7
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 크기 W×H×D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 688,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 무게 배터리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 6,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 무게 배터리 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 7,
+          "rawValue": 598,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R6 V 무게 바디만"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "82147143db135340caef81d1e5ab53795b9078ef6c2694a65cd94940c189067a",
+  "sourceId": "source-b183aca9ff3e1ea1"
+}

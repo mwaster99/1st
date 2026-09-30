@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-5d-mark-iv",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "Canon Support for EOS 5D Mark IV",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS 5D Mark IV detailed objective specifications",
+  "accessedAt": "2026-09-30T01:43:50.182Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Image Sensor: Full Frame CMOS",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "Image Sensor: Effective Pixels",
+      "value": 30.4,
+      "unit": "MP"
+    },
+    {
+      "field": "Image Sensor: 36 x 24 mm",
+      "value": [
+        36,
+        24
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Continuous Shooting Speed: 7 fps",
+      "value": 7,
+      "unit": "fps"
+    },
+    {
+      "field": "Dimensions W x H x D",
+      "value": [
+        150.7,
+        116.4,
+        75.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Weight with battery and CF/SD cards",
+      "value": 890,
+      "unit": "g"
+    },
+    {
+      "field": "Weight with battery and cards",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Weight body only without battery/card",
+      "value": 800,
+      "unit": "g"
+    },
+    {
+      "field": "Recording Media: CF Type I UDMA 7 and SD UHS-I slots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CF"
+            ],
+            "standards": [
+              "UDMA 7"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-5d-mark-iv",
+      "manufacturerModelCode": "EOS 5D Mark IV",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS 5D Mark IV",
+        "brand": "Canon",
+        "series": "EOS 5D",
+        "model": "EOS 5D Mark IV",
+        "aliases": [
+          "Canon EOS 5D Mark IV"
+        ],
+        "mount": "EF mount",
+        "kind": "dslr",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Image Sensor: Full Frame CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 30.4,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Image Sensor: Effective Pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            36,
+            24
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Image Sensor: 36 x 24 mm"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 3,
+          "rawValue": 7,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Continuous Shooting Speed: 7 fps"
+          },
+          "conditions": {
+            "shutter": "mechanical"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 4,
+          "rawValue": [
+            150.7,
+            116.4,
+            75.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Dimensions W x H x D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 890,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Weight with battery and CF/SD cards"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 6,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Weight with battery and cards"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 7,
+          "rawValue": 800,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Weight body only without battery/card"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 8,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CF"
+                ],
+                "standards": [
+                  "UDMA 7"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Recording Media: CF Type I UDMA 7 and SD UHS-I slots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "38aec8e483793610cdb4be7a858ffa880c7af718829341e4c45578b30579f92b",
+  "sourceId": "source-549976012289d317"
+}

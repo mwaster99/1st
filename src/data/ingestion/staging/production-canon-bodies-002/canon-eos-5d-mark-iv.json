@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-002",
+  "itemKey": "canon-eos-5d-mark-iv",
+  "manufacturerModelCode": "EOS 5D Mark IV",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS 5D Mark IV",
+    "productId": "canon-5d-iv",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-39f4e950b998b5c8388d",
+    "sourceId": "source-3cbed1f3e3e6f283",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS 5D Mark IV"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-002-human-review"
+  },
+  "product": {
+    "id": "canon-5d-iv",
+    "name": "캐논 EOS 5D Mark IV",
+    "brand": "Canon",
+    "series": "EOS 5D",
+    "model": "EOS 5D Mark IV",
+    "aliases": [
+      "Canon EOS 5D Mark IV",
+      "캐논 EOS 5D Mark IV"
+    ],
+    "mount": "Canon EF",
+    "kind": "dslr",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 800,
+      "burst": {
+        "maxMechanicalFps": 7
+      },
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CF"
+            ],
+            "standards": [
+              "UDMA 7"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        150.7,
+        116.4,
+        75.9
+      ],
+      "releaseDate": "2016-09",
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 30.4,
+        "sizeMm": [
+          36,
+          24
+        ]
+      },
+      "weight": 890,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-3cbed1f3e3e6f283",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/C4EBB347FF5F8DCECF5D028FA829ACE0?productNm=EOS_5D_Mark_IV",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS 5D Mark IV | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T01:43:50.182Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "3aad8c443dcfb6d6621526cde53805812003afc71711a4baefacd9b8a611969c"
+  },
+  "sources": [
+    {
+      "sourceId": "source-3cbed1f3e3e6f283",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/C4EBB347FF5F8DCECF5D028FA829ACE0?productNm=EOS_5D_Mark_IV",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS 5D Mark IV | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T01:43:50.182Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "3aad8c443dcfb6d6621526cde53805812003afc71711a4baefacd9b8a611969c"
+    },
+    {
+      "sourceId": "source-549976012289d317",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-5d-mark-iv",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS 5D Mark IV",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T01:43:50.182Z",
+      "evidenceScope": "Official EOS 5D Mark IV detailed objective specifications",
+      "contentDigest": "38aec8e483793610cdb4be7a858ffa880c7af718829341e4c45578b30579f92b"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.bodyOnlyWeight",
+      "value": 800,
+      "unit": "g",
+      "rawValue": 800,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Weight body only without battery/card"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-8e0fdf8ab0e26210cca0"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 7,
+      "unit": "fps",
+      "rawValue": 7,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Continuous Shooting Speed: 7 fps"
+      },
+      "conditions": {
+        "shutter": "mechanical"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-14baa6f038d989d82388"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CF"
+            ],
+            "standards": [
+              "UDMA 7"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CF"
+            ],
+            "standards": [
+              "UDMA 7"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Recording Media: CF Type I UDMA 7 and SD UHS-I slots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-987a07f1d8cafbaed0dd"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.dimensions",
+      "value": [
+        150.7,
+        116.4,
+        75.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        150.7,
+        116.4,
+        75.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Dimensions W x H x D"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-267de75dac0658f04ed7"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.releaseDate",
+      "value": "2016-09",
+      "unit": null,
+      "rawValue": "2016-09",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-3cbed1f3e3e6f283",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-a4cf9a929876529a560d"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Image Sensor: Full Frame CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-b5846a2c5f9d04cd53c3"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.sensor.megapixels",
+      "value": 30.4,
+      "unit": "MP",
+      "rawValue": 30.4,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Image Sensor: Effective Pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-d46266ce941a9f71d28c"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        36,
+        24
+      ],
+      "unit": "mm",
+      "rawValue": [
+        36,
+        24
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Image Sensor: 36 x 24 mm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-b83edb8355caaaf40ca9"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.weight",
+      "value": 890,
+      "unit": "g",
+      "rawValue": 890,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Weight with battery and CF/SD cards"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-c6ec523ca981cd8044e1"
+    },
+    {
+      "productId": "canon-5d-iv",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-549976012289d317",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Weight with battery and cards"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-44a46291b7095e23e34f"
+    }
+  ]
+}

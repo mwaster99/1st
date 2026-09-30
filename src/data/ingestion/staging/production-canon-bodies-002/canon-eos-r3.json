@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-002",
+  "itemKey": "canon-eos-r3",
+  "manufacturerModelCode": "EOS R3",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS R3",
+    "productId": "canon-r3",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-6c27fdefd1365b1d8e6a",
+    "sourceId": "source-72fe3f95aa0bf68f",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS R3"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-002-human-review"
+  },
+  "product": {
+    "id": "canon-r3",
+    "name": "캐논 EOS R3",
+    "brand": "Canon",
+    "series": "EOS R",
+    "model": "EOS R3",
+    "aliases": [
+      "Canon EOS R3",
+      "캐논 EOS R3"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 822,
+      "burst": {
+        "maxElectronicFps": 30,
+        "maxMechanicalFps": 12
+      },
+      "dimensions": [
+        150,
+        142.6,
+        87.2
+      ],
+      "releaseDate": "2021-11",
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 24.1
+      },
+      "video": {
+        "max": "6K RAW 59.94p"
+      },
+      "weight": 1015,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-72fe3f95aa0bf68f",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/C43D9D1A064F66EEEB5E2ADA60CA162D?productNm=EOS_R3",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS R3 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T01:43:50.162Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "010d0ea9524912bb0d2066953a3742adb9b0f9f8e3054f4fbb645938dafb28a9"
+  },
+  "sources": [
+    {
+      "sourceId": "source-45118d6cec4ec4dc",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+      "publisher": "Canon Korea",
+      "documentTitle": "R BODY | RF Lens World | Canon Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T01:43:50.181Z",
+      "evidenceScope": "Official EOS R3 detailed objective specifications",
+      "contentDigest": "56394722a41faa640bb928fc805dd102c7160550e57acabc178bdc39621d3eef"
+    },
+    {
+      "sourceId": "source-72fe3f95aa0bf68f",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/C43D9D1A064F66EEEB5E2ADA60CA162D?productNm=EOS_R3",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS R3 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T01:43:50.162Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "010d0ea9524912bb0d2066953a3742adb9b0f9f8e3054f4fbb645938dafb28a9"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-r3",
+      "path": "specs.bodyOnlyWeight",
+      "value": 822,
+      "unit": "g",
+      "rawValue": 822,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 무게 바디만"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-100b9bbbf03c78eb5439"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps",
+      "rawValue": 30,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 전자식 셔터 연속 촬영"
+      },
+      "conditions": {
+        "shutter": "electronic"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-00d1c2643cbda9c3d7b1"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 12,
+      "unit": "fps",
+      "rawValue": 12,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 기계식 셔터 연속 촬영"
+      },
+      "conditions": {
+        "shutter": "mechanical"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-6f7c27d0c840a1870888"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.dimensions",
+      "value": [
+        150,
+        142.6,
+        87.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        150,
+        142.6,
+        87.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 크기 W×H×D"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-4ebd280f6d5b8fdc43f3"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.releaseDate",
+      "value": "2021-11",
+      "unit": null,
+      "rawValue": "2021-11",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-72fe3f95aa0bf68f",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-a00b8980d1528af70d26"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 풀프레임 CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-b72066b701c79e4dbf5e"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.sensor.megapixels",
+      "value": 24.1,
+      "unit": "MP",
+      "rawValue": 24.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 유효 화소 수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-28c440cb6e20828fedbf"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.video.max",
+      "value": "6K RAW 59.94p",
+      "unit": null,
+      "rawValue": "6K RAW 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 6K RAW 59.94/50p"
+      },
+      "conditions": {
+        "mode": "6K RAW",
+        "frameRateSystem": "NTSC 59.94p / PAL 50p"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-82995bb7c1bd54446c4c"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.weight",
+      "value": 1015,
+      "unit": "g",
+      "rawValue": 1015,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 무게 배터리 및 CFexpress 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "card": "CFexpress"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-d88f6b732917ed8d7897"
+    },
+    {
+      "productId": "canon-r3",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-45118d6cec4ec4dc",
+      "locator": {
+        "section": "Product specifications",
+        "row": "EOS R3 무게 배터리 및 CFexpress 카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-080d7f90f87a895706da"
+    }
+  ]
+}

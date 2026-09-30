@@ -1,5 +1,38 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Canon production batch 002 — 2026-09-30
+
+작업 시작 시 git working tree는 clean, canonical은 바디 69 / 렌즈 36 / 전체 105개였다. [Canon 공식 inventory snapshot](../src/data/ingestion/canon-current-camera-gallery-2026-09-29.json)의 29개 카드와 제품별 공식 출시월을 재확인했다. 출시되어 현재 공식 카드에 있는 제품은 28개, 아직 출시 예정인 제품은 **EOS R8 Mark II 1개(공식 출시월 2026-10)**다. 기존 `status`(canonicalized/unprocessed)와 별도로 `availabilityStatus`(released-current/announced-upcoming)를 기록했다. batch 001 종료 시 미처리 18개 중 실제 출시된 미처리 제품은 17개였다.
+
+이번 batch 선정은 **EOS R3, EOS R6 V, EOS 5D Mark IV, PowerShot G7 X Mark III, EOS C80**이다. 다섯 제품 모두 Canon Korea 공식 제품 카드에서 출시월이 2026-09 이전으로 확인되며 canonical에 없는 신규 모델이다. R3는 스포츠 지향 고급 미러리스, R6 V는 영상형 미러리스, 5D Mark IV는 EF 마운트 DSLR, G7 X Mark III는 고정렌즈 컴팩트, C80은 사람이 직접 운용하는 RF 마운트 Cinema EOS다. 이 조합으로 셔터·무게·고정렌즈·시네마 영상/전원 조건의 표현 차이를 검토한다. R8 Mark II와 PTZ 원격 카메라는 선정하지 않았다.
+
+`production-canon-bodies-002`에서 제품별 Canon Korea 공식 제품 페이지와 공식 상세 사양 페이지(Canon Korea RF Lens World 또는 Canon U.S.A. support)를 **각 2개 source**, 총 10개로 연결했다. 제품 페이지는 주로 identity·한국 출시월을, 상세 사양은 각 field claim을 뒷받침한다. 제품마다 독립 cheap-worker task 1개를 실제 호출했다. 이후 raw-helper → normalize → validate → diff → 사람 검토 → 명시적 approval → atomic apply를 완료했다. 신규 바디 **5개**, 기존 보강 **0개**이며 canonical은 바디 **69→74**, 렌즈 **36 유지**, 전체 **105→110**이다. 승인 diff digest는 `daf00efd7f478149733bd42ae33970918be39575edb309a488f2ea9e6ca9e9a3`, approval ID는 `approval-deaee1e9745fa70dfcbf9079e5e294d90e4f2e664b8e767b736b29a2237710d0`, 최종 canonical SHA-256은 `ebea608a0893ba0a4f35c2628722d501d5772f2aad385d740600a33ffe925e36`이다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였다.
+
+| 제품 / ID | 공식 source | 신규 claim | 핵심 승격값 / 보류 |
+| --- | ---: | ---: | --- |
+| EOS R3 / `canon-r3` | 2 | 10 | RF 풀프레임 24.1MP, 기계식 12·전자식 30fps, 6K RAW 59.94p, 1015g 배터리·CFexpress 포함 / 822g 바디. |
+| EOS R6 V / `canon-r6-v` | 2 | 9 | RF 풀프레임 32.5MP, 전자식 40fps, 7K RAW Light 59.94p(7K RAW Standard·open-gate와 구분), 688g 배터리·카드 포함 / 598g 바디. |
+| EOS 5D Mark IV / `canon-5d-iv` | 2 | 10 | EF DSLR 풀프레임 30.4MP, 기계식 7fps, CF UDMA 7 + SD UHS-I 두 슬롯, 890g 배터리·두 카드 포함 / 800g 바디. |
+| PowerShot G7 X Mark III / `canon-g7-x-iii` | 2 | 11 | `kind: fixed`, `mount: null`; 실제 8.8–36.8mm / 35mm 환산 24–100mm, F1.8–2.8. 색상별 통합 무게는 UNKNOWN, 별도 렌즈 제품 없음. |
+| EOS C80 / `canon-c80` | 2 | 10 | 직접 운용 RF Cinema EOS, 풀프레임, SD 2슬롯, 내부 6K RAW 29.97p(HDMI RAW 59.94p와 구분), 1300g 바디만. 배터리 포함 무게·사진용 유효 화소·전체 치수는 UNKNOWN. |
+
+공식 자료 10개에서 동일 leaf에 대한 값 충돌 및 기존 canonical value conflict는 **0건**이었다. 다만 별도로 검토한 [Canon Korea C80 보도자료](https://www.kr.canon/company/brand/news/11108/Iframe)의 크기 축·수치(160×116×138mm)와 [Canon U.S.A. support](https://www.usa.canon.com/support/p/eos-c80)의 W×H×D 160×137.4×116mm는 서로 다르다. 동일 측정·축 순서가 확인되지 않아 치수를 raw claim과 canonical에 승격하지 않았다. G7 X Mark III의 무게는 Canon U.S.A.의 검정/은색 변형에 대한 값만 확인되고 Canon Korea 카드의 graphite 변형까지 일반화할 수 없어 `null`로 보류했다. C80의 공식 19.0MP는 영상 유효 화소이므로 사진용 `specs.sensor.megapixels`에 넣지 않았다. 모든 신품·중고 가격과 그 밖의 미검증 leaf도 UNKNOWN이다. 조건부 영상·셔터·무게 기준은 claim `conditions`에 보존했다.
+
+| 제품 | worker input / output / total token | 유용했던 검토 경고 |
+| --- | ---: | --- |
+| EOS R3 | 500 / 616 / 1,116 | 셔터별 연사, 배터리 포함/본체 무게 분리 |
+| EOS R6 V | 525 / 1,186 / 1,711 | RAW Light·Standard·open-gate 모드 구분 |
+| EOS 5D Mark IV | 533 / 1,029 / 1,562 | CF·SD 슬롯과 무게 기준 구분 |
+| PowerShot G7 X Mark III | 540 / 460 / 1,000 | 고정렌즈와 graphite 색상 무게 불명 |
+| EOS C80 | 546 / 1,242 / 1,788 | 내부/외부 6K, 영상 화소, 치수 차이 |
+| **합계** | **2,644 / 4,533 / 7,177** | 실제 API 호출 5회, 재시도·실패 0회 |
+
+Worker에는 제품별 공개 공식 발췌와 최소 schema만 전달했고 전체 코드·canonical·secret은 보내지 않았다. worker의 EOS R6 V 출시 여부 의문은 현재 Canon Korea 공식 제품·출시월로 반증되어 채택하지 않았다. 사람이 29개 카드의 출시 상태, 5개 identity/alias·kind/mount, 공식 source 10개, worker 결과 5개, 승격 claim 50개, diff 5건과 UNKNOWN·approval을 직접 판단했다. raw-helper는 source 10개의 `accessedAt`을 실제 UTC ISO timestamp `2026-09-30T01:43:50.162Z`~`2026-09-30T01:43:50.183Z`로 자동 기록했다.
+
+파이프라인에서 드러난 작은 계약 누락: `validate`는 운영 무게 claim의 `conditions.weightBasis`가 필요한지 검사하지 않아 첫 `approve`가 `Weight condition and weightBasis disagree`로 중단됐다. 적용 전 raw metadata를 `basis`에서 `weightBasis`로 수정하고 normalize→validate→diff→approval을 다시 거쳤다. C80의 확인되지 않은 카드 표준도 빈 배열 대신 `null`로 바꾸었다. 코드/schema 변경 없이 데이터만 보정했고 승인 전 실패라 canonical 오염은 없었다. EOS R8 Mark II는 `status: unprocessed`와 `availabilityStatus: announced-upcoming`으로 계속 분리했다. 종료 시 Canon 공식 카드 29개 중 canonicalized **16개**, 출시된 일반 카메라 미처리 **12개**, 출시 예정 **1개**다. 따라서 다음 5개 production batch를 진행할 수 있다. 가격·추천 엔진·UI는 변경하지 않았다.
+
+전체 테스트 **111/111**, Objective·Canon production 테스트 **69/69**, canonical validation **110/110**, `pnpm build`, 관련 `node --check`, `git diff --check`를 통과했다. Build는 500kB 초과 chunk 경고를 출력했다.
+
 ## Stage 4 첫 Canon production batch — 2026-09-29
 
 Canon Korea의 [렌즈교환식 카메라](https://kr.canon/product/category/141), [컴팩트 카메라](https://kr.canon/product/category/183), [Cinema EOS](https://kr.canon/product/category/268) 공식 제품 카드를 직접 대조하여, 사람이 직접 운용하는 카메라 **29개**(미러리스 15, DSLR 2, 컴팩트 5, Cinema EOS 바디 7)의 [전체 inventory snapshot](../src/data/ingestion/canon-current-camera-gallery-2026-09-29.json)을 저장했다. 시작 시 현행 카드 중 canonical 6개, 미처리 23개였다. Cinema EOS라는 이름만으로 제외하지 않았다. 같은 영상/방송기기 갤러리의 **PTZ 리모트 카메라 17개**는 원격·설치 운용 제품군으로 snapshot에 인접 특수 카테고리로 기록했으며 직접 운용 카메라 29개에는 포함하지 않았다. 따라서 이번 29개 안에서 `deferred-special-category`로 판정한 제품은 없다. EOS R8 Mark II 카드는 목록에 있지만 제품 페이지의 2026-10 출시 예정 정보 때문에 첫 batch에는 선정하지 않았다.

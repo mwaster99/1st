@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://kr.canon/rflensworld/r-system/r-body/index",
+  "publisher": "Canon Korea",
+  "documentTitle": "R BODY | RF Lens World | Canon Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "evidenceScope": "Official EOS R3 detailed objective specifications",
+  "accessedAt": "2026-09-30T01:43:50.181Z",
+  "evidenceExcerpt": [
+    {
+      "field": "EOS R3 풀프레임 CMOS",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "EOS R3 유효 화소 수",
+      "value": 24.1,
+      "unit": "MP"
+    },
+    {
+      "field": "EOS R3 기계식 셔터 연속 촬영",
+      "value": 12,
+      "unit": "fps"
+    },
+    {
+      "field": "EOS R3 전자식 셔터 연속 촬영",
+      "value": 30,
+      "unit": "fps"
+    },
+    {
+      "field": "EOS R3 6K RAW 59.94/50p",
+      "value": "6K RAW 59.94p",
+      "unit": null
+    },
+    {
+      "field": "EOS R3 크기 W×H×D",
+      "value": [
+        150,
+        142.6,
+        87.2
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "EOS R3 무게 배터리 및 CFexpress 카드 포함",
+      "value": 1015,
+      "unit": "g"
+    },
+    {
+      "field": "EOS R3 무게 배터리 및 CFexpress 카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "EOS R3 무게 바디만",
+      "value": 822,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-r3",
+      "manufacturerModelCode": "EOS R3",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS R3",
+        "brand": "Canon",
+        "series": "EOS R",
+        "model": "EOS R3",
+        "aliases": [
+          "Canon EOS R3"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 풀프레임 CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 24.1,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 유효 화소 수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 2,
+          "rawValue": 12,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 기계식 셔터 연속 촬영"
+          },
+          "conditions": {
+            "shutter": "mechanical"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 3,
+          "rawValue": 30,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 전자식 셔터 연속 촬영"
+          },
+          "conditions": {
+            "shutter": "electronic"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 4,
+          "rawValue": "6K RAW 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 6K RAW 59.94/50p"
+          },
+          "conditions": {
+            "mode": "6K RAW",
+            "frameRateSystem": "NTSC 59.94p / PAL 50p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            150,
+            142.6,
+            87.2
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 크기 W×H×D"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 6,
+          "rawValue": 1015,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 무게 배터리 및 CFexpress 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "card": "CFexpress"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 7,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 무게 배터리 및 CFexpress 카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 8,
+          "rawValue": 822,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "EOS R3 무게 바디만"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "56394722a41faa640bb928fc805dd102c7160550e57acabc178bdc39621d3eef",
+  "sourceId": "source-45118d6cec4ec4dc"
+}

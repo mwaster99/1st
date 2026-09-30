@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.usa.canon.com/support/p/eos-c80",
+  "publisher": "Canon U.S.A.",
+  "documentTitle": "Canon Support for EOS C80",
+  "documentVersion": null,
+  "region": "US",
+  "evidenceScope": "Official EOS C80 detailed objective specifications",
+  "accessedAt": "2026-09-30T01:43:50.183Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Image Sensor: Full Frame CMOS",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "Body Weight: approx 1300g",
+      "value": 1300,
+      "unit": "g"
+    },
+    {
+      "field": "Recording media: dual SD card slots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "Internal RAW: 6K 29.97/25p",
+      "value": "6K RAW 29.97p",
+      "unit": null
+    },
+    {
+      "field": "Viewfinder: none",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "LCD Monitor",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "LCD Monitor 3.5 inch",
+      "value": 3.5,
+      "unit": "in"
+    },
+    {
+      "field": "LCD Monitor 2.76 million dots",
+      "value": 2760000,
+      "unit": "dots"
+    },
+    {
+      "field": "LCD touch panel",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "canon-eos-c80",
+      "manufacturerModelCode": "EOS C80",
+      "productType": "body",
+      "identity": {
+        "name": "캐논 EOS C80",
+        "brand": "Canon",
+        "series": "Cinema EOS",
+        "model": "EOS C80",
+        "aliases": [
+          "Canon EOS C80"
+        ],
+        "mount": "RF mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Image Sensor: Full Frame CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 1,
+          "rawValue": 1300,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Product specifications",
+            "row": "Body Weight: approx 1300g"
+          },
+          "conditions": {
+            "basis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 2,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Recording media: dual SD card slots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 3,
+          "rawValue": "6K RAW 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Internal RAW: 6K 29.97/25p"
+          },
+          "conditions": {
+            "recording": "internal",
+            "format": "Cinema RAW Light",
+            "frameRateSystem": "NTSC 29.97p / PAL 25p",
+            "externalOutput": "6K RAW 59.94/50p via HDMI, separate mode"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 4,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "Viewfinder: none"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 5,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "LCD Monitor"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 6,
+          "rawValue": 3.5,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Product specifications",
+            "row": "LCD Monitor 3.5 inch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 7,
+          "rawValue": 2760000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Product specifications",
+            "row": "LCD Monitor 2.76 million dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 8,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Product specifications",
+            "row": "LCD touch panel"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-09-30",
+          "reviewer": "codex-canon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9cf871a41ffde0e8e029e32ddf09f911195e52aa34fe49619c8f0d4096113eff",
+  "sourceId": "source-fe5d33b045f4a057"
+}

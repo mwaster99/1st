@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-canon-bodies-002",
+  "itemKey": "canon-eos-c80",
+  "manufacturerModelCode": "EOS C80",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Canon",
+    "manufacturerModelCode": "EOS C80",
+    "productId": "canon-c80",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-7a00364d37ed9a9b75e8",
+    "sourceId": "source-bae0474531a72701",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product header",
+      "row": "EOS C80"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-09-30",
+    "reviewer": "codex-canon-002-human-review"
+  },
+  "product": {
+    "id": "canon-c80",
+    "name": "캐논 EOS C80",
+    "brand": "Canon",
+    "series": "Cinema EOS",
+    "model": "EOS C80",
+    "aliases": [
+      "Canon EOS C80",
+      "캐논 EOS C80"
+    ],
+    "mount": "Canon RF",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 1300,
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "evf": {
+        "present": false
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 2760000,
+        "sizeInches": 3.5,
+        "touch": true
+      },
+      "releaseDate": "2024-11",
+      "sensor": {
+        "format": "풀프레임"
+      },
+      "video": {
+        "max": "6K RAW 29.97p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-bae0474531a72701",
+    "sourceType": "manufacturer",
+    "url": "https://kr.canon/product/content/detail/547141AFD44EEC560187F9F1C816DC24?productNm=EOS_C80",
+    "publisher": "Canon Korea",
+    "documentTitle": "EOS C80 | Canon Korea product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-09-30T01:43:50.183Z",
+    "evidenceScope": "Official product identity and Korean market release",
+    "contentDigest": "8f17c2f8ee012c207c5f6283bc2bf6e914437c4670d9533820da2d02e617ad6d"
+  },
+  "sources": [
+    {
+      "sourceId": "source-bae0474531a72701",
+      "sourceType": "manufacturer",
+      "url": "https://kr.canon/product/content/detail/547141AFD44EEC560187F9F1C816DC24?productNm=EOS_C80",
+      "publisher": "Canon Korea",
+      "documentTitle": "EOS C80 | Canon Korea product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-09-30T01:43:50.183Z",
+      "evidenceScope": "Official product identity and Korean market release",
+      "contentDigest": "8f17c2f8ee012c207c5f6283bc2bf6e914437c4670d9533820da2d02e617ad6d"
+    },
+    {
+      "sourceId": "source-fe5d33b045f4a057",
+      "sourceType": "manufacturer",
+      "url": "https://www.usa.canon.com/support/p/eos-c80",
+      "publisher": "Canon U.S.A.",
+      "documentTitle": "Canon Support for EOS C80",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-09-30T01:43:50.183Z",
+      "evidenceScope": "Official EOS C80 detailed objective specifications",
+      "contentDigest": "9cf871a41ffde0e8e029e32ddf09f911195e52aa34fe49619c8f0d4096113eff"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "canon-c80",
+      "path": "specs.bodyOnlyWeight",
+      "value": 1300,
+      "unit": "g",
+      "rawValue": 1300,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Body Weight: approx 1300g"
+      },
+      "conditions": {
+        "basis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-203440c685ee106c642a"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Recording media: dual SD card slots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-6a2067ca25e2e2db9166"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.evf.present",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Viewfinder: none"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-df60d108517a8966afa7"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "LCD Monitor"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-59d143c2e056386f6aa9"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.lcd.resolutionDots",
+      "value": 2760000,
+      "unit": "dots",
+      "rawValue": 2760000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "LCD Monitor 2.76 million dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-0baf5dcea02a77eabb3e"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.lcd.sizeInches",
+      "value": 3.5,
+      "unit": "in",
+      "rawValue": 3.5,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "LCD Monitor 3.5 inch"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-bae7c843ffbf8240f9a8"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "LCD touch panel"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-ab1641c70aa20ddf38d1"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.releaseDate",
+      "value": "2024-11",
+      "unit": null,
+      "rawValue": "2024-11",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-bae0474531a72701",
+      "locator": {
+        "section": "Product information",
+        "row": "출시일"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-fb51d69ea168842d658b"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Image Sensor: Full Frame CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-5eac3fc10abe45e35fdb"
+    },
+    {
+      "productId": "canon-c80",
+      "path": "specs.video.max",
+      "value": "6K RAW 29.97p",
+      "unit": null,
+      "rawValue": "6K RAW 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fe5d33b045f4a057",
+      "locator": {
+        "section": "Product specifications",
+        "row": "Internal RAW: 6K 29.97/25p"
+      },
+      "conditions": {
+        "recording": "internal",
+        "format": "Cinema RAW Light",
+        "frameRateSystem": "NTSC 29.97p / PAL 25p",
+        "externalOutput": "6K RAW 59.94/50p via HDMI, separate mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-09-30",
+      "reviewer": "codex-canon-002-human-review",
+      "claimId": "claim-3d9dcada9898738bd988"
+    }
+  ]
+}

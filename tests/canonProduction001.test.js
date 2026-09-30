@@ -13,7 +13,7 @@ const json = (name) => JSON.parse(read(name));
 const sha = (name) => createHash('sha256').update(read(name)).digest('hex');
 const base = 'src/data/ingestion/';
 
-test('Canon Korea gallery snapshot tracks every direct-operated camera card and batch 001', () => {
+test('Canon Korea gallery snapshot tracks every direct-operated camera card and production state', () => {
   const snapshot = json(`${base}canon-current-camera-gallery-2026-09-29.json`);
   const canonical = json('src/data/cameraProducts.json');
   const byId = new Map(canonical.bodies.map((body) => [body.id, body]));
@@ -23,8 +23,8 @@ test('Canon Korea gallery snapshot tracks every direct-operated camera card and 
   }
   assert.equal(new Set(snapshot.cards.map((card) => card.productUrl)).size, 29);
   assert.equal(new Set(snapshot.cards.map((card) => card.modelCode)).size, 29);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 11);
-  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed').length, 18);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'canonicalized').length, 16);
+  assert.equal(snapshot.cards.filter((card) => card.status === 'unprocessed').length, 13);
   for (const card of snapshot.cards) {
     assert.ok(card.productUrl.startsWith('https://kr.canon/'));
     if (card.status === 'canonicalized') assert.ok(byId.has(card.canonicalId), card.name);
