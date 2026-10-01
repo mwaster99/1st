@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-002",
+  "scope": "Nikon Korea released/current unprocessed direct-operated cameras: Z9, Zfc, Z7II, D850, COOLPIX P950",
+  "tier": 1,
+  "baselineCommit": "2697e0b",
+  "canonicalBaselineDigest": "fe082817b2e9d39d821f936aa680b3fde2aa3825848a94bdd096b5c0c1dbb730",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "nikon-z9",
+      "productId": "nikon-z9",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-44d4a2e48bdf3a0f",
+        "source-a86394fe470736d6"
+      ],
+      "issues": [],
+      "updatedAt": "2026-10-01T03:08:18.297Z",
+      "rawDigests": [
+        "923752fa5317fb814d4188e153798ba7b0cf80cfbb5123c9fc8ce538d0a9cbb1",
+        "6301056a75d28337c4bd8182373dff8ac183309090c2adcb6a651d4a642bd1ad"
+      ],
+      "stagingDigest": "3bb27f0c932e922616eab84088624275e3f45efc3f5d6b763ef6c6eb1f27a175",
+      "diffDigest": "48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60"
+    },
+    {
+      "itemKey": "nikon-zfc",
+      "productId": "nikon-zfc",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-e09d9a7cb238564d",
+        "source-65d6fb2fbf728d31"
+      ],
+      "issues": [],
+      "updatedAt": "2026-10-01T03:08:18.297Z",
+      "rawDigests": [
+        "50f0aecca32f7fb02c52dfa7e44360954581f2aef9498cbc757cade1917c53a4",
+        "c8fbbe7d98ce50eb64218b4f294536181a325165af7bb3b17d9aedbb6d7c0e20"
+      ],
+      "stagingDigest": "5cc2386e419efa3ed795645a6ea6e9f1ed2087890eb0d5f446d3a10e2062c755",
+      "diffDigest": "48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60"
+    },
+    {
+      "itemKey": "nikon-z7-ii",
+      "productId": "nikon-z7-ii",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-355ddc1eaaf00bcb",
+        "source-c6f7d928015ab9ee"
+      ],
+      "issues": [],
+      "updatedAt": "2026-10-01T03:08:18.297Z",
+      "rawDigests": [
+        "71e2e6bf50db89d356ad55d095d7225c3fe212e3470cc461eca327dcf0d081f3",
+        "3fea136239b609c86de634cb0f4b43eba4d9995a03d5b2dd148d7e60fe9fdf44"
+      ],
+      "stagingDigest": "d28f8ca33586cea28c8f43a2ed4c5d494c1035553ed8980849d1ab786b9f6f49",
+      "diffDigest": "48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60"
+    },
+    {
+      "itemKey": "nikon-d850",
+      "productId": "nikon-d850",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-b44b92f11613d9eb",
+        "source-e2877a793a7cdca1"
+      ],
+      "issues": [],
+      "updatedAt": "2026-10-01T03:08:18.297Z",
+      "rawDigests": [
+        "ee0f87ab24b8194a356cf8633baaca01eabe2cb5f33e1813eebf0a31bbf788bf",
+        "16b28c81108df5b1c3f28aa09f446afbbfbfab660de9dff124360988b081223e"
+      ],
+      "stagingDigest": "b65f5f0aba12de10bf98eef3710b1465a037627215ec5a574d985c41a2f25b44",
+      "diffDigest": "48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60"
+    },
+    {
+      "itemKey": "nikon-coolpix-p950",
+      "productId": "nikon-coolpix-p950",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-f3b98acdd3231624",
+        "source-2b5a76272e91dfe6"
+      ],
+      "issues": [],
+      "updatedAt": "2026-10-01T03:08:18.297Z",
+      "rawDigests": [
+        "e45cbeedbdd001eef835b03ccbdc7e278048e0cd1e8bf2a13c5cd15cb1259328",
+        "5cb3e8ddb67ca3fbedc1ef89fe7aceec7c72fdfb0c43e7b108c8b5c4f2f40143"
+      ],
+      "stagingDigest": "27238f8fce8c5018d33540bca32d1c95d56d1b95881052e235437b00fe8c0937",
+      "diffDigest": "48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60"
+    }
+  ],
+  "updatedAt": "2026-10-01T03:08:18.297Z",
+  "expectedCanonicalDigest": "1f1c419c84e5524941530ddd6d8c47a9f1e966bd08505f8313e207f7d4535429",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-23584e4fc2fe8e502ea1296f14f84e0c94c55e0538a70ce31b2060b37f3101cb",
+    "completedAt": "2026-10-01T03:08:18.297Z",
+    "transaction": "transactions/production-nikon-bodies-002"
+  }
+}

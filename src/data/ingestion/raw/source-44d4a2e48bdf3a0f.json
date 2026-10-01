@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Nikon Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+  "documentTitle": "Z9 | Nikon Imaging Korea",
+  "evidenceScope": "Official product detailed objective specifications",
+  "accessedAt": "2026-10-01T03:06:11.459Z",
+  "evidenceExcerpt": [
+    {
+      "field": "촬상소자 FX 포맷",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "유효화소수",
+      "value": 45710000,
+      "unit": "pixel"
+    },
+    {
+      "field": "촬상소자 크기",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게 배터리 카드 포함",
+      "value": 1340,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게 본체만",
+      "value": 1160,
+      "unit": "g"
+    },
+    {
+      "field": "크기(폭×높이×깊이)",
+      "value": [
+        149,
+        149.5,
+        90.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "셔터 전자식 전용",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "셔터 전자식",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "고속 연속 촬영",
+      "value": 20,
+      "unit": "fps"
+    },
+    {
+      "field": "12bit N-RAW 내부 기록 8.3K/60p",
+      "value": "8.3K N-RAW 59.94p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "nikon-z9",
+      "manufacturerModelCode": "Z9",
+      "productType": "body",
+      "identity": {
+        "name": "니콘 Z9",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Z9",
+        "aliases": [
+          "Nikon Z9",
+          "Z 9",
+          "니콘 Z9"
+        ],
+        "mount": "Z mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자 FX 포맷"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 45710000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "주요사양",
+            "row": "유효화소수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.9,
+            23.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 1340,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 배터리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "excludes": [
+              "body cap",
+              "accessory shoe cover"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 1160,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 본체만"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            149,
+            149.5,
+            90.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "크기(폭×높이×깊이)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "evidenceRef": 7,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "셔터 전자식 전용"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "evidenceRef": 8,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "셔터 전자식"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 9,
+          "rawValue": 20,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "주요사양",
+            "row": "고속 연속 촬영"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "mode": "high-speed continuous",
+            "recordingFormat": "JPEG L Fine or high-efficiency RAW without star; not C120"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 10,
+          "rawValue": "8.3K N-RAW 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품특징",
+            "row": "12bit 8.3K/60p RAW 동영상 내부 기록"
+          },
+          "conditions": {
+            "recordingLocation": "internal",
+            "codec": "N-RAW",
+            "bitDepth": 12,
+            "imageArea": "FX",
+            "frameRate": "59.94p",
+            "firmware": "Ver.2.00 or later"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9494e65902a764c5fdb7f923aa091efe6e9837fcfc1ad1746bd3f80283d36a27",
+  "sourceId": "source-44d4a2e48bdf3a0f"
+}

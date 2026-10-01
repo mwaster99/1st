@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Nikon Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.nikc.nikon.com/product/dslr/D850",
+  "documentTitle": "D850 | Nikon Imaging Korea",
+  "evidenceScope": "Official product detailed objective specifications",
+  "accessedAt": "2026-10-01T03:06:11.461Z",
+  "evidenceExcerpt": [
+    {
+      "field": "촬상소자 FX 포맷",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "유효화소수",
+      "value": 45750000,
+      "unit": "pixel"
+    },
+    {
+      "field": "촬상소자 크기",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게 배터리 XQD 카드 포함",
+      "value": 1005,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게 본체만",
+      "value": 915,
+      "unit": "g"
+    },
+    {
+      "field": "크기(폭×높이×깊이)",
+      "value": [
+        146,
+        124,
+        78.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "셔터 기계식/전자선막",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "연속 촬영 속도 CH",
+      "value": 7,
+      "unit": "fps"
+    },
+    {
+      "field": "기록 화소수/프레임 레이트",
+      "value": "4K UHD 29.97p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "nikon-d850",
+      "manufacturerModelCode": "D850",
+      "productType": "body",
+      "identity": {
+        "name": "니콘 D850",
+        "brand": "Nikon",
+        "series": "D",
+        "model": "D850",
+        "aliases": [
+          "Nikon D850",
+          "니콘 D850"
+        ],
+        "mount": "F mount",
+        "kind": "dslr",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자 FX 포맷"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 45750000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "주요사양",
+            "row": "유효화소수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.9,
+            23.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 1005,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 배터리 XQD 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "includes": [
+              "battery",
+              "XQD card"
+            ],
+            "excludes": [
+              "body cap"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 915,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 본체만"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            146,
+            124,
+            78.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "크기(폭×높이×깊이)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "evidenceRef": 7,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "셔터 기계식/전자선막"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 8,
+          "rawValue": 7,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "주요사양",
+            "row": "연속 촬영 속도 CH"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "battery": "EN-EL15a",
+            "mode": "CH without EN-EL18b; 9fps requires MB-D18 and EN-EL18b"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 9,
+          "rawValue": "4K UHD 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "기록 화소수/프레임 레이트"
+          },
+          "conditions": {
+            "resolution": "3840x2160",
+            "frameRate": "29.97p",
+            "recording": "normal"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-002-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "362736a6fda008f534fed25f1bbb32d99d67c5a4fdf27b03c77a31d25e1e2395",
+  "sourceId": "source-b44b92f11613d9eb"
+}

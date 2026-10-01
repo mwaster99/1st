@@ -1,5 +1,25 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Nikon Korea production batch 002 — 2026-10-01
+
+시작 시 working tree는 clean, canonical은 바디 91 / 렌즈 36 / 전체 127개였다. [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), batch 001 transaction 및 진행 기록, canonical, identity-map을 대조해 released/current 미처리 11개를 확인했다. Nikon Korea 공식 [미러리스](https://www.nikc.nikon.com/product/mirrorless)·[DSLR](https://www.nikc.nikon.com/product/dslr)·[콤팩트](https://www.nikc.nikon.com/product/compact) 목록에서 아래 5개 카드와 개별 사양 페이지를 재확인했다. [공식 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)의 Z5IIC는 2026년 10월 발매 예정으로 아직 별도 announced/upcoming이다.
+
+신규 **Z9, Zfc, Z7II, D850, COOLPIX P950**을 선정했다. 각기 FX 플래그십 전자셔터, DX 복고형, 이전 세대 FX 고화소, F 마운트 DSLR, 고정렌즈 초망원을 대표한다. 제품별 공식 사양 페이지 1개와 Nikon Korea 현행 분류 카드 1개를 연결해 **공식 source 각 2개, 총 10개**를 사용했다. 분류 카드는 identity/current 근거만 담당한다. 제품별 독립 cheap-worker task 5건은 공개 공식 발췌문만 받았고 프로젝트 코드·canonical 전체·secret은 받지 않았다. raw-helper → normalize → validate → 사람용 diff 검토 → 명시적 approval → atomic apply를 완료했다. **신규 5개, 기존 보강 0개, 검증 claim 55개**로 canonical은 바디 **91→96**, 렌즈 **36 유지**, 전체 **127→132**다. source/value conflict **0건**. 승인 diff digest `48ad5cd4c9615c62a890634e7248bade9d8209e55b255613ad1f9acb33376b60`, approval ID `approval-23584e4fc2fe8e502ea1296f14f84e0c94c55e0538a70ce31b2060b37f3101cb`, 적용 후 canonical SHA-256 `1f1c419c84e5524941530ddd6d8c47a9f1e966bd08505f8313e207f7d4535429`다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였다.
+
+| 제품 | 공식 source / claim | 핵심 승격값과 보류값 |
+| --- | ---: | --- |
+| Z9 / `nikon-z9` | 2 / 11 | FX 45.71MP, Z 마운트, 배터리·카드 포함 1340g / 본체만 1160g, 전자셔터 전용. 20fps는 해당 고속 연속·기록 형식 조건을 claim에 보존했다. C120의 저해상도 JPEG 120fps는 일반 연사로 승격하지 않았다. 8.3K N-RAW 59.94p는 내부 기록·12bit·FX·펌웨어 조건을 보존했다. |
+| Zfc / `nikon-zfc` | 2 / 10 | DX 20.88MP, Z 마운트, 445g / 본체만 390g, 기계식·전자식 셔터, 4K UHD 29.97p. 약 11fps 확장 연사는 셔터·기록 조건이 충분히 확정되지 않아 이번 canonical leaf에 넣지 않았다. |
+| Z7II / `nikon-z7-ii` | 2 / 11 | FX 45.75MP, Z 마운트, 705g / 본체만 615g, 센서 시프트 5축 VR, 4K UHD 59.94p. 4K 60p의 crop 해석은 검토한 사양 발췌만으로 확정하지 않고 조건 metadata에 미확정으로 명시했다. |
+| D850 / `nikon-d850` | 2 / 10 | FX 45.75MP, F 마운트 DSLR, 1005g / 본체만 915g, 기계식 셔터, EN-EL15a 구성 CH 약 7fps. 그립·EN-EL18b 구성의 약 9fps는 일반값으로 승격하지 않았다. |
+| COOLPIX P950 / `nikon-coolpix-p950` | 2 / 13 | `kind: fixed`, `mount: null`, 16.05MP, 1005g. 내장 렌즈 실제 4.3–357mm, 35mm 환산 24–2000mm, F2.8–6.5. 별도 lens product나 내장 렌즈 무게 없음. |
+
+가격은 별도 phase라 모두 UNKNOWN이다. releaseDate, AF, EVF, 카드 슬롯 등 이번에 직접 field claim으로 검증하지 않은 값은 `null`이다. P950의 1/2.3형 센서는 물리 mm 크기로 추정 변환하지 않았다. 영상 `max` 단일 leaf가 crop·codec·펌웨어 조건을 직접 표시하지 못하는 기존 한계는 claim metadata로 보존했다. 추천 엔진·UI와 스키마는 변경하지 않았다.
+
+Cheap-worker 사용량(input/output/total token): Z9 **444/362/806**, Zfc **430/601/1031**, Z7II **450/545/995**, D850 **431/733/1164**, P950 **451/732/1183**. **총 2206/2973/5179 token**, 실제 API 5회, worker 재시도/실패 0회다. Z9 최초 로컬 호출의 `STATE_UNAVAILABLE`은 공용 상태 디렉터리 접근이 없어 API에 도달하지 않은 실패이며 권한이 있는 동일 task 첫 호출부터 5건 모두 성공했다. Worker는 Z9 C120·영상 codec, D850 그립별 연사, P950 실제/환산 초점거리 및 내장 렌즈 분리를 유용하게 경고했다. Zfc의 약 11fps를 **19fps**로 오독한 worker 경고는 공식 사양과 달라 폐기했다. 사람이 출시 상태·5개 identity/ID·10개 source 적용 범위·55개 claim/조건·UNKNOWN·diff·approval/apply를 직접 판단했고, 별도 사용자 개입은 없었다.
+
+새로 확인된 validation 빈틈: `specs.ibis`를 불리언으로 쓴 최초 Z7II draft는 validate를 통과했으나 approval의 canonical 구조 검사에서 거절됐다. 기존 객체 contract(`present`, `axes`, `stops`, `conditions`)에 맞게 raw를 재생성하고 normalize/validate/diff/approval을 다시 수행했다. pipeline 코드는 이번 batch에서 변경하지 않았고 validate 단계의 구조 검사 보강 후보로 남긴다. raw source 10개 `accessedAt`은 raw-helper가 생성한 실제 UTC ISO timestamp(03:06:11.459–03:06:11.461Z)이며, 과거 transaction의 expected digest와 현재 canonical digest를 분리한 회귀 테스트 3개를 추가했다. 검증은 전체 **135/135**, Objective/production **93/93**, Nikon batch 002 전용 **3/3**, canonical **132/132**, `pnpm build`, Objective scripts `node --check`, `git diff --check` 통과였다. 종료 시 released/current 미처리 **6개**(Z50, Z6, Z7, Z6II, Z5, COOLPIX P1000), announced/upcoming **1개**(Z5IIC)다. 다음 5개 batch를 진행할 수 있다.
+
 ## Stage 4 Nikon Korea production batch 001 — 2026-10-01
 
 시작 시 git working tree는 clean, canonical은 바디 86 / 렌즈 36 / 전체 122개였다. Nikon Korea 공식 [미러리스](https://www.nikc.nikon.com/product/mirrorless) 15개, [SLR](https://www.nikc.nikon.com/product/dslr) 3개, [콤팩트](https://www.nikc.nikon.com/product/compact) 3개, [시네마](https://www.nikc.nikon.com/product/zcinema) 1개를 직접 대조해 [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json)에 22개 카드를 기록했다. Nikon 공식 [2026-09-28 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)는 Z5IIC를 2026년 10월 발매 예정으로 명시하므로 announced/upcoming 1개로 분리했다. 출시 완료 21개 중 기존 canonical 5개(Z6III, D780, Zf, Z5II, Z50II), 시작 시 미처리 16개였다. Nikon Korea 시네마 분류의 RED 링크는 외부 RED 카탈로그로 이동하며 Nikon Korea 제품 카드가 아니므로 이 22개 분모에 넣지 않았다. 공식 카메라 분류에서 원격 설치형 별도 카드는 발견되지 않아 deferred-special 후보는 0개다.

@@ -1,0 +1,1807 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-002",
+  "canonicalBaselineDigest": "fe082817b2e9d39d821f936aa680b3fde2aa3825848a94bdd096b5c0c1dbb730",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-002",
+      "productId": "nikon-z9",
+      "productName": "니콘 Z9",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-z9",
+        "name": "니콘 Z9",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Z9",
+        "aliases": [
+          "Nikon Z9",
+          "Z 9",
+          "니콘 Z9"
+        ],
+        "mount": "Nikon Z",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 45.71,
+            "generation": null,
+            "sizeMm": [
+              35.9,
+              23.9
+            ]
+          },
+          "weight": 1340,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 1160,
+          "dimensions": [
+            149,
+            149.5,
+            90.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "8.3K N-RAW 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxElectronicFps": 20
+          },
+          "shutter": {
+            "electronic": true,
+            "mechanical": false
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/mirrorless",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-a86394fe470736d6",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-5c1bca1d30cbe61ade69",
+          "sourceId": "source-a86394fe470736d6",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-5c1bca1d30cbe61ade69",
+        "sourceId": "source-a86394fe470736d6",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official current product gallery",
+          "row": "Z9"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-002-human-review",
+        "source": {
+          "sourceId": "source-a86394fe470736d6",
+          "url": "https://www.nikc.nikon.com/product/mirrorless",
+          "documentTitle": "mirrorless cameras | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1160,
+          "unit": "g",
+          "claimId": "claim-4b9c735795098e795b1e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 본체만"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "fps",
+          "claimId": "claim-80dff4af43cc8ac49267",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "고속 연속 촬영"
+            },
+            "conditions": {
+              "shutter": "electronic",
+              "mode": "high-speed continuous",
+              "recordingFormat": "JPEG L Fine or high-efficiency RAW without star; not C120"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            149,
+            149.5,
+            90.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-4a6d23497561b3894e3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-62c3de2062a33af10ce5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 FX 포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45.71,
+          "unit": "MP",
+          "claimId": "claim-6bccc021e94b747bb693",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            23.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-1fd3abf95b2ce889d5a3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-a789a39a57f5cb7698fa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 전자식"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-83c4829ba2748597f893",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 전자식 전용"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8.3K N-RAW 59.94p",
+          "unit": null,
+          "claimId": "claim-0b05cd7abc60e31bed34",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "제품특징",
+              "row": "12bit 8.3K/60p RAW 동영상 내부 기록"
+            },
+            "conditions": {
+              "recordingLocation": "internal",
+              "codec": "N-RAW",
+              "bitDepth": 12,
+              "imageArea": "FX",
+              "frameRate": "59.94p",
+              "firmware": "Ver.2.00 or later"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1340,
+          "unit": "g",
+          "claimId": "claim-84608bed3417c9855af5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "excludes": [
+                "body cap",
+                "accessory shoe cover"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-22177d05502efc26f59f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-44d4a2e48bdf3a0f",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z9",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-002",
+      "productId": "nikon-zfc",
+      "productName": "니콘 Zfc",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-zfc",
+        "name": "니콘 Zfc",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Zfc",
+        "aliases": [
+          "Nikon Zfc",
+          "Z fc",
+          "니콘 Zfc"
+        ],
+        "mount": "Nikon Z",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 20.88,
+            "generation": null,
+            "sizeMm": [
+              23.5,
+              15.7
+            ]
+          },
+          "weight": 445,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 390,
+          "dimensions": [
+            134.5,
+            93.5,
+            43.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 29.97p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": {
+            "electronic": true,
+            "mechanical": true
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/mirrorless",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-65d6fb2fbf728d31",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-5a125cf86ad781a895e6",
+          "sourceId": "source-65d6fb2fbf728d31",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-5a125cf86ad781a895e6",
+        "sourceId": "source-65d6fb2fbf728d31",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official current product gallery",
+          "row": "Zfc"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-002-human-review",
+        "source": {
+          "sourceId": "source-65d6fb2fbf728d31",
+          "url": "https://www.nikc.nikon.com/product/mirrorless",
+          "documentTitle": "mirrorless cameras | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 390,
+          "unit": "g",
+          "claimId": "claim-73b3dc3fac7d872c3e3e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 본체만"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            134.5,
+            93.5,
+            43.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-3d2838d75375e5f1c4ce",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-05ab5c8209bb1ae0bcc4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 DX 포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.88,
+          "unit": "MP",
+          "claimId": "claim-24a2428dcd0af7a4d52c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.7
+          ],
+          "unit": "mm",
+          "claimId": "claim-f9f6aad0ca1c30e4e638",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4091e2f6d45b24dd74ba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 전자식"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-e684ff4e23057b371783",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식/전자선막"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 29.97p",
+          "unit": null,
+          "claimId": "claim-0955de9cbaf15fa7b285",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "기록 화소수/프레임 레이트"
+            },
+            "conditions": {
+              "resolution": "3840x2160",
+              "frameRate": "29.97p",
+              "recording": "normal; 1080p 120p separate"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 445,
+          "unit": "g",
+          "claimId": "claim-aceb395331f6b5ce94fb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "excludes": [
+                "body cap"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-0271a66893a1497ea5cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e09d9a7cb238564d",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Zfc",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-002",
+      "productId": "nikon-z7-ii",
+      "productName": "니콘 Z7II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-z7-ii",
+        "name": "니콘 Z7II",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Z7II",
+        "aliases": [
+          "Nikon Z7II",
+          "Z 7II",
+          "니콘 Z7II"
+        ],
+        "mount": "Nikon Z",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 45.75,
+            "generation": null,
+            "sizeMm": [
+              35.9,
+              23.9
+            ]
+          },
+          "weight": 705,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 615,
+          "dimensions": [
+            134,
+            100.5,
+            69.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 59.94p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": null,
+            "conditions": "sensor-shift VR"
+          },
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": {
+            "electronic": true,
+            "mechanical": true
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/mirrorless",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-c6f7d928015ab9ee",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-a1fc9fc8394902d8d0c0",
+          "sourceId": "source-c6f7d928015ab9ee",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-a1fc9fc8394902d8d0c0",
+        "sourceId": "source-c6f7d928015ab9ee",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official current product gallery",
+          "row": "Z7II"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-002-human-review",
+        "source": {
+          "sourceId": "source-c6f7d928015ab9ee",
+          "url": "https://www.nikc.nikon.com/product/mirrorless",
+          "documentTitle": "mirrorless cameras | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 615,
+          "unit": "g",
+          "claimId": "claim-6f4985a9341b1f49b4e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 본체만"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            134,
+            100.5,
+            69.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-e0d9a99f34b697fb5141",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": null,
+            "conditions": "sensor-shift VR"
+          },
+          "unit": null,
+          "claimId": "claim-11c1083153cd9338f2c6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "손떨림 보정 이미지 센서 시프트 5축"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-c6665adcc2c663ade98d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 FX 포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45.75,
+          "unit": "MP",
+          "claimId": "claim-ae3711a79ddace104494",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            23.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-a85e714f01606ff3335f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1aad66308acd790dc322",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 전자식"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-54a2382e19ddd723a710",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식/전자선막"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 59.94p",
+          "unit": null,
+          "claimId": "claim-d7ab89e794e68693823b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "기록 화소수/프레임 레이트"
+            },
+            "conditions": {
+              "resolution": "3840x2160",
+              "frameRate": "59.94p",
+              "crop": "not established from this source excerpt; do not claim uncropped"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 705,
+          "unit": "g",
+          "claimId": "claim-fa9117d75af9fc7b4801",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "excludes": [
+                "body cap"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-3f87d2a333a36121d131",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-355ddc1eaaf00bcb",
+            "url": "https://www.nikc.nikon.com/product/mirrorless/Z7II",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-002",
+      "productId": "nikon-d850",
+      "productName": "니콘 D850",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-d850",
+        "name": "니콘 D850",
+        "brand": "Nikon",
+        "series": "D",
+        "model": "D850",
+        "aliases": [
+          "Nikon D850",
+          "니콘 D850"
+        ],
+        "mount": "Nikon F",
+        "kind": "dslr",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "풀프레임",
+            "megapixels": 45.75,
+            "generation": null,
+            "sizeMm": [
+              35.9,
+              23.9
+            ]
+          },
+          "weight": 1005,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 915,
+          "dimensions": [
+            146,
+            124,
+            78.5
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 29.97p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": {
+            "maxMechanicalFps": 7
+          },
+          "shutter": {
+            "mechanical": true
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/dslr",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-e2877a793a7cdca1",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-223bfac06c768cd95865",
+          "sourceId": "source-e2877a793a7cdca1",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-223bfac06c768cd95865",
+        "sourceId": "source-e2877a793a7cdca1",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official current product gallery",
+          "row": "D850"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-002-human-review",
+        "source": {
+          "sourceId": "source-e2877a793a7cdca1",
+          "url": "https://www.nikc.nikon.com/product/dslr",
+          "documentTitle": "dslr cameras | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 915,
+          "unit": "g",
+          "claimId": "claim-8ffa5668c5a14bf5821b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 본체만"
+            },
+            "conditions": {
+              "weightBasis": "body-only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7,
+          "unit": "fps",
+          "claimId": "claim-9612cf87f6c86369232e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "연속 촬영 속도 CH"
+            },
+            "conditions": {
+              "shutter": "mechanical",
+              "battery": "EN-EL15a",
+              "mode": "CH without EN-EL18b; 9fps requires MB-D18 and EN-EL18b"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            146,
+            124,
+            78.5
+          ],
+          "unit": "mm",
+          "claimId": "claim-94cfd0bc1a9585c02af1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-176a49aa24aa630eb849",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 FX 포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45.75,
+          "unit": "MP",
+          "claimId": "claim-c82f4d384d3e541c3e20",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            23.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-3724fa6915d40e09a63c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "촬상소자 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1fafe51bf1ba3e999a4c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식/전자선막"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 29.97p",
+          "unit": null,
+          "claimId": "claim-ac832059ff6ef1ef5650",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "기록 화소수/프레임 레이트"
+            },
+            "conditions": {
+              "resolution": "3840x2160",
+              "frameRate": "29.97p",
+              "recording": "normal"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1005,
+          "unit": "g",
+          "claimId": "claim-ee9016c641c7b5de1e11",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 XQD 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "includes": [
+                "battery",
+                "XQD card"
+              ],
+              "excludes": [
+                "body cap"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-3620d938448cfa2a5869",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b44b92f11613d9eb",
+            "url": "https://www.nikc.nikon.com/product/dslr/D850",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-002",
+      "productId": "nikon-coolpix-p950",
+      "productName": "니콘 COOLPIX P950",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-coolpix-p950",
+        "name": "니콘 COOLPIX P950",
+        "brand": "Nikon",
+        "series": "COOLPIX",
+        "model": "COOLPIX P950",
+        "aliases": [
+          "Nikon COOLPIX P950",
+          "COOLPIX P950",
+          "니콘 P950"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 16.05,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 1005,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            140.2,
+            109.6,
+            149.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": {
+            "electronic": true,
+            "mechanical": true
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 6.5,
+              "wide": 2.8
+            },
+            "equivalentFocal": {
+              "max": 2000,
+              "min": 24
+            },
+            "focal": {
+              "max": 357,
+              "min": 4.3
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/compact",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-2b5a76272e91dfe6",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-6e0d3f8f8a9b1bdddc37",
+          "sourceId": "source-2b5a76272e91dfe6",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-6e0d3f8f8a9b1bdddc37",
+        "sourceId": "source-2b5a76272e91dfe6",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official current product gallery",
+          "row": "COOLPIX P950"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-002-human-review",
+        "source": {
+          "sourceId": "source-2b5a76272e91dfe6",
+          "url": "https://www.nikc.nikon.com/product/compact",
+          "documentTitle": "compact cameras | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            140.2,
+            109.6,
+            149.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-da04b648bcf08ae9b72a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.5,
+          "unit": null,
+          "claimId": "claim-be769f4cc521bd4bda67",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "개방 F값 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-5421ad23e502dfa84272",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "개방 F값 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2000,
+          "unit": null,
+          "claimId": "claim-d8d463d698ba0671e55f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "렌즈 35mm 환산 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-3d980bd582f8fd146780",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "렌즈 35mm 환산 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 357,
+          "unit": "mm",
+          "claimId": "claim-c7041acd93253cbd2735",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "렌즈 실제 초점거리 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.3,
+          "unit": "mm",
+          "claimId": "claim-45158a4cdb8ba756c224",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "렌즈 실제 초점거리 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 16.05,
+          "unit": "MP",
+          "claimId": "claim-34c2f47aaddb5211cd64",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4eb077107be27c7276a5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 CMOS 전자식 병용"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-68550e41bbed0acbb530",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식 병용"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 30p",
+          "unit": null,
+          "claimId": "claim-b4ffb997d68f513aaf81",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "기록 화소수/프레임 레이트"
+            },
+            "conditions": {
+              "resolution": "3840x2160",
+              "frameRate": "30p",
+              "recording": "normal"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1005,
+          "unit": "g",
+          "claimId": "claim-7f0b616e826a3e49687d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-370cbf7fc94219411530",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f3b98acdd3231624",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P950",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-002",
+  "itemKey": "nikon-d850",
+  "manufacturerModelCode": "D850",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Nikon",
+    "manufacturerModelCode": "D850",
+    "productId": "nikon-d850",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-223bfac06c768cd95865",
+    "sourceId": "source-e2877a793a7cdca1",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Official current product gallery",
+      "row": "D850"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-01",
+    "reviewer": "codex-nikon-002-human-review"
+  },
+  "product": {
+    "id": "nikon-d850",
+    "name": "니콘 D850",
+    "brand": "Nikon",
+    "series": "D",
+    "model": "D850",
+    "aliases": [
+      "Nikon D850",
+      "니콘 D850"
+    ],
+    "mount": "Nikon F",
+    "kind": "dslr",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 915,
+      "burst": {
+        "maxMechanicalFps": 7
+      },
+      "dimensions": [
+        146,
+        124,
+        78.5
+      ],
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 45.75,
+        "sizeMm": [
+          35.9,
+          23.9
+        ]
+      },
+      "shutter": {
+        "mechanical": true
+      },
+      "video": {
+        "max": "4K UHD 29.97p"
+      },
+      "weight": 1005,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-e2877a793a7cdca1",
+    "sourceType": "manufacturer",
+    "url": "https://www.nikc.nikon.com/product/dslr",
+    "publisher": "Nikon Imaging Korea",
+    "documentTitle": "dslr cameras | Nikon Imaging Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-01T03:06:11.461Z",
+    "evidenceScope": "Official released/current product gallery card linking D850",
+    "contentDigest": "7efe386ec7102d469adb016eea1c755274a705497a5652bf1af2d8395da64872"
+  },
+  "sources": [
+    {
+      "sourceId": "source-b44b92f11613d9eb",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/dslr/D850",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "D850 | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T03:06:11.461Z",
+      "evidenceScope": "Official product detailed objective specifications",
+      "contentDigest": "362736a6fda008f534fed25f1bbb32d99d67c5a4fdf27b03c77a31d25e1e2395"
+    },
+    {
+      "sourceId": "source-e2877a793a7cdca1",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/dslr",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "dslr cameras | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T03:06:11.461Z",
+      "evidenceScope": "Official released/current product gallery card linking D850",
+      "contentDigest": "7efe386ec7102d469adb016eea1c755274a705497a5652bf1af2d8395da64872"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "nikon-d850",
+      "path": "specs.bodyOnlyWeight",
+      "value": 915,
+      "unit": "g",
+      "rawValue": 915,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 본체만"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-8ffa5668c5a14bf5821b"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 7,
+      "unit": "fps",
+      "rawValue": 7,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "연속 촬영 속도 CH"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "battery": "EN-EL15a",
+        "mode": "CH without EN-EL18b; 9fps requires MB-D18 and EN-EL18b"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-9612cf87f6c86369232e"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.dimensions",
+      "value": [
+        146,
+        124,
+        78.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        146,
+        124,
+        78.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "크기(폭×높이×깊이)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-94cfd0bc1a9585c02af1"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자 FX 포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-176a49aa24aa630eb849"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.sensor.megapixels",
+      "value": 45.75,
+      "unit": "MP",
+      "rawValue": 45750000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "유효화소수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-c82f4d384d3e541c3e20"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.9,
+        23.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-3724fa6915d40e09a63c"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.shutter.mechanical",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "셔터 기계식/전자선막"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-1fafe51bf1ba3e999a4c"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.video.max",
+      "value": "4K UHD 29.97p",
+      "unit": null,
+      "rawValue": "4K UHD 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "기록 화소수/프레임 레이트"
+      },
+      "conditions": {
+        "resolution": "3840x2160",
+        "frameRate": "29.97p",
+        "recording": "normal"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-ac832059ff6ef1ef5650"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.weight",
+      "value": 1005,
+      "unit": "g",
+      "rawValue": 1005,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 배터리 XQD 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "includes": [
+          "battery",
+          "XQD card"
+        ],
+        "excludes": [
+          "body cap"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-ee9016c641c7b5de1e11"
+    },
+    {
+      "productId": "nikon-d850",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-b44b92f11613d9eb",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 측정 기준"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-002-human-review",
+      "claimId": "claim-3620d938448cfa2a5869"
+    }
+  ]
+}
