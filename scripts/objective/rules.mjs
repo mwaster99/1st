@@ -13,6 +13,20 @@ const RESERVED_ID_PREFIXES = ["unknown-body-", "unknown-lens-"];
 const PRODUCT_TYPES = new Set(["body", "lens"]);
 const CLAIM_VERIFICATIONS = new Set(["pending", "verified", "rejected", "conflict"]);
 
+// Shared with canonical validation; preserve its optional, null-safe IBIS children.
+export function validateIbisValue(value) {
+  if (value === null) return;
+  if (!value || typeof value !== "object" || Array.isArray(value)) throw Error("Unsupported non-null specification: specs.ibis");
+  if (!Object.keys(value).every((key) => ["present", "axes", "stops", "conditions"].includes(key))) throw Error("Unknown specification child: specs.ibis");
+  for (const [key, child] of Object.entries(value)) {
+    if (child === null) continue;
+    const field = `specs.ibis.${key}`;
+    if (key === "present" && typeof child !== "boolean") throw Error(`Invalid boolean: ${field}`);
+    if (["axes", "stops"].includes(key) && (typeof child !== "number" || !Number.isFinite(child) || child < 0)) throw Error(`Invalid number: ${field}`);
+    if (key === "conditions" && (typeof child !== "string" || !child.trim() || child.trim().toUpperCase() === "UNKNOWN")) throw Error(`Invalid string: ${field}`);
+  }
+}
+
 export function stableStringify(value) {
   if (Array.isArray(value)) return `[${value.map((v) => stableStringify(v) ?? "null").join(",")}]`;
   if (value && typeof value === "object") {
@@ -583,6 +597,13 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   const claimsByPath = new Map();
   const claimIds = new Set();
   for (const claim of staging.claims ?? []) {
+    if (claim.path === "specs.ibis") {
+      try {
+        validateIbisValue(claim.value);
+      } catch (error) {
+        addIssue(issues, "INVALID_IBIS", error.message, claim.path);
+      }
+    }
     if (productType === "body" && claim.value != null && ["specs.weight", "specs.bodyOnlyWeight"].includes(claim.path)) {
       const claimBasis = claim.conditions?.weightBasis;
       if (claim.path === "specs.weight" && (claimBasis == null || claimBasis === "")) {

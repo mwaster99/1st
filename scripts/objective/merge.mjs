@@ -1,4 +1,4 @@
-import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateStagingBatch } from "./rules.mjs";
+import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateIbisValue, validateStagingBatch } from "./rules.mjs";
 import { jsonBytes, sha256 } from "./storage.mjs";
 
 const requireValue = (ok, message) => { if (!ok) throw Error(message); };
@@ -22,7 +22,6 @@ const childKeys = {
   "specs.sensor": ["format", "megapixels", "generation", "sizeMm"],
   "specs.autofocus": ["aiUnit", "subjects", "description"],
   "specs.video": ["max", "bitDepth", "log", "cropAtMax"],
-  "specs.ibis": ["present", "axes", "stops", "conditions"],
   "specs.evf": ["present", "resolutionDots", "magnification", "maxRefreshHz"],
   "specs.lcd": ["present", "sizeInches", "resolutionDots", "mechanism", "touch"],
   "specs.burst": ["maxMechanicalFps", "maxElectronicFps"],
@@ -35,7 +34,9 @@ const childKeys = {
 };
 export function validateSpecValue(value, field) {
   if (value === null) return;
-  if (field === "specs.dimensions" || field === "specs.sensor.sizeMm") {
+  if (field === "specs.ibis") {
+    validateIbisValue(value);
+  } else if (field === "specs.dimensions" || field === "specs.sensor.sizeMm") {
     requireValue(Array.isArray(value) && value.length === (field.endsWith("dimensions") ? 3 : 2) && value.every((v) => typeof v === "number" && Number.isFinite(v) && v > 0), `Invalid physical dimensions: ${field}`);
   } else if (field === "specs.autofocus.subjects") {
     requireValue(Array.isArray(value) && value.every((v) => typeof v === "string" && v.length > 0), `Invalid subjects: ${field}`);

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { cp, mkdir, mkdtemp, readFile, realpath, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { spawnSync } from "node:child_process";
@@ -10,6 +10,7 @@ import { proposedCanonical, validateCanonical, validateSpecValue } from "../scri
 import {
   combineStagingFragments,
   createCanonicalDiff,
+  createSourceId,
   digestValue,
   formatCanonicalDiff,
   normalizeClaimValue,
@@ -21,6 +22,7 @@ import {
 } from "../scripts/objective/rules.mjs";
 import { buildRawDocument } from "../scripts/objective/raw-helper.mjs";
 import { sha256, writeJsonAtomic } from "../scripts/objective/storage.mjs";
+import { fixture as isolatedFixture, run as runIsolated, batchId as pilotBatchId } from "./support/objectiveFixture.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relative) => JSON.parse(readFileSync(path.join(root, relative), "utf8"));
@@ -141,8 +143,90 @@ test("body-only weight uses its field contract and validates an explicit claim b
   assert.equal(check(null, undefined).valid, true);
 });
 
+function ibisFixture(value) {
+  const draft = sourceDraft("https://www.sony.com/fixture/ibis-contract");
+  draft.items[0].observations = [{
+    field: "IBIS", path: "specs.ibis", rawValue: value, rawUnit: null,
+    locator: { section: "Stabilization", row: "IBIS" }, conditions: {},
+  }];
+  const raw = buildRawDocument(draft);
+  const [staging] = normalizeRawDocument(raw, { batchId, vocab, identityMap });
+  return { staging, result: validateStaging(staging, { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) }) };
+}
+
+test("IBIS claims accept the existing optional and null-safe canonical object contract", () => {
+  for (const value of [
+    { present: true, axes: 5, stops: 5.5, conditions: "CIPA test conditions" },
+    { present: false, axes: 0, stops: 0, conditions: null },
+    { present: null, axes: null, stops: null, conditions: null },
+    { present: true }, {},
+  ]) {
+    assert.doesNotThrow(() => validateSpecValue(value, "specs.ibis"));
+    assert.equal(ibisFixture(value).result.valid, true, JSON.stringify(value));
+  }
+});
+
+for (const value of [true, false]) {
+  test(`IBIS boolean ${value} is rejected before approval`, () => {
+    assert.throws(() => validateSpecValue(value, "specs.ibis"));
+    const result = ibisFixture(value).result;
+    assert.equal(result.valid, false);
+    assert.ok(result.errors.some((error) => error.code === "INVALID_IBIS" && error.path === "specs.ibis"));
+  });
+}
+
+test("malformed IBIS objects are rejected using the existing child contracts", () => {
+  assert.throws(() => validateSpecValue([], "specs.ibis"));
+  assert.throws(() => ibisFixture([]), /Array value is not supported/);
+  for (const value of ["enabled", { unknownKey: true }, { present: 1 }, { axes: "5" },
+    { axes: -1 }, { stops: -0.5 }, { conditions: {} }, { conditions: "" }, { conditions: "UNKNOWN" }]) {
+    assert.throws(() => validateSpecValue(value, "specs.ibis"));
+    assert.ok(ibisFixture(value).result.errors.some((error) => error.code === "INVALID_IBIS"), JSON.stringify(value));
+  }
+});
+
+test("null and UNKNOWN IBIS retain the existing normalization policy", () => {
+  for (const value of [null, "UNKNOWN"]) {
+    const { staging, result } = ibisFixture(value);
+    assert.equal(staging.product.specs.ibis, null);
+    assert.equal(staging.claims[0].unknown, true);
+    assert.equal(result.valid, true);
+  }
+});
+
+test("CLI validate marks invalid IBIS as rejected without changing canonical", async (t) => {
+  const isolated = await isolatedFixture(t);
+  const original = readJson("src/data/ingestion/raw/source-0379a083289afde8.json");
+  const raw = structuredClone(original);
+  raw.evidenceExcerpt.push({ field: "IBIS", value: true, unit: null });
+  raw.items[0].observations.push({ ...raw.items[0].observations[0],
+    path: "specs.ibis", rawValue: true, rawUnit: null, evidenceRef: raw.evidenceExcerpt.length - 1,
+    locator: { section: "Stabilization", row: "IBIS" }, conditions: {},
+  });
+  raw.contentDigest = digestValue(raw.evidenceExcerpt);
+  raw.sourceId = createSourceId(raw);
+  writeFileSync(path.join(isolated.p.ingestion, "raw", `${raw.sourceId}.json`), JSON.stringify(raw));
+  const manifest = JSON.parse(readFileSync(isolated.p.manifest));
+  manifest.items.forEach((item) => { item.sourceIds = [raw.sourceId]; });
+  writeFileSync(isolated.p.manifest, JSON.stringify(manifest));
+  const normalized = runIsolated(isolated.root, "normalize");
+  assert.equal(normalized.status, 0, normalized.stderr);
+  const validated = runIsolated(isolated.root, "validate");
+  assert.equal(validated.status, 1, validated.stderr);
+  const result = JSON.parse(validated.stdout);
+  assert.equal(result.batchId, pilotBatchId);
+  assert.equal(result.status, "rejected");
+  assert.ok(result.items[0].errors.some((error) => error.code === "INVALID_IBIS" && error.path === "specs.ibis"));
+  assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, "rejected");
+  assert.equal(readFileSync(isolated.p.canonical, "utf8"), isolated.before);
+});
+
 test("archived production staging remains valid without changing canonical or batch artifacts", () => {
-  for (const batch of ["production-sony-bodies-003", "production-canon-bodies-001", "production-canon-bodies-002"]) {
+  const batches = readdirSync(path.join(root, "src/data/ingestion/batches"))
+    .filter((name) => /^production-(sony|canon|nikon)-bodies-\d+\.json$/.test(name))
+    .map((name) => name.slice(0, -5));
+  for (const brand of ["sony", "canon", "nikon"]) assert.ok(batches.some((batch) => batch.startsWith(`production-${brand}-`)));
+  for (const batch of batches) {
     const manifest = readJson(`src/data/ingestion/batches/${batch}.json`);
     const before = readJson(`src/data/ingestion/transactions/${batch}/before.json`);
     const stagings = manifest.items.map(({ itemKey }) => readJson(`src/data/ingestion/staging/${batch}/${itemKey}.json`));
