@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Nikon Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.nikc.nikon.com/product/mirrorless/Z7",
+  "documentTitle": "Z7 | Nikon Imaging Korea",
+  "evidenceScope": "Official product detailed objective specifications and conditional movie feature footnotes",
+  "accessedAt": "2026-10-01T05:04:23.052Z",
+  "evidenceExcerpt": [
+    {
+      "field": "촬상소자 포맷",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "유효화소수",
+      "value": 45750000,
+      "unit": "pixel"
+    },
+    {
+      "field": "촬상소자 크기",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게 배터리 및 메모리 카드 포함",
+      "value": 675,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게 본체만",
+      "value": 585,
+      "unit": "g"
+    },
+    {
+      "field": "크기(폭×높이×깊이)",
+      "value": [
+        134,
+        100.5,
+        67.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "셔터 전자 제어 포컬 플레인 / 전자 선막",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "셔터 전자 셔터",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "기록 화소수/프레임 레이트",
+      "value": "4K UHD 29.97p",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 이미지 센서 시프트 방식 5축 보정",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": null,
+        "conditions": "sensor-shift VR"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "nikon-z7",
+      "manufacturerModelCode": "Z7",
+      "productType": "body",
+      "identity": {
+        "name": "니콘 Z7",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Z7",
+        "aliases": [
+          "Nikon Z7",
+          "Z 7",
+          "니콘 Z7"
+        ],
+        "mount": "Z mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "촬상소자 포맷"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 45750000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "유효화소수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.9,
+            23.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "촬상소자 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 675,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "무게 배터리 및 메모리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "excludes": [
+              "body cap"
+            ],
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 585,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "무게 본체만"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            134,
+            100.5,
+            67.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "크기(폭×높이×깊이)"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "evidenceRef": 7,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "셔터 전자 제어 포컬 플레인 / 전자 선막"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "evidenceRef": 8,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "셔터 전자 셔터"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 9,
+          "rawValue": "4K UHD 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "기록 화소수/프레임 레이트"
+          },
+          "conditions": {
+            "resolution": "3840x2160",
+            "frameRate": "29.97p",
+            "recording": "normal internal movie",
+            "crop": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 10,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": null,
+            "conditions": "sensor-shift VR"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양 / 제품특징",
+            "row": "손떨림 보정 이미지 센서 시프트 방식 5축 보정"
+          },
+          "conditions": {
+            "mechanism": "sensor-shift VR",
+            "lensShiftVR": "distinct from body sensor-shift VR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-003-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "1900b87017c5b5722044d63741e09588a1bbbcea126a529a3b7bda779cb5f861",
+  "sourceId": "source-83ad3d8d308eb9e5"
+}

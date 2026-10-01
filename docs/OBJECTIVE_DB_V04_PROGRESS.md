@@ -1,5 +1,38 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Nikon Korea production batch 003 — 2026-10-01
+
+시작 시 working tree clean, canonical 바디 96 / 렌즈 36 / 전체 132개였다. batch 001~002 artifact와 [inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), 진행 기록, canonical, identity-map, catalog-scope 및 field contracts를 대조했다. 공식 [미러리스 목록](https://www.nikc.nikon.com/product/mirrorless)과 [콤팩트 목록](https://www.nikc.nikon.com/product/compact), 6개 개별 사양 페이지에서 released/current 잔여 6개를 확인했다. 이번 선정은 **Z50, Z6, Z7, Z6II, Z5**이며 모두 신규다. 다섯 모델은 같은 Z 마운트·FX/DX·센서 시프트 VR·셔터·무게 contract와 사양 표 구조를 공유해 함께 검토할 수 있다. 마지막 **COOLPIX P1000**은 공식 사양에 실제 4.3–539mm/35mm 환산 24–3000mm, 렌즈 시프트 VR, 배터리·카드 포함 전체 무게 1415g이 있어 별도 fixed-lens 검토가 필요하므로 독립 최종 batch로 남겼다. source 수집 자체는 모두 가능하지만 다섯 미러리스를 공통 기준으로 검토하는 편이 효율적이며, P1000을 다른 모델로 임의 교체하지 않았다.
+
+제품별 독립 cheap-worker task 5개는 공개 공식 발췌와 최소 contract만 받았다. 프로젝트 코드·canonical 전체·secret은 전송하지 않았다. 공식 사양/제품특징 source 1개와 현행 목록 identity-only source 1개를 제품별 연결하여 **공식 source 각 2개, 총 10개**다. 목록 source는 identity/current만 증명하며 spec을 증명하지 않는다. raw-helper → normalize → validate → 사람용 summary 검토 → CLI explicit approval → atomic apply → canonical validation → 재적용을 완료했다. **신규 5개 / 기존 보강 0개 / verified field claim 56개**, source/value conflict **0건**이다. canonical은 **바디 96→101 / 렌즈 36 유지 / 전체 132→137**이다. 이전 제품과 렌즈는 수정하지 않았다.
+
+| 제품 / ID | source / claim | 핵심 승격값 |
+| --- | ---: | --- |
+| [Z50](https://www.nikc.nikon.com/product/mirrorless/Z50) / `nikon-z50` | 2 / 10 | DX 20.88MP, 센서 23.5×15.7mm, 450g 배터리·SD카드 포함 / 395g 본체만, 126.5×93.5×60mm, 기계식·전자식 셔터, 4K UHD 29.97p. IBIS는 이번 직접 근거가 없어 UNKNOWN. |
+| [Z6](https://www.nikc.nikon.com/product/mirrorless/Z6) / `nikon-z6` | 2 / 11 | FX 24.5MP, 센서 35.9×23.9mm, 675g / 585g, 134×100.5×67.5mm, 센서 시프트 5축 VR, 기계식·전자식 셔터, 4K UHD 29.97p. |
+| [Z7](https://www.nikc.nikon.com/product/mirrorless/Z7) / `nikon-z7` | 2 / 11 | FX 45.75MP, 센서 35.9×23.9mm, 675g / 585g, 134×100.5×67.5mm, 센서 시프트 5축 VR, 기계식·전자식 셔터, 4K UHD 29.97p. |
+| [Z6II](https://www.nikc.nikon.com/product/mirrorless/Z6II) / `nikon-z6-ii` | 2 / 12 | FX 24.5MP, 705g / 615g, 134×100.5×69.5mm, 센서 시프트 5축 VR, 4K UHD 59.94p; **펌웨어 1.10 이상·DX 기반 영상 영역 고정·일반 화질** 조건을 claim metadata에 보존하고 기존 `cropAtMax: true`를 승격. |
+| [Z5](https://www.nikc.nikon.com/product/mirrorless/Z5) / `nikon-z5` | 2 / 12 | FX 24.32MP, 675g / 590g, 134×100.5×69.5mm, 센서 시프트 5축 VR, 4K UHD 29.97p; **1.7배 영상 영역 고정**을 metadata 및 기존 `cropAtMax: true`에 보존. |
+
+5개 모두 `kind: interchangeable / mount: Nikon Z / fixedLens: null`이다. 내장 렌즈/별도 렌즈 제품을 만들지 않았다. 무게에는 배터리·카드 포함, 바디 캡 제외 및 approximate 조건을 보존했고, 본체만 무게는 별도 body-only claim이다. Z50 11fps, Z6 12fps(14-bit RAW 9fps), Z7 확장 9fps(14-bit RAW 8fps), Z6II 14fps(14-bit RAW 10fps), Z5 4.5fps는 공식 사양 표에서 확인했으나 검토한 근거가 특정 셔터 방식과 직접 연결되지 않아 셔터별 burst leaf를 UNKNOWN으로 남겼다. Full HD 고속·저속 모드를 4K 최대 프레임율과 합치지 않았다. IBIS stops, AF, EVF/LCD, 카드 슬롯, releaseDate, 가격 등 직접 field claim으로 검증하지 않은 leaf는 null이다. Z50의 IBIS null은 부재 확정을 뜻하지 않는다. 영상 max 문자열만 소비하는 경로에서 firmware/품질/crop factor 조건을 모두 보여주지 못하는 기존 한계는 후속 표현 개선 후보로 남는다.
+
+| 제품 / stable task ID | worker input / output / total token | 채택 / 폐기한 검토 결과 |
+| --- | ---: | --- |
+| Z50 / `nikon-production-003-z50` | 643 / 624 / 1267 | IBIS 미언급은 부재 근거가 아님, 영상 crop 미확인, 확장 연사 셔터 불명 경고 채택. |
+| Z6 / `nikon-production-003-z6` | 648 / 1055 / 1703 | 센서 VR/렌즈 VR 분리, IBIS stops 미확인, 확장 연사·14bit 조건 및 무게 기준 경고 채택. `sensor-shift VR`는 기존 객체의 mechanism 설명으로 사용하며 CIPA 시험 조건으로 해석하지 않음. |
+| Z7 / `nikon-production-003-z7` | 663 / 436 / 1099 | 고속/확장·14bit RAW 조건 분리 및 영상 crop UNKNOWN 경고 채택. Worker의 파일 작성 주장은 실제 작업이 아니며 patch는 없었음. |
+| Z6II / `nikon-production-003-z6ii` | 655 / 565 / 1220 | DX·펌웨어·화질 조건과 셔터 미확정 경고 채택. “영상 조건 metadata가 없어 영상 max를 null로 남겨야 한다”는 제안은 폐기하고 Sol이 공식 footnote를 직접 확인하여 기존 claim metadata에 기록함. |
+| Z5 / `nikon-production-003-z5` | 639 / 517 / 1156 | 1.7배 조건, 무게/IBIS stops/셔터별 연사 경고 채택. 2432만의 단위 변환은 24.32MP로 결정하며 정수 MP가 아니라는 이유로 UNKNOWN 처리하지 않음. |
+| **합계** | **3248 / 3197 / 6445** | 실제 API 5회, 제품별 attempt 1, retry/failure 0회. |
+
+GPT-6.1 Sol이 출시 상태/선정 이유, 5개 identity·canonical ID·aliases, 10개 source 적용 범위, 56개 claim/UNKNOWN/조건, worker 결과 5건, 전체 diff 및 approval/apply를 직접 판단했다. 별도 사용자 개입은 0회다. Worker는 독립 검토 보조이며 실제 공식 자료 조회·fact verification·코드 적용·테스트를 수행한 주체는 Sol이다. 전달용 임시 fixture 5개는 호출 후 삭제했다.
+
+**Validator 실전 검증:** 실제 batch의 4개 IBIS 객체와 5개 운영/본체 무게는 normalize/validate/approval을 통과했다. 실제 production staging을 메모리에서만 변형한 회귀 테스트는 boolean true/false, malformed present/음수 axes를 `INVALID_IBIS`로, 무게 basis 누락/invalid/mismatch를 `WEIGHT_BASIS_REQUIRED / INVALID_WEIGHT_BASIS / WEIGHT_BASIS_MISMATCH`로 validate에서 차단했다. 원본 raw/staging/approval은 수정하지 않았다. 이전 Sony/Canon/Nikon fixture도 통과했다. 새로운 Nikon normalization/pipeline code bug는 없었다. 첫 batch 전용 inventory 검증은 snapshot 상태 갱신 전에 실행하여 한 항목이 실패했고, apply 결과대로 inventory를 동기화한 후 최종 테스트가 모두 통과했다. 구조/schema/추천 엔진/UI/Experience DB는 변경하지 않았다.
+
+Raw source 10개 accessedAt은 helper의 실제 현재 UTC 자동 생성값 **2026-10-01T05:04:23.048Z~2026-10-01T05:04:23.052Z**로, 밀리초 ISO 구조와 Date round-trip을 검증했다. 승인 diff digest `06ae449adb5718d6362e41a0a3b475719447c5dcda768e952238c2cb8ed2887d`, approval ID `approval-fd1c35e4949297f2e7f19d6479320ccc943c245b49508d414b2aa67f735838f2`, 적용 후 canonical SHA-256 `76e6bc26a2c0515b3f505600c8b98585c8a1819c576a1f689808f0ecf8fd9745`이다. 재적용은 `already-canonicalized / canonicalMatches: true`였다.
+
+검증: 전체 **145/145**, Objective/production **103/103**, Nikon **10/10** (신규 batch 003 테스트 4개 포함), canonical **137개 전체 validation 통과**, `pnpm build`, 모든 Objective scripts 및 새 test `node --check`, `git diff --check` 통과. Build는 기존 500kB 초과 chunk 경고만 출력했다. 종료 시 released/current 미처리 **1개: COOLPIX P1000**, announced/upcoming **1개: Z5IIC**다. [공식 2026-09-28 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)의 “2026년 10월내 발매예정” 상태를 다시 확인했고 이번 승격에서 제외했다. 마지막 P1000 단독 production batch로 진행 가능하며, 그 후 Nikon coverage audit으로 넘어간다.
+
 ## Stage 4 Nikon Korea production batch 002 — 2026-10-01
 
 시작 시 working tree는 clean, canonical은 바디 91 / 렌즈 36 / 전체 127개였다. [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), batch 001 transaction 및 진행 기록, canonical, identity-map을 대조해 released/current 미처리 11개를 확인했다. Nikon Korea 공식 [미러리스](https://www.nikc.nikon.com/product/mirrorless)·[DSLR](https://www.nikc.nikon.com/product/dslr)·[콤팩트](https://www.nikc.nikon.com/product/compact) 목록에서 아래 5개 카드와 개별 사양 페이지를 재확인했다. [공식 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)의 Z5IIC는 2026년 10월 발매 예정으로 아직 별도 announced/upcoming이다.

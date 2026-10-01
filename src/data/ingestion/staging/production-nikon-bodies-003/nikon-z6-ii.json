@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-003",
+  "itemKey": "nikon-z6-ii",
+  "manufacturerModelCode": "Z6II",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Nikon",
+    "manufacturerModelCode": "Z6II",
+    "productId": "nikon-z6-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-1d8103148452f78af4e1",
+    "sourceId": "source-83ecb8567bdbd8dc",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "미러리스 카메라 목록",
+      "row": "Z6II"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-01",
+    "reviewer": "codex-nikon-003-human-review"
+  },
+  "product": {
+    "id": "nikon-z6-ii",
+    "name": "니콘 Z6II",
+    "brand": "Nikon",
+    "series": "Z",
+    "model": "Z6II",
+    "aliases": [
+      "Nikon Z6II",
+      "Z 6II",
+      "니콘 Z6II"
+    ],
+    "mount": "Nikon Z",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 615,
+      "dimensions": [
+        134,
+        100.5,
+        69.5
+      ],
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": null,
+        "conditions": "sensor-shift VR"
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 24.5,
+        "sizeMm": [
+          35.9,
+          23.9
+        ]
+      },
+      "shutter": {
+        "electronic": true,
+        "mechanical": true
+      },
+      "video": {
+        "cropAtMax": true,
+        "max": "4K UHD 59.94p"
+      },
+      "weight": 705,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-83ecb8567bdbd8dc",
+    "sourceType": "manufacturer",
+    "url": "https://www.nikc.nikon.com/product/mirrorless",
+    "publisher": "Nikon Imaging Korea",
+    "documentTitle": "미러리스 카메라 | Nikon Imaging Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-01T05:04:23.052Z",
+    "evidenceScope": "Official current gallery card; product identity only, no objective field claims",
+    "contentDigest": "fbe52a37b7571344e93358b9ab5ff435008c68e4deefedfb7105e74a5abd0b42"
+  },
+  "sources": [
+    {
+      "sourceId": "source-57de9c4faa850802",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/mirrorless/Z6II",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "Z6II | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T05:04:23.052Z",
+      "evidenceScope": "Official product detailed objective specifications and conditional movie feature footnotes",
+      "contentDigest": "045f4a8c8fe3521819557d153522045670d06c36a3d95a4b92fa9f5e83f558e3"
+    },
+    {
+      "sourceId": "source-83ecb8567bdbd8dc",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/mirrorless",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "미러리스 카메라 | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T05:04:23.052Z",
+      "evidenceScope": "Official current gallery card; product identity only, no objective field claims",
+      "contentDigest": "fbe52a37b7571344e93358b9ab5ff435008c68e4deefedfb7105e74a5abd0b42"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 615,
+      "unit": "g",
+      "rawValue": 615,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "무게 본체만"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-1cea6a704ace207a4dcf"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.dimensions",
+      "value": [
+        134,
+        100.5,
+        69.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        134,
+        100.5,
+        69.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "크기(폭×높이×깊이)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-ab9a9f25578b9f7829b2"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": null,
+        "conditions": "sensor-shift VR"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": null,
+        "conditions": "sensor-shift VR"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "손떨림 보정 이미지 센서 시프트 방식 5축 보정"
+      },
+      "conditions": {
+        "mechanism": "sensor-shift VR",
+        "lensShiftVR": "distinct from body sensor-shift VR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-b952260457d0ed589bcc"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "촬상소자 포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-d1f5d580e6d4bdd6d6c7"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 24.5,
+      "unit": "MP",
+      "rawValue": 24500000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "유효화소수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-b035223fb03656d553e4"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.9,
+        23.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "촬상소자 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-f77e82a0658a5e6d585f"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.shutter.electronic",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "셔터 전자 셔터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-bb2c8d3fc34fa4628826"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.shutter.mechanical",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "셔터 전자 제어 포컬 플레인 / 전자 선막"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-87d118b19b489393ddd3"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "4K UHD 동영상 촬상 범위 조건"
+      },
+      "conditions": {
+        "resolution": "3840x2160",
+        "frameRate": "59.94p",
+        "recording": "normal internal movie",
+        "crop": "DX-based movie format fixed",
+        "imageArea": "DX-based movie format",
+        "firmwareMin": "1.10",
+        "quality": "normal"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-360d55bf7e17e3f4f109"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.video.max",
+      "value": "4K UHD 59.94p",
+      "unit": null,
+      "rawValue": "4K UHD 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "기록 화소수/프레임 레이트"
+      },
+      "conditions": {
+        "resolution": "3840x2160",
+        "frameRate": "59.94p",
+        "recording": "normal internal movie",
+        "crop": "DX-based movie format fixed",
+        "imageArea": "DX-based movie format",
+        "firmwareMin": "1.10",
+        "quality": "normal"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-aae049bb7b3b1b7fe830"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.weight",
+      "value": 705,
+      "unit": "g",
+      "rawValue": 705,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "무게 배터리 및 메모리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "excludes": [
+          "body cap"
+        ],
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-5a6ff56e9f990113f940"
+    },
+    {
+      "productId": "nikon-z6-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-57de9c4faa850802",
+      "locator": {
+        "section": "주요사양 / 제품특징",
+        "row": "무게 측정 기준"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-003-human-review",
+      "claimId": "claim-29f570139f505bfe97e8"
+    }
+  ]
+}
