@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-001",
+  "itemKey": "nikon-z8",
+  "manufacturerModelCode": "Z8",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Nikon",
+    "manufacturerModelCode": "Z8",
+    "productId": "nikon-z8",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-5157b32e1d42fd3aac6b",
+    "sourceId": "source-d4709f8354412343",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Official Nikon Korea publication",
+      "row": "Z8"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-01",
+    "reviewer": "codex-nikon-001-human-review"
+  },
+  "product": {
+    "id": "nikon-z8",
+    "name": "니콘 Z8",
+    "brand": "Nikon",
+    "series": "Z",
+    "model": "Z8",
+    "aliases": [
+      "Nikon Z8",
+      "Z 8",
+      "니콘 Z8"
+    ],
+    "mount": "Nikon Z",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 820,
+      "dimensions": [
+        144,
+        118.5,
+        83
+      ],
+      "releaseDate": "2023-05-25",
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 45.71,
+        "sizeMm": [
+          35.9,
+          23.9
+        ]
+      },
+      "shutter": {
+        "electronic": true,
+        "mechanical": false
+      },
+      "video": {
+        "max": "8.3K N-RAW 59.94p"
+      },
+      "weight": 910,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-d4709f8354412343",
+    "sourceType": "manufacturer",
+    "url": "https://www.nikc.nikon.com/event/ing/view/557",
+    "publisher": "Nikon Imaging Korea",
+    "documentTitle": "Z 8 발매 기념 정품등록 프로모션",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-01T02:52:07.315Z",
+    "evidenceScope": "KR purchase period from 2023-05-25",
+    "contentDigest": "9ef73c42236af11925904b58f732ae76de163494f34147d448d896053595ad50"
+  },
+  "sources": [
+    {
+      "sourceId": "source-6f33f75af7555576",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/mirrorless/Z8",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "Z8 | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T02:52:07.315Z",
+      "evidenceScope": "Official product detailed objective specifications",
+      "contentDigest": "effc282b6f9b40dbb57e6229032a65c410679aa14d7128939169295729c4b4c2"
+    },
+    {
+      "sourceId": "source-d4709f8354412343",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/event/ing/view/557",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "Z 8 발매 기념 정품등록 프로모션",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T02:52:07.315Z",
+      "evidenceScope": "KR purchase period from 2023-05-25",
+      "contentDigest": "9ef73c42236af11925904b58f732ae76de163494f34147d448d896053595ad50"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "nikon-z8",
+      "path": "specs.bodyOnlyWeight",
+      "value": 820,
+      "unit": "g",
+      "rawValue": 820,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 본체만"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-ff2347c4643b5f6b9877"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.dimensions",
+      "value": [
+        144,
+        118.5,
+        83
+      ],
+      "unit": "mm",
+      "rawValue": [
+        144,
+        118.5,
+        83
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "크기(폭×높이×깊이)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-fd2f83f53120b7a8c8b4"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.releaseDate",
+      "value": "2023-05-25",
+      "unit": null,
+      "rawValue": "2023-05-25",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d4709f8354412343",
+      "locator": {
+        "section": "발매 기념 프로모션",
+        "row": "이벤트 제품 구매 기간 시작"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-e0b7f3c58fc1c064a435"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-fc1b9a519f9289ca3aaf"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.sensor.megapixels",
+      "value": 45.71,
+      "unit": "MP",
+      "rawValue": 45710000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "유효화소수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-31102a4c9437ee0cd48b"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.9,
+        23.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-ffc23b02284a62a78380"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.shutter.electronic",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "전자식 셔터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-17045bd99dd25cdb6902"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.shutter.mechanical",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "기계식 셔터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-295ac6a276971289d9cc"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.video.max",
+      "value": "8.3K N-RAW 59.94p",
+      "unit": null,
+      "rawValue": "8.3K N-RAW 59.94p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "RAW 동영상 기록 화소수/프레임 레이트"
+      },
+      "conditions": {
+        "recordingLocation": "internal",
+        "resolution": "8256x4644",
+        "frameRate": "59.94p",
+        "codec": "N-RAW"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-48d6b6f884d750df5ca3"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.weight",
+      "value": 910,
+      "unit": "g",
+      "rawValue": 910,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 배터리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "excludes": [
+          "body cap",
+          "accessory shoe cover"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-18c46272e58516119f40"
+    },
+    {
+      "productId": "nikon-z8",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6f33f75af7555576",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 측정 기준"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-c4598b7ba2912abde8da"
+    }
+  ]
+}

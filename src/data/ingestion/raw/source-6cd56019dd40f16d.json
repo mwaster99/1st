@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Nikon Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.nikc.nikon.com/product/mirrorless/Z30",
+  "documentTitle": "Z30 | Nikon Imaging Korea",
+  "evidenceScope": "Official product detailed objective specifications",
+  "accessedAt": "2026-10-01T02:52:07.316Z",
+  "evidenceExcerpt": [
+    {
+      "field": "촬상소자",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "유효화소수",
+      "value": 20880000,
+      "unit": "pixel"
+    },
+    {
+      "field": "촬상소자 크기",
+      "value": [
+        23.5,
+        15.7
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게 배터리 카드 포함",
+      "value": 405,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게 본체만",
+      "value": 350,
+      "unit": "g"
+    },
+    {
+      "field": "크기(폭×높이×깊이)",
+      "value": [
+        128,
+        73.5,
+        59.5
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "기록 화소수/프레임 레이트",
+      "value": "4K UHD 29.97p",
+      "unit": null
+    },
+    {
+      "field": "고속 연속 촬영 확장",
+      "value": 11,
+      "unit": "fps"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "nikon-z30",
+      "manufacturerModelCode": "Z30",
+      "productType": "body",
+      "identity": {
+        "name": "니콘 Z30",
+        "brand": "Nikon",
+        "series": "Z",
+        "model": "Z30",
+        "aliases": [
+          "Nikon Z30",
+          "Z 30",
+          "니콘 Z30"
+        ],
+        "mount": "Z mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20880000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "주요사양",
+            "row": "유효화소수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            23.5,
+            15.7
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "촬상소자 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 405,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 배터리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "excludes": [
+              "body cap"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 350,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 본체만"
+          },
+          "conditions": {
+            "weightBasis": "body-only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            128,
+            73.5,
+            59.5
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "크기(폭×높이×깊이)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 7,
+          "rawValue": "4K UHD 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "기록 화소수/프레임 레이트"
+          },
+          "conditions": {
+            "resolution": "3840x2160",
+            "frameRate": "29.97p",
+            "recording": "normal"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 8,
+          "rawValue": 11,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "주요사양",
+            "row": "고속 연속 촬영 확장"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "recordingFormat": "JPEG or 12-bit RAW",
+            "mode": "extended high speed"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "f0564745af9519c0428740634dd9a1f5464c55ae923d4b72c45a0c189f4e96db",
+  "sourceId": "source-6cd56019dd40f16d"
+}

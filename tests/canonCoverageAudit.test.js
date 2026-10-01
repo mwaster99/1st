@@ -143,5 +143,5 @@ test('Canon batches 001–005 preserve approved raw, staged, diff and atomic tra
     previousDigest = manifest.expectedCanonicalDigest;
   }
   assert.equal(seen.size, 22);
-  assert.equal(previousDigest, sha('src/data/cameraProducts.json'));
+  assert.equal(previousDigest, json(`${base}batches/production-nikon-bodies-001.json`).canonicalBaselineDigest);
 });

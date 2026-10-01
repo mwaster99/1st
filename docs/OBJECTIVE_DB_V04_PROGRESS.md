@@ -1,5 +1,25 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Nikon Korea production batch 001 — 2026-10-01
+
+시작 시 git working tree는 clean, canonical은 바디 86 / 렌즈 36 / 전체 122개였다. Nikon Korea 공식 [미러리스](https://www.nikc.nikon.com/product/mirrorless) 15개, [SLR](https://www.nikc.nikon.com/product/dslr) 3개, [콤팩트](https://www.nikc.nikon.com/product/compact) 3개, [시네마](https://www.nikc.nikon.com/product/zcinema) 1개를 직접 대조해 [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json)에 22개 카드를 기록했다. Nikon 공식 [2026-09-28 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)는 Z5IIC를 2026년 10월 발매 예정으로 명시하므로 announced/upcoming 1개로 분리했다. 출시 완료 21개 중 기존 canonical 5개(Z6III, D780, Zf, Z5II, Z50II), 시작 시 미처리 16개였다. Nikon Korea 시네마 분류의 RED 링크는 외부 RED 카탈로그로 이동하며 Nikon Korea 제품 카드가 아니므로 이 22개 분모에 넣지 않았다. 공식 카메라 분류에서 원격 설치형 별도 카드는 발견되지 않아 deferred-special 후보는 0개다.
+
+첫 batch는 신규 **Z8, Z30, ZR, D7500, COOLPIX P1100**을 선정했다. FX 고화소, DX 영상 지향, 직접 운용하는 Z Cinema, F 마운트 DSLR, 고정렌즈 초망원으로 Nikon의 사양 표현을 검증한다. 각 제품마다 Nikon Korea 공식 제품 사양 페이지와 독립 공식 출시/제품자료 각 1개를 연결해 공식 source **2개씩, 총 10개**를 사용했다. 제품별 독립 cheap-worker 실제 API task 5개는 공개 Nikon 발췌문만 받았고 코드, canonical 전체, secret은 전송하지 않았다. raw-helper → normalize → validate → 사람용 diff 검토 → 명시적 approval → atomic apply를 완료했다. **신규 5개, 기존 보강 0개, 검증 claim 49개**로 canonical은 바디 **86→91**, 렌즈 **36 유지**, 전체 **122→127**이다. source/value conflict **0건**. 승인 diff digest `810089e21daafb8d7c556710b72c9d93060b757d5d99e860b3c1d5179d5a5265`, approval ID `approval-a0df80779d70e8de2b7710f3bfc2b08b399d9525f9e03e0ad179562d3596d8ba`, 적용 후 canonical SHA-256 `fe082817b2e9d39d821f936aa680b3fde2aa3825848a94bdd096b5c0c1dbb730`이다. 재적용은 `already-canonicalized`, `canonicalMatches: true`였다.
+
+| 제품 | 공식 source / claim | 핵심 승격값과 보류값 |
+| --- | ---: | --- |
+| Z8 / `nikon-z8` | 2 / 11 | FX 45.71MP, Z 마운트, 배터리·카드 포함 910g / 본체만 820g, 기계식 셔터 없음, 내부 8.3K N-RAW 59.94p. 120fps 정지화상은 11MP JPEG C120 조건이므로 일반 연사 최대값에 넣지 않았다. |
+| Z30 / `nikon-z30` | 2 / 9 | DX 20.88MP, Z 마운트, 405g / 본체만 350g, 4K UHD 29.97p. 11fps는 기계식 셔터·확장 고속·JPEG/12-bit RAW 조건을 claim에 보존했다. |
+| ZR / `nikon-zr` | 2 / 9 | 직접 운용하는 Z Cinema, FX 24.5MP, Z 마운트, 630g / 본체만 540g, 내부 R3D NE 12-bit 6K 59.94p. 4K 119.88p는 DX crop이므로 일반 최대값과 합치지 않았다. slot 배열은 공식 발췌로 확정되지 않아 UNKNOWN. |
+| D7500 / `nikon-d7500` | 2 / 9 | DX 20.88MP F 마운트 DSLR, 720g / 본체만 640g, 4K UHD 29.97p. 8fps는 AF-C, S/M 노출, 1/250초 이상 등 조건을 claim에 보존했다. |
+| COOLPIX P1100 / `nikon-coolpix-p1100` | 2 / 11 | `kind: fixed`, `mount: null`, 16.05MP, 1410g; 내장 렌즈 실제 4.3–539mm, 35mm 환산 24–3000mm, F2.8–8. 별도 lens product 없음. 디지털 줌 6000mm 상당은 optical field에 넣지 않았다. |
+
+모든 가격은 production promotion 대상이 아니어서 UNKNOWN이다. AF/IBIS/EVF/슬롯처럼 이번 공식 발췌로 검증하지 않은 필드는 `null`로 남겼다. P1100 광학 125배, ZR 기록 모드별 시간, Z30 Full HD 장시간 녹화 등 현재 canonical leaf로 안전하게 표현하기 어려운 조건도 임의 schema 확장 없이 원문 및 human review에 남겼다. 영상 `max` 단일 leaf의 조건 표시 한계는 기존 후속 과제이며 이번에 추천 엔진·UI는 수정하지 않았다.
+
+Cheap-worker 사용량: Z8 **첫 실패 483/352/835, 성공 재시도 484/257/741**, Z30 **494/418/912**, ZR **497/386/883**, D7500 **488/353/841**, P1100 **539/387/926** (순서: input/output/total token). **총 2985/2153/5138 token**, API 시도 6회, 형식 오류 1회, 동일 task ID 수정 재시도 1회, 유효 결과 5개였다. Z8 첫 malformed 결과는 채택하지 않았다. Worker는 Z8 120fps의 JPEG 제한, Z30·D7500의 조건부 연사, ZR의 crop/녹화시간, P1100의 실제/환산 초점거리 혼동을 유용하게 지적했다. P1100의 `1605만`을 '정밀 MP 불명'으로 본 worker 의견은 사람이 공식 숫자를 16.05MP로 정확히 환산해 바로잡았다. 사람이 22개 inventory 상태, 5개 identity/ID/범위, 10개 공식 source, 49개 claim·무게 기준·조건·UNKNOWN, diff 및 approval/apply를 직접 판단했다. 별도 사용자 개입은 없었다.
+
+새 pipeline validation 문제는 없었다. 다만 이전 Canon·catalog 테스트 일부가 canonical 총수를 86/122와 Canon 최종 digest가 영구 현재 digest인 것으로 고정해 Nikon 승격 후 실패했다. 과거 Canon transaction 자체의 digest 검증은 유지하고, 이후 batch를 허용하도록 테스트 조건을 고쳤으며 Nikon batch 전용 inventory/atomic chain/fixed-lens 회귀 테스트 3개를 추가했다. raw source 10개의 `accessedAt`은 raw-helper가 만든 실제 UTC ISO timestamp이고 밀리초 구조 및 파싱 일치를 검사했다. 검증: 전체 테스트 **132/132**, Nikon 전용 **3/3**, canonical validation **127/127**, `pnpm build`, 관련 `node --check`, `git diff --check` 통과. 종료 시 released/current 미처리 **11개**, announced/upcoming **1개**라 다음 최대 5개 batch를 계속할 수 있다.
+
 ## Canon Korea 현행 카메라 coverage audit — 2026-09-30
 
 Canon Korea 공식 미러리스 15·DSLR 2·컴팩트 5·직접 운용 Cinema EOS 7개를 재대조해 직접 운용 카드 29개 중 출시 완료 canonical 28개, 출시 예정 EOS R8 Mark II 1개, 출시 완료 미처리 0개, 중복/모호 identity 0개를 확인했다. 인접 PTZ 분류의 17개 카드는 카메라 외 제어기·소프트웨어를 포함하므로 별도 `deferred-special-category`로 추적한다. Batch 001~005의 22개 item과 digest chain은 모두 유효하며 Canon 바디 제품 coverage를 1차 완료로 판정했다. 이전 canonical 6개의 구조화 identity 근거와 일부 객관 필드 null, 영상 조건 표시 및 EF 렌즈 추천 coverage는 별도 후속 과제다. 전체 테스트 129/129, Objective·Canon 테스트 87/87, canonical 122개 validation, build·`node --check`·`git diff --check`를 통과했다. 자세한 분모·근거·심각도·회귀 검증은 [Canon coverage 감사 문서](OBJECTIVE_DB_CANON_COVERAGE_AUDIT.md)에 기록했다.

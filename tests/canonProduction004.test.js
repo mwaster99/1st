@@ -35,8 +35,8 @@ test('Canon batch 004 retains its five released cameras after later batches comp
     assert.equal(card?.canonicalId, id);
     assert.equal(card?.productionBatch, batch);
   }
-  assert.equal(canonical.bodies.length, 86);
-  assert.equal(canonical.lenses.length, 36);
+  assert.ok(canonical.bodies.length >= 86);
+  assert.ok(canonical.lenses.length >= 36);
   assert.equal(validateCanonical(canonical, json(`${base}vocab.json`)), true);
 });
 

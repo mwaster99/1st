@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-001",
+  "itemKey": "nikon-z30",
+  "manufacturerModelCode": "Z30",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Nikon",
+    "manufacturerModelCode": "Z30",
+    "productId": "nikon-z30",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-eb93806b4531c8b3aedc",
+    "sourceId": "source-cb9875ff337673c6",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Official Nikon Korea publication",
+      "row": "Z30"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-01",
+    "reviewer": "codex-nikon-001-human-review"
+  },
+  "product": {
+    "id": "nikon-z30",
+    "name": "니콘 Z30",
+    "brand": "Nikon",
+    "series": "Z",
+    "model": "Z30",
+    "aliases": [
+      "Nikon Z30",
+      "Z 30",
+      "니콘 Z30"
+    ],
+    "mount": "Nikon Z",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 350,
+      "burst": {
+        "maxMechanicalFps": 11
+      },
+      "dimensions": [
+        128,
+        73.5,
+        59.5
+      ],
+      "sensor": {
+        "format": "APS-C",
+        "megapixels": 20.88,
+        "sizeMm": [
+          23.5,
+          15.7
+        ]
+      },
+      "video": {
+        "max": "4K UHD 29.97p"
+      },
+      "weight": 405,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-cb9875ff337673c6",
+    "sourceType": "manufacturer",
+    "url": "https://www.nikc.nikon.com/upload/prdt/catalog/202207131048053.pdf",
+    "publisher": "Nikon Imaging Korea",
+    "documentTitle": "Z 30 official catalog",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-01T02:52:07.316Z",
+    "evidenceScope": "Official 2022 product identity",
+    "contentDigest": "99179ade1a9835180dd725b3bbc3f5786ac78ea79b5b89158dbf7db9732c0f91"
+  },
+  "sources": [
+    {
+      "sourceId": "source-6cd56019dd40f16d",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/product/mirrorless/Z30",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "Z30 | Nikon Imaging Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T02:52:07.316Z",
+      "evidenceScope": "Official product detailed objective specifications",
+      "contentDigest": "f0564745af9519c0428740634dd9a1f5464c55ae923d4b72c45a0c189f4e96db"
+    },
+    {
+      "sourceId": "source-cb9875ff337673c6",
+      "sourceType": "manufacturer",
+      "url": "https://www.nikc.nikon.com/upload/prdt/catalog/202207131048053.pdf",
+      "publisher": "Nikon Imaging Korea",
+      "documentTitle": "Z 30 official catalog",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-01T02:52:07.316Z",
+      "evidenceScope": "Official 2022 product identity",
+      "contentDigest": "99179ade1a9835180dd725b3bbc3f5786ac78ea79b5b89158dbf7db9732c0f91"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "nikon-z30",
+      "path": "specs.bodyOnlyWeight",
+      "value": 350,
+      "unit": "g",
+      "rawValue": 350,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 본체만"
+      },
+      "conditions": {
+        "weightBasis": "body-only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-aee299089b3ca105e23c"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 11,
+      "unit": "fps",
+      "rawValue": 11,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "고속 연속 촬영 확장"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "recordingFormat": "JPEG or 12-bit RAW",
+        "mode": "extended high speed"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-b3be10cfb0aba4f8541b"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.dimensions",
+      "value": [
+        128,
+        73.5,
+        59.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        128,
+        73.5,
+        59.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "크기(폭×높이×깊이)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-25e4a03de7fcdbd91f56"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.sensor.format",
+      "value": "APS-C",
+      "unit": null,
+      "rawValue": "APS-C",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-7cd210a86eb5f06df69a"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.sensor.megapixels",
+      "value": 20.88,
+      "unit": "MP",
+      "rawValue": 20880000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "유효화소수"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-276c4279f6f9b2183735"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        23.5,
+        15.7
+      ],
+      "unit": "mm",
+      "rawValue": [
+        23.5,
+        15.7
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "촬상소자 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-6684dfa476993265e30e"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.video.max",
+      "value": "4K UHD 29.97p",
+      "unit": null,
+      "rawValue": "4K UHD 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "기록 화소수/프레임 레이트"
+      },
+      "conditions": {
+        "resolution": "3840x2160",
+        "frameRate": "29.97p",
+        "recording": "normal"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-afed2fe8a4f30bf139d7"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.weight",
+      "value": 405,
+      "unit": "g",
+      "rawValue": 405,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 배터리 카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "excludes": [
+          "body cap"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-e17f8d0ffc8aae6e6822"
+    },
+    {
+      "productId": "nikon-z30",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6cd56019dd40f16d",
+      "locator": {
+        "section": "주요사양",
+        "row": "무게 측정 기준"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-01",
+      "reviewer": "codex-nikon-001-human-review",
+      "claimId": "claim-616c93646f6f8f4b856b"
+    }
+  ]
+}

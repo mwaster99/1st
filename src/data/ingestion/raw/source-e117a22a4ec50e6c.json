@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Nikon Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1100",
+  "documentTitle": "COOLPIX P1100 | Nikon Imaging Korea",
+  "evidenceScope": "Official product detailed objective specifications",
+  "accessedAt": "2026-10-01T02:52:07.317Z",
+  "evidenceExcerpt": [
+    {
+      "field": "유효화소수",
+      "value": 16050000,
+      "unit": "pixel"
+    },
+    {
+      "field": "무게 배터리 카드 포함",
+      "value": 1410,
+      "unit": "g"
+    },
+    {
+      "field": "무게 측정 기준",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "크기(폭×높이×깊이)",
+      "value": [
+        146.3,
+        118.8,
+        181.3
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리 실제 광각",
+      "value": 4.3,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리 실제 망원",
+      "value": 539,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산 광각",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm 환산 망원",
+      "value": 3000,
+      "unit": "mm"
+    },
+    {
+      "field": "개방 F값 광각",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "개방 F값 망원",
+      "value": 8,
+      "unit": null
+    },
+    {
+      "field": "동영상 기록 화소수/프레임 레이트",
+      "value": "4K UHD 30p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "nikon-coolpix-p1100",
+      "manufacturerModelCode": "COOLPIX P1100",
+      "productType": "body",
+      "identity": {
+        "name": "니콘 COOLPIX P1100",
+        "brand": "Nikon",
+        "series": "COOLPIX",
+        "model": "COOLPIX P1100",
+        "aliases": [
+          "Nikon COOLPIX P1100",
+          "COOLPIX P1100",
+          "니콘 P1100"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 0,
+          "rawValue": 16050000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "주요사양",
+            "row": "유효화소수"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 1,
+          "rawValue": 1410,
+          "rawUnit": "g",
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 배터리 카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 2,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "무게 측정 기준"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 3,
+          "rawValue": [
+            146.3,
+            118.8,
+            181.3
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "크기(폭×높이×깊이)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 4,
+          "rawValue": 4.3,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "초점 거리 실제 광각"
+          },
+          "conditions": {
+            "focalBasis": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 5,
+          "rawValue": 539,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "초점 거리 실제 망원"
+          },
+          "conditions": {
+            "focalBasis": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 6,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "35mm 환산 광각"
+          },
+          "conditions": {
+            "focalBasis": "35mm-equivalent",
+            "zoom": "optical"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 7,
+          "rawValue": 3000,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "주요사양",
+            "row": "35mm 환산 망원"
+          },
+          "conditions": {
+            "focalBasis": "35mm-equivalent",
+            "zoom": "optical"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 8,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "개방 F값 광각"
+          },
+          "conditions": {
+            "focalPosition": "wide"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 9,
+          "rawValue": 8,
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "개방 F값 망원"
+          },
+          "conditions": {
+            "focalPosition": "tele"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 10,
+          "rawValue": "4K UHD 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "주요사양",
+            "row": "동영상 기록 화소수/프레임 레이트"
+          },
+          "conditions": {
+            "resolution": "2160",
+            "frameRate": "30p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-01",
+          "reviewer": "codex-nikon-001-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "c5ce6dcb79b067a763dea02d3c40d59454c26d4f0f2e6370b75593494bfe80fe",
+  "sourceId": "source-e117a22a4ec50e6c"
+}

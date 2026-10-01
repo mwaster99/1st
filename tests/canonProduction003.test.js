@@ -35,8 +35,8 @@ test('Canon batch 003 promotes five released direct-operated cameras and leaves 
   const upcoming = snapshot.cards.find((card) => card.modelCode === 'EOS R8 Mark II');
   assert.equal(upcoming.status, 'unprocessed');
   assert.equal(upcoming.availabilityStatus, 'announced-upcoming');
-  assert.equal(canonical.bodies.length, 86);
-  assert.equal(canonical.lenses.length, 36);
+  assert.ok(canonical.bodies.length >= 86);
+  assert.ok(canonical.lenses.length >= 36);
   assert.equal(validateCanonical(canonical, json(`${base}vocab.json`)), true);
 });
 

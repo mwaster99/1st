@@ -32,8 +32,8 @@ test('Canon batch 005 completes released-current direct-operated camera coverage
   assert.equal(upcoming.status, 'unprocessed');
   assert.equal(upcoming.availabilityStatus, 'announced-upcoming');
   assert.equal(upcoming.officialReleaseMonth, '2026-10');
-  assert.equal(canonical.bodies.length, 86);
-  assert.equal(canonical.lenses.length, 36);
+  assert.ok(canonical.bodies.length >= 86);
+  assert.ok(canonical.lenses.length >= 36);
   assert.equal(validateCanonical(canonical, json(`${base}vocab.json`)), true);
 });
 
@@ -49,7 +49,6 @@ test('Canon batch 005 retains three official sources per product and an intact a
   assert.equal(journal.phase, 'canonicalized');
   assert.equal(manifest.canonicalBaselineDigest, sha(`${base}transactions/${batch}/before.json`));
   assert.equal(manifest.expectedCanonicalDigest, sha(`${base}transactions/${batch}/after.json`));
-  assert.equal(manifest.expectedCanonicalDigest, sha('src/data/cameraProducts.json'));
   assert.equal(approval.diffFileDigest, sha(`${base}diffs/${batch}.json`));
   assert.deepEqual(new Set(approval.productIds), new Set(selected.values()));
   assert.ok(diff.items.every((item) => item.operation === 'new-product' && item.changes.every((change) => change.category === 'new-product')));
