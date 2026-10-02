@@ -1,5 +1,31 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Nikon Korea production batch 004 — 2026-10-01
+
+시작 시 working tree clean, baseline commit 169afe8, canonical 바디 101 / 렌즈 36 / 전체 137개였다. [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), production batch 001~003 manifest/transaction, 진행 기록, canonical, identity-map 및 기존 field contracts를 대조했다. released/current 미처리 **COOLPIX P1000 1개**, announced/upcoming **Z5IIC 1개**였다. 제품 재선정 없이 [Nikon Korea 콤팩트 현행 목록](https://www.nikc.nikon.com/product/compact)의 P1000 카드와 [공식 제품 주요사양](https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000)을 다시 확인했다. 공식 보도자료의 Z5IIC는 2026년 10월내 발매 예정이며 이번 batch에서 제외했다.
+
+공식 source **2개**(제품 주요사양 1개, 현행 gallery identity-only 1개), verified field claim **13개**를 사용했다. P1000만 독립 cheap-worker task로 검토한 뒤 raw → normalize → validate → diff → 사람용 summary 직접 검토 → explicit approval → atomic apply → canonical validation → idempotent reapply를 완료했다. **신규 1개 / 기존 보강 0개**, canonical은 **바디 101→102 / 렌즈 36 유지 / 전체 137→138**이다. 기존 137개 제품과 렌즈 데이터는 동일하며 cameraProducts.json 직접 편집은 하지 않았다. source/value conflict 0건이다.
+
+승격 ID는 `nikon-coolpix-p1000`, `kind: fixed / mount: null / bodyStyle: slr`로 기존 P950/P1100 정책을 유지한다. 유효 16.05MP(공식 1605만, 화상 처리로 감소 가능 조건), 배터리·메모리 카드 포함 전체 무게 **1415g / weightBasis: battery-and-card**, 크기 **146.3×118.8×181.3mm**(약, 돌출부 제외), 기계식+CMOS 전자식 셔터 병용, 일반 **4K UHD 30p**(MP4/H.264 MPEG-4 AVC; 별도 HS 저해상도 모드는 합치지 않음)를 승격했다. 조건은 claim metadata에 남겼다. 30p를 근거 없이 29.97p로 바꾸지 않았다.
+
+내장 광학 사양은 `specs.fixedLens.focal: {min:4.3,max:539}` **실제 mm**, `equivalentFocal: {min:24,max:3000}` **35mm 환산 mm**, `aperture: {wide:2.8,tele:8}`이다. 실제/환산 값을 서로 바꾸거나 디지털 줌 값과 합치지 않았다. 별도 lens product를 만들지 않았으며 기존 `getIntegratedLens()`의 내장 렌즈는 weight/price 모두 null이다. 실제 기존 시나리오 생성·평가 회귀 테스트에서 BUY 항목은 카메라 1개, lensCount.after 0, weight.after **1415g**으로 확인했다. 전체 카메라와 내장 렌즈 무게를 이중 계산하지 않는다.
+
+공식 VR은 정지화상 **렌즈 시프트**, 동영상 **렌즈 시프트+전자식 보정**이다. 이는 body/sensor-shift IBIS 근거가 아니므로 `specs.ibis: null`이며 IBIS claim/object를 만들지 않았다. 현재 fixedLens contract에는 별도 lens VR/opticalZoom leaf가 없으므로 VR 및 광학 125배는 canonical에 억지 승격하지 않았다. 공식 1/2.3형 CMOS 표현도 물리 mm 크기나 crop factor로 추정 변환하지 않았다. 세 사실은 기존 raw의 `evidenceExcerpt`에 **unpromoted context**로 보존하여 동일한 content/source digest 계약에 포함했고, unsupported observation을 만들지 않았다. 이러한 lens VR/optical zoom 표현은 후속 개선 후보다. 본체만 무게, sensor physical size, 영상 bit depth/crop, AF/EVF/LCD/슬롯/연사/출시일 및 가격 등 미승격 leaf는 UNKNOWN/null이다. 가격은 별도 phase이며 ingestion을 막지 않았다.
+
+Cheap-worker stable task `nikon-production-004-p1000`은 공개 Nikon 발췌와 최소 contract만 받았으며 코드/canonical 전체/secret을 받지 않았다. 실제 API **1회**, attempt **1**, retry/failure **0**, token **input 798 / output 832 / total 1630**이었다. 실제 채택한 결과는 실제·환산 초점거리 분리, lens VR≠IBIS, battery/card 포함 무게, 물리 센서크기·본체만 무게·영상 crop/bit depth 추정 금지, 없는 schema leaf에 125x/VR를 넣지 말라는 경고다. 잘못된 숫자/재시도/폐기한 API 결과는 없었다. Worker의 영상 표기 제안 2160/30p는 Sol이 기존 표현과 공식 UHD 명칭에 맞춰 4K UHD 30p로 정규화했다. 전달용 임시 fixture는 호출 후 삭제했다.
+
+GPT-6.1 Sol이 identity/ID/aliases, 공식 source 적용 범위, fixed-lens 구조, actual/equivalent focal range, VR/IBIS 구분, 무게 기준, 13개 claim·조건/UNKNOWN, worker 결과, diff, approval/apply를 직접 판단했다. 사용자 추가 개입은 **0회**다. 사용자에게 별도 검토/승인을 요청하지 않았으며 이미 요청된 production 절차 안에서 CLI 명시적 승인을 기록했다.
+
+Validator는 실제 1415g claim의 `conditions.weightBasis`와 `specs.weightBasis`가 battery-and-card로 일치하여 통과했다. 실제 staging을 메모리에서만 변형한 weight basis 누락/invalid/mismatch 검증은 `WEIGHT_BASIS_REQUIRED / INVALID_WEIGHT_BASIS / WEIGHT_BASIS_MISMATCH`로 validate에서 차단됐다. IBIS null은 정상 통과했고 기존 boolean/malformed `INVALID_IBIS` regression 및 기존 Sony/Canon/Nikon production fixture도 통과했다. 원본 artifact를 테스트 때문에 수정하지 않았다.
+
+**발견한 기존 정규화 한계:** `canonicalUnit()`에 fixedLens.equivalentFocal 경로의 mm 반환이 없어 staging/사람용 summary의 환산 초점거리 unit이 null이다. 이번 공식 rawUnit은 모두 mm이고 canonical 값은 24–3000으로 정확하여 이번 승격을 차단할 문제는 아니다. 향후 다른 단위 입력의 변환/검증 및 summary 단위 표기를 보강할 후보로 기록한다. 이번 작업에서는 rules/vocab/schema/추천 엔진/UI/Experience DB를 수정하지 않았고, 신규 production blocker는 없었다.
+
+Raw source ID `source-eded3b9e38524450`(사양), `source-369bcdf8a53b3dfd`(identity-only)의 accessedAt은 helper가 실제 UTC로 생성한 **2026-10-01T05:15:08.439Z / 2026-10-01T05:15:08.441Z**다. 밀리초 ISO 구조와 Date round-trip을 테스트했다. 승인 diff digest `fa841b9e1372e3385336aa32ef2f048cea69967312444854849ba5d991af8b4d`, approval ID `approval-60f3e50867c21721149fa92830e695dec069cc11713f88c1618e3084d7faac1f`, 적용 후 canonical SHA-256 `5af85cb2cd789d256ebda930ea6bec7fc1b16c924aa893fcce0242d17dadbb1b`이다. 재적용은 **already-canonicalized / canonicalMatches: true**였다.
+
+검증: 전체 **149/149**, Objective/production **107/107**, Nikon **14/14**(batch 004 신규 regression 4개), canonical **138개 전체 validation**, `pnpm build`, 모든 Objective scripts 및 새 test `node --check`, `git diff --check` 통과. Build는 기존 500kB 초과 chunk 경고만 출력했다. 종료 snapshot은 released/current **21개 모두 canonicalized, 미처리 0개**, announced/upcoming **Z5IIC 1개**다. [공식 보도자료](https://www.nikc.nikon.com/ad/press/view/1019)의 발매 예정 상태를 재확인했다. 새로운 released/current production 대상을 추가 선정할 단계가 아니라 **Nikon 전체 production coverage audit으로 넘어갈 준비가 완료**됐다. Coverage audit 자체는 이번 batch의 범위에 포함하지 않았다.
+
+2026-10-02 재개 시 batch 004는 이미 canonicalized 상태이고 canonical digest도 승인 결과와 일치했다. 해당 미커밋 변경만 이어서 마무리했으며 재수집·raw 재생성·worker 추가 호출은 하지 않았다. 공식 현행 목록의 P1000과 공식 발매 예정 표기를 재확인하고 테스트/build/validation/idempotency를 다시 검증했다. 기존 artifact accessedAt과 digest는 유지했다.
+
 ## Stage 4 Nikon Korea production batch 003 — 2026-10-01
 
 시작 시 working tree clean, canonical 바디 96 / 렌즈 36 / 전체 132개였다. batch 001~002 artifact와 [inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), 진행 기록, canonical, identity-map, catalog-scope 및 field contracts를 대조했다. 공식 [미러리스 목록](https://www.nikc.nikon.com/product/mirrorless)과 [콤팩트 목록](https://www.nikc.nikon.com/product/compact), 6개 개별 사양 페이지에서 released/current 잔여 6개를 확인했다. 이번 선정은 **Z50, Z6, Z7, Z6II, Z5**이며 모두 신규다. 다섯 모델은 같은 Z 마운트·FX/DX·센서 시프트 VR·셔터·무게 contract와 사양 표 구조를 공유해 함께 검토할 수 있다. 마지막 **COOLPIX P1000**은 공식 사양에 실제 4.3–539mm/35mm 환산 24–3000mm, 렌즈 시프트 VR, 배터리·카드 포함 전체 무게 1415g이 있어 별도 fixed-lens 검토가 필요하므로 독립 최종 batch로 남겼다. source 수집 자체는 모두 가능하지만 다섯 미러리스를 공통 기준으로 검토하는 편이 효율적이며, P1000을 다른 모델로 임의 교체하지 않았다.

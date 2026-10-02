@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-nikon-bodies-004",
+  "canonicalBaselineDigest": "76e6bc26a2c0515b3f505600c8b98585c8a1819c576a1f689808f0ecf8fd9745",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-nikon-bodies-004",
+      "productId": "nikon-coolpix-p1000",
+      "productName": "니콘 COOLPIX P1000",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "nikon-coolpix-p1000",
+        "name": "니콘 COOLPIX P1000",
+        "brand": "Nikon",
+        "series": "COOLPIX",
+        "model": "COOLPIX P1000",
+        "aliases": [
+          "Nikon COOLPIX P1000",
+          "COOLPIX P1000",
+          "니콘 P1000"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 16.05,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 1415,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": null,
+          "dimensions": [
+            146.3,
+            118.8,
+            181.3
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": null,
+          "burst": null,
+          "shutter": {
+            "electronic": true,
+            "mechanical": true
+          },
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 8,
+              "wide": 2.8
+            },
+            "equivalentFocal": {
+              "max": 3000,
+              "min": 24
+            },
+            "focal": {
+              "max": 539,
+              "min": 4.3
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.nikc.nikon.com/product/compact",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-01",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-369bcdf8a53b3dfd",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-141ccbdd48f7c739cf6f",
+          "sourceId": "source-369bcdf8a53b3dfd",
+          "checkedAt": "2026-10-01"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-141ccbdd48f7c739cf6f",
+        "sourceId": "source-369bcdf8a53b3dfd",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "콤팩트 카메라 목록",
+          "row": "COOLPIX P1000"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-01",
+        "reviewer": "codex-nikon-004-human-review",
+        "source": {
+          "sourceId": "source-369bcdf8a53b3dfd",
+          "url": "https://www.nikc.nikon.com/product/compact",
+          "documentTitle": "콤팩트 카메라 | Nikon Imaging Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            146.3,
+            118.8,
+            181.3
+          ],
+          "unit": "mm",
+          "claimId": "claim-9a6498f29b9bd2a01858",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "크기(폭×높이×깊이)"
+            },
+            "conditions": {
+              "approximate": true,
+              "excludes": [
+                "projections"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": null,
+          "claimId": "claim-fccb766fbe48c9191f90",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "개방 F 값 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-76208e5e3a0626b7778b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "개방 F 값 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3000,
+          "unit": null,
+          "claimId": "claim-953d4425d48b09f10cd3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "초점 거리 35mm 환산 망원"
+            },
+            "conditions": {
+              "basis": "35mm equivalent"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": null,
+          "claimId": "claim-a6a57d30add5f72b3333",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "초점 거리 35mm 환산 광각"
+            },
+            "conditions": {
+              "basis": "35mm equivalent"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 539,
+          "unit": "mm",
+          "claimId": "claim-bd862192dd3edf3fa105",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "초점 거리 실제 망원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.3,
+          "unit": "mm",
+          "claimId": "claim-d9748415108476799e20",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "초점 거리 실제 광각"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 16.05,
+          "unit": "MP",
+          "claimId": "claim-e37918f31a846afcade7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "유효화소수"
+            },
+            "conditions": {
+              "imageProcessing": "effective pixel count may decrease with image processing"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-f1d5edde9f9d210b8d69",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식 셔터와 CMOS 전자 셔터 병용"
+            },
+            "conditions": {
+              "operation": "mechanical shutter and CMOS electronic shutter used together"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-ce2681c6c7925b2b172c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "셔터 기계식 셔터와 CMOS 전자 셔터 병용"
+            },
+            "conditions": {
+              "operation": "mechanical shutter and CMOS electronic shutter used together"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 30p",
+          "unit": null,
+          "claimId": "claim-ccb27f33b5ae25b48461",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "기록 화소수/프레임 레이트"
+            },
+            "conditions": {
+              "resolution": "3840x2160",
+              "frameRate": "30p",
+              "recording": "normal",
+              "codec": "H.264/MPEG-4 AVC",
+              "container": "MP4",
+              "crop": null,
+              "highSpeedModes": "separate lower-resolution HS recording modes"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1415,
+          "unit": "g",
+          "claimId": "claim-faee4b15154231173361",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 배터리 및 메모리 카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true,
+              "integratedLensIncluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-0db690bfee551e5789e0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-eded3b9e38524450",
+            "url": "https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000",
+            "locator": {
+              "section": "주요사양",
+              "row": "무게 측정 기준"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}
