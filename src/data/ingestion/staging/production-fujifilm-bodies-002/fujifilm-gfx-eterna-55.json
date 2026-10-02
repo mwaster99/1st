@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-002",
+  "itemKey": "fujifilm-gfx-eterna-55",
+  "manufacturerModelCode": "GFX ETERNA 55",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Fujifilm",
+    "manufacturerModelCode": "GFX ETERNA 55",
+    "productId": "fujifilm-gfx-eterna-55",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-2b0a054acac8dddf9350",
+    "sourceId": "source-261c229bd67b7d8a",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "GFX 시스템",
+      "row": "GFX ETERNA 55"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-02",
+    "reviewer": "codex-fujifilm-002-direct-review"
+  },
+  "product": {
+    "id": "fujifilm-gfx-eterna-55",
+    "name": "후지필름 GFX ETERNA 55",
+    "brand": "Fujifilm",
+    "series": "GFX",
+    "model": "GFX ETERNA 55",
+    "aliases": [
+      "Fujifilm GFX ETERNA 55",
+      "GFXETERNA55",
+      "후지필름 GFX ETERNA 55"
+    ],
+    "mount": "Fujifilm G",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 2000,
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "dimensions": [
+        110.8,
+        138.2,
+        176.8
+      ],
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1040000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "releaseDate": "2025-11",
+      "sensor": {
+        "format": "GFX (라지포맷)",
+        "generation": "GFX 102MP CMOS II HS",
+        "megapixels": 102,
+        "sizeMm": [
+          43.8,
+          32.9
+        ]
+      },
+      "video": {
+        "log": true,
+        "max": "8K 29.97p"
+      }
+    }
+  },
+  "source": {
+    "sourceId": "source-261c229bd67b7d8a",
+    "sourceType": "manufacturer",
+    "url": "https://fujifilm-korea.co.kr/products/camera",
+    "publisher": "Fujifilm Electronic Imaging Korea",
+    "documentTitle": "카메라 | Fujifilm Korea 현행 목록",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-02T04:43:53.179Z",
+    "evidenceScope": "Current gallery GFX ETERNA 55 card identity only; no field claims",
+    "contentDigest": "f4c5a3506a8be4a8b76ba36a9e3527c9f3ad74d0bece8a55963cec7925248df4"
+  },
+  "sources": [
+    {
+      "sourceId": "source-261c229bd67b7d8a",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/camera",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "카메라 | Fujifilm Korea 현행 목록",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T04:43:53.179Z",
+      "evidenceScope": "Current gallery GFX ETERNA 55 card identity only; no field claims",
+      "contentDigest": "f4c5a3506a8be4a8b76ba36a9e3527c9f3ad74d0bece8a55963cec7925248df4"
+    },
+    {
+      "sourceId": "source-39ea9fd10de104cd",
+      "sourceType": "manufacturer",
+      "url": "https://www.fujifilm.com/jp/en/news/hq/12705",
+      "publisher": "FUJIFILM Corporation",
+      "documentTitle": "Fujifilm Launches Filmmaking Camera FUJIFILM GFX ETERNA 55",
+      "documentVersion": "2025-09-11",
+      "region": "global",
+      "accessedAt": "2026-10-02T04:43:53.179Z",
+      "evidenceScope": "GFX ETERNA 55 dual physical slots; external HDMI RAW and operator/rig context are unpromoted condition evidence, not internal bit depth",
+      "contentDigest": "fe100165530ea163dcaa46c390dd1289e16883e60a7da88e0c5c6e8477d22b60"
+    },
+    {
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/id/1352",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "GFX ETERNA 55 | Fujifilm Korea 사양",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T04:43:53.178Z",
+      "evidenceScope": "Only GFX ETERNA 55 base-model specs and matching conditions; no edition, price, film-simulation or separate lens product",
+      "contentDigest": "e61fda2d0919509c54c31e1fdb00d3319506b1d9a3a6a1c0d09867bc71a22226"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.bodyOnlyWeight",
+      "value": 2000,
+      "unit": "g",
+      "rawValue": 2,
+      "rawUnit": "kg",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 제외"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "approximate": true,
+        "excludes": [
+          "battery",
+          "memory card"
+        ],
+        "integratedLensIncluded": false,
+        "otherAccessoryInclusion": "Not stated by this KR weight row; do not infer a configured operating mass"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-2d3b343e1d86eb74f62b"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-39ea9fd10de104cd",
+      "locator": {
+        "section": "Main Features (4)",
+        "row": "Dual slots"
+      },
+      "conditions": {
+        "indexPolicy": "Stable ingestion ordinal by listed media; not a physical socket label",
+        "proRes": "CFexpress Type B only, per KR notes",
+        "usbSsd": "External storage is not an additional physical card slot"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-0ef28e1757f1d3818980"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.dimensions",
+      "value": [
+        110.8,
+        138.2,
+        176.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        110.8,
+        138.2,
+        176.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Dimensions: 너비 / 높이 / 두께"
+      },
+      "conditions": {
+        "order": [
+          "width",
+          "height",
+          "depth"
+        ],
+        "minimumDepthNotUsed": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-e050c3d24f64f6cf23b1"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Side monitor"
+      },
+      "conditions": {
+        "configuration": "built-in side monitor; two independent side monitors",
+        "externalSuppliedMonitor": "5.0-inch 6.22M-dot monitor is separate and not this LCD claim"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-efe1d1d3fd438a712fc6"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1040000,
+      "unit": "dots",
+      "rawValue": 1040000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Side monitor: 화소"
+      },
+      "conditions": {
+        "configuration": "built-in side monitor; two independent side monitors",
+        "externalSuppliedMonitor": "5.0-inch 6.22M-dot monitor is separate and not this LCD claim",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-435d0dce7c68512e9309"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Side monitor: 크기"
+      },
+      "conditions": {
+        "configuration": "built-in side monitor; two independent side monitors",
+        "externalSuppliedMonitor": "5.0-inch 6.22M-dot monitor is separate and not this LCD claim"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-c45f6dd8ea1b7a8140cb"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Side monitor: 터치"
+      },
+      "conditions": {
+        "configuration": "built-in side monitor; two independent side monitors",
+        "externalSuppliedMonitor": "5.0-inch 6.22M-dot monitor is separate and not this LCD claim"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-0b2010c7ce34fef05af2"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.releaseDate",
+      "value": "2025-11",
+      "unit": null,
+      "rawValue": "2025-11",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동일모델의 출시년월"
+      },
+      "conditions": {
+        "region": "KR",
+        "precision": "month"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-9790b093fb9d102c1f79"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.sensor.format",
+      "value": "GFX (라지포맷)",
+      "unit": null,
+      "rawValue": "GFX (라지포맷)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서 / 제품 소개: 센서 포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-6b7359b41d6816908bac"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.sensor.generation",
+      "value": "GFX 102MP CMOS II HS",
+      "unit": null,
+      "rawValue": "GFX 102MP CMOS II HS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-6a0fcd395c08730ce0ed"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.sensor.megapixels",
+      "value": 102,
+      "unit": "MP",
+      "rawValue": 102000000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "유효 화소수"
+      },
+      "conditions": {
+        "effectivePixels": true,
+        "notCompositeResolution": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-e81bdaba7d91e0172f46"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        43.8,
+        32.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        43.8,
+        32.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서: 물리 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-4b8a3dde4bc738f7d2a8"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "제품 소개 / Dynamic Range: F-Log2 및 F-Log2 C"
+      },
+      "conditions": {
+        "profile": [
+          "F-Log2",
+          "F-Log2 C"
+        ],
+        "notFilmSimulation": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-675670acf504b7bba254"
+    },
+    {
+      "productId": "fujifilm-gfx-eterna-55",
+      "path": "specs.video.max",
+      "value": "8K 29.97p",
+      "unit": null,
+      "rawValue": "8K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9c3e90ac8d2d827",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 촬영: 일반 내부 녹화 모드"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          7680,
+          4320
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "MOV ProRes/HEVC H.265; ProRes requires CFexpress Type B",
+        "imageFormat": "Selectable modes depend on image-format setting; exact 8K16:9 crop not established in selected KR table",
+        "notExternalRaw": true,
+        "externalOutputSeparate": {
+          "interface": "HDMI",
+          "uncompressedBitDepth": 10,
+          "rawBitDepth": 12,
+          "maxRaw": "8K/30P",
+          "sourceUrl": "https://www.fujifilm.com/jp/en/news/hq/12705"
+        },
+        "duration": "May shorten with temperature/shooting conditions",
+        "highFrameRateSeparate": {
+          "mode": "4K 4:3 open gate",
+          "resolution": [
+            3840,
+            2880
+          ],
+          "maxFps": 48
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-60802401085446fd8295"
+    }
+  ]
+}

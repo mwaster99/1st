@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Fujifilm Korea production batch 002 — 2026-10-02
+
+시작 clean, baseline `efe747f`, 바디107/렌즈36/전체143. 지정된released/current 신규4개 **GFX ETERNA 55, GFX100RF, X-E5, X half/X-HF1**의한국공식현행카드/출시월을재확인하고독립worker4task→raw-helper→strict normalize/validate→사람용diff 및conditions직접검토→explicit approval→atomic apply→canonical validation→실제idempotent reapply를완료했다. **85verified claims, 신규4/기존0, 바디111/렌즈36/전체147**, 이전143개객체보존. 카메라JSON직접편집/추천/UI/Experience/schema/기존artifact변경없음.
+
+ETERNA는G마운트직접운용시네마in-scope/compact, 본체만2.0kg→2000g/body-only이고운용weight는null. 내부8K29.97와외부HDMI12bitRAW,4Kopen-gate48p를분리. 본사공식dual slots근거로CFexpressB+SD2슬롯,내장3인치LCD와외장5인치조건구분. GFX100RF는actual35/eq28mm/F4, X half는actual10.8/eq32mm/F2.8;둘다fixed/mount null/prime,별도lens없이전체무게한번,8focalclaims모두raw/staging/diff mm. X-E5는CIPA2024중심7/주변6stop,전자20fps1.29crop,내부6.2K6240×3510/H26510bit1.23crop과외부RAW6240×3512를분리. X half합성해상도/half-frameUX를sensorMP/성능으로승격하지않음. Film simulation/가격제외.
+
+Sources제품별3/2/2/2, raw9/URL6, source/value conflict0. Strict unit/weightBasis/IBIS 실제staging회귀검증통과;archive compatibility mode신규production에서사용안함. UTChelper accessedAt04:43:53.178Z~.181Z. worker **4780/4330/9110 tokens**,API4/retry0/failure0;오해한IBIS/무게/codec-슬롯충돌제안은직접폐기,공식근거로확정. 사용자개입0회,공개fixture4개삭제.
+
+전체 **172/172**,Objective/production **132/132**,Fujifilm **11/11**,canonical147valid,build/node --check7files/git diff --check통과. 재적용 **already-canonicalized/canonicalMatches true**. Diff `fd3826955907b3cc06483ed244c930548e3e75248c195fc7b61f76d65ce5cbdd`, approval `approval-5e6a813ad01c94f7dd3ee6ed7f50472c4e9d32eca05c094ed79d4a75f4a4ca5c`,after SHA `0c21fdb4f109e4153db653b223e40dff3142001b5a41b623e874ba6c492ae46d`.
+
+한국일반14identity모두canonical연결, **신규미등록0**,production검증9/기존legacy보강5를구분. FRAGMENT카드는기본GFX100RF에연결하되별도production검증으로위장하지않음. 초기집계/batch001완료이력유지,batch002완료checkpoint추가. 다음기존5개provenance보강후coverage audit. 세로FHD/복수모니터/영상조건표현은후속후보,새pipeline codebug없음. [상세보고](OBJECTIVE_DB_FUJIFILM_PRODUCTION_002.md).
+
 ## Stage 4 Fujifilm Korea production batch 001 — 2026-10-02
 
 시작 working tree clean, baseline `add35a7`, canonical 바디102/렌즈36/전체138이었다. 공식 Korea 카메라 목록과 개별17개 제품 페이지를 확인해 [inventory snapshot](../src/data/ingestion/fujifilm-current-camera-gallery-2026-10-02.json)을 작성했다. GFX6/X11 카드 중 한정판2개는 공식 기본 모델 identity에 연결하되 변형/URL/기능 차이를 inventory에 보존했다. **17카드/15모델 identity = 일반 released/current14identity(16카드) + 제한형IR1identity**, upcoming0이다. 별도 공식 Instax 목록10개는 즉석사진/휴대폰·프린터 workflow scope 검토 대상으로 분리했다. IR 구매 자격·필터·계약 조건은 catalog-scope에 기록했다. ETERNA55는 직접 운용 시네마라 in-scope다.

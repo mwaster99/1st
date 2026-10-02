@@ -1,0 +1,792 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-002",
+  "itemKey": "fujifilm-gfx100rf",
+  "manufacturerModelCode": "GFX100RF",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Fujifilm",
+    "manufacturerModelCode": "GFX100RF",
+    "productId": "fujifilm-gfx100rf",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b937201a9aae07fbdf1f",
+    "sourceId": "source-814fb0b35af9f9ec",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "GFX 시스템",
+      "row": "GFX100RF"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-02",
+    "reviewer": "codex-fujifilm-002-direct-review"
+  },
+  "product": {
+    "id": "fujifilm-gfx100rf",
+    "name": "후지필름 GFX100RF",
+    "brand": "Fujifilm",
+    "series": "GFX",
+    "model": "GFX100RF",
+    "aliases": [
+      "Fujifilm GFX100RF",
+      "GFX100RF",
+      "후지필름 GFX100RF"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "bodyOnlyWeight": 654,
+      "burst": {
+        "maxElectronicFps": 3,
+        "maxMechanicalFps": 6
+      },
+      "dimensions": [
+        133.5,
+        90.4,
+        76.5
+      ],
+      "evf": {
+        "magnification": 0.84,
+        "present": true,
+        "resolutionDots": 5760000
+      },
+      "fixedLens": {
+        "aperture": {
+          "tele": 4,
+          "wide": 4
+        },
+        "equivalentFocal": {
+          "max": 28,
+          "min": 28
+        },
+        "focal": {
+          "max": 35,
+          "min": 35
+        }
+      },
+      "lcd": {
+        "mechanism": "tilt",
+        "present": true,
+        "resolutionDots": 2100000,
+        "sizeInches": 3.15,
+        "touch": true
+      },
+      "releaseDate": "2025-04",
+      "sensor": {
+        "format": "GFX (라지포맷)",
+        "generation": "GFX 102MP CMOS II",
+        "megapixels": 102,
+        "sizeMm": [
+          43.8,
+          32.9
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "max": "4K UHD 29.97p"
+      },
+      "weight": 735,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-814fb0b35af9f9ec",
+    "sourceType": "manufacturer",
+    "url": "https://fujifilm-korea.co.kr/products/camera",
+    "publisher": "Fujifilm Electronic Imaging Korea",
+    "documentTitle": "카메라 | Fujifilm Korea 현행 목록",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-02T04:43:53.180Z",
+    "evidenceScope": "Current gallery GFX100RF card identity only; no field claims",
+    "contentDigest": "4ae1b4ca25ad573439f23f3cd748bcbe10a31162729517591bf5b23dd53734d3"
+  },
+  "sources": [
+    {
+      "sourceId": "source-814fb0b35af9f9ec",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/camera",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "카메라 | Fujifilm Korea 현행 목록",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T04:43:53.180Z",
+      "evidenceScope": "Current gallery GFX100RF card identity only; no field claims",
+      "contentDigest": "4ae1b4ca25ad573439f23f3cd748bcbe10a31162729517591bf5b23dd53734d3"
+    },
+    {
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/id/1344",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "GFX100RF | Fujifilm Korea 사양",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T04:43:53.180Z",
+      "evidenceScope": "Only GFX100RF base-model specs and matching conditions; no edition, price, film-simulation or separate lens product",
+      "contentDigest": "bac16fa07fd888dcd8f369586698efa3d1d77c3f78afa7849fe3c0d6e2afc2d8"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.bodyOnlyWeight",
+      "value": 654,
+      "unit": "g",
+      "rawValue": 654,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 제외"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "approximate": true,
+        "excludes": [
+          "battery",
+          "memory card"
+        ],
+        "integratedLensIncluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-b6776689784198571a22"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 3,
+      "unit": "fps",
+      "rawValue": 3,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사 CH: 전자 셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "bufferTest": "cold start",
+        "speedVariesWithShootingConditions": true,
+        "shutter": "electronic"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-5fd6954ab442647a52aa"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 6,
+      "unit": "fps",
+      "rawValue": 6,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사 CH: 기계식 셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "shutter": "mechanical",
+        "bufferTest": "cold start",
+        "speedVariesWithShootingConditions": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-1bbb0bec31f1d93d4f26"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.dimensions",
+      "value": [
+        133.5,
+        90.4,
+        76.5
+      ],
+      "unit": "mm",
+      "rawValue": [
+        133.5,
+        90.4,
+        76.5
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "Dimensions: 너비 / 높이 / 두께"
+      },
+      "conditions": {
+        "order": [
+          "width",
+          "height",
+          "depth"
+        ],
+        "minimumDepthNotUsed": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-904770d6862f6fc4ee4d"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.evf.magnification",
+      "value": 0.84,
+      "unit": null,
+      "rawValue": 0.84,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: 배율"
+      },
+      "conditions": {
+        "lensEquivalentMm": 50,
+        "focus": "infinity",
+        "diopter": -1
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-c0bf1163da514b91b4db"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: EVF"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-bb31c91611b9de957ec2"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.evf.resolutionDots",
+      "value": 5760000,
+      "unit": "dots",
+      "rawValue": 5760000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: EVF 화소수"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-f460fafca6a06e004a6f"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 최대 조리개"
+      },
+      "conditions": {
+        "lensType": "prime",
+        "meaning": "maximum aperture, not minimum aperture or zoom range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-a42ae5eb0dcbc0cdff27"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 최대 조리개"
+      },
+      "conditions": {
+        "lensType": "prime",
+        "meaning": "maximum aperture, not minimum aperture or zoom range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-f5180ab411ef150cf7ba"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 28,
+      "unit": "mm",
+      "rawValue": 28,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 35mm 포맷 환산 초점거리"
+      },
+      "conditions": {
+        "meaning": "35mm-format equivalent focal length",
+        "lensType": "prime",
+        "digitalTeleconverter": "OFF"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-4b4f061cab2b1db47843"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 28,
+      "unit": "mm",
+      "rawValue": 28,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 35mm 포맷 환산 초점거리"
+      },
+      "conditions": {
+        "meaning": "35mm-format equivalent focal length",
+        "lensType": "prime",
+        "digitalTeleconverter": "OFF"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-5859ab4b8a610d18bf97"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.focal.max",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 초점거리 실제 f="
+      },
+      "conditions": {
+        "meaning": "actual optical focal length",
+        "lensType": "prime",
+        "digitalTeleconverter": "OFF / composite or digital cropping not part of optical range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-4838fd71bfcf97601fbc"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.fixedLens.focal.min",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "렌즈: 초점거리 실제 f="
+      },
+      "conditions": {
+        "meaning": "actual optical focal length",
+        "lensType": "prime",
+        "digitalTeleconverter": "OFF / composite or digital cropping not part of optical range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-8cd30eb33207b6acffbb"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.lcd.mechanism",
+      "value": "tilt",
+      "unit": null,
+      "rawValue": "tilt",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 틸팅"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-6935da86f40e42f45895"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-2fd1fa9463d1115f490c"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.lcd.resolutionDots",
+      "value": 2100000,
+      "unit": "dots",
+      "rawValue": 2100000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 화소"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-1e26c96ae73b324f7cc2"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.lcd.sizeInches",
+      "value": 3.15,
+      "unit": "in",
+      "rawValue": 3.15,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-e0f6d53bf9da35e13185"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 터치"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-fe1b1c0b7cbc52367d37"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.releaseDate",
+      "value": "2025-04",
+      "unit": null,
+      "rawValue": "2025-04",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동일모델의 출시년월"
+      },
+      "conditions": {
+        "region": "KR",
+        "precision": "month"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-fa85399f3121b31cf0e8"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.sensor.format",
+      "value": "GFX (라지포맷)",
+      "unit": null,
+      "rawValue": "GFX (라지포맷)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서 / 제품 소개: 센서 포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-bd11aef2c94ecaa442a3"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.sensor.generation",
+      "value": "GFX 102MP CMOS II",
+      "unit": null,
+      "rawValue": "GFX 102MP CMOS II",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-64da7c7f5f7a2a664118"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.sensor.megapixels",
+      "value": 102,
+      "unit": "MP",
+      "rawValue": 102000000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "유효 화소수"
+      },
+      "conditions": {
+        "effectivePixels": true,
+        "notCompositeResolution": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-a740450b1f527f0973fa"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        43.8,
+        32.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        43.8,
+        32.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서: 물리 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-adf69bd2531746b2ba58"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 사양: 해당 내부 모드 비트 심도"
+      },
+      "conditions": {
+        "recordingMode": "normal internal SD-card recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "bitDepth": 10,
+        "notExternalRaw": true,
+        "alternativeDigitalIsOnCrop": 1.32,
+        "proResMediaRestriction": "SSD only; bitrate-table 59.94p annotation not used as an actual recording mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-145927f16ed7b32865b1"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 사양: 해당 모드 DIS OFF 크롭"
+      },
+      "conditions": {
+        "recordingMode": "normal internal SD-card recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "bitDepth": 10,
+        "notExternalRaw": true,
+        "alternativeDigitalIsOnCrop": 1.32,
+        "proResMediaRestriction": "SSD only; bitrate-table 59.94p annotation not used as an actual recording mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-7880e858b614becde527"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.video.max",
+      "value": "4K UHD 29.97p",
+      "unit": null,
+      "rawValue": "4K UHD 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 촬영: 일반 내부 녹화 모드"
+      },
+      "conditions": {
+        "recordingMode": "normal internal SD-card recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "bitDepth": 10,
+        "notExternalRaw": true,
+        "alternativeDigitalIsOnCrop": 1.32,
+        "proResMediaRestriction": "SSD only; bitrate-table 59.94p annotation not used as an actual recording mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-fcb6b6c1d8879b621c73"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.weight",
+      "value": 735,
+      "unit": "g",
+      "rawValue": 735,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "approximate": true,
+        "integratedLensIncluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-002a165f0f73b9129a52"
+    },
+    {
+      "productId": "fujifilm-gfx100rf",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fec8fa4cd98a3f7f",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-002-direct-review",
+      "claimId": "claim-6f4a49f1884ddeab3684"
+    }
+  ]
+}

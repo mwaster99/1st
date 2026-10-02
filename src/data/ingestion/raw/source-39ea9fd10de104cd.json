@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "FUJIFILM Corporation",
+  "documentVersion": "2025-09-11",
+  "region": "global",
+  "url": "https://www.fujifilm.com/jp/en/news/hq/12705",
+  "documentTitle": "Fujifilm Launches Filmmaking Camera FUJIFILM GFX ETERNA 55",
+  "evidenceScope": "GFX ETERNA 55 dual physical slots; external HDMI RAW and operator/rig context are unpromoted condition evidence, not internal bit depth",
+  "accessedAt": "2026-10-02T04:43:53.179Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Main Features (4): Dual slots compatible with CFexpress Type B card and SD card",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "Main Features (3): External outputs, separate from internal recording",
+      "value": {
+        "hdmiUncompressed": "4:2:2 10bit",
+        "hdmiRaw": "up to 8K/30P 12bit"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "fujifilm-gfx-eterna-55",
+      "manufacturerModelCode": "GFX ETERNA 55",
+      "productType": "body",
+      "identity": {
+        "name": "후지필름 GFX ETERNA 55",
+        "brand": "Fujifilm",
+        "series": "GFX",
+        "model": "GFX ETERNA 55",
+        "aliases": [
+          "Fujifilm GFX ETERNA 55",
+          "GFXETERNA55",
+          "후지필름 GFX ETERNA 55"
+        ],
+        "mount": "Fujifilm G",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 0,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Main Features (4)",
+            "row": "Dual slots"
+          },
+          "conditions": {
+            "indexPolicy": "Stable ingestion ordinal by listed media; not a physical socket label",
+            "proRes": "CFexpress Type B only, per KR notes",
+            "usbSsd": "External storage is not an additional physical card slot"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "fe100165530ea163dcaa46c390dd1289e16883e60a7da88e0c5c6e8477d22b60",
+  "sourceId": "source-39ea9fd10de104cd"
+}

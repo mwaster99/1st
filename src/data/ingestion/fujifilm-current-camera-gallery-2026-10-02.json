@@ -124,11 +124,13 @@
       "scopeStatus": "in-scope",
       "identityGroup": "GFX ETERNA 55",
       "variantKey": null,
-      "canonicalId": null,
+      "canonicalId": "fujifilm-gfx-eterna-55",
       "canonicalExistedAtStart": false,
-      "status": "unprocessed",
-      "productionBatch": null,
-      "manufacturerModelIdentity": "FUJIFILM GFX ETERNA 55"
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-002",
+      "manufacturerModelIdentity": "FUJIFILM GFX ETERNA 55",
+      "selectedForBatch": "production-fujifilm-bodies-002",
+      "proposedCanonicalId": "fujifilm-gfx-eterna-55"
     },
     {
       "cardKey": "1357",
@@ -146,12 +148,13 @@
       "scopeStatus": "in-scope",
       "identityGroup": "GFX100RF",
       "variantKey": "1357",
-      "canonicalId": null,
+      "canonicalId": "fujifilm-gfx100rf",
       "canonicalExistedAtStart": false,
-      "status": "unprocessed",
+      "status": "canonical-base-linked-variant",
       "productionBatch": null,
       "identityNote": "Inventory sale/feature variant of the model stated by the manufacturer. Does not create another objective sensor/mount/body identity. Variant-specific film modes, accessories and price must not be merged into base.",
-      "manufacturerModelIdentity": "FUJIFILM GFX100RF"
+      "manufacturerModelIdentity": "FUJIFILM GFX100RF",
+      "coverageViaBaseBatch": "production-fujifilm-bodies-002"
     },
     {
       "cardKey": "1344",
@@ -168,11 +171,13 @@
       "scopeStatus": "in-scope",
       "identityGroup": "GFX100RF",
       "variantKey": null,
-      "canonicalId": null,
+      "canonicalId": "fujifilm-gfx100rf",
       "canonicalExistedAtStart": false,
-      "status": "unprocessed",
-      "productionBatch": null,
-      "manufacturerModelIdentity": "FUJIFILM GFX100RF"
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-002",
+      "manufacturerModelIdentity": "FUJIFILM GFX100RF",
+      "selectedForBatch": "production-fujifilm-bodies-002",
+      "proposedCanonicalId": "fujifilm-gfx100rf"
     },
     {
       "cardKey": "1220",
@@ -302,11 +307,13 @@
       "scopeStatus": "in-scope",
       "identityGroup": "X-E5",
       "variantKey": null,
-      "canonicalId": null,
+      "canonicalId": "fujifilm-x-e5",
       "canonicalExistedAtStart": false,
-      "status": "unprocessed",
-      "productionBatch": null,
-      "manufacturerModelIdentity": "FUJIFILM X-E5"
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-002",
+      "manufacturerModelIdentity": "FUJIFILM X-E5",
+      "selectedForBatch": "production-fujifilm-bodies-002",
+      "proposedCanonicalId": "fujifilm-x-e5"
     },
     {
       "cardKey": "1262",
@@ -365,11 +372,13 @@
       "scopeStatus": "in-scope",
       "identityGroup": "X-HF1",
       "variantKey": null,
-      "canonicalId": null,
+      "canonicalId": "fujifilm-x-half",
       "canonicalExistedAtStart": false,
-      "status": "unprocessed",
-      "productionBatch": null,
-      "manufacturerModelIdentity": "FUJIFILM X half (FUJIFILM X-HF1)"
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-002",
+      "manufacturerModelIdentity": "FUJIFILM X half (FUJIFILM X-HF1)",
+      "selectedForBatch": "production-fujifilm-bodies-002",
+      "proposedCanonicalId": "fujifilm-x-half"
     },
     {
       "cardKey": "1330",
@@ -422,5 +431,14 @@
     "remainingIdentitiesWithoutCanonical": 4,
     "remainingCardsWithoutCanonical": 5,
     "existingLegacyIdentities": 5
+  },
+  "batch002Completion": {
+    "completedAt": "2026-10-02T04:45:55.341Z",
+    "canonicalizedNewIdentities": 4,
+    "productionCanonicalizedIdentities": 9,
+    "remainingIdentitiesWithoutCanonical": 0,
+    "remainingCardsWithoutCanonical": 0,
+    "existingLegacyIdentities": 5,
+    "note": "Base-model coverage, not promotion of FRAGMENT-specific features or proof of production verification for the five original legacy models."
   }
 }
