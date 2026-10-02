@@ -1,0 +1,3377 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-001",
+  "canonicalBaselineDigest": "5af85cb2cd789d256ebda930ea6bec7fc1b16c924aa893fcce0242d17dadbb1b",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-fujifilm-bodies-001",
+      "productId": "fujifilm-gfx100-ii",
+      "productName": "후지필름 GFX100 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "fujifilm-gfx100-ii",
+        "name": "후지필름 GFX100 II",
+        "brand": "Fujifilm",
+        "series": "GFX",
+        "model": "GFX100 II",
+        "aliases": [
+          "Fujifilm GFX100 II",
+          "GFX100II",
+          "후지필름 GFX100 II"
+        ],
+        "mount": "Fujifilm G",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "GFX (라지포맷)",
+            "megapixels": 102,
+            "generation": "GFX 102MP CMOS II HS",
+            "sizeMm": [
+              43.8,
+              32.9
+            ]
+          },
+          "weight": 1030,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 949,
+          "dimensions": null,
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "8K 29.97p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": null,
+          "releaseDate": "2023-09",
+          "batteryConditions": null,
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+          },
+          "evf": {
+            "magnification": 1,
+            "present": true,
+            "resolutionDots": 9440000
+          },
+          "lcd": {
+            "mechanism": "tilt",
+            "present": true,
+            "resolutionDots": 2360000,
+            "sizeInches": 3.2,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 8.7,
+            "maxMechanicalFps": 8
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://fujifilm-korea.co.kr/products/camera",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-02",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-da34bb8d7360b410",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-f1c495215fb007fe8c2b",
+          "sourceId": "source-da34bb8d7360b410",
+          "checkedAt": "2026-10-02"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-f1c495215fb007fe8c2b",
+        "sourceId": "source-da34bb8d7360b410",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "GFX 시스템",
+          "row": "GFX100 II"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "codex-fujifilm-001-human-review",
+        "source": {
+          "sourceId": "source-da34bb8d7360b410",
+          "url": "https://fujifilm-korea.co.kr/products/camera",
+          "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 949,
+          "unit": "g",
+          "claimId": "claim-8b67c148f0d0432b18e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 제외"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": [
+                "battery",
+                "memory card"
+              ],
+              "approximate": true,
+              "includes": [
+                "supplied EVF-GFX3"
+              ],
+              "withoutEvfBatteryCardG": 948,
+              "withoutEvfBodyOnlyG": 867
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.7,
+          "unit": "fps",
+          "claimId": "claim-825e2f7d48ac9398fb7f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 전자셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "electronic",
+              "preShot": false,
+              "approximate": true,
+              "speedVariesWithShootingConditions": true,
+              "sensorMode": "35mm format mode ON",
+              "nativeElectronicFps": 5.3
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": "fps",
+          "claimId": "claim-20cc93ff6c07b92936bb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 기계식 셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "mechanical",
+              "approximate": true,
+              "electronicFrontCurtain": "CL only; not this CH value",
+              "speedVariesWithShootingConditions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1,
+          "unit": null,
+          "claimId": "claim-762faa6e850c4c4b6531",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 배율"
+            },
+            "conditions": {
+              "lensEquivalentMm": 50,
+              "focus": "infinity",
+              "diopter": -1
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-d639438efb2018773a21",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: EVF"
+            },
+            "conditions": {
+              "configuration": "supplied detachable EVF-GFX3 installed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 9440000,
+          "unit": "dots",
+          "claimId": "claim-eaeb803810f075a66049",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+          },
+          "unit": null,
+          "claimId": "claim-9d327e8b5aaff92639e7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+            },
+            "conditions": {
+              "mechanism": "sensor-shift",
+              "standard": "CIPA",
+              "measuredAxes": [
+                "pitch",
+                "yaw"
+              ],
+              "lens": "GF63mmF2.8 R WR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "tilt",
+          "unit": null,
+          "claimId": "claim-ea60fc449f6a0d33d13f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 틸트 / 멀티앵글"
+            },
+            "conditions": {
+              "manufacturerTerm": "three-way tilt"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-559753cd41b34a300f6d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2360000,
+          "unit": "dots",
+          "claimId": "claim-bef09c0832c3b94d6d6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3.2,
+          "unit": "in",
+          "claimId": "claim-64a31c1ddb9316da1eb8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-205122b75c98e995130f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 터치스크린"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2023-09",
+          "unit": null,
+          "claimId": "claim-e0831efe103017324e4d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동일모델의 출시년월"
+            },
+            "conditions": {
+              "region": "KR",
+              "precision": "month"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "GFX (라지포맷)",
+          "unit": null,
+          "claimId": "claim-d3558e5c38d4c05665a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "제품 소개 / 이미지 센서: GFX 라지포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "GFX 102MP CMOS II HS",
+          "unit": null,
+          "claimId": "claim-e6d40fdfdf437b850e7c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 102,
+          "unit": "MP",
+          "claimId": "claim-c07b4eb642712257aef8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "유효 화소수"
+            },
+            "conditions": {
+              "effectivePixels": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            43.8,
+            32.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-17f6009cb1caf24afefe",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: 물리 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-1855ca30ee7318770a6c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상: H.265 내부 녹화 비트 심도"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1.51,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-87f1ebf6baadd52ab281",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1.51,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8K 29.97p",
+          "unit": null,
+          "claimId": "claim-45d9be9825a7474108ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1.51,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1030,
+          "unit": "g",
+          "claimId": "claim-74c515a43a412b573b50",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true,
+              "includes": [
+                "supplied EVF-GFX3"
+              ],
+              "withoutEvfBatteryCardG": 948,
+              "withoutEvfBodyOnlyG": 867
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-f9f21548b82f7607d1b6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-933426f20808a5dd",
+            "url": "https://fujifilm-korea.co.kr/products/id/1289",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-fujifilm-bodies-001",
+      "productId": "fujifilm-gfx100s-ii",
+      "productName": "후지필름 GFX100S II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "fujifilm-gfx100s-ii",
+        "name": "후지필름 GFX100S II",
+        "brand": "Fujifilm",
+        "series": "GFX",
+        "model": "GFX100S II",
+        "aliases": [
+          "Fujifilm GFX100S II",
+          "GFX100SII",
+          "후지필름 GFX100S II"
+        ],
+        "mount": "Fujifilm G",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "GFX (라지포맷)",
+            "megapixels": 102,
+            "generation": "GFX 102MP CMOS II",
+            "sizeMm": [
+              43.8,
+              32.9
+            ]
+          },
+          "weight": 883,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 802,
+          "dimensions": [
+            150,
+            104.2,
+            87.2
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K UHD 29.97p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": "2024-06",
+          "batteryConditions": null,
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+          },
+          "evf": {
+            "magnification": 0.84,
+            "present": true,
+            "resolutionDots": 5760000
+          },
+          "lcd": {
+            "mechanism": "tilt",
+            "present": true,
+            "resolutionDots": 2360000,
+            "sizeInches": 3.2,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 4.1,
+            "maxMechanicalFps": 7
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://fujifilm-korea.co.kr/products/camera",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-02",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-4d3adbf836957584",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-62e17c2bc712f9196823",
+          "sourceId": "source-4d3adbf836957584",
+          "checkedAt": "2026-10-02"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-62e17c2bc712f9196823",
+        "sourceId": "source-4d3adbf836957584",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "GFX 시스템",
+          "row": "GFX100S II"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "codex-fujifilm-001-human-review",
+        "source": {
+          "sourceId": "source-4d3adbf836957584",
+          "url": "https://fujifilm-korea.co.kr/products/camera",
+          "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 802,
+          "unit": "g",
+          "claimId": "claim-da824b42d968b67a59bd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 제외"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": [
+                "battery",
+                "memory card"
+              ],
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.1,
+          "unit": "fps",
+          "claimId": "claim-92bdb2153d9fd18d6f9c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 전자셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "electronic",
+              "preShot": false,
+              "approximate": true,
+              "speedVariesWithShootingConditions": true,
+              "sensorMode": "35mm format mode ON",
+              "nativeElectronicFps": 3
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 7,
+          "unit": "fps",
+          "claimId": "claim-bec6961dba594d5ff78e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 기계식 셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "mechanical",
+              "approximate": true,
+              "electronicFrontCurtain": "CL only; not this CH value",
+              "speedVariesWithShootingConditions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            150,
+            104.2,
+            87.2
+          ],
+          "unit": "mm",
+          "claimId": "claim-db3713e05752dcb083f3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "크기: 너비 / 높이 / 두께"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "minimumDepthNotUsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.84,
+          "unit": null,
+          "claimId": "claim-e9ecb579ced519f60fbf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 배율"
+            },
+            "conditions": {
+              "lensEquivalentMm": 50,
+              "focus": "infinity",
+              "diopter": -1
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-6b5bb69b36570fcbde84",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: EVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5760000,
+          "unit": "dots",
+          "claimId": "claim-90dde58ab9fa5556f109",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+          },
+          "unit": null,
+          "claimId": "claim-ad55159db2d0e550e6f7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+            },
+            "conditions": {
+              "mechanism": "sensor-shift",
+              "standard": "CIPA",
+              "measuredAxes": [
+                "pitch",
+                "yaw"
+              ],
+              "lens": "GF63mmF2.8 R WR"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "tilt",
+          "unit": null,
+          "claimId": "claim-23d4890f1a155fa8e938",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 틸트 / 멀티앵글"
+            },
+            "conditions": {
+              "manufacturerTerm": "three-way tilt"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-59af190d5ba45ee18ce4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2360000,
+          "unit": "dots",
+          "claimId": "claim-baf79e89272506cb3526",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3.2,
+          "unit": "in",
+          "claimId": "claim-b6b782e2570f04313fd0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-a1cdefd79cdbe424ba3e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 터치스크린"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2024-06",
+          "unit": null,
+          "claimId": "claim-1cf19b12b4370438cf09",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동일모델의 출시년월"
+            },
+            "conditions": {
+              "region": "KR",
+              "precision": "month"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "GFX (라지포맷)",
+          "unit": null,
+          "claimId": "claim-06c6ce091b8e8f061bc3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "제품 소개 / 이미지 센서: GFX 라지포맷"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "GFX 102MP CMOS II",
+          "unit": null,
+          "claimId": "claim-01c262dc014af8a77cd7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 102,
+          "unit": "MP",
+          "claimId": "claim-b31b7c372c1298e05470",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "유효 화소수"
+            },
+            "conditions": {
+              "effectivePixels": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            43.8,
+            32.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-355272b8702ea99818a1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: 물리 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-1994de19e65238c4e132",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상: H.265 내부 녹화 비트 심도"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "SSD only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-5ce742a942335ad9595e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "SSD only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K UHD 29.97p",
+          "unit": null,
+          "claimId": "claim-0d53bf5de2d118dca400",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "SSD only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 883,
+          "unit": "g",
+          "claimId": "claim-79f3b724c5aea64082df",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-f4679961674a9768b618",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-38fa690ba9a1f162",
+            "url": "https://fujifilm-korea.co.kr/products/id/1335",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-fujifilm-bodies-001",
+      "productId": "fujifilm-x-h2s",
+      "productName": "후지필름 X-H2S",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "fujifilm-x-h2s",
+        "name": "후지필름 X-H2S",
+        "brand": "Fujifilm",
+        "series": "X",
+        "model": "X-H2S",
+        "aliases": [
+          "Fujifilm X-H2S",
+          "X-H2S",
+          "후지필름 X-H2S"
+        ],
+        "mount": "Fujifilm X",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 26.16,
+            "generation": "X-Trans CMOS 5 HS",
+            "sizeMm": [
+              23.5,
+              15.6
+            ]
+          },
+          "weight": 660,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 579,
+          "dimensions": [
+            136.3,
+            92.9,
+            84.6
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "6.2K 29.97p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": "2022-06",
+          "batteryConditions": null,
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+          },
+          "evf": {
+            "magnification": 0.8,
+            "present": true,
+            "resolutionDots": 5760000
+          },
+          "lcd": {
+            "mechanism": "multi-angle",
+            "present": true,
+            "resolutionDots": 1620000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 40,
+            "maxMechanicalFps": 15
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://fujifilm-korea.co.kr/products/camera",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-02",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-b55cd18404ac461b",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-0a5cba191494d105478b",
+          "sourceId": "source-b55cd18404ac461b",
+          "checkedAt": "2026-10-02"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-0a5cba191494d105478b",
+        "sourceId": "source-b55cd18404ac461b",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "X 시스템",
+          "row": "X-H2S"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "codex-fujifilm-001-human-review",
+        "source": {
+          "sourceId": "source-b55cd18404ac461b",
+          "url": "https://fujifilm-korea.co.kr/products/camera",
+          "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 579,
+          "unit": "g",
+          "claimId": "claim-518b4561fb1e83514703",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 제외"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": [
+                "battery",
+                "memory card"
+              ],
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "fps",
+          "claimId": "claim-a1f768b423f939460f8c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 전자셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "electronic",
+              "preShot": false,
+              "approximate": true,
+              "speedVariesWithShootingConditions": true,
+              "crop": "not explicitly specified for CH40 in selected Korean burst table",
+              "bufferTestMedia": "CFexpress Type B",
+              "bufferTest": "cold start"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15,
+          "unit": "fps",
+          "claimId": "claim-e95f85b9729eb5cedc76",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 기계식 셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "mechanical",
+              "approximate": true,
+              "speedVariesWithShootingConditions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            136.3,
+            92.9,
+            84.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-a40ffb8c102ddc7882ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "크기: 너비 / 높이 / 두께"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "minimumDepthNotUsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.8,
+          "unit": null,
+          "claimId": "claim-645380dcf7f18a50c411",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 배율"
+            },
+            "conditions": {
+              "lensEquivalentMm": 50,
+              "focus": "infinity",
+              "diopter": -1
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-3209dcd101615047b99c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: EVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5760000,
+          "unit": "dots",
+          "claimId": "claim-7d39120e6c4049e6af5f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+          },
+          "unit": null,
+          "claimId": "claim-2eddec3c706bee7cb1c5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+            },
+            "conditions": {
+              "mechanism": "sensor-shift",
+              "standard": "CIPA",
+              "measuredAxes": [
+                "pitch",
+                "yaw"
+              ],
+              "lens": "XF35mmF1.4 R"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "multi-angle",
+          "unit": null,
+          "claimId": "claim-0c2e7665b19e19cbee5b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 틸트 / 멀티앵글"
+            },
+            "conditions": {
+              "manufacturerTerm": "multi-angle"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-d0dbc706dddd2491ae28",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1620000,
+          "unit": "dots",
+          "claimId": "claim-4e90c0740287707b71a4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-dd47cc8dd3b0901dbf07",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-b54908081332ebb2f899",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 터치스크린"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2022-06",
+          "unit": null,
+          "claimId": "claim-511f35ebdc14c69f7dba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동일모델의 출시년월"
+            },
+            "conditions": {
+              "region": "KR",
+              "precision": "month"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-142ad82dfb61cc38ff21",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: APS-C"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "X-Trans CMOS 5 HS",
+          "unit": null,
+          "claimId": "claim-1177a1198b40b10a8f2b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 26.16,
+          "unit": "MP",
+          "claimId": "claim-113674ba087f1de636a4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "유효 화소수"
+            },
+            "conditions": {
+              "effectivePixels": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-fc33cd415c4a0496c1f6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: 물리 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-37604abdb2341b4d0783",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상: H.265 내부 녹화 비트 심도"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-3582cbcf147a77981232",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "6.2K 29.97p",
+          "unit": null,
+          "claimId": "claim-eeb5576c3a66b3b989f6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 660,
+          "unit": "g",
+          "claimId": "claim-0eb1d7a49a2765a84c9e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-e365c9e2617ec2f58305",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-e3e95afd356fe500",
+            "url": "https://fujifilm-korea.co.kr/products/id/1220",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-fujifilm-bodies-001",
+      "productId": "fujifilm-x-h2",
+      "productName": "후지필름 X-H2",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "fujifilm-x-h2",
+        "name": "후지필름 X-H2",
+        "brand": "Fujifilm",
+        "series": "X",
+        "model": "X-H2",
+        "aliases": [
+          "Fujifilm X-H2",
+          "X-H2",
+          "후지필름 X-H2"
+        ],
+        "mount": "Fujifilm X",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 40.2,
+            "generation": "X-Trans CMOS 5 HR",
+            "sizeMm": [
+              23.5,
+              15.6
+            ]
+          },
+          "weight": 660,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 579,
+          "dimensions": [
+            136.3,
+            92.9,
+            84.6
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "8K 29.97p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+          },
+          "evf": {
+            "magnification": 0.8,
+            "present": true,
+            "resolutionDots": 5760000
+          },
+          "lcd": {
+            "mechanism": "multi-angle",
+            "present": true,
+            "resolutionDots": 1620000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 20,
+            "maxMechanicalFps": 15
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://fujifilm-korea.co.kr/products/camera",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-02",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-a8401a56de43dea3",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-7ab0d7f340c936255bf5",
+          "sourceId": "source-a8401a56de43dea3",
+          "checkedAt": "2026-10-02"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-7ab0d7f340c936255bf5",
+        "sourceId": "source-a8401a56de43dea3",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "X 시스템",
+          "row": "X-H2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "codex-fujifilm-001-human-review",
+        "source": {
+          "sourceId": "source-a8401a56de43dea3",
+          "url": "https://fujifilm-korea.co.kr/products/camera",
+          "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 579,
+          "unit": "g",
+          "claimId": "claim-9d23cb7b85ad61790f3d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 제외"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": [
+                "battery",
+                "memory card"
+              ],
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "fps",
+          "claimId": "claim-5b95b9eed2d6087020a5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 전자셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "electronic",
+              "preShot": false,
+              "approximate": true,
+              "speedVariesWithShootingConditions": true,
+              "cropFactor": 1.29,
+              "nativeElectronicFps": 13,
+              "bufferTestMedia": "CFexpress Type B",
+              "bufferTest": "cold start"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15,
+          "unit": "fps",
+          "claimId": "claim-3e822f5c962a5b43eec4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 기계식 셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "mechanical",
+              "approximate": true,
+              "speedVariesWithShootingConditions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            136.3,
+            92.9,
+            84.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-e1019b21d07532ce1577",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "크기: 너비 / 높이 / 두께"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "minimumDepthNotUsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.8,
+          "unit": null,
+          "claimId": "claim-742f364b0de95f74042d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 배율"
+            },
+            "conditions": {
+              "lensEquivalentMm": 50,
+              "focus": "infinity",
+              "diopter": -1
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-0e99696e5732784c6c4c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: EVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5760000,
+          "unit": "dots",
+          "claimId": "claim-7e590f05b29caf7b64f1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 7,
+            "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+          },
+          "unit": null,
+          "claimId": "claim-9fa56cdd4ca7c7418da2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+            },
+            "conditions": {
+              "mechanism": "sensor-shift",
+              "standard": "CIPA",
+              "measuredAxes": [
+                "pitch",
+                "yaw"
+              ],
+              "lens": "XF35mmF1.4 R"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "multi-angle",
+          "unit": null,
+          "claimId": "claim-8cdb2a020c360df4de07",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 틸트 / 멀티앵글"
+            },
+            "conditions": {
+              "manufacturerTerm": "multi-angle"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-b00b62913466a2675816",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1620000,
+          "unit": "dots",
+          "claimId": "claim-48afafcf03cdf29b58ff",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-048c90049b1f9221ec0a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-f07b545bcc2b061a021c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 터치스크린"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-fa6c7727e559d823c81d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: APS-C"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "X-Trans CMOS 5 HR",
+          "unit": null,
+          "claimId": "claim-5fa87ae0281d471cdf8a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40.2,
+          "unit": "MP",
+          "claimId": "claim-c9ca28398c9828a170a6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "유효 화소수"
+            },
+            "conditions": {
+              "effectivePixels": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-d89216b284bfe4b705ce",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: 물리 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-bf8bc30b610d56fac3af",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상: H.265 내부 녹화 비트 심도"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-e0eef18c891bf63d84d6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "8K 29.97p",
+          "unit": null,
+          "claimId": "claim-40729b610eb477422383",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                7680,
+                4320
+              ],
+              "aspectRatio": "16:9",
+              "frameRate": 29.97,
+              "codec": "H.265 MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "CFexpress Type B only",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 660,
+          "unit": "g",
+          "claimId": "claim-9b7dddaa39a604f15b90",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-86135776cb70795af101",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2df72e5f8231d7f6",
+            "url": "https://fujifilm-korea.co.kr/products/id/1232",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-fujifilm-bodies-001",
+      "productId": "fujifilm-x-t30-iii",
+      "productName": "후지필름 X-T30 III",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "fujifilm-x-t30-iii",
+        "name": "후지필름 X-T30 III",
+        "brand": "Fujifilm",
+        "series": "X",
+        "model": "X-T30 III",
+        "aliases": [
+          "Fujifilm X-T30 III",
+          "X-T30III",
+          "후지필름 X-T30 III"
+        ],
+        "mount": "Fujifilm X",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "APS-C",
+            "megapixels": 26.1,
+            "generation": "X-Trans CMOS 4",
+            "sizeMm": [
+              23.5,
+              15.6
+            ]
+          },
+          "weight": 378,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 329,
+          "dimensions": [
+            118.4,
+            82.8,
+            46.8
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "6.2K 29.97p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": "2025-12",
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "magnification": 0.62,
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "mechanism": "tilt",
+            "present": true,
+            "resolutionDots": 1620000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 30,
+            "maxMechanicalFps": 8
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": null
+        },
+        "sources": [
+          {
+            "url": "https://fujifilm-korea.co.kr/products/camera",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-02",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-9eea6e3e2195f50d",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-fc4a7de032526a629740",
+          "sourceId": "source-9eea6e3e2195f50d",
+          "checkedAt": "2026-10-02"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-fc4a7de032526a629740",
+        "sourceId": "source-9eea6e3e2195f50d",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "X 시스템",
+          "row": "X-T30 III"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-02",
+        "reviewer": "codex-fujifilm-001-human-review",
+        "source": {
+          "sourceId": "source-9eea6e3e2195f50d",
+          "url": "https://fujifilm-korea.co.kr/products/camera",
+          "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 329,
+          "unit": "g",
+          "claimId": "claim-634682962e9235bf2d6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 제외"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "excludes": [
+                "battery",
+                "memory card"
+              ],
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 30,
+          "unit": "fps",
+          "claimId": "claim-17c69583211ecee19cc6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 전자셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "electronic",
+              "preShot": false,
+              "approximate": true,
+              "speedVariesWithShootingConditions": true,
+              "cropFactor": 1.25,
+              "nativeElectronicFps": 20,
+              "bufferTest": "cold start"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": "fps",
+          "claimId": "claim-c35581a0af4129c64191",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "연사: CH 기계식 셔터"
+            },
+            "conditions": {
+              "mode": "CH",
+              "shutter": "mechanical",
+              "approximate": true,
+              "speedVariesWithShootingConditions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            118.4,
+            82.8,
+            46.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-05b3b627ad670c1fbed5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "크기: 너비 / 높이 / 두께"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "minimumDepthNotUsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.62,
+          "unit": null,
+          "claimId": "claim-ba902738dd81ac5eef92",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 배율"
+            },
+            "conditions": {
+              "lensEquivalentMm": 50,
+              "focus": "infinity",
+              "diopter": -1
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-3cce2a455a7bda3d2a77",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: EVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2360000,
+          "unit": "dots",
+          "claimId": "claim-5e0d0bd6556d61d440c8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "뷰파인더: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "tilt",
+          "unit": null,
+          "claimId": "claim-ed8efe6f0099c5e8e288",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 틸트 / 멀티앵글"
+            },
+            "conditions": {
+              "manufacturerTerm": "tilt"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-2a84b5f34d97e00fd478",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1620000,
+          "unit": "dots",
+          "claimId": "claim-d4d2a32a33c1f117557e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 화소수"
+            },
+            "conditions": {
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-d052a87ad3f87ea79447",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-453e5902a8abda374674",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "LCD 모니터: 터치스크린"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2025-12",
+          "unit": null,
+          "claimId": "claim-d2f6c2fc711e23555e82",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동일모델의 출시년월"
+            },
+            "conditions": {
+              "region": "KR",
+              "precision": "month"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-5a9a35003bb83f9879f0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: APS-C"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "X-Trans CMOS 4",
+          "unit": null,
+          "claimId": "claim-aaa54337ebe557618f7d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 26.1,
+          "unit": "MP",
+          "claimId": "claim-ea96baf252bc449d4748",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "유효 화소수"
+            },
+            "conditions": {
+              "effectivePixels": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            23.5,
+            15.6
+          ],
+          "unit": "mm",
+          "claimId": "claim-15680c4396b7d89fe540",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "이미지 센서: 물리 크기"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-6c21105e430d9104e5b5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상: H.265 내부 녹화 비트 심도"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 Long GOP MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "no ProRes claim",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-27777f0f77cf0df2a066",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 Long GOP MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "no ProRes claim",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "6.2K 29.97p",
+          "unit": null,
+          "claimId": "claim-b5306c2fd0e81c4a550f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+            },
+            "conditions": {
+              "recordingMode": "normal internal recording",
+              "resolution": [
+                6240,
+                4160
+              ],
+              "aspectRatio": "3:2",
+              "frameRate": 29.97,
+              "codec": "H.265 Long GOP MOV",
+              "bitDepth": 10,
+              "digitalIs": "OFF",
+              "cropFactor": 1,
+              "notExternalRaw": true,
+              "proResMediaRestriction": "no ProRes claim",
+              "duration": "May shorten with temperature and shooting conditions"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 378,
+          "unit": "g",
+          "claimId": "claim-c994bca40ee05688da9c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-7b7897c1728024213af4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-66f7c76af11ab6df",
+            "url": "https://fujifilm-korea.co.kr/products/id/1356",
+            "locator": {
+              "section": "제품 사양",
+              "row": "무게: 배터리 및 메모리카드 포함"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

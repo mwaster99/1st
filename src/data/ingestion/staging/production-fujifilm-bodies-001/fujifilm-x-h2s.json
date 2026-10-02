@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-001",
+  "itemKey": "fujifilm-x-h2s",
+  "manufacturerModelCode": "X-H2S",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Fujifilm",
+    "manufacturerModelCode": "X-H2S",
+    "productId": "fujifilm-x-h2s",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-0a5cba191494d105478b",
+    "sourceId": "source-b55cd18404ac461b",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "X 시스템",
+      "row": "X-H2S"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-02",
+    "reviewer": "codex-fujifilm-001-human-review"
+  },
+  "product": {
+    "id": "fujifilm-x-h2s",
+    "name": "후지필름 X-H2S",
+    "brand": "Fujifilm",
+    "series": "X",
+    "model": "X-H2S",
+    "aliases": [
+      "Fujifilm X-H2S",
+      "X-H2S",
+      "후지필름 X-H2S"
+    ],
+    "mount": "Fujifilm X",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 579,
+      "burst": {
+        "maxElectronicFps": 40,
+        "maxMechanicalFps": 15
+      },
+      "dimensions": [
+        136.3,
+        92.9,
+        84.6
+      ],
+      "evf": {
+        "magnification": 0.8,
+        "present": true,
+        "resolutionDots": 5760000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+      },
+      "lcd": {
+        "mechanism": "multi-angle",
+        "present": true,
+        "resolutionDots": 1620000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "releaseDate": "2022-06",
+      "sensor": {
+        "format": "APS-C",
+        "generation": "X-Trans CMOS 5 HS",
+        "megapixels": 26.16,
+        "sizeMm": [
+          23.5,
+          15.6
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "max": "6.2K 29.97p"
+      },
+      "weight": 660,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-b55cd18404ac461b",
+    "sourceType": "manufacturer",
+    "url": "https://fujifilm-korea.co.kr/products/camera",
+    "publisher": "Fujifilm Electronic Imaging Korea",
+    "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-02T03:51:52.358Z",
+    "evidenceScope": "Official Korean gallery card identity/current listing only; no spec claims",
+    "contentDigest": "74c262065386640e95a890d9410e534b5350628f069c4f1384aa5fe273d56a81"
+  },
+  "sources": [
+    {
+      "sourceId": "source-b55cd18404ac461b",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/camera",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T03:51:52.358Z",
+      "evidenceScope": "Official Korean gallery card identity/current listing only; no spec claims",
+      "contentDigest": "74c262065386640e95a890d9410e534b5350628f069c4f1384aa5fe273d56a81"
+    },
+    {
+      "sourceId": "source-e3e95afd356fe500",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/id/1220",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "X-H2S | 후지필름 Korea 제품 사양",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T03:51:52.358Z",
+      "evidenceScope": "Only X-H2S specification rows and matching mode/configuration footnotes; no edition, price or lens-product claims",
+      "contentDigest": "92b6c279738e3811e82f6353cc25837a80ca71631cd6a527ea13f20cec36be50"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.bodyOnlyWeight",
+      "value": 579,
+      "unit": "g",
+      "rawValue": 579,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 제외"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "excludes": [
+          "battery",
+          "memory card"
+        ],
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-518b4561fb1e83514703"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 40,
+      "unit": "fps",
+      "rawValue": 40,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사: CH 전자셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "shutter": "electronic",
+        "preShot": false,
+        "approximate": true,
+        "speedVariesWithShootingConditions": true,
+        "crop": "not explicitly specified for CH40 in selected Korean burst table",
+        "bufferTestMedia": "CFexpress Type B",
+        "bufferTest": "cold start"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-a1f768b423f939460f8c"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 15,
+      "unit": "fps",
+      "rawValue": 15,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사: CH 기계식 셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "shutter": "mechanical",
+        "approximate": true,
+        "speedVariesWithShootingConditions": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-e95f85b9729eb5cedc76"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.dimensions",
+      "value": [
+        136.3,
+        92.9,
+        84.6
+      ],
+      "unit": "mm",
+      "rawValue": [
+        136.3,
+        92.9,
+        84.6
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "크기: 너비 / 높이 / 두께"
+      },
+      "conditions": {
+        "order": [
+          "width",
+          "height",
+          "depth"
+        ],
+        "minimumDepthNotUsed": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-a40ffb8c102ddc7882ad"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.evf.magnification",
+      "value": 0.8,
+      "unit": null,
+      "rawValue": 0.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: 배율"
+      },
+      "conditions": {
+        "lensEquivalentMm": 50,
+        "focus": "infinity",
+        "diopter": -1
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-645380dcf7f18a50c411"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: EVF"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-3209dcd101615047b99c"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.evf.resolutionDots",
+      "value": 5760000,
+      "unit": "dots",
+      "rawValue": 5760000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: 화소수"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-7d39120e6c4049e6af5f"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 7,
+        "conditions": "CIPA; pitch/yaw; XF35mmF1.4 R; sensor-shift 5-axis"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+      },
+      "conditions": {
+        "mechanism": "sensor-shift",
+        "standard": "CIPA",
+        "measuredAxes": [
+          "pitch",
+          "yaw"
+        ],
+        "lens": "XF35mmF1.4 R"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-2eddec3c706bee7cb1c5"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.lcd.mechanism",
+      "value": "multi-angle",
+      "unit": null,
+      "rawValue": "multi-angle",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 틸트 / 멀티앵글"
+      },
+      "conditions": {
+        "manufacturerTerm": "multi-angle"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-0c2e7665b19e19cbee5b"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-d0dbc706dddd2491ae28"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1620000,
+      "unit": "dots",
+      "rawValue": 1620000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 화소수"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-4e90c0740287707b71a4"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-dd47cc8dd3b0901dbf07"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 터치스크린"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-b54908081332ebb2f899"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.releaseDate",
+      "value": "2022-06",
+      "unit": null,
+      "rawValue": "2022-06",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동일모델의 출시년월"
+      },
+      "conditions": {
+        "region": "KR",
+        "precision": "month"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-511f35ebdc14c69f7dba"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.sensor.format",
+      "value": "APS-C",
+      "unit": null,
+      "rawValue": "APS-C",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서: APS-C"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-142ad82dfb61cc38ff21"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.sensor.generation",
+      "value": "X-Trans CMOS 5 HS",
+      "unit": null,
+      "rawValue": "X-Trans CMOS 5 HS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-1177a1198b40b10a8f2b"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.sensor.megapixels",
+      "value": 26.16,
+      "unit": "MP",
+      "rawValue": 26160000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "유효 화소수"
+      },
+      "conditions": {
+        "effectivePixels": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-113674ba087f1de636a4"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        23.5,
+        15.6
+      ],
+      "unit": "mm",
+      "rawValue": [
+        23.5,
+        15.6
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서: 물리 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-fc33cd415c4a0496c1f6"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상: H.265 내부 녹화 비트 심도"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          6240,
+          4160
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "CFexpress Type B only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-37604abdb2341b4d0783"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          6240,
+          4160
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "CFexpress Type B only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-3582cbcf147a77981232"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.video.max",
+      "value": "6.2K 29.97p",
+      "unit": null,
+      "rawValue": "6.2K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          6240,
+          4160
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "CFexpress Type B only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-eeb5576c3a66b3b989f6"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.weight",
+      "value": 660,
+      "unit": "g",
+      "rawValue": 660,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-0eb1d7a49a2765a84c9e"
+    },
+    {
+      "productId": "fujifilm-x-h2s",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-e3e95afd356fe500",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-e365c9e2617ec2f58305"
+    }
+  ]
+}

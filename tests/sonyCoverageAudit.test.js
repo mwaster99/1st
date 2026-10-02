@@ -28,7 +28,8 @@ test('Sony Korea current gallery cards have exactly one canonical or reviewed sc
   assert.equal(new Set(canonical.bodies.map((body) => body.id)).size, canonical.bodies.length);
 
   const byCode = new Map(identity.map((entry) => [entry.manufacturerModelCode, entry]));
-  const excluded = new Map(scope.entries.map((entry) => [entry.manufacturerModelCode, entry]));
+  const excluded = new Map(scope.entries.filter((entry) => entry.brand === 'Sony')
+    .map((entry) => [entry.manufacturerModelCode, entry]));
   const canonicalIds = new Set(canonical.bodies.map((body) => body.id));
   const byId = new Map(canonical.bodies.map((body) => [body.id, body]));
   const resolvedIds = [];

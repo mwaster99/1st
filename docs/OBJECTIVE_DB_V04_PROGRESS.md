@@ -1,5 +1,21 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Fujifilm Korea production batch 001 — 2026-10-02
+
+시작 working tree clean, baseline `add35a7`, canonical 바디102/렌즈36/전체138이었다. 공식 Korea 카메라 목록과 개별17개 제품 페이지를 확인해 [inventory snapshot](../src/data/ingestion/fujifilm-current-camera-gallery-2026-10-02.json)을 작성했다. GFX6/X11 카드 중 한정판2개는 공식 기본 모델 identity에 연결하되 변형/URL/기능 차이를 inventory에 보존했다. **17카드/15모델 identity = 일반 released/current14identity(16카드) + 제한형IR1identity**, upcoming0이다. 별도 공식 Instax 목록10개는 즉석사진/휴대폰·프린터 workflow scope 검토 대상으로 분리했다. IR 구매 자격·필터·계약 조건은 catalog-scope에 기록했다. ETERNA55는 직접 운용 시네마라 in-scope다.
+
+시작 시 기존 현행 canonical5개(X-T5, X-T50, X-S20, X-M5, X100VI; 한정판 포함6카드), 신규 미등록9개(10카드)였다. 기존5개를 v0.4 production 검증 완료로 재표시하지 않았다. 신규 **GFX100 II, GFX100S II, X-H2S, X-H2, X-T30 III**를 고화소 GFX/고속 APS-C/고화소 APS-C/경량형으로 선정했다. 각 제품 공식 사양1개+gallery identity-only1개, **2source씩/총10 raw artifact(서로 다른 URL6개)**, verified claim112개로 기존 pipeline을 완료했다. 신규5개/기존보강0개, canonical **바디107/렌즈36/전체143**이다. 이전138개 제품은 동일하며 cameraProducts.json 수동 편집 없이 atomic apply만 사용했다.
+
+[전체 batch 보고](OBJECTIVE_DB_FUJIFILM_PRODUCTION_001.md)에 inventory 전체, 공식 자료의 표기 이상, 제품별 승격/UNKNOWN/조건, worker 사용량·채택/폐기 결과, 승인/digest와 다음 범위를 기록했다. G마운트 vocab/별칭과 catalog 마운트 테스트만 확장했다. GFX 물리 sensor.sizeMm43.8×32.9와 APS-C23.5×15.6은 직접 검증값이다. GFX100 II는 제공EVF 포함1030g/본체949g 구성을 선택하고 대안 무게를 conditions에 보존했다. GFX100 II dimensions, X-H2 releaseDate, X-T30 III IBIS와 전제품 cardSlots 등 직접 확정하지 못한 값은 null이다. Digital IS≠IBIS, pixel-shift복합출력≠센서화소, 내부10bit녹화≠외부RAW, 전자연사crop/35mm모드 조건을 지켰다. Film simulation·가격·렌즈·Experience·추천 엔진/UI는 추가/변경하지 않았다. Accepted source/value conflict0건이다.
+
+Cheap-worker는 제품별 독립5task, 실제API6회였다. GFX100 II 첫 응답의 MALFORMED_RESPONSE1건을 폐기하고 같은ID로 허용된1회 재시도해 정상 응답을 확보했다. 실패 포함 input/output/total: GFX100 II **1484/1185/2669**, GFX100S II **738/722/1460**, X-H2S **722/721/1443**, X-H2 **699/834/1533**, X-T30 III **718/697/1415**, 총 **4361/4159/8520**. 마운트를 센서format으로 제안하거나 배율을boolean으로 제안한 부분 등은 주Codex가 폐기·교정했으며, EVF 무게/모드/crop/RAW/UNKNOWN 경고는 직접 검토 후 채택했다. 프로젝트 코드/canonical전체/secret은 전송하지 않았고 임시 fixture5개는 삭제했다. 사용자 추가 개입0회, 주Codex가112claim/identity/scope/조건/diff/approval/apply를 판단했다.
+
+Raw10개 accessedAt은 helper 자동 실제UTC **2026-10-02T03:51:52.351Z~03:51:52.359Z**다. ISO/date round-trip 회귀를 통과했다. 승인diff **54ccc4891d0dbfa50304f82c48d4c60868879a30992eea99f82fc7e89dab9f5d**, approval **approval-d743378e1680836abc5df9b45bab4632d864a32e4428f20e08b98410a8ddbd91**, after SHA **fdde584efd7bae388ccf9dea73b0b1da3ec420bf9ff548a66233bc8644e02022**. Nikon004 expected와 이번 baseline은 연결된다. 실제재적용 **already-canonicalized/canonicalMatches:true**이며 중단 후 재개에서도 manifest와 digest를 스캔하고 이미 완료된 수집/worker/승격을 다시 시작하지 않았다.
+
+검증: 전체 **159/159**, Objective/production **119/119**, 신규Fujifilm **5/5**, canonical **143개 validation**, build, Objective scripts6개/변경test4개 node --check, git diff --check 통과. Build는 기존500kB chunk 경고만 남았다. 실제 IBIS객체/무게기준과 메모리 변형의 INVALID_IBIS 및 weight basis 누락/invalid/mismatch 차단을 검증했다. 확장 전제 테스트의 작은 문제2곳(Sony 전브랜드scope를FR7로고정, Nikon 과거vocab과현재registry 바이트동일성)을 보완하고 모든 과거 production fixture/archived digest를 유지했다. Pipeline 승격/validation 코드 변경은 없다.
+
+종료 신규 미등록 **4identity/5카드: GFX ETERNA55, GFX100RF(+FRAGMENT 카드), X-E5, X half**, upcoming0이다. 기존legacy5개 provenance 보강은 별도다. 다음에는 남은4개를 처리하며5개를 억지로 채우지 않는다. GFX RF/X half 고정렌즈 수집 전 기존 equivalentFocal 단위변환/검증 gap을 별도 작은 수정으로 보강하는 것이 안전하다. GFX 렌즈 없음/센서format 비교표/단일 video·burst·EVF 조건 소비 한계는 엔진·표현 후속 범위로만 남겼다.
+
 ## Nikon Korea production coverage audit — 2026-10-02
 
 시작 working tree clean, baseline commit `da3d5d4`였다. 공식 미러리스/DSLR/compact/Z Cinema 갤러리의 카드와 기존 inventory를 다시 대조했으며 추가/제거/상태 변경은 없었다. 직접 운용 카메라 **22개 = released/current canonicalized 21개 + announced/upcoming Z5IIC 1개**다. Nikon 공식 E Shop의 Z5IIC BK/SL 모두 **[발매 예정]** 표기를 확인했고, 10월에 들어섰다는 이유로 출시 완료/production으로 승격하지 않았다. RED 외부 카탈로그는 Nikon Korea 개별 카드 분모 밖이며 deferred-special 0개다. 출시 완료 미처리·중복/모호·상태 미기재·critical은 모두 **0건**으로 **Nikon 현행 직접 운용 카메라 제품 coverage 1차 완료**로 판정한다.

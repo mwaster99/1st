@@ -8,7 +8,7 @@ import { generateScenarioCandidates, generateLensCandidates, evaluateScenario, g
 import { compareCapability, compareLens, scoreRoleCoverage, scorePhotoVideo } from "../src/cameraComparisons.js";
 
 const products = [...CAMERA_PRODUCTS.bodies, ...CAMERA_PRODUCTS.lenses];
-const mounts = ["Sony E", "Canon RF", "Nikon Z", "Fujifilm X", "L-Mount", "Micro Four Thirds", "Canon EF", "Nikon F"];
+const mounts = ["Sony E", "Canon RF", "Nikon Z", "Fujifilm X", "L-Mount", "Micro Four Thirds", "Canon EF", "Nikon F", "Fujifilm G"];
 const input = (extra = {}) => ({ currentBody: BODY_BY_ID["sony-a7-iv"], currentLenses: [LENS_BY_ID["sony-fe-24-70-gm2"]], primaryLens: LENS_BY_ID["sony-fe-24-70-gm2"], pains: ["더 가볍고 작은 카메라를 원해요"], subjects: ["여행 · 일상"], extraBudget: 300, ...extra });
 
 test("canonical identifiers, model names and aliases are unique and searchable", () => {

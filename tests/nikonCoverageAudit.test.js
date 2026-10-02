@@ -128,8 +128,18 @@ test('Nikon 001–004 archived approvals reproduce atomic results with an intact
     assert.deepEqual(evidence.bundle.artifactDigests, approval.incomingArtifactDigests);
     assert.equal(approval.incomingDigest, digestValue(evidence.bundle.artifactDigests));
     for (const [file, digest] of Object.entries(approval.incomingArtifactDigests)) {
-      // Identity-map is appendable. Check its archived bytes, not a later current map.
-      if (file === 'vocab.json') assert.deepEqual(json(`${base}${file}`), evidence.bundle.vocab);
+      // Config registries can grow after this transaction. The journal evidence digest
+      // above binds the archived vocab; current bytes are not its historical bytes.
+      if (file === 'vocab.json') {
+        const current = json(`${base}${file}`);
+        for (const [key, value] of Object.entries(evidence.bundle.vocab)) {
+          if (key === 'brands' || key === 'mounts') {
+            for (const entry of value) assert.deepEqual(current[key].find((item) => item.name === entry.name), entry);
+          } else assert.deepEqual(current[key], value);
+        }
+        continue;
+      }
+      // Identity-map is stored in the same JSON byte format as its archived object.
       const archivedConfig = file === 'identity-map.json' ? evidence.bundle.identityMap : null;
       assert.equal(archivedConfig ? hash(jsonBytes(archivedConfig)) : sha(`${base}${file}`), digest, `${batch}/${file}`);
     }

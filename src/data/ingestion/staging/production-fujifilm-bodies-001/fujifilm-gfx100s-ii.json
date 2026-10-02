@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-001",
+  "itemKey": "fujifilm-gfx100s-ii",
+  "manufacturerModelCode": "GFX100S II",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Fujifilm",
+    "manufacturerModelCode": "GFX100S II",
+    "productId": "fujifilm-gfx100s-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-62e17c2bc712f9196823",
+    "sourceId": "source-4d3adbf836957584",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "GFX 시스템",
+      "row": "GFX100S II"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-02",
+    "reviewer": "codex-fujifilm-001-human-review"
+  },
+  "product": {
+    "id": "fujifilm-gfx100s-ii",
+    "name": "후지필름 GFX100S II",
+    "brand": "Fujifilm",
+    "series": "GFX",
+    "model": "GFX100S II",
+    "aliases": [
+      "Fujifilm GFX100S II",
+      "GFX100SII",
+      "후지필름 GFX100S II"
+    ],
+    "mount": "Fujifilm G",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 802,
+      "burst": {
+        "maxElectronicFps": 4.1,
+        "maxMechanicalFps": 7
+      },
+      "dimensions": [
+        150,
+        104.2,
+        87.2
+      ],
+      "evf": {
+        "magnification": 0.84,
+        "present": true,
+        "resolutionDots": 5760000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+      },
+      "lcd": {
+        "mechanism": "tilt",
+        "present": true,
+        "resolutionDots": 2360000,
+        "sizeInches": 3.2,
+        "touch": true
+      },
+      "releaseDate": "2024-06",
+      "sensor": {
+        "format": "GFX (라지포맷)",
+        "generation": "GFX 102MP CMOS II",
+        "megapixels": 102,
+        "sizeMm": [
+          43.8,
+          32.9
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "max": "4K UHD 29.97p"
+      },
+      "weight": 883,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-4d3adbf836957584",
+    "sourceType": "manufacturer",
+    "url": "https://fujifilm-korea.co.kr/products/camera",
+    "publisher": "Fujifilm Electronic Imaging Korea",
+    "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-02T03:51:52.357Z",
+    "evidenceScope": "Official Korean gallery card identity/current listing only; no spec claims",
+    "contentDigest": "9dd9da554214bf13d096ccd42ee6dc06cc306ae892cd24eaa35bee06feb614db"
+  },
+  "sources": [
+    {
+      "sourceId": "source-38fa690ba9a1f162",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/id/1335",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "GFX100S II | 후지필름 Korea 제품 사양",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T03:51:52.357Z",
+      "evidenceScope": "Only GFX100S II specification rows and matching mode/configuration footnotes; no edition, price or lens-product claims",
+      "contentDigest": "8b4276d9695c0c4d735eb9d351c8b886795bb9a4d935b625eaa1015f754a5bfc"
+    },
+    {
+      "sourceId": "source-4d3adbf836957584",
+      "sourceType": "manufacturer",
+      "url": "https://fujifilm-korea.co.kr/products/camera",
+      "publisher": "Fujifilm Electronic Imaging Korea",
+      "documentTitle": "카메라 | Fujifilm Korea 현행 제품 목록",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-02T03:51:52.357Z",
+      "evidenceScope": "Official Korean gallery card identity/current listing only; no spec claims",
+      "contentDigest": "9dd9da554214bf13d096ccd42ee6dc06cc306ae892cd24eaa35bee06feb614db"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 802,
+      "unit": "g",
+      "rawValue": 802,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 제외"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "excludes": [
+          "battery",
+          "memory card"
+        ],
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-da824b42d968b67a59bd"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 4.1,
+      "unit": "fps",
+      "rawValue": 4.1,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사: CH 전자셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "shutter": "electronic",
+        "preShot": false,
+        "approximate": true,
+        "speedVariesWithShootingConditions": true,
+        "sensorMode": "35mm format mode ON",
+        "nativeElectronicFps": 3
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-92bdb2153d9fd18d6f9c"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 7,
+      "unit": "fps",
+      "rawValue": 7,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "연사: CH 기계식 셔터"
+      },
+      "conditions": {
+        "mode": "CH",
+        "shutter": "mechanical",
+        "approximate": true,
+        "electronicFrontCurtain": "CL only; not this CH value",
+        "speedVariesWithShootingConditions": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-bec6961dba594d5ff78e"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.dimensions",
+      "value": [
+        150,
+        104.2,
+        87.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        150,
+        104.2,
+        87.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "크기: 너비 / 높이 / 두께"
+      },
+      "conditions": {
+        "order": [
+          "width",
+          "height",
+          "depth"
+        ],
+        "minimumDepthNotUsed": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-db3713e05752dcb083f3"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.evf.magnification",
+      "value": 0.84,
+      "unit": null,
+      "rawValue": 0.84,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: 배율"
+      },
+      "conditions": {
+        "lensEquivalentMm": 50,
+        "focus": "infinity",
+        "diopter": -1
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-e9ecb579ced519f60fbf"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: EVF"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-6b5bb69b36570fcbde84"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.evf.resolutionDots",
+      "value": 5760000,
+      "unit": "dots",
+      "rawValue": 5760000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "뷰파인더: 화소수"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-90dde58ab9fa5556f109"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+      },
+      "conditions": {
+        "mechanism": "sensor-shift",
+        "standard": "CIPA",
+        "measuredAxes": [
+          "pitch",
+          "yaw"
+        ],
+        "lens": "GF63mmF2.8 R WR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-ad55159db2d0e550e6f7"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.lcd.mechanism",
+      "value": "tilt",
+      "unit": null,
+      "rawValue": "tilt",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 틸트 / 멀티앵글"
+      },
+      "conditions": {
+        "manufacturerTerm": "three-way tilt"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-23d4890f1a155fa8e938"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-59af190d5ba45ee18ce4"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.lcd.resolutionDots",
+      "value": 2360000,
+      "unit": "dots",
+      "rawValue": 2360000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 화소수"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-baf79e89272506cb3526"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.lcd.sizeInches",
+      "value": 3.2,
+      "unit": "in",
+      "rawValue": 3.2,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-b6b782e2570f04313fd0"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "LCD 모니터: 터치스크린"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-a1cdefd79cdbe424ba3e"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.releaseDate",
+      "value": "2024-06",
+      "unit": null,
+      "rawValue": "2024-06",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동일모델의 출시년월"
+      },
+      "conditions": {
+        "region": "KR",
+        "precision": "month"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-1cf19b12b4370438cf09"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.sensor.format",
+      "value": "GFX (라지포맷)",
+      "unit": null,
+      "rawValue": "GFX (라지포맷)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "제품 소개 / 이미지 센서: GFX 라지포맷"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-06c6ce091b8e8f061bc3"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.sensor.generation",
+      "value": "GFX 102MP CMOS II",
+      "unit": null,
+      "rawValue": "GFX 102MP CMOS II",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-01c262dc014af8a77cd7"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 102,
+      "unit": "MP",
+      "rawValue": 102000000,
+      "rawUnit": "pixel",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "유효 화소수"
+      },
+      "conditions": {
+        "effectivePixels": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-b31b7c372c1298e05470"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        43.8,
+        32.9
+      ],
+      "unit": "mm",
+      "rawValue": [
+        43.8,
+        32.9
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "이미지 센서: 물리 크기"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-355272b8702ea99818a1"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상: H.265 내부 녹화 비트 심도"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "SSD only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-1994de19e65238c4e132"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "SSD only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-5ce742a942335ad9595e"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.video.max",
+      "value": "4K UHD 29.97p",
+      "unit": null,
+      "rawValue": "4K UHD 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+      },
+      "conditions": {
+        "recordingMode": "normal internal recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "frameRate": 29.97,
+        "codec": "H.265 MOV",
+        "bitDepth": 10,
+        "digitalIs": "OFF",
+        "cropFactor": 1,
+        "notExternalRaw": true,
+        "proResMediaRestriction": "SSD only",
+        "duration": "May shorten with temperature and shooting conditions"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-0d53bf5de2d118dca400"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.weight",
+      "value": 883,
+      "unit": "g",
+      "rawValue": 883,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-79f3b724c5aea64082df"
+    },
+    {
+      "productId": "fujifilm-gfx100s-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-38fa690ba9a1f162",
+      "locator": {
+        "section": "제품 사양",
+        "row": "무게: 배터리 및 메모리카드 포함"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-02",
+      "reviewer": "codex-fujifilm-001-human-review",
+      "claimId": "claim-f4679961674a9768b618"
+    }
+  ]
+}

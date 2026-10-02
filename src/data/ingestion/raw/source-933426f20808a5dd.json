@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Fujifilm Electronic Imaging Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://fujifilm-korea.co.kr/products/id/1289",
+  "documentTitle": "GFX100 II | 후지필름 Korea 제품 사양",
+  "evidenceScope": "Only GFX100 II specification rows and matching mode/configuration footnotes; no edition, price or lens-product claims",
+  "accessedAt": "2026-10-02T03:51:52.351Z",
+  "evidenceExcerpt": [
+    {
+      "field": "제품 소개 / 이미지 센서: GFX 라지포맷",
+      "value": "GFX (라지포맷)",
+      "unit": null
+    },
+    {
+      "field": "유효 화소수",
+      "value": 102000000,
+      "unit": "pixel"
+    },
+    {
+      "field": "이미지 센서",
+      "value": "GFX 102MP CMOS II HS",
+      "unit": null
+    },
+    {
+      "field": "이미지 센서: 물리 크기",
+      "value": [
+        43.8,
+        32.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 배터리 및 메모리카드 포함",
+      "value": 1030,
+      "unit": "g"
+    },
+    {
+      "field": "무게: 배터리 및 메모리카드 포함",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "무게: 배터리 및 메모리카드 제외",
+      "value": 949,
+      "unit": "g"
+    },
+    {
+      "field": "손떨림 보정: 이미지센서 시프트 / 보정효과",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+      },
+      "unit": null
+    },
+    {
+      "field": "연사: CH 기계식 셔터",
+      "value": 8,
+      "unit": "fps"
+    },
+    {
+      "field": "연사: CH 전자셔터",
+      "value": 8.7,
+      "unit": "fps"
+    },
+    {
+      "field": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화",
+      "value": "8K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "동영상: H.265 내부 녹화 비트 심도",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "동일모델의 출시년월",
+      "value": "2023-09",
+      "unit": null
+    },
+    {
+      "field": "뷰파인더: EVF",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "뷰파인더: 화소수",
+      "value": 9440000,
+      "unit": "dots"
+    },
+    {
+      "field": "뷰파인더: 배율",
+      "value": 1,
+      "unit": null
+    },
+    {
+      "field": "LCD 모니터",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "LCD 모니터: 크기",
+      "value": 3.2,
+      "unit": "in"
+    },
+    {
+      "field": "LCD 모니터: 화소수",
+      "value": 2360000,
+      "unit": "dots"
+    },
+    {
+      "field": "LCD 모니터: 틸트 / 멀티앵글",
+      "value": "tilt",
+      "unit": null
+    },
+    {
+      "field": "LCD 모니터: 터치스크린",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "크기 표기 이상: EVF 포함 여부",
+      "value": {
+        "unlabeledMm": [
+          152.4,
+          117.4,
+          98.6
+        ],
+        "labeledEvfIncludedMm": [
+          152.4,
+          103.5,
+          73.5
+        ],
+        "decision": "Do not promote dimensions until EVF labels/configuration are independently resolved"
+      },
+      "unit": "mm"
+    },
+    {
+      "field": "저장 매체 목록: 슬롯 수 승격 보류",
+      "value": "Media compatibility does not establish physical slot count; cardSlots remains UNKNOWN",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "fujifilm-gfx100-ii",
+      "manufacturerModelCode": "GFX100 II",
+      "productType": "body",
+      "identity": {
+        "name": "후지필름 GFX100 II",
+        "brand": "Fujifilm",
+        "series": "GFX",
+        "model": "GFX100 II",
+        "aliases": [
+          "Fujifilm GFX100 II",
+          "GFX100II",
+          "후지필름 GFX100 II"
+        ],
+        "mount": "Fujifilm G",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "GFX (라지포맷)",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "제품 소개 / 이미지 센서: GFX 라지포맷"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 102000000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "제품 사양",
+            "row": "유효 화소수"
+          },
+          "conditions": {
+            "effectivePixels": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 2,
+          "rawValue": "GFX 102MP CMOS II HS",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "이미지 센서"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 3,
+          "rawValue": [
+            43.8,
+            32.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "제품 사양",
+            "row": "이미지 센서: 물리 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 1030,
+          "rawUnit": "g",
+          "locator": {
+            "section": "제품 사양",
+            "row": "무게: 배터리 및 메모리카드 포함"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "approximate": true,
+            "includes": [
+              "supplied EVF-GFX3"
+            ],
+            "withoutEvfBatteryCardG": 948,
+            "withoutEvfBodyOnlyG": 867
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "무게: 배터리 및 메모리카드 포함"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 949,
+          "rawUnit": "g",
+          "locator": {
+            "section": "제품 사양",
+            "row": "무게: 배터리 및 메모리카드 제외"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "excludes": [
+              "battery",
+              "memory card"
+            ],
+            "approximate": true,
+            "includes": [
+              "supplied EVF-GFX3"
+            ],
+            "withoutEvfBatteryCardG": 948,
+            "withoutEvfBodyOnlyG": 867
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 7,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 8,
+            "conditions": "CIPA; pitch/yaw; GF63mmF2.8 R WR; sensor-shift 5-axis"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "손떨림 보정: 이미지센서 시프트 / 보정효과"
+          },
+          "conditions": {
+            "mechanism": "sensor-shift",
+            "standard": "CIPA",
+            "measuredAxes": [
+              "pitch",
+              "yaw"
+            ],
+            "lens": "GF63mmF2.8 R WR"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 8,
+          "rawValue": 8,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "제품 사양",
+            "row": "연사: CH 기계식 셔터"
+          },
+          "conditions": {
+            "mode": "CH",
+            "shutter": "mechanical",
+            "approximate": true,
+            "electronicFrontCurtain": "CL only; not this CH value",
+            "speedVariesWithShootingConditions": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 9,
+          "rawValue": 8.7,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "제품 사양",
+            "row": "연사: CH 전자셔터"
+          },
+          "conditions": {
+            "mode": "CH",
+            "shutter": "electronic",
+            "preShot": false,
+            "approximate": true,
+            "speedVariesWithShootingConditions": true,
+            "sensorMode": "35mm format mode ON",
+            "nativeElectronicFps": 5.3
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 10,
+          "rawValue": "8K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "동영상 촬영 / 상세 동영상: 최고 해상도 일반 녹화"
+          },
+          "conditions": {
+            "recordingMode": "normal internal recording",
+            "resolution": [
+              7680,
+              4320
+            ],
+            "aspectRatio": "16:9",
+            "frameRate": 29.97,
+            "codec": "H.265 MOV",
+            "bitDepth": 10,
+            "digitalIs": "OFF",
+            "cropFactor": 1.51,
+            "notExternalRaw": true,
+            "proResMediaRestriction": "CFexpress Type B only",
+            "duration": "May shorten with temperature and shooting conditions"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 11,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "동영상: H.265 내부 녹화 비트 심도"
+          },
+          "conditions": {
+            "recordingMode": "normal internal recording",
+            "resolution": [
+              7680,
+              4320
+            ],
+            "aspectRatio": "16:9",
+            "frameRate": 29.97,
+            "codec": "H.265 MOV",
+            "bitDepth": 10,
+            "digitalIs": "OFF",
+            "cropFactor": 1.51,
+            "notExternalRaw": true,
+            "proResMediaRestriction": "CFexpress Type B only",
+            "duration": "May shorten with temperature and shooting conditions"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 12,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "상세 동영상: 해당 해상도 DIS OFF 크롭 배율"
+          },
+          "conditions": {
+            "recordingMode": "normal internal recording",
+            "resolution": [
+              7680,
+              4320
+            ],
+            "aspectRatio": "16:9",
+            "frameRate": 29.97,
+            "codec": "H.265 MOV",
+            "bitDepth": 10,
+            "digitalIs": "OFF",
+            "cropFactor": 1.51,
+            "notExternalRaw": true,
+            "proResMediaRestriction": "CFexpress Type B only",
+            "duration": "May shorten with temperature and shooting conditions"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.releaseDate",
+          "evidenceRef": 13,
+          "rawValue": "2023-09",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "동일모델의 출시년월"
+          },
+          "conditions": {
+            "region": "KR",
+            "precision": "month"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 14,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "뷰파인더: EVF"
+          },
+          "conditions": {
+            "configuration": "supplied detachable EVF-GFX3 installed"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 15,
+          "rawValue": 9440000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "제품 사양",
+            "row": "뷰파인더: 화소수"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.evf.magnification",
+          "evidenceRef": 16,
+          "rawValue": 1,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "뷰파인더: 배율"
+          },
+          "conditions": {
+            "lensEquivalentMm": 50,
+            "focus": "infinity",
+            "diopter": -1
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 17,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "LCD 모니터"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 18,
+          "rawValue": 3.2,
+          "rawUnit": "in",
+          "locator": {
+            "section": "제품 사양",
+            "row": "LCD 모니터: 크기"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 19,
+          "rawValue": 2360000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "제품 사양",
+            "row": "LCD 모니터: 화소수"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "evidenceRef": 20,
+          "rawValue": "tilt",
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "LCD 모니터: 틸트 / 멀티앵글"
+          },
+          "conditions": {
+            "manufacturerTerm": "three-way tilt"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 21,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "제품 사양",
+            "row": "LCD 모니터: 터치스크린"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-02",
+          "reviewer": "codex-fujifilm-001-human-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "8677ea0fef91cecddcec5122f6e4f9a8fcbc5552c548ab2e0f7b80a4ceec3a74",
+  "sourceId": "source-933426f20808a5dd"
+}
