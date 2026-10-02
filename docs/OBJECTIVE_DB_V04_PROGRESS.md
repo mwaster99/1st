@@ -1,5 +1,15 @@
 # Objective DB v0.4 진행 기록
 
+## Nikon Korea production coverage audit — 2026-10-02
+
+시작 working tree clean, baseline commit `da3d5d4`였다. 공식 미러리스/DSLR/compact/Z Cinema 갤러리의 카드와 기존 inventory를 다시 대조했으며 추가/제거/상태 변경은 없었다. 직접 운용 카메라 **22개 = released/current canonicalized 21개 + announced/upcoming Z5IIC 1개**다. Nikon 공식 E Shop의 Z5IIC BK/SL 모두 **[발매 예정]** 표기를 확인했고, 10월에 들어섰다는 이유로 출시 완료/production으로 승격하지 않았다. RED 외부 카탈로그는 Nikon Korea 개별 카드 분모 밖이며 deferred-special 0개다. 출시 완료 미처리·중복/모호·상태 미기재·critical은 모두 **0건**으로 **Nikon 현행 직접 운용 카메라 제품 coverage 1차 완료**로 판정한다.
+
+전체 결과와 집계 기준은 [Nikon coverage audit](OBJECTIVE_DB_NIKON_COVERAGE_AUDIT.md)에 기록했다. 알려진 specs leaf 222개는 verified 183개 / 공식 경로 참조-only 32개 / legacy-only 7개 / 근거 분류 없음 0개다. 기존 5개 identity-map/identityEvidence 및 field-level metadata, legacy 사양, 영상/카드 슬롯 gap과 공통 equivalentFocal 단위 경로 누락을 **should-fix 75건**으로 기록했다. 근거/측정 의미가 미해결인 선택된 UNKNOWN 항목 **20건**은 추정하지 않았다. 두 수는 제품 수나 전체 JSON null 개수가 아닌 문서에 정의한 감사 항목 수다. P1000 actual/equivalent 값과 raw mm 근거는 정확하며 unit=null은 **현재 critical이 아닌 should-fix**지만 향후 다른 단위의 변환/검증 공백도 포함한다. COOLPIX 3개는 fixed/null mount/내장 광학 구조이고 lens VR을 IBIS로 승격하지 않았다.
+
+Batch 001~004의 16개 item / 173개 claim에 대해 source/staging/diff/approval/evidence/transaction digest chain과 보관 승인 입력의 메모리 재현을 검증했다. Canon005→Nikon001→004 chain은 정상이며 004 expected SHA `5af85cb2cd789d256ebda930ea6bec7fc1b16c924aa893fcce0242d17dadbb1b`와 현 canonical이 일치한다. canonical은 **바디 102 / 렌즈 36 / 전체 138**로 유지됐다. 모든 기존 artifact·데이터·pipeline·추천 엔진/UI는 변경하지 않았다.
+
+Coverage regression 5개 추가 후 전체 **154/154**, Objective/production 관련 **114/114**(Sony coverage 2개 포함), Nikon **19/19**, canonical validation, build, Objective scripts/신규 test node --check 및 git diff --check 통과. Build는 기존 chunk 크기 경고만 남는다. 새 production/worker 호출은 없었다. 다음 후보는 계획의 **B4 Fujifilm 현행 바디**이며 이번에는 시작하지 않았다. Nikon 조건부 영상/연사 소비 경로와 lens VR/optical zoom 표현 및 Nikon F 렌즈 coverage는 별도 후속 과제다.
+
 ## Stage 4 Nikon Korea production batch 004 — 2026-10-01
 
 시작 시 working tree clean, baseline commit 169afe8, canonical 바디 101 / 렌즈 36 / 전체 137개였다. [Nikon inventory snapshot](../src/data/ingestion/nikon-current-camera-gallery-2026-10-01.json), production batch 001~003 manifest/transaction, 진행 기록, canonical, identity-map 및 기존 field contracts를 대조했다. released/current 미처리 **COOLPIX P1000 1개**, announced/upcoming **Z5IIC 1개**였다. 제품 재선정 없이 [Nikon Korea 콤팩트 현행 목록](https://www.nikc.nikon.com/product/compact)의 P1000 카드와 [공식 제품 주요사양](https://www.nikc.nikon.com/product/compact/COOLPIX%20P1000)을 다시 확인했다. 공식 보도자료의 Z5IIC는 2026년 10월내 발매 예정이며 이번 batch에서 제외했다.
