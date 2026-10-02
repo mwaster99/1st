@@ -164,7 +164,7 @@ test('Nikon 001–004 archived approvals reproduce atomic results with an intact
       }
     }
     const before = json(`${transaction}before.json`);
-    verifyIncoming(evidence.bundle, before);
+    verifyIncoming(evidence.bundle, before, { legacyFixedLensUnits: true });
     const proposed = proposedCanonical(before, evidence.bundle, approval.decisions, approval.productOperations);
     assert.equal(proposed.digest, manifest.expectedCanonicalDigest);
     assert.deepEqual(proposed.canonical, json(`${transaction}after.json`));

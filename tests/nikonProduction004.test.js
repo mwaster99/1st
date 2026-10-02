@@ -77,7 +77,7 @@ test('Nikon batch 004 official evidence and archived atomic transition remain va
       assert.equal(new Date(raw.accessedAt).toISOString(), raw.accessedAt);
     }
   }
-  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws }).valid, true);
+  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws, legacyFixedLensUnits: true }).valid, true);
 });
 
 test('P1000 integrated optics keep focal units separate, lens VR out of IBIS and weight counted once', () => {
@@ -126,7 +126,7 @@ test('P1000 known weight validates its basis and conditional movie/shutter claim
   const manifest = json(`${base}batches/${batch}.json`);
   const staging = json(`${base}staging/${batch}/${manifest.items[0].itemKey}.json`);
   const rawDocuments = new Map(manifest.items[0].sourceIds.map((id) => [id, json(`${base}raw/${id}.json`)]));
-  const context = { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments };
+  const context = { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments, legacyFixedLensUnits: true };
   assert.equal(validateStagingBatch([staging], context).valid, true);
   assert.equal(staging.claims.length, 13);
   const weight = staging.claims.find((claim) => claim.path === 'specs.weight');

@@ -110,7 +110,7 @@ test('batch 004 weight basis errors fail the production validator before approva
   const stagings = manifest.items.map((item) => json(`${base}staging/${batch}/${item.itemKey}.json`));
   const rawDocuments = new Map(manifest.items.flatMap((item) => item.sourceIds)
     .map((sourceId) => [sourceId, json(`${base}raw/${sourceId}.json`)]));
-  const context = { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments };
+  const context = { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments, legacyFixedLensUnits: true };
   assert.equal(validateStagingBatch(stagings, context).valid, true);
   for (const [basis, code] of [[undefined, 'WEIGHT_BASIS_REQUIRED'], ['operational', 'INVALID_WEIGHT_BASIS'], ['battery', 'WEIGHT_BASIS_MISMATCH']]) {
     const changed = structuredClone(stagings);

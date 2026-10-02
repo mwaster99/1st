@@ -138,11 +138,11 @@ export function buildDiff(stagings, canonical, batchId, baselineDigest) {
   return { schemaVersion: 1, batchId, canonicalBaselineDigest: baselineDigest, items: stagings.map((s) => createCanonicalDiff(s, canonical)) };
 }
 
-export function verifyIncoming(bundle, canonical) {
+export function verifyIncoming(bundle, canonical, { legacyFixedLensUnits = false } = {}) {
   const { manifest, stagings, raws, vocab, identityMap, diff } = bundle;
   requireValue(manifest.items.length > 0 && manifest.items.length === stagings.length, "Invalid incoming item count");
   const seenItems = new Set(), seenProducts = new Set();
-  const regeneratedFragments = Object.values(raws).flatMap((raw) => normalizeRawDocument(raw, { batchId: manifest.batchId, vocab, identityMap }));
+  const regeneratedFragments = Object.values(raws).flatMap((raw) => normalizeRawDocument(raw, { batchId: manifest.batchId, vocab, identityMap, legacyFixedLensUnits }));
   const regeneratedByItem = new Map();
   for (const fragment of regeneratedFragments) {
     const fragments = regeneratedByItem.get(fragment.itemKey) ?? [];
@@ -181,7 +181,7 @@ export function verifyIncoming(bundle, canonical) {
       if (claim.path === "specs.weight" && staged.productType === "body" && claim.value !== null) requireValue(claim.conditions.weightBasis === staged.product.specs.weightBasis, "Weight condition and weightBasis disagree");
     }
   }
-  const validation = validateStagingBatch(stagings, { canonical, vocab, rawDocuments: new Map(Object.entries(raws)) });
+  const validation = validateStagingBatch(stagings, { canonical, vocab, rawDocuments: new Map(Object.entries(raws)), legacyFixedLensUnits });
   requireValue(validation.valid, `Invalid incoming: ${JSON.stringify(validation.items)}`);
   requireValue(equal(diff, buildDiff(stagings, canonical, manifest.batchId, manifest.canonicalBaselineDigest)), "Diff is stale or modified; generate a fresh diff");
   requireValue(manifest.items.every((i) => i.diffDigest === digestValue(diff)), "Diff checkpoint mismatch");

@@ -96,9 +96,13 @@ function uniqueAliases(values) {
   });
 }
 
+function isFixedFocalPath(path) {
+  return /^specs\.fixedLens\.(?:focal|equivalentFocal)\.(?:min|max)$/.test(path);
+}
+
 function canonicalUnit(path) {
   if (["specs.weight", "specs.bodyOnlyWeight"].includes(path)) return "g";
-  if (["specs.dimensions", "specs.sensor.sizeMm"].includes(path) || path.startsWith("specs.focal.") || path === "specs.filterMm" || path.startsWith("specs.fixedLens.focal.")) return "mm";
+  if (["specs.dimensions", "specs.sensor.sizeMm"].includes(path) || path.startsWith("specs.focal.") || path === "specs.filterMm" || isFixedFocalPath(path)) return "mm";
   if (path === "specs.minFocusM") return "m";
   if (path === "specs.sensor.megapixels") return "MP";
   if (path.endsWith("resolutionDots")) return "dots";
@@ -132,8 +136,9 @@ function convertNumber(value, from, to) {
   return roundConverted(value * factor);
 }
 
-export function normalizeClaimValue(path, rawValue, rawUnit) {
-  const unit = canonicalUnit(path);
+export function normalizeClaimValue(path, rawValue, rawUnit, { legacyFixedLensUnits = false } = {}) {
+  // Archive replay only: preserve the old equivalentFocal claim IDs and digests.
+  const unit = legacyFixedLensUnits && path.startsWith("specs.fixedLens.equivalentFocal.") ? null : canonicalUnit(path);
   if (rawValue === null || (typeof rawValue === "string" && rawValue.trim().toUpperCase() === "UNKNOWN")) {
     return { value: null, unit, unknown: true };
   }
@@ -153,7 +158,13 @@ export function normalizeClaimValue(path, rawValue, rawUnit) {
     if ((typeof rawValue !== "number" && typeof rawValue !== "string") || rawValue === "" || !Number.isFinite(Number(rawValue))) {
       throw new Error(`Invalid numeric value for ${path}`);
     }
-    return { value: convertNumber(Number(rawValue), rawUnit, unit), unit, unknown: false };
+    try {
+      return { value: convertNumber(Number(rawValue), rawUnit, unit), unit, unknown: false };
+    } catch (error) {
+      // Keep unsupported focal units visible so CLI validate records rejected.
+      if (isFixedFocalPath(path)) return { value: Number(rawValue), unit: rawUnit, unknown: false };
+      throw error;
+    }
   }
   if (unit === "KRW") {
     if (typeof rawValue !== "number" || !Number.isFinite(rawValue) || rawUnit !== "KRW") throw new Error(`Price must be a finite KRW number for ${path}`);
@@ -191,7 +202,7 @@ function normalizedVocabularyValue(value, entries, label) {
   throw new Error(`Unknown ${label}: ${value}`);
 }
 
-export function normalizeRawDocument(raw, { batchId, vocab, identityMap }) {
+export function normalizeRawDocument(raw, { batchId, vocab, identityMap, legacyFixedLensUnits = false }) {
   if (!raw || typeof raw !== "object" || !Array.isArray(raw.items)) throw new Error("Raw document must contain items[]");
   if (digestValue(raw.evidenceExcerpt) !== raw.contentDigest) throw new Error("Raw contentDigest does not match evidenceExcerpt");
   if (createSourceId(raw) !== raw.sourceId) throw new Error("Raw sourceId does not match its provenance fields");
@@ -259,7 +270,7 @@ export function normalizeRawDocument(raw, { batchId, vocab, identityMap }) {
       if (!evidence || stableStringify(evidence.value) !== stableStringify(observation.rawValue) || (evidence.unit ?? null) !== (observation.rawUnit ?? null)) {
         throw new Error(`Observation ${observation.path} does not match its evidenceExcerpt reference`);
       }
-      const normalized = normalizeClaimValue(observation.path, observation.rawValue, observation.rawUnit ?? null);
+      const normalized = normalizeClaimValue(observation.path, observation.rawValue, observation.rawUnit ?? null, { legacyFixedLensUnits });
       const claim = {
         productId: product.id,
         path: observation.path,
@@ -503,7 +514,7 @@ function sourceIsValid(source, staging, rawDocuments, vocab, issues) {
   }
 }
 
-export function validateStaging(staging, { canonical, vocab, rawDocuments = new Map() }) {
+export function validateStaging(staging, { canonical, vocab, rawDocuments = new Map(), legacyFixedLensUnits = false }) {
   const issues = [];
   if (!staging || typeof staging !== "object" || !staging.product) {
     addIssue(issues, "INVALID_STAGING", "Staging document must contain product");
@@ -597,6 +608,18 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   const claimsByPath = new Map();
   const claimIds = new Set();
   for (const claim of staging.claims ?? []) {
+    if (isFixedFocalPath(claim.path) && claim.value != null) {
+      if (claim.rawUnit == null || claim.rawUnit === "") {
+        addIssue(issues, "UNIT_REQUIRED", `Known focal length requires an explicit raw unit: ${claim.path}`, claim.path);
+      } else {
+        try { convertNumber(1, claim.rawUnit, "mm"); }
+        catch { addIssue(issues, "UNSUPPORTED_UNIT", `Unsupported focal unit: ${claim.rawUnit}`, claim.path); }
+      }
+      const archivedEquivalent = legacyFixedLensUnits && claim.path.startsWith("specs.fixedLens.equivalentFocal.") && claim.unit === null && claim.rawUnit === "mm";
+      if (claim.unit !== "mm" && !archivedEquivalent) {
+        addIssue(issues, claim.unit == null ? "UNIT_REQUIRED" : "UNSUPPORTED_UNIT", `Normalized focal length must use mm: ${claim.path}`, claim.path);
+      }
+    }
     if (claim.path === "specs.ibis") {
       try {
         validateIbisValue(claim.value);
@@ -637,7 +660,10 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
     if (!rawObservation) addIssue(issues, "RAW_OBSERVATION_MISSING", `No raw observation supports ${claim.path}`, claim.path);
     else {
       try {
-        const expected = normalizeClaimValue(claim.path, rawObservation.rawValue, rawObservation.rawUnit ?? null);
+        if (isFixedFocalPath(claim.path) && claim.value != null && (claim.rawUnit ?? null) !== (rawObservation.rawUnit ?? null)) {
+          addIssue(issues, "RAW_CLAIM_MISMATCH", `Focal raw unit does not match its source observation: ${claim.path}`, claim.path);
+        }
+        const expected = normalizeClaimValue(claim.path, rawObservation.rawValue, rawObservation.rawUnit ?? null, { legacyFixedLensUnits });
         if (!valuesEqual(expected.value, claim.value) || expected.unit !== claim.unit || !valuesEqual(rawObservation.locator, claim.locator)
           || !valuesEqual(rawObservation.conditions ?? {}, claim.conditions) || rawObservation.verification !== claim.verification) {
           addIssue(issues, "RAW_CLAIM_MISMATCH", `Staged claim does not match its raw observation: ${claim.path}`, claim.path);

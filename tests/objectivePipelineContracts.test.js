@@ -232,7 +232,7 @@ test("archived production staging remains valid without changing canonical or ba
     const stagings = manifest.items.map(({ itemKey }) => readJson(`src/data/ingestion/staging/${batch}/${itemKey}.json`));
     const sourceIds = new Set(manifest.items.flatMap(({ sourceIds }) => sourceIds));
     const rawDocuments = new Map([...sourceIds].map((sourceId) => [sourceId, readJson(`src/data/ingestion/raw/${sourceId}.json`)]));
-    const result = validateStagingBatch(stagings, { canonical: before, vocab, rawDocuments });
+    const result = validateStagingBatch(stagings, { canonical: before, vocab, rawDocuments, legacyFixedLensUnits: true });
     assert.equal(result.valid, true, `${batch}: ${JSON.stringify(result.items.flatMap((item) => item.errors))}`);
   }
   assert.equal(validateCanonical(canonical, vocab), true);
@@ -335,4 +335,104 @@ test("the reviewed production canonical inventory remains complete and valid", (
     assert.ok(canonical.bodies.some((body) => body.id === id), `missing reviewed production body: ${id}`);
   }
   assert.equal(validateCanonical(canonical, vocab), true);
+});
+
+function fixedFocalFixture(values = [[4.3, 'mm'], [24, 'mm']]) {
+  const draft = sourceDraft('https://www.sony.com/fixture/focal-units');
+  draft.items[0].observations = values.map(([rawValue, rawUnit], index) => ({
+    field: index ? '35mm equivalent focal length' : 'Actual focal length',
+    path: `specs.fixedLens.${index ? 'equivalentFocal' : 'focal'}.min`,
+    rawValue, rawUnit, locator: { row: index ? 'Equivalent' : 'Actual' }, conditions: {},
+  }));
+  const raw = buildRawDocument(draft);
+  const [staging] = normalizeRawDocument(raw, { batchId, vocab, identityMap });
+  const context = { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) };
+  return { raw, staging, context, result: validateStaging(staging, context) };
+}
+
+test('fixed focal and 35mm equivalent claims independently normalize to mm in staging and diff', () => {
+  const { staging, result } = fixedFocalFixture();
+  assert.equal(result.valid, true, JSON.stringify(result.errors));
+  assert.deepEqual(staging.claims.map(({ value, unit }) => [value, unit]), [[4.3, 'mm'], [24, 'mm']]);
+  assert.equal(staging.product.specs.fixedLens.focal.min, 4.3);
+  assert.equal(staging.product.specs.fixedLens.equivalentFocal.min, 24);
+  assert.ok(createCanonicalDiff(staging, canonical).changes.every((change) => change.unit === 'mm'));
+  for (const field of ['focal', 'equivalentFocal']) for (const end of ['min', 'max']) {
+    const path = `specs.fixedLens.${field}.${end}`;
+    assert.deepEqual(normalizeClaimValue(path, 2, 'cm'), { value: 20, unit: 'mm', unknown: false });
+    assert.deepEqual(normalizeClaimValue(path, 1, 'in'), { value: 25.4, unit: 'mm', unknown: false });
+  }
+  assert.equal(fixedFocalFixture([[0.43, 'cm'], [24 / 25.4, 'in']]).result.valid, true);
+});
+
+test('known fixed focal claims require supported raw units and normalized mm before approval', () => {
+  for (const index of [0, 1]) for (const unit of [undefined, null, '', 'ft', 'm', 'pixels']) {
+    const values = [[4.3, 'mm'], [24, 'mm']];
+    values[index][1] = unit;
+    const { result } = fixedFocalFixture(values);
+    assert.equal(result.valid, false);
+    assert.ok(result.errors.some((error) => error.path === `specs.fixedLens.${index ? 'equivalentFocal' : 'focal'}.min`
+      && error.code === (unit == null || unit === '' ? 'UNIT_REQUIRED' : 'UNSUPPORTED_UNIT')));
+  }
+  for (const index of [0, 1]) {
+    const { staging, context } = fixedFocalFixture();
+    staging.claims[index].unit = null;
+    const result = validateStaging(staging, context);
+    assert.ok(result.errors.some((error) => error.code === 'UNIT_REQUIRED'));
+  }
+});
+
+test('staged focal raw units cannot invent a missing source unit', () => {
+  const { staging, context } = fixedFocalFixture([[4.3, null], [24, 'mm']]);
+  staging.claims[0].rawUnit = 'mm';
+  assert.ok(validateStaging(staging, context).errors.some((error) => error.code === 'RAW_CLAIM_MISMATCH'));
+});
+
+test('null and UNKNOWN fixed focal claims do not require a unit', () => {
+  for (const value of [null, 'UNKNOWN']) {
+    const { staging, result } = fixedFocalFixture([[value, null], [value, undefined]]);
+    assert.equal(result.valid, true, JSON.stringify(result.errors));
+    assert.ok(staging.claims.every((claim) => claim.value === null && claim.unknown));
+  }
+});
+
+test('archived P950/P1000 equivalent unit null replays only with explicit archive compatibility', () => {
+  for (const batch of ['production-nikon-bodies-002', 'production-nikon-bodies-004']) {
+    const manifest = readJson(`src/data/ingestion/batches/${batch}.json`);
+    const item = manifest.items.find((item) => /p950|p1000/.test(item.productId));
+    const staging = readJson(`src/data/ingestion/staging/${batch}/${item.itemKey}.json`);
+    const rawDocuments = new Map(item.sourceIds.map((id) => [id, readJson(`src/data/ingestion/raw/${id}.json`)]));
+    const context = { canonical: readJson(`src/data/ingestion/transactions/${batch}/before.json`), vocab, rawDocuments };
+    assert.ok(validateStaging(staging, context).errors.some((error) => error.code === 'UNIT_REQUIRED'));
+    assert.equal(validateStaging(staging, { ...context, legacyFixedLensUnits: true }).valid, true);
+    for (const raw of rawDocuments.values()) {
+      for (const fresh of normalizeRawDocument(raw, { batchId: batch, vocab, identityMap })) {
+        assert.ok(fresh.claims.filter((claim) => /fixedLens\.(focal|equivalentFocal)\./.test(claim.path)).every((claim) => claim.unit === 'mm'));
+      }
+    }
+  }
+});
+
+for (const invalidUnit of [null, 'ft']) test(`CLI validate rejects fixed focal unit ${invalidUnit} without changing canonical`, async (t) => {
+  const isolated = await isolatedFixture(t);
+  const raw = readJson('src/data/ingestion/raw/source-0379a083289afde8.json');
+  raw.evidenceExcerpt.push({ field: 'Equivalent focal length', value: 24, unit: invalidUnit });
+  raw.items[0].observations.push({ ...raw.items[0].observations[0],
+    path: 'specs.fixedLens.equivalentFocal.min', rawValue: 24, rawUnit: invalidUnit, evidenceRef: raw.evidenceExcerpt.length - 1,
+    locator: { row: 'Equivalent focal length' }, conditions: {},
+  });
+  raw.contentDigest = digestValue(raw.evidenceExcerpt);
+  raw.sourceId = createSourceId(raw);
+  writeFileSync(path.join(isolated.p.ingestion, 'raw', `${raw.sourceId}.json`), JSON.stringify(raw));
+  const manifest = JSON.parse(readFileSync(isolated.p.manifest));
+  manifest.items.forEach((item) => { item.sourceIds = [raw.sourceId]; });
+  writeFileSync(isolated.p.manifest, JSON.stringify(manifest));
+  const normalized = runIsolated(isolated.root, 'normalize');
+  assert.equal(normalized.status, 0, normalized.stderr);
+  const validated = runIsolated(isolated.root, 'validate');
+  assert.equal(validated.status, 1, validated.stderr);
+  assert.equal(JSON.parse(validated.stdout).status, 'rejected');
+  assert.ok(JSON.parse(validated.stdout).items[0].errors.some((error) => error.code === (invalidUnit === null ? 'UNIT_REQUIRED' : 'UNSUPPORTED_UNIT')));
+  assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, 'rejected');
+  assert.equal(readFileSync(isolated.p.canonical, 'utf8'), isolated.before);
 });

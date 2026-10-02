@@ -78,7 +78,7 @@ test('Nikon batch 002 official evidence and archived atomic transition remain va
       assert.equal(new Date(raw.accessedAt).toISOString(), raw.accessedAt);
     }
   }
-  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws }).valid, true);
+  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws, legacyFixedLensUnits: true }).valid, true);
 });
 
 test('Nikon conditional claims, weight basis and P950 integrated lens keep their meanings', () => {

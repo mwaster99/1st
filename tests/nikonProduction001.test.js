@@ -81,7 +81,7 @@ test('Nikon batch 001 has verified official sources and an intact atomic promoti
       assert.equal(new Date(raw.accessedAt).toISOString(), raw.accessedAt);
     }
   }
-  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws }).valid, true);
+  assert.equal(validateStagingBatch(stagings, { canonical: json(`${base}transactions/${batch}/before.json`), vocab: json(`${base}vocab.json`), rawDocuments: raws, legacyFixedLensUnits: true }).valid, true);
 });
 
 test('Nikon conditional specs and fixed lens retain their measurement meaning', () => {
