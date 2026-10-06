@@ -1,5 +1,19 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Fujifilm Korea production batch 003 — 2026-10-06
+
+시작 working tree clean. Inventory/batch001~002/canonical/identity-map/field contracts를대조하고공식Korea현행목록/과거출시월을확인했다. 기존 **X-T5/X-T50/X-S20/X-M5/X100VI**만보강, 신규0/기존5, **바디111/렌즈36/전체147 유지**. 이름/ID/aliases/mount/kind/가격및비대상제품불변. 기존production pipeline으로raw→normalize→validate→사람용diff/조건검토→명시적approval→atomic apply→canonical validation→재적용까지완료했다.
+
+Officialsources제품별 **2/3/2/2/2**, raw11/claims169. Unique같은값근거 **35**,nullfill **98**,conflict **1**,UNKNOWN **5**. X-T5 legacy `6.2K 30p`와사양표29.97p차이를반올림홍보표기로판단해정확한`6.2K 29.97p`로명시승인했으며자동덮어쓰기/new-product승인은없다. 기존5개의v0.4fieldEvidence **0→134**(27/27/26/23/31),Korea일반14base identity전체production provenance 보유로보강잔여 **0**. 과거inventorycheckpoint유지,Limited/FRAGMENT은base-link만표시,IR/Instaxdeferred유지.
+
+센서물리크기/세대·무게기준·본체만무게·IBIS/CIPA조건·내부6.2K29.97p10bit모드·crop/셔터별burst·EVF/LCD/물리슬롯·NORMAL배터리조건/출시월을보강. X100VI는기존fixed/mountnull,실제23/환산35mm/F2prime,strict4focalclaims mm,별도lens생성없음. 실제추천시나리오전체무게521g한번/lensCount0/BUY카메라1개검증. XM5digitalIS를IBIS로승격하지않아IBISnull,미확정영상crop도UNKNOWN. XS20/X100VIlog및X100VI기계최대burst는직접근거부족으로UNKNOWN. Pixel-shift160MP/외부RAW/영상고속/OVF배터리조건을대표센서·영상·EVF와합치지않음.
+
+원문이상(XT50한국8K/3방향LCD/기계8fpslabel,X100VI3150vs3510)과worker의카드/IBIS/crop/prime오해는직접구분해미승격/상세근거선택을기록했다. 승인전raw초안의10bit매뉴얼source귀속과X100VI영상locator를교정후재검증. Accepted source값충돌0,새pipeline코드bug없음;단일video.max의조건소비한계는후속후보. 엔진/UI/Experience/schema/vocab/기존productionartifact변경없음.
+
+Worker독립5tasks/API5/attempt1/retry0/failure0,token **8586input/6149output/14735total**. 공개source+최소계약만전달,fixture5개삭제. 사용자추가개입0회,Sol이139필드/169claims/identity/조건/UNKNOWN/충돌/승인·apply를판단. UTChelperaccessedAt **2026-10-06T03:45:07.063Z~.067Z**,교정시명시값보존/ISO검증완료.
+
+전체 **179/179**,Objective/production **139/139**,Fujifilm **18/18**,canonical147valid,build/node --check7files/git diff --check통과. Build기존chunk경고만남음. 재적용 **already-canonicalized / canonicalMatches:true**. Diff `3a65d8a4a58b67b4b01c063f9e8fe3be8e7d06aa9ae952288bf7bf04f0ac56ee`,approval `approval-24dcd084febf22b2bb394c655b8409f2017804c006612259b2442ec71281d99a`,after SHA `f58511cd8bf98568f8e38f2b557be655b572e2c722f0903b34b208ae947ac310`. [상세보고](OBJECTIVE_DB_FUJIFILM_PRODUCTION_003.md). 다음 **Fujifilm coverage audit** 준비완료,이번에audit실행은하지않았다. 완료batch를재수집하지않고checkpoint부터확인한다.
+
 ## Stage 4 Fujifilm Korea production batch 002 — 2026-10-02
 
 시작 clean, baseline `efe747f`, 바디107/렌즈36/전체143. 지정된released/current 신규4개 **GFX ETERNA 55, GFX100RF, X-E5, X half/X-HF1**의한국공식현행카드/출시월을재확인하고독립worker4task→raw-helper→strict normalize/validate→사람용diff 및conditions직접검토→explicit approval→atomic apply→canonical validation→실제idempotent reapply를완료했다. **85verified claims, 신규4/기존0, 바디111/렌즈36/전체147**, 이전143개객체보존. 카메라JSON직접편집/추천/UI/Experience/schema/기존artifact변경없음.

@@ -735,11 +735,7 @@
         "sensor": {
           "format": "APS-C",
           "megapixels": 40.2,
-          "generation": "X-Trans CMOS 5 HR",
-          "sizeMm": [
-            23.5,
-            15.7
-          ]
+          "generation": "X-Trans CMOS 5 HR"
         },
         "weight": 557,
         "dimensions": [
@@ -749,62 +745,22 @@
         ],
         "autofocus": null,
         "video": {
-          "max": "6.2K 29.97p",
+          "max": "6.2K 30p",
           "bitDepth": 10,
           "log": true,
-          "cropAtMax": true
+          "cropAtMax": null
         },
         "batteryShots": 580,
         "bodyOnlyWeight": 476,
         "weightBasis": "battery-and-card",
-        "releaseDate": "2022-11",
-        "batteryConditions": "CIPA NORMAL LCD; NP-W235; XF35mmF1.4 R; flash disabled; varies with conditions",
-        "ibis": {
-          "present": true,
-          "axes": 5,
-          "stops": 7,
-          "conditions": "CIPA yaw/pitch; XF35mmF1.4 R"
-        },
-        "evf": {
-          "magnification": 0.8,
-          "present": true,
-          "resolutionDots": 3690000
-        },
-        "lcd": {
-          "mechanism": "tilt",
-          "present": true,
-          "resolutionDots": 1840000,
-          "sizeInches": 3,
-          "touch": true
-        },
-        "burst": {
-          "maxElectronicFps": 20,
-          "maxMechanicalFps": 15
-        },
+        "releaseDate": null,
+        "batteryConditions": null,
+        "ibis": null,
+        "evf": null,
+        "lcd": null,
+        "burst": null,
         "shutter": null,
-        "cardSlots": {
-          "count": 2,
-          "slots": [
-            {
-              "index": 1,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-II"
-              ]
-            },
-            {
-              "index": 2,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-II"
-              ]
-            }
-          ]
-        },
+        "cardSlots": null,
         "weatherSealing": null,
         "fixedLens": null
       },
@@ -821,259 +777,16 @@
             "specs.sensor.megapixels"
           ],
           "note": "Verified fields only. Other imported values remain legacy-unverified."
-        },
-        {
-          "url": "https://fujifilm-dsc.com/en/manual/x-t5/technical_notes/spec/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.cardSlots",
-            "specs.dimensions",
-            "specs.evf.magnification",
-            "specs.evf.present",
-            "specs.evf.resolutionDots",
-            "specs.lcd.mechanism",
-            "specs.lcd.present",
-            "specs.lcd.resolutionDots",
-            "specs.lcd.sizeInches",
-            "specs.lcd.touch",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.bitDepth",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-3972ce66f0bf6341",
-          "documentVersion": null
-        },
-        {
-          "url": "https://fujifilm-korea.co.kr/products/id/1235",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.bodyOnlyWeight",
-            "specs.burst.maxElectronicFps",
-            "specs.burst.maxMechanicalFps",
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.releaseDate",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.cropAtMax",
-            "specs.video.log",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-d91d3dbdb3d7e9f1",
-          "documentVersion": null
         }
       ],
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8f62c4252fe0094e27d0"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-531cd76630b9757a034e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3c0966ec070eeb4b1be2",
-            "claim-a2d676344d56e2faa890"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxElectronicFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-135f24cbeed0ff674d70"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxMechanicalFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-ba78a1758e31aa45c08f"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.cardSlots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3eeaf3a11d9d6c340a4d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-2fa1c13988c0cdaed842",
-            "claim-977e266d2cccf1d3bfbd"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.magnification": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-84528cd6e06a9551729d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-732630cd0dee1c5c4dd8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-bbca4b623eab3a521f91"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-1469ecce84878e2ca5c6"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.mechanism": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-31c63263cb67e3c55096"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-152f3e5cf78c8921693a"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-b437842d63a088e163e2"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.sizeInches": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-b75887b0af7cbd5aca04"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.touch": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a093d61634a0838ef390"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.releaseDate": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c4b7a930e0e76cdc3429"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-90f61494a8c3a11852b3"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-97bd5998e17b2ddd9bd6"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-678e933a18cbe0ea8f94",
-            "claim-7f332f00c69d2500683e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.sizeMm": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6fcdbb07f07bdb2c38ee",
-            "claim-ed3d69f2d78742fcdfa7"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e77e504d78bb5f30bda4"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.cropAtMax": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-938d69efd0f7c6270693"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.log": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-b8795d820ebf27db5d53"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c66dd51d86c7b30d11bb"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-1156f4e16854c16eafbc",
-            "claim-11eccbd64f9095d0cf77"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-025381be1d11e7b3bad8",
-            "claim-b7a5e260075fd381c766"
-          ],
-          "checkedAt": "2026-10-06"
-        }
-      }
+      "legacyFields": [
+        "batteryShots",
+        "sensor.format",
+        "sensor.generation",
+        "video.bitDepth",
+        "video.log",
+        "video.max"
+      ]
     },
     {
       "id": "fujifilm-x-e4",
@@ -1532,11 +1245,7 @@
         "sensor": {
           "format": "APS-C",
           "megapixels": 40.2,
-          "generation": "X-Trans CMOS 5 HR",
-          "sizeMm": [
-            23.5,
-            15.7
-          ]
+          "generation": null
         },
         "weight": 521,
         "weightBasis": "battery-and-card",
@@ -1549,63 +1258,21 @@
             "wide": 2,
             "tele": 2
           },
-          "label": "23mm F2 고정 렌즈",
-          "equivalentFocal": {
-            "max": 35,
-            "min": 35
-          }
+          "label": "23mm F2 고정 렌즈"
         },
-        "releaseDate": "2024-02",
-        "dimensions": [
-          128,
-          74.8,
-          55.3
-        ],
-        "bodyOnlyWeight": 471,
+        "releaseDate": null,
+        "dimensions": null,
+        "bodyOnlyWeight": null,
         "autofocus": null,
-        "video": {
-          "bitDepth": 10,
-          "cropAtMax": true,
-          "max": "6.2K 29.97p"
-        },
-        "batteryShots": 310,
-        "batteryConditions": "CIPA NORMAL EVF; NP-W126S; integrated; flash disabled; varies with conditions",
-        "ibis": {
-          "present": true,
-          "axes": 5,
-          "stops": 6,
-          "conditions": "CIPA yaw/pitch; EVF/LCD shooting"
-        },
-        "evf": {
-          "magnification": 0.66,
-          "present": true,
-          "resolutionDots": 3690000
-        },
-        "lcd": {
-          "mechanism": "tilt",
-          "present": true,
-          "resolutionDots": 1620000,
-          "sizeInches": 3,
-          "touch": true
-        },
-        "burst": {
-          "maxElectronicFps": 20
-        },
+        "video": null,
+        "batteryShots": null,
+        "batteryConditions": null,
+        "ibis": null,
+        "evf": null,
+        "lcd": null,
+        "burst": null,
         "shutter": null,
-        "cardSlots": {
-          "count": 1,
-          "slots": [
-            {
-              "index": 1,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-I"
-              ]
-            }
-          ]
-        },
+        "cardSlots": null,
         "weatherSealing": null
       },
       "sources": [
@@ -1616,300 +1283,13 @@
           "fields": [
             "specs.weight",
             "specs.weightBasis",
-            "specs.sensor.format",
-            "specs.sensor.megapixels",
-            "specs.fixedLens.focal.min",
-            "specs.fixedLens.focal.max",
-            "specs.fixedLens.aperture.wide",
-            "specs.fixedLens.aperture.tele",
-            "specs.fixedLens.label"
+            "specs.sensor",
+            "specs.fixedLens"
           ],
           "note": ""
-        },
-        {
-          "url": "https://fujifilm-dsc.com/en/manual/x100vi/technical_notes/spec/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.cardSlots",
-            "specs.dimensions",
-            "specs.evf.magnification",
-            "specs.evf.present",
-            "specs.evf.resolutionDots",
-            "specs.fixedLens.aperture.tele",
-            "specs.fixedLens.aperture.wide",
-            "specs.fixedLens.equivalentFocal.max",
-            "specs.fixedLens.equivalentFocal.min",
-            "specs.fixedLens.focal.max",
-            "specs.fixedLens.focal.min",
-            "specs.lcd.mechanism",
-            "specs.lcd.present",
-            "specs.lcd.resolutionDots",
-            "specs.lcd.sizeInches",
-            "specs.lcd.touch",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.bitDepth",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-776cf6d0467053d9",
-          "documentVersion": null
-        },
-        {
-          "url": "https://fujifilm-korea.co.kr/products/id/1330",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.bodyOnlyWeight",
-            "specs.burst.maxElectronicFps",
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.releaseDate",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.cropAtMax",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-db7495c0b2fd2889",
-          "documentVersion": null
         }
       ],
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d158a712f18d91d282e8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-abc5b2b9d74cf08fed02"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-2f7d8c40036787f805a3",
-            "claim-d8ec1657db9f925382d8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxElectronicFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-638149ff983a1d5490a2"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.cardSlots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-f5573ef7ac3626c262da"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3124f1db9e80bca23eca",
-            "claim-80affa7a9e546795a597"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.magnification": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d5c3095a7fa834c0797a"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-2bca35c3fbba0845424c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-816952ab97e359ab9001"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.aperture.tele": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a6078235a92907945512"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.aperture.wide": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-4bdbf842e623e0b4dc26"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.equivalentFocal.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8368d9fbd287209c8a02"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.equivalentFocal.min": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-53c2b2278ef834b23cf6"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.focal.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-15cfce77c9992e64ca3d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.fixedLens.focal.min": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-45943750a22a26d98e9e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-88f870674c28ac5ee3e0"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.mechanism": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6d6a44d86b59b2aaeaee"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-2695a7b47c54eae7c235"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e0a312847ec1e6ef410c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.sizeInches": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e9e1f8a7448c4ec2db4b"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.touch": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-22b57b54dd6a9f425224"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.releaseDate": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-b80f658868a85bc52e88"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c4ea73775680c22ab00a"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-bd70ac6874d8a2481c5e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6fb96755cd1bf9b99ecf",
-            "claim-e196e9aa84aacd2843e8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.sizeMm": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-698936bf819d3c3e8b7d",
-            "claim-e8bef6a9e1c56f12eb2c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-76a3331b33b3fd7a81d2"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.cropAtMax": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-5b3f13586f2d5e279dd8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8b2036a96ce9ba6ff74c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-245419cb88a3b8293008",
-            "claim-c4a4c30a8de67af0074c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-0018fe3f9b6c481aa094",
-            "claim-b4967c782481dfade90c"
-          ],
-          "checkedAt": "2026-10-06"
-        }
-      }
+      "legacyFields": []
     },
     {
       "id": "ricoh-gr-iiix",
@@ -2363,11 +1743,7 @@
         "sensor": {
           "format": "APS-C",
           "megapixels": 26.1,
-          "generation": "X-Trans CMOS 4",
-          "sizeMm": [
-            23.5,
-            15.6
-          ]
+          "generation": "X-Trans CMOS 4"
         },
         "bodyOnlyWeight": 410,
         "weightBasis": "battery-and-card",
@@ -2382,46 +1758,16 @@
           "stops": 7,
           "conditions": "Manufacturer maximum; lens/test conditions apply."
         },
-        "releaseDate": "2023-06",
+        "releaseDate": null,
         "autofocus": null,
-        "video": {
-          "bitDepth": 10,
-          "cropAtMax": false,
-          "max": "6.2K 29.97p"
-        },
-        "batteryShots": 750,
-        "batteryConditions": "CIPA NORMAL LCD; NP-W235; XF35mmF1.4 R; flash disabled; varies with conditions",
-        "evf": {
-          "magnification": 0.62,
-          "present": true,
-          "resolutionDots": 2360000
-        },
-        "lcd": {
-          "mechanism": "vari-angle",
-          "present": true,
-          "resolutionDots": 1840000,
-          "sizeInches": 3,
-          "touch": true
-        },
-        "burst": {
-          "maxElectronicFps": 30,
-          "maxMechanicalFps": 8
-        },
+        "video": null,
+        "batteryShots": null,
+        "batteryConditions": null,
+        "evf": null,
+        "lcd": null,
+        "burst": null,
         "shutter": null,
-        "cardSlots": {
-          "count": 1,
-          "slots": [
-            {
-              "index": 1,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-II"
-              ]
-            }
-          ]
-        },
+        "cardSlots": null,
         "weatherSealing": null,
         "fixedLens": null
       },
@@ -2435,257 +1781,13 @@
             "specs.bodyOnlyWeight",
             "specs.weightBasis",
             "specs.dimensions",
-            "specs.sensor.format",
-            "specs.sensor.megapixels",
-            "specs.sensor.generation",
+            "specs.sensor",
             "specs.ibis"
           ],
           "note": ""
-        },
-        {
-          "url": "https://fujifilm-dsc.com/en/manual/x-s20/technical_notes/spec/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.cardSlots",
-            "specs.dimensions",
-            "specs.evf.magnification",
-            "specs.evf.present",
-            "specs.evf.resolutionDots",
-            "specs.lcd.mechanism",
-            "specs.lcd.present",
-            "specs.lcd.resolutionDots",
-            "specs.lcd.sizeInches",
-            "specs.lcd.touch",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.bitDepth",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-fda480e941c5ef54",
-          "documentVersion": null
-        },
-        {
-          "url": "https://fujifilm-korea.co.kr/products/id/1262",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.bodyOnlyWeight",
-            "specs.burst.maxElectronicFps",
-            "specs.burst.maxMechanicalFps",
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.releaseDate",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.cropAtMax",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-0db2e3c9ffaf92d2",
-          "documentVersion": null
         }
       ],
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-7fadede0a75cdb3341cb"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-4242d842bf7b943a16b6"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-b6f5a9afc787aff4eb3c",
-            "claim-d15219cbfd84e33aec24"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxElectronicFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e6dda734a7790a1d479f"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxMechanicalFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-08e9db8552c17c39862b"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.cardSlots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-7c953bd96efd51ad70d8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-16980a4d06085ac19f66",
-            "claim-6fe5a6b36896faaaa5f7"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.magnification": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3852dd57079af592cff7"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-56cb521e2a0491c559b1"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-5a24e714d278303c7786"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6e280bd618fdbeaa9d5f"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.mechanism": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-ffdabd76cd76ba9f4bf5"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-5bab967618fe87e4a1c8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8b6cc48db0a2771b2c98"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.sizeInches": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a4973a2fc7a21d338b0d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.touch": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-06134578efd94c7a920a"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.releaseDate": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-aa1ffc8bddd0e2be3d7c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-da9f83900425990a9750"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a23e74cb7f779ca6f86f"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-0cbbf4cc231be2def996",
-            "claim-576990dd28fde9d5b1ee"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.sizeMm": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-885b75f43578be747e66",
-            "claim-cb2bcd761a08717462b4"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-cbf302b7609674af0f80"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.cropAtMax": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c072cfeb18af63b72ce6"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-7a7bd12c288e9618ff3e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3c45a670ac9c5229c8e6",
-            "claim-4762d094da6c40f3ea12"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-502b11fb8b2277ce8ec2",
-            "claim-65c5a3005f2e96940f70"
-          ],
-          "checkedAt": "2026-10-06"
-        }
-      }
+      "legacyFields": []
     },
     {
       "id": "canon-r8",
@@ -4712,67 +3814,23 @@
         "sensor": {
           "format": "APS-C",
           "megapixels": 40.2,
-          "generation": "X-Trans CMOS 5 HR",
-          "sizeMm": [
-            23.5,
-            15.7
-          ]
+          "generation": null
         },
         "weight": 438,
         "weightBasis": "battery-and-card",
-        "releaseDate": "2024-06",
-        "dimensions": [
-          123.8,
-          84,
-          48.8
-        ],
-        "bodyOnlyWeight": 389,
+        "releaseDate": null,
+        "dimensions": null,
+        "bodyOnlyWeight": null,
         "autofocus": null,
-        "video": {
-          "bitDepth": 10,
-          "cropAtMax": true,
-          "log": true,
-          "max": "6.2K 29.97p"
-        },
-        "batteryShots": 305,
-        "batteryConditions": "CIPA NORMAL LCD; NP-W126S; XF35mmF1.4 R; flash disabled; varies with conditions",
-        "ibis": {
-          "present": true,
-          "axes": 5,
-          "stops": 7,
-          "conditions": "CIPA yaw/pitch; XF35mmF1.4 R"
-        },
-        "evf": {
-          "magnification": 0.62,
-          "present": true,
-          "resolutionDots": 2360000
-        },
-        "lcd": {
-          "mechanism": "tilt",
-          "present": true,
-          "resolutionDots": 1840000,
-          "sizeInches": 3,
-          "touch": true
-        },
-        "burst": {
-          "maxElectronicFps": 20,
-          "maxMechanicalFps": 8
-        },
+        "video": null,
+        "batteryShots": null,
+        "batteryConditions": null,
+        "ibis": null,
+        "evf": null,
+        "lcd": null,
+        "burst": null,
         "shutter": null,
-        "cardSlots": {
-          "count": 1,
-          "slots": [
-            {
-              "index": 1,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-II"
-              ]
-            }
-          ]
-        },
+        "cardSlots": null,
         "weatherSealing": null,
         "fixedLens": null
       },
@@ -4788,273 +3846,12 @@
             "specs.sensor.megapixels",
             "specs.weight",
             "specs.weightBasis",
-            "specs.sensor.format",
-            "specs.sensor.megapixels"
+            "specs.sensor"
           ],
           "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
-        },
-        {
-          "url": "https://fujifilm-dsc.com/en/manual/x-t50/technical_notes/spec/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.cardSlots",
-            "specs.dimensions",
-            "specs.evf.magnification",
-            "specs.evf.present",
-            "specs.evf.resolutionDots",
-            "specs.lcd.mechanism",
-            "specs.lcd.present",
-            "specs.lcd.resolutionDots",
-            "specs.lcd.sizeInches",
-            "specs.lcd.touch",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.bitDepth",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-0188e2bb75869b86",
-          "documentVersion": null
-        },
-        {
-          "url": "https://fujifilm-korea.co.kr/products/id/1334",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.bodyOnlyWeight",
-            "specs.burst.maxElectronicFps",
-            "specs.dimensions",
-            "specs.ibis",
-            "specs.releaseDate",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.cropAtMax",
-            "specs.video.log",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-9ca4ae5193562562",
-          "documentVersion": null
-        },
-        {
-          "url": "https://www.fujifilm-x.com/global/products/cameras/x-t50/specifications/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.burst.maxMechanicalFps"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-e84500dd8d428955",
-          "documentVersion": null
         }
       ],
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-f34d6f4646f724076a34"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3043ac5409ac5e540997"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-99dee2287d059976f377",
-            "claim-ebbf3df51220280f3968"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxElectronicFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-311f1710d8b792c3e66f"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxMechanicalFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-a6c6119a5ddc034934f1"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.cardSlots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-f620945cad7480d52d31"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-1e754f612616bde3f8b5",
-            "claim-c5ed08a738d6befdc7a4"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.magnification": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-91099673a4765e89bf65"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-fbf5ceef9a92967d19b3"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6b6d5a8597cf17dc04d8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.ibis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-390863a46b862aa6b969"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.mechanism": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d73e425d6b4a19c3bd28"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-9069db33743e31ff5f69"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-5f453979b83fd290d540"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.sizeInches": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-c0d9c60c9782cb550a3b"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.touch": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-ad6042126113a065193c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.releaseDate": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-afd5ce2ffb475a6ee7f9"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d1b1155b0b577bcb4347"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-32a4c2b9b17be7411348"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d83744e89607746ea9e7",
-            "claim-ede315da6e6b38818e68"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.sizeMm": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-bcd558bcbbec8d26d826",
-            "claim-dc6feda14ce6b4c67037"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6f9d4429d82356619cc5"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.cropAtMax": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-3ed0c65e12e6c496a06c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.log": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-61e4c4cc24f46040cf1b"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-bc417ed840b8f36a9723"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-d832a38b3053fc478bd6",
-            "claim-df12408330ea593df46b"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-13f01664db9f85720336",
-            "claim-3277d0d2aeddb00f1130"
-          ],
-          "checkedAt": "2026-10-06"
-        }
-      }
+      "legacyFields": []
     },
     {
       "id": "fujifilm-x-m5",
@@ -5090,11 +3887,7 @@
         "sensor": {
           "format": "APS-C",
           "megapixels": 26.1,
-          "generation": "X-Trans CMOS 4",
-          "sizeMm": [
-            23.5,
-            15.6
-          ]
+          "generation": null
         },
         "weight": 355,
         "weightBasis": "battery-and-card",
@@ -5103,46 +3896,18 @@
           66.6,
           38
         ],
-        "releaseDate": "2024-11",
-        "bodyOnlyWeight": 307,
+        "releaseDate": null,
+        "bodyOnlyWeight": null,
         "autofocus": null,
-        "video": {
-          "bitDepth": 10,
-          "log": true,
-          "max": "6.2K 29.97p"
-        },
-        "batteryShots": 330,
-        "batteryConditions": "CIPA NORMAL LCD; NP-W126S; XF35mmF1.4 R; flash disabled; varies with conditions",
+        "video": null,
+        "batteryShots": null,
+        "batteryConditions": null,
         "ibis": null,
-        "evf": {
-          "present": false
-        },
-        "lcd": {
-          "mechanism": "vari-angle",
-          "present": true,
-          "resolutionDots": 1040000,
-          "sizeInches": 3,
-          "touch": true
-        },
-        "burst": {
-          "maxElectronicFps": 30,
-          "maxMechanicalFps": 8
-        },
+        "evf": null,
+        "lcd": null,
+        "burst": null,
         "shutter": null,
-        "cardSlots": {
-          "count": 1,
-          "slots": [
-            {
-              "index": 1,
-              "media": [
-                "SD"
-              ],
-              "standards": [
-                "UHS-I"
-              ]
-            }
-          ]
-        },
+        "cardSlots": null,
         "weatherSealing": null,
         "fixedLens": null
       },
@@ -5158,232 +3923,13 @@
             "specs.sensor.megapixels",
             "specs.weight",
             "specs.weightBasis",
-            "specs.sensor.format",
-            "specs.sensor.megapixels",
+            "specs.sensor",
             "specs.dimensions"
           ],
           "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
-        },
-        {
-          "url": "https://fujifilm-dsc.com/en/manual/x-m5/technical_notes/spec/",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.batteryConditions",
-            "specs.batteryShots",
-            "specs.bodyOnlyWeight",
-            "specs.cardSlots",
-            "specs.dimensions",
-            "specs.evf.present",
-            "specs.lcd.mechanism",
-            "specs.lcd.present",
-            "specs.lcd.resolutionDots",
-            "specs.lcd.sizeInches",
-            "specs.lcd.touch",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.bitDepth",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-5a434a736518f7ff",
-          "documentVersion": null
-        },
-        {
-          "url": "https://fujifilm-korea.co.kr/products/id/1337",
-          "type": "manufacturer",
-          "accessedOn": "2026-10-06",
-          "fields": [
-            "specs.bodyOnlyWeight",
-            "specs.burst.maxElectronicFps",
-            "specs.burst.maxMechanicalFps",
-            "specs.dimensions",
-            "specs.releaseDate",
-            "specs.sensor.format",
-            "specs.sensor.generation",
-            "specs.sensor.megapixels",
-            "specs.sensor.sizeMm",
-            "specs.video.log",
-            "specs.video.max",
-            "specs.weight",
-            "specs.weightBasis"
-          ],
-          "note": "Field evidence retained in ingestion transaction archive",
-          "sourceId": "source-f4a3cec718e317be",
-          "documentVersion": null
         }
       ],
-      "legacyFields": [],
-      "fieldEvidence": {
-        "specs.batteryConditions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-13892daaa2a78c1468dd"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.batteryShots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-86d4dbe63e47aaa3833d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.bodyOnlyWeight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-684c7feec8ee495d5f39",
-            "claim-b0313c0f56061e845795"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxElectronicFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-e9860857f563c2bf281d"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.burst.maxMechanicalFps": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-56f67448838f148a46a2"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.cardSlots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-ed1fa6b119f6434e98b7"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.dimensions": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-6b9901da4f5ebc41bbf6",
-            "claim-7a11175ed5060f894f22"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.evf.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-8ca1387dd6664a9429b4"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.mechanism": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-cf033e3072438ce3269e"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.present": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-f26b0b7b13c4f7b1d136"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.resolutionDots": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-838eb13015903b1d0ec9"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.sizeInches": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-29b7015d3f8aeaf7b164"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.lcd.touch": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-590834518433c14514e3"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.releaseDate": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-0540671ea849512adc92"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.format": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-5dafcde26f8dd821ffe8"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.generation": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-11396728657d6eb400b2"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.megapixels": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-42443cc3c6f5079d6795",
-            "claim-986d6527da2de2c012fa"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.sensor.sizeMm": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-887d687786cc8e1cb6bb",
-            "claim-f6204722afe5ca572d7c"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.bitDepth": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-26376a06303f79bb85aa"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.log": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-96d25cec61398cf00d37"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.video.max": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-be8f4bc9af81bb78da04"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weight": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-fa8922549e5cf587ef7a",
-            "claim-ff6c05e054c89be05abb"
-          ],
-          "checkedAt": "2026-10-06"
-        },
-        "specs.weightBasis": {
-          "verification": "verified",
-          "claimIds": [
-            "claim-018de72ef370353b0c98",
-            "claim-c4deb993de103c3b5927"
-          ],
-          "checkedAt": "2026-10-06"
-        }
-      }
+      "legacyFields": []
     },
     {
       "id": "panasonic-s5-ii",

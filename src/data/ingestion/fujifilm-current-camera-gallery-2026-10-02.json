@@ -244,8 +244,8 @@
       "variantKey": null,
       "canonicalId": "fujifilm-x-t5",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
-      "productionBatch": null,
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-003",
       "manufacturerModelIdentity": "FUJIFILM X-T5"
     },
     {
@@ -265,8 +265,8 @@
       "variantKey": null,
       "canonicalId": "fujifilm-x-t50",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
-      "productionBatch": null,
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-003",
       "manufacturerModelIdentity": "FUJIFILM X-T50"
     },
     {
@@ -332,8 +332,8 @@
       "variantKey": null,
       "canonicalId": "fujifilm-x-s20",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
-      "productionBatch": null,
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-003",
       "manufacturerModelIdentity": "FUJIFILM X-S20"
     },
     {
@@ -353,8 +353,8 @@
       "variantKey": null,
       "canonicalId": "fujifilm-x-m5",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
-      "productionBatch": null,
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-003",
       "manufacturerModelIdentity": "FUJIFILM X-M5"
     },
     {
@@ -397,8 +397,8 @@
       "variantKey": null,
       "canonicalId": "fujifilm-x100vi",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
-      "productionBatch": null,
+      "status": "canonicalized",
+      "productionBatch": "production-fujifilm-bodies-003",
       "manufacturerModelIdentity": "FUJIFILM X100VI"
     },
     {
@@ -419,10 +419,11 @@
       "variantKey": "1332",
       "canonicalId": "fujifilm-x100vi",
       "canonicalExistedAtStart": true,
-      "status": "canonical-existing",
+      "status": "canonical-base-linked-variant",
       "productionBatch": null,
       "identityNote": "Inventory sale/feature variant of the model stated by the manufacturer. Does not create another objective sensor/mount/body identity. Variant-specific film modes, accessories and price must not be merged into base.",
-      "manufacturerModelIdentity": "FUJIFILM X100VI"
+      "manufacturerModelIdentity": "FUJIFILM X100VI",
+      "coverageViaBaseBatch": "production-fujifilm-bodies-003"
     }
   ],
   "batch001Completion": {
@@ -440,5 +441,17 @@
     "remainingCardsWithoutCanonical": 0,
     "existingLegacyIdentities": 5,
     "note": "Base-model coverage, not promotion of FRAGMENT-specific features or proof of production verification for the five original legacy models."
+  },
+  "batch003Completion": {
+    "completedAt": "2026-10-06T03:49:38.964Z",
+    "canonicalizedNewIdentities": 0,
+    "canonicalizedExistingIdentities": 5,
+    "productionCanonicalizedIdentities": 14,
+    "remainingIdentitiesWithoutCanonical": 0,
+    "remainingCardsWithoutCanonical": 0,
+    "remainingIdentitiesWithoutProductionProvenance": 0,
+    "remainingLegacyIdentitiesWithoutProductionProvenance": 0,
+    "announcedUpcoming": 0,
+    "note": "All 14 in-scope released-current base identities have production provenance. Limited/FRAGMENT inventory variants link to their verified base; variant-specific features were not ingested. Existing batch001/002 checkpoints preserved."
   }
 }

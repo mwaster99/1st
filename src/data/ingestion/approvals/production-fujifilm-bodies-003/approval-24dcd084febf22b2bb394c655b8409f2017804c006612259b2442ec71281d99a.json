@@ -1,0 +1,1445 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-fujifilm-bodies-003",
+  "productIds": [
+    "fujifilm-x-t5",
+    "fujifilm-x-t50",
+    "fujifilm-x-s20",
+    "fujifilm-x-m5",
+    "fujifilm-x100vi"
+  ],
+  "approvedAt": "2026-10-06T03:49:38.740Z",
+  "approvedBy": {
+    "name": "GPT-6.1 Sol direct official-source review",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units.",
+  "diffDigest": "3a65d8a4a58b67b4b01c063f9e8fe3be8e7d06aa9ae952288bf7bf04f0ac56ee",
+  "diffFileDigest": "494489e174b4da6e61b7f889e36aef809809f1dec061e09cfc245958db3a84c4",
+  "baselineCanonicalDigest": "0c21fdb4f109e4153db653b223e40dff3142001b5a41b623e874ba6c492ae46d",
+  "expectedCanonicalDigest": "f58511cd8bf98568f8e38f2b557be655b572e2c722f0903b34b208ae947ac310",
+  "incomingDigest": "6e0adf24cbe0508a5307afb81ff0178ab786103853a038043113114d2099c56c",
+  "incomingArtifactDigests": {
+    "vocab.json": "91610daed7f81cd5ed68dfb11801cb72c7268b297f3441d7b028ae9536279703",
+    "identity-map.json": "6ad227fb1fc1ded205acce8e1946c45edc7ed6f6aed00125d602e1b5d2674594",
+    "diffs/production-fujifilm-bodies-003.json": "494489e174b4da6e61b7f889e36aef809809f1dec061e09cfc245958db3a84c4",
+    "staging/production-fujifilm-bodies-003/fujifilm-x-t5.json": "3e0f3121366c2e8da67ce603d03800ce8fd39476dae8702c3e02f00ac0167b20",
+    "raw/source-d91d3dbdb3d7e9f1.json": "bf173a44b28566dcc31168c0fdc0aee5b8ad3c410ebce6acde914208e28cd8b9",
+    "raw/source-3972ce66f0bf6341.json": "b9aeed75cb8341765511ea029d7bef1e409859d0ddb74d8f3d99c170fc4008f6",
+    "staging/production-fujifilm-bodies-003/fujifilm-x-t50.json": "955cc1d637b4b0c78b8971f1cdd0e7dffc17f8434f97a9d5571dae65dd810d76",
+    "raw/source-9ca4ae5193562562.json": "41375a7e3ca9d87b69f3f8fb07e65429ce61d2b22d7ef07431a930355f4a29b6",
+    "raw/source-0188e2bb75869b86.json": "efab139927fc123839ef15c2d2596bf0a1504856bb542e32f30e7abc46b9dee5",
+    "raw/source-e84500dd8d428955.json": "1bd82695808a9898071da5750207913b7da319215963cb4914e3d0eab46d3312",
+    "staging/production-fujifilm-bodies-003/fujifilm-x-s20.json": "8f67a2454d82dd2855f1810f323311b94c74900d4c77e3caec4bf4def92a10a9",
+    "raw/source-0db2e3c9ffaf92d2.json": "e592396ad0b5c1b6d35714f22dac4f6b8173b736e1bba0f7f5800aea0a85c5c9",
+    "raw/source-fda480e941c5ef54.json": "eb3b10ef2e48f45a767a857b2d0a28df2761817115fe30702c15b3e5cae404c0",
+    "staging/production-fujifilm-bodies-003/fujifilm-x-m5.json": "5e7b83c6b1768a89c10efb71aec0a33651d5c360c955b67bcbf4edede73496b8",
+    "raw/source-f4a3cec718e317be.json": "cacdac8b75c9da87bc1c4990689a7db0b32c2deaba2be6a8c24683fb05a7c58d",
+    "raw/source-5a434a736518f7ff.json": "76ead2bfc87b7f9b9895ccd10817b09b47ce9b8b91da099934092169c62cf8dd",
+    "staging/production-fujifilm-bodies-003/fujifilm-x100vi.json": "3c4d8dcdb65589154429237b34d20abf453b186b07f01518b2a1d65297c8d0e1",
+    "raw/source-db7495c0b2fd2889.json": "2316ea35c5d8225200695db98da743fe906bdf0496beb2ce9413c0aa185d2dbd",
+    "raw/source-776cf6d0467053d9.json": "77e8474fc7ec127a2da2ffebde35267ea29be8cb644e3d5f415f2c71e56586d4"
+  },
+  "productOperations": [
+    {
+      "productId": "fujifilm-x-t5",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "6bb861e9cce849e8fe0c0dbf8a0dc9de0943d6e90a0172c66f9334e991276d5a",
+      "identityEvidenceId": null,
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "894de5f195eb43bde5383e5ffeeeca9c0993c69a4840e1d7494ed25132b1dddd",
+      "identityEvidenceId": null,
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "32218d3c8567fbdebfc112eba0251107461beaee47907ab06cb2b1e273ddfc8c",
+      "identityEvidenceId": null,
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "035425b1debc2be42d2f00c02bc1c2cf96de5851c7aa4b7fa9139a96ee18d056",
+      "identityEvidenceId": null,
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "8c7d5f54ffec9269bff585f087b4adcf4532d06cbb2dca1bd837d8f1c4373e58",
+      "identityEvidenceId": null,
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-8f62c4252fe0094e27d0",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.batteryShots",
+      "claimId": "claim-531cd76630b9757a034e",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-3c0966ec070eeb4b1be2",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-a2d676344d56e2faa890",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-135f24cbeed0ff674d70",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-ba78a1758e31aa45c08f",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.cardSlots",
+      "claimId": "claim-3eeaf3a11d9d6c340a4d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.dimensions",
+      "claimId": "claim-977e266d2cccf1d3bfbd",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.dimensions",
+      "claimId": "claim-2fa1c13988c0cdaed842",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.evf.magnification",
+      "claimId": "claim-84528cd6e06a9551729d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.evf.present",
+      "claimId": "claim-732630cd0dee1c5c4dd8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-bbca4b623eab3a521f91",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.ibis",
+      "claimId": "claim-1469ecce84878e2ca5c6",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.lcd.mechanism",
+      "claimId": "claim-31c63263cb67e3c55096",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.lcd.present",
+      "claimId": "claim-152f3e5cf78c8921693a",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-b437842d63a088e163e2",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-b75887b0af7cbd5aca04",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-a093d61634a0838ef390",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.releaseDate",
+      "claimId": "claim-c4b7a930e0e76cdc3429",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.format",
+      "claimId": "claim-90f61494a8c3a11852b3",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-97bd5998e17b2ddd9bd6",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-678e933a18cbe0ea8f94",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-7f332f00c69d2500683e",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-ed3d69f2d78742fcdfa7",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-6fcdbb07f07bdb2c38ee",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-e77e504d78bb5f30bda4",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-938d69efd0f7c6270693",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.video.log",
+      "claimId": "claim-b8795d820ebf27db5d53",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.video.max",
+      "claimId": "claim-c66dd51d86c7b30d11bb",
+      "category": "value-conflict",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.weight",
+      "claimId": "claim-1156f4e16854c16eafbc",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.weight",
+      "claimId": "claim-11eccbd64f9095d0cf77",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.weightBasis",
+      "claimId": "claim-025381be1d11e7b3bad8",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t5",
+      "path": "specs.weightBasis",
+      "claimId": "claim-b7a5e260075fd381c766",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-f34d6f4646f724076a34",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.batteryShots",
+      "claimId": "claim-3043ac5409ac5e540997",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-99dee2287d059976f377",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-ebbf3df51220280f3968",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-311f1710d8b792c3e66f",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-a6c6119a5ddc034934f1",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.cardSlots",
+      "claimId": "claim-f620945cad7480d52d31",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.dimensions",
+      "claimId": "claim-c5ed08a738d6befdc7a4",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.dimensions",
+      "claimId": "claim-1e754f612616bde3f8b5",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.evf.magnification",
+      "claimId": "claim-91099673a4765e89bf65",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.evf.present",
+      "claimId": "claim-fbf5ceef9a92967d19b3",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-6b6d5a8597cf17dc04d8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.ibis",
+      "claimId": "claim-390863a46b862aa6b969",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.lcd.mechanism",
+      "claimId": "claim-d73e425d6b4a19c3bd28",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.lcd.present",
+      "claimId": "claim-9069db33743e31ff5f69",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-5f453979b83fd290d540",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-c0d9c60c9782cb550a3b",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-ad6042126113a065193c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.releaseDate",
+      "claimId": "claim-afd5ce2ffb475a6ee7f9",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.format",
+      "claimId": "claim-d1b1155b0b577bcb4347",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-32a4c2b9b17be7411348",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-ede315da6e6b38818e68",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-d83744e89607746ea9e7",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-bcd558bcbbec8d26d826",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-dc6feda14ce6b4c67037",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-6f9d4429d82356619cc5",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-3ed0c65e12e6c496a06c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.video.log",
+      "claimId": "claim-61e4c4cc24f46040cf1b",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.video.max",
+      "claimId": "claim-bc417ed840b8f36a9723",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.weight",
+      "claimId": "claim-df12408330ea593df46b",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.weight",
+      "claimId": "claim-d832a38b3053fc478bd6",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.weightBasis",
+      "claimId": "claim-3277d0d2aeddb00f1130",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-t50",
+      "path": "specs.weightBasis",
+      "claimId": "claim-13f01664db9f85720336",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-7fadede0a75cdb3341cb",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.batteryShots",
+      "claimId": "claim-4242d842bf7b943a16b6",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-b6f5a9afc787aff4eb3c",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-d15219cbfd84e33aec24",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-e6dda734a7790a1d479f",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-08e9db8552c17c39862b",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.cardSlots",
+      "claimId": "claim-7c953bd96efd51ad70d8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.dimensions",
+      "claimId": "claim-16980a4d06085ac19f66",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.dimensions",
+      "claimId": "claim-6fe5a6b36896faaaa5f7",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.evf.magnification",
+      "claimId": "claim-3852dd57079af592cff7",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.evf.present",
+      "claimId": "claim-56cb521e2a0491c559b1",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-5a24e714d278303c7786",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.ibis",
+      "claimId": "claim-6e280bd618fdbeaa9d5f",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.lcd.mechanism",
+      "claimId": "claim-ffdabd76cd76ba9f4bf5",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.lcd.present",
+      "claimId": "claim-5bab967618fe87e4a1c8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-8b6cc48db0a2771b2c98",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-a4973a2fc7a21d338b0d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-06134578efd94c7a920a",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.releaseDate",
+      "claimId": "claim-aa1ffc8bddd0e2be3d7c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.format",
+      "claimId": "claim-da9f83900425990a9750",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-a23e74cb7f779ca6f86f",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-576990dd28fde9d5b1ee",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-0cbbf4cc231be2def996",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-885b75f43578be747e66",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-cb2bcd761a08717462b4",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-cbf302b7609674af0f80",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-c072cfeb18af63b72ce6",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.video.log",
+      "claimId": "claim-e0ad2be3fb8130bf1916",
+      "category": "unknown-no-change",
+      "action": "ignore",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.video.max",
+      "claimId": "claim-7a7bd12c288e9618ff3e",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.weight",
+      "claimId": "claim-3c45a670ac9c5229c8e6",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.weight",
+      "claimId": "claim-4762d094da6c40f3ea12",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.weightBasis",
+      "claimId": "claim-65c5a3005f2e96940f70",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-s20",
+      "path": "specs.weightBasis",
+      "claimId": "claim-502b11fb8b2277ce8ec2",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-13892daaa2a78c1468dd",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.batteryShots",
+      "claimId": "claim-86d4dbe63e47aaa3833d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-b0313c0f56061e845795",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-684c7feec8ee495d5f39",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-e9860857f563c2bf281d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-56f67448838f148a46a2",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.cardSlots",
+      "claimId": "claim-ed1fa6b119f6434e98b7",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.dimensions",
+      "claimId": "claim-6b9901da4f5ebc41bbf6",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.dimensions",
+      "claimId": "claim-7a11175ed5060f894f22",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.evf.present",
+      "claimId": "claim-8ca1387dd6664a9429b4",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.ibis",
+      "claimId": "claim-e8af94495876340aae10",
+      "category": "unknown-no-change",
+      "action": "ignore",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.lcd.mechanism",
+      "claimId": "claim-cf033e3072438ce3269e",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.lcd.present",
+      "claimId": "claim-f26b0b7b13c4f7b1d136",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-838eb13015903b1d0ec9",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-29b7015d3f8aeaf7b164",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-590834518433c14514e3",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.releaseDate",
+      "claimId": "claim-0540671ea849512adc92",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.format",
+      "claimId": "claim-5dafcde26f8dd821ffe8",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-11396728657d6eb400b2",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-42443cc3c6f5079d6795",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-986d6527da2de2c012fa",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-887d687786cc8e1cb6bb",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-f6204722afe5ca572d7c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-26376a06303f79bb85aa",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-8c172b9aec8d8b9116b5",
+      "category": "unknown-no-change",
+      "action": "ignore",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.video.log",
+      "claimId": "claim-96d25cec61398cf00d37",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.video.max",
+      "claimId": "claim-be8f4bc9af81bb78da04",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.weight",
+      "claimId": "claim-fa8922549e5cf587ef7a",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.weight",
+      "claimId": "claim-ff6c05e054c89be05abb",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.weightBasis",
+      "claimId": "claim-c4deb993de103c3b5927",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x-m5",
+      "path": "specs.weightBasis",
+      "claimId": "claim-018de72ef370353b0c98",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.batteryConditions",
+      "claimId": "claim-d158a712f18d91d282e8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.batteryShots",
+      "claimId": "claim-abc5b2b9d74cf08fed02",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-2f7d8c40036787f805a3",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-d8ec1657db9f925382d8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-638149ff983a1d5490a2",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-4bc1cea7c8b53b9bbe66",
+      "category": "unknown-no-change",
+      "action": "ignore",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.cardSlots",
+      "claimId": "claim-f5573ef7ac3626c262da",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.dimensions",
+      "claimId": "claim-3124f1db9e80bca23eca",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.dimensions",
+      "claimId": "claim-80affa7a9e546795a597",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.evf.magnification",
+      "claimId": "claim-d5c3095a7fa834c0797a",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.evf.present",
+      "claimId": "claim-2bca35c3fbba0845424c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-816952ab97e359ab9001",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-a6078235a92907945512",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-4bdbf842e623e0b4dc26",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-8368d9fbd287209c8a02",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-53c2b2278ef834b23cf6",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-15cfce77c9992e64ca3d",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-45943750a22a26d98e9e",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.ibis",
+      "claimId": "claim-88f870674c28ac5ee3e0",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.lcd.mechanism",
+      "claimId": "claim-6d6a44d86b59b2aaeaee",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.lcd.present",
+      "claimId": "claim-2695a7b47c54eae7c235",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-e0a312847ec1e6ef410c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-e9e1f8a7448c4ec2db4b",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-22b57b54dd6a9f425224",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.releaseDate",
+      "claimId": "claim-b80f658868a85bc52e88",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.format",
+      "claimId": "claim-c4ea73775680c22ab00a",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.generation",
+      "claimId": "claim-bd70ac6874d8a2481c5e",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-e196e9aa84aacd2843e8",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-6fb96755cd1bf9b99ecf",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-698936bf819d3c3e8b7d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-e8bef6a9e1c56f12eb2c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-76a3331b33b3fd7a81d2",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-5b3f13586f2d5e279dd8",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.video.log",
+      "claimId": "claim-a00cb9cb2723133a2128",
+      "category": "unknown-no-change",
+      "action": "ignore",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.video.max",
+      "claimId": "claim-8b2036a96ce9ba6ff74c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.weight",
+      "claimId": "claim-245419cb88a3b8293008",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.weight",
+      "claimId": "claim-c4a4c30a8de67af0074c",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.weightBasis",
+      "claimId": "claim-0018fe3f9b6c481aa094",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    },
+    {
+      "productId": "fujifilm-x100vi",
+      "path": "specs.weightBasis",
+      "claimId": "claim-b4967c782481dfade90c",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed all 139 distinct fields and 169 claims for exactly five existing Fujifilm IDs. No identity/alias/price/new product changes. Explicitly approve the sole value-conflict: X-T5 legacy 6.2K 30p marketing-rounded label becomes 6.2K 29.97p as stated in the official internal SD 6240x3510 mode table; this is precision correction, not performance change. Other known values match; null fills are directly sourced; unresolved IBIS/log/shutter/crop and manufacturer template anomalies are not guessed. Preserve weight basis, IBIS test conditions and strict actual/equivalent mm units."
+    }
+  ],
+  "approvalId": "approval-24dcd084febf22b2bb394c655b8409f2017804c006612259b2442ec71281d99a"
+}
