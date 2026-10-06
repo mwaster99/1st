@@ -1,5 +1,21 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic/LUMIX Korea inventory + production pilot 001 — 2026-10-06
+
+완료. 시작 git clean, baseline `d156036`, canonical **111/36/147**이었다. 한국 공식 S/G/컴팩트/가정용캠코더/프로CX/프로캠코더 목록의 전 pagination과49개 제품카드를 대조해 [inventory snapshot](../src/data/ingestion/panasonic-current-camera-gallery-2026-10-06.json)을 작성했다. **직접운용49카드 / 기본identity39 / released-current39 / upcoming0 / linkedvariant10 / 기존canonical현행4 / 기존production0 / 시작production미처리39**다. LUMIX38카드28identity와 직접운용캠코더11identity를 포함한다. PTZ10/studio5는 별도scope후보15이며 전문가용이라는 이유만으로 모든방송제품을 제외하지 않았다. 산업/보안은 별도미열거family로 유지한다. S5/S1/S1R/G100/GH5II/GF10/GX9 키트·색상10카드를base에연결했으며 G100D/G100과VX3/V900은별도identity다. 기존GX85는한국현행목록에없어현행4집계에서제외했다.
+
+Pilot **S1RII/S5II/GH7/G100D/TZ99**를 L-Mount고해상도/legacy보강/영상MFT/경량MFT/fixed로 섞었다. **신규3/기존보강2, canonical바디114/렌즈36/전체150**. 공식source제품별 **3/2/3/2/2**,12raw,80verifiedclaims/77uniqueproduct-fieldpaths,source/valueconflict0. S5II/GH7각same-value근거4경로+nullfill13경로이며 기존identity/aliases/가격/비대상body/렌즈36개는보존됐다. 공개공식source+최소contract만 독립worker5task에전달했고 actualAPI5/attempt1/retry0/failure0, **5028input/2136output/7164total tokens**. 임시전달fixture5개삭제,secret/코드/canonical전체전송없음. Sol이49카드/39identity/5제품조건/80claims/diff/승인·apply를직접판단,사용자추가개입0회다.
+
+L-Mount/MFT기존vocab유지,bodyBIS와DualIS/lensOIS/digitalIS분리. S5II body5stop/combined6.5stop,GH7 body7.5stop/combined조건별도,S1RII독립stopnull,G100D/TZ99IBISnull. S1RII/S5II/GH7의 **8.1K/6K/5.8K29.97p**는 raw/staging/diff/canonical에서정확히유지했고NTSC/FULL/aspect/codec/10bit/media/thermal조건을보존했다. 특수RAW/고속/Preburst/AFC/EFCS/32bit오디오를대표값에혼합하지않았다. 기존영상parser29.97→97bug와조건소비한계는cross-brand후속으로유지,추천/UI수정없음.
+
+TZ99는fixed/mountnull,actual4.3–129/eq24–720mm(still4:3)/F3.3–6.4,strict4focalclaims raw/staging/diff mm. 별도lens없이전체322g한번,실제기존scenario BUY카메라1/lensCount0/weight322g을검증했다. 물리MFT/1/2.3형센서크기·선택모드의미확정bitDepth/log/crop/AF/배터리등은추정하지않았다. 무게기준/IBIS/mm기존validator실제production통과 및메모리변형누락/invalid/mismatch차단을확인했다. 신규pipelinecodebug/schema수정없음. SourceID가evidenceExcerpt기준인기존계약을고려해승인전자체초안조건교정은reviewedevidenceScope로분리했고채택sealedsource는불변이다.
+
+Helper자동실제UTC **2026-10-06T05:09:08.008Z~2026-10-06T05:11:09.776Z**,ISO밀리초/round-trip통과. ExplicitCLIapproval/atomicapply/canonicalvalidation/실제재적용 **already-canonicalized / canonicalMatches:true**. Diff `fb1822987751016c8629bbdb5532885450c76bfe3d0ea4189d4d445ca949eb0f`,approval `approval-fb9f3ae13d6474ca0ea986b07f8a98f33223fc0963f3091f46c830b21fdd7017`,aftercanonicalSHA `ade28a73f4223b7191c2081ad8577d4581fd91c5791670859dc0c8a1379af2de`.
+
+전체 **195/195**,Objective/production및catalog **168/168**,Panasonic **8/8**,canonical150valid,build/Objective6scripts+새testnode --check/git diff --check통과. Build기존chunk경고만남음. 변경범위는inventory/2docs/test/identity5mapping/scope2family/신규batchevidence/atomiccanonicalapply다. 기존productionartifact/pipeline/rules/vocab/schema/추천/UI/가격/렌즈/Experience/OM System불변. Localcommit종료trailer `Objective-Batch: production-panasonic-bodies-001`,push없음.
+
+완료후 **production미처리34 = LUMIX23 + 직접운용캠코더11**(신규미등록32+legacy보강2:S9/G9II). **다음일반LUMIX8–10개로확대가능**,S8 또는G8–10처럼같은contract묶음을권장한다. 잔여34전체한번은권장하지않는다. AJ-CX4000의교환식2/3형bayonet는현재mountvocab밖이고캠코더운용/무게/recording표현은별도작은categorypilot로검증해야한다. Studio/PTZscope후보는이번에ingestion하지않았다. 한국G100출시년월/LX100M2무게/TZ300뉴스날짜차이는후속source검토사항이며canonical미승격이다. [상세inventory/제품/worker/조건/재개보고](OBJECTIVE_DB_PANASONIC_PRODUCTION_001.md). 재개시완료batchstatus/digest/committrailer부터확인하고worker/raw/approval을처음부터반복하지않는다.
+
 ## Stage 4 Fujifilm Korea coverage audit — 2026-10-06
 
 완료. 시작 git clean, baseline `44d6034`. 기존 inventory/batch001~003/완료 보고서/canonical/identity-map/catalog-scope/field contracts/과거 3브랜드 audit를 대조하고 한국 공식 gallery+17제품페이지+Instax gallery를 실제 UTC **04:10:31.008Z~04:10:34.286Z**에 재조회했다. 실제 **17카드(GFX6/X11)**는 기존과 같고 사이트 상단의 총18 표시는 실제 카드 합계와 불일치한다. 신규/삭제/상태·variant 변경0, 과거 snapshot/checkpoint와 raw accessedAt 불변.

@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "JP",
+  "url": "https://panasonic.jp/dc/products/DC-TZ99/spec.html",
+  "documentTitle": "DC-TZ99 Japanese official same-model specifications",
+  "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+  "accessedAt": "2026-10-06T05:09:08.017Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "1/2.3인치",
+      "unit": null
+    },
+    {
+      "field": "Camera effective pixels",
+      "value": 20.3,
+      "unit": "MP"
+    },
+    {
+      "field": "Mass: camera body with battery and one card",
+      "value": 322,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Mass: only camera body",
+      "value": 280,
+      "unit": "g"
+    },
+    {
+      "field": "External dimensions W x H x D",
+      "value": [
+        112,
+        67.8,
+        43.1
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "焦点距離 f=4.3mm～129.0mm",
+      "value": 4.3,
+      "unit": "mm"
+    },
+    {
+      "field": "焦点距離 f=4.3mm～129.0mm",
+      "value": 129,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm換算:24～720mm",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "35mm換算:24～720mm",
+      "value": 720,
+      "unit": "mm"
+    },
+    {
+      "field": "開放絞り値 F3.3～6.4",
+      "value": 3.3,
+      "unit": null
+    },
+    {
+      "field": "開放絞り値 F3.3～6.4",
+      "value": 6.4,
+      "unit": null
+    },
+    {
+      "field": "動画撮影 4K3840x2160 30p100Mbps /15min",
+      "value": "4K 30p",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-tz99",
+      "manufacturerModelCode": "DC-TZ99",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX TZ99",
+        "brand": "Panasonic",
+        "model": "LUMIX TZ99",
+        "series": "LUMIX TZ",
+        "aliases": [
+          "DC-TZ99",
+          "DC-TZ99"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "1/2.3인치",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20.3,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "Camera effective pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 322,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: camera body with battery and one card"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "includes": [
+              "battery",
+              "one memory card",
+              "built-in lens"
+            ],
+            "excludes": []
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 280,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: only camera body"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "includes": [
+              "built-in lens"
+            ],
+            "excludes": [
+              "battery",
+              "memory card"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            112,
+            67.8,
+            43.1
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "External dimensions W x H x D"
+          },
+          "conditions": {
+            "excludes": [
+              "projecting parts"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 6,
+          "rawValue": 4.3,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "焦点距離 f=4.3mm～129.0mm"
+          },
+          "conditions": {
+            "mode": "actual optical lens focal length"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 7,
+          "rawValue": 129,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "焦点距離 f=4.3mm～129.0mm"
+          },
+          "conditions": {
+            "mode": "actual optical lens focal length"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 8,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm換算:24～720mm"
+          },
+          "conditions": {
+            "mode": "still photograph",
+            "aspectRatio": "4:3",
+            "conversion": "Manufacturer 35mm equivalent; not actual focal length",
+            "otherAspectRatios": "Korean spec separately lists3:2/16:9/1:1 equivalent ranges; not combined into this representative range"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 9,
+          "rawValue": 720,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "35mm換算:24～720mm"
+          },
+          "conditions": {
+            "mode": "still photograph",
+            "aspectRatio": "4:3",
+            "conversion": "Manufacturer 35mm equivalent; not actual focal length",
+            "otherAspectRatios": "Korean spec separately lists3:2/16:9/1:1 equivalent ranges; not combined into this representative range"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 10,
+          "rawValue": 3.3,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "開放絞り値 F3.3～6.4"
+          },
+          "conditions": {
+            "position": "wide end",
+            "meaning": "maximum aperture, not minimum stopped-down aperture"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 11,
+          "rawValue": 6.4,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "開放絞り値 F3.3～6.4"
+          },
+          "conditions": {
+            "position": "tele end",
+            "meaning": "maximum aperture"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 12,
+          "rawValue": "4K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "動画撮影 4K3840x2160 30p100Mbps /15min"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MP4 recording",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "manufacturerFrameRateLabel": "30p",
+            "sensorOutputFps": 30,
+            "bitrateMbps": 100,
+            "recordingTimeLimitMinutes": 15,
+            "otherModes": "HD120/VGA240 are sensor output for slow motion; not 4K frame rate",
+            "crop": "Video equivalent angle differs from still4:3; cropAtMax unverified",
+            "stabilization": "Optical / Hybrid O.I.S. lens+electronic; not sensor-shift IBIS"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b9a786fba724f861ad4b3235939d1af356d764897a971b1beb8bce27ad6771d9",
+  "sourceId": "source-d5c9f5f212c47f2e"
+}

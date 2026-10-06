@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-001",
+  "itemKey": "panasonic-gh7",
+  "manufacturerModelCode": "DC-GH7",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-GH7",
+    "productId": "panasonic-gh7",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "panasonic-gh7",
+    "name": "파나소닉 LUMIX GH7",
+    "brand": "Panasonic",
+    "series": "LUMIX GH",
+    "model": "LUMIX GH7",
+    "aliases": [
+      "Panasonic LUMIX GH7"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 721,
+      "burst": {
+        "maxElectronicFps": 75,
+        "maxMechanicalFps": 14
+      },
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "V90"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        138.4,
+        100.3,
+        99.6
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 3680000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 7.5,
+        "conditions": "In-body stabilizer; CIPA yaw/pitch; H-ES12060 f=60mm (120mm equivalent); DualIS2 separate f140mm H-FSA14140"
+      },
+      "releaseDate": "2024-06-28",
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 25.2
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "log": true,
+        "max": "5.8K 29.97p"
+      },
+      "weight": 805,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-10eea88f1f5babd7",
+    "sourceType": "manufacturer",
+    "url": "https://help.na.panasonic.com/wp-content/uploads/2024/07/DCGH7_OperatingInstructions_ENG.pdf",
+    "publisher": "Panasonic Corporation",
+    "documentTitle": "DC-GH7 complete guide Rec Quality p145",
+    "documentVersion": "DVQP3109",
+    "region": "US",
+    "accessedAt": "2026-10-06T05:09:08.017Z",
+    "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+    "contentDigest": "9f94a633af3d51f2b6f7bda24a4fa10040f7b20f4902af015770cfabe6640c77"
+  },
+  "sources": [
+    {
+      "sourceId": "source-10eea88f1f5babd7",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2024/07/DCGH7_OperatingInstructions_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GH7 complete guide Rec Quality p145",
+      "documentVersion": "DVQP3109",
+      "region": "US",
+      "accessedAt": "2026-10-06T05:09:08.017Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "9f94a633af3d51f2b6f7bda24a4fa10040f7b20f4902af015770cfabe6640c77"
+    },
+    {
+      "sourceId": "source-69488f1ef1dc80c5",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/event/news_view.do?seq=135",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "LUMIX GH7 Korean launch 2024-06-28",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-06T05:09:08.016Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "34b7a1ab260f49216931d2bf311706f99098077c5f238e704fe4ff1eec2cd473"
+    },
+    {
+      "sourceId": "source-96dd346f6a151a63",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-model-dc-gh7/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GH7 official NA specifications",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-06T05:09:08.016Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "e5e83265fb6f54e5c70ccc14817ec1f7fc2bee49442131237f0ae885a65990a3"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.bodyOnlyWeight",
+      "value": 721,
+      "unit": "g",
+      "rawValue": 721,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: only camera body"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "includes": [],
+        "excludes": [
+          "battery",
+          "memory card",
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-2be408f40e62fbb588fd"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 75,
+      "unit": "fps",
+      "rawValue": 75,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Burst electronic shutter"
+      },
+      "conditions": {
+        "shutterType": "electronic",
+        "focusMode": "AFS/MF",
+        "burstMode": "SH75",
+        "alternateAfcFps": 60,
+        "alternateAfcMode": "SH60",
+        "preBurst": "SH75 PRE/SH60 PRE separate modes"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-5c5001ac1d636ce97a63"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 14,
+      "unit": "fps",
+      "rawValue": 14,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Burst mechanical shutter"
+      },
+      "conditions": {
+        "shutterType": "mechanical",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 10
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-16306a13dc4a4f2b8d85"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "V90"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "V90"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.cardSlots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-7e96b604f9e403bf10b3"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.dimensions",
+      "value": [
+        138.4,
+        100.3,
+        99.6
+      ],
+      "unit": "mm",
+      "rawValue": [
+        138.4,
+        100.3,
+        99.6
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "External dimensions W x H x D"
+      },
+      "conditions": {
+        "excludes": [
+          "projecting parts",
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-ed1dd63f404464bb29f0"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.present"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-1a510d71ec3cc47d269e"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots",
+      "rawValue": 3680000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.resolutionDots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-41be4e9e5f171d45c829"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7.5,
+        "conditions": "In-body stabilizer; CIPA yaw/pitch; H-ES12060 f=60mm (120mm equivalent); DualIS2 separate f140mm H-FSA14140"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 7.5,
+        "conditions": "In-body stabilizer; CIPA yaw/pitch; H-ES12060 f=60mm (120mm equivalent); DualIS2 separate f140mm H-FSA14140"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.ibis"
+      },
+      "conditions": {
+        "stabilizationType": "body sensor-shift",
+        "standard": "CIPA",
+        "directions": [
+          "yaw",
+          "pitch"
+        ],
+        "lens": "H-ES12060",
+        "focalLengthMm": 60,
+        "combinedStabilization": {
+          "system": "Dual I.S.2",
+          "stops": 7.5,
+          "lens": "H-FSA14140",
+          "focalLengthMm": 140
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-38ee4a76fd48c2b4b3e3"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.releaseDate",
+      "value": "2024-06-28",
+      "unit": null,
+      "rawValue": "2024-06-28",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-69488f1ef1dc80c5",
+      "locator": {
+        "section": "GH7 launch",
+        "row": "Released GH7"
+      },
+      "conditions": {
+        "region": "KR"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-8532204e78d821d0fd33"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.sensor.format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-045fb6038e218d58f67a"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.sensor.megapixels",
+      "value": 25.2,
+      "unit": "MP",
+      "rawValue": 25.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-69488f1ef1dc80c5",
+      "locator": {
+        "section": "GH7 launch",
+        "row": "25.20 megapixel effective sensor"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-fad25f703b6ec130af74"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.sensor.megapixels",
+      "value": 25.2,
+      "unit": "MP",
+      "rawValue": 25.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Camera effective pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-9e4be1ddb0fe6a1e4151"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-10eea88f1f5babd7",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "YUV bit value"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "CFexpress Type B or SD card meeting bitrate class",
+        "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+        "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-a61d5dce5fced18fa6bd"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-10eea88f1f5babd7",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "Image Area of Video"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "CFexpress Type B or SD card meeting bitrate class",
+        "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+        "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-3a35ff97bb3db5394c7d"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Latitude / V-Log"
+      },
+      "conditions": {
+        "profile": "V-Log",
+        "optionalProfile": "ARRI LogC3 requires separate upgrade, not standard V-Log"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-c7c0aa9e029be31f6e0f"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.video.max",
+      "value": "5.8K 29.97p",
+      "unit": null,
+      "rawValue": "5.8K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-10eea88f1f5babd7",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "Representative ordinary recording mode"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "CFexpress Type B or SD card meeting bitrate class",
+        "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+        "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-000a378e654b8b67ceb1"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.weight",
+      "value": 805,
+      "unit": "g",
+      "rawValue": 805,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: camera body with battery and one card"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "includes": [
+          "battery",
+          "one memory card"
+        ],
+        "excludes": [
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-e5df00c6012d00c486e6"
+    },
+    {
+      "productId": "panasonic-gh7",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-96dd346f6a151a63",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.weightBasis"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-052e715cffa13b7c546b"
+    }
+  ]
+}

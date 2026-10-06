@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-model-dc-g100d/",
+  "documentTitle": "DC-G100D official NA specifications",
+  "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+  "accessedAt": "2026-10-06T05:09:08.017Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "Camera effective pixels",
+      "value": 20.3,
+      "unit": "MP"
+    },
+    {
+      "field": "Mass: camera body with battery and one card",
+      "value": 346,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Mass: only camera body",
+      "value": 304,
+      "unit": "g"
+    },
+    {
+      "field": "External dimensions W x H x D",
+      "value": [
+        115.6,
+        83.1,
+        54.2
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Burst recording / electronic shutter",
+      "value": 10,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-g100d",
+      "manufacturerModelCode": "DC-G100D",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX G100D",
+        "brand": "Panasonic",
+        "model": "LUMIX G100D",
+        "series": "LUMIX G",
+        "aliases": [
+          "DC-G100D",
+          "DC-G100DVGD"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20.3,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "Camera effective pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 346,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: camera body with battery and one card"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "includes": [
+              "battery",
+              "one memory card"
+            ],
+            "excludes": [
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 304,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: only camera body"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "includes": [],
+            "excludes": [
+              "battery",
+              "memory card",
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            115.6,
+            83.1,
+            54.2
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "External dimensions W x H x D"
+          },
+          "conditions": {
+            "excludes": [
+              "projecting parts",
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 6,
+          "rawValue": 10,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Specifications",
+            "row": "Burst recording / electronic shutter"
+          },
+          "conditions": {
+            "shutterType": "electronic",
+            "efcs": {
+              "fps": 6,
+              "focusMode": "AFS/MF",
+              "alternateAfcFps": 5
+            },
+            "note": "6fps electronic front curtain is not promoted as full mechanical shutter"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 7,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.evf.present"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 8,
+          "rawValue": 2360000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.evf.resolutionDots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 9,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.lcd.present"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 10,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.lcd.sizeInches"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 11,
+          "rawValue": 1840000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.lcd.resolutionDots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 12,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.lcd.touch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "395101948838d1d77b77e6fe42105132a0b02f64abd3b76274c9d52b21d63f85",
+  "sourceId": "source-222550ca6f5d2b42"
+}

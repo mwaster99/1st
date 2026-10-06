@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": "DVQP3109",
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2024/07/DCGH7_OperatingInstructions_ENG.pdf",
+  "documentTitle": "DC-GH7 complete guide Rec Quality p145",
+  "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+  "accessedAt": "2026-10-06T05:09:08.017Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Representative ordinary recording mode",
+      "value": "5.8K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "YUV bit value",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "Image Area of Video",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-gh7",
+      "manufacturerModelCode": "DC-GH7",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX GH7",
+        "brand": "Panasonic",
+        "model": "LUMIX GH7",
+        "series": "LUMIX GH",
+        "aliases": [
+          "Panasonic LUMIX GH7"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "5.8K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "Representative ordinary recording mode"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 200,
+            "imageArea": "FULL",
+            "media": "CFexpress Type B or SD card meeting bitrate class",
+            "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+            "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "YUV bit value"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 200,
+            "imageArea": "FULL",
+            "media": "CFexpress Type B or SD card meeting bitrate class",
+            "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+            "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "Image Area of Video"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 200,
+            "imageArea": "FULL",
+            "media": "CFexpress Type B or SD card meeting bitrate class",
+            "otherModes": "5.7K59.94p 17:9, C4K119.88p, ProRes RAW5.7K17:9 separately; 32-bit float audio requires DMW-XLR2, is not video bit depth",
+            "thermal": "No universal recording-time assertion; cooling/media/power/temperature conditions remain mode-dependent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9f94a633af3d51f2b6f7bda24a4fa10040f7b20f4902af015770cfabe6640c77",
+  "sourceId": "source-10eea88f1f5babd7"
+}

@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-001",
+  "itemKey": "panasonic-tz99",
+  "manufacturerModelCode": "DC-TZ99",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-TZ99",
+    "productId": "panasonic-tz99",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-6c5fff0c613ce2159982",
+    "sourceId": "source-dc5fe24efefaa745",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Korean product card / official base model",
+      "row": "DC-TZ99 / DC-TZ99"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-06",
+    "reviewer": "codex-panasonic-001-direct-review"
+  },
+  "product": {
+    "id": "panasonic-tz99",
+    "name": "파나소닉 LUMIX TZ99",
+    "brand": "Panasonic",
+    "series": "LUMIX TZ",
+    "model": "LUMIX TZ99",
+    "aliases": [
+      "DC-TZ99"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 280,
+      "dimensions": [
+        112,
+        67.8,
+        43.1
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 6.4,
+          "wide": 3.3
+        },
+        "equivalentFocal": {
+          "max": 720,
+          "min": 24
+        },
+        "focal": {
+          "max": 129,
+          "min": 4.3
+        }
+      },
+      "sensor": {
+        "format": "1/2.3인치",
+        "megapixels": 20.3
+      },
+      "video": {
+        "max": "4K 30p"
+      },
+      "weight": 322,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-dc5fe24efefaa745",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ99",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-TZ99 Korean official product/specification image",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-06T05:09:08.017Z",
+    "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+    "contentDigest": "c25983d02e139bd1760ff5309b917195c9e946471b43e21cf2afee8786e9f2f7"
+  },
+  "sources": [
+    {
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "sourceType": "manufacturer",
+      "url": "https://panasonic.jp/dc/products/DC-TZ99/spec.html",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-TZ99 Japanese official same-model specifications",
+      "documentVersion": null,
+      "region": "JP",
+      "accessedAt": "2026-10-06T05:09:08.017Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "b9a786fba724f861ad4b3235939d1af356d764897a971b1beb8bce27ad6771d9"
+    },
+    {
+      "sourceId": "source-dc5fe24efefaa745",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ99",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-TZ99 Korean official product/specification image",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-06T05:09:08.017Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "c25983d02e139bd1760ff5309b917195c9e946471b43e21cf2afee8786e9f2f7"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.bodyOnlyWeight",
+      "value": 280,
+      "unit": "g",
+      "rawValue": 280,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: only camera body"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "includes": [
+          "built-in lens"
+        ],
+        "excludes": [
+          "battery",
+          "memory card"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-daf92172d06942645069"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.dimensions",
+      "value": [
+        112,
+        67.8,
+        43.1
+      ],
+      "unit": "mm",
+      "rawValue": [
+        112,
+        67.8,
+        43.1
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "External dimensions W x H x D"
+      },
+      "conditions": {
+        "excludes": [
+          "projecting parts"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-d1c69845d2173024eaba"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 6.4,
+      "unit": null,
+      "rawValue": 6.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "開放絞り値 F3.3～6.4"
+      },
+      "conditions": {
+        "position": "tele end",
+        "meaning": "maximum aperture"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-cb2fcd6db816d8c4daae"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 3.3,
+      "unit": null,
+      "rawValue": 3.3,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "開放絞り値 F3.3～6.4"
+      },
+      "conditions": {
+        "position": "wide end",
+        "meaning": "maximum aperture, not minimum stopped-down aperture"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-595cea117882a5f1fbe6"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 720,
+      "unit": "mm",
+      "rawValue": 720,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm換算:24～720mm"
+      },
+      "conditions": {
+        "mode": "still photograph",
+        "aspectRatio": "4:3",
+        "conversion": "Manufacturer 35mm equivalent; not actual focal length",
+        "otherAspectRatios": "Korean spec separately lists3:2/16:9/1:1 equivalent ranges; not combined into this representative range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-28c47936e94dc837eb62"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "35mm換算:24～720mm"
+      },
+      "conditions": {
+        "mode": "still photograph",
+        "aspectRatio": "4:3",
+        "conversion": "Manufacturer 35mm equivalent; not actual focal length",
+        "otherAspectRatios": "Korean spec separately lists3:2/16:9/1:1 equivalent ranges; not combined into this representative range"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-92559d0fb64b3ea19c63"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.focal.max",
+      "value": 129,
+      "unit": "mm",
+      "rawValue": 129,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "焦点距離 f=4.3mm～129.0mm"
+      },
+      "conditions": {
+        "mode": "actual optical lens focal length"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-b84b8054eb36b31ad2aa"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.fixedLens.focal.min",
+      "value": 4.3,
+      "unit": "mm",
+      "rawValue": 4.3,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "焦点距離 f=4.3mm～129.0mm"
+      },
+      "conditions": {
+        "mode": "actual optical lens focal length"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-2418f9402629eae26566"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.sensor.format",
+      "value": "1/2.3인치",
+      "unit": null,
+      "rawValue": "1/2.3인치",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.sensor.format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-f25b582ddb60cf27a812"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "Camera effective pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-ed14511192c8f576e608"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-dc5fe24efefaa745",
+      "locator": {
+        "section": "제품정보 / specification image",
+        "row": "Camera effective pixels 20.3 megapixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-14b4d49e167e7d872e9c"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "動画撮影 4K3840x2160 30p100Mbps /15min"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MP4 recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "manufacturerFrameRateLabel": "30p",
+        "sensorOutputFps": 30,
+        "bitrateMbps": 100,
+        "recordingTimeLimitMinutes": 15,
+        "otherModes": "HD120/VGA240 are sensor output for slow motion; not 4K frame rate",
+        "crop": "Video equivalent angle differs from still4:3; cropAtMax unverified",
+        "stabilization": "Optical / Hybrid O.I.S. lens+electronic; not sensor-shift IBIS"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-f9263ca472e3213a7975"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.weight",
+      "value": 322,
+      "unit": "g",
+      "rawValue": 322,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: camera body with battery and one card"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "includes": [
+          "battery",
+          "one memory card",
+          "built-in lens"
+        ],
+        "excludes": []
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-09cc8ec49a03144f4906"
+    },
+    {
+      "productId": "panasonic-tz99",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d5c9f5f212c47f2e",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.weightBasis"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-f52fbceed168577a8efc"
+    }
+  ]
+}

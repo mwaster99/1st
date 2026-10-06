@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": "DVQP3245",
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/DCS1RM2_OperatingInstructions_ENG.pdf",
+  "documentTitle": "DC-S1RM2 complete guide Rec Quality p150",
+  "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+  "accessedAt": "2026-10-06T05:09:08.015Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Representative ordinary recording mode",
+      "value": "8.1K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "YUV bit value",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "Image Area of Video",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s1r-ii",
+      "manufacturerModelCode": "DC-S1RM2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S1RII",
+        "brand": "Panasonic",
+        "model": "LUMIX S1RII",
+        "series": "LUMIX S",
+        "aliases": [
+          "DC-S1RM2",
+          "DC-S1RM2GD-K"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "8.1K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "Representative ordinary recording mode"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              8128,
+              4288
+            ],
+            "aspectRatio": "17:9",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 300,
+            "imageArea": "FULL",
+            "manualVersion": "DVQP3245 complete guide baseline mode; later firmware open-gate alternatives not merged",
+            "media": "CFexpress Type B or SD meeting mode bitrate class",
+            "thermal": "Recording can stop if internal temperature rises; no unconditional unlimited-time claim",
+            "otherModes": "6.4K 3:2 and 5.8K ProRes/RAW are separate modes; current firmware capabilities not exhaustively represented"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "YUV bit value"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              8128,
+              4288
+            ],
+            "aspectRatio": "17:9",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 300,
+            "imageArea": "FULL",
+            "manualVersion": "DVQP3245 complete guide baseline mode; later firmware open-gate alternatives not merged",
+            "media": "CFexpress Type B or SD meeting mode bitrate class",
+            "thermal": "Recording can stop if internal temperature rises; no unconditional unlimited-time claim",
+            "otherModes": "6.4K 3:2 and 5.8K ProRes/RAW are separate modes; current firmware capabilities not exhaustively represented"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Rec Quality",
+            "row": "Image Area of Video"
+          },
+          "conditions": {
+            "recordingMode": "ordinary internal MOV recording",
+            "systemFrequency": "59.94Hz NTSC",
+            "resolution": [
+              8128,
+              4288
+            ],
+            "aspectRatio": "17:9",
+            "frameRate": 29.97,
+            "chroma": "4:2:0",
+            "codec": "HEVC Long GOP",
+            "bitrateMbps": 300,
+            "imageArea": "FULL",
+            "manualVersion": "DVQP3245 complete guide baseline mode; later firmware open-gate alternatives not merged",
+            "media": "CFexpress Type B or SD meeting mode bitrate class",
+            "thermal": "Recording can stop if internal temperature rises; no unconditional unlimited-time claim",
+            "otherModes": "6.4K 3:2 and 5.8K ProRes/RAW are separate modes; current firmware capabilities not exhaustively represented"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "701fd7cd2c1b1969d44edd7cc5f636f499cce37da95b9e2f181387abc665b5b3",
+  "sourceId": "source-d0b0f4e83ce9c266"
+}

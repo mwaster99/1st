@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-001",
+  "itemKey": "panasonic-s5-ii",
+  "manufacturerModelCode": "DC-S5M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-S5M2",
+    "productId": "panasonic-s5-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "panasonic-s5-ii",
+    "name": "파나소닉 LUMIX S5 II",
+    "brand": "Panasonic",
+    "series": "LUMIX S",
+    "model": "LUMIX S5 II",
+    "aliases": [
+      "Panasonic LUMIX S5 II"
+    ],
+    "mount": "L-Mount",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 657,
+      "burst": {
+        "maxElectronicFps": 30,
+        "maxMechanicalFps": 9
+      },
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 3680000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "B.I.S.; CIPA yaw/pitch; S-R2060 f=60mm; excludes Dual I.S.2 6.5-stop combined rating"
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 24.2,
+        "sizeMm": [
+          35.6,
+          23.8
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "log": true,
+        "max": "6K 29.97p"
+      },
+      "weight": 740,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-18ebdd450b96ce7f",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixS/DC-S5M2GD",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-S5M2GD Korean official specification image",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-06T05:09:08.016Z",
+    "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+    "contentDigest": "928d9f6baf12d2294e1d384614be3102e06cc68948d39c81c120a1e104c0d49e"
+  },
+  "sources": [
+    {
+      "sourceId": "source-18ebdd450b96ce7f",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixS/DC-S5M2GD",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-S5M2GD Korean official specification image",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-06T05:09:08.016Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "928d9f6baf12d2294e1d384614be3102e06cc68948d39c81c120a1e104c0d49e"
+    },
+    {
+      "sourceId": "source-a94cafcd12983387",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/specifications-sheet-lumix-s-series-dc-s5m2/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-S5M2 official NA specification sheet",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-06T05:09:08.016Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "ea64b6187de9e0d3cc3d6042b97c231a2ec301734bf43adb844061ca3a47d6b1"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 657,
+      "unit": "g",
+      "rawValue": 657,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: only camera body"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "includes": [
+          "hot shoe cover"
+        ],
+        "excludes": [
+          "battery",
+          "memory card",
+          "interchangeable lens",
+          "body cap"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-13ad6d659a85f99c97b7"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps",
+      "rawValue": 30,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Burst electronic shutter"
+      },
+      "conditions": {
+        "shutterType": "electronic",
+        "focusMode": "AFS/AFC/MF",
+        "burstMode": "SH30"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-876987b9b0eb9e1dafc9"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Burst mechanical shutter"
+      },
+      "conditions": {
+        "shutterType": "mechanical",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 7
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-f480c48abbaa01e8cc5b"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.cardSlots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-89bc30c4b0ad084b404d"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.dimensions",
+      "value": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "unit": "mm",
+      "rawValue": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "External dimensions W x H x D"
+      },
+      "conditions": {
+        "excludes": [
+          "projecting parts",
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-63078461981e0854edb6"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.present"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-14bd896b91371c22a1c3"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots",
+      "rawValue": 3680000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.resolutionDots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-d2b0c61fb26d384c4fba"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "B.I.S.; CIPA yaw/pitch; S-R2060 f=60mm; excludes Dual I.S.2 6.5-stop combined rating"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "B.I.S.; CIPA yaw/pitch; S-R2060 f=60mm; excludes Dual I.S.2 6.5-stop combined rating"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.ibis"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "directions": [
+          "yaw",
+          "pitch"
+        ],
+        "lens": "S-R2060",
+        "focalLengthMm": 60,
+        "stabilizationType": "body sensor-shift",
+        "combinedStabilization": {
+          "system": "Dual I.S.2",
+          "stops": 6.5,
+          "lens": "S-E70200",
+          "focalLengthMm": 200
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-f746515901ed38702eac"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.sensor.format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-324f53074f46e2fed793"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP",
+      "rawValue": 24.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-18ebdd450b96ce7f",
+      "locator": {
+        "section": "제품정보 / embedded specification image",
+        "row": "Camera effective pixels 24.20 megapixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-051962a50a112347fc5b"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP",
+      "rawValue": 24.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Camera effective pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-077006da29be6b1cfddb"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        35.6,
+        23.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        35.6,
+        23.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.sensor.sizeMm"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-da0ed8abcc74b8ccf115"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "YUV bit value"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "H.265/HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "SD UHS-I/II U3 or V30 for 200Mbps",
+        "thermalManagement": "Standard: continuous 6K29.97p recording stops after 30 minutes",
+        "otherModes": "4K60 APS-C, external RAW software-key/firmware requirements separate; do not inherit S5IIX ProRes/SSD"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-7f3268a0ac6e79855b4a"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "Image Area of Video"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "H.265/HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "SD UHS-I/II U3 or V30 for 200Mbps",
+        "thermalManagement": "Standard: continuous 6K29.97p recording stops after 30 minutes",
+        "otherModes": "4K60 APS-C, external RAW software-key/firmware requirements separate; do not inherit S5IIX ProRes/SSD"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-0a44c462e31176e08c48"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Latitude / V-Log"
+      },
+      "conditions": {
+        "profile": "V-Log"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-a9fb48458d9abd045d37"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null,
+      "rawValue": "6K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Rec Quality",
+        "row": "Representative ordinary recording mode"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MOV recording",
+        "systemFrequency": "59.94Hz NTSC",
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "frameRate": 29.97,
+        "chroma": "4:2:0",
+        "codec": "H.265/HEVC Long GOP",
+        "bitrateMbps": 200,
+        "imageArea": "FULL",
+        "media": "SD UHS-I/II U3 or V30 for 200Mbps",
+        "thermalManagement": "Standard: continuous 6K29.97p recording stops after 30 minutes",
+        "otherModes": "4K60 APS-C, external RAW software-key/firmware requirements separate; do not inherit S5IIX ProRes/SSD"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-6d9b21071544ef80da2c"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.weight",
+      "value": 740,
+      "unit": "g",
+      "rawValue": 740,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: camera body with battery and one card"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "includes": [
+          "battery",
+          "one memory card",
+          "hot shoe cover"
+        ],
+        "excludes": [
+          "interchangeable lens",
+          "body cap"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-8ed554e3d5b14cfd0716"
+    },
+    {
+      "productId": "panasonic-s5-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a94cafcd12983387",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.weightBasis"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-0ff7431ea4b03d1f2077"
+    }
+  ]
+}

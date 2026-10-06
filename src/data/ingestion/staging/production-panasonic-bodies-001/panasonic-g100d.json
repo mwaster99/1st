@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-001",
+  "itemKey": "panasonic-g100d",
+  "manufacturerModelCode": "DC-G100D",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-G100D",
+    "productId": "panasonic-g100d",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-3c6647f982fea7407101",
+    "sourceId": "source-1827272c5587681b",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Korean product card / official base model",
+      "row": "DC-G100DVGD / DC-G100D"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-06",
+    "reviewer": "codex-panasonic-001-direct-review"
+  },
+  "product": {
+    "id": "panasonic-g100d",
+    "name": "파나소닉 LUMIX G100D",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX G100D",
+    "aliases": [
+      "DC-G100D",
+      "DC-G100DVGD"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 304,
+      "burst": {
+        "maxElectronicFps": 10
+      },
+      "dimensions": [
+        115.6,
+        83.1,
+        54.2
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 20.3
+      },
+      "video": {
+        "max": "4K 30p"
+      },
+      "weight": 346,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-1827272c5587681b",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/DCG100DVGD",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-G100DVGD Korean official specification image / base DC-G100D",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-06T05:09:08.017Z",
+    "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+    "contentDigest": "f5b979227ade1ada15bbd1d9b1b6718bfe1a4edcb90481b88c54eb5cd6357ee6"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1827272c5587681b",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/DCG100DVGD",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-G100DVGD Korean official specification image / base DC-G100D",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-06T05:09:08.017Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "f5b979227ade1ada15bbd1d9b1b6718bfe1a4edcb90481b88c54eb5cd6357ee6"
+    },
+    {
+      "sourceId": "source-222550ca6f5d2b42",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-model-dc-g100d/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G100D official NA specifications",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-06T05:09:08.017Z",
+      "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+      "contentDigest": "395101948838d1d77b77e6fe42105132a0b02f64abd3b76274c9d52b21d63f85"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.bodyOnlyWeight",
+      "value": 304,
+      "unit": "g",
+      "rawValue": 304,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: only camera body"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "includes": [],
+        "excludes": [
+          "battery",
+          "memory card",
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-069d4ca39b532b1ca2e6"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 10,
+      "unit": "fps",
+      "rawValue": 10,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "Burst recording / electronic shutter"
+      },
+      "conditions": {
+        "shutterType": "electronic",
+        "efcs": {
+          "fps": 6,
+          "focusMode": "AFS/MF",
+          "alternateAfcFps": 5
+        },
+        "note": "6fps electronic front curtain is not promoted as full mechanical shutter"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-71b3b5f1d26bf2279096"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.dimensions",
+      "value": [
+        115.6,
+        83.1,
+        54.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        115.6,
+        83.1,
+        54.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "External dimensions W x H x D"
+      },
+      "conditions": {
+        "excludes": [
+          "projecting parts",
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-884053aac0013605e320"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.present"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-236e93f56ecc6420ec3d"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots",
+      "rawValue": 2360000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.evf.resolutionDots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-505cf687c6f6bb19b76b"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.lcd.present"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-ce2ca8cc0b9f996c0049"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.lcd.resolutionDots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-827c2aa2e7842e2c6871"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.lcd.sizeInches"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-500cba6d2ddbaf6207fa"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.lcd.touch"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-c661e6e44f9e144f0b91"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.sensor.format"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-e8d56b5230b3b8ea1f2f"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "Camera effective pixels"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-55a43eb30b4c3e54e1b5"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1827272c5587681b",
+      "locator": {
+        "section": "제품정보 / embedded specification image",
+        "row": "4K 3840x2160 30p 100Mbps"
+      },
+      "conditions": {
+        "recordingMode": "ordinary internal MP4 recording",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "manufacturerFrameRateLabel": "30p",
+        "sensorOutputFps": 30,
+        "bitrateMbps": 100,
+        "codec": "H.264/MPEG-4 AVC",
+        "stabilization": "Hybrid lens OIS/electronic compensation is not evidence for body IBIS",
+        "crop": "Not directly verified; cropAtMax null",
+        "media": "SD UHS-I U3",
+        "otherModes": "4K PHOTO and slow/quick sensor output are separate"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-61cb19192e4a15d2d967"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.weight",
+      "value": 346,
+      "unit": "g",
+      "rawValue": 346,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "Mass: camera body with battery and one card"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "includes": [
+          "battery",
+          "one memory card"
+        ],
+        "excludes": [
+          "interchangeable lens"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-6e9d5c3e21679ee74bce"
+    },
+    {
+      "productId": "panasonic-g100d",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-222550ca6f5d2b42",
+      "locator": {
+        "section": "Specifications",
+        "row": "specs.weightBasis"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "codex-panasonic-001-direct-review",
+      "claimId": "claim-5dbd46c5d1269a3e5dd5"
+    }
+  ]
+}

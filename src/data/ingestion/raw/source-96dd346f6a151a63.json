@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-model-dc-gh7/",
+  "documentTitle": "DC-GH7 official NA specifications",
+  "evidenceScope": "Only this reviewed base camera identity and physical/mode-specific observations; no kit lenses, prices or unrelated models",
+  "accessedAt": "2026-10-06T05:09:08.016Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "Camera effective pixels",
+      "value": 25.2,
+      "unit": "MP"
+    },
+    {
+      "field": "Mass: camera body with battery and one card",
+      "value": 805,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "Mass: only camera body",
+      "value": 721,
+      "unit": "g"
+    },
+    {
+      "field": "External dimensions W x H x D",
+      "value": [
+        138.4,
+        100.3,
+        99.6
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 7.5,
+        "conditions": "In-body stabilizer; CIPA yaw/pitch; H-ES12060 f=60mm (120mm equivalent); DualIS2 separate f140mm H-FSA14140"
+      },
+      "unit": null
+    },
+    {
+      "field": "Burst mechanical shutter",
+      "value": 14,
+      "unit": "fps"
+    },
+    {
+      "field": "Burst electronic shutter",
+      "value": 75,
+      "unit": "fps"
+    },
+    {
+      "field": "Latitude / V-Log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "V90"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-gh7",
+      "manufacturerModelCode": "DC-GH7",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX GH7",
+        "brand": "Panasonic",
+        "model": "LUMIX GH7",
+        "series": "LUMIX GH",
+        "aliases": [
+          "Panasonic LUMIX GH7"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 25.2,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Specifications",
+            "row": "Camera effective pixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 805,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: camera body with battery and one card"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "includes": [
+              "battery",
+              "one memory card"
+            ],
+            "excludes": [
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 721,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Specifications",
+            "row": "Mass: only camera body"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "includes": [],
+            "excludes": [
+              "battery",
+              "memory card",
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            138.4,
+            100.3,
+            99.6
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Specifications",
+            "row": "External dimensions W x H x D"
+          },
+          "conditions": {
+            "excludes": [
+              "projecting parts",
+              "interchangeable lens"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 6,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 7.5,
+            "conditions": "In-body stabilizer; CIPA yaw/pitch; H-ES12060 f=60mm (120mm equivalent); DualIS2 separate f140mm H-FSA14140"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "stabilizationType": "body sensor-shift",
+            "standard": "CIPA",
+            "directions": [
+              "yaw",
+              "pitch"
+            ],
+            "lens": "H-ES12060",
+            "focalLengthMm": 60,
+            "combinedStabilization": {
+              "system": "Dual I.S.2",
+              "stops": 7.5,
+              "lens": "H-FSA14140",
+              "focalLengthMm": 140
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 7,
+          "rawValue": 14,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Specifications",
+            "row": "Burst mechanical shutter"
+          },
+          "conditions": {
+            "shutterType": "mechanical",
+            "focusMode": "AFS/MF",
+            "alternateAfcFps": 10
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 8,
+          "rawValue": 75,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Specifications",
+            "row": "Burst electronic shutter"
+          },
+          "conditions": {
+            "shutterType": "electronic",
+            "focusMode": "AFS/MF",
+            "burstMode": "SH75",
+            "alternateAfcFps": 60,
+            "alternateAfcMode": "SH60",
+            "preBurst": "SH75 PRE/SH60 PRE separate modes"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 9,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "Latitude / V-Log"
+          },
+          "conditions": {
+            "profile": "V-Log",
+            "optionalProfile": "ARRI LogC3 requires separate upgrade, not standard V-Log"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 10,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "V90"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 11,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.evf.present"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 12,
+          "rawValue": 3680000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Specifications",
+            "row": "specs.evf.resolutionDots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-06",
+          "reviewer": "codex-panasonic-001-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "e5e83265fb6f54e5c70ccc14817ec1f7fc2bee49442131237f0ae885a65990a3",
+  "sourceId": "source-96dd346f6a151a63"
+}
