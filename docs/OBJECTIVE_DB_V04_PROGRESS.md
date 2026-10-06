@@ -1,5 +1,19 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Fujifilm Korea coverage audit — 2026-10-06
+
+완료. 시작 git clean, baseline `44d6034`. 기존 inventory/batch001~003/완료 보고서/canonical/identity-map/catalog-scope/field contracts/과거 3브랜드 audit를 대조하고 한국 공식 gallery+17제품페이지+Instax gallery를 실제 UTC **04:10:31.008Z~04:10:34.286Z**에 재조회했다. 실제 **17카드(GFX6/X11)**는 기존과 같고 사이트 상단의 총18 표시는 실제 카드 합계와 불일치한다. 신규/삭제/상태·variant 변경0, 과거 snapshot/checkpoint와 raw accessedAt 불변.
+
+**기본 identity15 / 일반 released-current14 / production provenance14 / linked variant2 / X·GFX deferred1 / 일반 미처리0 / 중복·모호0 / critical0**. Canonical **111/36/147 유지**, SHA `f58511cd8bf98568f8e38f2b557be655b572e2c722f0903b34b208ae947ac310`. 현행 일반 카메라 Objective 제품 coverage **1차 완료**로 판정한다. IR은 구매자 계약/분광 필터·전문 목적 때문에 deferred 유지, Instax10카드는 별도분모의 analog6/hybrid3/digital Pal1로 구분하여 재검토 조건을 scope registry에 추가했다. FRAGMENT는 필름 레시피와 일부 모노크롬 제외의 **기능 차이도 있는 variant**이며 외관만 동일하다고 단순화하지 않았다. Limited는 외장/판매 edition, 두 카드 모두 기존 base에 연결하며 기능을 기본제품에 승격하지 않는다.
+
+366 verified claims /331 fieldEvidence paths. Known specs 말단365 중 verified364/공식 참조-only1/legacy-only0/미분류0. 신규9개는 구조화된 identityEvidence, 기존보강5개는 reviewed-map+공식 identity 확인이 있으나 전용 객체는 누락. **Should-fix14**(identityEvidence5+X100VI label evidence1+cardSlots8), **acceptable UNKNOWN27**은 제품/경로별 감사 항목으로 [감사 snapshot](../src/data/ingestion/fujifilm-coverage-audit-2026-10-06.json)에 전부 기록했다. 모든 null 전수 집계 또는 엔진 완성 선언이 아니다.
+
+세 fixed prime GFX100RF/Xhalf/X100VI는 fixed/mount null, actual35/10.8/23mm와 eq28/32/35mm 분리, apertureF4/F2.8/F2,12focalclaims raw/staging/diff mm. Strict archive replay 및 단위누락 차단 검증, 별도lens/무게 이중계산 없음. XM5 digitalIS→IBIS 오인없음. Batch001~003의30raw와 모든 sealed artifact/digest/approval/transaction chain 재현, missing/mismatch0, 메모리 재적용 no-op. 기존 artifact를 재작성하지 않았다.
+
+GFX ranking/cropFactor 및 G마운트 렌즈 coverage, 조건부video/burst/opengate/RAW/ProRes/pixelshift/firmware 단일값 소비는 별도 cross-brand backlog다. 읽기 전용 재현에서 영상 비교 fps 정규식이29.97p→97p로 읽는 기존 엔진 버그도 발견해 [상세감사](OBJECTIVE_DB_FUJIFILM_COVERAGE_AUDIT.md)에 기록했다. 추천/UI/schema/가격/Experience/production 데이터 수정 없음.
+
+Coverage8개 신규, 전체 **187/187**, Objective/production **147/147**, Fujifilm **26/26**, canonical147 valid, build/7files node --check/git diff --check 통과. 기존 build chunk경고만 남음. 변경5개는 감사doc/진행doc/auditJSON/coverage test/Instax scope entry이며 워킹트리에 저장(commit/push 미수행). 다음 **B5 Panasonic / OM System**, Panasonic 공식 inventory부터 별도세션에서 시작 가능. 이번 audit 범위 미완료 작업 없음; 데이터 should-fix와 소비엔진 backlog는 별도 후속으로 유지한다.
+
 ## Stage 4 Fujifilm Korea production batch 003 — 2026-10-06
 
 시작 working tree clean. Inventory/batch001~002/canonical/identity-map/field contracts를대조하고공식Korea현행목록/과거출시월을확인했다. 기존 **X-T5/X-T50/X-S20/X-M5/X100VI**만보강, 신규0/기존5, **바디111/렌즈36/전체147 유지**. 이름/ID/aliases/mount/kind/가격및비대상제품불변. 기존production pipeline으로raw→normalize→validate→사람용diff/조건검토→명시적approval→atomic apply→canonical validation→재적용까지완료했다.
