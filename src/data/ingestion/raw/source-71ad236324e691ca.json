@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+  "documentTitle": "DC-LX100M2 KR current identity / reviewed specification images",
+  "evidenceScope": "Batch004 DC-LX100M2 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+  "accessedAt": "2026-10-07T01:43:15.405Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.weight",
+      "value": null,
+      "unit": "g"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 75,
+      "unit": "mm"
+    },
+    {
+      "field": "Official KR current fixed-lens identity",
+      "value": {
+        "manufacturerModelCode": "DC-LX100M2",
+        "productType": "body",
+        "identity": {
+          "name": "파나소닉 LUMIX LX100 II",
+          "brand": "Panasonic",
+          "model": "LUMIX LX100 II",
+          "series": "LUMIX LX",
+          "aliases": [
+            "DC-LX100M2"
+          ],
+          "mount": null,
+          "kind": "fixed",
+          "bodyStyle": "compact"
+        }
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-lx100-ii",
+      "manufacturerModelCode": "DC-LX100M2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX LX100 II",
+        "brand": "Panasonic",
+        "model": "LUMIX LX100 II",
+        "series": "LUMIX LX",
+        "aliases": [
+          "DC-LX100M2"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.weight",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Two same-product battery/card weight rows conflict:392g versus292g; parent visually inspected both"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+            "reportedClaims": [
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                "valueG": 292,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                "locator": "Mass (Weight)",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                "locator": "質量",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              }
+            ],
+            "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 1,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens24-75mm(35mm환산)"
+          },
+          "conditions": {
+            "basis": "35mm equivalent; multi-aspect still imaging, not video crop"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 2,
+          "rawValue": 75,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens24-75mm(35mm환산)"
+          },
+          "conditions": {
+            "basis": "35mm equivalent; multi-aspect still imaging, not video crop"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        }
+      ],
+      "identityEvidence": {
+        "evidenceRef": 3,
+        "locator": {
+          "section": "KR Lumix current product card and model label",
+          "row": "DC-LX100M2 / DC-LX100M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-07",
+        "reviewer": "codex-panasonic-004-direct-review"
+      }
+    }
+  ],
+  "contentDigest": "906440b788904661f1d1665aa5de0181bca8d3ad00bc1adaed8a1ad9cac4245b",
+  "sourceId": "source-71ad236324e691ca"
+}

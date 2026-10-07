@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+  "documentTitle": "DC-LX100M2 official exact-model specification",
+  "evidenceScope": "Batch004 DC-LX100M2 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+  "accessedAt": "2026-10-07T01:43:15.405Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 17,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.weight",
+      "value": null,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 350,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        115,
+        66.2,
+        64.2
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.min",
+      "value": 10.9,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.max",
+      "value": 34,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 75,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.aperture.wide",
+      "value": 1.7,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.aperture.tele",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "specs.ibis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 2760000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.evf.magnification",
+      "value": 0.7,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1240000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-lx100-ii",
+      "manufacturerModelCode": "DC-LX100M2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX LX100 II",
+        "brand": "Panasonic",
+        "model": "LUMIX LX100 II",
+        "series": "LUMIX LX",
+        "aliases": [
+          "DC-LX100M2"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Camera effective pixels / sensor, not total pixels"
+          },
+          "conditions": {
+            "officialType": "4/3-type",
+            "fixedCamera": true,
+            "physicalMmNotInferred": true,
+            "multiAspect": "4/3-type total sensor versus effective capture area; preserve aspect-dependent framing"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 17,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Camera effective pixels / sensor, not total pixels"
+          },
+          "conditions": {
+            "effective": true,
+            "totalMegapixels": 21.77,
+            "notFullSensorTotal": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+            "officialType": "4/3-type"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Mass392g with battery/card conflicts with KR product-info292g; withhold"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+            "reportedClaims": [
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                "valueG": 292,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                "locator": "Mass (Weight)",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                "locator": "質量",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              }
+            ],
+            "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+            "reportedClaims": [
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                "valueG": 292,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                "locator": "Mass (Weight)",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              },
+              {
+                "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                "locator": "質量",
+                "valueG": 392,
+                "weightBasis": "battery-and-card"
+              }
+            ],
+            "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 350,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            115,
+            66.2,
+            64.2
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Dimensions W x H x D"
+          },
+          "conditions": {
+            "order": [
+              "width",
+              "height",
+              "depth"
+            ],
+            "excludingProtrusions": true,
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 7,
+          "rawValue": 10.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens actualf=10.9 to34mm"
+          },
+          "conditions": {
+            "basis": "Actual optical lens focal length, not35mm equivalent",
+            "opticalZoom": 3.1,
+            "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+            "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 34,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens actualf=10.9 to34mm"
+          },
+          "conditions": {
+            "basis": "Actual optical lens focal length, not35mm equivalent",
+            "opticalZoom": 3.1,
+            "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+            "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 9,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "35mm equivalent[24, 75] underselected still aspect"
+          },
+          "conditions": {
+            "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+            "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+            "mode": "ordinary still picture, not4K PHOTO/video",
+            "physicalLensUnchanged": true,
+            "usedAreaNote": "Multi-aspect camera;17MPeffective versus21.77MPtotal sensor; no derived used-area sizeMm"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 10,
+          "rawValue": 75,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "35mm equivalent[24, 75] underselected still aspect"
+          },
+          "conditions": {
+            "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+            "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+            "mode": "ordinary still picture, not4K PHOTO/video",
+            "physicalLensUnchanged": true,
+            "usedAreaNote": "Multi-aspect camera;17MPeffective versus21.77MPtotal sensor; no derived used-area sizeMm"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 11,
+          "rawValue": 1.7,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Maximum apertureF1.7–F2.8"
+          },
+          "conditions": {
+            "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+            "focalBasis": "actual fixedlens zoom end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 12,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Maximum apertureF1.7–F2.8"
+          },
+          "conditions": {
+            "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+            "focalBasis": "actual fixedlens zoom end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+            "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+            "neverMappedLensOisToBody": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 14,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "0.38inchColorLCDLVF"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 15,
+          "rawValue": 2760000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Viewfinder2760kdots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.magnification",
+          "evidenceRef": 16,
+          "rawValue": 0.7,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "0.7x"
+          },
+          "conditions": {
+            "basis": "35mmequivalent,50mminfinity"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 17,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Exactmodel3inchLCD/touch/dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 18,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Exactmodel3inchLCD/touch/dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 19,
+          "rawValue": 1240000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Exactmodel3inchLCD/touch/dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 20,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Exactmodel3inchLCD/touch/dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "6a34399bfc8f37de54e50710ff7b7af2767cbd98f5ac7e36db288a62c6695ff1",
+  "sourceId": "source-9dca87fb2c2895c0"
+}

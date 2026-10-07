@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+  "documentTitle": "DC-L10 official exact-model specification",
+  "evidenceScope": "Batch004 DC-L10 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+  "accessedAt": "2026-10-07T01:46:15.325Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 20.4,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.weight",
+      "value": 508,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 425,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        127.1,
+        73.9,
+        66.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.min",
+      "value": 10.9,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.max",
+      "value": 34,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 75,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.aperture.wide",
+      "value": 1.7,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.aperture.tele",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "specs.ibis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.max",
+      "value": "5.6K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "specs.burst.maxMechanicalFps",
+      "value": 11,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.evf.magnification",
+      "value": 0.74,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.mechanism",
+      "value": "vari-angle",
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-l10",
+      "manufacturerModelCode": "DC-L10",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX L10",
+        "brand": "Panasonic",
+        "model": "LUMIX L10",
+        "series": "LUMIX L",
+        "aliases": [
+          "DC-L10"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Camera effective pixels / sensor, not total pixels"
+          },
+          "conditions": {
+            "officialType": "4/3-type",
+            "fixedCamera": true,
+            "physicalMmNotInferred": true,
+            "multiAspect": "4/3-type total sensor versus effective capture area; preserve aspect-dependent framing"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20.4,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Camera effective pixels / sensor, not total pixels"
+          },
+          "conditions": {
+            "effective": true,
+            "totalMegapixels": 26.5,
+            "notFullSensorTotal": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+            "officialType": "4/3-type"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 508,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Operating whole-camera weight: battery and SD card included"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 425,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            127.1,
+            73.9,
+            66.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Dimensions W x H x D"
+          },
+          "conditions": {
+            "order": [
+              "width",
+              "height",
+              "depth"
+            ],
+            "excludingProtrusions": true,
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 7,
+          "rawValue": 10.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens actualf=10.9 to34mm"
+          },
+          "conditions": {
+            "basis": "Actual optical lens focal length, not35mm equivalent",
+            "opticalZoom": 3.1,
+            "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 34,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens actualf=10.9 to34mm"
+          },
+          "conditions": {
+            "basis": "Actual optical lens focal length, not35mm equivalent",
+            "opticalZoom": 3.1,
+            "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 9,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "35mm equivalent[24, 75] underselected still aspect"
+          },
+          "conditions": {
+            "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+            "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+            "mode": "ordinary still picture, not4K PHOTO/video",
+            "physicalLensUnchanged": true,
+            "otherAspectRatios": {
+              "1:1": [
+                28,
+                88
+              ]
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 10,
+          "rawValue": 75,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "35mm equivalent[24, 75] underselected still aspect"
+          },
+          "conditions": {
+            "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+            "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+            "mode": "ordinary still picture, not4K PHOTO/video",
+            "physicalLensUnchanged": true,
+            "otherAspectRatios": {
+              "1:1": [
+                28,
+                88
+              ]
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 11,
+          "rawValue": 1.7,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Maximum apertureF1.7–F2.8"
+          },
+          "conditions": {
+            "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+            "focalBasis": "actual fixedlens zoom end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 12,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Maximum apertureF1.7–F2.8"
+          },
+          "conditions": {
+            "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+            "focalBasis": "actual fixedlens zoom end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately",
+            "neverMappedLensOisToBody": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 14,
+          "rawValue": "5.6K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+          },
+          "conditions": {
+            "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "systemFrequency": "59.94Hz(NTSC)",
+            "resolution": [
+              5632,
+              2976
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 300,
+            "mode": "video mode, notphoto-mode direct video button",
+            "normalRecording": true,
+            "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+            "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+            "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+            "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 15,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+          },
+          "conditions": {
+            "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "systemFrequency": "59.94Hz(NTSC)",
+            "resolution": [
+              5632,
+              2976
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 300,
+            "mode": "video mode, notphoto-mode direct video button",
+            "normalRecording": true,
+            "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+            "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+            "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+            "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 16,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+          },
+          "conditions": {
+            "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "systemFrequency": "59.94Hz(NTSC)",
+            "resolution": [
+              5632,
+              2976
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 300,
+            "mode": "video mode, notphoto-mode direct video button",
+            "normalRecording": true,
+            "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+            "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+            "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+            "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 17,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+          },
+          "conditions": {
+            "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "systemFrequency": "59.94Hz(NTSC)",
+            "resolution": [
+              5632,
+              2976
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 300,
+            "mode": "video mode, notphoto-mode direct video button",
+            "normalRecording": true,
+            "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+            "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+            "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+            "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 18,
+          "rawValue": 11,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Burst shooting exactshutter row"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "mode": "H",
+            "focus": "AFS/MF",
+            "mechanicalAfcFps": 9,
+            "preBurst": "SH30PRE separate; notunconditionalbuffer/RAWdepth guarantee"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 19,
+          "rawValue": 30,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Burst shooting exactshutter row"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "mode": "SH30",
+            "focus": "AFS/AFC/MF",
+            "mechanicalAfcFps": 9,
+            "preBurst": "SH30PRE separate; notunconditionalbuffer/RAWdepth guarantee"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 20,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "OLEDLVF"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 21,
+          "rawValue": 2360000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "OLEDLVF2360kdots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.evf.magnification",
+          "evidenceRef": 22,
+          "rawValue": 0.74,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "LVF0.74x"
+          },
+          "conditions": {
+            "basis": "35mm equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 23,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 24,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 25,
+          "rawValue": 1840000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "evidenceRef": 26,
+          "rawValue": "vari-angle",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+          },
+          "conditions": {
+            "manufacturerMechanism": "free-angle",
+            "normalization": "Existing canonical LCD mechanism enum vari-angle; no new enum introduced"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 27,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "d661dfdd00cebef4064ffa8ffdcffe0453c315c7d39ab5609bc156a8e14a4ace",
+  "sourceId": "source-b660ffba88cfd7ad"
+}

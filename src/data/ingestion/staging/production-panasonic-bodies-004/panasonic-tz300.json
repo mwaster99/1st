@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-004",
+  "itemKey": "panasonic-tz300",
+  "manufacturerModelCode": "DC-TZ300",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-TZ300",
+    "productId": "panasonic-tz300",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b49d9454666248e9bcf6",
+    "sourceId": "source-f2ca984756209aa4",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "KR Lumix current product card and model label",
+      "row": "DC-TZ300 / DC-TZ300"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-004-direct-review"
+  },
+  "product": {
+    "id": "panasonic-tz300",
+    "name": "파나소닉 LUMIX TZ300",
+    "brand": "Panasonic",
+    "series": "LUMIX TZ",
+    "model": "LUMIX TZ300",
+    "aliases": [
+      "DC-TZ300"
+    ],
+    "mount": null,
+    "kind": "fixed",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 295,
+      "dimensions": [
+        111.2,
+        66.4,
+        45.2
+      ],
+      "fixedLens": {
+        "aperture": {
+          "tele": 6.4,
+          "wide": 3.3
+        },
+        "equivalentFocal": {
+          "max": 360,
+          "min": 24
+        },
+        "focal": {
+          "max": 132,
+          "min": 8.8
+        }
+      },
+      "ibis": null,
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "1인치",
+        "megapixels": 20.1,
+        "sizeMm": null
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": true,
+        "log": null,
+        "max": "4K 30p"
+      },
+      "weight": 337,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-f2ca984756209aa4",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ300",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-TZ300 KR current identity / reviewed specification images",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T01:43:15.404Z",
+    "evidenceScope": "Batch004 DC-TZ300 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+    "contentDigest": "bb13591b110e456afb3a5deddf2b2aa7f36016d1ceea534f13d2490135a3bce6"
+  },
+  "sources": [
+    {
+      "sourceId": "source-49a188a3f0404711",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCZS300_OperatingInstructions_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-TZ300 official advanced operating instructions",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T01:43:15.405Z",
+      "evidenceScope": "Batch004 DC-TZ300 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+      "contentDigest": "0a12767d789b507d5f48f045434ade3e1bc69bccad92b0d6f71c3b6576fbf00d"
+    },
+    {
+      "sourceId": "source-c1685e1e783af1c8",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-TZ300 official exact-model specification (NTSC TZ300/ZS300 explicitly scoped)",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T01:43:15.405Z",
+      "evidenceScope": "Batch004 DC-TZ300 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+      "contentDigest": "8f70767795b1ee600ad534977c33b2f6d70339ce7b9079589583a09742cad0c3"
+    },
+    {
+      "sourceId": "source-f2ca984756209aa4",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ300",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-TZ300 KR current identity / reviewed specification images",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T01:43:15.404Z",
+      "evidenceScope": "Batch004 DC-TZ300 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+      "contentDigest": "bb13591b110e456afb3a5deddf2b2aa7f36016d1ceea534f13d2490135a3bce6"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.bodyOnlyWeight",
+      "value": 295,
+      "unit": "g",
+      "rawValue": 295,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-e84ceacb28e772cad694"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.dimensions",
+      "value": [
+        111.2,
+        66.4,
+        45.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        111.2,
+        66.4,
+        45.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Dimensions W x H x D"
+      },
+      "conditions": {
+        "order": [
+          "width",
+          "height",
+          "depth"
+        ],
+        "excludingProtrusions": true,
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-4b88823386c80103ec91"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.aperture.tele",
+      "value": 6.4,
+      "unit": null,
+      "rawValue": 6.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Maximum apertureF3.3–F6.4"
+      },
+      "conditions": {
+        "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+        "focalBasis": "actual fixedlens zoom end"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-70508b6b86e79321f27e"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.aperture.wide",
+      "value": 3.3,
+      "unit": null,
+      "rawValue": 3.3,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Maximum apertureF3.3–F6.4"
+      },
+      "conditions": {
+        "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+        "focalBasis": "actual fixedlens zoom end"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-24a21f893e8d37de32a9"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "value": 360,
+      "unit": "mm",
+      "rawValue": 360,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "35mm equivalent[24, 360] underselected still aspect"
+      },
+      "conditions": {
+        "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+        "aspectRatio": "3:2",
+        "mode": "ordinary still picture, not4K PHOTO/video",
+        "physicalLensUnchanged": true,
+        "otherAspectRatios": {
+          "4:3": [
+            26,
+            390
+          ],
+          "16:9": [
+            25,
+            375
+          ],
+          "1:1": [
+            31,
+            465
+          ]
+        },
+        "videoEquivalent": {
+          "4K": [
+            36,
+            540
+          ],
+          "16:9_OIS_off_level_off": [
+            25,
+            375
+          ],
+          "16:9_OIS_on_level_off": [
+            27,
+            405
+          ],
+          "16:9_OIS_on_level_on": [
+            30,
+            450
+          ]
+        },
+        "officialScope": "NA table explicitly headed NTSC TZ300/ZS300; manual specifically includesDC-TZ300GD; not inferredZS200/TZ200 alias"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-680a4c08667334c7bbf3"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "35mm equivalent[24, 360] underselected still aspect"
+      },
+      "conditions": {
+        "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+        "aspectRatio": "3:2",
+        "mode": "ordinary still picture, not4K PHOTO/video",
+        "physicalLensUnchanged": true,
+        "otherAspectRatios": {
+          "4:3": [
+            26,
+            390
+          ],
+          "16:9": [
+            25,
+            375
+          ],
+          "1:1": [
+            31,
+            465
+          ]
+        },
+        "videoEquivalent": {
+          "4K": [
+            36,
+            540
+          ],
+          "16:9_OIS_off_level_off": [
+            25,
+            375
+          ],
+          "16:9_OIS_on_level_off": [
+            27,
+            405
+          ],
+          "16:9_OIS_on_level_on": [
+            30,
+            450
+          ]
+        },
+        "officialScope": "NA table explicitly headed NTSC TZ300/ZS300; manual specifically includesDC-TZ300GD; not inferredZS200/TZ200 alias"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-4a659d934255fe88d535"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.focal.max",
+      "value": 132,
+      "unit": "mm",
+      "rawValue": 132,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Lens actualf=8.8 to132mm"
+      },
+      "conditions": {
+        "basis": "Actual optical lens focal length, not35mm equivalent",
+        "opticalZoom": 15,
+        "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-fdded8e9d0f03c7ed652"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.fixedLens.focal.min",
+      "value": 8.8,
+      "unit": "mm",
+      "rawValue": 8.8,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Lens actualf=8.8 to132mm"
+      },
+      "conditions": {
+        "basis": "Actual optical lens focal length, not35mm equivalent",
+        "opticalZoom": 15,
+        "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-bb934149c805fe20d303"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.ibis",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+        "neverMappedLensOisToBody": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-9e944961b0e69c43ad08"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Exactmodel3inchLCD/touch/dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-23d4643167705fec2f4b"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Exactmodel3inchLCD/touch/dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-1bdac4154a7903be0135"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Exactmodel3inchLCD/touch/dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-d7709b55fdbab591bda7"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Exactmodel3inchLCD/touch/dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-da9dc0869d8209aa790b"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.sensor.format",
+      "value": "1인치",
+      "unit": null,
+      "rawValue": "1인치",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Camera effective pixels / sensor, not total pixels"
+      },
+      "conditions": {
+        "officialType": "1-type",
+        "fixedCamera": true,
+        "physicalMmNotInferred": true,
+        "multiAspect": null
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-45c194e7db6df0596c4f"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.sensor.megapixels",
+      "value": 20.1,
+      "unit": "MP",
+      "rawValue": 20.1,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Camera effective pixels / sensor, not total pixels"
+      },
+      "conditions": {
+        "effective": true,
+        "totalMegapixels": 20.9,
+        "notFullSensorTotal": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-2f883c22428ed861983a"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": "mm",
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+        "officialType": "1-type"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-62bb11acbd4fa91d91ea"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-49a188a3f0404711",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+      },
+      "conditions": {
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "mode": "normal motion picture, not4K PHOTO/highspeed",
+        "singleSessionLimitMinutes": 15,
+        "thermalProtection": "Maystopwhenhot; waitforcooling",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+        "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+        "manualPages": [
+          146,
+          29,
+          134
+        ],
+        "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+        "videoEquivalentFocalMm": [
+          36,
+          540
+        ],
+        "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-75103d09f1a8a4a64661"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-49a188a3f0404711",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+      },
+      "conditions": {
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "mode": "normal motion picture, not4K PHOTO/highspeed",
+        "singleSessionLimitMinutes": 15,
+        "thermalProtection": "Maystopwhenhot; waitforcooling",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+        "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+        "manualPages": [
+          146,
+          29,
+          134
+        ],
+        "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+        "videoEquivalentFocalMm": [
+          36,
+          540
+        ],
+        "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-93e83baca30a649a2de0"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.video.log",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-49a188a3f0404711",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+      },
+      "conditions": {
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "mode": "normal motion picture, not4K PHOTO/highspeed",
+        "singleSessionLimitMinutes": 15,
+        "thermalProtection": "Maystopwhenhot; waitforcooling",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+        "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+        "manualPages": [
+          146,
+          29,
+          134
+        ],
+        "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+        "videoEquivalentFocalMm": [
+          36,
+          540
+        ],
+        "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-95760379ad17632cbfd5"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-49a188a3f0404711",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+      },
+      "conditions": {
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "mode": "normal motion picture, not4K PHOTO/highspeed",
+        "singleSessionLimitMinutes": 15,
+        "thermalProtection": "Maystopwhenhot; waitforcooling",
+        "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+        "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+        "manualPages": [
+          146,
+          29,
+          134
+        ],
+        "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+        "videoEquivalentFocalMm": [
+          36,
+          540
+        ],
+        "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-b10dbbb4c47433e80f55"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.weight",
+      "value": 337,
+      "unit": "g",
+      "rawValue": 337,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Operating whole-camera weight: battery and SD card included"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-f5a4c4dc6e1bc0b58896"
+    },
+    {
+      "productId": "panasonic-tz300",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c1685e1e783af1c8",
+      "locator": {
+        "section": "Official exact-model specification",
+        "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-004-direct-review",
+      "claimId": "claim-be0f14fa62efc123564d"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCL10_OperatingInstructions_ENG.pdf",
+  "documentTitle": "DC-L10 official advanced operating instructions",
+  "evidenceScope": "Batch004 DC-L10 fixed-lens camera only; no separate lens, price or unrelated model. Scoped mode/aspect/operating weight; OIS not IBIS.",
+  "accessedAt": "2026-10-07T01:43:15.404Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "5.6K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-l10",
+      "manufacturerModelCode": "DC-L10",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX L10",
+        "brand": "Panasonic",
+        "model": "LUMIX L10",
+        "series": "LUMIX L",
+        "aliases": [
+          "DC-L10"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "5.6K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Operating instructions RecQuality / limitations",
+            "row": "Complete guidePDF132 RecQuality row;PDF122 photo-mode restrictions; independentdirectreview"
+          },
+          "conditions": {
+            "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "systemFrequency": "59.94Hz(NTSC)",
+            "resolution": [
+              5632,
+              2976
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 300,
+            "mode": "video mode, notphoto-mode direct video button",
+            "normalRecording": true,
+            "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+            "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+            "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+            "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+            "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official exact-model specification",
+            "row": "PDF749 recordingmediafamilyonly"
+          },
+          "conditions": {
+            "recordingMedia": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "physicalCount": "UNKNOWN fromreviewed spec; no numericalslot count inferred"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-004-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "36f4bfaba7cfffc3f9acabcb37f29d9483723b7eb4dab8ea695838028f409a58",
+  "sourceId": "source-1f56ffbcff292c00"
+}

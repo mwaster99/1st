@@ -1,0 +1,3493 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-004",
+  "canonicalBaselineDigest": "19d37989beccef9930e6af2130b0e4bab3e3eeeb9d487f9e90ba989b8ad6ea71",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-004",
+      "productId": "panasonic-l10",
+      "productName": "파나소닉 LUMIX L10",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-l10",
+        "name": "파나소닉 LUMIX L10",
+        "brand": "Panasonic",
+        "series": "LUMIX L",
+        "model": "LUMIX L10",
+        "aliases": [
+          "DC-L10"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "마이크로포서드",
+            "megapixels": 20.4,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 508,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 425,
+          "dimensions": [
+            127.1,
+            73.9,
+            66.9
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "5.6K 59.94p",
+            "bitDepth": 10,
+            "log": true,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "magnification": 0.74,
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "mechanism": "vari-angle",
+            "present": true,
+            "resolutionDots": 1840000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": 30,
+            "maxMechanicalFps": 11
+          },
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2.8,
+              "wide": 1.7
+            },
+            "equivalentFocal": {
+              "max": 75,
+              "min": 24
+            },
+            "focal": {
+              "max": 34,
+              "min": 10.9
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCL10",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-07",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-602c266ebbd29ee8",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-be4d978c1e8d461d3e10",
+          "sourceId": "source-602c266ebbd29ee8",
+          "checkedAt": "2026-10-07"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-be4d978c1e8d461d3e10",
+        "sourceId": "source-602c266ebbd29ee8",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "KR Lumix current product card and model label",
+          "row": "DC-L10 / DC-L10"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-07",
+        "reviewer": "codex-panasonic-004-direct-review",
+        "source": {
+          "sourceId": "source-602c266ebbd29ee8",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCL10",
+          "documentTitle": "DC-L10 KR current identity / reviewed specification images",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 425,
+          "unit": "g",
+          "claimId": "claim-e5831e46bd5d3c063956",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+              "approximate": true,
+              "hotShoeCover": "included",
+              "bodyCap": "excluded"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 30,
+          "unit": "fps",
+          "claimId": "claim-0fee4cbccb0211626361",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Burst shooting exactshutter row"
+            },
+            "conditions": {
+              "shutter": "electronic",
+              "mode": "SH30",
+              "focus": "AFS/AFC/MF",
+              "mechanicalAfcFps": 9,
+              "preBurst": "SH30PRE separate; notunconditionalbuffer/RAWdepth guarantee"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 11,
+          "unit": "fps",
+          "claimId": "claim-5fe7aac92e7fb10c11bf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Burst shooting exactshutter row"
+            },
+            "conditions": {
+              "shutter": "mechanical",
+              "mode": "H",
+              "focus": "AFS/MF",
+              "mechanicalAfcFps": 9,
+              "preBurst": "SH30PRE separate; notunconditionalbuffer/RAWdepth guarantee"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-ad0c2b9d9d824f7b6006",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1f56ffbcff292c00",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCL10_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF749 recordingmediafamilyonly"
+            },
+            "conditions": {
+              "recordingMedia": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "physicalCount": "UNKNOWN fromreviewed spec; no numericalslot count inferred"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            127.1,
+            73.9,
+            66.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-147358f55911908616fa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Dimensions W x H x D"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "excludingProtrusions": true,
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.74,
+          "unit": null,
+          "claimId": "claim-9173db298be0d9e71c00",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "LVF0.74x"
+            },
+            "conditions": {
+              "basis": "35mm equivalent"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4068c6a3a60e5d841b20",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "OLEDLVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2360000,
+          "unit": "dots",
+          "claimId": "claim-c5cc3f1b436a07dd51eb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "OLEDLVF2360kdots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-650229e52f75ddcb7a46",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.7–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.7,
+          "unit": null,
+          "claimId": "claim-d71ceb2a7d46a8eaeddf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.7–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 75,
+          "unit": "mm",
+          "claimId": "claim-728bdfa1340da6e26bd0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 75] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "1:1": [
+                  28,
+                  88
+                ]
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-0c57adf906e6aa34cc31",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 75] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "1:1": [
+                  28,
+                  88
+                ]
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 34,
+          "unit": "mm",
+          "claimId": "claim-cf243f76e1576af97b73",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=10.9 to34mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3.1,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10.9,
+          "unit": "mm",
+          "claimId": "claim-d6971eb700a41b8e3c42",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=10.9 to34mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3.1,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-4859ca879b63a3327bf8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately",
+              "neverMappedLensOisToBody": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.mechanism",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "vari-angle",
+          "unit": null,
+          "claimId": "claim-b7e0b8fdd727ce06d5c0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+            },
+            "conditions": {
+              "manufacturerMechanism": "free-angle",
+              "normalization": "Existing canonical LCD mechanism enum vari-angle; no new enum introduced"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-fb026360ae30ac6dec1d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1840000,
+          "unit": "dots",
+          "claimId": "claim-4feaee62c538093d8f05",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-a4c5d6f9a175ddd4ac09",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-0cd8f798ce035810df67",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Rear3inchfree-angleLCD1840kdotsstatictouch"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "마이크로포서드",
+          "unit": null,
+          "claimId": "claim-2304a3a7d4e741f0cbc2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "officialType": "4/3-type",
+              "fixedCamera": true,
+              "physicalMmNotInferred": true,
+              "multiAspect": "4/3-type total sensor versus effective capture area; preserve aspect-dependent framing"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.4,
+          "unit": "MP",
+          "claimId": "claim-22156262b6be0e253d46",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "effective": true,
+              "totalMegapixels": 26.5,
+              "notFullSensorTotal": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-ee9b320123ef046fcd22",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+              "officialType": "4/3-type"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-4a7c984db72207e5ee0d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+            },
+            "conditions": {
+              "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+              "frameRate": 59.94,
+              "frameRateLabel": "59.94p",
+              "systemFrequency": "59.94Hz(NTSC)",
+              "resolution": [
+                5632,
+                2976
+              ],
+              "aspectRatio": "17:9",
+              "imageArea": "FULL",
+              "container": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitRateMbps": 300,
+              "mode": "video mode, notphoto-mode direct video button",
+              "normalRecording": true,
+              "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+              "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+              "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+              "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-855af3c45fe9e5865089",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+            },
+            "conditions": {
+              "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+              "frameRate": 59.94,
+              "frameRateLabel": "59.94p",
+              "systemFrequency": "59.94Hz(NTSC)",
+              "resolution": [
+                5632,
+                2976
+              ],
+              "aspectRatio": "17:9",
+              "imageArea": "FULL",
+              "container": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitRateMbps": 300,
+              "mode": "video mode, notphoto-mode direct video button",
+              "normalRecording": true,
+              "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+              "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+              "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+              "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-7ba3dbd188c6f40d14b0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+            },
+            "conditions": {
+              "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+              "frameRate": 59.94,
+              "frameRateLabel": "59.94p",
+              "systemFrequency": "59.94Hz(NTSC)",
+              "resolution": [
+                5632,
+                2976
+              ],
+              "aspectRatio": "17:9",
+              "imageArea": "FULL",
+              "container": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitRateMbps": 300,
+              "mode": "video mode, notphoto-mode direct video button",
+              "normalRecording": true,
+              "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+              "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+              "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+              "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "5.6K 59.94p",
+          "unit": null,
+          "claimId": "claim-fc409b9fe22179958735",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1f56ffbcff292c00",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCL10_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Operating instructions RecQuality / limitations",
+              "row": "Complete guidePDF132 RecQuality row;PDF122 photo-mode restrictions; independentdirectreview"
+            },
+            "conditions": {
+              "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+              "frameRate": 59.94,
+              "frameRateLabel": "59.94p",
+              "systemFrequency": "59.94Hz(NTSC)",
+              "resolution": [
+                5632,
+                2976
+              ],
+              "aspectRatio": "17:9",
+              "imageArea": "FULL",
+              "container": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitRateMbps": 300,
+              "mode": "video mode, notphoto-mode direct video button",
+              "normalRecording": true,
+              "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+              "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+              "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+              "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "5.6K 59.94p",
+          "unit": null,
+          "claimId": "claim-b4a273cd0a89b83abfa0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "MOV59.94Hz /5.6K5632x2976 /59.94p /42010bit300Mbps; footnote4FULL"
+            },
+            "conditions": {
+              "representative": "highest-width normal motion-picture mode in reviewed table, not S&Q sensor fps",
+              "frameRate": 59.94,
+              "frameRateLabel": "59.94p",
+              "systemFrequency": "59.94Hz(NTSC)",
+              "resolution": [
+                5632,
+                2976
+              ],
+              "aspectRatio": "17:9",
+              "imageArea": "FULL",
+              "container": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitRateMbps": 300,
+              "mode": "video mode, notphoto-mode direct video button",
+              "normalRecording": true,
+              "officialFootnote": "NA(*4) FULL; manual122 prohibits5.6K/5.2K/4.4K MOV inphoto mode",
+              "otherModes": "5.2K29.97p5184x3888 4:3 FULL;4.4K59.94p4352x3264 PIXEL/PIXEL;C4K119.88p separate, notall5.6K119.88p",
+              "thermalProtection": "Heat can stop recording; C4K120p5/6min andC4K60p10min testedat23C Standard/High are othermode tests, not5.6K limit",
+              "fileSplit": "MOV600Mbpsorless192GB /72Mbpsormore3h4mfile split; notunconditional continuous capacity",
+              "lensStabilization": "POWER O.I.S. optical lens stabilization; electronic video stabilization separately"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 508,
+          "unit": "g",
+          "claimId": "claim-3f7ce4c48cabcaa769e3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Operating whole-camera weight: battery and SD card included"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true,
+              "hotShoeCover": "included",
+              "bodyCap": "excluded"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-3a61780dbc8ad94e4fc6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b660ffba88cfd7ad",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-l10/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true,
+              "hotShoeCover": "included",
+              "bodyCap": "excluded"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-004",
+      "productId": "panasonic-tz300",
+      "productName": "파나소닉 LUMIX TZ300",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-tz300",
+        "name": "파나소닉 LUMIX TZ300",
+        "brand": "Panasonic",
+        "series": "LUMIX TZ",
+        "model": "LUMIX TZ300",
+        "aliases": [
+          "DC-TZ300"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1인치",
+            "megapixels": 20.1,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 337,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 295,
+          "dimensions": [
+            111.2,
+            66.4,
+            45.2
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "present": true,
+            "resolutionDots": 1840000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 6.4,
+              "wide": 3.3
+            },
+            "equivalentFocal": {
+              "max": 360,
+              "min": 24
+            },
+            "focal": {
+              "max": 132,
+              "min": 8.8
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ300",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-07",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-f2ca984756209aa4",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-b49d9454666248e9bcf6",
+          "sourceId": "source-f2ca984756209aa4",
+          "checkedAt": "2026-10-07"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-b49d9454666248e9bcf6",
+        "sourceId": "source-f2ca984756209aa4",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "KR Lumix current product card and model label",
+          "row": "DC-TZ300 / DC-TZ300"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-07",
+        "reviewer": "codex-panasonic-004-direct-review",
+        "source": {
+          "sourceId": "source-f2ca984756209aa4",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DCTZ300",
+          "documentTitle": "DC-TZ300 KR current identity / reviewed specification images",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 295,
+          "unit": "g",
+          "claimId": "claim-e84ceacb28e772cad694",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            111.2,
+            66.4,
+            45.2
+          ],
+          "unit": "mm",
+          "claimId": "claim-4b88823386c80103ec91",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Dimensions W x H x D"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "excludingProtrusions": true,
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.4,
+          "unit": null,
+          "claimId": "claim-70508b6b86e79321f27e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF3.3–F6.4"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3.3,
+          "unit": null,
+          "claimId": "claim-24a21f893e8d37de32a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF3.3–F6.4"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 360,
+          "unit": "mm",
+          "claimId": "claim-680a4c08667334c7bbf3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 360] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "3:2",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "4:3": [
+                  26,
+                  390
+                ],
+                "16:9": [
+                  25,
+                  375
+                ],
+                "1:1": [
+                  31,
+                  465
+                ]
+              },
+              "videoEquivalent": {
+                "4K": [
+                  36,
+                  540
+                ],
+                "16:9_OIS_off_level_off": [
+                  25,
+                  375
+                ],
+                "16:9_OIS_on_level_off": [
+                  27,
+                  405
+                ],
+                "16:9_OIS_on_level_on": [
+                  30,
+                  450
+                ]
+              },
+              "officialScope": "NA table explicitly headed NTSC TZ300/ZS300; manual specifically includesDC-TZ300GD; not inferredZS200/TZ200 alias"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-4a659d934255fe88d535",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 360] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "3:2",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "4:3": [
+                  26,
+                  390
+                ],
+                "16:9": [
+                  25,
+                  375
+                ],
+                "1:1": [
+                  31,
+                  465
+                ]
+              },
+              "videoEquivalent": {
+                "4K": [
+                  36,
+                  540
+                ],
+                "16:9_OIS_off_level_off": [
+                  25,
+                  375
+                ],
+                "16:9_OIS_on_level_off": [
+                  27,
+                  405
+                ],
+                "16:9_OIS_on_level_on": [
+                  30,
+                  450
+                ]
+              },
+              "officialScope": "NA table explicitly headed NTSC TZ300/ZS300; manual specifically includesDC-TZ300GD; not inferredZS200/TZ200 alias"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 132,
+          "unit": "mm",
+          "claimId": "claim-fdded8e9d0f03c7ed652",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=8.8 to132mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 15,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-bb934149c805fe20d303",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=8.8 to132mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 15,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-9e944961b0e69c43ad08",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+              "neverMappedLensOisToBody": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-23d4643167705fec2f4b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1840000,
+          "unit": "dots",
+          "claimId": "claim-1bdac4154a7903be0135",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-d7709b55fdbab591bda7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-da9dc0869d8209aa790b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-45c194e7db6df0596c4f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "officialType": "1-type",
+              "fixedCamera": true,
+              "physicalMmNotInferred": true,
+              "multiAspect": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-2f883c22428ed861983a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "effective": true,
+              "totalMegapixels": 20.9,
+              "notFullSensorTotal": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-62bb11acbd4fa91d91ea",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+              "officialType": "1-type"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-75103d09f1a8a4a64661",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-49a188a3f0404711",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCZS300_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                146,
+                29,
+                134
+              ],
+              "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+              "videoEquivalentFocalMm": [
+                36,
+                540
+              ],
+              "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-93e83baca30a649a2de0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-49a188a3f0404711",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCZS300_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                146,
+                29,
+                134
+              ],
+              "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+              "videoEquivalentFocalMm": [
+                36,
+                540
+              ],
+              "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-95760379ad17632cbfd5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-49a188a3f0404711",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCZS300_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                146,
+                29,
+                134
+              ],
+              "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+              "videoEquivalentFocalMm": [
+                36,
+                540
+              ],
+              "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 30p",
+          "unit": null,
+          "claimId": "claim-b10dbbb4c47433e80f55",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-49a188a3f0404711",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2026/05/DCZS300_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF146 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[29, 134]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "POWER O.I.S. /5-axis HYBRID O.I.S.+ video except4K; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                146,
+                29,
+                134
+              ],
+              "modelScope": "DC-TZ300GD explicit NTSC regional list inmanual146, notonlyZS300",
+              "videoEquivalentFocalMm": [
+                36,
+                540
+              ],
+              "otherModes": "FHD120 sensoroutputhighspeed separate; 4K24phelp sensor25fps typo notused; manual146 says24fps"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 337,
+          "unit": "g",
+          "claimId": "claim-f5a4c4dc6e1bc0b58896",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Operating whole-camera weight: battery and SD card included"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-be0f14fa62efc123564d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c1685e1e783af1c8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-zs300/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-004",
+      "productId": "panasonic-lx100-ii",
+      "productName": "파나소닉 LUMIX LX100 II",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-lx100-ii",
+        "name": "파나소닉 LUMIX LX100 II",
+        "brand": "Panasonic",
+        "series": "LUMIX LX",
+        "model": "LUMIX LX100 II",
+        "aliases": [
+          "DC-LX100M2"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "마이크로포서드",
+            "megapixels": 17,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 350,
+          "dimensions": [
+            115,
+            66.2,
+            64.2
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "magnification": 0.7,
+            "present": true,
+            "resolutionDots": 2760000
+          },
+          "lcd": {
+            "present": true,
+            "resolutionDots": 1240000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2.8,
+              "wide": 1.7
+            },
+            "equivalentFocal": {
+              "max": 75,
+              "min": 24
+            },
+            "focal": {
+              "max": 34,
+              "min": 10.9
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-07",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-71ad236324e691ca",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-b0155b6b6a028b598e0b",
+          "sourceId": "source-71ad236324e691ca",
+          "checkedAt": "2026-10-07"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-b0155b6b6a028b598e0b",
+        "sourceId": "source-71ad236324e691ca",
+        "evidenceRef": 3,
+        "locator": {
+          "section": "KR Lumix current product card and model label",
+          "row": "DC-LX100M2 / DC-LX100M2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-07",
+        "reviewer": "codex-panasonic-004-direct-review",
+        "source": {
+          "sourceId": "source-71ad236324e691ca",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+          "documentTitle": "DC-LX100M2 KR current identity / reviewed specification images",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 350,
+          "unit": "g",
+          "claimId": "claim-8fc8c9f74a8b588a22e8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            115,
+            66.2,
+            64.2
+          ],
+          "unit": "mm",
+          "claimId": "claim-2751303970a5c55cf7cb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Dimensions W x H x D"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "excludingProtrusions": true,
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.magnification",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.7,
+          "unit": null,
+          "claimId": "claim-9dc2978b316889f4520c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "0.7x"
+            },
+            "conditions": {
+              "basis": "35mmequivalent,50mminfinity"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-10b2903b095b788c9d76",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "0.38inchColorLCDLVF"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2760000,
+          "unit": "dots",
+          "claimId": "claim-378f13e930b1f101a88b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Viewfinder2760kdots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-8c8e99a586f6c52962bd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.7–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.7,
+          "unit": null,
+          "claimId": "claim-b835f0ecd609f77cccfc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.7–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 75,
+          "unit": "mm",
+          "claimId": "claim-b19e12d66d5b8f30e256",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-71ad236324e691ca",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens24-75mm(35mm환산)"
+            },
+            "conditions": {
+              "basis": "35mm equivalent; multi-aspect still imaging, not video crop"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 75,
+          "unit": "mm",
+          "claimId": "claim-03e7d858c7eb9d5d35d7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 75] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "usedAreaNote": "Multi-aspect camera;17MPeffective versus21.77MPtotal sensor; no derived used-area sizeMm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-0f6671490512a1fee122",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-71ad236324e691ca",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens24-75mm(35mm환산)"
+            },
+            "conditions": {
+              "basis": "35mm equivalent; multi-aspect still imaging, not video crop"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-3a6891277c5b03e2d5ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 75] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "4:3 /3:2 /16:9 multi-aspect",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "usedAreaNote": "Multi-aspect camera;17MPeffective versus21.77MPtotal sensor; no derived used-area sizeMm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 34,
+          "unit": "mm",
+          "claimId": "claim-060f3bf245e5bbf3448b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=10.9 to34mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3.1,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10.9,
+          "unit": "mm",
+          "claimId": "claim-3a185411019db5aed5a6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=10.9 to34mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3.1,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-c5ceff256d81ec780c1c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+              "neverMappedLensOisToBody": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-432b2c5482d9e75534a8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1240000,
+          "unit": "dots",
+          "claimId": "claim-c350f1f38f00df40b69f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-a5b24a3df3547cb37d08",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-2bf1fe25a57597a16228",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "마이크로포서드",
+          "unit": null,
+          "claimId": "claim-eba705f53c17af4b8784",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "officialType": "4/3-type",
+              "fixedCamera": true,
+              "physicalMmNotInferred": true,
+              "multiAspect": "4/3-type total sensor versus effective capture area; preserve aspect-dependent framing"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 17,
+          "unit": "MP",
+          "claimId": "claim-8257a078a88cd4907fe1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Camera effective pixels / sensor, not total pixels"
+            },
+            "conditions": {
+              "effective": true,
+              "totalMegapixels": 21.77,
+              "notFullSensorTotal": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-e78c345cfabfee32cf9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+              "officialType": "4/3-type"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-96b32339501efcda0543",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c2f8d69f08bce6a6",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCLX100M2_DVQP1769ZA_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF158 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[159, 31]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                158,
+                159,
+                31
+              ],
+              "otherModes": "4KPHOTO30fps notordinaryburst; nointernalbitdepthfromRAWstill",
+              "cropEvidence": "PDF159 explicitly4Kangleofviewnarrower thanothermotionpicture sizes"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1ba1d22c347974d91e92",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c2f8d69f08bce6a6",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCLX100M2_DVQP1769ZA_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF158 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[159, 31]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                158,
+                159,
+                31
+              ],
+              "otherModes": "4KPHOTO30fps notordinaryburst; nointernalbitdepthfromRAWstill",
+              "cropEvidence": "PDF159 explicitly4Kangleofviewnarrower thanothermotionpicture sizes"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-e10d3b461811a4a6e6de",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c2f8d69f08bce6a6",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCLX100M2_DVQP1769ZA_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF158 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[159, 31]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                158,
+                159,
+                31
+              ],
+              "otherModes": "4KPHOTO30fps notordinaryburst; nointernalbitdepthfromRAWstill",
+              "cropEvidence": "PDF159 explicitly4Kangleofviewnarrower thanothermotionpicture sizes"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 30p",
+          "unit": null,
+          "claimId": "claim-ca0dd014f8bbf93a14c5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c2f8d69f08bce6a6",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCLX100M2_DVQP1769ZA_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF158 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[159, 31]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "Optical method /lens optical stabilizer; no body sensor-shift evidence",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                158,
+                159,
+                31
+              ],
+              "otherModes": "4KPHOTO30fps notordinaryburst; nointernalbitdepthfromRAWstill",
+              "cropEvidence": "PDF159 explicitly4Kangleofviewnarrower thanothermotionpicture sizes"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-c11f108ba7f3a54df0e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-71ad236324e691ca",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Two same-product battery/card weight rows conflict:392g versus292g; parent visually inspected both"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+              "reportedClaims": [
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                  "valueG": 292,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                  "locator": "Mass (Weight)",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                  "locator": "質量",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                }
+              ],
+              "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-c2fd615b801058432f8b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Mass392g with battery/card conflicts with KR product-info292g; withhold"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+              "reportedClaims": [
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                  "valueG": 292,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                  "locator": "Mass (Weight)",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                  "locator": "質量",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                }
+              ],
+              "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-3b305083e73952736779",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9dca87fb2c2895c0",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN / withhold unresolved operating weight; never silently choose one official claim",
+              "reportedClaims": [
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image8179a6f0b400bf59720efc5179a8c5c16a29889b.png weight row",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DC10001",
+                  "locator": "image2cf6bf4b2e95985c21036e9558c1d0268cbf5138.png product-info weight row",
+                  "valueG": 292,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-point-shoot-dc-lx100m2/",
+                  "locator": "Mass (Weight)",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                },
+                {
+                  "url": "https://panasonic.jp/dc/products/DC-LX100M2/spec.html",
+                  "locator": "質量",
+                  "valueG": 392,
+                  "weightBasis": "battery-and-card"
+                }
+              ],
+              "resolution": "Pending manufacturer correction / verified KR scope reconciliation; body-only350g is separate and not disputed in reviewed material"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-004",
+      "productId": "panasonic-lx10",
+      "productName": "파나소닉 LUMIX LX10",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-lx10",
+        "name": "파나소닉 LUMIX LX10",
+        "brand": "Panasonic",
+        "series": "LUMIX LX",
+        "model": "LUMIX LX10",
+        "aliases": [
+          "DMC-LX10",
+          "DMC-LX10GD"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1인치",
+            "megapixels": 20.1,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 310,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 280,
+          "dimensions": [
+            105.5,
+            60,
+            42
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": true
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": false
+          },
+          "lcd": {
+            "present": true,
+            "resolutionDots": 1040000,
+            "sizeInches": 3,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 2.8,
+              "wide": 1.4
+            },
+            "equivalentFocal": {
+              "max": 72,
+              "min": 24
+            },
+            "focal": {
+              "max": 26.4,
+              "min": 8.8
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-07",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-0d8cdca20665aa86",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-7c5e2f8d791742bf8025",
+          "sourceId": "source-0d8cdca20665aa86",
+          "checkedAt": "2026-10-07"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-7c5e2f8d791742bf8025",
+        "sourceId": "source-0d8cdca20665aa86",
+        "evidenceRef": 19,
+        "locator": {
+          "section": "KR Lumix current product card and model label",
+          "row": "DMC-LX10GD / DMC-LX10"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-07",
+        "reviewer": "codex-panasonic-004-direct-review",
+        "source": {
+          "sourceId": "source-0d8cdca20665aa86",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+          "documentTitle": "DMC-LX10GD KR current identity / reviewed specification images",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 280,
+          "unit": "g",
+          "claimId": "claim-1dfb54837e13bfbba71a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Fixed-camera weight excluding battery and card; built-in lens remains included"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "whole fixed-lens camera including integral lens; excludes battery and card",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            105.5,
+            60,
+            42
+          ],
+          "unit": "mm",
+          "claimId": "claim-2f83574fef63a21ba5db",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Dimensions W x H x D"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "excludingProtrusions": true,
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-6d367d27e430dc6e92c8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "KRspec75d0b3c.. 뷰파인더 미지원"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-6064c5350555add54a00",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.4–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at tele end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.4,
+          "unit": null,
+          "claimId": "claim-78f4b831383228a8051d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Maximum apertureF1.4–F2.8"
+            },
+            "conditions": {
+              "meaning": "maximum aperture at wide end, notminimum/stopped-downF16",
+              "focalBasis": "actual fixedlens zoom end"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-054b3083a12ddb2dc28f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 72] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "3:2",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "4:3": [
+                  26,
+                  78
+                ],
+                "16:9": [
+                  25,
+                  75
+                ],
+                "1:1": [
+                  31,
+                  93
+                ]
+              },
+              "videoEquivalent": {
+                "4K": [
+                  36,
+                  108
+                ],
+                "16:9_OIS_off_level_off": [
+                  25,
+                  75
+                ],
+                "16:9_OIS_on_level_off": [
+                  27,
+                  81
+                ],
+                "16:9_OIS_on_level_on": [
+                  30,
+                  90
+                ]
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-73bfae9872e3d8ac8212",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "35mm equivalent[24, 72] underselected still aspect"
+            },
+            "conditions": {
+              "basis": "35mm-equivalent still-image angle of view, not actual focal length",
+              "aspectRatio": "3:2",
+              "mode": "ordinary still picture, not4K PHOTO/video",
+              "physicalLensUnchanged": true,
+              "otherAspectRatios": {
+                "4:3": [
+                  26,
+                  78
+                ],
+                "16:9": [
+                  25,
+                  75
+                ],
+                "1:1": [
+                  31,
+                  93
+                ]
+              },
+              "videoEquivalent": {
+                "4K": [
+                  36,
+                  108
+                ],
+                "16:9_OIS_off_level_off": [
+                  25,
+                  75
+                ],
+                "16:9_OIS_on_level_off": [
+                  27,
+                  81
+                ],
+                "16:9_OIS_on_level_on": [
+                  30,
+                  90
+                ]
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 26.4,
+          "unit": "mm",
+          "claimId": "claim-6a3e47a5495c3c9309da",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=8.8 to26.4mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-7c609d5e40ef96079690",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens actualf=8.8 to26.4mm"
+            },
+            "conditions": {
+              "basis": "Actual optical lens focal length, not35mm equivalent",
+              "opticalZoom": 3,
+              "opticalZoomDisposition": "Metadata only; unsupported fixedLens opticalZoom canonical field",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-bdbcb535946f5220bdf3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Lens optical orhybridIS is notdirect proof ofbodyIBIS"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN body/sensorIBIS; reviewed claims support lensOIS or hybrid/electronic, notsensor shift",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed",
+              "neverMappedLensOisToBody": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.present",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1ef29e80f4a7cda96cb2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1040000,
+          "unit": "dots",
+          "claimId": "claim-6d5a5ae72f49c45c3e19",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3,
+          "unit": "in",
+          "claimId": "claim-5bc6e583153d4fbb86b5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd.touch",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4e7c137e6db433424200",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Exactmodel3inchLCD/touch/dots"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1인치",
+          "unit": null,
+          "claimId": "claim-3af3dbeb997a1fea7039",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "KR specification image75d0b3c95a05055bebe0a36b1da420aa731acec0.png"
+            },
+            "conditions": {
+              "officialType": "1-type",
+              "fixedCamera": true,
+              "physicalMmNotInferred": true,
+              "multiAspect": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20.1,
+          "unit": "MP",
+          "claimId": "claim-22b3d9cba5b51969fefe",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "KR specification image75d0b3c95a05055bebe0a36b1da420aa731acec0.png"
+            },
+            "conditions": {
+              "effective": true,
+              "totalMegapixels": 20.9,
+              "notFullSensorTotal": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-c39f8d677ae6769d17dc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Physical sensor dimensions not provided in reviewed exact-model spec"
+            },
+            "conditions": {
+              "disposition": "UNKNOWN physical mm not directly stated; no inference from marketing type or effective area",
+              "officialType": "1-type"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-b58bb95c4d3a1c45b54d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-24a6a2031cbb5fb7",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCLX10_SQW0721_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF151 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[27, 139]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                151,
+                27,
+                139
+              ],
+              "videoEquivalentFocalMm": [
+                36,
+                108
+              ],
+              "otherModes": "FHD120sensoroutputhighspeed separate, hybridIS notavailable4K/highspeed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-216f8ac14868856c277b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-24a6a2031cbb5fb7",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCLX10_SQW0721_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF151 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[27, 139]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                151,
+                27,
+                139
+              ],
+              "videoEquivalentFocalMm": [
+                36,
+                108
+              ],
+              "otherModes": "FHD120sensoroutputhighspeed separate, hybridIS notavailable4K/highspeed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-3af132b884738bcb2298",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-24a6a2031cbb5fb7",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCLX10_SQW0721_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF151 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[27, 139]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                151,
+                27,
+                139
+              ],
+              "videoEquivalentFocalMm": [
+                36,
+                108
+              ],
+              "otherModes": "FHD120sensoroutputhighspeed separate, hybridIS notavailable4K/highspeed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 30p",
+          "unit": null,
+          "claimId": "claim-fb68e5fd8ae64c0ce1dd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-24a6a2031cbb5fb7",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCLX10_SQW0721_ENG.pdf",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "PDF151 MP4/4K100M30p3840x2160; conditionalcroplimitrefs[27, 139]"
+            },
+            "conditions": {
+              "frameRate": null,
+              "frameRateLabel": "30p",
+              "actualFractionalRateDisposition": "UNKNOWN; officialinteger30p/30fps preserved, no29.97inference",
+              "resolution": [
+                3840,
+                2160
+              ],
+              "aspectRatio": "16:9",
+              "container": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitDepth": null,
+              "bitRateMbps": 100,
+              "mode": "normal motion picture, not4K PHOTO/highspeed",
+              "singleSessionLimitMinutes": 15,
+              "thermalProtection": "Maystopwhenhot; waitforcooling",
+              "lensStabilization": "5-axis HYBRID O.I.S.+ lens optical plus electronic video correction except4K/high-speed",
+              "imageArea": "4Kangleofviewnarrower thanordinary still/FHD",
+              "manualPages": [
+                151,
+                27,
+                139
+              ],
+              "videoEquivalentFocalMm": [
+                36,
+                108
+              ],
+              "otherModes": "FHD120sensoroutputhighspeed separate, hybridIS notavailable4K/highspeed"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 310,
+          "unit": "g",
+          "claimId": "claim-4d24e3d3fa81fe090756",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Operating whole-camera weight: battery and SD card included"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-c7dc20ddb6c3eba5979f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0d8cdca20665aa86",
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/Lumix/DMC10002",
+            "locator": {
+              "section": "Official exact-model specification",
+              "row": "Selected operating basis; UNKNOWN when weight withheld for conflict"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "whole fixed-lens camera including integral lens, battery and SD card; no separate lens weight",
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

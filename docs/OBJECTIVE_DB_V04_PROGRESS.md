@@ -1,5 +1,22 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic/LUMIX compact production batch 004 — 2026-10-07
+
+완료. Clean baseline `c472892c75c35bc328c5fd02a6e4a782475d28a3`에서 한국 공식 compact gallery/API **5카드/5identity**를 다시 조회했다. 이전 TZ99 production001을 제외하고 지정된 **DC-L10/TZ300/LX100II/LX10** 잔여4개 모두 처리. **신규4/기존보강0**, canonical **131/36/167 →135/36/171**. DC-L10은 공식2026-06-29 출시/매뉴얼 Mount Fixed와 과거 DMC-L10 렌즈 호환 자료를 대조해 별개 신규 identity로 확정했다. 모든 kind fixed/mount null/specs.fixedLens; lens36개와 비대상 body131개 불변, 내장 렌즈 상품·무게 이중계산 없음.
+
+공식11 raw(제품별3/3/3/2), observations103=known85/UNKNOWN18, canonical verified fieldEvidence82경로. 제품별 독립 worker →raw-helper 실제UTC →normalize →default strict validate4/4 →사람용diff 직접 검토 →명시CLIapproval →atomic apply →canonical validation →실제 재적용 **already-canonicalized/canonicalMatches:true** 완료. Focal/equivalent 각각mm; 누락UNIT_REQUIRED/unsupportedUNSUPPORTED_UNIT 차단, UNKNOWN fresh raw normalize+validate 통과. Archive compatibility 사용 없음. Weight known이면 battery-and-card/body-only, IBIS는 전4개 UNKNOWN이며 lensOIS/hybrid를 sensorIBIS로 승격하지 않았다. physical sizeMm도 전4개UNKNOWN, type/사용면적에서 추정 없음.
+
+**LX100II 운영무게392g vs292g 실제 공식 충돌은 UNKNOWN으로 보류**했다. 같은KR페이지 사양/제품정보 이미지와 NA/JP값·URL·기준을 raw conditions에 보존하고 known conflict trial은 CONFLICTING_CLAIM_VALUES로 차단. Body-only350g은 별개 공식 측정 기준이다. TZ300 대안4K24p sensor-output25vs24 모순은 승격하지 않고 조건에 기록; 대표4K30p는 일치. LX10 URL이 LX100으로 redirect되는 자료는 전체 거절, ownKR이미지/매뉴얼만 사용했다. L10 free-angle LCD가 approval에서 canonical enum 오류로 차단되어 미승격draft를 기존vari-angle로 정규화하고 전체게이트/승인을 다시 진행; 제조사원문조건 보존. Ingestion LCD enum 검증 차이는 후속 소규모 validator 후보이며 이번 pipeline 코드는 변경하지 않았다.
+
+L10 selected5.6K59.94p/MOV/FULL/10bitHEVC, photo-mode제한/대안4.4KPIXEL·PIXEL/C4K119.88p/thermal·file분할 조건 보존. 나머지3개4K30p integer label 유지/15분/crop·mode 조건 보존. Actual/equivalent/aspect/video환산, 최대aperture와 최소F16, optical zoom3.1/15/3.1/3xmetadata, optical/electronic/hybrid 구분. 기존 video.max 조건소비 및 fractional parser 한계는 수정하지 않았다.
+
+Worker stable4task / actual5API attempts: success4,TZ300 MALFORMED_RESPONSE1 + 동일ID retry1. 실제 실패까지 input/output/total **20397/3212/23609**. Per-product totals L10 4842,TZ30010646,LX100II4251,LX103870. 공개제품원문+최소contract만 전송, 프로젝트코드/canonical/config/secret 없음. Workerpatch 미적용, 임시fixture4개삭제, 사용자 추가개입0. MainGPT-6.1 Sol이 identity/source/조건·UNKNOWN/diff/승인/apply와 공식이미지·PDF표를 직접 검토했다.
+
+전체 **220/220**, Objective/production/catalog/coverage **193/193**, Panasonic **33/33**, 신규회귀9/9. Canonical135/36/171valid, pnpm build/node --check7files/git diff --check 통과. Helper UTC11개 **2026-10-07T01:43:15.403Z~2026-10-07T01:46:15.325Z**, 정확한 clock bounds/ISO검증은 [새compactcheckpoint](../src/data/ingestion/panasonic-compact-current-gallery-2026-10-07.json). 기존snapshot/productionartifact/추천/UI/가격/Experience/렌즈/vocab/schema/pipelinecode 불변.
+
+**Compact 미처리0, Panasonic 전체 미처리11 = 직접 운용 camcorder11; S/G도0.** 다른family는 이전inventory/checkpoint 기준이며 신규full-brandcoverageaudit이 아니다. 다음 작은 camcorder pilot은 official current/source/operational weight/accessory/video 계약 검토부터 진행 가능. AJ-CX4000mount확장은 별도 문제로 이번에 하지 않았다. 이번4제품범위미완료없음; 보류필드/후속validation후보는 [상세보고](OBJECTIVE_DB_PANASONIC_PRODUCTION_004.md). Localcommit trailer `Objective-Batch: production-panasonic-bodies-004`로 종료, push없음. 완료된batch를 처음부터 재호출/재수집하지 않는다.
+
+
 ## Stage 4 Panasonic/LUMIX G production batch 003 — 2026-10-07
 
 완료. Clean baseline `49fb7b6`에서 inventory의 잔여 **G9II/G85/G100/GH6/GH5II/GH5/G9/G95/GF10/GX9/GH5S** 정확히11개를 처리했다. KR G gallery/API3페이지 **20카드/13base identity** 재확인, GH7/G100D는 이전artifact로 제외. **신규10/기존G9II보강1**, canonical **121/36/157 →131/36/167**. 제품별 독립11worker →raw30/claims222 →normalize/validate11/11 →사람용diff/조건 검토 →명시approval →단일atomic apply →canonical validation →실제재적용 `already-canonicalized`/`canonicalMatches:true` 완료. G9II identity/aliases/price와 모든 비대상 기존제품·렌즈 불변; 이전inventory/S checkpoint/production artifact 유지. [새 G checkpoint](../src/data/ingestion/panasonic-lumix-g-current-gallery-2026-10-07.json) 추가.
