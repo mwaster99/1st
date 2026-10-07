@@ -13,6 +13,25 @@ const RESERVED_ID_PREFIXES = ["unknown-body-", "unknown-lens-"];
 const PRODUCT_TYPES = new Set(["body", "lens"]);
 const CLAIM_VERIFICATIONS = new Set(["pending", "verified", "rejected", "conflict"]);
 
+// Existing canonical LCD contract, shared by ingestion and merge approval.
+export function validateLcdValue(value, field = "specs.lcd") {
+  if (value === null) return;
+  if (field === "specs.lcd") {
+    if (!value || typeof value !== "object" || Array.isArray(value)) throw Error(`Unsupported non-null specification: ${field}`);
+    if (!Object.keys(value).every((key) => ["present", "sizeInches", "resolutionDots", "mechanism", "touch"].includes(key))) throw Error(`Unknown specification child: ${field}`);
+    for (const [key, child] of Object.entries(value)) validateLcdValue(child, `${field}.${key}`);
+  } else if (field === "specs.lcd.mechanism") {
+    if (!["fixed", "tilt", "vari-angle", "multi-angle"].includes(value)) throw Error(`Invalid LCD mechanism: ${field}`);
+  } else if (["specs.lcd.present", "specs.lcd.touch"].includes(field)) {
+    if (typeof value !== "boolean") throw Error(`Invalid boolean: ${field}`);
+  } else if (["specs.lcd.sizeInches", "specs.lcd.resolutionDots"].includes(field)) {
+    if (typeof value !== "number" || !Number.isFinite(value) || value < 0) throw Error(`Invalid number: ${field}`);
+    if (value <= 0) throw Error(`Physical value must be positive: ${field}`);
+  } else {
+    throw Error(`Unsupported non-null specification: ${field}`);
+  }
+}
+
 // Shared with canonical validation; preserve its optional, null-safe IBIS children.
 export function validateIbisValue(value) {
   if (value === null) return;
@@ -141,6 +160,16 @@ export function normalizeClaimValue(path, rawValue, rawUnit, { legacyFixedLensUn
   const unit = legacyFixedLensUnits && path.startsWith("specs.fixedLens.equivalentFocal.") ? null : canonicalUnit(path);
   if (rawValue === null || (typeof rawValue === "string" && rawValue.trim().toUpperCase() === "UNKNOWN")) {
     return { value: null, unit, unknown: true };
+  }
+  // Preserve rawValue in the claim/source; only the canonical value uses the alias.
+  if (path === "specs.lcd" || path === "specs.lcd.mechanism") {
+    const mechanism = (value) => normalizeText(value) === "free-angle" ? "vari-angle" : normalizeText(value);
+    let value = normalizeText(rawValue);
+    if (path === "specs.lcd.mechanism") value = mechanism(rawValue);
+    else if (path === "specs.lcd" && rawValue && typeof rawValue === "object" && !Array.isArray(rawValue) && Object.hasOwn(rawValue, "mechanism")) {
+      value = { ...rawValue, mechanism: mechanism(rawValue.mechanism) };
+    }
+    return { value, unit: null, unknown: false };
   }
   if (Array.isArray(rawValue)) {
     if (path === "specs.autofocus.subjects") {
@@ -625,6 +654,13 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
         validateIbisValue(claim.value);
       } catch (error) {
         addIssue(issues, "INVALID_IBIS", error.message, claim.path);
+      }
+    }
+    if (claim.path === "specs.lcd" || claim.path.startsWith("specs.lcd.")) {
+      try {
+        validateLcdValue(claim.value, claim.path);
+      } catch (error) {
+        addIssue(issues, "INVALID_LCD", error.message, claim.path);
       }
     }
     if (productType === "body" && claim.value != null && ["specs.weight", "specs.bodyOnlyWeight"].includes(claim.path)) {

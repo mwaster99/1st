@@ -223,16 +223,17 @@ test("CLI validate marks invalid IBIS as rejected without changing canonical", a
 
 test("archived production staging remains valid without changing canonical or batch artifacts", () => {
   const batches = readdirSync(path.join(root, "src/data/ingestion/batches"))
-    .filter((name) => /^production-(sony|canon|nikon)-bodies-\d+\.json$/.test(name))
+    .filter((name) => /^production-(sony|canon|nikon|fujifilm|panasonic)-bodies-\d+\.json$/.test(name))
     .map((name) => name.slice(0, -5));
-  for (const brand of ["sony", "canon", "nikon"]) assert.ok(batches.some((batch) => batch.startsWith(`production-${brand}-`)));
+  for (const brand of ["sony", "canon", "nikon", "fujifilm", "panasonic"]) assert.ok(batches.some((batch) => batch.startsWith(`production-${brand}-`)));
   for (const batch of batches) {
     const manifest = readJson(`src/data/ingestion/batches/${batch}.json`);
     const before = readJson(`src/data/ingestion/transactions/${batch}/before.json`);
     const stagings = manifest.items.map(({ itemKey }) => readJson(`src/data/ingestion/staging/${batch}/${itemKey}.json`));
     const sourceIds = new Set(manifest.items.flatMap(({ sourceIds }) => sourceIds));
     const rawDocuments = new Map([...sourceIds].map((sourceId) => [sourceId, readJson(`src/data/ingestion/raw/${sourceId}.json`)]));
-    const result = validateStagingBatch(stagings, { canonical: before, vocab, rawDocuments, legacyFixedLensUnits: true });
+    const legacyFixedLensUnits = stagings.some((staging) => staging.claims.some((claim) => claim.path.startsWith("specs.fixedLens.equivalentFocal.") && claim.value !== null && claim.unit === null));
+    const result = validateStagingBatch(stagings, { canonical: before, vocab, rawDocuments, legacyFixedLensUnits });
     assert.equal(result.valid, true, `${batch}: ${JSON.stringify(result.items.flatMap((item) => item.errors))}`);
   }
   assert.equal(validateCanonical(canonical, vocab), true);
@@ -435,4 +436,95 @@ for (const invalidUnit of [null, 'ft']) test(`CLI validate rejects fixed focal u
   assert.ok(JSON.parse(validated.stdout).items[0].errors.some((error) => error.code === (invalidUnit === null ? 'UNIT_REQUIRED' : 'UNSUPPORTED_UNIT')));
   assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, 'rejected');
   assert.equal(readFileSync(isolated.p.canonical, 'utf8'), isolated.before);
+});
+
+function lcdFixture(value, claimPath = "specs.lcd") {
+  const draft = sourceDraft("https://www.panasonic.com/fixture/lcd-contract");
+  draft.items[0].observations = [{
+    field: "LCD", path: claimPath, rawValue: value, rawUnit: claimPath === "specs.lcd.sizeInches" ? "in" : null,
+    locator: { section: "Monitor", row: "LCD" }, conditions: {},
+  }];
+  const raw = buildRawDocument(draft);
+  const [staging] = normalizeRawDocument(raw, { batchId, vocab, identityMap });
+  return { raw, staging, result: validateStaging(staging, { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) }) };
+}
+
+test("LCD ingestion and approval share every existing enum and optional child contract", () => {
+  for (const mechanism of ["fixed", "tilt", "vari-angle", "multi-angle"]) {
+    const value = { present: true, sizeInches: 3, resolutionDots: 1840000, mechanism, touch: false };
+    assert.doesNotThrow(() => validateSpecValue(value, "specs.lcd"));
+    assert.equal(lcdFixture(value).result.valid, true);
+    assert.equal(lcdFixture(mechanism, "specs.lcd.mechanism").result.valid, true);
+  }
+  for (const value of [{}, { present: null, mechanism: null, sizeInches: null, resolutionDots: null, touch: null }]) {
+    assert.doesNotThrow(() => validateSpecValue(value, "specs.lcd"));
+    assert.equal(lcdFixture(value).result.valid, true);
+  }
+});
+
+test("LCD unsupported enums and malformed objects fail ingestion before approval", () => {
+  for (const value of [true, false, [], "enabled", { unknownKey: true }, { mechanism: "unsupported" },
+    { present: 1 }, { touch: "yes" }, { sizeInches: "3" }, { sizeInches: 0 }, { resolutionDots: -1 }]) {
+    assert.throws(() => validateSpecValue(value, "specs.lcd"));
+    const result = lcdFixture(value).result;
+    assert.equal(result.valid, false);
+    assert.ok(result.errors.some((error) => error.code === "INVALID_LCD"), JSON.stringify(value));
+  }
+  for (const [claimPath, value] of [["specs.lcd.mechanism", "unsupported"], ["specs.lcd.mechanism", true],
+    ["specs.lcd.present", 1], ["specs.lcd.touch", "yes"], ["specs.lcd.sizeInches", -1]]) {
+    assert.throws(() => validateSpecValue(value, claimPath));
+    assert.ok(lcdFixture(value, claimPath).result.errors.some((error) => error.code === "INVALID_LCD" && error.path === claimPath));
+  }
+});
+
+test("LCD null and UNKNOWN retain existing whole-object and leaf policy", () => {
+  for (const claimPath of ["specs.lcd", "specs.lcd.mechanism"]) for (const value of [null, "UNKNOWN"]) {
+    const { staging, result } = lcdFixture(value, claimPath);
+    assert.equal(staging.claims[0].value, null);
+    assert.equal(staging.claims[0].unknown, true);
+    assert.equal(result.valid, true);
+  }
+});
+
+test("DC-L10 free-angle normalizes to vari-angle while preserving raw evidence", () => {
+  for (const [claimPath, rawValue, value] of [
+    ["specs.lcd.mechanism", "free-angle", "vari-angle"],
+    ["specs.lcd", { mechanism: "free-angle", present: true }, { mechanism: "vari-angle", present: true }],
+  ]) {
+    const { raw, staging, result } = lcdFixture(rawValue, claimPath);
+    assert.equal(result.valid, true);
+    assert.deepEqual(staging.claims[0].value, value);
+    assert.deepEqual(staging.claims[0].rawValue, rawValue);
+    assert.deepEqual(raw.items[0].observations[0].rawValue, rawValue);
+    assert.doesNotThrow(() => validateSpecValue(staging.claims[0].value, claimPath));
+    const diff = createCanonicalDiff(staging, canonical);
+    const decisions = diff.changes.map((change) => ({ productId: diff.productId, claimId: change.claimId, action: "accept" }));
+    const promoted = proposedCanonical(canonical, { stagings: [staging], vocab }, decisions).canonical;
+    assert.equal(promoted.bodies.find((body) => body.id === staging.product.id).specs.lcd.mechanism, "vari-angle");
+  }
+});
+
+test("CLI validate rejects an unsupported LCD enum without changing canonical", async (t) => {
+  const isolated = await isolatedFixture(t);
+  const raw = structuredClone(readJson("src/data/ingestion/raw/source-0379a083289afde8.json"));
+  raw.evidenceExcerpt.push({ field: "LCD mechanism", value: "unsupported", unit: null });
+  raw.items[0].observations.push({ ...raw.items[0].observations[0],
+    path: "specs.lcd.mechanism", rawValue: "unsupported", rawUnit: null, evidenceRef: raw.evidenceExcerpt.length - 1,
+    locator: { section: "Monitor", row: "Mechanism" }, conditions: {},
+  });
+  raw.contentDigest = digestValue(raw.evidenceExcerpt);
+  raw.sourceId = createSourceId(raw);
+  writeFileSync(path.join(isolated.p.ingestion, "raw", `${raw.sourceId}.json`), JSON.stringify(raw));
+  const manifest = JSON.parse(readFileSync(isolated.p.manifest));
+  manifest.items.forEach((item) => { item.sourceIds = [raw.sourceId]; });
+  writeFileSync(isolated.p.manifest, JSON.stringify(manifest));
+  const normalized = runIsolated(isolated.root, "normalize");
+  assert.equal(normalized.status, 0, normalized.stderr);
+  const validated = runIsolated(isolated.root, "validate");
+  assert.equal(validated.status, 1, validated.stderr);
+  const result = JSON.parse(validated.stdout);
+  assert.equal(result.status, "rejected");
+  assert.ok(result.items[0].errors.some((error) => error.code === "INVALID_LCD" && error.path === "specs.lcd.mechanism"));
+  assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, "rejected");
+  assert.equal(readFileSync(isolated.p.canonical, "utf8"), isolated.before);
 });

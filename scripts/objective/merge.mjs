@@ -1,4 +1,4 @@
-import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateIbisValue, validateStagingBatch } from "./rules.mjs";
+import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateIbisValue, validateLcdValue, validateStagingBatch } from "./rules.mjs";
 import { jsonBytes, sha256 } from "./storage.mjs";
 
 const requireValue = (ok, message) => { if (!ok) throw Error(message); };
@@ -23,7 +23,6 @@ const childKeys = {
   "specs.autofocus": ["aiUnit", "subjects", "description"],
   "specs.video": ["max", "bitDepth", "log", "cropAtMax"],
   "specs.evf": ["present", "resolutionDots", "magnification", "maxRefreshHz"],
-  "specs.lcd": ["present", "sizeInches", "resolutionDots", "mechanism", "touch"],
   "specs.burst": ["maxMechanicalFps", "maxElectronicFps"],
   "specs.shutter": ["mechanical", "electronic", "fastestMechanicalSec", "fastestElectronicSec", "slowestTimedSec", "bulb"],
   "specs.operatingTemperatureC": ["min", "max"],
@@ -36,6 +35,8 @@ export function validateSpecValue(value, field) {
   if (value === null) return;
   if (field === "specs.ibis") {
     validateIbisValue(value);
+  } else if (field === "specs.lcd" || field.startsWith("specs.lcd.")) {
+    validateLcdValue(value, field);
   } else if (field === "specs.dimensions" || field === "specs.sensor.sizeMm") {
     requireValue(Array.isArray(value) && value.length === (field.endsWith("dimensions") ? 3 : 2) && value.every((v) => typeof v === "number" && Number.isFinite(v) && v > 0), `Invalid physical dimensions: ${field}`);
   } else if (field === "specs.autofocus.subjects") {
@@ -54,8 +55,6 @@ export function validateSpecValue(value, field) {
     requireValue([...indexes].every((index) => index <= value.count), `Card slot index exceeds count: ${field}`);
   } else if (field === "specs.releaseDate") {
     requireValue(partialDate(value), `Invalid release date: ${field}`);
-  } else if (field === "specs.lcd.mechanism") {
-    requireValue(["fixed", "tilt", "vari-angle", "multi-angle"].includes(value), `Invalid LCD mechanism: ${field}`);
   } else if (field.startsWith("specs.operatingTemperatureC.")) {
     requireValue(typeof value === "number" && Number.isFinite(value), `Invalid temperature: ${field}`);
   } else if (field === "specs.video.max" || stringLeaves.test(field)) {
