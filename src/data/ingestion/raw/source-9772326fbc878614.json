@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCS1H_DVQP2021ZA_ENG.pdf",
+  "documentTitle": "DC-S1H complete guide video mode table",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S1H base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.422Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "6K 23.98p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s1h",
+      "manufacturerModelCode": "DC-S1H",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S1H",
+        "brand": "Panasonic",
+        "model": "LUMIX S1H",
+        "series": "LUMIX S",
+        "aliases": [
+          "DC-S1H",
+          "DC-S1HGD-K"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "6K 23.98p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Complete guide p258 MOV NTSC table",
+            "row": "Selected normal internal recording mode, not 6K-photo/composite or sensor-output slow motion"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 23.98,
+            "frameRateLabel": "23.98p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "format, ambient/internal temperature and power constraints; no unlimited-duration claim from this mode table",
+            "otherModes": "5.9K29.97p 16:9 and S35 C4K59.94p are separate mode rows; external RAW not this internal mode",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "10-bit internal selected mode"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 23.98,
+            "frameRateLabel": "23.98p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "format, ambient/internal temperature and power constraints; no unlimited-duration claim from this mode table",
+            "otherModes": "5.9K29.97p 16:9 and S35 C4K59.94p are separate mode rows; external RAW not this internal mode",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected mode image area (unproven remains UNKNOWN)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 23.98,
+            "frameRateLabel": "23.98p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "format, ambient/internal temperature and power constraints; no unlimited-duration claim from this mode table",
+            "otherModes": "5.9K29.97p 16:9 and S35 C4K59.94p are separate mode rows; external RAW not this internal mode",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "dc3923108918f79623b6c7c7bc0adbc37f68a3b75730ddc5d13df4c3630dbd47",
+  "sourceId": "source-9772326fbc878614"
+}

@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-002",
+  "itemKey": "panasonic-s9",
+  "manufacturerModelCode": "DC-S9",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-S9",
+    "productId": "panasonic-s9",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "panasonic-s9",
+    "name": "파나소닉 LUMIX S9",
+    "brand": "Panasonic",
+    "series": "LUMIX S",
+    "model": "LUMIX S9",
+    "aliases": [
+      "Panasonic LUMIX S9"
+    ],
+    "mount": "L-Mount",
+    "kind": "interchangeable",
+    "bodyStyle": "compact",
+    "specs": {
+      "bodyOnlyWeight": 403,
+      "burst": {
+        "maxElectronicFps": 30
+      },
+      "dimensions": [
+        126,
+        73.9,
+        46.7
+      ],
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "풀프레임",
+        "megapixels": 24.2
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "log": true,
+        "max": "6K 29.97p"
+      },
+      "weight": 486,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-028f8479dd9ee077",
+    "sourceType": "manufacturer",
+    "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-model-dc-s9k/",
+    "publisher": "Panasonic Corporation",
+    "documentTitle": "DC-S9 official NA specification sheet",
+    "documentVersion": null,
+    "region": "US",
+    "accessedAt": "2026-10-07T00:16:38.417Z",
+    "evidenceScope": "Panasonic batch002 reviewed DC-S9 base camera only; exact modes/conditions; no kit lenses or prices",
+    "contentDigest": "64dac5d7181f91b37a11d9cc420a8a44687855bd1e2251175c39df094e7749a9"
+  },
+  "sources": [
+    {
+      "sourceId": "source-028f8479dd9ee077",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-model-dc-s9k/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-S9 official NA specification sheet",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:16:38.417Z",
+      "evidenceScope": "Panasonic batch002 reviewed DC-S9 base camera only; exact modes/conditions; no kit lenses or prices",
+      "contentDigest": "64dac5d7181f91b37a11d9cc420a8a44687855bd1e2251175c39df094e7749a9"
+    },
+    {
+      "sourceId": "source-03cbca54fa7957fc",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2024/06/DCS9_DVQP3138ZA_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-S9 complete guide video mode table",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:16:38.419Z",
+      "evidenceScope": "Panasonic batch002 reviewed DC-S9 base camera only; exact modes/conditions; no kit lenses or prices",
+      "contentDigest": "2df4b0722e68b4adb0bd05e9b39b9b74f8817bfb3dc4a806ae36badff00b574d"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.bodyOnlyWeight",
+      "value": 403,
+      "unit": "g",
+      "rawValue": 403,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Weight: body only"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; excludes battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-c01fb21050d4dd5ddf16"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps",
+      "rawValue": 30,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Electronic shutter ordinary/SH burst"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "focusMode": "AFS/AFC/MF",
+        "mode": "SH",
+        "preBurst": "SH PRE separate mode; do not add its fps to ordinary burst"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-400af80ceea31e1f3d2f"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.dimensions",
+      "value": [
+        126,
+        73.9,
+        46.7
+      ],
+      "unit": "mm",
+      "rawValue": [
+        126,
+        73.9,
+        46.7
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "External dimensions W x H x D"
+      },
+      "conditions": {
+        "configuration": "camera body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-e747fdebc02d3cd3052c"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "B.I.S. / in-body image stabilizer and separate Dual I.S.2 row"
+      },
+      "conditions": {
+        "standard": "CIPA",
+        "direction": "yaw/pitch",
+        "lens": "S-R2060",
+        "focalLengthMm": 60,
+        "bodySensorShift": true,
+        "combinedStabilization": {
+          "system": "Dual I.S.2",
+          "stops": 6.5,
+          "lens": "S-E70200",
+          "focalLengthMm": 200
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-932993f7c3bbedb424cb"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "TFT LCD / capacitive monitor"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-dd4bbd6bc65296b72601"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Monitor pixels / dots"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-b76eff09f4dd298d6c20"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Monitor size"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-c2fc47cd4adcf885b84e"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Capacitive touch / static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-9771373e27a1a3c66f43"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "35mm full-frame CMOS"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-fc9669205a99135f8a2f"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP",
+      "rawValue": 24.2,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Camera effective pixels (not total, composite/high resolution or 6K photo)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-d936e8828a5b63580207"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-03cbca54fa7957fc",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "10-bit internal selected mode"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not S&Q or external RAW",
+        "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+        "codec": "H.265/HEVC LongGOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "container": "MOV",
+        "bitRateMbps": 200,
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "imageArea": "FULL",
+        "media": "internal SD; format-specific speed/bitrate restrictions apply",
+        "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+        "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+        "minimumFirmwareForRecordLimitOff": "1.1",
+        "systemFrequency": "59.94Hz NTSC"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-ac105412686e84b4d5c3"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-03cbca54fa7957fc",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Selected mode image area (unproven remains UNKNOWN)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not S&Q or external RAW",
+        "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+        "codec": "H.265/HEVC LongGOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "container": "MOV",
+        "bitRateMbps": 200,
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "imageArea": "FULL",
+        "media": "internal SD; format-specific speed/bitrate restrictions apply",
+        "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+        "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+        "minimumFirmwareForRecordLimitOff": "1.1",
+        "systemFrequency": "59.94Hz NTSC"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-1e10dc5827bd715c10ca"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "V-Log latitude/Photo Style or DMW-SFU2 activation"
+      },
+      "conditions": {
+        "profile": "V-Log",
+        "modeScope": "official profile availability, not every recording mode"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-77ed83a8fc43b02d2217"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null,
+      "rawValue": "6K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-03cbca54fa7957fc",
+      "locator": {
+        "section": "Complete guide p127 MOV NTSC table",
+        "row": "Selected normal internal recording mode, not 6K-photo/composite or sensor-output slow motion"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not S&Q or external RAW",
+        "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+        "codec": "H.265/HEVC LongGOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "resolution": [
+          5952,
+          3968
+        ],
+        "aspectRatio": "3:2",
+        "container": "MOV",
+        "bitRateMbps": 200,
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "imageArea": "FULL",
+        "media": "internal SD; format-specific speed/bitrate restrictions apply",
+        "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+        "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+        "minimumFirmwareForRecordLimitOff": "1.1",
+        "systemFrequency": "59.94Hz NTSC"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-56aa70a1c049497b79ce"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.weight",
+      "value": 486,
+      "unit": "g",
+      "rawValue": 486,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Weight: camera with battery and one SD card"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one SD card; no lens or battery grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-11761910f56129310da3"
+    },
+    {
+      "productId": "panasonic-s9",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-028f8479dd9ee077",
+      "locator": {
+        "section": "Official camera specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one SD card; no lens or battery grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-002-direct-review",
+      "claimId": "claim-83a696c4bf59934fc51c"
+    }
+  ]
+}

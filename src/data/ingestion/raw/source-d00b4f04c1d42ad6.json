@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/dc-s1r-firmware-updates-improvements/",
+  "documentTitle": "DC-S1R official firmware/activation video conditions",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S1R base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.421Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "5K 30p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 6,
+        "conditions": "Body sensor-shift BIS, firmware >=1.2, 6.0 stops; CIPA yaw/pitch, S-X50 at50mm; separate DualIS2 6.5 stops"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s1r",
+      "manufacturerModelCode": "DC-S1R",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S1R",
+        "brand": "Panasonic",
+        "model": "LUMIX S1R",
+        "series": "LUMIX S",
+        "aliases": [
+          "DC-S1R",
+          "DC-S1RMGD-K"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "5K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official video mode / firmware table",
+            "row": "Selected normal internal recording mode, not 6K-photo/composite or sensor-output slow motion"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": null,
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "imageArea": "UNKNOWN from firmware summary",
+            "media": "internal CFexpress or SD; format-specific speed/bitrate restrictions apply",
+            "minimumFirmware": "1.6",
+            "otherModes": "5K30p label from official firmware; actual fractional rate and crop not proven by summary; HDMI4K60 42210bit is external, not internal max"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "10-bit internal selected mode"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": null,
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "imageArea": "UNKNOWN from firmware summary",
+            "media": "internal CFexpress or SD; format-specific speed/bitrate restrictions apply",
+            "minimumFirmware": "1.6",
+            "otherModes": "5K30p label from official firmware; actual fractional rate and crop not proven by summary; HDMI4K60 42210bit is external, not internal max"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected mode image area (unproven remains UNKNOWN)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": null,
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "imageArea": "UNKNOWN from firmware summary",
+            "media": "internal CFexpress or SD; format-specific speed/bitrate restrictions apply",
+            "minimumFirmware": "1.6",
+            "otherModes": "5K30p label from official firmware; actual fractional rate and crop not proven by summary; HDMI4K60 42210bit is external, not internal max"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 3,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 6,
+            "conditions": "Body sensor-shift BIS, firmware >=1.2, 6.0 stops; CIPA yaw/pitch, S-X50 at50mm; separate DualIS2 6.5 stops"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Firmware1.2 improves BIS5.5->6.0 and DualIS6.0->6.5; five sensor-shift axes in same-model NA specification"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "direction": "yaw/pitch",
+            "lens": "S-X50",
+            "focalLengthMm": 50,
+            "bodySensorShift": true,
+            "combinedStabilization": {
+              "system": "Dual I.S.2",
+              "stops": 6.5,
+              "lens": "S-R70200",
+              "focalLengthMm": 200,
+              "minimumFirmware": "1.2"
+            },
+            "minimumFirmware": "1.2",
+            "priorBaseBodyStops": 5.5,
+            "bodyAxesEvidenceUrl": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-model-dc-s1r/"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "965f0cf79c6178ff7b97fd3ace4de3e4175f6276227c63ff351eab601a4d4990",
+  "sourceId": "source-d00b4f04c1d42ad6"
+}

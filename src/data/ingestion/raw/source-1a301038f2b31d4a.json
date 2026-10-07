@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/specifications-sheet-lumix-s-series-dc-s5m2x/",
+  "documentTitle": "DC-S5M2X official NA specification sheet",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S5M2X base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.421Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": [
+        35.6,
+        23.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.weight",
+      "value": 740,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 657,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s5-iix",
+      "manufacturerModelCode": "DC-S5M2X",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S5IIX",
+        "brand": "Panasonic",
+        "model": "LUMIX S5IIX",
+        "series": "LUMIX S",
+        "aliases": [
+          "DC-S5M2X",
+          "DC-S5M2XGD"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "35mm full-frame CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 24.2,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Camera effective pixels (not total, composite/high resolution or 6K photo)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            35.6,
+            23.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Image sensor / physical width x height"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 740,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Weight: camera with battery and one SD card"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one SD card; no lens or battery grip",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 4,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected operating weight configuration"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one SD card; no lens or battery grip",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 657,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Weight: body only"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "camera body only; excludes battery/card/lens/grip",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            134.3,
+            102.3,
+            90.1
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "External dimensions W x H x D"
+          },
+          "conditions": {
+            "configuration": "camera body without lens, excluding protrusions",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 7,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5,
+            "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "B.I.S. / in-body image stabilizer and separate Dual I.S.2 row"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "direction": "yaw/pitch",
+            "lens": "S-R2060",
+            "focalLengthMm": 60,
+            "bodySensorShift": true,
+            "combinedStabilization": {
+              "system": "Dual I.S.2",
+              "stops": 6.5,
+              "lens": "S-E70200",
+              "focalLengthMm": 200
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 8,
+          "rawValue": 9,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Mechanical shutter burst; focus/priority conditions"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "focusMode": "AFS/MF",
+            "alternateAfcFps": 7
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 9,
+          "rawValue": 30,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Electronic shutter ordinary/SH burst"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "focusMode": "AFS/AFC/MF",
+            "mode": "SH"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 10,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SD"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Physical Card slot 1/2 / dual SD recording media"
+          },
+          "conditions": {
+            "physicalInternalSlotsOnly": true,
+            "externalUsbSsdIsNotCardSlot": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 11,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "OLED live viewfinder"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 12,
+          "rawValue": 3680000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Viewfinder pixels / dots"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 13,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "TFT LCD / capacitive monitor"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 14,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Monitor size"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 15,
+          "rawValue": 1840000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Monitor pixels / dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 16,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Capacitive touch / static touch control"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 17,
+          "rawValue": "6K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official video mode / firmware table",
+            "row": "Selected normal internal recording mode, not 6K-photo/composite or sensor-output slow motion"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "6K29.97p/5.9K29.97p stop after 30 min when Thermal Management Standard; high-resolution/ProRes thermal protection",
+            "externalSsd": "USB-SSD supports ProRes and >=800Mbps modes; not an internal card slot",
+            "otherModes": "5.8K ProRes 422/HQ uses external USB-SSD; HDMI 12bit RAW external recorder; streaming RTMP/RTMPS and wired options; none copied to S5II"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 18,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "10-bit internal selected mode"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "6K29.97p/5.9K29.97p stop after 30 min when Thermal Management Standard; high-resolution/ProRes thermal protection",
+            "externalSsd": "USB-SSD supports ProRes and >=800Mbps modes; not an internal card slot",
+            "otherModes": "5.8K ProRes 422/HQ uses external USB-SSD; HDMI 12bit RAW external recorder; streaming RTMP/RTMPS and wired options; none copied to S5II"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 19,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected mode image area (unproven remains UNKNOWN)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "6K29.97p/5.9K29.97p stop after 30 min when Thermal Management Standard; high-resolution/ProRes thermal protection",
+            "externalSsd": "USB-SSD supports ProRes and >=800Mbps modes; not an internal card slot",
+            "otherModes": "5.8K ProRes 422/HQ uses external USB-SSD; HDMI 12bit RAW external recorder; streaming RTMP/RTMPS and wired options; none copied to S5II"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 20,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "V-Log latitude/Photo Style or DMW-SFU2 activation"
+          },
+          "conditions": {
+            "profile": "V-Log",
+            "modeScope": "official profile availability, not every recording mode"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "0ec54aa8d436e2276fc4cfeace1ab734f41ba132fa1efd4fbb4a29fec20d4db2",
+  "sourceId": "source-1a301038f2b31d4a"
+}

@@ -1,5 +1,18 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic/LUMIX S production batch 002 — 2026-10-07
+
+완료. Clean baseline `36460f1`, canonical114/36/150에서 정확히 **S9/S5/S1IIE/S1II/S1R/S1/S5IIX/S1H**8개를 재선정 없이 처리했다. KR S gallery2페이지13카드/10base identity를 재확인하고 기존 inventory/pilot/contracts를 대조했다. **신규7/기존S9보강1**, canonical **121/36/157**. 제품별독립8worker task →raw24/claims167 →normalize/validate8/8 →사람용diff/조건검토 →명시approval →단일atomic apply →canonical validation →실제재적용 `already-canonicalized`/`canonicalMatches:true` 완료. S9 identity/aliases/price와 모든 비대상 기존제품·렌즈 불변. 과거inventory/artifact는 유지하고 [새 S checkpoint](../src/data/ingestion/panasonic-lumix-s-current-gallery-2026-10-07.json)를 추가했다.
+
+S9 unique same-value/new-evidence4/null-fill12/conflict0. 신규7개는 new-product148 unique path(known144); null-fill0, conflict0. 총verified canonical field evidence160개. S1II/e NA35.8×23.8mm vsJP35.6×23.8mm **실제공식값불일치2제품**은 UNKNOWN으로 보류하고 양측reported값/URL/미해결상태를 conditions에 보존; known conflicting claims는 regression에서차단.24.1MP부분적층SH70 vs24.2MPBSI SH30 독립identity, S5IIX도S5II와독립/기존S5II불변. BIS/DualIS구분, oldS1/R firmware1.2 body6/combined6.5, weight기준/SDvsXQD구성, 내부슬롯vsUSBSSD, exact29.97/59.94/23.98과firmware/유료license/thermal조건 보존. S1/R fractional24p/30p와crop는공식firmware요약만으로추정하지않음; S1R HLG를VLog로승격하지않음.
+
+Worker 실제API9회/독립8task: input/output/total **28512/10012/38524**. S1II 첫INCOMPLETE_RESPONSE1회, 동일ID허용retry1회는needs_information; 추가호출없이완전한공식표를주Codex가검토. 다른7task success. Project/canonical/secret전송없음, 모든patch빈값/worker코드적용없음, 임시공개fixture8개삭제. 제품별사용량·채택/폐기·sources·조건·UNKNOWN·승인hash는 [batch 보고](OBJECTIVE_DB_PANASONIC_PRODUCTION_002.md)에 기록했다. 사용자추가개입0; 주Codex가8identity/167observations/24sources/diff/approval/apply판단.
+
+전체 **203/203**, Objective/production/catalog/coverage **176/176**, Panasonic **16/16**; canonical valid121/36/157, build/node --check7files/git diff --check 통과. Helper자동UTC24개실제생성시각 **2026-10-07T00:16:38.413Z~00:16:38.422Z** 검증. 신규pipeline/schema차단문제없음; video.max조건소비한계/기존29.97→97엔진parser문제는별도후속. 엔진/UI/Experience/가격/렌즈/vocab/기존productionartifact변경없음.
+
+**LUMIX S10base 전체production provenance, S미처리0. Panasonic잔여26 = G11/compact4/직접운용camcorder11**, 다른family는기존전체inventory기준이며새전체audit은아니다. 다음G11도독립11worker+소스/contract사전검토+단일transaction규모권장; 구조차단문제가실제로발견되면그때분리. 이번범위미완료없음. Batchmanifest state canonicalized/lastgate apply; 재수집/worker재호출/재구현없이다음G inventory대조부터진행가능.
+
+
 ## Stage 4 Panasonic/LUMIX Korea inventory + production pilot 001 — 2026-10-06
 
 완료. 시작 git clean, baseline `d156036`, canonical **111/36/147**이었다. 한국 공식 S/G/컴팩트/가정용캠코더/프로CX/프로캠코더 목록의 전 pagination과49개 제품카드를 대조해 [inventory snapshot](../src/data/ingestion/panasonic-current-camera-gallery-2026-10-06.json)을 작성했다. **직접운용49카드 / 기본identity39 / released-current39 / upcoming0 / linkedvariant10 / 기존canonical현행4 / 기존production0 / 시작production미처리39**다. LUMIX38카드28identity와 직접운용캠코더11identity를 포함한다. PTZ10/studio5는 별도scope후보15이며 전문가용이라는 이유만으로 모든방송제품을 제외하지 않았다. 산업/보안은 별도미열거family로 유지한다. S5/S1/S1R/G100/GH5II/GF10/GX9 키트·색상10카드를base에연결했으며 G100D/G100과VX3/V900은별도identity다. 기존GX85는한국현행목록에없어현행4집계에서제외했다.

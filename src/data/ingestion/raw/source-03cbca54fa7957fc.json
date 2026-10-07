@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2024/06/DCS9_DVQP3138ZA_ENG.pdf",
+  "documentTitle": "DC-S9 complete guide video mode table",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S9 base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.419Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s9",
+      "manufacturerModelCode": "DC-S9",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S9",
+        "brand": "Panasonic",
+        "model": "LUMIX S9",
+        "series": "LUMIX S",
+        "aliases": [
+          "Panasonic LUMIX S9"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "6K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Complete guide p127 MOV NTSC table",
+            "row": "Selected normal internal recording mode, not 6K-photo/composite or sensor-output slow motion"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+            "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+            "minimumFirmwareForRecordLimitOff": "1.1",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "10-bit internal selected mode"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+            "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+            "minimumFirmwareForRecordLimitOff": "1.1",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected mode image area (unproven remains UNKNOWN)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not S&Q or external RAW",
+            "representativeSelection": "highest documented normal internal spatial resolution; aspect/mode retained; not an all-mode performance scalar",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "resolution": [
+              5952,
+              3968
+            ],
+            "aspectRatio": "3:2",
+            "container": "MOV",
+            "bitRateMbps": 200,
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "imageArea": "FULL",
+            "media": "internal SD; format-specific speed/bitrate restrictions apply",
+            "thermalManagement": "Video Record Limit ON: 6K/5.9K 10min; firmware1.1 OFF disables fixed duration but heat protection still applies",
+            "thermalConditionEvidenceUrl": "https://eww.pavc.panasonic.co.jp/dscoi/DC-S9/html/DC-S9_DVQP3138_eng/0153.html",
+            "minimumFirmwareForRecordLimitOff": "1.1",
+            "systemFrequency": "59.94Hz NTSC"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2df4b0722e68b4adb0bd05e9b39b9b74f8817bfb3dc4a806ae36badff00b574d",
+  "sourceId": "source-03cbca54fa7957fc"
+}

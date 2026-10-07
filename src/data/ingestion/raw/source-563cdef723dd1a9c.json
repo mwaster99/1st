@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "JP",
+  "url": "https://panasonic.jp/dc/products/DC-S1M2/spec.html",
+  "documentTitle": "DC-S1M2 Japanese specification / burst and unresolved physical sensor discrepancy",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S1M2 base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.420Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.burst.maxElectronicFps",
+      "value": 70,
+      "unit": "fps"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s1-ii",
+      "manufacturerModelCode": "DC-S1M2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S1II",
+        "brand": "Panasonic",
+        "model": "LUMIX S1II",
+        "series": "LUMIX S",
+        "aliases": [
+          "DC-S1M2",
+          "DC-S1M2GD"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "撮像素子: 35.6 x 23.8 versus NA 35.8 x 23.8; no known physical size selected"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN: unresolved manufacturer regional specification discrepancy",
+            "reportedHereMm": [
+              35.6,
+              23.8
+            ],
+            "otherOfficialUrl": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-dc-s1m2body/",
+            "otherOfficialMm": [
+              35.8,
+              23.8
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 1,
+          "rawValue": 70,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "連写撮影 / 電子シャッター時"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "mode": "SH SPEED PRIORITY",
+            "focusMode": "AFS/AFC/MF",
+            "imagePriorityFps": [
+              60,
+              30
+            ],
+            "preBurst": "SH PRE same speeds is a separate release-before mode"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "65c9321bf856fbddaf4ceed6c2e0d9648ebe0092bdcdd02dc5acac4fe868eae7",
+  "sourceId": "source-563cdef723dd1a9c"
+}

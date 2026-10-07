@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-model-dc-s9k/",
+  "documentTitle": "DC-S9 official NA specification sheet",
+  "evidenceScope": "Panasonic batch002 reviewed DC-S9 base camera only; exact modes/conditions; no kit lenses or prices",
+  "accessedAt": "2026-10-07T00:16:38.417Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 24.2,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.weight",
+      "value": 486,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 403,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        126,
+        73.9,
+        46.7
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.burst.maxElectronicFps",
+      "value": 30,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-s9",
+      "manufacturerModelCode": "DC-S9",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX S9",
+        "brand": "Panasonic",
+        "model": "LUMIX S9",
+        "series": "LUMIX S",
+        "aliases": [
+          "Panasonic LUMIX S9"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "35mm full-frame CMOS"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 24.2,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Camera effective pixels (not total, composite/high resolution or 6K photo)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 486,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Weight: camera with battery and one SD card"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one SD card; no lens or battery grip",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Selected operating weight configuration"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one SD card; no lens or battery grip",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 403,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Weight: body only"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "camera body only; excludes battery/card/lens/grip",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            126,
+            73.9,
+            46.7
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "External dimensions W x H x D"
+          },
+          "conditions": {
+            "configuration": "camera body without lens, excluding protrusions",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 6,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 5,
+            "conditions": "Body sensor-shift BIS; CIPA yaw/pitch; S-R2060 60mm; excludes combined Dual IS rating"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "B.I.S. / in-body image stabilizer and separate Dual I.S.2 row"
+          },
+          "conditions": {
+            "standard": "CIPA",
+            "direction": "yaw/pitch",
+            "lens": "S-R2060",
+            "focalLengthMm": 60,
+            "bodySensorShift": true,
+            "combinedStabilization": {
+              "system": "Dual I.S.2",
+              "stops": 6.5,
+              "lens": "S-E70200",
+              "focalLengthMm": 200
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 7,
+          "rawValue": 30,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Electronic shutter ordinary/SH burst"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "focusMode": "AFS/AFC/MF",
+            "mode": "SH",
+            "preBurst": "SH PRE separate mode; do not add its fps to ordinary burst"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 8,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "TFT LCD / capacitive monitor"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 9,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Monitor size"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 10,
+          "rawValue": 1840000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Monitor pixels / dots"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 11,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "Capacitive touch / static touch control"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 12,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official camera specification table",
+            "row": "V-Log latitude/Photo Style or DMW-SFU2 activation"
+          },
+          "conditions": {
+            "profile": "V-Log",
+            "modeScope": "official profile availability, not every recording mode"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-002-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "64dac5d7181f91b37a11d9cc420a8a44687855bd1e2251175c39df094e7749a9",
+  "sourceId": "source-028f8479dd9ee077"
+}
