@@ -135,6 +135,8 @@ test('Nikon 001–004 archived approvals reproduce atomic results with an intact
         for (const [key, value] of Object.entries(evidence.bundle.vocab)) {
           if (key === 'brands' || key === 'mounts') {
             for (const entry of value) assert.deepEqual(current[key].find((item) => item.name === entry.name), entry);
+          } else if (key === 'bodyStyles') {
+            assert.deepEqual(current[key].slice(0, value.length), value);
           } else assert.deepEqual(current[key], value);
         }
         continue;

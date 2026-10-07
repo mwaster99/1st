@@ -1,0 +1,646 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-X2 x2-pdf official reviewed source",
+  "documentVersion": "DVQP2766ZA",
+  "region": "NA (selected official mode)",
+  "evidenceScope": "HC-X2 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.975Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 15030000,
+      "unit": "pixel"
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.focal.min",
+      "value": 8.8,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.max",
+      "value": 176,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 24.5,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 490,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.aperture.wide",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.aperture.tele",
+      "value": 4.5,
+      "unit": null
+    },
+    {
+      "field": "specs.weight",
+      "value": 2490,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 2040,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        173,
+        195,
+        344
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.video.max",
+      "value": "4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS Speed Class 3"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS Speed Class 3"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-x2",
+      "manufacturerModelCode": "HC-X2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-X2",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X2",
+        "aliases": [
+          "HC-X2"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual p305 Pickup device",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "reason": "Unresolved exact HC-X2 official source conflict; no majority/typo overwrite",
+            "reportedClaims": [
+              {
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x2/",
+                "value": "1/5.8-type High Sensitivity MOS",
+                "totalMP": 1.5
+              },
+              {
+                "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                "page": 305,
+                "value": "1.0-type MOS",
+                "totalMP": 20.92
+              }
+            ],
+            "effectivePixelsAgree": 15030000
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 15030000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "Own manual p305 effective pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Image sensor",
+            "row": "specs.sensor.sizeMm"
+          },
+          "conditions": {
+            "reason": "No official physical millimeter dimensions; do not infer from optical format label"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 3,
+          "rawValue": 8.8,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.min"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 4,
+          "rawValue": 176,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.max"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 5,
+          "rawValue": 24.5,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.min"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 6,
+          "rawValue": 490,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.max"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 7,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.wide"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "meaning": "maximum aperture at wide end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 8,
+          "rawValue": 4.5,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.tele"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "representativeMode": "Official 35mm conversion camera-unit range",
+            "sourcePage": 305,
+            "meaning": "maximum aperture at telephoto end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 9,
+          "rawValue": 2490,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Own manual p304 HC-X2 black label",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "HC-X2 including integral lens, lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 10,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual p304 HC-X2 black label",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "HC-X2 including integral lens, lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 11,
+          "rawValue": 2040,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Own manual p304 HC-X2 black label",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "HC-X2 main camera including integral lens and grip belt; excluding lens hood, battery and supplied accessories",
+            "excludedOtherModel": "HC-X20 2000g/2430g rows are separate, not aliases or regional variants"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 12,
+          "rawValue": [
+            173,
+            195,
+            344
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Own manual p304 HC-X2 black label",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "configuration": "Includes lens hood, excludes eye cup and microphone holder",
+            "alternativeConfiguredDimensions": [
+              211,
+              195,
+              390
+            ],
+            "excludedHCX20Dimensions": [
+              171,
+              195,
+              343
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 13,
+          "rawValue": "4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual p147 MOV NTSC table",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "systemFrequency": "59.94Hz",
+            "mode": "MOV [2160-59.94p/HEVC LongGOP 200M]",
+            "codec": "H.265/HEVC LongGOP",
+            "bitDepth": 10,
+            "chroma": "4:2:0",
+            "internal": true,
+            "container": "MOV",
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "bitrateMbps": 200,
+            "rateControl": "VBR",
+            "readoutCrop": null,
+            "alternatives": [
+              {
+                "mode": "UHD 422LongGOP150M",
+                "fps": [
+                  29.97,
+                  23.98
+                ],
+                "bitDepth": 10,
+                "chroma": "4:2:2"
+              },
+              {
+                "mode": "FHD super slow",
+                "captureFps": [
+                  120,
+                  100
+                ],
+                "note": "Special capture, not ordinary UHD frame rate"
+              }
+            ],
+            "proof": "Own manual p147 visual table: 4:2:0 10bit 200Mbps; not 4:2:2 59.94p UHD"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 14,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual p147 MOV NTSC table",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "systemFrequency": "59.94Hz",
+            "mode": "MOV [2160-59.94p/HEVC LongGOP 200M]",
+            "codec": "H.265/HEVC LongGOP",
+            "bitDepth": 10,
+            "chroma": "4:2:0",
+            "internal": true,
+            "container": "MOV",
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "bitrateMbps": 200,
+            "rateControl": "VBR",
+            "readoutCrop": null,
+            "alternatives": [
+              {
+                "mode": "UHD 422LongGOP150M",
+                "fps": [
+                  29.97,
+                  23.98
+                ],
+                "bitDepth": 10,
+                "chroma": "4:2:2"
+              },
+              {
+                "mode": "FHD super slow",
+                "captureFps": [
+                  120,
+                  100
+                ],
+                "note": "Special capture, not ordinary UHD frame rate"
+              }
+            ],
+            "proof": "Own manual p147 visual table: 4:2:0 10bit 200Mbps; not 4:2:2 59.94p UHD"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 15,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual V-Log recording function [X2] p194",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "profile": "V-Log",
+            "modelCondition": "X2 only; not X20 alias",
+            "mode": "SCENE FILE gamma V-Log; keep recording restrictions in manual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 16,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No explicit sensor/readout crop ratio"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 17,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS Speed Class 3"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS Speed Class 3"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Own manual p307 memory card recorder",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {
+            "capacity": "SDHC4–32GB, SDXC>32–128GB",
+            "speedClass": "Consult p45 mode-specific requirements",
+            "functions": [
+              "relay",
+              "simultaneous",
+              "background"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 18,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.min"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 19,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.max"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "492e7b0707c1947bb14e85010ab4953e393b6f54ec6f9c074635f0e62b3da726",
+  "sourceId": "source-4cfbcc43702a6ab6"
+}

@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://pro-av.panasonic.net/en/products/aj-cx4000gj/spec.html",
+  "publisher": "Panasonic",
+  "documentTitle": "AJ-CX4000 cx4000-spec official reviewed source",
+  "documentVersion": "current page retrieved2026-10-07",
+  "region": "global",
+  "evidenceScope": "AJ-CX4000 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.975Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 3.4,
+      "unit": "kg"
+    },
+    {
+      "field": "specs.weight",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        143,
+        267,
+        348
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": {
+        "count": 3,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "expressP2"
+            ],
+            "standards": null
+          },
+          {
+            "index": 2,
+            "media": [
+              "microP2",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "UHS Speed Class 3",
+              "Video Speed Class V90"
+            ]
+          },
+          {
+            "index": 3,
+            "media": [
+              "microP2",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II",
+              "UHS Speed Class 3",
+              "Video Speed Class V90"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3.5,
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.ibis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-cx4000",
+      "manufacturerModelCode": "AJ-CX4000",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 AJ-CX4000",
+        "brand": "Panasonic",
+        "series": "AJ-CX",
+        "model": "AJ-CX4000",
+        "aliases": [
+          "AJ-CX4000"
+        ],
+        "mount": "B4",
+        "kind": "interchangeable",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Unit / Pickup Device, Lens Mount",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "reason": "Fresh spec gives MOSx1 and 11.14 million pixels, not explicit effective MP nor physical optical format. 2/3-type bayonet is lens mount/image-circle, not sensor size.",
+            "reportedPixels": 11140000,
+            "mountOpticalFormat": "2/3-type",
+            "opticalSystem": "Official features describe a large sensor with an optical magnifying system",
+            "unavailableBrochure": "Cached official older brochure diagram says 4/3-type sensor; live official download404 and archive timeout; do not promote an unverified cached-only format."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Unit / Number of Pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "reason": "Fresh spec gives MOSx1 and 11.14 million pixels, not explicit effective MP nor physical optical format. 2/3-type bayonet is lens mount/image-circle, not sensor size.",
+            "reportedPixels": 11140000,
+            "mountOpticalFormat": "2/3-type",
+            "opticalSystem": "Official features describe a large sensor with an optical magnifying system",
+            "unavailableBrochure": "Cached official older brochure diagram says 4/3-type sensor; live official download404 and archive timeout; do not promote an unverified cached-only format."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Image sensor",
+            "row": "specs.sensor.sizeMm"
+          },
+          "conditions": {
+            "reason": "No official physical millimeter dimensions; do not infer from optical format label"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 3,
+          "rawValue": 3.4,
+          "rawUnit": "kg",
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "Main camera body only. Integral optical magnifying system remains; interchangeable lens, battery and optional viewfinder not included",
+            "reportedText": "Approx.3.4 kg body only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "reason": "No complete lens/battery/viewfinder operational configuration weight published"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {
+            "reason": "No guessed operational basis"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            143,
+            267,
+            348
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "General / Dimensions",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "configuration": "Body only excluding protrusion; lens/viewfinder/battery configurations not measured here"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 7,
+          "rawValue": {
+            "count": 3,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "expressP2"
+                ],
+                "standards": null
+              },
+              {
+                "index": 2,
+                "media": [
+                  "microP2",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "Video Speed Class V90"
+                ]
+              },
+              {
+                "index": 3,
+                "media": [
+                  "microP2",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "Video Speed Class V90"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Memory Card Recorder / Recording Slot",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {
+            "indexing": "Logical indices: dedicated expressP2 then two combo slots; not proprietary manufacturer slot labels",
+            "mediaConditions": "microP2 production discontinued; P2 on SDXC requires V90+ and latest camera software. Conventional P2 cards not supported. Select compatible card for each codec."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 8,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Monitor/Viewfinder",
+            "row": "specs.lcd"
+          },
+          "conditions": {
+            "reportedResolution": "Approx.2.76 million pixels",
+            "resolutionDots": "UNKNOWN: published pixel wording not converted into dots",
+            "separateDisplay": "2.4-inch black-and-white OLED status window is not an EVF"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 9,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Stabilization",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "reason": "No published sensor/body-shift stabilization proof; optical/electronic/hybrid is not IBIS",
+            "manufacturerStabilization": "No body/sensor-shift proof; interchangeable lens stabilization must not be attributed to camera body"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 10,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.min"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 11,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.max"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "e86fb1d3457c4a3b40ec39324805f2aa8b6d8559c802997031b48b2e7e5bb312",
+  "sourceId": "source-ffa554914b61d081"
+}

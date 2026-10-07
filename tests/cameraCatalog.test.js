@@ -8,7 +8,7 @@ import { generateScenarioCandidates, generateLensCandidates, evaluateScenario, g
 import { compareCapability, compareLens, scoreRoleCoverage, scorePhotoVideo } from "../src/cameraComparisons.js";
 
 const products = [...CAMERA_PRODUCTS.bodies, ...CAMERA_PRODUCTS.lenses];
-const mounts = ["Sony E", "Canon RF", "Nikon Z", "Fujifilm X", "L-Mount", "Micro Four Thirds", "Canon EF", "Nikon F", "Fujifilm G"];
+const mounts = ["Sony E", "Canon RF", "Nikon Z", "Fujifilm X", "L-Mount", "Micro Four Thirds", "Canon EF", "Nikon F", "Fujifilm G", "B4"];
 const input = (extra = {}) => ({ currentBody: BODY_BY_ID["sony-a7-iv"], currentLenses: [LENS_BY_ID["sony-fe-24-70-gm2"]], primaryLens: LENS_BY_ID["sony-fe-24-70-gm2"], pains: ["더 가볍고 작은 카메라를 원해요"], subjects: ["여행 · 일상"], extraBudget: 300, ...extra });
 
 test("canonical identifiers, model names and aliases are unique and searchable", () => {
@@ -35,7 +35,7 @@ test("body and lens coverage, mount and exterior categories are valid", () => {
   }
   for (const body of CAMERA_BODIES) {
     assert.ok(body.model && body.series);
-    assert.ok(["slr", "rangefinder", "compact"].includes(body.bodyStyle));
+    assert.ok(["slr", "rangefinder", "compact", "camcorder"].includes(body.bodyStyle));
     assert.ok(["fixed", "dslr", "interchangeable"].includes(body.kind));
     assert.ok(body.kind === "fixed" ? body.mount === null : mounts.includes(body.mount));
   }

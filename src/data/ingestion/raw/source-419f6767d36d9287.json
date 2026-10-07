@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://pro-av.panasonic.net/en/products/ag-cx20/spec.html",
+  "publisher": "Panasonic",
+  "documentTitle": "AG-CX20 cx20-spec official reviewed source",
+  "documentVersion": "current page retrieved2026-10-07",
+  "region": "global",
+  "evidenceScope": "AG-CX20 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.957Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "1/2.5-type",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 8290000,
+      "unit": "pixel"
+    },
+    {
+      "field": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.focal.min",
+      "value": 4.12,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.max",
+      "value": 98.9,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 25,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 600,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.aperture.wide",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 0.85,
+      "unit": "kg"
+    },
+    {
+      "field": "specs.weight",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        129,
+        159,
+        267
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.ibis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3.5,
+        "resolutionDots": 2760000,
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-cx20",
+      "manufacturerModelCode": "AG-CX20",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 AG-CX20",
+        "brand": "Panasonic",
+        "series": "AG-CX",
+        "model": "AG-CX20",
+        "aliases": [
+          "AG-CX20"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "1/2.5-type",
+          "rawUnit": null,
+          "locator": {
+            "section": "Camera Unit",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "manufacturerLabel": "1/2.5-type MOS"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 8290000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "Effective Pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Image sensor",
+            "row": "specs.sensor.sizeMm"
+          },
+          "conditions": {
+            "reason": "No official physical millimeter dimensions; do not infer from optical format label"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 3,
+          "rawValue": 4.12,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 4,
+          "rawValue": 98.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 5,
+          "rawValue": 25,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 6,
+          "rawValue": 600,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 7,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.wide"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "meaning": "maximum aperture at wide end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 8,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.tele"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "originalText": "Focal length f=4.12 mm to 98.9 mmm",
+            "unitReview": "Official prose extra m is preserved as text; field measurements use mm consistently with paired 35mm equivalent and global Lens section",
+            "representativeMode": "official camera unit range",
+            "meaning": "maximum aperture at telephoto end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 9,
+          "rawValue": 0.85,
+          "rawUnit": "kg",
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "Main camera including integral lens; excluding detachable handle unit, lens hood, battery and eye cup"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 10,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "reason": "Official configured 1.5 kg includes handle unit, lens hood, battery and eye cup but card inclusion/exclusion unstated; operating basis unresolved; do not guess",
+            "reportedWeightG": 1500,
+            "reportedIncluded": [
+              "handle unit",
+              "lens hood",
+              "battery",
+              "eye cup"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 11,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {
+            "reason": "Official configured 1.5 kg includes handle unit, lens hood, battery and eye cup but card inclusion/exclusion unstated; operating basis unresolved; do not guess",
+            "reportedWeightG": 1500,
+            "reportedIncluded": [
+              "handle unit",
+              "lens hood",
+              "battery",
+              "eye cup"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 12,
+          "rawValue": [
+            129,
+            159,
+            267
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "General / Dimensions",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "configuration": "Including handle, lens hood, battery and eye cup; excluding microphone holder; configuration differs from bare main-unit mass"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Stabilization",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "reason": "No published sensor/body-shift stabilization proof; optical/electronic/hybrid is not IBIS",
+            "manufacturerStabilization": "Optical image stabilizer lens"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 14,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Monitor/Viewfinder",
+            "row": "specs.lcd"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 15,
+          "rawValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Monitor/Viewfinder",
+            "row": "specs.evf"
+          },
+          "conditions": {
+            "videoDisplayAreaDots": 1770000
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 16,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.min"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 17,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating environment",
+            "row": "specs.operatingTemperatureC.max"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "3be12f581caeb662c52a1988e2af5de83b88e62fc91cdacffffa0abffc153304",
+  "sourceId": "source-419f6767d36d9287"
+}

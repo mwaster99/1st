@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://pro-av.panasonic.net/en/products/aj-cx4000gj/features.html",
+  "publisher": "Panasonic",
+  "documentTitle": "AJ-CX4000 cx4000-features official reviewed source",
+  "documentVersion": "current page retrieved2026-10-07",
+  "region": "global",
+  "evidenceScope": "AJ-CX4000 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.975Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-cx4000",
+      "manufacturerModelCode": "AJ-CX4000",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 AJ-CX4000",
+        "brand": "Panasonic",
+        "series": "AJ-CX",
+        "model": "AJ-CX4000",
+        "aliases": [
+          "AJ-CX4000"
+        ],
+        "mount": "B4",
+        "kind": "interchangeable",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording Format / MOV HEVC Long GOP 200M",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "systemFrequency": "59.94Hz",
+            "mode": "MOV UHD HEVC LongGOP 200M",
+            "codec": "H.265/HEVC LongGOP",
+            "bitDepth": 10,
+            "chroma": "4:2:0",
+            "internal": true,
+            "container": "MOV",
+            "media": [
+              "SDXC",
+              "expressP2",
+              "microP2"
+            ],
+            "bitrateMbps": 200,
+            "rateControl": "VBR",
+            "readoutCrop": null,
+            "alternatives": [
+              {
+                "mode": "P2 MXF AVC-Intra/AVC-LongG",
+                "resolution": "HD",
+                "note": "P2HD codec matrix is separate from selected UHD MOV HEVC"
+              },
+              {
+                "mode": "12G-SDI",
+                "resolution": [
+                  3840,
+                  2160
+                ],
+                "fps": 59.94,
+                "chroma": "4:2:2",
+                "bitDepth": 10,
+                "note": "External output, not chosen internal MOV 4:2:0 recording"
+              }
+            ],
+            "mediaConditions": "microP2 production discontinued; P2 on SDXC requires V90+ and latest camera software. Conventional P2 cards not supported. Select compatible card for each codec."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording Format / MOV HEVC Long GOP 200M",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "systemFrequency": "59.94Hz",
+            "mode": "MOV UHD HEVC LongGOP 200M",
+            "codec": "H.265/HEVC LongGOP",
+            "bitDepth": 10,
+            "chroma": "4:2:0",
+            "internal": true,
+            "container": "MOV",
+            "media": [
+              "SDXC",
+              "expressP2",
+              "microP2"
+            ],
+            "bitrateMbps": 200,
+            "rateControl": "VBR",
+            "readoutCrop": null,
+            "alternatives": [
+              {
+                "mode": "P2 MXF AVC-Intra/AVC-LongG",
+                "resolution": "HD",
+                "note": "P2HD codec matrix is separate from selected UHD MOV HEVC"
+              },
+              {
+                "mode": "12G-SDI",
+                "resolution": [
+                  3840,
+                  2160
+                ],
+                "fps": 59.94,
+                "chroma": "4:2:2",
+                "bitDepth": 10,
+                "note": "External output, not chosen internal MOV 4:2:0 recording"
+              }
+            ],
+            "mediaConditions": "microP2 production discontinued; P2 on SDXC requires V90+ and latest camera software. Conventional P2 cards not supported. Select compatible card for each codec."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "HLG / V-Log Gamma",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "profile": "V-Log",
+            "firmwareCondition": "Official footnote2: latest firmware update may be required",
+            "backlogFeatures": [
+              "ND/CC filters",
+              "XLR",
+              "12G-SDI",
+              "Genlock/timecode",
+              "SRT/NDI license/system and mutually-exclusive streaming/recording modes"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Large Sensor and Optical Magnifying System",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No numeric sensor/readout crop contract; B4 optical magnification not lens actual/equivalent or sensor mm"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "694a8bc976a47c15aebbfa08a29cdf105b71146ec04228684181c7bd484e5eee",
+  "sourceId": "source-ec01f8ec66d949aa"
+}

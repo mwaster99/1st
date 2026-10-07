@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-VX3 vx3-pdf official reviewed source",
+  "documentVersion": "DVQX2553YA",
+  "region": "NA (selected official mode)",
+  "evidenceScope": "HC-VX3 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.956Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 8290000,
+      "unit": "pixel"
+    },
+    {
+      "field": "specs.weight",
+      "value": 484,
+      "unit": "g"
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 433,
+      "unit": "g"
+    },
+    {
+      "field": "specs.fixedLens.focal.min",
+      "value": 4.12,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.focal.max",
+      "value": 98.9,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.min",
+      "value": 25,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.equivalentFocal.max",
+      "value": 600,
+      "unit": "mm"
+    },
+    {
+      "field": "specs.fixedLens.aperture.wide",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-vx3",
+      "manufacturerModelCode": "HC-VX3",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-VX3",
+        "brand": "Panasonic",
+        "series": "HC-VX",
+        "model": "HC-VX3",
+        "aliases": [
+          "HC-VX3"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Basic manual p30 mode thumbnail labels / p36–37 specifications",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRateLabel": "30p",
+            "actualFractionalFrameRate": null,
+            "mode": "4K MP4 [2160/30p]",
+            "codec": "MPEG-4 AVC/H.264",
+            "internal": true,
+            "container": "MP4",
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "maxBitrateMbps": 72,
+            "rateControl": "VBR",
+            "bitDepth": null,
+            "chroma": null,
+            "readoutCrop": null,
+            "alternatives": [
+              "2160/24p 72Mbps",
+              "FHD1080/60p AVCHD 28Mbps"
+            ],
+            "note": "Official integer mode label only; do not infer 29.97p or bit depth"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Video specifications",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "reason": "Selected mode bit depth not published in reviewed source"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Video specifications",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "reason": "No explicit log contract evidence"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Video specifications",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No explicit crop/readout statement"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 4,
+          "rawValue": 8290000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "Basic manual p37 HC-VX3 column",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "originalText": "8290 K effective (16:9)",
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "motionPictureMP4AVCHD": 6170000,
+              "still4x3": 6220000
+            },
+            "totalPixels": 8570000
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 484,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Basic manual p39",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "Integral lens camera plus lens hood, supplied battery, one optional SD card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 433,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Basic manual p39",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "Main camera including integral lens; excluding lens hood, supplied battery and optional SD card"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 7,
+          "rawValue": 4.12,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 8,
+          "rawValue": 98.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.focal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "measurement": "actual"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 9,
+          "rawValue": 25,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 10,
+          "rawValue": 600,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.equivalentFocal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "measurement": "35mm-equivalent"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 11,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.wide"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "meaning": "maximum aperture at wide end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 12,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens",
+            "row": "specs.fixedLens.aperture.tele"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "representativeMode": "16:9 still / 4K MP4 or 24p video",
+            "otherModes": {
+              "videoMP4AVCHD": [
+                28.9,
+                693.7
+              ],
+              "still4x3": [
+                30.6,
+                734.4
+              ]
+            },
+            "locatorNote": "Basic manual p38 HC-VX3 column; row checked visually",
+            "meaning": "maximum aperture at telephoto end"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9de58649ffd3277a5d0f1c028a52d7ed886680a64a998a9e1e06e3a1bf0e0fff",
+  "sourceId": "source-58326340a46b6322"
+}

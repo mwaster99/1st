@@ -1,5 +1,19 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic camcorder production pilot 005 — 2026-10-07
+
+완료. Clean baseline `711f06501c6e414c6785c720f1350399628b2497`에서 inventory/batch001–004/canonical/identity-map/scope/contracts/최신 validator를 확인하고 지정된 **HC-VX3/AG-CX20/HC-X2/AJ-CX4000**의 KR current 페이지를 재조회했다. 신규4/기존0, canonical **135/36/171→139/36/175**. 직접 운용 consumer/pro handheld fixed3개, broadcast shoulder interchangeable1개를 단일 atomic transaction으로 적용했다. BodyStyle **camcorder**, AJ mount **B4**(official B4 lens mount/2/3-type bayonet)만 최소 vocab 확장; 기존 schemaVersion/product shape/weight/video계약/validator/추천/UI코드 불변. Kind fixed/mountnull/fixedLens3, interchangeable/B4/fixedLensnull1; 별도lens생성0/기존135바디·36렌즈 불변. 실제 시나리오에서도 fixed 전체무게484/null/2490g 한 번만 계산.
+
+공식13sources(제품별3/3/3/4),100observations=known75/UNKNOWN25,85unique paths/62verified fieldEvidence paths. Sourceidentity-only도 provenance연결count 포함. 독립4worker task→raw-helper actualUTC→normalize→strictvalidate4/4→사람용summary/main직접검토→explicit CLIapproval→atomicapply→canonicalvalidation→실제reapply **already-canonicalized/canonicalMatches:true**. Helper13timestamp **2026-10-07T02:23:14.955Z~.975Z**,clockbounds/ISOroundtrip을 새checkpoint에 저장. 과거artifact/digest/타임스탬프 변경없음.
+
+HC-X2 sensor format은 NA공식1/5.8-type vsownmanual1.0-type 진짜충돌로 UNKNOWN, total1.5MPvs20.92MP도조건보존; effective15.03MP는일치. Knownconflicttrial은 CONFLICTING_CLAIM_VALUES. X2/X20의2040/2490vs2000/2430g은별개모델열이며후자는미채택. AJ2/3bayonet를sensor로오인하지않고 fresh공식MOS/total11.14MP에서effective/format/mm를추정하지않음. 전4physicalmm/IBIS UNKNOWN, lensOIS/hybrid는조건에보존. CX20구성1.5kg은card기준불명확하여운영weight/basis UNKNOWN,mainunit850g은integrallens포함body-only. AJbody-only3400g,separatelens/battery/EVF제외,운영weight UNKNOWN. 고정렌즈 actual/equivalentmm각각독립,zoom/filter조건보존. Pro3개선택4K59.94p는internalHEVC42010bit200M조건,output422/slow/VLogfirmware/media와분리;VX3integer30p에서29.97추정없음.
+
+Worker4task/실제API5attempts,finalsuccess4/needs_information1(X2)/동일IDretry1/API-networkfailure0. 총input/output/total **23792/4627/28419**(제품total5944/4275/14545/3655). 공개제품자료+최소계약만전송,workerpatch0/fixture4삭제/사용자추가개입0. MainGPT-6.1Sol이identity/scope/vocab/source/100claims/조건/UNKNOWN/diff/승인apply 및공식PDF표를직접검토했다. 발췌에서누락된LCD/storage/recordingtable과sharedPDF열오해는전체공식표로교정했다.
+
+전체 **234/234**, Objective/production/catalog/coverage **207/207**, Panasonic **42/42**, 신규camcorder **9/9**, Fuji/Nikonarchivecompat **13/13**. Canonical139/36/175valid/build/node--check10files/gitdiffcheck통과. 기존buildchunk경고유지. 기존2audit테스트의currentvocab불변가정만append-onlyregistry검증으로수정;sealedarchive/digest/replay검증유지. 신규pipelineblockingbug0. 부족한운영구성/feature/recordingmatrix/B4lenspool/camcorderUIlabel/기존fractionalfps소비는후속backlog,이번추천/UI수정없음.
+
+**Camcorder미처리7 =HC-V900/HC-VX1/AG-CX370/HC-X1200/HC-X2100/HC-X1600/HC-X20**. S/G/compact0은기존완료checkpoint기준,이번fullcoverageaudit아님. 남은7단일batch는기술적으로가능하나각제품별공식검증필수;검토효율상consumer2+professional5권장. PTZ10/studio5/렌즈/가격/Experience대상아님. 이번4제품범위미완료0. [상세결과](OBJECTIVE_DB_PANASONIC_PRODUCTION_005.md), [재개checkpoint](../src/data/ingestion/panasonic-camcorder-pilot-2026-10-07.json). Localcommit trailer `Objective-Batch: production-panasonic-bodies-005`로종료/push없음;완료batch를다시수집·worker호출하지않는다.
+
 ## Stage 4 Panasonic/LUMIX compact production batch 004 — 2026-10-07
 
 완료. Clean baseline `c472892c75c35bc328c5fd02a6e4a782475d28a3`에서 한국 공식 compact gallery/API **5카드/5identity**를 다시 조회했다. 이전 TZ99 production001을 제외하고 지정된 **DC-L10/TZ300/LX100II/LX10** 잔여4개 모두 처리. **신규4/기존보강0**, canonical **131/36/167 →135/36/171**. DC-L10은 공식2026-06-29 출시/매뉴얼 Mount Fixed와 과거 DMC-L10 렌즈 호환 자료를 대조해 별개 신규 identity로 확정했다. 모든 kind fixed/mount null/specs.fixedLens; lens36개와 비대상 body131개 불변, 내장 렌즈 상품·무게 이중계산 없음.

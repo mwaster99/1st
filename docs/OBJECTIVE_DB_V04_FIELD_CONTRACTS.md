@@ -70,3 +70,9 @@ node scripts/objective/raw-helper.mjs --input /path/to/reviewed-draft.json > /pa
 - 단일 source staging과 과거 transaction archive의 바이트 형태를 유지한다.
 - 기존 추천 엔진과 UI는 새 필드를 읽도록 바꾸지 않는다. 이번 계약은 ingestion과 검증 범위에만 적용된다.
 - 다음 Sony batch는 제품 3–5개로 제한하고, 제품별 source를 manifest에 등록한 뒤 `normalize → validate → diff → 명시적 승인 → apply → test/build` 순서를 따른다.
+
+## 6. Camcorder pilot의 최소 vocabulary — 2026-10-07
+
+Panasonic pilot005에서 `mount: "B4"`와 `bodyStyle: "camcorder"`를 추가했다. B4 aliases는 공식 `B4 lens mount`, `2/3-type bayonet`이다. 기존 product shape/schemaVersion/fixedLens/weight/video 계약은 유지한다. B4는 교환식 interface이며 sensor format 또는 물리 센서 크기가 아니다. Camcorder 형태를 compact/SLR로 대신하지 않는다. 근거와 영향은 [pilot 보고서](OBJECTIVE_DB_PANASONIC_PRODUCTION_005.md)를 참조한다.
+
+Fixed camcorder의 body-only에는 integral lens가 포함될 수 있으며 배터리/카드/handle/hood 구성은 공식 조건 그대로 보존한다. 현행 weightBases에 operational을 새로 추가하지 않았고 정확한 기준을 확인하지 못한 운영무게는 UNKNOWN이다. Lens OIS/hybrid를 IBIS에 넣지 않는다. B4 lens 추천 coverage와 camcorder UI label/design preference는 후속이며 이번 engine/UI 변경은 없다.

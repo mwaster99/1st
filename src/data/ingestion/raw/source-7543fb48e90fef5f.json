@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x2/",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-X2 x2-help official reviewed source",
+  "documentVersion": "current page retrieved2026-10-07",
+  "region": "NA (selected official mode)",
+  "evidenceScope": "HC-X2 exact directly operated camcorder: reviewed specifications and conditions; no prices",
+  "accessedAt": "2026-10-07T02:23:14.975Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 15.03,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.ibis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3.5,
+        "resolutionDots": 2760000
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "unit": null
+    },
+    {
+      "field": "specs.weight",
+      "value": 2490,
+      "unit": "g"
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 2040,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-x2",
+      "manufacturerModelCode": "HC-X2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-X2",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X2",
+        "aliases": [
+          "HC-X2"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Sensor",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "reason": "Unresolved exact HC-X2 official source conflict; no majority/typo overwrite",
+            "reportedClaims": [
+              {
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x2/",
+                "value": "1/5.8-type High Sensitivity MOS",
+                "totalMP": 1.5
+              },
+              {
+                "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                "page": 305,
+                "value": "1.0-type MOS",
+                "totalMP": 20.92
+              }
+            ],
+            "effectivePixelsAgree": 15030000
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 15.03,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Effective Pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "basis": "effective, not erroneous total1.5MP"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Stabilization",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "reason": "No published sensor/body-shift stabilization proof; optical/electronic/hybrid is not IBIS",
+            "manufacturerStabilization": "Ball O.I.S., 5-Axis HYBRID O.I.S.+ (UHD/FHD)",
+            "notSensorShift": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 3,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "General / LCD Monitor",
+            "row": "specs.lcd"
+          },
+          "conditions": {
+            "region": "North America/Asia, Europe display also3.5inch",
+            "mechanism": "UNKNOWN",
+            "touch": "UNKNOWN in this selected observation"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 4,
+          "rawValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "General / Viewfinder",
+            "row": "specs.evf"
+          },
+          "conditions": {
+            "videoDisplayAreaDots": 1770000
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 2490,
+          "rawUnit": "g",
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "HC-X2 including integral lens, lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 2040,
+          "rawUnit": "g",
+          "locator": {
+            "section": "General / Weight",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "HC-X2 main camera including integral lens and grip belt; excluding lens hood, battery and supplied accessories",
+            "excludedOtherModel": "HC-X20 2000g/2430g rows are separate, not aliases or regional variants"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "3418edf836aa11edb2207cc0aecb97559edea9e7f2c15f410575b321c6a36f70",
+  "sourceId": "source-7543fb48e90fef5f"
+}
