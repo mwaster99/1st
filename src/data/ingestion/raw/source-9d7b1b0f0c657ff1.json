@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dmc-g85/",
+  "documentTitle": "DMC-G85 official camera specification",
+  "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.829Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 16,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.weight",
+      "value": 505,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "specs.bodyOnlyWeight",
+      "value": 453,
+      "unit": "g"
+    },
+    {
+      "field": "specs.dimensions",
+      "value": [
+        128.4,
+        89,
+        74.3
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.cardSlots",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.present",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in"
+    },
+    {
+      "field": "specs.lcd.resolutionDots",
+      "value": 1040000,
+      "unit": "dots"
+    },
+    {
+      "field": "specs.lcd.touch",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-g85",
+      "manufacturerModelCode": "DMC-G85",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX G85",
+        "brand": "Panasonic",
+        "model": "LUMIX G85",
+        "series": "LUMIX G",
+        "aliases": [
+          "DMC-G85",
+          "DMC-G85(바디킷)"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 16,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Camera effective pixels, not total/composite/6K PHOTO"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 2,
+          "rawValue": 505,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Camera + card + battery weight (not lens-inclusive kit)"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 3,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected operating weight configuration"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 4,
+          "rawValue": 453,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Camera body-only weight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "camera body only; no battery/card/lens/grip",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 5,
+          "rawValue": [
+            128.4,
+            89,
+            74.3
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "External body W x H x D"
+          },
+          "conditions": {
+            "configuration": "body without lens, excluding protrusions",
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 6,
+          "rawValue": 9,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Mechanical burst H and alternate AFC mode"
+          },
+          "conditions": {
+            "shutter": "mechanical",
+            "mode": "H",
+            "focusMode": "AFS",
+            "alternateAfcFps": 6
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 7,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Recording media; no inferred number of physical slots"
+          },
+          "conditions": {
+            "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+            "recordingMedia": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.evf.present",
+          "evidenceRef": 8,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Live Viewfinder"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.evf.resolutionDots",
+          "evidenceRef": 9,
+          "rawValue": 2360000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Viewfinder dots (not LCD monitor)"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.lcd.present",
+          "evidenceRef": 10,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Rear monitor / capacitive or static touch control"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "evidenceRef": 11,
+          "rawValue": 3,
+          "rawUnit": "in",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Rear monitor / capacitive or static touch control"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "evidenceRef": 12,
+          "rawValue": 1040000,
+          "rawUnit": "dots",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Rear monitor / capacitive or static touch control"
+          },
+          "conditions": {
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "evidenceRef": 13,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Rear monitor / capacitive or static touch control"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "9dbd4348c5fe2f96982831c78e7c5f8361713a69939cac4a42b551fcb63e8e5a",
+  "sourceId": "source-9d7b1b0f0c657ff1"
+}

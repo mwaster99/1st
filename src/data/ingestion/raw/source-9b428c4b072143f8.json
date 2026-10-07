@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "JP",
+  "url": "https://panasonic.jp/dc/products/DC-G9M2/spec.html",
+  "documentTitle": "DC-G9M2 Japanese exact pixels / operating weight corroboration",
+  "evidenceScope": "Batch003 DC-G9M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.829Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.sensor.megapixels",
+      "value": 25.21,
+      "unit": "MP"
+    },
+    {
+      "field": "specs.weight",
+      "value": 658,
+      "unit": "g"
+    },
+    {
+      "field": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-g9-ii",
+      "manufacturerModelCode": "DC-G9M2",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 루믹스 G9 II",
+        "brand": "Panasonic",
+        "model": "LUMIX G9 II",
+        "series": "LUMIX G",
+        "aliases": [
+          "panasonic g9 ii",
+          "파나소닉 g9 ii",
+          "루믹스 g9 ii",
+          "g92"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 0,
+          "rawValue": 25.21,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "カメラ有効画素数2,521万画素, not total2,652万"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 1,
+          "rawValue": 658,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "質量658g body+battery+SD card, shoe cover yes/bodycap no"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 2,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "質量 stated battery and SD1card configuration"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+            "approximate": true,
+            "hotShoeCover": "included",
+            "bodyCap": "excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "74d445ba34915de746df3a32c9f39a371da2fb5c783353966d788c28626699b9",
+  "sourceId": "source-9b428c4b072143f8"
+}

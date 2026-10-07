@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCG9_DVQP1402ZA_ENG.pdf",
+  "documentTitle": "DC-G9 advanced manual / firmware appendices",
+  "evidenceScope": "Batch003 DC-G9 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.852Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "4K 60p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 8,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-g9",
+      "manufacturerModelCode": "DC-G9",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX G9",
+        "brand": "Panasonic",
+        "model": "LUMIX G9",
+        "series": "LUMIX G",
+        "aliases": [
+          "DC-G9",
+          "DC-G9GD-K"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 60p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Advanced guide PDF356 firmware2.0 MOV row"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "60p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+            "minimumFirmware": "2.0 for selected MOV container",
+            "otherModes": "4K30p42210bit internal;4K60p42210bit HDMI output separate from4K60p internal8bit;6K PHOTO is not video",
+            "logOptionalActivation": "DMW-SFU1 and firmware>=2.0; not preinstalled V-Log L"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected internal mode bit depth (external/other modes not copied)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "60p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+            "minimumFirmware": "2.0 for selected MOV container",
+            "otherModes": "4K30p42210bit internal;4K60p42210bit HDMI output separate from4K60p internal8bit;6K PHOTO is not video",
+            "logOptionalActivation": "DMW-SFU1 and firmware>=2.0; not preinstalled V-Log L"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "60p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+            "minimumFirmware": "2.0 for selected MOV container",
+            "otherModes": "4K30p42210bit internal;4K60p42210bit HDMI output separate from4K60p internal8bit;6K PHOTO is not video",
+            "logOptionalActivation": "DMW-SFU1 and firmware>=2.0; not preinstalled V-Log L"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 3,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "PhotoStyle/log recording; optional upgrade key where documented"
+          },
+          "conditions": {
+            "profile": "V-Log L",
+            "scope": "profile availability, not every mode",
+            "optionalActivation": "DMW-SFU1, sold separately",
+            "minimumFirmware": "2.0"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 4,
+          "rawValue": {
+            "present": true,
+            "axes": null,
+            "stops": null,
+            "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "In-body versus in-lens/Dual I.S. stabilizer table"
+          },
+          "conditions": {
+            "manualPage": 145,
+            "bodySensorShift": true,
+            "combinedSystem": "lens+body DualIS separate;5-axis Hybrid includes electronic video correction"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "acae22b63f63b1b972a4369a1d1bbe896c3fa67a41b369f38a3d4cf15b2f05e2",
+  "sourceId": "source-edf1f2eae4ceb08e"
+}

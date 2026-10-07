@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCGH5S_DVQP1438ZA_ENG.pdf",
+  "documentTitle": "DC-GH5S advanced manual / firmware appendices",
+  "evidenceScope": "Batch003 DC-GH5S independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.853Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "C4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 8,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.log",
+      "value": true,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-gh5s",
+      "manufacturerModelCode": "DC-GH5S",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX GH5S",
+        "brand": "Panasonic",
+        "model": "LUMIX GH5S",
+        "series": "LUMIX G",
+        "aliases": [
+          "DC-GH5S"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "C4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Advanced guide p164 internalC4K table"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "resolution": [
+              4096,
+              2160
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "otherModes": "C4K29.97p internal42210bit150Mbps vs selectedC4K59.94p internal4208bit150Mbps; C4K60p42210bit HDMI output-only has no simultaneous internal recording; external RAW is separate",
+            "rawStillBurst": "12fps AFS/MF;14bit RAW11fps;8fpsAFF/AFC or14bit7fps; not a video bit-depth claim"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected internal mode bit depth (external/other modes not copied)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "resolution": [
+              4096,
+              2160
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "otherModes": "C4K29.97p internal42210bit150Mbps vs selectedC4K59.94p internal4208bit150Mbps; C4K60p42210bit HDMI output-only has no simultaneous internal recording; external RAW is separate",
+            "rawStillBurst": "12fps AFS/MF;14bit RAW11fps;8fpsAFF/AFC or14bit7fps; not a video bit-depth claim"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 59.94,
+            "frameRateLabel": "59.94p",
+            "resolution": [
+              4096,
+              2160
+            ],
+            "aspectRatio": "17:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MOV",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "bitRateMbps": 150,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "otherModes": "C4K29.97p internal42210bit150Mbps vs selectedC4K59.94p internal4208bit150Mbps; C4K60p42210bit HDMI output-only has no simultaneous internal recording; external RAW is separate",
+            "rawStillBurst": "12fps AFS/MF;14bit RAW11fps;8fpsAFF/AFC or14bit7fps; not a video bit-depth claim"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 3,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "PhotoStyle/log recording; optional upgrade key where documented"
+          },
+          "conditions": {
+            "profile": "V-Log L",
+            "scope": "profile availability, not every mode",
+            "activation": "preinstalled / native profile"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "cd1a2ed2424a5f7261aaa0c6a13efdd1ca0eb81dbd9ef86eac357fd863a37960",
+  "sourceId": "source-ad648336770db342"
+}

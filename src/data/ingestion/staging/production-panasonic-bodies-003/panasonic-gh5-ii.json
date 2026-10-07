@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-gh5-ii",
+  "manufacturerModelCode": "DC-GH5M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-GH5M2",
+    "productId": "panasonic-gh5-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-5334380ef5c2703da7e7",
+    "sourceId": "source-6d8640fd4f73c031",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DC-GH5M2L / DC-GH5M2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-gh5-ii",
+    "name": "파나소닉 LUMIX GH5II",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX GH5II",
+    "aliases": [
+      "DC-GH5M2",
+      "DC-GH5M2L"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 647,
+      "burst": {
+        "maxElectronicFps": 12,
+        "maxMechanicalFps": 12
+      },
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        138.5,
+        98.1,
+        87.4
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 3680000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 6.5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 20.33,
+        "sizeMm": [
+          17.3,
+          13
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": null,
+        "log": true,
+        "max": "6K 29.97p"
+      },
+      "weight": 727,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-6d8640fd4f73c031",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/GH5M2L",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-GH5M2L official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.851Z",
+    "evidenceScope": "Batch003 DC-GH5M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "9566fbf6f7e80a43869e73d5b52599e3f82aa651ca066702361b9d1a673ba15c"
+  },
+  "sources": [
+    {
+      "sourceId": "source-2957e88fe5a44cf3",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-s-series-model-dc-gh5m2/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GH5M2 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.851Z",
+      "evidenceScope": "Batch003 DC-GH5M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "19e449810bb32f22dd350e9befd7e95f6261b7b79875d5ab236f9e0208ef5c49"
+    },
+    {
+      "sourceId": "source-6d8640fd4f73c031",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/GH5M2L",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-GH5M2L official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.851Z",
+      "evidenceScope": "Batch003 DC-GH5M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "9566fbf6f7e80a43869e73d5b52599e3f82aa651ca066702361b9d1a673ba15c"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 647,
+      "unit": "g",
+      "rawValue": 647,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-361b589b19944424e1eb"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 12,
+      "unit": "fps",
+      "rawValue": 12,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 9
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-282418c7d459ce500364"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 12,
+      "unit": "fps",
+      "rawValue": 12,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Mechanical burst H and alternate AFC mode"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 9
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-1fc936911f0b059e421c"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Explicit card slot1 / slot2; CFexpress B only for GH6"
+      },
+      "conditions": {
+        "physicalInternalSlotsOnly": true,
+        "externalUsbSsdIsNotCardSlot": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c4ff5e7580535caed0e6"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.dimensions",
+      "value": [
+        138.5,
+        98.1,
+        87.4
+      ],
+      "unit": "mm",
+      "rawValue": [
+        138.5,
+        98.1,
+        87.4
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-12c7af24df03fbb7dfee"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-aa71bf8617eec54c4451"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots",
+      "rawValue": 3680000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-94d46da75e8cc235dd56"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 6.5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 6.5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "B.I.S. / image sensor shift type versus distinct Dual I.S. entry"
+      },
+      "conditions": {
+        "bodySensorShift": true,
+        "standard": "CIPA",
+        "direction": "yaw/pitch",
+        "lens": "H-ES12060",
+        "focalLengthMm": 60,
+        "equivalentFocalLengthMm": 120,
+        "combinedStabilization": {
+          "system": "Dual I.S. 2 compatible",
+          "stops": 6.5,
+          "lens": "H-FS14140",
+          "focalLengthMm": 140,
+          "equivalentFocalLengthMm": 280
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-aee15fdbc617a1a1f384"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c17cc6ca982a94650b51"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-2f87631724b9fab22364"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f751ad953767f9303691"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c6135f5f660c65553df0"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c531903bffafa8075be5"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 20.33,
+      "unit": "MP",
+      "rawValue": 20.33,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f226cdbf94cb1fdd5814"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        17.3,
+        13
+      ],
+      "unit": "mm",
+      "rawValue": [
+        17.3,
+        13
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Image sensor physical 17.3 x 13.0 mm"
+      },
+      "conditions": {
+        "aspectRatio": "4:3"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f98eb346680e2f0a5f06"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          4992,
+          3744
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+        "anamorphic": true,
+        "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-d9c8ee139961749ba5e8"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          4992,
+          3744
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+        "anamorphic": true,
+        "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ae24b598bf95a94f4bbf"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "PhotoStyle/log recording; optional upgrade key where documented"
+      },
+      "conditions": {
+        "profile": "V-Log L",
+        "scope": "profile availability, not every mode",
+        "activation": "preinstalled / native profile"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-6b90d01958342e74d7a1"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null,
+      "rawValue": "6K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Official camera video table / selected normal mode"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          4992,
+          3744
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+        "anamorphic": true,
+        "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c1f0bcc6c753a1095329"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.weight",
+      "value": 727,
+      "unit": "g",
+      "rawValue": 727,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-26e9d21725bf148729e4"
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-2957e88fe5a44cf3",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-fc47396e6e49f2d475c0"
+    }
+  ]
+}

@@ -1,0 +1,1954 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "productIds": [
+    "panasonic-g9-ii",
+    "panasonic-g85",
+    "panasonic-g100",
+    "panasonic-gh6",
+    "panasonic-gh5-ii",
+    "panasonic-gh5",
+    "panasonic-g9",
+    "panasonic-g95",
+    "panasonic-gf10",
+    "panasonic-gx9",
+    "panasonic-gh5s"
+  ],
+  "approvedAt": "2026-10-07T00:49:32.178Z",
+  "approvedBy": {
+    "name": "codex-panasonic-003-direct-review",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes.",
+  "diffDigest": "1ba169d54cc932a351342850a764e42ec9d7eea1743005a25064766b8650cc36",
+  "diffFileDigest": "212df27ef66d4ca6cb67915b4494d2ff5dc05bbc0e2a9bfac9b33fe12f865ca1",
+  "baselineCanonicalDigest": "0c60df361495138d8f1872dfa99f48ada5a378153db948093b9e88ae0c1cc44c",
+  "expectedCanonicalDigest": "19d37989beccef9930e6af2130b0e4bab3e3eeeb9d487f9e90ba989b8ad6ea71",
+  "incomingDigest": "4685862c772671891af5d9b74ce451ab27bef3cf6b142c8cc236a655f4b299b0",
+  "incomingArtifactDigests": {
+    "vocab.json": "91610daed7f81cd5ed68dfb11801cb72c7268b297f3441d7b028ae9536279703",
+    "identity-map.json": "e0b2b83ee7f8c6d75da395373da17ab310cb1d6040b4172974cbb09968e2b116",
+    "diffs/production-panasonic-bodies-003.json": "212df27ef66d4ca6cb67915b4494d2ff5dc05bbc0e2a9bfac9b33fe12f865ca1",
+    "staging/production-panasonic-bodies-003/panasonic-g9-ii.json": "a52e748592cd26255377923b980b58b58664749cdd3034ebdb81be7b6e67e361",
+    "raw/source-4dea1fe3a5b27474.json": "6c2268f2d78679a7839cfdda3c6e5b41dec649ef84bc067e0b4a9d7441b95a56",
+    "raw/source-9b428c4b072143f8.json": "5e60b054a0d7a1aeabb11128155d896d782d86205bab5cee35213fae0a3a2867",
+    "staging/production-panasonic-bodies-003/panasonic-g85.json": "9485a77b0c0bfde543baa0f4d63dc93d57880bc42a57501e38abc4417b74e28e",
+    "raw/source-d0856e6fca5400e3.json": "849c7c46b76c77194a54e4039630fca66f6eeae11dec3bfbab4df08824d29ef2",
+    "raw/source-9d7b1b0f0c657ff1.json": "c993066ecad8d82492976ef7a10f8b65b798a38445c034341faf0aa252b530f3",
+    "raw/source-724ff42490ecd0ff.json": "ea4be23ff3b3120c38156253d3c6c1364ad77c7cf28ce4bc59b218dd51d93417",
+    "staging/production-panasonic-bodies-003/panasonic-g100.json": "6f9e217fc6a7d24ad5a8225af35cf5fa74bfac0ee800220a6a6a010eeca5e3ca",
+    "raw/source-cb08fe807db4f524.json": "936a8e98f1aaa1405144c345e9a59ac7c5d5fa6abb131e8808cf242dcf56497b",
+    "raw/source-1acb81c600f971ba.json": "36bff25c522b1c54ed19242c24612f2090d92cab9da73b5f6ae4c6d711c509cb",
+    "raw/source-b527ba810d999f5c.json": "e74d8c4ba4b1db5f70c18d7c262ae250927637c0b8b7c8867d58ff3145970418",
+    "staging/production-panasonic-bodies-003/panasonic-gh6.json": "6047994a3425868812ae47d0d0cf9943a733b2359eb8d5525e2cb817bab9e6e2",
+    "raw/source-a2f6dd934179772c.json": "9faf8a77401987b02e8a12b91a6cf7a09ef6ca8a0f83b0fd5f2d20a7c4304ea5",
+    "raw/source-392f555eced23539.json": "423b56f5bc3c6ca46399e0dfdb4ece05b999d58494f54a2623161789e588975f",
+    "raw/source-2694e633f9364b49.json": "329019afdc916b7a4a24a978273bc61a18e280ee4649ca3b12bba0dca4e77282",
+    "staging/production-panasonic-bodies-003/panasonic-gh5-ii.json": "3f19c56e4a64e48307c391005f961d0c476ef5b3f753e2650b885315276e72b7",
+    "raw/source-6d8640fd4f73c031.json": "d07152301b7e968fdff7fb8bf451660ae6d7809dc69c45781c4de06fee3cae2b",
+    "raw/source-2957e88fe5a44cf3.json": "20835b3f1276b1e0008172b62ee74a5ed8dd2bb3a239bb4d01e843787815c25f",
+    "staging/production-panasonic-bodies-003/panasonic-gh5.json": "3c0ff99bdb2f57883d91ba0559e1bacc69064fd2d13666007100f24ff4ef7331",
+    "raw/source-589368e0819fc066.json": "a87b13da9c42fdd2103aca7c153f17fce0aea49e5744054d2e19526a4d72cc2e",
+    "raw/source-10aaad61becbb07f.json": "fab7479dc2231cc065e2cb1a07ac8a2c33e27a37546f7e7fff2f7e21a6ea4a67",
+    "raw/source-23a83bf7ce25c5a8.json": "2f7de6ceba0319425766a5712f25f3da763e58f2dedbcb8bd51970d828e09abd",
+    "staging/production-panasonic-bodies-003/panasonic-g9.json": "186405363997c7273aa26164c9e65549fc640488495728788855a9e67408ce59",
+    "raw/source-bde07a69fad42d2a.json": "361a35d8901e4ae647c117a89cb753897d25f406a9beb5e70c96cbf14965c792",
+    "raw/source-89695eb188302acd.json": "4b54cf00dc4ce305cdc4b29228feb938cbeca3ba0f38cf6d75ce01b96cec841f",
+    "raw/source-edf1f2eae4ceb08e.json": "6b7a84a4e69ffbb3ce562dcaa261f64155fbb236d1584598267c537a38583d38",
+    "staging/production-panasonic-bodies-003/panasonic-g95.json": "37f3a4375e822c97a48c9efbb1bf959d6d94d37f27ff2ea83d95528fe601b808",
+    "raw/source-e2453a76d6c1c9f3.json": "9ed239a517932f4b39a339645d4fd84e0d6dcb70ae838e2548ce13ffa4d3e378",
+    "raw/source-5517b7976667bc2e.json": "d518f51b4e14cae5359a946a6d6870ea228fbd1c92ca44e41ab85c64e3c1f80b",
+    "staging/production-panasonic-bodies-003/panasonic-gf10.json": "24b01f030fff6d176c88df385306b60b4d16887bf40fbbd01f11a5716e79e2b0",
+    "raw/source-7674fe9b5ab5f1c1.json": "65c0fc4c14fd7b2e0d03566b973e484fad2518882ced13f49c903d6524594b92",
+    "raw/source-a9eb652712a40b63.json": "93fbe60fabc8790098f4186302675eeb50cbd8fe0bc2273dbae53ab4dc22738f",
+    "staging/production-panasonic-bodies-003/panasonic-gx9.json": "af3d24a47c7a271a441f4e4c99db0d9782400395ed09ff49ecb5179b81298246",
+    "raw/source-96be7b7d9416bf20.json": "fa76d69bad4b8d975f6694e208c7d51532b4029b527a4d9e8ff7101aabbd76f2",
+    "raw/source-c99fae1f4ed2b12e.json": "d38002d4c4109dedff8286ec3b4410e421a2fbeeb45419621dc693a275082545",
+    "raw/source-4ef92e59b74d02e2.json": "07cec0bf555a836ef6674e99b6841df257681b787c519dce0ea6d77876674b1c",
+    "staging/production-panasonic-bodies-003/panasonic-gh5s.json": "6bec4968b46a72b3a68615298e95d10549396b6203d161cf7348c2c1a49bc7b6",
+    "raw/source-01ea7bf148bf3485.json": "56a0ae8cb17d9aa334c434d12f9ad291b459ad2e94103a787e6e0c8c1d713764",
+    "raw/source-b15f2449b5b8e679.json": "eb7d5d96b2d5b8d7ed4ae56806c453906153a28c5367bbac4134507097f06e54",
+    "raw/source-ad648336770db342.json": "3e59462ffc8666746c2fa8fba7cb20809693dc73630a3e05d0c386be181bcfdb",
+    "raw/source-a32101e0416d0b95.json": "16dc7a048c7bc4e71d241bafa3d0e7f28483dc853ec37c6df2370ac9520aa0b6"
+  },
+  "productOperations": [
+    {
+      "productId": "panasonic-g9-ii",
+      "operation": "update-product",
+      "action": "update",
+      "incomingProductDigest": null,
+      "canonicalProductDigest": "dd8ef6a28fd92940f6bedd6aab4f8f89188e972cb6ac6ee0ff98fdfa32520952",
+      "identityEvidenceId": null,
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "57eff0c8a77ab3839db4d4ffb56c2b8912b79697ed6d30a9276d176526381d8f",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-f51909ea73c7ac7e4721",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "34c494b0a66965159391a19aa705e97a77d64d305f059c0cfcf6232d443738f3",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-a4622d3f97d40a7477fd",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "98518c46975cd180fa3fcf628a963a1e801db74b05abb00af82cf3e12b8fb815",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-204b306a91e84c986058",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "88a8662dadb9b37d1c4eba9c32246e4e0823c22bd1842e78338041059ad9fe8d",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-5334380ef5c2703da7e7",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "660781976237d8db05f763f53d595a3ed9efcdacc8c4042e1f25a1d886e0a94d",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-f11d90fa7f2d596bdfae",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "7580c7e4ccf0187e970395cee374a8b322669a9bee2610e04b89fc44893ef787",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-843b7d813e610a6ca288",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "765703efcb585fa359c2f1ec3876c83b2f7a4215110d726708c41b451a5675b2",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-c46e57d650f75ce7c3b4",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "d4b3fb37a2f588b5de542c7ef1ab6e893178a27522fbeddc9f7cc64fdcda32cc",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-70dbc6d0ce5c51b35e0c",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "05dd83ed0f81ab39697bfc6a61ea215c231d65b0369e0cfb60ba4e2c3f9447d4",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-b42481978c4a98b9839d",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "990de8f9a7d3a000fa5366c40c2c2b9a74ad73bbec6b55afb6cc6631866453f2",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-dbefa4b88b0b5abecee5",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-78556ecc075116e358b6",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-9606f2090bb46d9d831d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-23ae2b604c8086a17e0f",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.cardSlots",
+      "claimId": "claim-c256ec2e8b6976de6437",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.dimensions",
+      "claimId": "claim-64afaf1c14c7b0fd6399",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.evf.present",
+      "claimId": "claim-356a363822c0f0870f8e",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-a24a08215043ebe8117d",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.ibis",
+      "claimId": "claim-41252b9d311d11184f40",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.present",
+      "claimId": "claim-8af742d23f39943b6fcb",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-6c08b01e8aab8e9350a4",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-81a3c52d62a96e908e4c",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-b98a6364af21ad074134",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.format",
+      "claimId": "claim-dc3c12c7d31c46897bb0",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-a59a1ea1c262338964d6",
+      "category": "value-conflict",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-cbdd8dc67584cf8abd37",
+      "category": "value-conflict",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-bbee3cdda81f96dac22a",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-81e0fea4af3b0b72aac5",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-a345eeff796e57e07f29",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.log",
+      "claimId": "claim-4a29d6fc1b95f0c83fb9",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.max",
+      "claimId": "claim-43da3860d2423acf006f",
+      "category": "null-fill",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weight",
+      "claimId": "claim-63bebd93c9ac324c03a5",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weight",
+      "claimId": "claim-b698cf46c72ba020bf68",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weightBasis",
+      "claimId": "claim-6b517aa2bd42470a277e",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weightBasis",
+      "claimId": "claim-edeac0b59631bb5793e1",
+      "category": "same-value/new-evidence",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-b2ef667a9baf1a548f40",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-7660d8ac25f4e373b8ac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-cde6f4cba92d6bc2122b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.cardSlots",
+      "claimId": "claim-fe8b124175f397831b99",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.dimensions",
+      "claimId": "claim-34864d2bd0ed0764f217",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.evf.present",
+      "claimId": "claim-ac16e0e92003fcfd7926",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-816006fa4c2217e10172",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.ibis",
+      "claimId": "claim-d849c1e1ee2d6758e73c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.present",
+      "claimId": "claim-3abbe133835524d626f1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-ec679b7f928318510558",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-40fd1710a0f77ac21cd0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-46c95c29040c8c7a8498",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.sensor.format",
+      "claimId": "claim-9fc279ea74d09133010b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-655424e39d07b1d7fd20",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-e1f8e5e99216130afbaf",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-89ef2752a1dde2c99526",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.max",
+      "claimId": "claim-e5f74c8c36eda3ecf279",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.weight",
+      "claimId": "claim-c59f507f2e62f801c872",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.weightBasis",
+      "claimId": "claim-a3e7aafcd21b7d6be253",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-6e81f55031a67740fb2a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-dcbe9e64fb70c540df99",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-dbbb3da8c70baa758bcf",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.cardSlots",
+      "claimId": "claim-43bdbafc3a83bad572f1",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.dimensions",
+      "claimId": "claim-f10a4a2483bb598d201a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.evf.present",
+      "claimId": "claim-7be3d66db5d946053b27",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-ea2c7fedd728001bd07d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.ibis",
+      "claimId": "claim-a4ab54277d5ca4944f31",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.present",
+      "claimId": "claim-07c33da805a39b9571b4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-65ea044727895b22c209",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-6fe06da18628b987a335",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-8991c700ca632720634d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.sensor.format",
+      "claimId": "claim-9eb1ab8daacd5a69cfa9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-9856de68233f244a38e6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-5436eafce9f7f76a41e9",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-88adcf8e07bf29bfbc05",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.max",
+      "claimId": "claim-7c414b6a7a2767598674",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.weight",
+      "claimId": "claim-f41c56f66d53fb8a5d22",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.weightBasis",
+      "claimId": "claim-085e86799bfd2c7d2fe3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-501f7db54056e1d5be47",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-ad8b2d0e29855c34ef43",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-dfd15e765d5a51927650",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.cardSlots",
+      "claimId": "claim-e409c67b88b145d00212",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.dimensions",
+      "claimId": "claim-57e607d7418934b90934",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.evf.present",
+      "claimId": "claim-4c3140bd4a900e4d2218",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-1f67203db6165776e74d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.ibis",
+      "claimId": "claim-c4c02f4c352036290a1e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.lcd.present",
+      "claimId": "claim-0070444c36ba98cd789c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-6a1d06ad2814f4bfc11d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-eb3fbf07c964976497f9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-b13a5fabfbd4a4feffed",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.sensor.format",
+      "claimId": "claim-8dc6c5d2d78159de2b30",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-61ef20fbfbd8ea34fca8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-cb042fbcf03586a011f4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-ace766cafbe41d3672a2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-15d28e3e67ebff18482c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.video.log",
+      "claimId": "claim-c6921730f89efe1f2c6c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.video.max",
+      "claimId": "claim-778625cc637a91acc0a8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.weight",
+      "claimId": "claim-c62fc1b1552ef395e78d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh6",
+      "path": "specs.weightBasis",
+      "claimId": "claim-f0ad884c1a7ca4e8e955",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-361b589b19944424e1eb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-282418c7d459ce500364",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-1fc936911f0b059e421c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.cardSlots",
+      "claimId": "claim-c4ff5e7580535caed0e6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.dimensions",
+      "claimId": "claim-12c7af24df03fbb7dfee",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.evf.present",
+      "claimId": "claim-aa71bf8617eec54c4451",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-94d46da75e8cc235dd56",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.ibis",
+      "claimId": "claim-aee15fdbc617a1a1f384",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.present",
+      "claimId": "claim-c17cc6ca982a94650b51",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-2f87631724b9fab22364",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-f751ad953767f9303691",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-c6135f5f660c65553df0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.format",
+      "claimId": "claim-c531903bffafa8075be5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-f226cdbf94cb1fdd5814",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-f98eb346680e2f0a5f06",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-d9c8ee139961749ba5e8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-ae24b598bf95a94f4bbf",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.log",
+      "claimId": "claim-6b90d01958342e74d7a1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.video.max",
+      "claimId": "claim-c1f0bcc6c753a1095329",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.weight",
+      "claimId": "claim-26e9d21725bf148729e4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5-ii",
+      "path": "specs.weightBasis",
+      "claimId": "claim-fc47396e6e49f2d475c0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-4a60232d2d9a2a65f418",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-2b50bdde2fcf972afbce",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-e5743d3f9690ffc88c4f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.cardSlots",
+      "claimId": "claim-165f4819bf9cfa2ae9cb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.dimensions",
+      "claimId": "claim-4a090a055fe2775c70be",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.evf.present",
+      "claimId": "claim-f5185976ac38d725f5c0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-f352cf3602190f45f54e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.ibis",
+      "claimId": "claim-34dae8331057d3eecb9b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.lcd.present",
+      "claimId": "claim-9fa28fe0347f0d59adac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-82c930ed1f5e1ffc55a5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-51e624f5a9146e1e611a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-7bf3d26b3e4b0a4afa0e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.sensor.format",
+      "claimId": "claim-36ff0fd9aff83460df48",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-417db1e72d8c33f22baf",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-5bce4531679210acf622",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-ff65ac52e255bd05b724",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-4b784d390c74cd857f0a",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.video.log",
+      "claimId": "claim-901aa5cbb1dfdc872af4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.video.max",
+      "claimId": "claim-1c9c92a5a433ea9770ea",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.weight",
+      "claimId": "claim-9ae94f69093dbbc4475d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5",
+      "path": "specs.weightBasis",
+      "claimId": "claim-f6a837112f4c02c5d5d3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-fd3d86ea74249db9bb4f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-89b6c7918bf0b706616c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-5b98254fea792114b68f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.cardSlots",
+      "claimId": "claim-fae4b9042fb231b6cb9e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.dimensions",
+      "claimId": "claim-e69a16021e52161e4037",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.evf.present",
+      "claimId": "claim-4c7e4eeb358b26fd3229",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-13362ca3686a4327d98a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.ibis",
+      "claimId": "claim-b84e24d4dbd7085e4fc5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.lcd.present",
+      "claimId": "claim-a5e9c3df8e43091e1109",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-c1a56316ac931125dbdc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-5539a1f83531df9f188d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-ae62784d4689c22129c6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.sensor.format",
+      "claimId": "claim-1b9ee05d7ccdecb7a373",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-bc880e1e13a7dd5a8968",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-bd4e1693145ee3ebe4d9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-97b0014113dec73d75bc",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.video.log",
+      "claimId": "claim-17324b4bcdb1a6430afc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.video.max",
+      "claimId": "claim-48a09968ef71a32b1d56",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.weight",
+      "claimId": "claim-c55fa18f664b16f85cbc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g9",
+      "path": "specs.weightBasis",
+      "claimId": "claim-c323ef1ec541757336f3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-ad7e1ff53fdd82efd6a5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-c6d71ca372a2845a8b45",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-71f6585fc89b21c327f8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.cardSlots",
+      "claimId": "claim-f58e59412ddbf0d1fb79",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.dimensions",
+      "claimId": "claim-4a15b751c01f3269adea",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.evf.present",
+      "claimId": "claim-2a1acff611d7b709e074",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-58e630d297c54c03bc54",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.ibis",
+      "claimId": "claim-b09c21f5d0b5ded94db3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.present",
+      "claimId": "claim-7b433781b1d11ca830d3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-1dce3194f972ef1bb073",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-a6ff9946b9d08f6836b1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-e06d9a6f65caaf39561d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.format",
+      "claimId": "claim-338f234f6cdc8b8cf719",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-2fecf3229c04933cdc14",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-ee0c6d22038a9ad63552",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-7ca06b2df7458496190b",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-dab1443bbe1b940608ce",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.log",
+      "claimId": "claim-4410f3cfeccd93859db1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.max",
+      "claimId": "claim-7218620a9af88fb30772",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.weight",
+      "claimId": "claim-49d9ce14c9d876f3f083",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.weightBasis",
+      "claimId": "claim-a0d28c8e88ac8f9234b0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-5e8b3000f25626d8392a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-40b8fa52893341dcea5e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-ad203153f128c0fe1b05",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.cardSlots",
+      "claimId": "claim-51e5f8f9c3b8fd338473",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.dimensions",
+      "claimId": "claim-a34a9d68f96e6259fb1a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.ibis",
+      "claimId": "claim-a1caac86fbb2236bbbec",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.present",
+      "claimId": "claim-265d443dc51e346a277a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-9239fbe6d6182ff022ad",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-42d294ed150f318676ff",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-676ae31bd9d363188a62",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.sensor.format",
+      "claimId": "claim-05de694c0dedf0ffbeef",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-4d65f7e2c8789ad27b13",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-558729cb9e8c5a738fdb",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-19a77f0be2bf651a2611",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.max",
+      "claimId": "claim-faac50f4b307551e4c33",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.weight",
+      "claimId": "claim-fe5510abefff3383bc72",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.weightBasis",
+      "claimId": "claim-d7e2e1d30536bc7d0788",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-d86d4d7b8a337facaefb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-16fbf9eeee046738c900",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-39d5a5b06d2c05c3c67e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.cardSlots",
+      "claimId": "claim-80712ebba0b7be244b60",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.dimensions",
+      "claimId": "claim-f0b58ed8fa7663c48738",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.evf.present",
+      "claimId": "claim-05aa38d90f00fce0bbd3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-a662d24e73bc153256ca",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.ibis",
+      "claimId": "claim-05a52b79feb1dc7fb8b0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.present",
+      "claimId": "claim-f303d97dd5d357acc318",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-216bc121555cff8a5e93",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-ed4c2b9935b4ef68c2aa",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-b49d6d27caa77dd6e44d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.sensor.format",
+      "claimId": "claim-9306e83e5aa4e8d0419e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-266444c14be3d878644d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-b78f1893d1ad3aba574c",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-9ea3e76ba9f17eea15ad",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.max",
+      "claimId": "claim-f253e0827d35e657c9ed",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.weight",
+      "claimId": "claim-8b2a8ec1c926fa58413b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.weightBasis",
+      "claimId": "claim-7da0fe71cea89c920d3e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-e023534545118549e214",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.burst.maxElectronicFps",
+      "claimId": "claim-1c9532af64b345bee906",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.burst.maxMechanicalFps",
+      "claimId": "claim-f25d856bd0770ae75768",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.cardSlots",
+      "claimId": "claim-444eb06d732d1b84bbfe",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.dimensions",
+      "claimId": "claim-e55d6d34514f51a8db27",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.evf.present",
+      "claimId": "claim-d37929ab4700323d3ccc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.evf.resolutionDots",
+      "claimId": "claim-76323eddd9d241d0f2b8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.ibis",
+      "claimId": "claim-6868421c9e8560256d31",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.lcd.present",
+      "claimId": "claim-bec000fe3c8097451ede",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.lcd.resolutionDots",
+      "claimId": "claim-a70ba63d470407cf3114",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.lcd.sizeInches",
+      "claimId": "claim-ac113fcafeff729e1eb7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.lcd.touch",
+      "claimId": "claim-e87512e274539c4bc50f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.sensor.format",
+      "claimId": "claim-c706fd73e894c41e740c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-ed4a91ad148833a07870",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-d5af1ec1b515cff38796",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-9e4d60f00551f1168027",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.video.log",
+      "claimId": "claim-2b92e7dc8fde3678d344",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.video.max",
+      "claimId": "claim-30431071bbe4e7c400c5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.weight",
+      "claimId": "claim-7a5436ed9ab8df2039b0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    },
+    {
+      "productId": "panasonic-gh5s",
+      "path": "specs.weightBasis",
+      "claimId": "claim-6c8ca2d46f0f8f83b865",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed exact eleven KR G identities, official source/model columns and conditional claims. Allow ten new bodies; only known value conflict is G9II effective pixels legacy-rounded25.2 to25.21 independently corroborated NA/JP. Preserve identity/prices and all unrelated data. G95 LCD unresolved staysUNKNOWN; no incompatible known incoming values. BIS/DualIS, EFCS, RAW/video/anamorphic/license/thermal/SSD and weight configurations reviewed; no schema changes."
+    }
+  ],
+  "approvalId": "approval-778f81e7bb3272ba0f9bd8a8feaab0a640932e20023da393e795c1eb1519281d"
+}

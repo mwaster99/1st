@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-g100",
+  "manufacturerModelCode": "DC-G100",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-G100",
+    "productId": "panasonic-g100",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-a4622d3f97d40a7477fd",
+    "sourceId": "source-cb08fe807db4f524",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DC-G100KGD / DC-G100"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-g100",
+    "name": "파나소닉 LUMIX G100",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX G100",
+    "aliases": [
+      "DC-G100",
+      "DC-G100KGD"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 303,
+      "burst": {
+        "maxElectronicFps": 10,
+        "maxMechanicalFps": null
+      },
+      "cardSlots": null,
+      "dimensions": [
+        115.6,
+        82.5,
+        54.2
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 3680000
+      },
+      "ibis": null,
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 20.3
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": null,
+        "max": "4K 30p"
+      },
+      "weight": 345,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-cb08fe807db4f524",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1204",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-G100KGD official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.829Z",
+    "evidenceScope": "Batch003 DC-G100 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "bf2cad167e438df697a36e358d759e3d462f99e29c760bb9155c5804877cb0f7"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1acb81c600f971ba",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dc-g100/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G100 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.850Z",
+      "evidenceScope": "Batch003 DC-G100 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "4ea05dab586119b429d1d7aabce609351f35a2d96d231c8cffc3ca33ca9a3cee"
+    },
+    {
+      "sourceId": "source-b527ba810d999f5c",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCG100_DVQP2173ZA_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G100 advanced manual / firmware appendices",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.850Z",
+      "evidenceScope": "Batch003 DC-G100 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "8e103f50d349550ebb5107a02ed6c0eea68e63364930e932296fc069217a5f1c"
+    },
+    {
+      "sourceId": "source-cb08fe807db4f524",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1204",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-G100KGD official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.829Z",
+      "evidenceScope": "Batch003 DC-G100 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "bf2cad167e438df697a36e358d759e3d462f99e29c760bb9155c5804877cb0f7"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.bodyOnlyWeight",
+      "value": 303,
+      "unit": "g",
+      "rawValue": 303,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-6e81f55031a67740fb2a"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 10,
+      "unit": "fps",
+      "rawValue": 10,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "H",
+        "focusMode": "not specified in NA row"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-dcbe9e64fb70c540df99"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": null,
+      "unit": "fps",
+      "rawValue": null,
+      "rawUnit": "fps",
+      "unknown": true,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "EFCS is not full mechanical shutter burst"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN/unsupported mechanical maximum: source only documents electronic front curtain",
+        "electronicFrontCurtain": {
+          "AFS/MF": 6,
+          "AFF/AFC": 5
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-dbbb3da8c70baa758bcf"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Recording media; no inferred number of physical slots"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+        "recordingMedia": [
+          "SD",
+          "SDHC",
+          "SDXC"
+        ],
+        "standards": [
+          "UHS-I"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-43bdbafc3a83bad572f1"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.dimensions",
+      "value": [
+        115.6,
+        82.5,
+        54.2
+      ],
+      "unit": "mm",
+      "rawValue": [
+        115.6,
+        82.5,
+        54.2
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f10a4a2483bb598d201a"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7be3d66db5d946053b27"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots",
+      "rawValue": 3680000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true,
+        "technology": "Color LCD; not G100D OLED 2360k-dot revision",
+        "usb": "USB2.0 Micro-B, not G100D USB Type-C"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ea2c7fedd728001bd07d"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.ibis",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Lens OIS / Hybrid electronic correction is not body IBIS evidence"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN body BIS: no direct body sensor-shift specification from reviewed sources; no false positive from lens OIS or electronic video IS"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a4ab54277d5ca4944f31"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-07c33da805a39b9571b4"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-65ea044727895b22c209"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-6fe06da18628b987a335"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-8991c700ca632720634d"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9eb1ab8daacd5a69cfa9"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9856de68233f244a38e6"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-b527ba810d999f5c",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 10,
+        "stabilization": "5-axis Hybrid from lens OIS plus electronic stabilization only; not body sensor-shift BIS; HIGH narrows angle of view",
+        "stabilizationEvidencePage": 205
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-5436eafce9f7f76a41e9"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-b527ba810d999f5c",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 10,
+        "stabilization": "5-axis Hybrid from lens OIS plus electronic stabilization only; not body sensor-shift BIS; HIGH narrows angle of view",
+        "stabilizationEvidencePage": 205
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-88adcf8e07bf29bfbc05"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-b527ba810d999f5c",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Advanced guide p239 RecQuality, p205 stabilization"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 10,
+        "stabilization": "5-axis Hybrid from lens OIS plus electronic stabilization only; not body sensor-shift BIS; HIGH narrows angle of view",
+        "stabilizationEvidencePage": 205
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7c414b6a7a2767598674"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.weight",
+      "value": 345,
+      "unit": "g",
+      "rawValue": 345,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f41c56f66d53fb8a5d22"
+    },
+    {
+      "productId": "panasonic-g100",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1acb81c600f971ba",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-085e86799bfd2c7d2fe3"
+    }
+  ]
+}

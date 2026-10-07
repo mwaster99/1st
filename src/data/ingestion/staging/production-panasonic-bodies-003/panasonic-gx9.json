@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-gx9",
+  "manufacturerModelCode": "DC-GX9",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-GX9",
+    "productId": "panasonic-gx9",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b42481978c4a98b9839d",
+    "sourceId": "source-96be7b7d9416bf20",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DC-GX9GD(바디킷-실버) / DC-GX9"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-gx9",
+    "name": "파나소닉 LUMIX GX9",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX GX9",
+    "aliases": [
+      "DC-GX9",
+      "DC-GX9GD(바디킷-실버)"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "bodyOnlyWeight": 407,
+      "burst": {
+        "maxElectronicFps": 9,
+        "maxMechanicalFps": 9
+      },
+      "cardSlots": null,
+      "dimensions": [
+        124,
+        72.1,
+        46.8
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2760000
+      },
+      "ibis": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1240000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 20.3
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": true,
+        "max": "4K 30p"
+      },
+      "weight": 450,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-96be7b7d9416bf20",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1214",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-GX9GD(바디킷-실버) official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.853Z",
+    "evidenceScope": "Batch003 DC-GX9 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "87a1e84c6a6febcabc191c88699cf00f4bb4d3b02b3853c8a1d38421f21dddd0"
+  },
+  "sources": [
+    {
+      "sourceId": "source-4ef92e59b74d02e2",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCGX9_DVQP1462ZA_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GX9 advanced manual / firmware appendices",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.853Z",
+      "evidenceScope": "Batch003 DC-GX9 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "d5ae2a57f501d62142612389759f396221fbf916a9450d6bb4c3e1ab30f17067"
+    },
+    {
+      "sourceId": "source-96be7b7d9416bf20",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1214",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-GX9GD(바디킷-실버) official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.853Z",
+      "evidenceScope": "Batch003 DC-GX9 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "87a1e84c6a6febcabc191c88699cf00f4bb4d3b02b3853c8a1d38421f21dddd0"
+    },
+    {
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dc-gx9/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GX9 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.853Z",
+      "evidenceScope": "Batch003 DC-GX9 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "c356639aa24a654903927334988e5ced0aa92961679c58d671b5bbae21a15119"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.bodyOnlyWeight",
+      "value": 407,
+      "unit": "g",
+      "rawValue": 407,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-d86d4d7b8a337facaefb"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 6
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-16fbf9eeee046738c900"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Mechanical burst H and alternate AFC mode"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 6
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-39d5a5b06d2c05c3c67e"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Recording media; no inferred number of physical slots"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+        "recordingMedia": [
+          "SD",
+          "SDHC",
+          "SDXC"
+        ],
+        "standards": [
+          "UHS-I"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-80712ebba0b7be244b60"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.dimensions",
+      "value": [
+        124,
+        72.1,
+        46.8
+      ],
+      "unit": "mm",
+      "rawValue": [
+        124,
+        72.1,
+        46.8
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f0b58ed8fa7663c48738"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-05aa38d90f00fce0bbd3"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.evf.resolutionDots",
+      "value": 2760000,
+      "unit": "dots",
+      "rawValue": 2760000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a662d24e73bc153256ca"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4ef92e59b74d02e2",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "In-body versus in-lens/Dual I.S. stabilizer table"
+      },
+      "conditions": {
+        "manualPage": 151,
+        "bodySensorShift": true,
+        "combinedSystem": "lens+body DualIS separate;5-axis Hybrid includes electronic video correction"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-05a52b79feb1dc7fb8b0"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f303d97dd5d357acc318"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1240000,
+      "unit": "dots",
+      "rawValue": 1240000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-216bc121555cff8a5e93"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ed4c2b9935b4ef68c2aa"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b49d6d27caa77dd6e44d"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9306e83e5aa4e8d0419e"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-266444c14be3d878644d"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-4ef92e59b74d02e2",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "4K angle of view narrower than other modes",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b78f1893d1ad3aba574c"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.cropAtMax",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4ef92e59b74d02e2",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "4K angle of view narrower than other modes",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9ea3e76ba9f17eea15ad"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4ef92e59b74d02e2",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Advanced guide pp173-174"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "4K angle of view narrower than other modes",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f253e0827d35e657c9ed"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.weight",
+      "value": 450,
+      "unit": "g",
+      "rawValue": 450,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-8b2a8ec1c926fa58413b"
+    },
+    {
+      "productId": "panasonic-gx9",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c99fae1f4ed2b12e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7da0fe71cea89c920d3e"
+    }
+  ]
+}

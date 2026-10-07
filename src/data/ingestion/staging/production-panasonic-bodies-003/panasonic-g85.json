@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-g85",
+  "manufacturerModelCode": "DMC-G85",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DMC-G85",
+    "productId": "panasonic-g85",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-f51909ea73c7ac7e4721",
+    "sourceId": "source-d0856e6fca5400e3",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DMC-G85(바디킷) / DMC-G85"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-g85",
+    "name": "파나소닉 LUMIX G85",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX G85",
+    "aliases": [
+      "DMC-G85",
+      "DMC-G85(바디킷)"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 453,
+      "burst": {
+        "maxElectronicFps": 40,
+        "maxMechanicalFps": 9
+      },
+      "cardSlots": null,
+      "dimensions": [
+        128.4,
+        89,
+        74.3
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "ibis": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1040000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 16
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": null,
+        "max": "4K 30p"
+      },
+      "weight": 505,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-d0856e6fca5400e3",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1215",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DMC-G85(바디킷) official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.829Z",
+    "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "389f1ac3de3f90c433730fca62096e1d4eb50febb0e0173342c41b7c838b6ada"
+  },
+  "sources": [
+    {
+      "sourceId": "source-724ff42490ecd0ff",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCG85_DVQP1003ZA_ENG.pdf",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DMC-G85 advanced manual / firmware appendices",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.829Z",
+      "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "b768ceaf6e333caeaa66e78ba5bfd2fda735f51f67beea3c191fb919563320aa"
+    },
+    {
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dmc-g85/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DMC-G85 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.829Z",
+      "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "9dbd4348c5fe2f96982831c78e7c5f8361713a69939cac4a42b551fcb63e8e5a"
+    },
+    {
+      "sourceId": "source-d0856e6fca5400e3",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1215",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DMC-G85(바디킷) official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.829Z",
+      "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "389f1ac3de3f90c433730fca62096e1d4eb50febb0e0173342c41b7c838b6ada"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.bodyOnlyWeight",
+      "value": 453,
+      "unit": "g",
+      "rawValue": 453,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b2ef667a9baf1a548f40"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 40,
+      "unit": "fps",
+      "rawValue": 40,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-724ff42490ecd0ff",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "SH40fps JPEG only, small picture size; not ordinary full-resolution tracking burst"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "SH",
+        "pictureSize": "S fixed (reduced resolution)",
+        "rawRecording": false,
+        "maximumFrames": 120,
+        "focus": "fixed at first picture",
+        "ordinaryElectronicH": {
+          "AFS": 10,
+          "AFC": 6
+        },
+        "manualPages": [
+          115,
+          116
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7660d8ac25f4e373b8ac"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Mechanical burst H and alternate AFC mode"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "mode": "H",
+        "focusMode": "AFS",
+        "alternateAfcFps": 6
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-cde6f4cba92d6bc2122b"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Recording media; no inferred number of physical slots"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+        "recordingMedia": [
+          "SD",
+          "SDHC",
+          "SDXC"
+        ],
+        "standards": [
+          "UHS-I",
+          "UHS-II"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-fe8b124175f397831b99"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.dimensions",
+      "value": [
+        128.4,
+        89,
+        74.3
+      ],
+      "unit": "mm",
+      "rawValue": [
+        128.4,
+        89,
+        74.3
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-34864d2bd0ed0764f217"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ac16e0e92003fcfd7926"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots",
+      "rawValue": 2360000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-816006fa4c2217e10172"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-724ff42490ecd0ff",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "In-body versus in-lens/Dual I.S. stabilizer table"
+      },
+      "conditions": {
+        "manualPage": 144,
+        "bodySensorShift": true,
+        "combinedSystem": "lens+body DualIS separate;5-axis Hybrid includes electronic video correction"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-d849c1e1ee2d6758e73c"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-3abbe133835524d626f1"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1040000,
+      "unit": "dots",
+      "rawValue": 1040000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ec679b7f928318510558"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-40fd1710a0f77ac21cd0"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-46c95c29040c8c7a8498"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9fc279ea74d09133010b"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.sensor.megapixels",
+      "value": 16,
+      "unit": "MP",
+      "rawValue": 16,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-655424e39d07b1d7fd20"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-724ff42490ecd0ff",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-e1f8e5e99216130afbaf"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-724ff42490ecd0ff",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-89ef2752a1dde2c99526"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-724ff42490ecd0ff",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Advanced guide p166 MP4 table"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-e5f74c8c36eda3ecf279"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.weight",
+      "value": 505,
+      "unit": "g",
+      "rawValue": 505,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c59f507f2e62f801c872"
+    },
+    {
+      "productId": "panasonic-g85",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9d7b1b0f0c657ff1",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a3e7aafcd21b7d6be253"
+    }
+  ]
+}

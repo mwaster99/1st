@@ -1,5 +1,18 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic/LUMIX G production batch 003 — 2026-10-07
+
+완료. Clean baseline `49fb7b6`에서 inventory의 잔여 **G9II/G85/G100/GH6/GH5II/GH5/G9/G95/GF10/GX9/GH5S** 정확히11개를 처리했다. KR G gallery/API3페이지 **20카드/13base identity** 재확인, GH7/G100D는 이전artifact로 제외. **신규10/기존G9II보강1**, canonical **121/36/157 →131/36/167**. 제품별 독립11worker →raw30/claims222 →normalize/validate11/11 →사람용diff/조건 검토 →명시approval →단일atomic apply →canonical validation →실제재적용 `already-canonicalized`/`canonicalMatches:true` 완료. G9II identity/aliases/price와 모든 비대상 기존제품·렌즈 불변; 이전inventory/S checkpoint/production artifact 유지. [새 G checkpoint](../src/data/ingestion/panasonic-lumix-g-current-gallery-2026-10-07.json) 추가.
+
+G9II unique same-value/new-evidence4/null-fill16/value-conflict1: legacy rounded25.2MP → NA/JP 일치 exact25.21MP를 검토 후 명시 승인. 신규10제품198new path 중known173; 총222observations=known197/UNKNOWN25, 중복3을 제외한verified194unique path. 신규null paths는 verified evidence로 승격하지 않으며 기존contract의 일부UNKNOWN nested children은 canonical에서 absent일 수 있다. G95LCD1.24M/1.04M 공식 지역·리비전 범위 모호성은 보류; known incoming source값충돌 승격없음. GH5/II/S, G9/II, G100/D identity 독립. GH5S bodyIS 없음 공식 비교 열 확인; selectedC4K59.94p 내부8bit와HDMI10bit 분리. GH5/II6K29.97p anamorphic motion picture, GH5firmware2.0/MP4(LPCM)/lens·HDMI조건, GH5/G9optionalDMW-SFU1 보존. G100/GF10EFCS를mechanical max에 옮기지 않음. BIS/Dual/Hybrid/OIS, weightBasis, 내부CFexpressB+SD/dualSD와externalSSD>=2.2 구분. 불명확한 body-only BIS등급/physicalmm/slotcount/crop/bitdepth/실제fractionalrate는 UNKNOWN.
+
+Worker 독립11task/실제API11회 전부success, retry0/failure0, input/output/total **37624/5665/43289**. 공개 제품별자료+최소contract만 전송; canonical/프로젝트코드/secret 전송없음. 제한된excerpt의 누락/중복과 G95열 혼동 경고를 반영하고 완전한 공식표/PDF는 주Codex가 직접 검토. 임시fixture11개 삭제, workerpatch 적용없음. 사용자 추가개입0; 주Codex가11identity/222observations/30sources와 승인·apply 판단. 제품별source/token/채택·폐기/UNKNOWN은 [batch 보고](OBJECTIVE_DB_PANASONIC_PRODUCTION_003.md)에 기록.
+
+전체 **211/211**, Objective/production/catalog/coverage **184/184**, Panasonic **24/24**. Canonical valid131/36/167, build/node --check7files/git diff --check 통과. Raw helper 자동실제UTC30개 **2026-10-07T00:47:59.822Z~2026-10-07T00:47:59.854Z** (정확한 clock bounds는 새checkpoint의 rawHelperClockChecks 참조); 기존artifact timestamp 변경없음. 신규pipeline/schema전체차단문제없음, 엔진/UI/가격/Experience/렌즈/vocab/validator 수정없음. Singlevideo.max 조건소비와 기존fractionalparser 한계는 별도후속.
+
+**S10/G13 전체 production provenance, S/G 미처리0. Panasonic전체미처리15 =compact4/직접운용camcorder11** (다른family는 기존전체inventory기준; 신규전체coverage audit 아님). 다음compact4는 공식 재확인과 기존fixed-lens/단위 검증 후 단일batch 가능. Camcorder는 별도작은pilot로operational/accessory/video표현 확인; AJ-CX4000bayonet 추가는 이번범위아님. 이번11제품범위미완료없음; 완결된batch를재수집/worker재호출/재apply하지말고 다음family부터 진행.
+
+
 ## Stage 4 Panasonic/LUMIX S production batch 002 — 2026-10-07
 
 완료. Clean baseline `36460f1`, canonical114/36/150에서 정확히 **S9/S5/S1IIE/S1II/S1R/S1/S5IIX/S1H**8개를 재선정 없이 처리했다. KR S gallery2페이지13카드/10base identity를 재확인하고 기존 inventory/pilot/contracts를 대조했다. **신규7/기존S9보강1**, canonical **121/36/157**. 제품별독립8worker task →raw24/claims167 →normalize/validate8/8 →사람용diff/조건검토 →명시approval →단일atomic apply →canonical validation →실제재적용 `already-canonicalized`/`canonicalMatches:true` 완료. S9 identity/aliases/price와 모든 비대상 기존제품·렌즈 불변. 과거inventory/artifact는 유지하고 [새 S checkpoint](../src/data/ingestion/panasonic-lumix-s-current-gallery-2026-10-07.json)를 추가했다.

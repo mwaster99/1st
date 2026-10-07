@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-gf10",
+  "manufacturerModelCode": "DC-GF10",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-GF10",
+    "productId": "panasonic-gf10",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-70dbc6d0ce5c51b35e0c",
+    "sourceId": "source-7674fe9b5ab5f1c1",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DC-GF10KGD (핑크) / DC-GF10"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-gf10",
+    "name": "파나소닉 LUMIX GF10",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX GF10",
+    "aliases": [
+      "DC-GF10",
+      "DC-GF10KGD (핑크)"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "bodyOnlyWeight": 240,
+      "burst": {
+        "maxElectronicFps": 10,
+        "maxMechanicalFps": null
+      },
+      "cardSlots": null,
+      "dimensions": [
+        106.5,
+        64.6,
+        33.3
+      ],
+      "ibis": null,
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1040000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 16
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": null,
+        "max": "4K 30p"
+      },
+      "weight": 270,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-7674fe9b5ab5f1c1",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1209",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-GF10KGD (핑크) official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.852Z",
+    "evidenceScope": "Batch003 DC-GF10 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "f3c8bee58629ef7cf6f4bef4b4a2155debe3bfab293243ab38309b4d04755d71"
+  },
+  "sources": [
+    {
+      "sourceId": "source-7674fe9b5ab5f1c1",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1209",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-GF10KGD (핑크) official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.852Z",
+      "evidenceScope": "Batch003 DC-GF10 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "f3c8bee58629ef7cf6f4bef4b4a2155debe3bfab293243ab38309b4d04755d71"
+    },
+    {
+      "sourceId": "source-a9eb652712a40b63",
+      "sourceType": "manufacturer",
+      "url": "https://news.panasonic.com/jp/press/jn180201-1",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-GF10 official camera specification",
+      "documentVersion": null,
+      "region": "JP",
+      "accessedAt": "2026-10-07T00:47:59.853Z",
+      "evidenceScope": "Batch003 DC-GF10 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "e268c3ac05b9051f9e8897a78def673eab2e01de6d593a4aa647c0bda22eaa58"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.bodyOnlyWeight",
+      "value": 240,
+      "unit": "g",
+      "rawValue": 240,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-5e8b3000f25626d8392a"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 10,
+      "unit": "fps",
+      "rawValue": 10,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "H",
+        "focusMode": "AFS",
+        "alternateAfcFps": 6
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-40b8fa52893341dcea5e"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": null,
+      "unit": "fps",
+      "rawValue": null,
+      "rawUnit": "fps",
+      "unknown": true,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "EFCS is not full mechanical shutter burst"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN/unsupported mechanical maximum: source only documents electronic front curtain",
+        "electronicFrontCurtain": {
+          "AFS": 5.8,
+          "AFC": 5
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ad203153f128c0fe1b05"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Recording media; no inferred number of physical slots"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+        "recordingMedia": [
+          "microSD",
+          "microSDHC",
+          "microSDXC"
+        ],
+        "standards": [
+          "UHS-I"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-51e5f8f9c3b8fd338473"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.dimensions",
+      "value": [
+        106.5,
+        64.6,
+        33.3
+      ],
+      "unit": "mm",
+      "rawValue": [
+        106.5,
+        64.6,
+        33.3
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a34a9d68f96e6259fb1a"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.ibis",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Lens OIS / Hybrid electronic correction is not body IBIS evidence"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN body BIS: no direct body sensor-shift specification from reviewed sources; no false positive from lens OIS or electronic video IS"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a1caac86fbb2236bbbec"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-265d443dc51e346a277a"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1040000,
+      "unit": "dots",
+      "rawValue": 1040000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9239fbe6d6182ff022ad"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-42d294ed150f318676ff"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-676ae31bd9d363188a62"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-05de694c0dedf0ffbeef"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.sensor.megapixels",
+      "value": 16,
+      "unit": "MP",
+      "rawValue": 16,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-4d65f7e2c8789ad27b13"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 5,
+        "otherLimits": "FHD60p20minutes; card/file split conditions per official footnote4",
+        "kitScope": "GF10 camera-body rows only; GF90W and kit lenses not new canonical identities"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-558729cb9e8c5a738fdb"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 5,
+        "otherLimits": "FHD60p20minutes; card/file split conditions per official footnote4",
+        "kitScope": "GF10 camera-body rows only; GF90W and kit lenses not new canonical identities"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-19a77f0be2bf651a2611"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Official camera video table / selected normal mode"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94",
+        "singleSessionLimitMinutes": 5,
+        "otherLimits": "FHD60p20minutes; card/file split conditions per official footnote4",
+        "kitScope": "GF10 camera-body rows only; GF90W and kit lenses not new canonical identities"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-faac50f4b307551e4c33"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.weight",
+      "value": 270,
+      "unit": "g",
+      "rawValue": 270,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "memoryCard": "microSD family",
+        "excludedKitWeightsG": [
+          337,
+          392
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-fe5510abefff3383bc72"
+    },
+    {
+      "productId": "panasonic-gf10",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-a9eb652712a40b63",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "memoryCard": "microSD family",
+        "excludedKitWeightsG": [
+          337,
+          392
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-d7e2e1d30536bc7d0788"
+    }
+  ]
+}

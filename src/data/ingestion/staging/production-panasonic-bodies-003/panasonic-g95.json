@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-g95",
+  "manufacturerModelCode": "DC-G95",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-G95",
+    "productId": "panasonic-g95",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-c46e57d650f75ce7c3b4",
+    "sourceId": "source-e2453a76d6c1c9f3",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Korean current LUMIX G card / model code",
+      "row": "DC-G95GD / DC-G95"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-07",
+    "reviewer": "codex-panasonic-003-direct-review"
+  },
+  "product": {
+    "id": "panasonic-g95",
+    "name": "파나소닉 LUMIX G95",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX G95",
+    "aliases": [
+      "DC-G95",
+      "DC-G95GD"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 484,
+      "burst": {
+        "maxElectronicFps": 9,
+        "maxMechanicalFps": 9
+      },
+      "cardSlots": null,
+      "dimensions": [
+        130.4,
+        93.5,
+        77.4
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-FS12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": null,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 20.3,
+        "sizeMm": [
+          17.3,
+          13
+        ]
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": null,
+        "log": true,
+        "max": "4K 30p"
+      },
+      "weight": 536,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-e2453a76d6c1c9f3",
+    "sourceType": "manufacturer",
+    "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1203",
+    "publisher": "Panasonic Korea",
+    "documentTitle": "DC-G95GD official KR current identity",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-07T00:47:59.852Z",
+    "evidenceScope": "Batch003 DC-G95 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "83ecf7d2ac4f37c1eb20cdecbde4da3d125b6f0ba205e3528d301e0461cf4e99"
+  },
+  "sources": [
+    {
+      "sourceId": "source-5517b7976667bc2e",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dc-g95-g95d/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G95 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.852Z",
+      "evidenceScope": "Batch003 DC-G95 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "85278e7ba64742a3e7d670658a394700a6e85c8e818e4971ef0b1e35d744dcf8"
+    },
+    {
+      "sourceId": "source-e2453a76d6c1c9f3",
+      "sourceType": "manufacturer",
+      "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camera/LumixG/CDC1203",
+      "publisher": "Panasonic Korea",
+      "documentTitle": "DC-G95GD official KR current identity",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-07T00:47:59.852Z",
+      "evidenceScope": "Batch003 DC-G95 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "83ecf7d2ac4f37c1eb20cdecbde4da3d125b6f0ba205e3528d301e0461cf4e99"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.bodyOnlyWeight",
+      "value": 484,
+      "unit": "g",
+      "rawValue": 484,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true,
+        "modelColumn": "DC-G95 FIRST column, not DC-G95D",
+        "excludedG95dWeightG": 481
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ad7e1ff53fdd82efd6a5"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 6
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c6d71ca372a2845a8b45"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 9,
+      "unit": "fps",
+      "rawValue": 9,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Mechanical burst H and alternate AFC mode"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 6,
+        "lens": "H-FS12060",
+        "sourceShutterGroup": "mechanical / electronic first curtain, shared table; not merged with electronic shutter"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-71f6585fc89b21c327f8"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Recording media; no inferred number of physical slots"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN physical slot count: reviewed specification lists supported recording media, not explicit count",
+        "recordingMedia": [
+          "SD",
+          "SDHC",
+          "SDXC"
+        ],
+        "standards": [
+          "UHS-I",
+          "UHS-II"
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-f58e59412ddbf0d1fb79"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.dimensions",
+      "value": [
+        130.4,
+        93.5,
+        77.4
+      ],
+      "unit": "mm",
+      "rawValue": [
+        130.4,
+        93.5,
+        77.4
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-4a15b751c01f3269adea"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-2a1acff611d7b709e074"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.evf.resolutionDots",
+      "value": 2360000,
+      "unit": "dots",
+      "rawValue": 2360000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-58e630d297c54c03bc54"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-FS12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 5,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-FS12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "B.I.S. / image sensor shift type versus distinct Dual I.S. entry"
+      },
+      "conditions": {
+        "bodySensorShift": true,
+        "standard": "CIPA",
+        "direction": "yaw/pitch",
+        "lens": "H-FS12060",
+        "focalLengthMm": 60,
+        "equivalentFocalLengthMm": 120,
+        "combinedStabilization": {
+          "system": "Dual I.S. 2 compatible",
+          "stops": 5,
+          "lens": "H-FSA14140",
+          "focalLengthMm": 140,
+          "equivalentFocalLengthMm": 280
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b09c21f5d0b5ded94db3"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7b433781b1d11ca830d3"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.resolutionDots",
+      "value": null,
+      "unit": "dots",
+      "rawValue": null,
+      "rawUnit": "dots",
+      "unknown": true,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Monitor G95/G95D columns are independently scoped; disputed numeric LCD not promoted"
+      },
+      "conditions": {
+        "disposition": "UNKNOWN pending original/revision/region LCD specification reconciliation",
+        "officialHelpG95FirstColumnDots": 1240000,
+        "otherOfficialSearchReportsDots": 1040000,
+        "unfetchedOfficialArchiveUrl": "https://www.panasonic.com/nz/support/product-archives/product-archives-consumer/cameras-camcorders/lumix-g-mirrorless-dslm-cameras/dc-g95gn-k.html",
+        "notG95dTransfer": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-1dce3194f972ef1bb073"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a6ff9946b9d08f6836b1"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-e06d9a6f65caaf39561d"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-338f234f6cdc8b8cf719"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.megapixels",
+      "value": 20.3,
+      "unit": "MP",
+      "rawValue": 20.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-2fecf3229c04933cdc14"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        17.3,
+        13
+      ],
+      "unit": "mm",
+      "rawValue": [
+        17.3,
+        13
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Image sensor physical 17.3 x 13.0 mm"
+      },
+      "conditions": {
+        "aspectRatio": "4:3"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-ee0c6d22038a9ad63552"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7ca06b2df7458496190b"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-dab1443bbe1b940608ce"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "PhotoStyle/log recording; optional upgrade key where documented"
+      },
+      "conditions": {
+        "profile": "V-Log L",
+        "scope": "profile availability, not every mode",
+        "activation": "preinstalled / native profile"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-4410f3cfeccd93859db1"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null,
+      "rawValue": "4K 30p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Official camera video table / selected normal mode"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": null,
+        "frameRateLabel": "30p",
+        "resolution": [
+          3840,
+          2160
+        ],
+        "aspectRatio": "16:9",
+        "imageArea": "UNKNOWN from reviewed mode row",
+        "container": "MP4",
+        "codec": "H.264/MPEG-4 AVC",
+        "chroma": null,
+        "bitDepth": null,
+        "bitRateMbps": 100,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-7218620a9af88fb30772"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.weight",
+      "value": 536,
+      "unit": "g",
+      "rawValue": 536,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "modelColumn": "DC-G95 FIRST column, not DC-G95D",
+        "excludedG95dWeightG": 533
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-49d9ce14c9d876f3f083"
+    },
+    {
+      "productId": "panasonic-g95",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-5517b7976667bc2e",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "modelColumn": "DC-G95 FIRST column, not DC-G95D",
+        "excludedG95dWeightG": 533
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a0d28c8e88ac8f9234b0"
+    }
+  ]
+}

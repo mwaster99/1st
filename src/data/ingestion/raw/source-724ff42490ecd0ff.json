@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DMCG85_DVQP1003ZA_ENG.pdf",
+  "documentTitle": "DMC-G85 advanced manual / firmware appendices",
+  "evidenceScope": "Batch003 DMC-G85 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.829Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "4K 30p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "specs.burst.maxElectronicFps",
+      "value": 40,
+      "unit": "fps"
+    },
+    {
+      "field": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": null,
+        "stops": null,
+        "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-g85",
+      "manufacturerModelCode": "DMC-G85",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX G85",
+        "brand": "Panasonic",
+        "model": "LUMIX G85",
+        "series": "LUMIX G",
+        "aliases": [
+          "DMC-G85",
+          "DMC-G85(바디킷)"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Advanced guide p166 MP4 table"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": null,
+            "bitDepth": null,
+            "bitRateMbps": 100,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected internal mode bit depth (external/other modes not copied)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": null,
+            "bitDepth": null,
+            "bitRateMbps": 100,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": null,
+            "frameRateLabel": "30p",
+            "resolution": [
+              3840,
+              2160
+            ],
+            "aspectRatio": "16:9",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4",
+            "codec": "H.264/MPEG-4 AVC",
+            "chroma": null,
+            "bitDepth": null,
+            "bitRateMbps": 100,
+            "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+            "actualFractionalRateDisposition": "UNKNOWN: official reviewed source uses integer label; do not guess29.97/59.94"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 3,
+          "rawValue": 40,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "SH40fps JPEG only, small picture size; not ordinary full-resolution tracking burst"
+          },
+          "conditions": {
+            "shutter": "electronic",
+            "mode": "SH",
+            "pictureSize": "S fixed (reduced resolution)",
+            "rawRecording": false,
+            "maximumFrames": 120,
+            "focus": "fixed at first picture",
+            "ordinaryElectronicH": {
+              "AFS": 10,
+              "AFC": 6
+            },
+            "manualPages": [
+              115,
+              116
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 4,
+          "rawValue": {
+            "present": true,
+            "axes": null,
+            "stops": null,
+            "conditions": "In-body image stabilization explicitly documented; no standalone body axes/stop rating inferred from5-axis Hybrid or combined Dual IS"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "In-body versus in-lens/Dual I.S. stabilizer table"
+          },
+          "conditions": {
+            "manualPage": 144,
+            "bodySensorShift": true,
+            "combinedSystem": "lens+body DualIS separate;5-axis Hybrid includes electronic video correction"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b768ceaf6e333caeaa66e78ba5bfd2fda735f51f67beea3c191fb919563320aa",
+  "sourceId": "source-724ff42490ecd0ff"
+}

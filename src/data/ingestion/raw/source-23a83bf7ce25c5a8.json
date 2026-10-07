@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCGH5_DVQP1117ZA_ENG.pdf",
+  "documentTitle": "DC-GH5 advanced manual / firmware appendices",
+  "evidenceScope": "Batch003 DC-GH5 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.851Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "6K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-gh5",
+      "manufacturerModelCode": "DC-GH5",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX GH5",
+        "brand": "Panasonic",
+        "model": "LUMIX GH5",
+        "series": "LUMIX G",
+        "aliases": [
+          "DC-GH5",
+          "DC-GH5GD"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "6K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Advanced guide PDF358 (printedF-11), firmware2.0 anamorphic table"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4 (LPCM)",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Firmware2.0 F-11: temperature/card protection can stop; wait for cooling",
+            "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+            "anamorphic": true,
+            "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate",
+            "minimumFirmware": "2.0",
+            "lensRequirement": "2x anamorphic lens for4:3; desqueeze needs compatible playback/software; OFF for1.33x lens",
+            "restrictions": "High-resolution anamorphic only MP4(LPCM); no electronic video stabilization/ExTele/digital zoom; no HDMI output during recording",
+            "firmwareEvidenceUrl": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/gh5.html"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected internal mode bit depth (external/other modes not copied)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4 (LPCM)",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Firmware2.0 F-11: temperature/card protection can stop; wait for cooling",
+            "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+            "anamorphic": true,
+            "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate",
+            "minimumFirmware": "2.0",
+            "lensRequirement": "2x anamorphic lens for4:3; desqueeze needs compatible playback/software; OFF for1.33x lens",
+            "restrictions": "High-resolution anamorphic only MP4(LPCM); no electronic video stabilization/ExTele/digital zoom; no HDMI output during recording",
+            "firmwareEvidenceUrl": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/gh5.html"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              4992,
+              3744
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "UNKNOWN from reviewed mode row",
+            "container": "MP4 (LPCM)",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Firmware2.0 F-11: temperature/card protection can stop; wait for cooling",
+            "mode": "High Resolution Anamorphic (4:3) motion picture; not 6K PHOTO",
+            "anamorphic": true,
+            "otherModes": "C4K and 4K modes have distinct frame rate/chroma/bit depth; VFR sensor-output fps are separate",
+            "minimumFirmware": "2.0",
+            "lensRequirement": "2x anamorphic lens for4:3; desqueeze needs compatible playback/software; OFF for1.33x lens",
+            "restrictions": "High-resolution anamorphic only MP4(LPCM); no electronic video stabilization/ExTele/digital zoom; no HDMI output during recording",
+            "firmwareEvidenceUrl": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/gh5.html"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b6dda81f9fe466beb5814bcccfe75a7430242ecf27ee09164dc35e5c96a6fc4e",
+  "sourceId": "source-23a83bf7ce25c5a8"
+}

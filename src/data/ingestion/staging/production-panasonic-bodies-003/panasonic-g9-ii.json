@@ -1,0 +1,801 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-003",
+  "itemKey": "panasonic-g9-ii",
+  "manufacturerModelCode": "DC-G9M2",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Panasonic",
+    "manufacturerModelCode": "DC-G9M2",
+    "productId": "panasonic-g9-ii",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": null,
+  "product": {
+    "id": "panasonic-g9-ii",
+    "name": "파나소닉 루믹스 G9 II",
+    "brand": "Panasonic",
+    "series": "LUMIX G",
+    "model": "LUMIX G9 II",
+    "aliases": [
+      "panasonic g9 ii",
+      "파나소닉 g9 ii",
+      "루믹스 g9 ii",
+      "g92"
+    ],
+    "mount": "Micro Four Thirds",
+    "kind": "interchangeable",
+    "bodyStyle": "slr",
+    "specs": {
+      "bodyOnlyWeight": 575,
+      "burst": {
+        "maxElectronicFps": 75,
+        "maxMechanicalFps": 14
+      },
+      "cardSlots": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "dimensions": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "evf": {
+        "present": true,
+        "resolutionDots": 3680000
+      },
+      "ibis": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "lcd": {
+        "present": true,
+        "resolutionDots": 1840000,
+        "sizeInches": 3,
+        "touch": true
+      },
+      "sensor": {
+        "format": "마이크로포서드",
+        "megapixels": 25.21,
+        "sizeMm": [
+          17.3,
+          13
+        ]
+      },
+      "video": {
+        "bitDepth": 10,
+        "cropAtMax": false,
+        "log": true,
+        "max": "5.8K 29.97p"
+      },
+      "weight": 658,
+      "weightBasis": "battery-and-card"
+    }
+  },
+  "source": {
+    "sourceId": "source-4dea1fe3a5b27474",
+    "sourceType": "manufacturer",
+    "url": "https://help.na.panasonic.com/answers/specifications-sheet-for-lumix-g-series-dc-g9m2/",
+    "publisher": "Panasonic Corporation",
+    "documentTitle": "DC-G9M2 official camera specification",
+    "documentVersion": null,
+    "region": "US",
+    "accessedAt": "2026-10-07T00:47:59.828Z",
+    "evidenceScope": "Batch003 DC-G9M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+    "contentDigest": "3bc8fa6cac9ef9cfa7869d985b1a6f2afb5d9a755b24ead6c6caca5321be18d6"
+  },
+  "sources": [
+    {
+      "sourceId": "source-4dea1fe3a5b27474",
+      "sourceType": "manufacturer",
+      "url": "https://help.na.panasonic.com/answers/specifications-sheet-for-lumix-g-series-dc-g9m2/",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G9M2 official camera specification",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-07T00:47:59.828Z",
+      "evidenceScope": "Batch003 DC-G9M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "3bc8fa6cac9ef9cfa7869d985b1a6f2afb5d9a755b24ead6c6caca5321be18d6"
+    },
+    {
+      "sourceId": "source-9b428c4b072143f8",
+      "sourceType": "manufacturer",
+      "url": "https://panasonic.jp/dc/products/DC-G9M2/spec.html",
+      "publisher": "Panasonic Corporation",
+      "documentTitle": "DC-G9M2 Japanese exact pixels / operating weight corroboration",
+      "documentVersion": null,
+      "region": "JP",
+      "accessedAt": "2026-10-07T00:47:59.829Z",
+      "evidenceScope": "Batch003 DC-G9M2 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+      "contentDigest": "74d445ba34915de746df3a32c9f39a371da2fb5c783353966d788c28626699b9"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.bodyOnlyWeight",
+      "value": 575,
+      "unit": "g",
+      "rawValue": 575,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera body-only weight"
+      },
+      "conditions": {
+        "weightBasis": "body-only",
+        "configuration": "camera body only; no battery/card/lens/grip",
+        "approximate": true,
+        "hotShoeCover": "included",
+        "bodyCap": "excluded"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-78556ecc075116e358b6"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.burst.maxElectronicFps",
+      "value": 75,
+      "unit": "fps",
+      "rawValue": 75,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Electronic burst mode, separate from 4K/6K PHOTO"
+      },
+      "conditions": {
+        "shutter": "electronic",
+        "mode": "SH",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 60,
+        "preBurst": "PRE separate release-before modes, not counted as additional fps"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-9606f2090bb46d9d831d"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": 14,
+      "unit": "fps",
+      "rawValue": 14,
+      "rawUnit": "fps",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Mechanical burst H and alternate AFC mode"
+      },
+      "conditions": {
+        "shutter": "mechanical",
+        "mode": "H",
+        "focusMode": "AFS/MF",
+        "alternateAfcFps": 10
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-23ae2b604c8086a17e0f"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "unit": null,
+      "rawValue": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SD"
+            ],
+            "standards": [
+              "UHS-I",
+              "UHS-II"
+            ]
+          }
+        ]
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Explicit card slot1 / slot2; CFexpress B only for GH6"
+      },
+      "conditions": {
+        "physicalInternalSlotsOnly": true,
+        "externalUsbSsdIsNotCardSlot": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-c256ec2e8b6976de6437"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.dimensions",
+      "value": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "unit": "mm",
+      "rawValue": [
+        134.3,
+        102.3,
+        90.1
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "External body W x H x D"
+      },
+      "conditions": {
+        "configuration": "body without lens, excluding protrusions",
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-64afaf1c14c7b0fd6399"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.evf.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Live Viewfinder"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-356a363822c0f0870f8e"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.evf.resolutionDots",
+      "value": 3680000,
+      "unit": "dots",
+      "rawValue": 3680000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Viewfinder dots (not LCD monitor)"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a24a08215043ebe8117d"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "unit": null,
+      "rawValue": {
+        "present": true,
+        "axes": 5,
+        "stops": 8,
+        "conditions": "Body sensor-shift BIS only; CIPA yaw/pitch, H-ES12060 at60mm (120mm equivalent); Dual IS rating separately retained in metadata"
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "B.I.S. / image sensor shift type versus distinct Dual I.S. entry"
+      },
+      "conditions": {
+        "bodySensorShift": true,
+        "standard": "CIPA",
+        "direction": "yaw/pitch",
+        "lens": "H-ES12060",
+        "focalLengthMm": 60,
+        "equivalentFocalLengthMm": 120,
+        "combinedStabilization": {
+          "system": "Dual I.S. 2 compatible",
+          "stops": 7.5,
+          "lens": "H-FSA14140",
+          "focalLengthMm": 140,
+          "equivalentFocalLengthMm": 280
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-41252b9d311d11184f40"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-8af742d23f39943b6fcb"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.resolutionDots",
+      "value": 1840000,
+      "unit": "dots",
+      "rawValue": 1840000,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-6c08b01e8aab8e9350a4"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.sizeInches",
+      "value": 3,
+      "unit": "in",
+      "rawValue": 3,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-81a3c52d62a96e908e4c"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Rear monitor / capacitive or static touch control"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b98a6364af21ad074134"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null,
+      "rawValue": "마이크로포서드",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Micro Four Thirds mount / 4/3-type sensor (physical size not inferred)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-dc3c12c7d31c46897bb0"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 25.21,
+      "unit": "MP",
+      "rawValue": 25.21,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera effective pixels, not total/composite/6K PHOTO"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a59a1ea1c262338964d6"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.megapixels",
+      "value": 25.21,
+      "unit": "MP",
+      "rawValue": 25.21,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-9b428c4b072143f8",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "カメラ有効画素数2,521万画素, not total2,652万"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-cbdd8dc67584cf8abd37"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.sensor.sizeMm",
+      "value": [
+        17.3,
+        13
+      ],
+      "unit": "mm",
+      "rawValue": [
+        17.3,
+        13
+      ],
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Image sensor physical 17.3 x 13.0 mm"
+      },
+      "conditions": {
+        "aspectRatio": "4:3"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-bbee3cdda81f96dac22a"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null,
+      "rawValue": 10,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected internal mode bit depth (external/other modes not copied)"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "FULL",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "otherModes": "5.7K59.94p17:9 FULL versus4.4K59.94pPIXEL/PIXEL; C4K119.88p separate; high bitrate USBSSD restrictions not internal slots",
+        "vlogLatitude": "13+stops sensorfps<=60 vs12+stops>=61",
+        "externalPowerCondition": "NAfootnote: USBSSD C4K119.88p may require AC DMW-AC10 + DMW-DCC17"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-81e0fea4af3b0b72aac5"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "FULL",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "otherModes": "5.7K59.94p17:9 FULL versus4.4K59.94pPIXEL/PIXEL; C4K119.88p separate; high bitrate USBSSD restrictions not internal slots",
+        "vlogLatitude": "13+stops sensorfps<=60 vs12+stops>=61",
+        "externalPowerCondition": "NAfootnote: USBSSD C4K119.88p may require AC DMW-AC10 + DMW-DCC17"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-a345eeff796e57e07f29"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.log",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "PhotoStyle/log recording; optional upgrade key where documented"
+      },
+      "conditions": {
+        "profile": "V-Log",
+        "scope": "profile availability, not every mode",
+        "activation": "preinstalled / native profile"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-4a29d6fc1b95f0c83fb9"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.video.max",
+      "value": "5.8K 29.97p",
+      "unit": null,
+      "rawValue": "5.8K 29.97p",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Official camera video table / selected normal mode"
+      },
+      "conditions": {
+        "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+        "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+        "frameRate": 29.97,
+        "frameRateLabel": "29.97p",
+        "resolution": [
+          5760,
+          4320
+        ],
+        "aspectRatio": "4:3",
+        "imageArea": "FULL",
+        "container": "MOV",
+        "codec": "H.265/HEVC Long GOP",
+        "chroma": "4:2:0",
+        "bitDepth": 10,
+        "bitRateMbps": 200,
+        "thermalManagement": "Recording may stop under heat/card/operating constraints; no unconditional unlimited claim",
+        "otherModes": "5.7K59.94p17:9 FULL versus4.4K59.94pPIXEL/PIXEL; C4K119.88p separate; high bitrate USBSSD restrictions not internal slots",
+        "vlogLatitude": "13+stops sensorfps<=60 vs12+stops>=61",
+        "externalPowerCondition": "NAfootnote: USBSSD C4K119.88p may require AC DMW-AC10 + DMW-DCC17"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-43da3860d2423acf006f"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weight",
+      "value": 658,
+      "unit": "g",
+      "rawValue": 658,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Camera + card + battery weight (not lens-inclusive kit)"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "hotShoeCover": "included",
+        "bodyCap": "excluded"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-63bebd93c9ac324c03a5"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weight",
+      "value": 658,
+      "unit": "g",
+      "rawValue": 658,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-9b428c4b072143f8",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "質量658g body+battery+SD card, shoe cover yes/bodycap no"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "hotShoeCover": "included",
+        "bodyCap": "excluded"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-b698cf46c72ba020bf68"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-4dea1fe3a5b27474",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "Selected operating weight configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "hotShoeCover": "included",
+        "bodyCap": "excluded"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-6b517aa2bd42470a277e"
+    },
+    {
+      "productId": "panasonic-g9-ii",
+      "path": "specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null,
+      "rawValue": "battery-and-card",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9b428c4b072143f8",
+      "locator": {
+        "section": "Official model-specific specification table",
+        "row": "質量 stated battery and SD1card configuration"
+      },
+      "conditions": {
+        "weightBasis": "battery-and-card",
+        "configuration": "camera body + battery + one memory card; no lens/grip/rig",
+        "approximate": true,
+        "hotShoeCover": "included",
+        "bodyCap": "excluded"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "codex-panasonic-003-direct-review",
+      "claimId": "claim-edeac0b59631bb5793e1"
+    }
+  ]
+}

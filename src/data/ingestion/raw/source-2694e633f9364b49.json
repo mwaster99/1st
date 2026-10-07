@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Panasonic Corporation",
+  "documentVersion": null,
+  "region": "US",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/DCGH6_DVQP2441ZA_ENG.pdf",
+  "documentTitle": "DC-GH6 advanced manual / firmware appendices",
+  "evidenceScope": "Batch003 DC-GH6 independent base camera only; reviewed model column and conditions; no kits/lens products/prices",
+  "accessedAt": "2026-10-07T00:47:59.850Z",
+  "evidenceExcerpt": [
+    {
+      "field": "specs.video.max",
+      "value": "5.8K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-gh6",
+      "manufacturerModelCode": "DC-GH6",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 LUMIX GH6",
+        "brand": "Panasonic",
+        "model": "LUMIX GH6",
+        "series": "LUMIX G",
+        "aliases": [
+          "DC-GH6",
+          "DC-GH6GD"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "5.8K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Complete guide p139 FULL column, visually reviewed; p130 thermal"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Complete guide p130: camera/card high-temperature warning can stop recording and HDMI; fan does not remove this protection",
+            "externalUsbSsd": {
+              "minimumFirmware": "2.2",
+              "evidenceUrl": "https://help.na.panasonic.com/answers/how-to-connect-to-and-use-an-external-ssd-dc-gh6/",
+              "notInternalSlot": true,
+              "scope": "external recording availability; format-specific compatibility, >=800Mbps/ProRes media constraints separate"
+            },
+            "otherModes": "5.7K59.94p17:9 and C4K119.88p differ; Dynamic Range Boost OFF for119.88p; external RAW/output separate from selected internal10bit"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected internal mode bit depth (external/other modes not copied)"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Complete guide p130: camera/card high-temperature warning can stop recording and HDMI; fan does not remove this protection",
+            "externalUsbSsd": {
+              "minimumFirmware": "2.2",
+              "evidenceUrl": "https://help.na.panasonic.com/answers/how-to-connect-to-and-use-an-external-ssd-dc-gh6/",
+              "notInternalSlot": true,
+              "scope": "external recording availability; format-specific compatibility, >=800Mbps/ProRes media constraints separate"
+            },
+            "otherModes": "5.7K59.94p17:9 and C4K119.88p differ; Dynamic Range Boost OFF for119.88p; external RAW/output separate from selected internal10bit"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official model-specific specification table",
+            "row": "Selected image area; UNKNOWN if no directly scoped full/cropped evidence"
+          },
+          "conditions": {
+            "recording": "internal normal motion picture, not VFR/S&Q/external RAW or 4K/6K PHOTO",
+            "representativeSelection": "highest documented internal spatial resolution; frame rate and bit depth bound to selected mode",
+            "frameRate": 29.97,
+            "frameRateLabel": "29.97p",
+            "resolution": [
+              5760,
+              4320
+            ],
+            "aspectRatio": "4:3",
+            "imageArea": "FULL",
+            "container": "MOV",
+            "codec": "H.265/HEVC Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitRateMbps": 200,
+            "thermalManagement": "Complete guide p130: camera/card high-temperature warning can stop recording and HDMI; fan does not remove this protection",
+            "externalUsbSsd": {
+              "minimumFirmware": "2.2",
+              "evidenceUrl": "https://help.na.panasonic.com/answers/how-to-connect-to-and-use-an-external-ssd-dc-gh6/",
+              "notInternalSlot": true,
+              "scope": "external recording availability; format-specific compatibility, >=800Mbps/ProRes media constraints separate"
+            },
+            "otherModes": "5.7K59.94p17:9 and C4K119.88p differ; Dynamic Range Boost OFF for119.88p; external RAW/output separate from selected internal10bit"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-07",
+          "reviewer": "codex-panasonic-003-direct-review"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "a3ad672ee62ca1ea244dddaeed8b23d3b1c81c00b169cabeef77d9241ce7e21e",
+  "sourceId": "source-2694e633f9364b49"
+}
