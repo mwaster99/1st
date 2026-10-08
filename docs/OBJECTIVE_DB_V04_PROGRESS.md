@@ -1,5 +1,15 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 OM SYSTEM production batch 001 — 2026-10-08
+
+완료. Clean baseline `6711521`에서 contracts/pipeline/최신validators/기존5브랜드audit/canonical/map/scope를 확인했다. 한국 official locale은 확정하지 못하여 JP 공식 OM/OM-D9 + PEN2 + Tough1 모델카드를 global gallery/region selector/공식 archived 목록과 대조했다. **12cards/12identities, 일반 released/current9(특수포함11), upcoming PEN1(2026년10월하순), linked duplicate0, IR ASTRO2deferred**. 한국 판매/재고나 전지역SKU 완전성을 주장하지 않는다. ASTRO는 물리IR filter/H-alpha·일반촬영권고 차이로 별도scope, TG7construction/WORM은 같은identity.
+
+독립worker9tasks/실API10attempts, TG7MALFORMED_RESPONSE1+동일IDretry1, OM1IIneeds_information1은main의공식guide추가확인으로처리. **17256input/6738output/23994total**, fixture9삭제/patch적용0/추가사용자개입0. 공식 신규raw22(제품별2–3)/231claims(known193/UNKNOWN38)/193fieldEvidence. **신규7/보강2,146/36/182→153/36/189**, 기존 `om-1-ii`/`om-5` identity/aliases/가격유지, 나머지144바디/36렌즈동일. 기존20.4→공식JP20.37MP 정밀도conflict2만 명시승인, incoming진짜source충돌0. MFT/IBISvsSyncIS/중앙vs주변/합성vs유효MP/ProCapturevsordinary/실제59.94fps/weightbasis/IP조건보존. TG7fixed/mountnull/실제4.5–18mm/환산25–100mm/F2–4.9/sensor-shift2.5stop/축수UNKNOWN/전체249g한번계산, 별도lensproduct0.
+
+Raw-helper22실UTC `2026-10-08T04:37:50.501Z–04:37:50.508Z`/clock bounds/digests검증. Normalize→strict validate9/9→diff/human review→explicit approval→atomic apply→canonical valid→실제reapply **already-canonicalized/canonicalMatches:true**. AfterSHA `d5f544b9978fc02ef6f36e62b723758d400ed5685b1b1d8383324ba95f14cd25`. 추천/UI/Experience/가격/렌즈/vocab/schema/validators/이전artifact불변. 기존catalog test가유효−10°C를거절한bug만exacttemperature경로예외+범위순서검사로수정,런타임변경없음.
+
+전체 **274/274**, Objective/production/catalog/coverage **247/247**, 신규OM **13/13**. Canonicalvalidation/build/변경test2nodecheck/gitdiffcheck통과(기존chunk경고). [상세43항목보고](OBJECTIVE_DB_OM_SYSTEM_PRODUCTION_001.md), [inventory/재개checkpoint](../src/data/ingestion/om-system-current-2026-10-08.json), [OM회귀테스트](../tests/omSystemProduction001.test.js). 변경은미commit상태/push없음. 일반현행미처리0으로추가일반batch불필요; 다음은 **JP/global범위를명시한OM SYSTEM coverage audit**. LCD힌지/단일media제품slot수/구형fps·depth/조건scalar표현/기존2structuredidentity차이를감사에서평가하며field completeness나감사완료를이번production완료와혼동하지않는다.
+
 ## Stage 4 Panasonic/LUMIX production coverage audit — 2026-10-08
 
 완료. Clean baseline `f62a24b`에서 기존inventory/production001–006/보고서/identity-map/scope/contracts/이전4브랜드audit/최신validators를 대조했다. Korea direct-operated6gallery + PTZ/studio5gallery의 전체APIpagination·마지막빈페이지와64exactproductpage, 추가공식studio/PTZ근거를 새로 조회: **107 requests 전부HTTP200**. **49카드 =39base +10linked kit/color variant**, 직접운용S10/G13/compact5/camcorder11. 별도PTZ10/studio5는 denominator 밖. 신규/제거/제품명/연결/발견된출시상태변화0; inlinecolor 상세변화는 옛snapshot에근거가없어 비교불가. Released/current39/canonical39/실제productionprovenance39/미처리0/duplicate·ambiguous0/critical0으로 **Panasonic직접운용camera/camcorder Objective DB product coverage 1차완료** 판정. 재고·세계생산/모든필드/추천구성완료 선언과 구분한다.

@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://jp.omsystem.com/product/dslr/om-omd/om/om3/spec.html",
+  "publisher": "OM Digital Solutions",
+  "documentTitle": "OM-3 official om3-spec",
+  "documentVersion": "Current official page retrieved 2026-10-08",
+  "region": "JP",
+  "evidenceScope": "OM-3 exact model selected official objective claims; no prices",
+  "accessedAt": "2026-10-08T04:37:50.503Z",
+  "evidenceExcerpt": [
+    {
+      "field": "OM-3 specs.sensor.format",
+      "value": "마이크로포서드",
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.sensor.megapixels",
+      "value": 20370000,
+      "unit": "pixel"
+    },
+    {
+      "field": "OM-3 specs.sensor.sizeMm",
+      "value": [
+        17.4,
+        13
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "OM-3 specs.ibis",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 6.5,
+        "conditions": "12-45mm F4.0 PRO at45mm (90mm equivalent), CIPA2024 yaw/pitch/roll"
+      },
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.weight",
+      "value": 496,
+      "unit": "g"
+    },
+    {
+      "field": "OM-3 specs.weightBasis",
+      "value": "battery-and-card",
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.bodyOnlyWeight",
+      "value": 413,
+      "unit": "g"
+    },
+    {
+      "field": "OM-3 specs.dimensions",
+      "value": [
+        139.3,
+        88.9,
+        45.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "OM-3 specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 1620000,
+        "mechanism": null,
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.evf",
+      "value": {
+        "present": true,
+        "resolutionDots": 2360000
+      },
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.burst.maxMechanicalFps",
+      "value": 6,
+      "unit": "fps"
+    },
+    {
+      "field": "OM-3 specs.burst.maxElectronicFps",
+      "value": 120,
+      "unit": "fps"
+    },
+    {
+      "field": "OM-3 specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.cardSlots",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.weatherSealing",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.operatingTemperatureC.min",
+      "value": -10,
+      "unit": "°C"
+    },
+    {
+      "field": "OM-3 specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C"
+    },
+    {
+      "field": "OM-3 specs.batteryShots",
+      "value": 590,
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.batteryConditions",
+      "value": "撮影可能コマ数 | 標準：約590枚 ／ 低消費電力撮影モード：約1040枚 キオクシア KSDXU-A064G (UHS-II U3 Class10 64GB)使用時、同梱電池使用、CIPAの試験基準による",
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.autofocus.description",
+      "value": "AF方式 | ハイスピードイメージャAF イメージャ位相差AF / イメージャコントラストAF併用; 測距点 / 測距点モード | クロスタイプ位相差AF（1,053点）、コントラストAF（1,053点）/ Allターゲット、Singleターゲット(1点)、Smallターゲット（9点）、Crossターゲット（39点）、Middleターゲット（63点）、Largeターゲット（165点）、カスタムターゲット*（点数、移動ステップ数設定） 記憶可能数:4",
+      "unit": null
+    },
+    {
+      "field": "OM-3 specs.autofocus.aiUnit",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "om-3",
+      "manufacturerModelCode": "OM-3",
+      "productType": "body",
+      "identity": {
+        "name": "OM SYSTEM OM-3",
+        "brand": "OM System",
+        "series": "OM-3",
+        "model": "OM-3",
+        "aliases": [
+          "OM-3",
+          "OM SYSTEM OM-3"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "마이크로포서드",
+          "rawUnit": null,
+          "locator": {
+            "section": "Sensor / image size",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "撮像画面サイズ | 17.4 mm x 13.0 mm （マイクロフォーサーズ）"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 20370000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "Camera effective pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "画素数 | カメラ部有効画素数 約2037万画素 / 総画素数 約2293万画素",
+            "notTotalOrComposite": true,
+            "computationalModesNotSensorMP": [
+              "フォーカスブラケット | 3～999コマ（フォーカスステップ 1～10選択可） / 充電待ち時間（0、0.1、0.2、0.5、1、2、4、8、15、30秒）",
+              "深度合成 | 可",
+              "深度合成対応レンズ | M.ZUIKO DIGITAL ED 7-14mm F2.8 PRO / M.ZUIKO DIGITAL ED 8-25mm F4.0 PRO / M.ZUIKO DIGITAL ED 12-40mm F2.8 PRO / M.ZUIKO DIGITAL ED 12-40mm F2.8 PRO II / M.ZUIKO DIGITAL ED 12-45mm F4 PRO / M.ZUIKO DIGITAL ED 12-100mm F4.0 IS PRO / M.ZUIKO DIGITAL ED 40-150mm F2.8 PRO / M.ZUIKO DIGITAL ED 40-150mm F4.0 PRO / M.ZUIKO DIGITAL ED 100-400mm F5.0-6.3 IS / M.ZUIKO DIGITAL ED 100-400mm F5.0-6.3 IS II / M.ZUIKO DIGITAL ED 150-400mm F4.5 TC1.25x IS PRO / M.ZUIKO DIGITAL ED 150-600mm F5.0-6.3 IS / M.ZUIKO DIGITAL ED 8mm F1.8 Fisheye PRO / M.ZUIKO DIGITAL ED 30mm F3.5 Macro / M.ZUIKO DIGITAL ED 60mm F2.8 Macro / M.ZUIKO DIGITAL ED 90mm F3.5 Macro IS PRO / M.ZUIKO DIGITAL ED 300mm F4.0 IS PRO / M.ZUIKO DIGITAL ED 50-200mm F2.8 IS PRO / M.ZUIKO DIGITAL 1.4x Teleconverter MC-14 / M.ZUIKO DIGITAL 2x Teleconverter MC-20",
+              "ライブND | 可（ND2/4/8/16/32/64） S、Mモードで使用可、フラッシュ禁止、ISOは800まで、シャッタースピードの最高速は1/60（ND2設定時）で、ND設定段数が上がるとより低速になります",
+              "三脚ハイレゾショット | JPEG (80M) 10368 x 7776 / JPEG（50M) 8160 x 6120 / JPEG（25M) 5760 x 4320 / RAW* 10368 x 7776 記録ビット数12bit / 14bitの選択可",
+              "手持ちハイレゾショット | JPEG（50M） 8160 x 6120 / JPEG（25M） 5760 x 4320 / RAW* 8160 x 6120 記録ビット数12bit / 14bitの選択可"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": [
+            17.4,
+            13
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Image size",
+            "row": "specs.sensor.sizeMm"
+          },
+          "conditions": {
+            "region": "JP"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 3,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 6.5,
+            "conditions": "12-45mm F4.0 PRO at45mm (90mm equivalent), CIPA2024 yaw/pitch/roll"
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Body sensor-shift image stabilization",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "region": "JP",
+            "ratingScope": "body-only",
+            "centerStops": 6.5,
+            "peripheralStops": 5.5,
+            "testLens": "12-45mm F4.0 PRO at45mm (90mm equivalent), CIPA2024 yaw/pitch/roll",
+            "syncIS": {
+              "combinedStops": 7.5,
+              "peripheralStops": 6.5,
+              "testLens": "12-100mm F4.0 IS PRO at100mm (200mm equivalent), half-press IS Off, CIPA2024",
+              "notBodyOnly": true
+            },
+            "sourceWording": "手ぶれ補正効果 | ボディー内手ぶれ補正 補正段数: 中央6.5、周辺5.5 使用レンズ: M.ZUIKO DIGITAL ED 12-45mm F4.0 PRO 焦点距離f ＝ 45mm (35mm判換算 f = 90mm） Yaw/Pitch/Roll 補正性能 CIPA2024規格準拠 / シンクロ手ぶれ補正 補正段数: 中央7.5、周辺6.5 使用レンズ: M.ZUIKO DIGITAL ED 12-100mm F4.0 IS PRO 焦点距離f ＝ 100mm (35mm判換算 f = 200mm） 半押し中手ぶれ補正: Off Yaw/Pitch/Roll 補正性能 CIPA2024規格準拠"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 496,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Mass with battery/card",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "region": "JP",
+            "weightBasis": "battery-and-card",
+            "configuration": "CIPA supplied battery and memory card included; eyecup excluded, separate lens excluded",
+            "sourceWording": "質量（g） | CIPA準拠、付属充電池およびメモリーカード含む、アイカップなし：496g / 本体のみ：413g"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-and-card",
+          "rawUnit": null,
+          "locator": {
+            "section": "Mass measurement basis",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {
+            "region": "JP",
+            "weightBasis": "battery-and-card",
+            "configuration": "CIPA supplied battery and memory card included; eyecup excluded, separate lens excluded",
+            "sourceWording": "質量（g） | CIPA準拠、付属充電池およびメモリーカード含む、アイカップなし：496g / 本体のみ：413g"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 413,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Body-only mass",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "region": "JP",
+            "weightBasis": "body-only",
+            "configuration": "Battery/card and separate lens excluded",
+            "sourceWording": "質量（g） | CIPA準拠、付属充電池およびメモリーカード含む、アイカップなし：496g / 本体のみ：413g",
+            "continuedRow": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            139.3,
+            88.9,
+            45.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Dimensions W H D",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "region": "JP",
+            "excludingProtrusions": true,
+            "sourceWording": "大きさ | 約139.3ｍｍ（W）x 88.9ｍｍ（H）x 45.8ｍｍ（D） CIPA準拠 幅×高さ×奥行き 突起部含まず"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 8,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1620000,
+            "mechanism": null,
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "LCD monitor",
+            "row": "specs.lcd"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "モニター形式 | 3.0型2軸可動式液晶（静電容量方式タッチパネル）、約162万ドット（3:2）",
+            "mechanismPolicy": "Japanese two-axis wording alone not forced to a canonical hinge enum; exact mechanism mapping needs independent review"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 9,
+          "rawValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Eye-level viewfinder",
+            "row": "specs.evf"
+          },
+          "conditions": {
+            "region": "JP"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 10,
+          "rawValue": 6,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Ordinary mechanical continuous mode",
+            "row": "specs.burst.maxMechanicalFps"
+          },
+          "conditions": {
+            "region": "JP",
+            "mode": "Mechanical continuous H / electronic silent H or SH1, not Pro Capture",
+            "sourceWording": "連続撮影速度 | 〔連写〕: 約6コマ/秒（1 - 6コマ/秒に設定可） / / 〔低振動連写〕: 約5.5コマ/秒（1 - 6コマ/秒に設定可） / / 〔静音連写〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔静音連写SH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔静音連写SH2〕： 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます。 / 〔プロキャプチャー〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔プロキャプチャーSH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔プロキャプチャーSH2〕: 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます",
+            "proCaptureNotSustained": true,
+            "firstFrameAfAeLocked": true,
+            "lensConditions": "連続撮影速度 | 〔連写〕: 約6コマ/秒（1 - 6コマ/秒に設定可） / / 〔低振動連写〕: 約5.5コマ/秒（1 - 6コマ/秒に設定可） / / 〔静音連写〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔静音連写SH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔静音連写SH2〕： 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます。 / 〔プロキャプチャー〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔プロキャプチャーSH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔プロキャプチャーSH2〕: 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 11,
+          "rawValue": 120,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Ordinary electronic silent continuous mode",
+            "row": "specs.burst.maxElectronicFps"
+          },
+          "conditions": {
+            "region": "JP",
+            "mode": "Mechanical continuous H / electronic silent H or SH1, not Pro Capture",
+            "sourceWording": "連続撮影速度 | 〔連写〕: 約6コマ/秒（1 - 6コマ/秒に設定可） / / 〔低振動連写〕: 約5.5コマ/秒（1 - 6コマ/秒に設定可） / / 〔静音連写〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔静音連写SH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔静音連写SH2〕： 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます。 / 〔プロキャプチャー〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔プロキャプチャーSH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔プロキャプチャーSH2〕: 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます",
+            "proCaptureNotSustained": true,
+            "firstFrameAfAeLocked": true,
+            "lensConditions": "連続撮影速度 | 〔連写〕: 約6コマ/秒（1 - 6コマ/秒に設定可） / / 〔低振動連写〕: 約5.5コマ/秒（1 - 6コマ/秒に設定可） / / 〔静音連写〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔静音連写SH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔静音連写SH2〕： 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます。 / 〔プロキャプチャー〕: 約20コマ/秒（5、10、15、20コマ/秒に設定可） / / 〔プロキャプチャーSH1〕: 約120コマ/秒（30、60、100、120コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます ピント、露出は1コマ目の値に固定されます / 〔プロキャプチャーSH2〕: 約50コマ/秒（12.5、16.7、25、50コマ/秒に設定可） シャッター速度が高速側に制限され、フラッシュが禁止されます 使用可能なレンズが限定されます"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 12,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Movie picture modes",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "動画専用ピクチャーモード | Flat、OM-Log400、HLG、OM-Cinema1、OM-Cinema2"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected internal mode",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "region": "JP",
+            "reason": "No directly verified sensor-area crop condition for selected mode; no conversion from equivalent focal or sensor size"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 14,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording media",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "型式 | マイクロフォーサーズ規格準拠レンズ交換式カメラ\n記録媒体 | SD、SDHC（UHS-I / II）、SDXC（UHS-I / II）\n撮像画面サイズ | 17.4 mm x 13.0 mm （マイクロフォーサーズ）\nレンズマウント | マイクロフォーサーズマウント\n形式 | 4/3型 裏面照射積層型 Live MOS センサー",
+            "reason": "Media formats do not independently establish physical slot count in selected source; leave count UNKNOWN",
+            "supportedMedia": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weatherSealing",
+          "evidenceRef": 15,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Weather protection",
+            "row": "specs.weatherSealing"
+          },
+          "conditions": {
+            "region": "JP",
+            "officialRating": "IP53 with IP53 lens; IPX1 with IPX1 lens"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 16,
+          "rawValue": -10,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "specs.operatingTemperatureC.min"
+          },
+          "conditions": {
+            "region": "JP",
+            "storageRangeExcluded": true,
+            "sourceWording": "使用可能温度 | -10℃ ～+40℃（動作時）、-20～+60℃（保存時）"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 17,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Operating temperature",
+            "row": "specs.operatingTemperatureC.max"
+          },
+          "conditions": {
+            "region": "JP",
+            "storageRangeExcluded": true,
+            "sourceWording": "使用可能温度 | -10℃ ～+40℃（動作時）、-20～+60℃（保存時）"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 18,
+          "rawValue": 590,
+          "rawUnit": null,
+          "locator": {
+            "section": "CIPA standard still image count",
+            "row": "specs.batteryShots"
+          },
+          "conditions": {
+            "region": "JP",
+            "sourceWording": "撮影可能コマ数 | 標準：約590枚 ／ 低消費電力撮影モード：約1040枚 キオクシア KSDXU-A064G (UHS-II U3 Class10 64GB)使用時、同梱電池使用、CIPAの試験基準による",
+            "ecoModeNotStandard": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 19,
+          "rawValue": "撮影可能コマ数 | 標準：約590枚 ／ 低消費電力撮影モード：約1040枚 キオクシア KSDXU-A064G (UHS-II U3 Class10 64GB)使用時、同梱電池使用、CIPAの試験基準による",
+          "rawUnit": null,
+          "locator": {
+            "section": "CIPA still image test conditions",
+            "row": "specs.batteryConditions"
+          },
+          "conditions": {
+            "region": "JP"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 20,
+          "rawValue": "AF方式 | ハイスピードイメージャAF イメージャ位相差AF / イメージャコントラストAF併用; 測距点 / 測距点モード | クロスタイプ位相差AF（1,053点）、コントラストAF（1,053点）/ Allターゲット、Singleターゲット(1点)、Smallターゲット（9点）、Crossターゲット（39点）、Middleターゲット（63点）、Largeターゲット（165点）、カスタムターゲット*（点数、移動ステップ数設定） 記憶可能数:4",
+          "rawUnit": null,
+          "locator": {
+            "section": "Autofocus system / points",
+            "row": "specs.autofocus.description"
+          },
+          "conditions": {
+            "region": "JP"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.aiUnit",
+          "evidenceRef": 21,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Autofocus computation",
+            "row": "specs.autofocus.aiUnit"
+          },
+          "conditions": {
+            "region": "JP",
+            "reason": "Do not equate marketing AI subject detection with a verified separate AI processing unit"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b497afe74e79916a7f7994a12fa94f8ebe3ff8950ccd046cab7bcca33daa22a4",
+  "sourceId": "source-775239bfdb9bebd4"
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://digital-faq.jp.omsystem.com/faq/public/app/servlet/qadoc?QID=007073-1",
+  "publisher": "OM Digital Solutions",
+  "documentTitle": "OM-1 official om1-rate-faq",
+  "documentVersion": "Current official page retrieved 2026-10-08",
+  "region": "JP",
+  "evidenceScope": "OM-1 exact model selected official objective claims; no prices",
+  "accessedAt": "2026-10-08T04:37:50.506Z",
+  "evidenceExcerpt": [
+    {
+      "field": "OM-1 specs.video.max",
+      "value": "C4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "OM-1 specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "om-1",
+      "manufacturerModelCode": "OM-1",
+      "productType": "body",
+      "identity": {
+        "name": "OM SYSTEM OM-1",
+        "brand": "OM System",
+        "series": "OM-1",
+        "model": "OM-1",
+        "aliases": [
+          "OM-1",
+          "OM SYSTEM OM-1"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "C4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Internal recording matrix",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "region": "JP",
+            "resolution": [
+              4096,
+              2160
+            ],
+            "frameRate": 59.94,
+            "actualFractionalFrameRate": 59.94,
+            "officialRateLabel": "60p",
+            "internal": true,
+            "fileFormat": "MOV",
+            "codec": "HEVC/H.265",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "motionCompensation": "LongGOP",
+            "bitrateMbps": 152,
+            "conditions": "Ordinary internal recording, not high-speed/S&Q capture; external HDMI RAW is separate. Standard audio48kHz/16bit selected.",
+            "crop": null,
+            "firmware": "Retrieved current official page; no firmware version inferred",
+            "alternatives": []
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected internal movie codec",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "region": "JP",
+            "selectedMode": "C4K 59.94p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "961644915b3b67cde16fcbf4116e535ea923f297bc25eab9de9e889e6b928768",
+  "sourceId": "source-e3b66a6c4a11ebd7"
+}

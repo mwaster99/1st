@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://learning.omsystem.com/OM-5MarkII/zz_html_manual/en/image_quality_photos_movies_126.html",
+  "publisher": "OM Digital Solutions",
+  "documentTitle": "OM-5 Mark II official om5ii-guide",
+  "documentVersion": "Current official page retrieved 2026-10-08",
+  "region": "global EN",
+  "evidenceScope": "OM-5 Mark II exact model selected official objective claims; no prices",
+  "accessedAt": "2026-10-08T04:37:50.505Z",
+  "evidenceExcerpt": [
+    {
+      "field": "OM-5 Mark II specs.video.max",
+      "value": "C4K 24p",
+      "unit": null
+    },
+    {
+      "field": "OM-5 Mark II specs.video.bitDepth",
+      "value": 8,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "om-5-ii",
+      "manufacturerModelCode": "OM-5 Mark II",
+      "productType": "body",
+      "identity": {
+        "name": "OM SYSTEM OM-5 Mark II",
+        "brand": "OM System",
+        "series": "OM-5",
+        "model": "OM-5 Mark II",
+        "aliases": [
+          "OM-5 Mark II",
+          "OM SYSTEM OM-5 Mark II"
+        ],
+        "mount": "Micro Four Thirds",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "C4K 24p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Internal recording matrix",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "region": "JP",
+            "resolution": [
+              4096,
+              2160
+            ],
+            "frameRate": 24,
+            "actualFractionalFrameRate": 24,
+            "officialRateLabel": "24p",
+            "internal": true,
+            "fileFormat": "MOV",
+            "codec": "MPEG-4AVC/H.264",
+            "chroma": "4:2:0",
+            "bitDepth": 8,
+            "motionCompensation": "IPB",
+            "bitrateMbps": 237,
+            "conditions": "Ordinary internal recording, not high-speed/S&Q capture; external HDMI RAW is separate. Standard audio48kHz/16bit selected.",
+            "crop": null,
+            "firmware": "Retrieved current official page; no firmware version inferred",
+            "alternatives": [
+              {
+                "resolution": [
+                  3840,
+                  2160
+                ],
+                "officialRateLabels": [
+                  "30p",
+                  "25p",
+                  "24p"
+                ],
+                "bitrateMbps": 102
+              }
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected internal movie codec",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "region": "JP",
+            "selectedMode": "C4K 24p"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b8989b9a298ea6dcc799e75837bfda6a8288cd7916e30944200a0851c9d750a9",
+  "sourceId": "source-2666a4a79619658f"
+}

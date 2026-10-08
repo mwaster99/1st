@@ -53,13 +53,18 @@ test("FX3 revisions remain distinct and FX6 configured mass is not body weight",
   assert.ok(!CAMERA_PRODUCTS.bodies.some((body) => body.id === "sony-fr7"));
 });
 
-test("objective numbers are nonnegative, physical ranges ordered and missing values explicit", () => {
+test("objective numbers are nonnegative except signed temperatures, ranges ordered and missing values explicit", () => {
   const numbers = (value, path) => {
-    if (typeof value === "number") assert.ok(Number.isFinite(value) && value >= 0, path);
+    if (typeof value === "number") {
+      const temperature = /\.operatingTemperatureC\.(min|max)$/.test(path);
+      assert.ok(Number.isFinite(value) && (temperature || value >= 0), path);
+    }
     else if (value && typeof value === "object") for (const [key, child] of Object.entries(value)) numbers(child, `${path}.${key}`);
   };
   for (const product of products) {
     numbers(product.specs, product.id); numbers(product.price, product.id);
+    const temperature = product.specs.operatingTemperatureC;
+    if (temperature?.min != null && temperature?.max != null) assert.ok(temperature.min <= temperature.max, product.id);
     if (product.specs.dimensions) assert.ok(product.specs.dimensions.length === 3 && product.specs.dimensions.every((n) => n > 0));
     if (product.specs.focal) assert.ok(product.specs.focal.min > 0 && product.specs.focal.max >= product.specs.focal.min);
     if (product.specs.aperture) assert.ok(product.specs.aperture.wide > 0 && product.specs.aperture.tele >= product.specs.aperture.wide);
