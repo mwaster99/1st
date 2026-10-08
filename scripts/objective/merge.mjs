@@ -1,4 +1,4 @@
-import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateIbisValue, validateLcdValue, validateStagingBatch } from "./rules.mjs";
+import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateCropAtMaxValue, validateIbisValue, validateLcdValue, validateStagingBatch } from "./rules.mjs";
 import { jsonBytes, sha256 } from "./storage.mjs";
 
 const requireValue = (ok, message) => { if (!ok) throw Error(message); };
@@ -14,7 +14,7 @@ const partialDate = (s) => {
 const https = (s) => { try { return new URL(s).protocol === "https:"; } catch { return false; } };
 
 const numberLeaves = /(?:weight|bodyOnlyWeight|minFocusM|filterMm|megapixels|batteryShots|bitDepth|axes|stops|min|max|wide|tele|resolutionDots|sizeInches|magnification|maxRefreshHz|maxMechanicalFps|maxElectronicFps|fastestMechanicalSec|fastestElectronicSec|slowestTimedSec)$/;
-const booleanLeaves = /(?:aiUnit|log|cropAtMax|stabilization|present|weatherSealing|mechanical|electronic|bulb|touch)$/;
+const booleanLeaves = /(?:aiUnit|log|stabilization|present|weatherSealing|mechanical|electronic|bulb|touch)$/;
 const stringLeaves = /(?:format|generation|description|label|weightBasis|batteryConditions|minFocusConditions|conditions|mechanism)$/;
 const bodyKeys = new Set(["sensor", "weight", "weightBasis", "bodyOnlyWeight", "dimensions", "autofocus", "video", "batteryShots", "releaseDate", "batteryConditions", "ibis", "evf", "lcd", "burst", "shutter", "cardSlots", "weatherSealing", "operatingTemperatureC", "fixedLens"]);
 const lensKeys = new Set(["focal", "aperture", "weight", "stabilization", "filterMm", "minFocusM", "minFocusConditions"]);
@@ -33,7 +33,9 @@ const childKeys = {
 };
 export function validateSpecValue(value, field) {
   if (value === null) return;
-  if (field === "specs.ibis") {
+  if (field === "specs.video.cropAtMax") {
+    validateCropAtMaxValue(value);
+  } else if (field === "specs.ibis") {
     validateIbisValue(value);
   } else if (field === "specs.lcd" || field.startsWith("specs.lcd.")) {
     validateLcdValue(value, field);

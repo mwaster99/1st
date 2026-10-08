@@ -528,3 +528,107 @@ test("CLI validate rejects an unsupported LCD enum without changing canonical", 
   assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, "rejected");
   assert.equal(readFileSync(isolated.p.canonical, "utf8"), isolated.before);
 });
+
+function cropAtMaxFixture(value) {
+  const draft = sourceDraft("https://www.sony.com/fixture/crop-contract");
+  draft.items[0].observations = [{
+    field: "Crop at maximum recording mode", path: "specs.video.cropAtMax", rawValue: value, rawUnit: null,
+    locator: { section: "Video", row: "Crop" }, conditions: {},
+  }];
+  const raw = buildRawDocument(draft);
+  const [staging] = normalizeRawDocument(raw, { batchId, vocab, identityMap });
+  return { raw, staging, result: validateStaging(staging, { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) }) };
+}
+
+for (const value of [true, false]) {
+  test(`cropAtMax ${value} retains its boolean meaning in ingestion and merge`, () => {
+    const { staging, result } = cropAtMaxFixture(value);
+    assert.equal(result.valid, true);
+    assert.equal(staging.claims[0].value, value);
+    assert.equal(staging.product.specs.video.cropAtMax, value);
+    assert.doesNotThrow(() => validateSpecValue(value, "specs.video.cropAtMax"));
+    assert.doesNotThrow(() => validateSpecValue({ cropAtMax: value }, "specs.video"));
+    const diff = createCanonicalDiff(staging, canonical);
+    const decisions = diff.changes.map((change) => ({ productId: diff.productId, claimId: change.claimId, action: "accept" }));
+    const promoted = proposedCanonical(canonical, { stagings: [staging], vocab }, decisions).canonical;
+    assert.equal(promoted.bodies.find((body) => body.id === staging.product.id).specs.video.cropAtMax, value);
+  });
+}
+
+test("cropAtMax null and raw UNKNOWN retain the existing unknown normalization policy", () => {
+  for (const value of [null, "UNKNOWN"]) {
+    const { staging, result } = cropAtMaxFixture(value);
+    assert.equal(result.valid, true);
+    assert.equal(staging.claims[0].value, null);
+    assert.equal(staging.claims[0].unknown, true);
+    assert.equal(staging.product.specs.video.cropAtMax, null);
+    assert.doesNotThrow(() => validateSpecValue(staging.claims[0].value, "specs.video.cropAtMax"));
+  }
+  // Canonical uses null, never the literal string UNKNOWN.
+  assert.throws(() => validateSpecValue("UNKNOWN", "specs.video.cropAtMax"), /Invalid boolean/);
+});
+
+test("cropAtMax numbers, strings and objects are rejected without boolean inference and match merge contract", () => {
+  for (const value of [0, 1, 1.5, -1, "true", "false", "1.5", "no crop", {}, { factor: 1 }]) {
+    const { staging, result } = cropAtMaxFixture(value);
+    assert.deepEqual(staging.claims[0].value, value);
+    assert.equal(result.valid, false);
+    const error = result.errors.find((error) => error.code === "INVALID_CROP_AT_MAX" && error.path === "specs.video.cropAtMax");
+    assert.ok(error, JSON.stringify(value));
+    assert.throws(() => validateSpecValue(value, "specs.video.cropAtMax"), { message: error.message });
+    assert.throws(() => validateSpecValue({ cropAtMax: value }, "specs.video"), { message: error.message });
+  }
+});
+
+test("malformed cropAtMax staging arrays are rejected, and raw arrays keep the earlier normalize blocker", () => {
+  for (const value of [[], [false], [1]]) {
+    assert.throws(() => cropAtMaxFixture(value), /Array value is not supported/);
+    const { raw, staging } = cropAtMaxFixture(false);
+    staging.claims[0].value = value;
+    staging.product.specs.video.cropAtMax = value;
+    const result = validateStaging(staging, { canonical, vocab, rawDocuments: new Map([[raw.sourceId, raw]]) });
+    assert.equal(result.valid, false);
+    assert.ok(result.errors.some((error) => error.code === "INVALID_CROP_AT_MAX" && error.path === "specs.video.cropAtMax"));
+    assert.throws(() => validateSpecValue(value, "specs.video.cropAtMax"), /Invalid boolean/);
+  }
+});
+
+test("AG-CX370 sealed official no-crop false claim passes the shared ingestion and merge contract", () => {
+  const batch = "production-panasonic-bodies-006";
+  const manifest = readJson(`src/data/ingestion/batches/${batch}.json`);
+  const item = manifest.items.find((item) => item.productId === "panasonic-cx370");
+  const staging = readJson(`src/data/ingestion/staging/${batch}/${item.itemKey}.json`);
+  const crop = staging.claims.find((claim) => claim.path === "specs.video.cropAtMax");
+  assert.equal(crop.value, false);
+  assert.match(crop.conditions.reason, /no image-area cropping/i);
+  const rawDocuments = new Map(item.sourceIds.map((id) => [id, readJson(`src/data/ingestion/raw/${id}.json`)]));
+  const result = validateStaging(staging, { canonical: readJson(`src/data/ingestion/transactions/${batch}/before.json`), vocab, rawDocuments });
+  assert.equal(result.valid, true, JSON.stringify(result.errors));
+  assert.doesNotThrow(() => validateSpecValue(crop.value, crop.path));
+  assert.equal(canonical.bodies.find((body) => body.id === item.productId).specs.video.cropAtMax, false);
+});
+
+test("CLI validate rejects a numeric cropAtMax item before approval without changing canonical", async (t) => {
+  const isolated = await isolatedFixture(t);
+  const raw = structuredClone(readJson("src/data/ingestion/raw/source-0379a083289afde8.json"));
+  raw.evidenceExcerpt.push({ field: "Crop", value: 1, unit: null });
+  raw.items[0].observations.push({ ...raw.items[0].observations[0],
+    path: "specs.video.cropAtMax", rawValue: 1, rawUnit: null, evidenceRef: raw.evidenceExcerpt.length - 1,
+    locator: { section: "Video", row: "Crop" }, conditions: {},
+  });
+  raw.contentDigest = digestValue(raw.evidenceExcerpt);
+  raw.sourceId = createSourceId(raw);
+  writeFileSync(path.join(isolated.p.ingestion, "raw", `${raw.sourceId}.json`), JSON.stringify(raw));
+  const manifest = JSON.parse(readFileSync(isolated.p.manifest));
+  manifest.items.forEach((item) => { item.sourceIds = [raw.sourceId]; });
+  writeFileSync(isolated.p.manifest, JSON.stringify(manifest));
+  const normalized = runIsolated(isolated.root, "normalize");
+  assert.equal(normalized.status, 0, normalized.stderr);
+  const validated = runIsolated(isolated.root, "validate");
+  assert.equal(validated.status, 1, validated.stderr);
+  const result = JSON.parse(validated.stdout);
+  assert.equal(result.status, "rejected");
+  assert.ok(result.items[0].errors.some((error) => error.code === "INVALID_CROP_AT_MAX" && error.path === "specs.video.cropAtMax"));
+  assert.equal(JSON.parse(readFileSync(isolated.p.manifest)).items[0].state, "rejected");
+  assert.equal(readFileSync(isolated.p.canonical, "utf8"), isolated.before);
+});

@@ -13,6 +13,12 @@ const RESERVED_ID_PREFIXES = ["unknown-body-", "unknown-lens-"];
 const PRODUCT_TYPES = new Set(["body", "lens"]);
 const CLAIM_VERIFICATIONS = new Set(["pending", "verified", "rejected", "conflict"]);
 
+// Existing boolean crop flag, not a numeric crop factor; UNKNOWN normalizes to null.
+export function validateCropAtMaxValue(value) {
+  if (value === null) return;
+  if (typeof value !== "boolean") throw Error("Invalid boolean: specs.video.cropAtMax");
+}
+
 // Existing canonical LCD contract, shared by ingestion and merge approval.
 export function validateLcdValue(value, field = "specs.lcd") {
   if (value === null) return;
@@ -647,6 +653,13 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
       const archivedEquivalent = legacyFixedLensUnits && claim.path.startsWith("specs.fixedLens.equivalentFocal.") && claim.unit === null && claim.rawUnit === "mm";
       if (claim.unit !== "mm" && !archivedEquivalent) {
         addIssue(issues, claim.unit == null ? "UNIT_REQUIRED" : "UNSUPPORTED_UNIT", `Normalized focal length must use mm: ${claim.path}`, claim.path);
+      }
+    }
+    if (claim.path === "specs.video.cropAtMax") {
+      try {
+        validateCropAtMaxValue(claim.value);
+      } catch (error) {
+        addIssue(issues, "INVALID_CROP_AT_MAX", error.message, claim.path);
       }
     }
     if (claim.path === "specs.ibis") {
