@@ -1,5 +1,20 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic/LUMIX production coverage audit — 2026-10-08
+
+완료. Clean baseline `f62a24b`에서 기존inventory/production001–006/보고서/identity-map/scope/contracts/이전4브랜드audit/최신validators를 대조했다. Korea direct-operated6gallery + PTZ/studio5gallery의 전체APIpagination·마지막빈페이지와64exactproductpage, 추가공식studio/PTZ근거를 새로 조회: **107 requests 전부HTTP200**. **49카드 =39base +10linked kit/color variant**, 직접운용S10/G13/compact5/camcorder11. 별도PTZ10/studio5는 denominator 밖. 신규/제거/제품명/연결/발견된출시상태변화0; inlinecolor 상세변화는 옛snapshot에근거가없어 비교불가. Released/current39/canonical39/실제productionprovenance39/미처리0/duplicate·ambiguous0/critical0으로 **Panasonic직접운용camera/camcorder Objective DB product coverage 1차완료** 판정. 재고·세계생산/모든필드/추천구성완료 선언과 구분한다.
+
+Known803leaf 전부verified, manufacturer-reference-only/legacy-only/unclassified 각0; verifiedfieldEvidence692paths/claims838/raw연결111. Structuredidentity35/39: 기존보강S9/S5II/GH7/G9II 전용identityEvidence4누락은 실제reviewedmap/productionidentity근거와구분해should-fix. PhysicalcardSlotsUNKNOWN14와합쳐 **should-fix18**; 명시적감사field별 **acceptableUNKNOWN134**(전체JSONnull총조사아님, GH5S없는IBISstops는N/A제외). 이번에보강실행하지않음.
+
+S10L-Mount/G13MFT/세대독립, bodyBIS≠Dual/OIS/hybrid/digital, compact5+camcorderfixed10 actual/equivalentmm/내장렌즈상품0/무게이중0 검증. Camcorder11style정상; AJ-CX4000interchangeable/B4/fixedLensnull/physicalsensor추정없음, B4lenspool은추천후속. SourceconflictUNKNOWN·weight기준/모델열·미디어/영상조건/정수vsfractional보존. Crop/LCD는최신공통helper strictvalidate/merge일치; DC-L10free-angle원문조건→vari-angle와CX370false추적가능. 기존29.97→97parser/singlevideo.max/기능·부속구성/가격/Experience는별도backlog이며이번변경없음.
+
+Batch001–006manifest/raw/staging/diff/현재·archiveapproval/transactionevidence/journal/before-after/incomingdigests chain **누락0/mismatch0**, defaultstrictvalidate/merge과idempotentafter replay모두일치. Appendableidentity/vocab의현재확장과sealedbytes구분; 과거vocab각batchGitcommit원본bytehash까지확인했다. Canonical **146/36/182**, digest `2470956cd9cd3115713e5b623cfbc3cd74e5aa34a2e22124ec57b92b5d54503c` 불변. Panasoniccanonical전체40 중GX85는현행39감사밖. 기존inventory/production/engine/UI/validators/identity-map/vocab 불변.
+
+PTZ10/studio5 scope metadata만per-model공식URL/이유/standalone·CCU조건/재검토조건으로보강; 영구제외아님. Studio의CCU-less/rig/shoulder가능성을지우지않고기능·외부recording/system구성별specialty재검토를명시. 전문용/B4만으로AJ를special로빼지않음. 다음일반브랜드는 **OM System**; Panasonic추가일반batch없고inventorydelta또는별도narrowenrichment/specialtyscopephase로이어간다.
+
+전체 **261/261**, Objective/production/catalog/coverage **234/234**, Panasonic **62/62**, camcorder **18/18**, 신규audit **11/11**. Canonicalvalidation/build/nodecheck/gitdiffcheck통과(기존bundle경고). Cheap-worker신규호출0. [상세감사](OBJECTIVE_DB_PANASONIC_COVERAGE_AUDIT.md), [재개checkpoint](../src/data/ingestion/panasonic-coverage-audit-2026-10-08.json), [회귀테스트](../tests/panasonicCoverageAudit.test.js). 문서·감사JSON·테스트·scope/진행기록총5파일을uncommitted상태로남김/push없음. 이번audit범위미완료0;후속backlog는별도범위.
+
+
 ## Stage 4 Panasonic camcorder production batch 006 — 2026-10-08
 
 완료. Clean baseline `6bec0de`에서 지정된 **HC-V900/HC-VX1/AG-CX370/HC-X1200/HC-X2100/HC-X1600/HC-X20** 현행KR exact7페이지와 기존inventory/batch001–005/contracts/validators를 대조. **신규7/기존0**, canonical **139/36/175→146/36/182**, consumer2/pro5 모두 fixed/mountnull/bodyStylecamcorder, 단일7제품atomictransaction. 공식21sources/166claims(known125/UNKNOWN41)/157unique paths/117verifiedfieldEvidence. 기존139바디·36렌즈/가격/추천/UI/vocab/schema/validator/과거artifact 불변. 내장lensproduct생성0/전체무게한번만계산.
