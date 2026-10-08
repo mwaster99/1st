@@ -1,5 +1,16 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Panasonic camcorder production batch 006 — 2026-10-08
+
+완료. Clean baseline `6bec0de`에서 지정된 **HC-V900/HC-VX1/AG-CX370/HC-X1200/HC-X2100/HC-X1600/HC-X20** 현행KR exact7페이지와 기존inventory/batch001–005/contracts/validators를 대조. **신규7/기존0**, canonical **139/36/175→146/36/182**, consumer2/pro5 모두 fixed/mountnull/bodyStylecamcorder, 단일7제품atomictransaction. 공식21sources/166claims(known125/UNKNOWN41)/157unique paths/117verifiedfieldEvidence. 기존139바디·36렌즈/가격/추천/UI/vocab/schema/validator/과거artifact 불변. 내장lensproduct생성0/전체무게한번만계산.
+
+독립7worker 실제8APIattempts/7finalsuccess/1MALFORMED_RESPONSE+동일X20IDretry1, **34906input/4899output/39805total**. Fixture7삭제/추가사용자개입0/workerpatch미적용. SharedPDF모델열·footnote를main이직접검토;V900환산·VX1bitdepth추정·CX370SDI오해·X2100EVF오해거절. X1200MP4HEVC100M vsX1600/X2100MOV200M 분리. X20sensor1/5.8vs1.0type 진짜공식충돌은UNKNOWN/knowntrial CONFLICTING_CLAIM_VALUES,15.03MP일치승격. X20body2000/operating2430g(twoSDcards)과X2분리,card기준불명확한VX1/CX370/trio operating UNKNOWN. Physicalmm/IBIS전7UNKNOWN,actual/equivalentmm독립/opticalhybrid를IBIS승격안함. FeatureND/SDI/XLR/network/recordingmatrix조건metadata보존.
+
+Preapproval초안2교정: reviewedAt fullISO→기존datecontract, CX370crop1→기존booleanfalse. 후자는stagingvalidate가놓치고verifyIncoming이차단하여전7영향확인후raw교정·전체게이트재실행. **Crop boolean ingestioncontract검증공백은 별도소규모후속**;이번validator/schema변경없음. Raw-helperUTC21개 **2026-10-08T03:16:06.150Z~03:21:04.706Z**/clockbounds검증. Strictvalidate7/7→humanreview→explicitapproval→atomicapply→canonicalvalid→실제reapply **already-canonicalized/canonicalMatches:true**.
+
+전체 **243/243**, Objective/production/catalog/coverage **216/216**, Panasonic/camcorder **51/51**, 신규9/9. Build/nodecheck7files/gitdiffcheck통과(기존chunk경고). **Camcorder11/11미처리0, S/G/compact도기존checkpoint기준0 →direct-operated39/39미처리0**. PTZ10/studio5별도deferred. 다음은Panasonic전체coverageaudit이며이번batch로audit완료선언하지않음. [상세보고](OBJECTIVE_DB_PANASONIC_PRODUCTION_006.md), [재개checkpoint](../src/data/ingestion/panasonic-camcorder-current-2026-10-08.json). Localcommit trailer `Objective-Batch: production-panasonic-bodies-006`,push없음. 이번7범위미완료0;완료batch재수집/worker재호출없음.
+
+
 ## Stage 4 Panasonic camcorder production pilot 005 — 2026-10-07
 
 완료. Clean baseline `711f06501c6e414c6785c720f1350399628b2497`에서 inventory/batch001–004/canonical/identity-map/scope/contracts/최신 validator를 확인하고 지정된 **HC-VX3/AG-CX20/HC-X2/AJ-CX4000**의 KR current 페이지를 재조회했다. 신규4/기존0, canonical **135/36/171→139/36/175**. 직접 운용 consumer/pro handheld fixed3개, broadcast shoulder interchangeable1개를 단일 atomic transaction으로 적용했다. BodyStyle **camcorder**, AJ mount **B4**(official B4 lens mount/2/3-type bayonet)만 최소 vocab 확장; 기존 schemaVersion/product shape/weight/video계약/validator/추천/UI코드 불변. Kind fixed/mountnull/fixedLens3, interchangeable/B4/fixedLensnull1; 별도lens생성0/기존135바디·36렌즈 불변. 실제 시나리오에서도 fixed 전체무게484/null/2490g 한 번만 계산.

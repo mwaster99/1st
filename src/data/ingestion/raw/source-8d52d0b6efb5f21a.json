@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-VX1 vx1-manual official reviewed source",
+  "documentVersion": "Official shared operating manual, exact model rows reviewed",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "HC-VX1 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:16:06.152Z",
+  "evidenceExcerpt": [
+    {
+      "field": "HC-VX1 specs.video.max",
+      "value": "4K 30p",
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.video.bitDepth",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.video.log",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.cardSlots",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-vx1",
+      "manufacturerModelCode": "HC-VX1",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-VX1",
+        "brand": "Panasonic",
+        "series": "HC-VX",
+        "model": "HC-VX1",
+        "aliases": [
+          "HC-VX1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 30p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording/Playback Mode",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 30,
+            "actualFractionalFrameRate": null,
+            "internal": true,
+            "fileFormat": "MP4",
+            "codec": "H.264/MPEG-4 AVC",
+            "bitrateMbps": 72,
+            "bitrateType": "VBR maximum",
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "chroma": null,
+            "reason": "Official integer mode label; do not infer fractional rate or unstated chroma/bit depth.",
+            "alternatives": [
+              {
+                "mode": "2160/24p",
+                "bitrateMbps": 72
+              }
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording/Playback Mode",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "selectedMode": "4K 30p",
+            "fileFormat": "MP4",
+            "chroma": null,
+            "reason": "No selected-mode bit depth explicitly established"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative recording mode",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "reason": "No verified log for this exact target; do not copy sibling model log"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative mode",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No verified selected-mode crop factor"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 4,
+          "rawValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "p17 media / p18 single slot B diagram",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {
+            "capacity": "SD512MB–2GB/SDHC4–32GB/SDXC48–128GB; mode-dependent speedclass",
+            "logicalIndexOnly": true,
+            "externalUsbHdd": "Copy/playback is not another physical card slot"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2e00b4d732a4c6bd5c7a7f85e08886a96d4aea4aec7cbc6a08bafb0a2d99ec8c",
+  "sourceId": "source-8d52d0b6efb5f21a"
+}

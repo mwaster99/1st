@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-V900 v900-manual official reviewed source",
+  "documentVersion": "Official shared operating manual, exact model rows reviewed",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "HC-V900 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:16:06.151Z",
+  "evidenceExcerpt": [
+    {
+      "field": "HC-V900 specs.video.max",
+      "value": "FHD 60p",
+      "unit": null
+    },
+    {
+      "field": "HC-V900 specs.video.bitDepth",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-V900 specs.video.log",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-V900 specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-V900 specs.sensor.megapixels",
+      "value": 8290000,
+      "unit": "pixel"
+    },
+    {
+      "field": "HC-V900 specs.bodyOnlyWeight",
+      "value": 433,
+      "unit": "g"
+    },
+    {
+      "field": "HC-V900 specs.weight",
+      "value": 484,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-v900",
+      "manufacturerModelCode": "HC-V900",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-V900",
+        "brand": "Panasonic",
+        "series": "HC-V",
+        "model": "HC-V900",
+        "aliases": [
+          "HC-V900"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "FHD 60p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording/Playback Mode",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              1920,
+              1080
+            ],
+            "frameRate": 60,
+            "actualFractionalFrameRate": null,
+            "internal": true,
+            "fileFormat": "AVCHD",
+            "codec": "H.264/MPEG-4 AVC",
+            "bitrateMbps": 28,
+            "bitrateType": "VBR maximum",
+            "media": [
+              "SD",
+              "SDHC",
+              "SDXC"
+            ],
+            "chroma": null,
+            "reason": "Official integer mode label; do not infer fractional rate or unstated chroma/bit depth.",
+            "alternatives": [
+              {
+                "mode": "MP41080/50M",
+                "bitrateMbps": 50,
+                "frameRate": null
+              },
+              {
+                "mode": "1080/24p",
+                "bitrateMbps": 50
+              }
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording/Playback Mode",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "selectedMode": "FHD 60p",
+            "fileFormat": "AVCHD",
+            "chroma": null,
+            "reason": "No selected-mode bit depth explicitly established"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative recording mode",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "reason": "No verified log for this exact target; do not copy sibling model log"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative mode",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No verified selected-mode crop factor"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 4,
+          "rawValue": 8290000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "p37 HC-V900 RIGHT COLUMN still effective",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "selected": "16:9 still",
+            "effectiveVideoMP": 6.17
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 433,
+          "rawUnit": "g",
+          "locator": {
+            "section": "p39 common Mass",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "integral lens retained; lens hood, battery and SD card excluded"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 6,
+          "rawValue": 484,
+          "rawUnit": "g",
+          "locator": {
+            "section": "p39 common operating Mass",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "lens hood, supplied battery, optional SD card and integral lens included"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "d149695683375cc129ad60284377e878a22abe3667722fbce6f83a5182d4ddd0",
+  "sourceId": "source-11f8946c9180ff32"
+}

@@ -1,0 +1,1453 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-006",
+  "productIds": [
+    "panasonic-v900",
+    "panasonic-vx1",
+    "panasonic-cx370",
+    "panasonic-x1200",
+    "panasonic-x2100",
+    "panasonic-x1600",
+    "panasonic-x20"
+  ],
+  "approvedAt": "2026-10-08T03:21:20.315Z",
+  "approvedBy": {
+    "name": "GPT-6.1 Sol",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products.",
+  "diffDigest": "62846c2d807da269aa27aa52aed84c243241932d5ab657e4694a24b0af023bfd",
+  "diffFileDigest": "6c199b6b16765ff7f4be2fc0a99d32045f3404c7687bb962112c0c20b1567c4d",
+  "baselineCanonicalDigest": "7e1911e29c83bdee9ebb39df0f21bc1b01558cfc2f781207028237f4194562cc",
+  "expectedCanonicalDigest": "2470956cd9cd3115713e5b623cfbc3cd74e5aa34a2e22124ec57b92b5d54503c",
+  "incomingDigest": "1a94c011ad20fad18fe5439ff7c2e8766ab9a152ce55fdd0ef2333b8a50d9d3d",
+  "incomingArtifactDigests": {
+    "vocab.json": "2014a1d3036fd863dbabab8f263a8573349b366e2f3a32f23cff355fcf41ac29",
+    "identity-map.json": "c46662f0fafa6c2cde3e3eaeca19b30ad0ba1673572c41e3466f951240577a9c",
+    "diffs/production-panasonic-bodies-006.json": "6c199b6b16765ff7f4be2fc0a99d32045f3404c7687bb962112c0c20b1567c4d",
+    "staging/production-panasonic-bodies-006/panasonic-v900.json": "676dcd3f8a6b37ae5c52def99e8427d124ad13eda67f61a7775940c9c88c4071",
+    "raw/source-9bf043509b09f3b7.json": "c88cf058aece028934221b4294773fc195dc12f88ab3045cb272a7698eee1bc4",
+    "raw/source-fa793d3af3012a06.json": "8354833bcafcc1414de6f4b4a7c14ade46d050baa1dae7864652c133c76cae06",
+    "raw/source-11f8946c9180ff32.json": "e2861a9ef9cda95db2f3a23fff2a8ed239b825d040e37dc508a36552b5d5cc67",
+    "staging/production-panasonic-bodies-006/panasonic-vx1.json": "12769fde6604d8475d6dc0730626fd1e9dfcc8ca41543647b87a9c9286d6bd3a",
+    "raw/source-0f08cca0a1af0b55.json": "3ffc73ad73dd69aaaa4450eeaea2750167607ec66f6a2cbac25f747a59029996",
+    "raw/source-16d28bae64039580.json": "f2f8930d3283c066b3c57b15275cc954c9c165c9c3b0f8d13bc1f50b212b602e",
+    "raw/source-8d52d0b6efb5f21a.json": "192056e97f1b3c2e50f03024fd2b83afaacecf2f48d1eeecc48ff2f03f1d555f",
+    "staging/production-panasonic-bodies-006/panasonic-cx370.json": "e042eb99b8f9a8a0f098d19d2f7b750b9c9d53f5141e99e06b9e3fb8da8edca4",
+    "raw/source-8765804aced373bc.json": "504421d234df9f56f78a5984a1d32b988ffb8479d2fbe12b3428381e92d904c6",
+    "raw/source-5526c0c97053eb1c.json": "513db7fb2c48c170042a439d1305b0ef7947d32c53919b13f9d7ea248d1c8ee6",
+    "raw/source-b5f176d664866548.json": "8075a483ffb528bccb789ea02fb1ac07de1773f315f6f1a308a2f47742db4fe3",
+    "staging/production-panasonic-bodies-006/panasonic-x1200.json": "fa64fca6e083525477723619734ef97d71c433fc18e402a996253ef885211010",
+    "raw/source-70a1926e2adc3ad4.json": "9f05e71032187799e819147b0d1c2192c4d70f32bb8d998acd36874ab54fe9a0",
+    "raw/source-d6c41bdb9a2206e8.json": "d5f5d2c1366715ced52a3a16aa7d1a0866c8adae5ca6b799c2ed5bbed4912095",
+    "raw/source-2e6bbdb4a3ae32dd.json": "9fe6a4921afdb6c1034a897343182ef41b5079d90a8825fa019ede6e0c4eaa61",
+    "staging/production-panasonic-bodies-006/panasonic-x2100.json": "6a6d6e27f0c7d0c082aebf2660c6eb38b8bf5a7876b8f55ed3656c03a9dd5a9a",
+    "raw/source-e529dec86fbcd424.json": "81457894e4a07791c5593fe88127cfbb18a0b81ae207d89cb443a75305c04069",
+    "raw/source-77b3d999190d5ef7.json": "b075a756a3e4a7d71a4053f1b1714e420c7942f726cacbbad63168f85d4b31d7",
+    "raw/source-aaef96299b559ba5.json": "6de359dff980f51ae6780a297870e3b17c9d7b3a6c3286902cfd197c0252d094",
+    "staging/production-panasonic-bodies-006/panasonic-x1600.json": "4f838ae40e6b37eb9ffaebf4b076d3372545cbd5ef68395d67e6499f53e43cc7",
+    "raw/source-9fc6c6645cc25e57.json": "559355b39498c4268d48b9de1acf9e03a906945faeaa6f99d3e6043c55a76f55",
+    "raw/source-64c071b25e9f3b8c.json": "1e56b5890fc6614f1700f49be4a5b0012a2445a2ba8afe2528d0bf62b7811491",
+    "raw/source-c61f83ab1f57485c.json": "596f84f83bf2d4180cd68ce3e9ec32979ff7ef5e192947f4dc75b443f83449a7",
+    "staging/production-panasonic-bodies-006/panasonic-x20.json": "0611b51cea3790a2705650035c0fc8eee99e8eaded7e920334eb81b2febb461f",
+    "raw/source-34d88a2e622dfa48.json": "9ee9572d72b8d8eb50c267f772b589c1e72d886d5582923e973a51ee094d4144",
+    "raw/source-ae31018df810b293.json": "56bbe0da4ef59efbd0c87c1d1aea3d436a08ee33ab747c8f750c09d6045ef22c",
+    "raw/source-738ba5d5ca3689e8.json": "b920f4545ce8b8f327de4dec717045949b1356b925ea1eb01adb838c9dbadadf"
+  },
+  "productOperations": [
+    {
+      "productId": "panasonic-v900",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "500826ccbb0bcaad43e539ae3ea17f3c22c8e681c374c7821661f7ff3403fb53",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-0bb972b6815a00d267b9",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "63892f0de1b6ffb3b7ca0386ccd3e0806b63b388c3bc68bb63b3a1bbdacbed12",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-507590c44a1a32c8cfab",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "6624974d77108b6c9013fd8bdf123c3af947b67046265d89ae3c07627abd09de",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-394210d6614315a6a5ae",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "87ecf778bbc3269805432ba7448d091a60600855d17f57ee982e0a1915930367",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-0d19d8ac52257586f028",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "ea37b8404510d57275aa2798023ad1f71d7ec207e0701b028bbc40fdb4eefdf4",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-edbcbffefbf2b4e37355",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "4df643eb19d9b380ea116bc41bc3791a95b50cbc5a3edac7c8f0abf3e7ae28d8",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-30e896e1b853a6c2e2b4",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "31da6bd3f9f94d3e190fdd6e77695e8a033be733c70693bf52e19596e928a262",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-23f6d920654ed7057fa8",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-daf681e5206ca092c2f7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-1413075d7e752c4bbf3c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.cardSlots",
+      "claimId": "claim-c1672889c07f24f72587",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.dimensions",
+      "claimId": "claim-678f2552224026c9fb28",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-6c7937c5b1a6d5afa16e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-26b4adf930d17044830d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-959e2f5461bcd7ca216b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-f718acacbe5267c8a59d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-3782f3b192f27b7ec103",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-362e8759e0d27e8322d3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.ibis",
+      "claimId": "claim-6c540adcd4914a41e434",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.lcd",
+      "claimId": "claim-10d3f547b8c3432686b2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-a9bd7f4cc8817b2d511c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-985ac2bece0d51da0b22",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.sensor.format",
+      "claimId": "claim-24b22b869181936bd078",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-42f3d9712adbfb8874ce",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-e4c9439a8abd77f42703",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-e8293f47ca329959174c",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-192902dc790b176f89e7",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-e73c74053f83fd2f7581",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.video.log",
+      "claimId": "claim-6d142c93212b80089c6f",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.video.max",
+      "claimId": "claim-21191f22e4b9b719c57f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.weight",
+      "claimId": "claim-4e4b50dd308ee6f30409",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.weight",
+      "claimId": "claim-1965d30cbaeaae577d43",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-v900",
+      "path": "specs.weightBasis",
+      "claimId": "claim-c6c9f0aefaddcdb0fceb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-0e4942b44789c3f0ec4f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.cardSlots",
+      "claimId": "claim-5335886110930eceb3a5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.dimensions",
+      "claimId": "claim-9bf0b3e14f89d5880999",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.evf",
+      "claimId": "claim-fc998ae4237d6640fec1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-8c89fe57f89f1e884524",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-771ba68f31582b1063d8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-3a176b29442d9c3b9d6f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-396a24098ddbb971e7cc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-c1eade9a87fcd66adf1f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-c6a6e346544fef2b5cbc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.ibis",
+      "claimId": "claim-1321d3c232dc69cb360b",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.lcd",
+      "claimId": "claim-e05c8347a86e7c77079e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.sensor.format",
+      "claimId": "claim-be49bd1ab03d2c692e60",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-1e64b27b870ba65abf59",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-574d5a7e29ccc38b6fbd",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-8698b7f99aed15b19e85",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-521b2827b2418aa33225",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.video.log",
+      "claimId": "claim-4db916e8186282fc14b2",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.video.max",
+      "claimId": "claim-fca048e53b315ca01da8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.weight",
+      "claimId": "claim-eda69086bbf26564e6fd",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-vx1",
+      "path": "specs.weightBasis",
+      "claimId": "claim-6ca7284a4ec9b56f2581",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-1ac5cfb3d6205271dd22",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.cardSlots",
+      "claimId": "claim-c6af95f20a3a12b4bbe9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.dimensions",
+      "claimId": "claim-b1ff993b87d1c75c1e7e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.evf",
+      "claimId": "claim-d73abfca5e1b9d0d80ad",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-d3b051c0574246be1989",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-e674a333ed0b10b02fec",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-52eaad228803febe863e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-0e02064cb6c20882ceb0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-ecfc21fb2d78cdc0655e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-a77b8fad25ddbb0520b6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.ibis",
+      "claimId": "claim-40eb75224d232defc892",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.lcd",
+      "claimId": "claim-0af90c6617ff377bc05a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-fb9eea35747a83c404dd",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-c0b16788095fcbb689dc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.sensor.format",
+      "claimId": "claim-b3478f15d9b3c7d4bc38",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-316eadcd5e2a43ab3093",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-d8d723e956d617cd4ef1",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-faf377f73a5d0c1fb46d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-4b7d6fc87ab4a569c2a6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.video.log",
+      "claimId": "claim-31d8a56a586b798a0d8d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.video.max",
+      "claimId": "claim-c920313bbcf2aa09cb50",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.weight",
+      "claimId": "claim-232f1977e71a94e950c6",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-cx370",
+      "path": "specs.weightBasis",
+      "claimId": "claim-e0ff6dfd2259895fcb62",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-d038a37ec54240e75a9b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.cardSlots",
+      "claimId": "claim-3c7be3805f34e8a2391f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.dimensions",
+      "claimId": "claim-dc6711135a0600e58f79",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-fc9bde74768d2045998f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-61e66895697a0cf58537",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-5c7672cbcc0eeaaa7808",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-5cffc1c3c5c9f1b9a99a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-7b19180894e53e63a028",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-d9555fb68be1a0adcf07",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.ibis",
+      "claimId": "claim-05ae0855d064ff80c6b9",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.lcd",
+      "claimId": "claim-69d4b50c5a598093bbe5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-5ca6065d930194ae95d4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-86769b80bdf9d329031a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.sensor.format",
+      "claimId": "claim-8787f3001bebaa19742a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-177c008356e2833a98da",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-bc41ec5818a4ca62266e",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-168b6b46b91a38473421",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-6eac316b38fd62e70d6d",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.video.log",
+      "claimId": "claim-9a0506b5d80deeb1ce27",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.video.max",
+      "claimId": "claim-01ef2b4c171a8691a42b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.weight",
+      "claimId": "claim-68902faf26177b59dd3b",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1200",
+      "path": "specs.weightBasis",
+      "claimId": "claim-bd746af8b305c41e2cd5",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-44445e5823377cd76d2a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.cardSlots",
+      "claimId": "claim-0ee0c2f6379e29f731d5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.dimensions",
+      "claimId": "claim-43a4d8b41c7503580e8f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.evf",
+      "claimId": "claim-edebeec5af411a23607e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-69a5e017d324b27bb0c2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-51e3fe0c6e1c8eb3dad5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-4797992dce262a98e686",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-82a37cddf88c3cfa6f47",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-83ae328f9ed8e112bde0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-378a1b116653dd94f616",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.ibis",
+      "claimId": "claim-b334156c9d2dd8611e1f",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.lcd",
+      "claimId": "claim-05d69f855ab2bafad302",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-10f89e7295b565b3f45c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-17caa2b98128497f99fc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.sensor.format",
+      "claimId": "claim-346fe0763304bdbe6d0b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-679a0f31c3ba8fb7595c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-21811d98b36dabdf61fe",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-dd77718231c641515afb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-59365931cd498934ae93",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.video.log",
+      "claimId": "claim-8c6b35ab1064d9062c06",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.video.max",
+      "claimId": "claim-9f1d346a973e101c5aa6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.weight",
+      "claimId": "claim-0506448eed5016c94000",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x2100",
+      "path": "specs.weightBasis",
+      "claimId": "claim-3a80a812121b731387e9",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-89e31abc4bd15884109c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.cardSlots",
+      "claimId": "claim-da7789dff3a0e2ace767",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.dimensions",
+      "claimId": "claim-0d6bbac943f7528590ac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.evf",
+      "claimId": "claim-0cbd60abbb377a46d70d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-868952eb8a60e9ae9074",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-49206b2275c0a24b41fe",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-1de85fd61e5ca0556b1c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-a44cfa7fc4cba47e2af6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-38a7b38e756f0f24d60f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-b03c839429a0081de1e4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.ibis",
+      "claimId": "claim-c6032c99edc5ffe866a4",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.lcd",
+      "claimId": "claim-76c05ff3971928a11b3c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-08ba398718ec3607e762",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-c9d0647530c9a5d34582",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.sensor.format",
+      "claimId": "claim-26aa9d19997967ef3196",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-0e727ed9d66d79ae2a12",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-2fdf4dede7eeb56f64e0",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-e0f095121364b5b668c7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-a06a79d088d9e7c77f2c",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.video.log",
+      "claimId": "claim-fd1219c125f3a5ebb9e0",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.video.max",
+      "claimId": "claim-cbf60ae171eb6548316a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.weight",
+      "claimId": "claim-a72f2cf232d75fcf3516",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x1600",
+      "path": "specs.weightBasis",
+      "claimId": "claim-73445ab18b30bd5f15de",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-65169a4452802b89ce72",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.bodyOnlyWeight",
+      "claimId": "claim-5fa4e5c7d886eb5d4fed",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.cardSlots",
+      "claimId": "claim-d3bae47e87923967b810",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.dimensions",
+      "claimId": "claim-63c11f11fd46050c023e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.evf",
+      "claimId": "claim-18f0f73e32e6d467fe4e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.aperture.tele",
+      "claimId": "claim-6ed913513a5e1460f8b2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.aperture.wide",
+      "claimId": "claim-705a28294cc67f9240b2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.equivalentFocal.max",
+      "claimId": "claim-4afe9f6c621ff1b241eb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.equivalentFocal.min",
+      "claimId": "claim-dc15b85ca3955e23a837",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-3dcaa913ed1684f014ef",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.focal.max",
+      "claimId": "claim-c375d97284520273e18b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-352abf4402fd23132eea",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.fixedLens.focal.min",
+      "claimId": "claim-e13bfa006f4515a8ae9d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.ibis",
+      "claimId": "claim-bddf09d040e83773ce8a",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.lcd",
+      "claimId": "claim-76a595f375b50d2b5e8c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.operatingTemperatureC.max",
+      "claimId": "claim-96ddbc84d8b744c6aab0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.operatingTemperatureC.min",
+      "claimId": "claim-a4666ad6e2c6df018866",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.sensor.format",
+      "claimId": "claim-65d96227c76bf3ece13e",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.sensor.format",
+      "claimId": "claim-2a53b99cc26a66e0bae2",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-63957905b7ad8808b9ac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.sensor.megapixels",
+      "claimId": "claim-36993ca9ebce8627f591",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.sensor.sizeMm",
+      "claimId": "claim-51f66efa2e0e6bbff7f0",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.video.bitDepth",
+      "claimId": "claim-576a1e0ccb52c209a25a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.video.cropAtMax",
+      "claimId": "claim-59ec46beb6292429a975",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.video.log",
+      "claimId": "claim-85df31f9106c1da7d36b",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.video.max",
+      "claimId": "claim-8ae62e7f766010c4b491",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.weight",
+      "claimId": "claim-20ac7b1b79646f206c8e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.weight",
+      "claimId": "claim-f1c7607db67da8f81fb5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    },
+    {
+      "productId": "panasonic-x20",
+      "path": "specs.weightBasis",
+      "claimId": "claim-15c04f61abe5820d21ba",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all seven exact KR current fixed camcorders and 21 official sources; preserve model-specific conditions, HC-X20 sensor conflict UNKNOWN, accurate weights, internal recording modes; corrected crop boolean before approval; no prices or extra lens products."
+    }
+  ],
+  "approvalId": "approval-78f06f4827b4706eef9136d0de81663a3ffa407e1545fa81849c4378c3e56ac3"
+}

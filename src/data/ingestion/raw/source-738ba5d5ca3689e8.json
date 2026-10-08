@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-X20 x20-manual official reviewed source",
+  "documentVersion": "Official shared operating manual, exact model rows reviewed",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "HC-X20 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:16:06.154Z",
+  "evidenceExcerpt": [
+    {
+      "field": "HC-X20 specs.sensor.format",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-X20 specs.sensor.megapixels",
+      "value": 15030000,
+      "unit": "pixel"
+    },
+    {
+      "field": "HC-X20 specs.bodyOnlyWeight",
+      "value": 2000,
+      "unit": "g"
+    },
+    {
+      "field": "HC-X20 specs.weight",
+      "value": 2430,
+      "unit": "g"
+    },
+    {
+      "field": "HC-X20 specs.fixedLens.focal.min",
+      "value": 8.8,
+      "unit": "mm"
+    },
+    {
+      "field": "HC-X20 specs.fixedLens.focal.max",
+      "value": 176,
+      "unit": "mm"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-x20",
+      "manufacturerModelCode": "HC-X20",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-X20",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X20",
+        "aliases": [
+          "HC-X20"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "p305 Pickup device",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "reason": "Official same-model help sensor/total values conflict with own manual; no majority/typo guessing; format UNKNOWN.",
+            "reportedClaims": [
+              {
+                "value": "1/5.8-type High Sensitivity MOS",
+                "totalMP": 1.5,
+                "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+                "locator": "Sensor rows"
+              },
+              {
+                "value": "1.0-type MOS",
+                "totalMP": 20.92,
+                "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                "locator": "p305 Pickup device"
+              }
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 15030000,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "p305 Number of effective pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 2,
+          "rawValue": 2000,
+          "rawUnit": "g",
+          "locator": {
+            "section": "p304 X20 labelled Mass",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "main unit including grip belt; lens hood, battery and supplied accessories excluded; integral lens retained",
+            "excludedOtherModel": "X2 2040/2490g; X20 2000/2430g"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 3,
+          "rawValue": 2430,
+          "rawUnit": "g",
+          "locator": {
+            "section": "p304 X20 labelled operating Mass",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-and-card",
+            "configuration": "lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps included; integral lens retained"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 4,
+          "rawValue": 8.8,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "p305 Lens",
+            "row": "specs.fixedLens.focal.min"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 5,
+          "rawValue": 176,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "p305 Lens",
+            "row": "specs.fixedLens.focal.max"
+          },
+          "conditions": {
+            "opticalZoom": 20,
+            "filterDiameterMm": 67,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "b998cf7a9a7f7d0c6a07171f0867ffb4d4ffcf6e590ee1eb02b25e44da73343d",
+  "sourceId": "source-738ba5d5ca3689e8"
+}

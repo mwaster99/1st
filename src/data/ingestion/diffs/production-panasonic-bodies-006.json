@@ -1,0 +1,5412 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-panasonic-bodies-006",
+  "canonicalBaselineDigest": "7e1911e29c83bdee9ebb39df0f21bc1b01558cfc2f781207028237f4194562cc",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-v900",
+      "productName": "파나소닉 HC-V900",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-v900",
+        "name": "파나소닉 HC-V900",
+        "brand": "Panasonic",
+        "series": "HC-V",
+        "model": "HC-V900",
+        "aliases": [
+          "HC-V900"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.5-type",
+            "megapixels": 8.29,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 484,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 433,
+          "dimensions": [
+            68,
+            77,
+            141
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "FHD 60p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1840000,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": null,
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 25
+            },
+            "focal": {
+              "max": 98.9,
+              "min": 4.12
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camcoder/Camcoder/HCV900",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-9bf043509b09f3b7",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-0bb972b6815a00d267b9",
+          "sourceId": "source-9bf043509b09f3b7",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-0bb972b6815a00d267b9",
+        "sourceId": "source-9bf043509b09f3b7",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-V900"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-9bf043509b09f3b7",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camcoder/Camcoder/HCV900",
+          "documentTitle": "HC-V900 hcv900-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 433,
+          "unit": "g",
+          "claimId": "claim-daf681e5206ca092c2f7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "p39 common Mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "integral lens retained; lens hood, battery and SD card excluded"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 433,
+          "unit": "g",
+          "claimId": "claim-1413075d7e752c4bbf3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Body-only / main-unit mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "integral lens retained; lens hood, battery and SD card excluded"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-c1672889c07f24f72587",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Recording media",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "supportedMedia": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "reason": "Media formats do not independently establish exact physical slot count in reviewed selected section"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            68,
+            77,
+            141
+          ],
+          "unit": "mm",
+          "claimId": "claim-678f2552224026c9fb28",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "External dimensions (W H D)",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "including projecting parts"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-6c7937c5b1a6d5afa16e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-26b4adf930d17044830d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-959e2f5461bcd7ca216b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "16:9 still image",
+              "alternatives": [
+                {
+                  "mode": "24p motion",
+                  "rangeMm": [
+                    25,
+                    600
+                  ]
+                },
+                {
+                  "mode": "MP4/AVCHD motion",
+                  "rangeMm": [
+                    28.9,
+                    693.7
+                  ]
+                },
+                {
+                  "mode": "4:3 still",
+                  "rangeMm": [
+                    30.6,
+                    734.4
+                  ]
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": "mm",
+          "claimId": "claim-f718acacbe5267c8a59d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "16:9 still image",
+              "alternatives": [
+                {
+                  "mode": "24p motion",
+                  "rangeMm": [
+                    25,
+                    600
+                  ]
+                },
+                {
+                  "mode": "MP4/AVCHD motion",
+                  "rangeMm": [
+                    28.9,
+                    693.7
+                  ]
+                },
+                {
+                  "mode": "4:3 still",
+                  "rangeMm": [
+                    30.6,
+                    734.4
+                  ]
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 98.9,
+          "unit": "mm",
+          "claimId": "claim-3782f3b192f27b7ec103",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.12,
+          "unit": "mm",
+          "claimId": "claim-362e8759e0d27e8322d3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-6c540adcd4914a41e434",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "Official lens optical / optical+electronic hybrid stabilization is not verified sensor-shift IBIS.",
+              "stabilizationWording": "Optical (Hybrid Optical Image Stabilizer, OIS Lock)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 1840000,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-10d3f547b8c3432686b2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true,
+              "videoDisplayAreaDots": 1550000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-a9bd7f4cc8817b2d511c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-985ac2bece0d51da0b22",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.5-type",
+          "unit": null,
+          "claimId": "claim-24b22b869181936bd078",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "selected": "16:9 still",
+              "effectiveVideoMP": 6.17,
+              "effectiveStill4by3MP": 6.22,
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-42f3d9712adbfb8874ce",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "p37 HC-V900 RIGHT COLUMN still effective",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "selected": "16:9 still",
+              "effectiveVideoMP": 6.17
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-e4c9439a8abd77f42703",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "selected": "16:9 still",
+              "effectiveVideoMP": 6.17,
+              "effectiveStill4by3MP": 6.22,
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-e8293f47ca329959174c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-192902dc790b176f89e7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "FHD 60p",
+              "fileFormat": "AVCHD",
+              "chroma": null,
+              "reason": "No selected-mode bit depth explicitly established"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-e73c74053f83fd2f7581",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-6d142c93212b80089c6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "FHD 60p",
+          "unit": null,
+          "claimId": "claim-21191f22e4b9b719c57f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                1920,
+                1080
+              ],
+              "frameRate": 60,
+              "actualFractionalFrameRate": null,
+              "internal": true,
+              "fileFormat": "AVCHD",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitrateMbps": 28,
+              "bitrateType": "VBR maximum",
+              "media": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "chroma": null,
+              "reason": "Official integer mode label; do not infer fractional rate or unstated chroma/bit depth.",
+              "alternatives": [
+                {
+                  "mode": "MP41080/50M",
+                  "bitrateMbps": 50,
+                  "frameRate": null
+                },
+                {
+                  "mode": "1080/24p",
+                  "bitrateMbps": 50
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 484,
+          "unit": "g",
+          "claimId": "claim-4e4b50dd308ee6f30409",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-11f8946c9180ff32",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2024/11/HCVX3_Basic-Manual_ENG.pdf",
+            "locator": {
+              "section": "p39 common operating Mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, optional SD card and integral lens included"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 484,
+          "unit": "g",
+          "claimId": "claim-1965d30cbaeaae577d43",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, optional SD card and integral lens included"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-c6c9f0aefaddcdb0fceb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa793d3af3012a06",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-v900k/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, optional SD card and integral lens included"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-vx1",
+      "productName": "파나소닉 HC-VX1",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-vx1",
+        "name": "파나소닉 HC-VX1",
+        "brand": "Panasonic",
+        "series": "HC-VX",
+        "model": "HC-VX1",
+        "aliases": [
+          "HC-VX1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.5-type",
+            "megapixels": 8.29,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 428,
+          "dimensions": [
+            68,
+            77,
+            142
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 30p",
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": false
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 460800,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 25
+            },
+            "focal": {
+              "max": 98.9,
+              "min": 4.12
+            }
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camcoder/Camcoder/VX1",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-0f08cca0a1af0b55",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-507590c44a1a32c8cfab",
+          "sourceId": "source-0f08cca0a1af0b55",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-507590c44a1a32c8cfab",
+        "sourceId": "source-0f08cca0a1af0b55",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-VX1"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-0f08cca0a1af0b55",
+          "url": "https://www.panasonic.co.kr/consumer/xview/Camera/Camcoder/Camcoder/VX1",
+          "documentTitle": "HC-VX1 hcvx1-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 428,
+          "unit": "g",
+          "claimId": "claim-0e4942b44789c3f0ec4f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Body-only / main-unit mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "official without battery and SD card; integral lens retained; hood inclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SD",
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-5335886110930eceb3a5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8d52d0b6efb5f21a",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+            "locator": {
+              "section": "p17 media / p18 single slot B diagram",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "capacity": "SD512MB–2GB/SDHC4–32GB/SDXC48–128GB; mode-dependent speedclass",
+              "logicalIndexOnly": true,
+              "externalUsbHdd": "Copy/playback is not another physical card slot"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            68,
+            77,
+            142
+          ],
+          "unit": "mm",
+          "claimId": "claim-9bf0b3e14f89d5880999",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "External dimensions (W H D)",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "official dimensions; hood configuration unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": false
+          },
+          "unit": null,
+          "claimId": "claim-fc998ae4237d6640fec1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "specs.evf"
+            },
+            "conditions": {
+              "officialAbsence": "View Finder row dash on exact HC-VX1 specification"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-8c89fe57f89f1e884524",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-771ba68f31582b1063d8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-3a176b29442d9c3b9d6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "16:9 still image",
+              "alternatives": [
+                {
+                  "mode": "4:3 still",
+                  "rangeMm": [
+                    30.6,
+                    734.4
+                  ]
+                }
+              ],
+              "motionEquivalent": "not stated by selected official spec; do not copy 16:9 still to video"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": "mm",
+          "claimId": "claim-396a24098ddbb971e7cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "16:9 still image",
+              "alternatives": [
+                {
+                  "mode": "4:3 still",
+                  "rangeMm": [
+                    30.6,
+                    734.4
+                  ]
+                }
+              ],
+              "motionEquivalent": "not stated by selected official spec; do not copy 16:9 still to video"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 98.9,
+          "unit": "mm",
+          "claimId": "claim-c1eade9a87fcd66adf1f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.12,
+          "unit": "mm",
+          "claimId": "claim-c6a6e346544fef2b5cbc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-1321d3c232dc69cb360b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "Official lens optical / optical+electronic hybrid stabilization is not verified sensor-shift IBIS.",
+              "stabilizationWording": "5-axis HYBRID O.I.S.+ / Ball O.I.S. / Adaptive O.I.S."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 460800,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-e05c8347a86e7c77079e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.5-type",
+          "unit": null,
+          "claimId": "claim-be49bd1ab03d2c692e60",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "sourceWording": "1/2.5-inch BSI MOS Sensor",
+              "selected": "4K motion/16:9 still",
+              "effectiveFhdMP": 6.17,
+              "effectiveStill4by3MP": 6.22,
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-1e64b27b870ba65abf59",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "sourceWording": "1/2.5-inch BSI MOS Sensor",
+              "selected": "4K motion/16:9 still",
+              "effectiveFhdMP": 6.17,
+              "effectiveStill4by3MP": 6.22,
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-574d5a7e29ccc38b6fbd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-8698b7f99aed15b19e85",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8d52d0b6efb5f21a",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 30p",
+              "fileFormat": "MP4",
+              "chroma": null,
+              "reason": "No selected-mode bit depth explicitly established"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-521b2827b2418aa33225",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8d52d0b6efb5f21a",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-4db916e8186282fc14b2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8d52d0b6efb5f21a",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 30p",
+          "unit": null,
+          "claimId": "claim-fca048e53b315ca01da8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8d52d0b6efb5f21a",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCV800_VXF1_VX1_WXF1_DVQP1576ZA_ENG.pdf",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 30,
+              "actualFractionalFrameRate": null,
+              "internal": true,
+              "fileFormat": "MP4",
+              "codec": "H.264/MPEG-4 AVC",
+              "bitrateMbps": 72,
+              "bitrateType": "VBR maximum",
+              "media": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "chroma": null,
+              "reason": "Official integer mode label; do not infer fractional rate or unstated chroma/bit depth.",
+              "alternatives": [
+                {
+                  "mode": "2160/24p",
+                  "bitrateMbps": 72
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-eda69086bbf26564e6fd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "reason": "No verified operating weight/basis in selected official sources.",
+              "reportedWeightG": null,
+              "configuration": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-6ca7284a4ec9b56f2581",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16d28bae64039580",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "reason": "No verified operating weight/basis in selected official sources.",
+              "reportedWeightG": null,
+              "configuration": null
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-cx370",
+      "productName": "파나소닉 AG-CX370",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-cx370",
+        "name": "파나소닉 AG-CX370",
+        "brand": "Panasonic",
+        "series": "AG-CX",
+        "model": "AG-CX370",
+        "aliases": [
+          "AG-CX370"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1.0-type",
+            "megapixels": 15.03,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 1900,
+          "dimensions": [
+            180,
+            173,
+            311
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 59.94p",
+            "bitDepth": 10,
+            "log": true,
+            "cropAtMax": false
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "present": true,
+            "resolutionDots": 1620000,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "V90"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "V90"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4.5,
+              "wide": 2.8
+            },
+            "equivalentFocal": {
+              "max": 490,
+              "min": 24.5
+            },
+            "focal": {
+              "max": 176,
+              "min": 8.8
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/CXSeries/AGCX370",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-8765804aced373bc",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-394210d6614315a6a5ae",
+          "sourceId": "source-8765804aced373bc",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-394210d6614315a6a5ae",
+        "sourceId": "source-8765804aced373bc",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "AG-CX370"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-8765804aced373bc",
+          "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/CXSeries/AGCX370",
+          "documentTitle": "AG-CX370 agcx370-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1900,
+          "unit": "g",
+          "claimId": "claim-1ac5cfb3d6205271dd22",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Body-only / main-unit mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "body only excluding lens hood, battery and accessories; integral lens retained"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "V90"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I",
+                  "UHS-II",
+                  "UHS Speed Class 3",
+                  "V90"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-c6af95f20a3a12b4bbe9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Memory Card Recorder / Recording Slot",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "sourceWording": "SDXC UHS-II card slot x2; SDHC/SDXC supported",
+              "p2Condition": "P2format on SDXC V90 or faster with latest firmware; microP2 discontinued; no separate P2 slot added",
+              "slotFunctions": "Relay/simultaneous/background",
+              "logicalIndexOnly": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            180,
+            173,
+            311
+          ],
+          "unit": "mm",
+          "claimId": "claim-b1ff993b87d1c75c1e7e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "External dimensions (W H D)",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "excluding protrusions and eye cup"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "unit": null,
+          "claimId": "claim-d73abfca5e1b9d0d80ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "specs.evf"
+            },
+            "conditions": {
+              "videoDisplayAreaDots": 1770000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-d3b051c0574246be1989",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-e674a333ed0b10b02fec",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 490,
+          "unit": "mm",
+          "claimId": "claim-52eaad228803febe863e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "originalTypo": "f=8.8 mm to 176 mmm",
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.5,
+          "unit": "mm",
+          "claimId": "claim-0e02064cb6c20882ceb0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "originalTypo": "f=8.8 mm to 176 mmm",
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 176,
+          "unit": "mm",
+          "claimId": "claim-ecfc21fb2d78cdc0655e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "originalTypo": "f=8.8 mm to 176 mmm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-a77b8fad25ddbb0520b6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "originalTypo": "f=8.8 mm to 176 mmm"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-40eb75224d232defc892",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "Official lens optical / optical+electronic hybrid stabilization is not verified sensor-shift IBIS.",
+              "stabilizationWording": "optical image stabilizer lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 1620000,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-0af90c6617ff377bc05a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Monitor/Viewfinder",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "diagonalSourceWording": "3.2-type; inches not explicit, sizeInches omitted",
+              "videoDisplayAreaDots": 1370000,
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-fb9eea35747a83c404dd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-c0b16788095fcbb689dc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1.0-type",
+          "unit": null,
+          "claimId": "claim-b3478f15d9b3c7d4bc38",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15.03,
+          "unit": "MP",
+          "claimId": "claim-316eadcd5e2a43ab3093",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-d8d723e956d617cd4ef1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-faf377f73a5d0c1fb46d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b5f176d664866548",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/features.html",
+            "locator": {
+              "section": "Recording Format table / HEVC200M",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 59.94p",
+              "fileFormat": "MOV",
+              "chroma": "4:2:0"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-4b7d6fc87ab4a569c2a6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b5f176d664866548",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/features.html",
+            "locator": {
+              "section": "1.0-Type MOS Sensor / no cropping in all modes",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "Explicit official no image-area cropping in all modes, not physical mm inference"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-31d8a56a586b798a0d8d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b5f176d664866548",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/features.html",
+            "locator": {
+              "section": "HDR-Compliant V-Log/HLG",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "Official V-Log gamma,13.5-stop marketing range is profile metadata, not IBIS stops"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 59.94p",
+          "unit": null,
+          "claimId": "claim-c920313bbcf2aa09cb50",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-b5f176d664866548",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/features.html",
+            "locator": {
+              "section": "Recording Format table / HEVC200M",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 59.94,
+              "internal": true,
+              "fileFormat": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitrateMbps": 200,
+              "bitrateType": "VBR average",
+              "systemFrequencyHz": 59.94,
+              "media": [
+                "SDHC",
+                "SDXC"
+              ],
+              "alternatives": [
+                {
+                  "frameRate": 50,
+                  "systemFrequencyHz": 50,
+                  "internal": true
+                },
+                {
+                  "mode": "FHD super slow",
+                  "captureFps": 120,
+                  "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+                },
+                {
+                  "mode": "UHD 422ALL-I 400M",
+                  "codec": "AVC",
+                  "chroma": "4:2:2",
+                  "bitDepth": 10,
+                  "frameRates": [
+                    29.97,
+                    25,
+                    23.98
+                  ],
+                  "bitrateMbps": 400,
+                  "not59_94": true
+                },
+                {
+                  "mode": "P2 MXF broadcast",
+                  "media": "SDXC V90 with latest firmware; not extra P2 physical slots"
+                },
+                {
+                  "mode": "VFR/super slow",
+                  "crop": "official no image-area crop",
+                  "captureFpsMaxFhd": 120
+                }
+              ],
+              "externalOutput": {
+                "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+                "sdi": "12G/6G UHD output"
+              },
+              "thermalTime": null,
+              "featuresBacklog": {
+                "nd": "Clear/1/4/1/16/1/64",
+                "audio": "XLR2 plus mini-jack input; 4ch MOV/P2, AVCHD2ch; codec-dependent",
+                "network": "12G-SDI/HDMI outputs, GENLOCK/TC, SRT/RTMP/RTMPS/RTSP/NDI HX2; mode limitations preserved",
+                "time": "relay temporarily stops/restarts after10h; MOV split every3h",
+                "ndiCondition": "Recording, streaming and 4K output unavailable in NDI HX2 mode; version/upgrade caveat",
+                "streamingCondition": "4Kstreaming disables simultaneous recording/thumbnail/playback; SRT no24p/SD; encrypted/RTMPS bitrate<25Mbps"
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-232f1977e71a94e950c6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 2300,
+              "configuration": "lens hood, battery and microphone holder included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-e0ff6dfd2259895fcb62",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-5526c0c97053eb1c",
+            "url": "https://pro-av.panasonic.net/en/products/ag-cx370/spec.html",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 2300,
+              "configuration": "lens hood, battery and microphone holder included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-x1200",
+      "productName": "파나소닉 HC-X1200",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-x1200",
+        "name": "파나소닉 HC-X1200",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X1200",
+        "aliases": [
+          "HC-X1200"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.5-type",
+            "megapixels": 8.29,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 800,
+          "dimensions": [
+            129,
+            93,
+            209
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 59.94p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 25
+            },
+            "focal": {
+              "max": 98.9,
+              "min": 4.12
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX1200",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-70a1926e2adc3ad4",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-0d19d8ac52257586f028",
+          "sourceId": "source-70a1926e2adc3ad4",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-0d19d8ac52257586f028",
+        "sourceId": "source-70a1926e2adc3ad4",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-X1200"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-70a1926e2adc3ad4",
+          "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX1200",
+          "documentTitle": "HC-X1200 hcx1200-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 800,
+          "unit": "g",
+          "claimId": "claim-d038a37ec54240e75a9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled Mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "main unit only excluding lens hood and battery; integral lens retained",
+              "modelRow": "HC-X1200",
+              "webFootnoteAmbiguity": "Web lacks excluding word; official manual explicit excluding lens hood/battery used"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-3c7be3805f34e8a2391f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p301 Memory card recorder",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "capacity": "up to512GB; speed class per recording mode p47",
+              "logicalIndexOnly": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129,
+            93,
+            209
+          ],
+          "unit": "mm",
+          "claimId": "claim-dc6711135a0600e58f79",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled dimensions",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "including hood, excluding protrusions; no handle/eyecup in this model",
+              "modelRow": "HC-X1200",
+              "webCopiedFootnote": "NA dimensions mention handle/eyecup despite model; not accepted as configuration"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-fc9bde74768d2045998f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-61e66895697a0cf58537",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-5c7672cbcc0eeaaa7808",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": "mm",
+          "claimId": "claim-5cffc1c3c5c9f1b9a99a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 98.9,
+          "unit": "mm",
+          "claimId": "claim-7b19180894e53e63a028",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.12,
+          "unit": "mm",
+          "claimId": "claim-d9555fb68be1a0adcf07",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-05ae0855d064ff80c6b9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Lens optical image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "This source states optical image stabilizer lens, not sensor-shift IBIS. Hybrid optical+electronic is documented separately in own manualp201.",
+              "stabilizationWording": "Optical image stabilizer lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-69d4b50c5a598093bbe5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-5ca6065d930194ae95d4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-86769b80bdf9d329031a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.5-type",
+          "unit": null,
+          "claimId": "claim-8787f3001bebaa19742a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-177c008356e2833a98da",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-bc41ec5818a4ca62266e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-168b6b46b91a38473421",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p141 MP459.94pHEVC100M",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 59.94p",
+              "fileFormat": "MP4",
+              "chroma": "4:2:0"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-6eac316b38fd62e70d6d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-9a0506b5d80deeb1ce27",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 59.94p",
+          "unit": null,
+          "claimId": "claim-01ef2b4c171a8691a42b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2e6bbdb4a3ae32dd",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p141 MP459.94pHEVC100M",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 59.94,
+              "internal": true,
+              "fileFormat": "MP4",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitrateMbps": 100,
+              "bitrateType": "VBR average",
+              "systemFrequencyHz": 59.94,
+              "media": [
+                "SDHC",
+                "SDXC"
+              ],
+              "alternatives": [
+                {
+                  "frameRate": 50,
+                  "systemFrequencyHz": 50,
+                  "internal": true
+                },
+                {
+                  "mode": "FHD super slow",
+                  "captureFps": 120,
+                  "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+                }
+              ],
+              "externalOutput": {
+                "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+                "sdi": null
+              },
+              "thermalTime": null,
+              "modelSpecific": "MOV unsupported; only MP4/AVCHD. No X2100/X1600 MOV200M or XLR/SDI copied.",
+              "slotFunctions": "Relay and simultaneous all; background FHD MOV/MP4 only; no external/network destination in physical slot count.",
+              "hybridIsCondition": "Optical+electronic hybrid OIS; disabled for SUPER SLOW.",
+              "ndFilter": "CLR/1/4/1/16/1/64; feature backlog only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-68902faf26177b59dd3b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1100,
+              "configuration": "lens hood and battery included; no eyecup/handle; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-bd746af8b305c41e2cd5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-d6c41bdb9a2206e8",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1200/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1100,
+              "configuration": "lens hood and battery included; no eyecup/handle; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-x2100",
+      "productName": "파나소닉 HC-X2100",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-x2100",
+        "name": "파나소닉 HC-X2100",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X2100",
+        "aliases": [
+          "HC-X2100"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.5-type",
+            "megapixels": 8.29,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 850,
+          "dimensions": [
+            129,
+            159,
+            267
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 59.94p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 25
+            },
+            "focal": {
+              "max": 98.9,
+              "min": 4.12
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX2100",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-e529dec86fbcd424",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-edbcbffefbf2b4e37355",
+          "sourceId": "source-e529dec86fbcd424",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-edbcbffefbf2b4e37355",
+        "sourceId": "source-e529dec86fbcd424",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-X2100"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-e529dec86fbcd424",
+          "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX2100",
+          "documentTitle": "HC-X2100 hcx2100-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 850,
+          "unit": "g",
+          "claimId": "claim-44445e5823377cd76d2a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled Mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "main unit only excluding handle, lens hood, battery and eye cup; integral lens retained",
+              "modelRow": "HC-X2100",
+              "webFootnoteAmbiguity": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-0ee0c2f6379e29f731d5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p301 Memory card recorder",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "capacity": "up to512GB; speed class per recording mode p47",
+              "logicalIndexOnly": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129,
+            159,
+            267
+          ],
+          "unit": "mm",
+          "claimId": "claim-43a4d8b41c7503580e8f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled dimensions",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "including supplied handle/hood/eyecup, excluding mic holder/protrusions",
+              "modelRow": "HC-X2100",
+              "webCopiedFootnote": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "unit": null,
+          "claimId": "claim-edebeec5af411a23607e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "specs.evf"
+            },
+            "conditions": {
+              "videoDisplayAreaDots": 1770000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-69a5e017d324b27bb0c2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-51e3fe0c6e1c8eb3dad5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-4797992dce262a98e686",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": "mm",
+          "claimId": "claim-82a37cddf88c3cfa6f47",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 98.9,
+          "unit": "mm",
+          "claimId": "claim-83ae328f9ed8e112bde0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.12,
+          "unit": "mm",
+          "claimId": "claim-378a1b116653dd94f616",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-b334156c9d2dd8611e1f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Lens optical image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "This source states optical image stabilizer lens, not sensor-shift IBIS. Hybrid optical+electronic is documented separately in own manualp201.",
+              "stabilizationWording": "Optical image stabilizer lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-05d69f855ab2bafad302",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-10f89e7295b565b3f45c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-17caa2b98128497f99fc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.5-type",
+          "unit": null,
+          "claimId": "claim-346fe0763304bdbe6d0b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-679a0f31c3ba8fb7595c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-21811d98b36dabdf61fe",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-dd77718231c641515afb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 59.94p",
+              "fileFormat": "MOV",
+              "chroma": "4:2:0"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-59365931cd498934ae93",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-8c6b35ab1064d9062c06",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 59.94p",
+          "unit": null,
+          "claimId": "claim-9f1d346a973e101c5aa6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aaef96299b559ba5",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 59.94,
+              "internal": true,
+              "fileFormat": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitrateMbps": 200,
+              "bitrateType": "VBR average",
+              "systemFrequencyHz": 59.94,
+              "media": [
+                "SDHC",
+                "SDXC"
+              ],
+              "alternatives": [
+                {
+                  "frameRate": 50,
+                  "systemFrequencyHz": 50,
+                  "internal": true
+                },
+                {
+                  "mode": "FHD super slow",
+                  "captureFps": 120,
+                  "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+                }
+              ],
+              "externalOutput": {
+                "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+                "sdi": "3G/1.5G HD output only"
+              },
+              "thermalTime": null,
+              "modelSpecific": "MOV allowed; handle supplied, XLR with handle, SDI HD output, USB tethering/ethernet; destinations are not card slots.",
+              "slotFunctions": "Relay and simultaneous all; background FHD MOV/MP4 only; no external/network destination in physical slot count.",
+              "hybridIsCondition": "Optical+electronic hybrid OIS; disabled for SUPER SLOW.",
+              "ndFilter": "CLR/1/4/1/16/1/64; feature backlog only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-0506448eed5016c94000",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1500,
+              "configuration": "supplied handle, lens hood, battery and eye cup included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-3a80a812121b731387e9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-77b3d999190d5ef7",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x2100/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1500,
+              "configuration": "supplied handle, lens hood, battery and eye cup included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-x1600",
+      "productName": "파나소닉 HC-X1600",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-x1600",
+        "name": "파나소닉 HC-X1600",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X1600",
+        "aliases": [
+          "HC-X1600"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "1/2.5-type",
+            "megapixels": 8.29,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 850,
+          "dimensions": [
+            129,
+            93,
+            267
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 59.94p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4,
+              "wide": 1.8
+            },
+            "equivalentFocal": {
+              "max": 600,
+              "min": 25
+            },
+            "focal": {
+              "max": 98.9,
+              "min": 4.12
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX1600",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-9fc6c6645cc25e57",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-30e896e1b853a6c2e2b4",
+          "sourceId": "source-9fc6c6645cc25e57",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-30e896e1b853a6c2e2b4",
+        "sourceId": "source-9fc6c6645cc25e57",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-X1600"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-9fc6c6645cc25e57",
+          "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX1600",
+          "documentTitle": "HC-X1600 hcx1600-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 850,
+          "unit": "g",
+          "claimId": "claim-89e31abc4bd15884109c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled Mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "main unit only excluding lens hood, battery and eye cup; integral lens retained",
+              "modelRow": "HC-X1600",
+              "webFootnoteAmbiguity": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-da7789dff3a0e2ace767",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p301 Memory card recorder",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "capacity": "up to512GB; speed class per recording mode p47",
+              "logicalIndexOnly": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            129,
+            93,
+            267
+          ],
+          "unit": "mm",
+          "claimId": "claim-0d6bbac943f7528590ac",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p298 model-labelled dimensions",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "including hood/eye cup, excluding protrusions; optional handle not included",
+              "modelRow": "HC-X1600",
+              "webCopiedFootnote": null
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "unit": null,
+          "claimId": "claim-0cbd60abbb377a46d70d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "specs.evf"
+            },
+            "conditions": {
+              "videoDisplayAreaDots": 1770000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-868952eb8a60e9ae9074",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-49206b2275c0a24b41fe",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-1de85fd61e5ca0556b1c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 25,
+          "unit": "mm",
+          "claimId": "claim-a44cfa7fc4cba47e2af6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 98.9,
+          "unit": "mm",
+          "claimId": "claim-38a7b38e756f0f24d60f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.12,
+          "unit": "mm",
+          "claimId": "claim-b03c839429a0081de1e4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 24,
+              "filterDiameterMm": 62,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-c6032c99edc5ffe866a4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Lens optical image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "This source states optical image stabilizer lens, not sensor-shift IBIS. Hybrid optical+electronic is documented separately in own manualp201.",
+              "stabilizationWording": "Optical image stabilizer lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-76c05ff3971928a11b3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-08ba398718ec3607e762",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-c9d0647530c9a5d34582",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1/2.5-type",
+          "unit": null,
+          "claimId": "claim-26aa9d19997967ef3196",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.29,
+          "unit": "MP",
+          "claimId": "claim-0e727ed9d66d79ae2a12",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "totalMP": 8.57
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-2fdf4dede7eeb56f64e0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-e0f095121364b5b668c7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 59.94p",
+              "fileFormat": "MOV",
+              "chroma": "4:2:0"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-a06a79d088d9e7c77f2c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-fd1219c125f3a5ebb9e0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 59.94p",
+          "unit": null,
+          "claimId": "claim-cbf60ae171eb6548316a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c61f83ab1f57485c",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+            "locator": {
+              "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 59.94,
+              "internal": true,
+              "fileFormat": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitrateMbps": 200,
+              "bitrateType": "VBR average",
+              "systemFrequencyHz": 59.94,
+              "media": [
+                "SDHC",
+                "SDXC"
+              ],
+              "alternatives": [
+                {
+                  "frameRate": 50,
+                  "systemFrequencyHz": 50,
+                  "internal": true
+                },
+                {
+                  "mode": "FHD super slow",
+                  "captureFps": 120,
+                  "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+                }
+              ],
+              "externalOutput": {
+                "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+                "sdi": null
+              },
+              "thermalTime": null,
+              "modelSpecific": "MOV allowed; handle/XLR optional, not supplied X2100 configuration; no SDI.",
+              "slotFunctions": "Relay and simultaneous all; background FHD MOV/MP4 only; no external/network destination in physical slot count.",
+              "hybridIsCondition": "Optical+electronic hybrid OIS; disabled for SUPER SLOW.",
+              "ndFilter": "CLR/1/4/1/16/1/64; feature backlog only"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-a72f2cf232d75fcf3516",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1200,
+              "configuration": "lens hood, battery and eye cup included; optional handle not included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-73445ab18b30bd5f15de",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-64c071b25e9f3b8c",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-hc-x1600/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "reason": "Reported operating accessory configuration has card inclusion/exclusion unstated; supported basis cannot be chosen without guessing.",
+              "reportedWeightG": 1200,
+              "configuration": "lens hood, battery and eye cup included; optional handle not included; card inclusion/exclusion unstated"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-panasonic-bodies-006",
+      "productId": "panasonic-x20",
+      "productName": "파나소닉 HC-X20",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "panasonic-x20",
+        "name": "파나소닉 HC-X20",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X20",
+        "aliases": [
+          "HC-X20"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": null,
+            "megapixels": 15.03,
+            "generation": null,
+            "sizeMm": null
+          },
+          "weight": 2430,
+          "weightBasis": "battery-and-card",
+          "bodyOnlyWeight": 2000,
+          "dimensions": [
+            171,
+            195,
+            343
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": null,
+            "description": null
+          },
+          "video": {
+            "max": "4K 59.94p",
+            "bitDepth": 10,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": null,
+          "releaseDate": null,
+          "batteryConditions": null,
+          "ibis": null,
+          "evf": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000
+          },
+          "burst": null,
+          "shutter": null,
+          "cardSlots": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": {
+            "aperture": {
+              "tele": 4.5,
+              "wide": 2.8
+            },
+            "equivalentFocal": {
+              "max": 490,
+              "min": 24.5
+            },
+            "focal": {
+              "max": 176,
+              "min": 8.8
+            }
+          },
+          "operatingTemperatureC": {
+            "max": 40,
+            "min": 0
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX20",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-08",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-34d88a2e622dfa48",
+            "documentVersion": "current official page retrieved2026-10-08"
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-23f6d920654ed7057fa8",
+          "sourceId": "source-34d88a2e622dfa48",
+          "checkedAt": "2026-10-08"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-23f6d920654ed7057fa8",
+        "sourceId": "source-34d88a2e622dfa48",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading and category breadcrumb",
+          "row": "HC-X20"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-08",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-34d88a2e622dfa48",
+          "url": "https://www.panasonic.co.kr/systembiz/xview/BrodcastingSystem/ProfessionalCamcoder/Camcorder/HCX20",
+          "documentTitle": "HC-X20 hcx20-kr official reviewed source",
+          "documentVersion": "current official page retrieved2026-10-08"
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2000,
+          "unit": "g",
+          "claimId": "claim-65169a4452802b89ce72",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p304 X20 labelled Mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "main unit including grip belt; lens hood, battery and supplied accessories excluded; integral lens retained",
+              "excludedOtherModel": "X2 2040/2490g; X20 2000/2430g"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2000,
+          "unit": "g",
+          "claimId": "claim-5fa4e5c7d886eb5d4fed",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Body-only / main-unit mass",
+              "row": "specs.bodyOnlyWeight"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "configuration": "main unit including grip belt; lens hood, battery and supplied accessories excluded; integral lens retained",
+              "excludedOtherModel": "HC-X2 2040g/2490g are separate labelled model rows, not HC-X20."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-d3bae47e87923967b810",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Recording / 2-slot Function",
+              "row": "specs.cardSlots"
+            },
+            "conditions": {
+              "slotFunctions": "Relay/simultaneous/background; exact physical2 confirmed own manualp307",
+              "capacity": "SDHC4–32GB/SDXC>32–128GB; speed-class depends on recording mode",
+              "logicalIndexOnly": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            171,
+            195,
+            343
+          ],
+          "unit": "mm",
+          "claimId": "claim-63c11f11fd46050c023e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "External dimensions (W H D)",
+              "row": "specs.dimensions"
+            },
+            "conditions": {
+              "configuration": "including hood, excluding eye cup and microphone holder"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 2360000
+          },
+          "unit": null,
+          "claimId": "claim-18f0f73e32e6d467fe4e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Viewfinder",
+              "row": "specs.evf"
+            },
+            "conditions": {
+              "videoDisplayAreaDots": 1770000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-6ed913513a5e1460f8b2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.tele"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-705a28294cc67f9240b2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / maximum aperture",
+              "row": "specs.fixedLens.aperture.wide"
+            },
+            "conditions": {
+              "maximumAperture": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 490,
+          "unit": "mm",
+          "claimId": "claim-4afe9f6c621ff1b241eb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.max"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24.5,
+          "unit": "mm",
+          "claimId": "claim-dc15b85ca3955e23a837",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / 35mm equivalent",
+              "row": "specs.fixedLens.equivalentFocal.min"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true,
+              "representative": "UHD/FHD 16:9 optical view"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 176,
+          "unit": "mm",
+          "claimId": "claim-3dcaa913ed1684f014ef",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p305 Lens",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 176,
+          "unit": "mm",
+          "claimId": "claim-c375d97284520273e18b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.max"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-352abf4402fd23132eea",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p305 Lens",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8.8,
+          "unit": "mm",
+          "claimId": "claim-e13bfa006f4515a8ae9d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Lens / actual focal length",
+              "row": "specs.fixedLens.focal.min"
+            },
+            "conditions": {
+              "opticalZoom": 20,
+              "filterDiameterMm": 67,
+              "integratedLens": true,
+              "intelligentDigitalZoomExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-bddf09d040e83773ce8a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Image stabilizer",
+              "row": "specs.ibis"
+            },
+            "conditions": {
+              "reason": "Official lens optical / optical+electronic hybrid stabilization is not verified sensor-shift IBIS.",
+              "stabilizationWording": "Ball O.I.S., 5-Axis HYBRID O.I.S.+"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.5,
+            "resolutionDots": 2760000
+          },
+          "unit": null,
+          "claimId": "claim-76a595f375b50d2b5e8c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "LCD Monitor",
+              "row": "specs.lcd"
+            },
+            "conditions": {
+              "mechanismUnknown": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-96ddbc84d8b744c6aab0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.max"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-a4666ad6e2c6df018866",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Operating temperature",
+              "row": "specs.operatingTemperatureC.min"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-65d96227c76bf3ece13e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p305 Pickup device",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "reason": "Official same-model help sensor/total values conflict with own manual; no majority/typo guessing; format UNKNOWN.",
+              "reportedClaims": [
+                {
+                  "value": "1/5.8-type High Sensitivity MOS",
+                  "totalMP": 1.5,
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+                  "locator": "Sensor rows"
+                },
+                {
+                  "value": "1.0-type MOS",
+                  "totalMP": 20.92,
+                  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                  "locator": "p305 Pickup device"
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-2a53b99cc26a66e0bae2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Pickup device / image sensor",
+              "row": "specs.sensor.format"
+            },
+            "conditions": {
+              "reason": "Official same-model help sensor/total values conflict with own manual; no majority/typo guessing; format UNKNOWN.",
+              "reportedClaims": [
+                {
+                  "value": "1/5.8-type High Sensitivity MOS",
+                  "totalMP": 1.5,
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+                  "locator": "Sensor rows"
+                },
+                {
+                  "value": "1.0-type MOS",
+                  "totalMP": 20.92,
+                  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                  "locator": "p305 Pickup device"
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15.03,
+          "unit": "MP",
+          "claimId": "claim-63957905b7ad8808b9ac",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p305 Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15.03,
+          "unit": "MP",
+          "claimId": "claim-36993ca9ebce8627f591",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Number of effective pixels",
+              "row": "specs.sensor.megapixels"
+            },
+            "conditions": {
+              "reason": "Official same-model help sensor/total values conflict with own manual; no majority/typo guessing; format UNKNOWN.",
+              "reportedClaims": [
+                {
+                  "value": "1/5.8-type High Sensitivity MOS",
+                  "totalMP": 1.5,
+                  "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+                  "locator": "Sensor rows"
+                },
+                {
+                  "value": "1.0-type MOS",
+                  "totalMP": 20.92,
+                  "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+                  "locator": "p305 Pickup device"
+                }
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "mm",
+          "claimId": "claim-51f66efa2e0e6bbff7f0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Sensor",
+              "row": "specs.sensor.sizeMm"
+            },
+            "conditions": {
+              "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": null,
+          "claimId": "claim-576a1e0ccb52c209a25a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.bitDepth"
+            },
+            "conditions": {
+              "selectedMode": "4K 59.94p",
+              "fileFormat": "MOV",
+              "chroma": "4:2:0"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-59ec46beb6292429a975",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Selected representative mode",
+              "row": "specs.video.cropAtMax"
+            },
+            "conditions": {
+              "reason": "No verified selected-mode crop factor"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.log",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-85df31f9106c1da7d36b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Selected representative recording mode",
+              "row": "specs.video.log"
+            },
+            "conditions": {
+              "reason": "No verified log for this exact target; do not copy sibling model log"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "4K 59.94p",
+          "unit": null,
+          "claimId": "claim-8ae62e7f766010c4b491",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Recording/Playback Mode",
+              "row": "specs.video.max"
+            },
+            "conditions": {
+              "resolution": [
+                3840,
+                2160
+              ],
+              "frameRate": 59.94,
+              "internal": true,
+              "fileFormat": "MOV",
+              "codec": "H.265/HEVC LongGOP",
+              "chroma": "4:2:0",
+              "bitDepth": 10,
+              "bitrateMbps": 200,
+              "bitrateType": "VBR average",
+              "systemFrequencyHz": 59.94,
+              "media": [
+                "SDHC",
+                "SDXC"
+              ],
+              "alternatives": [
+                {
+                  "frameRate": 50,
+                  "systemFrequencyHz": 50,
+                  "internal": true
+                },
+                {
+                  "mode": "FHD super slow",
+                  "captureFps": 120,
+                  "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+                },
+                {
+                  "mode": "UHD AVC422LongGOP150M",
+                  "frameRates": [
+                    29.97,
+                    25,
+                    23.98
+                  ],
+                  "not59_94": true
+                },
+                {
+                  "mode": "MP4 HEVC100M",
+                  "frameRate": 59.94,
+                  "bitDepth": 10,
+                  "chroma": "4:2:0"
+                }
+              ],
+              "externalOutput": {
+                "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+                "sdi": null
+              },
+              "thermalTime": null,
+              "featuresBacklog": {
+                "nd": "Clear/1/4/1/16/1/64",
+                "audio": "XLR2,2chLPCM24bitMOV; HDMI output separate",
+                "network": "HDMI/USB mass storage/ethernet/FHDstreaming destination; no physical extra slot",
+                "sdi": "not present",
+                "dualCodec": "X2-only manual section; do not transfer to X20"
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2430,
+          "unit": "g",
+          "claimId": "claim-20ac7b1b79646f206c8e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-738ba5d5ca3689e8",
+            "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/HCX2_X20_DVQP2766ZA_ENG.pdf",
+            "locator": {
+              "section": "p304 X20 labelled operating Mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps included; integral lens retained"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2430,
+          "unit": "g",
+          "claimId": "claim-f1c7607db67da8f81fb5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Operating mass",
+              "row": "specs.weight"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps included; integral lens retained"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery-and-card",
+          "unit": null,
+          "claimId": "claim-15c04f61abe5820d21ba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ae31018df810b293",
+            "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-x20/",
+            "locator": {
+              "section": "Operating mass measurement basis",
+              "row": "specs.weightBasis"
+            },
+            "conditions": {
+              "weightBasis": "battery-and-card",
+              "configuration": "lens hood, supplied battery, eye cup, two SD cards, microphone holder and two INPUT terminal caps included; integral lens retained"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

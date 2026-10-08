@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/answers/features-and-specifications-camcorder-model-hc-vx1/",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-VX1 vx1-spec official reviewed source",
+  "documentVersion": "current official page retrieved2026-10-08",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "HC-VX1 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:16:06.151Z",
+  "evidenceExcerpt": [
+    {
+      "field": "HC-VX1 specs.sensor.format",
+      "value": "1/2.5-type",
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.sensor.megapixels",
+      "value": 8289999.999999999,
+      "unit": "pixel"
+    },
+    {
+      "field": "HC-VX1 specs.sensor.sizeMm",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.focal.min",
+      "value": 4.12,
+      "unit": "mm"
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.focal.max",
+      "value": 98.9,
+      "unit": "mm"
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.equivalentFocal.min",
+      "value": 25,
+      "unit": "mm"
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.equivalentFocal.max",
+      "value": 600,
+      "unit": "mm"
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.aperture.wide",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.fixedLens.aperture.tele",
+      "value": 4,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.bodyOnlyWeight",
+      "value": 428,
+      "unit": "g"
+    },
+    {
+      "field": "HC-VX1 specs.dimensions",
+      "value": [
+        68,
+        77,
+        142
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "HC-VX1 specs.weight",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.weightBasis",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.lcd",
+      "value": {
+        "present": true,
+        "sizeInches": 3,
+        "resolutionDots": 460800,
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.evf",
+      "value": {
+        "present": false
+      },
+      "unit": null
+    },
+    {
+      "field": "HC-VX1 specs.ibis",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-vx1",
+      "manufacturerModelCode": "HC-VX1",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-VX1",
+        "brand": "Panasonic",
+        "series": "HC-VX",
+        "model": "HC-VX1",
+        "aliases": [
+          "HC-VX1"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "1/2.5-type",
+          "rawUnit": null,
+          "locator": {
+            "section": "Pickup device / image sensor",
+            "row": "specs.sensor.format"
+          },
+          "conditions": {
+            "sourceWording": "1/2.5-inch BSI MOS Sensor",
+            "selected": "4K motion/16:9 still",
+            "effectiveFhdMP": 6.17,
+            "effectiveStill4by3MP": 6.22,
+            "totalMP": 8.57
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 8289999.999999999,
+          "rawUnit": "pixel",
+          "locator": {
+            "section": "Number of effective pixels",
+            "row": "specs.sensor.megapixels"
+          },
+          "conditions": {
+            "sourceWording": "1/2.5-inch BSI MOS Sensor",
+            "selected": "4K motion/16:9 still",
+            "effectiveFhdMP": 6.17,
+            "effectiveStill4by3MP": 6.22,
+            "totalMP": 8.57
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Sensor",
+            "row": "specs.sensor.sizeMm"
+          },
+          "conditions": {
+            "reason": "No physical sensor dimensions in mm published in reviewed source; no optical-format conversion."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.min",
+          "evidenceRef": 3,
+          "rawValue": 4.12,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens / actual focal length",
+            "row": "specs.fixedLens.focal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.focal.max",
+          "evidenceRef": 4,
+          "rawValue": 98.9,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens / actual focal length",
+            "row": "specs.fixedLens.focal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.min",
+          "evidenceRef": 5,
+          "rawValue": 25,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens / 35mm equivalent",
+            "row": "specs.fixedLens.equivalentFocal.min"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true,
+            "representative": "16:9 still image",
+            "alternatives": [
+              {
+                "mode": "4:3 still",
+                "rangeMm": [
+                  30.6,
+                  734.4
+                ]
+              }
+            ],
+            "motionEquivalent": "not stated by selected official spec; do not copy 16:9 still to video"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.equivalentFocal.max",
+          "evidenceRef": 6,
+          "rawValue": 600,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Lens / 35mm equivalent",
+            "row": "specs.fixedLens.equivalentFocal.max"
+          },
+          "conditions": {
+            "opticalZoom": 24,
+            "filterDiameterMm": 62,
+            "integratedLens": true,
+            "intelligentDigitalZoomExcluded": true,
+            "representative": "16:9 still image",
+            "alternatives": [
+              {
+                "mode": "4:3 still",
+                "rangeMm": [
+                  30.6,
+                  734.4
+                ]
+              }
+            ],
+            "motionEquivalent": "not stated by selected official spec; do not copy 16:9 still to video"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.wide",
+          "evidenceRef": 7,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens / maximum aperture",
+            "row": "specs.fixedLens.aperture.wide"
+          },
+          "conditions": {
+            "maximumAperture": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.fixedLens.aperture.tele",
+          "evidenceRef": 8,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "Lens / maximum aperture",
+            "row": "specs.fixedLens.aperture.tele"
+          },
+          "conditions": {
+            "maximumAperture": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 9,
+          "rawValue": 428,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Body-only / main-unit mass",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "official without battery and SD card; integral lens retained; hood inclusion unstated"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 10,
+          "rawValue": [
+            68,
+            77,
+            142
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "External dimensions (W H D)",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "configuration": "official dimensions; hood configuration unstated"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 11,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Operating mass",
+            "row": "specs.weight"
+          },
+          "conditions": {
+            "reason": "No verified operating weight/basis in selected official sources.",
+            "reportedWeightG": null,
+            "configuration": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 12,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Operating mass measurement basis",
+            "row": "specs.weightBasis"
+          },
+          "conditions": {
+            "reason": "No verified operating weight/basis in selected official sources.",
+            "reportedWeightG": null,
+            "configuration": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 13,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3,
+            "resolutionDots": 460800,
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "LCD Monitor",
+            "row": "specs.lcd"
+          },
+          "conditions": {
+            "mechanismUnknown": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 14,
+          "rawValue": {
+            "present": false
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Viewfinder",
+            "row": "specs.evf"
+          },
+          "conditions": {
+            "officialAbsence": "View Finder row dash on exact HC-VX1 specification"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 15,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Image stabilizer",
+            "row": "specs.ibis"
+          },
+          "conditions": {
+            "reason": "Official lens optical / optical+electronic hybrid stabilization is not verified sensor-shift IBIS.",
+            "stabilizationWording": "5-axis HYBRID O.I.S.+ / Ball O.I.S. / Adaptive O.I.S."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2ce198b96624be55d48a50d6149e203d991618b52dd0c073bd9fd9c87cba98a7",
+  "sourceId": "source-16d28bae64039580"
+}

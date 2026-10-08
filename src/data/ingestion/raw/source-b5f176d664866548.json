@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://pro-av.panasonic.net/en/products/ag-cx370/features.html",
+  "publisher": "Panasonic",
+  "documentTitle": "AG-CX370 cx370-features official reviewed source",
+  "documentVersion": "current official page retrieved2026-10-08",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "AG-CX370 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:21:04.706Z",
+  "evidenceExcerpt": [
+    {
+      "field": "AG-CX370 specs.video.max",
+      "value": "4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "AG-CX370 specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "AG-CX370 specs.video.log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "AG-CX370 specs.video.cropAtMax",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-cx370",
+      "manufacturerModelCode": "AG-CX370",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 AG-CX370",
+        "brand": "Panasonic",
+        "series": "AG-CX",
+        "model": "AG-CX370",
+        "aliases": [
+          "AG-CX370"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording Format table / HEVC200M",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "internal": true,
+            "fileFormat": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitrateMbps": 200,
+            "bitrateType": "VBR average",
+            "systemFrequencyHz": 59.94,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "alternatives": [
+              {
+                "frameRate": 50,
+                "systemFrequencyHz": 50,
+                "internal": true
+              },
+              {
+                "mode": "FHD super slow",
+                "captureFps": 120,
+                "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+              },
+              {
+                "mode": "UHD 422ALL-I 400M",
+                "codec": "AVC",
+                "chroma": "4:2:2",
+                "bitDepth": 10,
+                "frameRates": [
+                  29.97,
+                  25,
+                  23.98
+                ],
+                "bitrateMbps": 400,
+                "not59_94": true
+              },
+              {
+                "mode": "P2 MXF broadcast",
+                "media": "SDXC V90 with latest firmware; not extra P2 physical slots"
+              },
+              {
+                "mode": "VFR/super slow",
+                "crop": "official no image-area crop",
+                "captureFpsMaxFhd": 120
+              }
+            ],
+            "externalOutput": {
+              "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+              "sdi": "12G/6G UHD output"
+            },
+            "thermalTime": null,
+            "featuresBacklog": {
+              "nd": "Clear/1/4/1/16/1/64",
+              "audio": "XLR2 plus mini-jack input; 4ch MOV/P2, AVCHD2ch; codec-dependent",
+              "network": "12G-SDI/HDMI outputs, GENLOCK/TC, SRT/RTMP/RTMPS/RTSP/NDI HX2; mode limitations preserved",
+              "time": "relay temporarily stops/restarts after10h; MOV split every3h",
+              "ndiCondition": "Recording, streaming and 4K output unavailable in NDI HX2 mode; version/upgrade caveat",
+              "streamingCondition": "4Kstreaming disables simultaneous recording/thumbnail/playback; SRT no24p/SD; encrypted/RTMPS bitrate<25Mbps"
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Recording Format table / HEVC200M",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "selectedMode": "4K 59.94p",
+            "fileFormat": "MOV",
+            "chroma": "4:2:0"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "HDR-Compliant V-Log/HLG",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "reason": "Official V-Log gamma,13.5-stop marketing range is profile metadata, not IBIS stops"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "1.0-Type MOS Sensor / no cropping in all modes",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "Explicit official no image-area cropping in all modes, not physical mm inference"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "3635bcea68eb341940ec63f45a92b2387892531fab08b63338354cc4f8344536",
+  "sourceId": "source-b5f176d664866548"
+}

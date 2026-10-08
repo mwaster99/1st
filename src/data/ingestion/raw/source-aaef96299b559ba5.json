@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://help.na.panasonic.com/wp-content/uploads/2025/03/HCX1200_X1600_X2100_OperatingInstructions_ENG.pdf",
+  "publisher": "Panasonic",
+  "documentTitle": "HC-X2100 trio-na-manual official reviewed source",
+  "documentVersion": "Official shared operating manual, exact model rows reviewed",
+  "region": "NA/global (selected official mode)",
+  "evidenceScope": "HC-X2100 exact directly-operated camcorder: reviewed source conditions/specs; no prices; reviewed-date contract correction",
+  "accessedAt": "2026-10-08T03:16:06.153Z",
+  "evidenceExcerpt": [
+    {
+      "field": "HC-X2100 specs.video.max",
+      "value": "4K 59.94p",
+      "unit": null
+    },
+    {
+      "field": "HC-X2100 specs.video.bitDepth",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "HC-X2100 specs.video.log",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-X2100 specs.video.cropAtMax",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "HC-X2100 specs.cardSlots",
+      "value": {
+        "count": 2,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          },
+          {
+            "index": 2,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "standards": [
+              "UHS-I"
+            ]
+          }
+        ]
+      },
+      "unit": null
+    },
+    {
+      "field": "HC-X2100 specs.bodyOnlyWeight",
+      "value": 0.85,
+      "unit": "kg"
+    },
+    {
+      "field": "HC-X2100 specs.dimensions",
+      "value": [
+        129,
+        159,
+        267
+      ],
+      "unit": "mm"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "panasonic-x2100",
+      "manufacturerModelCode": "HC-X2100",
+      "productType": "body",
+      "identity": {
+        "name": "파나소닉 HC-X2100",
+        "brand": "Panasonic",
+        "series": "HC-X",
+        "model": "HC-X2100",
+        "aliases": [
+          "HC-X2100"
+        ],
+        "mount": null,
+        "kind": "fixed",
+        "bodyStyle": "camcorder"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "4K 59.94p",
+          "rawUnit": null,
+          "locator": {
+            "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+            "row": "specs.video.max"
+          },
+          "conditions": {
+            "resolution": [
+              3840,
+              2160
+            ],
+            "frameRate": 59.94,
+            "internal": true,
+            "fileFormat": "MOV",
+            "codec": "H.265/HEVC LongGOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitrateMbps": 200,
+            "bitrateType": "VBR average",
+            "systemFrequencyHz": 59.94,
+            "media": [
+              "SDHC",
+              "SDXC"
+            ],
+            "alternatives": [
+              {
+                "frameRate": 50,
+                "systemFrequencyHz": 50,
+                "internal": true
+              },
+              {
+                "mode": "FHD super slow",
+                "captureFps": 120,
+                "playback": "59.94p/29.97p/23.98p; not ordinary UHD recording"
+              }
+            ],
+            "externalOutput": {
+              "hdmi": "UHD 59.94p/50p 4:2:2 10bit output is distinct from internal 4:2:0",
+              "sdi": "3G/1.5G HD output only"
+            },
+            "thermalTime": null,
+            "modelSpecific": "MOV allowed; handle supplied, XLR with handle, SDI HD output, USB tethering/ethernet; destinations are not card slots.",
+            "slotFunctions": "Relay and simultaneous all; background FHD MOV/MP4 only; no external/network destination in physical slot count.",
+            "hybridIsCondition": "Optical+electronic hybrid OIS; disabled for SUPER SLOW.",
+            "ndFilter": "CLR/1/4/1/16/1/64; feature backlog only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "p140 MOV59.94pHEVC200M X2100/X1600",
+            "row": "specs.video.bitDepth"
+          },
+          "conditions": {
+            "selectedMode": "4K 59.94p",
+            "fileFormat": "MOV",
+            "chroma": "4:2:0"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 2,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative recording mode",
+            "row": "specs.video.log"
+          },
+          "conditions": {
+            "reason": "No verified log for this exact target; do not copy sibling model log"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 3,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Selected representative mode",
+            "row": "specs.video.cropAtMax"
+          },
+          "conditions": {
+            "reason": "No verified selected-mode crop factor"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 4,
+          "rawValue": {
+            "count": 2,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              },
+              {
+                "index": 2,
+                "media": [
+                  "SDHC",
+                  "SDXC"
+                ],
+                "standards": [
+                  "UHS-I"
+                ]
+              }
+            ]
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "p301 Memory card recorder",
+            "row": "specs.cardSlots"
+          },
+          "conditions": {
+            "capacity": "up to512GB; speed class per recording mode p47",
+            "logicalIndexOnly": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 5,
+          "rawValue": 0.85,
+          "rawUnit": "kg",
+          "locator": {
+            "section": "p298 model-labelled Mass",
+            "row": "specs.bodyOnlyWeight"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "configuration": "main unit only excluding handle, lens hood, battery and eye cup; integral lens retained",
+            "modelRow": "HC-X2100",
+            "webFootnoteAmbiguity": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 6,
+          "rawValue": [
+            129,
+            159,
+            267
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "p298 model-labelled dimensions",
+            "row": "specs.dimensions"
+          },
+          "conditions": {
+            "configuration": "including supplied handle/hood/eyecup, excluding mic holder/protrusions",
+            "modelRow": "HC-X2100",
+            "webCopiedFootnote": null
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-08",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2219a423e90e5001c581d7ee29c3b662b1b575884458eac3a57dd79edd72a61e",
+  "sourceId": "source-aaef96299b559ba5"
+}
