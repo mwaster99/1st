@@ -1,0 +1,3148 @@
+{
+  "schemaVersion": 1,
+  "brand": "Leica",
+  "snapshotDate": "2026-10-12",
+  "reviewedAt": "2026-10-12T05:04:42.010Z",
+  "baselineCommit": "93a6704be48c4a5142bc48e88b3f8dbeea70a263",
+  "canonicalBaselineSha256": "d5f544b9978fc02ef6f36e62b723758d400ed5685b1b1d8383324ba95f14cd25",
+  "denominatorPolicy": "Korea official M/Q/SL families + paginated M/system galleries (page0,1; page2 empty), compact and instant galleries, plus three current product variant selectors. Global official pages/technical PDFs supplement. Unique product-offer URLs, deduplicated across family/gallery/navigation and region; exclude standalone lenses and category links. Eight body+lens kit cards are linked offers, not lens ingestion. Retained S landing has no camera product card; not a current S3 assumption. Not a stock/manufacturing census.",
+  "countsAtStart": {
+    "officialCards": 37,
+    "galleryAndFamilyCards": 34,
+    "selectorOnlyCards": 3,
+    "baseIdentities": 16,
+    "releasedCurrentDigital": 12,
+    "digitalMonochrome": 2,
+    "announcedUpcoming": 0,
+    "linkedVariantsEditionsKits": 21,
+    "analogFilmIdentities": 3,
+    "instantHybridIdentities": 1,
+    "adjacentIdentities": 4,
+    "adjacentCardsIncludingVariants": 10,
+    "deferredSpecial": 0,
+    "existingCanonicalCurrent": 2,
+    "productionUnprocessedDigital": 12
+  },
+  "cards": [
+    {
+      "cardKey": "q3-43-black",
+      "officialDisplayName": "Leica Q3 43",
+      "manufacturerModelCode": "Q3 43",
+      "officialFamily": "Q",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-43-black",
+      "listedOn": [
+        "gallery-ko-KR-compact-cameras",
+        "ko-KR-q"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "Q3 43",
+      "relation": "independent-model",
+      "relationReason": "Independent fixed 43mm F2 optic, not a Q3 finish or digital crop variant.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-q3-43",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "q3-black",
+      "officialDisplayName": "Leica Q3",
+      "manufacturerModelCode": "Q3",
+      "officialFamily": "Q",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-black",
+      "listedOn": [
+        "gallery-ko-KR-compact-cameras",
+        "ko-KR-q"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "Q3",
+      "relation": "independent-model",
+      "relationReason": "Fixed 28mm F1.7 color camera; existing canonical identity retained.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-q3",
+      "canonicalExistedAtStart": true,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "d-lux-8",
+      "officialDisplayName": "Leica D-Lux 8",
+      "manufacturerModelCode": "D-Lux 8",
+      "officialFamily": "D-Lux",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8",
+      "listedOn": [
+        "gallery-ko-KR-compact-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "D-Lux 8",
+      "relation": "independent-model",
+      "relationReason": "Independent fixed zoom MFT-format digital camera; only Leica official specifications used.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-d-lux-8",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "sofort-2-burton-edition",
+      "officialDisplayName": "Leica SOFORT 2",
+      "manufacturerModelCode": "SOFORT 2",
+      "officialFamily": "SOFORT",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-burton-edition",
+      "listedOn": [
+        "gallery-ko-KR-instant-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "instant-hybrid",
+      "baseIdentity": "SOFORT 2",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "sofort-2-red",
+      "officialDisplayName": "Leica SOFORT 2",
+      "manufacturerModelCode": "SOFORT 2",
+      "officialFamily": "SOFORT",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-red",
+      "listedOn": [
+        "gallery-ko-KR-instant-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "instant-hybrid",
+      "baseIdentity": "SOFORT 2",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "sofort-2-black",
+      "officialDisplayName": "Leica SOFORT 2",
+      "manufacturerModelCode": "SOFORT 2",
+      "officialFamily": "SOFORT",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-black",
+      "listedOn": [
+        "gallery-ko-KR-instant-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "instant-hybrid",
+      "baseIdentity": "SOFORT 2",
+      "relation": "independent-model",
+      "relationReason": "Current hybrid digital capture/instant printing workflow; adjacent scope, not permanent exclusion.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "adjacent-category",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "sofort-2-white",
+      "officialDisplayName": "Leica SOFORT 2",
+      "manufacturerModelCode": "SOFORT 2",
+      "officialFamily": "SOFORT",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-white",
+      "listedOn": [
+        "gallery-ko-KR-instant-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "instant-hybrid",
+      "baseIdentity": "SOFORT 2",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "sofort-2-100-years",
+      "officialDisplayName": "Leica SOFORT 2",
+      "manufacturerModelCode": "SOFORT 2",
+      "officialFamily": "SOFORT",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/sofort-2-100-years",
+      "listedOn": [
+        "gallery-ko-KR-instant-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "instant-hybrid",
+      "baseIdentity": "SOFORT 2",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "m-ev1-black",
+      "officialDisplayName": "라이카 M EV1",
+      "manufacturerModelCode": "M EV1",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-ev1-black",
+      "listedOn": [
+        "gallery-ko-KR-m-camera-with-electronic-viewfinder",
+        "gallery-ko-KR-m-page1",
+        "gallery-ko-KR-system-cameras-page1",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M EV1",
+      "relation": "independent-model",
+      "relationReason": "Independent M EV1: built-in electronic finder instead of optical rangefinder; distinct body/workflow and 64GB internal memory.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m-ev1",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m11-p-black",
+      "officialDisplayName": "Leica M11-P",
+      "manufacturerModelCode": "M11-P",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11-P",
+      "relation": "independent-model",
+      "relationReason": "Independent M11-P: official Content Credentials, sapphire display and 256GB internal memory; not a finish alias of M11.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m11-p-safari",
+      "officialDisplayName": "Leica M11-P",
+      "manufacturerModelCode": "M11-P",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-safari",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Safari exterior and material variant. Official PDF distinguishes Safari/silver magnesium+brass vs black magnesium+aluminium; published masses vary by finish; canonical uses black530/455g only."
+    },
+    {
+      "cardKey": "m11-d-black",
+      "officialDisplayName": "Leica M11-D",
+      "manufacturerModelCode": "M11-D",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-d-black",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11-D",
+      "relation": "independent-model",
+      "relationReason": "Independent M11-D: no built-in rear display and changed controls/workflow; 256GB internal memory.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-d",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m11-p-silver",
+      "officialDisplayName": "Leica M11-P",
+      "manufacturerModelCode": "M11-P",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-silver",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Silver finish variant; M11-P official silver640/565g vs black530/455g. Canonical mass is black variant only; analog models not ingested."
+    },
+    {
+      "cardKey": "m11-black",
+      "officialDisplayName": "Leica M11",
+      "manufacturerModelCode": "M11",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-black",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11",
+      "relation": "independent-model",
+      "relationReason": "M11 base: 60.3MP color sensor, optical rangefinder, rear LCD, 64GB internal memory.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m11-monochrom",
+      "officialDisplayName": "Leica M11 Monochrom",
+      "manufacturerModelCode": "M11 Monochrom",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-monochrom",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-monochrome",
+      "baseIdentity": "M11 Monochrom",
+      "relation": "independent-model",
+      "relationReason": "Independent monochrome-only sensor/filter workflow, not a black finish or monochrome photo mode; 256GB internal memory.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-monochrom",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m6",
+      "officialDisplayName": "Leica M6",
+      "manufacturerModelCode": "M6",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m6",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "analog-film",
+      "baseIdentity": "M6",
+      "relation": "independent-model",
+      "relationReason": "Current analog film workflow; no digital sensor placeholder product.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "adjacent-category",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m-a-typ-127-black",
+      "officialDisplayName": "Leica M-A (Typ 127)",
+      "manufacturerModelCode": "M-A (Typ 127)",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-black",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "analog-film",
+      "baseIdentity": "M-A (Typ 127)",
+      "relation": "independent-model",
+      "relationReason": "Current analog film workflow; no digital sensor placeholder product.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "adjacent-category",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m-a-typ-127-silver",
+      "officialDisplayName": "Leica M-A (Typ 127)",
+      "manufacturerModelCode": "M-A (Typ 127)",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-silver",
+      "listedOn": [
+        "gallery-ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "analog-film",
+      "baseIdentity": "M-A (Typ 127)",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Silver finish variant; M11-P official silver640/565g vs black530/455g. Canonical mass is black variant only; analog models not ingested."
+    },
+    {
+      "cardKey": "mp-black-lacquered",
+      "officialDisplayName": "Leica MP",
+      "manufacturerModelCode": "MP",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-black-lacquered",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "analog-film",
+      "baseIdentity": "MP",
+      "relation": "independent-model",
+      "relationReason": "Current analog film workflow; distinct from digital M11-P.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "adjacent-category",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "mp-silver",
+      "officialDisplayName": "Leica MP",
+      "manufacturerModelCode": "MP",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-silver",
+      "listedOn": [
+        "gallery-ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "analog-film",
+      "baseIdentity": "MP",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "adjacent-category",
+      "classification": "linked variant/edition",
+      "status": "adjacent-not-ingested",
+      "configurationNotes": "Silver finish variant; M11-P official silver640/565g vs black530/455g. Canonical mass is black variant only; analog models not ingested."
+    },
+    {
+      "cardKey": "m11-glossy-black-paint-finish",
+      "officialDisplayName": "Leica M11",
+      "manufacturerModelCode": "M11",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-glossy-black-paint-finish",
+      "listedOn": [
+        "gallery-ko-KR-m",
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-m"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Glossy finish/material linked variant; no independent sensor/control/storage model. Published black base mass not generalized to this edition."
+    },
+    {
+      "cardKey": "sl3-s-kit-vario-24-70-sl3-s-kit-vario-70-200",
+      "officialDisplayName": "Leica SL3-S Vario Kit 24-70 & 70-200",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70-sl3-s-kit-vario-70-200",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras-page1"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-s-kit-prime-35",
+      "officialDisplayName": "Leica SL3-S Prime Kit 35",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-35",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras-page1"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-s-kit-prime-50",
+      "officialDisplayName": "Leica SL3-S Prime Kit 50",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-50",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras-page1"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-reporter",
+      "officialDisplayName": "Leica SL3 Reporter",
+      "manufacturerModelCode": "SL3",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-reporter",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3",
+      "canonicalExistedAtStart": true,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Reporter olive-green external finish/protective fabric/design; linked SL3. No distinct sensor/IBIS/video/storage hardware identified in official page."
+    },
+    {
+      "cardKey": "sl3-black",
+      "officialDisplayName": "Leica SL3",
+      "manufacturerModelCode": "SL3",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-black",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3",
+      "relation": "independent-model",
+      "relationReason": "L-Mount 60.3MP color camera; existing canonical identity retained.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3",
+      "canonicalExistedAtStart": true,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "sl3-s-black",
+      "officialDisplayName": "Leica SL3-S",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-s-black",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras",
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "independent-model",
+      "relationReason": "Independent L-Mount 24.6MP sensor and different recording/burst workflow.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "sl3-s-kit-vario-elmarit-28-70",
+      "officialDisplayName": "Leica SL3-S Vario Kit 28-70",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-elmarit-28-70",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-s-kit-vario-24-70",
+      "officialDisplayName": "Leica SL3-S Vario Kit 24-70",
+      "manufacturerModelCode": "SL3-S",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70",
+      "listedOn": [
+        "gallery-ko-KR-system-cameras"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-S",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-s",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "q3-monochrom",
+      "officialDisplayName": "Leica Q3 Monochrom",
+      "manufacturerModelCode": "Q3 Monochrom",
+      "officialFamily": "Q",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-monochrom",
+      "listedOn": [
+        "ko-KR-q"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-monochrome",
+      "baseIdentity": "Q3 Monochrom",
+      "relation": "independent-model",
+      "relationReason": "Independent fixed 28mm F1.7 monochrome-only sensor, not a color Q3 finish or photo mode.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-q3-monochrom",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "sl3-p-kit-vario-28-70",
+      "officialDisplayName": "Leica SL3-P Vario Kit 28-70",
+      "manufacturerModelCode": "SL3-P",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-28-70",
+      "listedOn": [
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-p-kit-vario-24-70",
+      "officialDisplayName": "Leica SL3-P Vario Kit 24-70",
+      "manufacturerModelCode": "SL3-P",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70",
+      "listedOn": [
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-p-kit-vario-24-70-and-vario-70-200",
+      "officialDisplayName": "Leica SL3-P Vario Kit 24-70 & 70-200",
+      "manufacturerModelCode": "SL3-P",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70-and-vario-70-200",
+      "listedOn": [
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Body+lens offer only; bundled lens choice differs, no lens ingestion and no duplicate body."
+    },
+    {
+      "cardKey": "sl3-p-black",
+      "officialDisplayName": "LEICA SL3-P",
+      "manufacturerModelCode": "SL3-P",
+      "officialFamily": "SL",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-p-black",
+      "listedOn": [
+        "ko-KR-sl"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "SL3-P",
+      "relation": "independent-model",
+      "relationReason": "Independent L-Mount 44.9MP sensor and different recording/burst workflow.",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "leica-sl3-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "Base hardware/workflow identity."
+    },
+    {
+      "cardKey": "m11-p-metal-gray",
+      "officialDisplayName": "Leica M11-P Metal Gray",
+      "manufacturerModelCode": "M11-P",
+      "officialFamily": "M",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-metal-gray",
+      "listedOn": [
+        "product-ko-KR-m11-p-black (variant selector)"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "M11-P",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "canonicalId": "leica-m11-p",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "q3-metal-gray",
+      "officialDisplayName": "Leica Q3 Metal Gray",
+      "manufacturerModelCode": "Q3",
+      "officialFamily": "Q",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-metal-gray",
+      "listedOn": [
+        "product-ko-KR-q3-black (variant selector)"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "Q3",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-q3",
+      "canonicalExistedAtStart": true,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    },
+    {
+      "cardKey": "d-lux-8-metal-gray",
+      "officialDisplayName": "Leica D-Lux 8 Metal Gray",
+      "manufacturerModelCode": "D-Lux 8",
+      "officialFamily": "D-Lux",
+      "officialUrl": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8-metal-gray",
+      "listedOn": [
+        "product-ko-KR-d-lux-8 (variant selector)"
+      ],
+      "releaseStatus": "released/current",
+      "availabilityEvidence": "Official current family/gallery or linked variant selector; current product detail. SL3-P explicitly available 25 June 2026; M EV1 official store delivered, Q3 Monochrom available 20 November 2025. No stock/manufacturing guarantee.",
+      "cameraCategory": "digital-color",
+      "baseIdentity": "D-Lux 8",
+      "relation": "linked-variant/edition",
+      "relationReason": "Color/material/finish, collaboration or kit package; no independent sensor/lens/body workflow identity. Variant mass not generalized to all finishes.",
+      "mount": null,
+      "kind": "fixed",
+      "canonicalId": "leica-d-lux-8",
+      "canonicalExistedAtStart": false,
+      "productionProvenanceAtStart": false,
+      "scopeStatus": "in-scope",
+      "classification": "linked variant/edition",
+      "status": "linked-to-canonicalized-base",
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "configurationNotes": "External colour/material/logo/leather/engraving or collaboration package; base hardware kept. Weight evidence is finish-scoped, never generalized."
+    }
+  ],
+  "selected": [
+    "leica-m11",
+    "leica-m11-p",
+    "leica-m11-d",
+    "leica-m11-monochrom",
+    "leica-m-ev1",
+    "leica-q3",
+    "leica-q3-43",
+    "leica-q3-monochrom",
+    "leica-sl3",
+    "leica-sl3-s",
+    "leica-sl3-p",
+    "leica-d-lux-8"
+  ],
+  "workerTasks": [
+    {
+      "productId": "leica-m11",
+      "stableTaskId": "leica-production-001-m11",
+      "contextFiles": [
+        ".cheap-worker-leica001-m11.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failure",
+          "error": "NETWORK_ERROR",
+          "usage": null,
+          "warnings": [],
+          "summary": null,
+          "applied": false
+        },
+        {
+          "attempt": 2,
+          "status": "failure",
+          "error": "NETWORK_ERROR",
+          "usage": null,
+          "warnings": [],
+          "summary": null,
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "No usable returned result after two attempts; main reviewer extracted official source locally.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-m11-p",
+      "stableTaskId": "leica-production-001-m11-p",
+      "contextFiles": [
+        ".cheap-worker-leica001-m11-p.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 3501,
+            "outputTokens": 1575,
+            "totalTokens": 5076,
+            "cacheHitTokens": 0,
+            "cacheMissTokens": 3501,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Exact physical sensor dimensions in mm are not stated; only 'approx. 23.9 x 35.8 mm' framingsize at 2 m bright-line congruence is given, marked null/approx.",
+            "No EVF built-in; Visoflex 2 is an optional accessory, so built-in EVF reported as false.",
+            "No sensor IBIS or lens optical stabilization is stated in supplied data; reported null, not confirmed absent.",
+            "No video specifications appear in supplied data; video fields reported null.",
+            "Continuous burst fps (3 / 4.5) stated per drive mode, not conditioned on a specific shutter type in supplied data.",
+            "Dimensions listed as many unlabeled numbers; exact WxHxD not explicitly designated.",
+            "Effective MP entries vary by format: DNG L 60.3 MP (9528x6328); JPG L 60.1 MP; 60.3 MP reported as effective.",
+            "Mass varies by variant: black/safari/metal grey 530/455 g vs silver 640/565 g."
+          ],
+          "summary": "{\"product\":\"Leica M11-P\",\"camera_type\":\"Digital system camera with rangefinder\",\"type_no\":\"2416\",\"sensor\":{\"effective_mp\":60.3,\"effective_mp_unit\":\"MP\",\"resolution_px\":\"9528x6328\",\"type\":\"BSI CMOS\",\"pixel_pitch_um\":3.76,\"filter\":\"RGB color filter, UV/IR filter, no low-pass filter\",\"color_depth\":\"DNG 14 bit, JPG 8 bit\",\"physical_mm_exact\":null,\"physical_mm_note\":\"Only framing/sensor approx. 23.9 x 35.8 mm cited at 2 m bright-line frame congruence; no exact physical sensor mm stated\",\"ibis\":null,\"ibis_note\":\"No in-body stabilization stated in supplied data\"},\"mount\":\"Leica M bayonet with additional sensor for 6-bit encoding\",\"lens\":{\"fixed_mm\":null,\"equivalent_mm\":null,\"fixed_aperture\":null,\"note\":\"Interchangeable lens system; no fixed lens/aperture supplied\"},\"mass_g\":{\"with_battery\":{\"black_safari_metal_grey\":530,\"silver\":640},\"without_battery\":{\"black_safari_metal_grey\":455,\"silver\":565}},\"finder\":{\"evf_builtin\":false,\"evf_note\":\"No built-in EVF; Leica Visoflex 2 is optional accessory via ISO accessory shoe\",\"optical\":\"Large bright-line rangefinder with automatic parallax compensation, -0.5 dpt, magnification 0.73x\",\"parallax_sensor_size_approx_mm\":\"23.9 x 35.8 at 2 m\"},\"lcd\":{\"present\":true,\"size_in\":2.95,\"type\":\"Active Matrix TFT\",\"glass\":\"sapphire\",\"dots\":2332800,\"format\":\"3:2\",\"touch\":true},\"stabilization\":{\"ibis\":null,\"lens_optical\":null,\"note\":\"Neither sensor IBIS nor lens optical stabilization stated in supplied data\"},\"focus\":{\"modes\":[\"Manual (focus assist functions Magnification and Focus Peaking available)\"],\"auto\":null,\"focus_range_cm_min\":70,\"focus_range_max\":\"infinite\"},\"video\":{\"max_internal_mode\":null,\"rate\":null,\"bitdepth\":null,\"log\":null,\"restrictions\":null,\"note\":\"No video specifications present in supplied technical data\"},\"shutter\":{\"type\":\"Electronically controlled focal plane shutter and electronic shutter function\",\"mech_speed_range\":\"60 min to 1/4000 s\",\"electro_speed_range\":\"60 s to 1/16000 s\",\"flash_sync_max\":\"1/180 s\"},\"drive_mode\":{\"single\":true,\"continuous_low_fps\":3,\"continuous_high_fps\":4.5,\"interval_shooting\":true,\"exposure_bracketing\":true,\"note\":\"Burst fps stated per drive mode, not tied to a specific shutter type in supplied data\"},\"buffer_memory_gb\":3,\"buffer\":{\"dng_shots\":15,\"jpg_shots\":\"> 100\"},\"cards\":{\"physical_slots\":1,\"physical_slot_media\":\"UHS-II (recommended), UHS-I, SD/SDHC/SDXC (SDXC up to 2 TB)\",\"internal_memory_gb\":256},\"flash\":{\"connector\":\"Via the accessory shoe\",\"sync_time\":\"1/180 s\",\"metering\":\"center-weighted TTL pre-flash\"},\"interfaces\":{\"iso_shoe\":\"ISO accessory shoe with additional control contacts for Leica flash units and Leica Visoflex 2\",\"usb\":\"USB 3.1 Gen1 Type-C\"},\"wlan\":\"2.4 GHz/5 GHz dual band IEEE802.11 a/b/g/n/ac Wave2\",\"bluetooth\":\"Bluetooth v4.2 BR/EDR/LE\",\"gps\":\"Geotagging via Leica FOTOS app using Bluetooth\",\"battery\":{\"model\":\"Leica BP-SCL7\",\"type\":\"Li-Ion (Lithium-Polymer)\",\"rated_voltage_v\":7.4,\"capacity_mah\":1800,\"shots_cipa_rangefinder\":700,\"shots_leica_cycle_max\":1700},\"dimensions_mm\":\"Multiple numeric values supplied without labeled axes; exact WxHxD not explicitly designated\",\"operating_conditions_c\":\"0 to +40\",\"file_formats\":[\"DNG (raw, loss-free compression)\",\"DNG + JPG\",\"JPG (DCF, Exif 2.30)\"],\"iso\":{\"auto_iso_range\":\"ISO 64 native to ISO 50000\",\"manual_range\":\"ISO 64 to ISO 50000\"},\"exposure_modes\":[\"Aperture-priority (A)\",\"Manual (M)\"],\"exposure_compensation_ev\":\"+/-3 EV in 1/3 EV increments\",\"order_numbers_variants\":{\"black\":\"20 211 (EU/US/CN), 20 212 (JP), 20 213 (ROW)\",\"silver\":\"20 214 (EU/US/CN), 20 215 (JP), 20 216 (ROW)\",\"safari\":\"20 235 (EU/US/CN), 20 236 (JP), 20 237 (ROW)\",\"metal_grey\":\"20 071 (EU/US/CN), 20 072 (JP), 20 073 (ROW)\"}}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-m11-d",
+      "stableTaskId": "leica-production-001-m11-d",
+      "contextFiles": [
+        ".cheap-worker-leica001-m11-d.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 3181,
+            "outputTokens": 563,
+            "totalTokens": 3744,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 3053,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Sensor body size not stated as an exact physical mm; only approx 23.9 x 35.8 mm appears describing bright-line frame congruence at 2 m, so exact physical sensor mm reported UNKNOWN.",
+            "No built-in EVF and no built-in LCD rows present in supplied data; reported null (UNKNOWN) rather than inferred absent.",
+            "No IBIS or lens optical stabilization row present; reported null (UNKNOWN) rather than inferred absent.",
+            "No video/movie mode section present in supplied data; internal video mode/conditions reported UNKNOWN.",
+            "Burst fps given without stated shutter-type condition; values reported as supplied (low 3 fps, high 4.5 fps).",
+            "Mass 539/457 g (with/without battery) is for black variant only as stated."
+          ],
+          "summary": "{\"product\":\"Leica M11-D\",\"sensor_effective_megapixels\":{\"DNG_L\":60.3,\"JPG_L\":60.1},\"sensor_exact_physical_mm\":{\"approx_23.9_x_35.8\":\"stated only as approx, in bright-line frame/parallax context at 2m; no nominal exact sensor body size given\"},\"mount\":\"Leica M bayonet with additional sensor for 6-bit encoding\",\"mass_g\":{\"with_battery\":539,\"without_battery\":457,\"variant\":\"black\"},\"builtin_evf\":null,\"builtin_optical_finder\":\"Large bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; magnification 0.73x; split/superimposed image rangefinder; optional external Leica Visoflex 2 via accessory shoe (not built-in)\",\"lcd\":null,\"ibis\":null,\"lens_optical_stabilization\":null,\"focus\":\"Manual only (focus assist: Magnification and Focus Peaking); focus range 70 cm to infinity\",\"internal_video\":null,\"burst_shutter_conditioned\":{\"continuous_low_speed_fps\":3,\"continuous_high_speed_fps\":4.5,\"single\":\"available\"},\"cards_physical_slots\":\"SD/SDHC/SDXC (UHS-II recommended, UHS-I, SDXC up to 2TB)\",\"internal_memory\":\"256 GB\",\"buffer\":\"3 GB; DNG 15 shots, JPG >100 shots\",\"video_capability\":null}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-m11-monochrom",
+      "stableTaskId": "leica-production-001-m11-monochrom",
+      "contextFiles": [
+        ".cheap-worker-leica001-m11-monochrom.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 3727,
+            "outputTokens": 1424,
+            "totalTokens": 5151,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 3599,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "No field explicitly labeled 'effective megapixels': sensor array is written as 35 mm: 9528 x 6328 Pixel (60,3 MP); this is a pixel-array figure, not a stated effective-MP value.",
+            "Exact physical sensor size in mm is NOT supplied. Only rangefinder framing equivalence: at 2 m frame matches 'ca. 23,9 x 35,8 mm' (approx., conditional on distance/framing) — not an exact sensor dimension.",
+            "Output resolutions differ from sensor array (e.g. L-DNG 60,4 MP 9536 x 6336; L-JPG 60,1 MP 9504 x 6320) and full sensor area is always used — ambiguity between sensor MP and output MP labels.",
+            "Mass applies to 'Schwarz' variant only (542 g with battery / 461 g without); no other color variants stated.",
+            "Burst rates (3 B/s slow, 4.5 B/s fast) are not tied in the datasheet to mechanical vs electronic shutter — shutter-specific burst conditions UNKNOWN.",
+            "Video: no internal video mode, frame rate, bit depth, or log profile appears in the supplied datasheet — treat as UNKNOWN, not as absent.",
+            "Physical storage given as SD/SDHC/SDXC (SDXC up to 2 TB) plus internal 256 GB; number of SD card slots is NOT stated.",
+            "Datasheet does not state IBIS or lens optical stabilization anywhere; absence is not asserted, treated as UNKNOWN.",
+            "Autofocus is not listed; only 'Fokusmodus Manuell' is given — no AF row exists to confirm absence."
+          ],
+          "summary": "{\"product\":\"Leica M11 Monochrom\",\"source\":\"Leica official datasheet (leica-camera.com PDF, April 2023)\",\"sensor_effective_mp\":{\"value\":null,\"note\":\"Datasheet gives pixel counts and MP labels for sensor and outputs, but does not state a field explicitly labeled 'effective megapixels'\"},\"sensor_pixel_array\":{\"total_9528x6328_MP60.3\":\"35 mm: 9528 x 6328 Pixel (60,3 MP)\",\"pixel_pitch_um\":3.76,\"type\":\"Monochrom BSI CMOS\",\"aa_filter\":\"none (kein Tiefpassfilter)\",\"note\":\"60.3 MP is the sensor pixel-array figure as written; not labeled 'effective'\"},\"sensor_physical_mm_exact\":{\"value\":null,\"note\":\"No physical sensor dimensions in mm stated as sensor size. Only rangefinder framing equivalence given: at 2 m frame corresponds to sensor size of approx. 23.9 x 35.8 mm (approx., for framing, not an exact sensor spec)\"},\"mount\":\"Leica M-Bajonett mit zusätzlichem Sensor für 6-Bit-Codierung\",\"mass_g\":{\"with_battery\":542,\"without_battery\":461,\"variant\":\"Schwarz\"},\"finder\":{\"builtin_type\":\"Leuchtrahmen-Messsucher (optical rangefinder)\",\"builtin_evf\":false,\"evf_optional_accessory\":\"Leica Visoflex 2 (als Zubehör erhältlich), via ISO-Zubehörschuh with control contacts\",\"rangefinder_magnification\":0.73,\"eyepiece_diopter\":-0.5},\"lcd\":{\"size_in\":2.95,\"type\":\"Active Matrix TFT\",\"glass\":\"Saphirglas\",\"dots\":2332800,\"aspect\":\"3:2\",\"touch\":true},\"stabilization\":{\"sensor_ibis\":null,\"lens_optical\":null,\"note\":\"No IBIS or optical lens stabilization stated anywhere in supplied data\"},\"focus\":{\"manual\":true,\"auto\":false,\"focus_assists\":\"Vergrößerung und Focus Peaking\",\"working_range_rangefinder_cm_min\":70,\"live_view_range\":\"abhängig vom angesetzten Objektiv\"},\"video\":{\"internal_video_mode\":null,\"max_internal_mode\":null,\"rate\":null,\"bit_depth\":null,\"log\":null,\"note\":\"No video capture specifications present in supplied datasheet; only still formats listed\"},\"burst_by_shutter_condition\":{\"single\":\"Einzeln\",\"series_slow_bps\":3,\"series_fast_bps\":4.5,\"intervall\":true,\"bracketing\":true,\"shutter_condition_note\":\"Datasheet lists 3 B/s slow and 4.5 B/s fast without tying rates to mechanical vs electronic shutter; shutter-specific conditions UNKNOWN\"},\"shutter\":{\"type\":\"Elektronisch gesteuerter Schlitzverschluss und elektronische Verschlussfunktion\",\"mech_range\":\"60 min bis 1/4000 s\",\"elec_range\":\"60 s bis 1/16000 s\",\"flash_sync\":\"bis 1/180 s\"},\"storage\":{\"physical_cards\":\"SD-/SDHC-/SDXC (UHS-II recommended, UHS-I), SDXC bis 2 TB\",\"slot_count\":null,\"internal_memory_gb\":256,\"buffer_internal_gb\":3,\"buffer_frames\":\"DNG 15 Aufnahmen, JPG >100 Aufnahmen\"},\"image_formats\":{\"raw\":\"DNG (verlustfrei komprimiert), DNG+JPG\",\"jpg\":\"JPG (DCF, Exif 2.30)\",\"color_depth\":\"DNG 14 Bit, JPG 8 Bit\",\"color_space\":\"sRGB\"},\"iso\":{\"native_auto_min\":125,\"max\":200000,\"auto_iso\":true,\"manual_range\":\"ISO 125 bis ISO 200 000\"},\"unknown_fields\":[\"effective megapixels (explicit label)\",\"exact physical sensor mm\",\"built-in EVF\",\"IBIS / lens optical stabilization\",\"autofocus\",\"internal video mode/rate/bit depth/log\",\"burst condition by shutter type\",\"number of card slots\"]}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-m-ev1",
+      "stableTaskId": "leica-production-001-m-ev1",
+      "contextFiles": [
+        ".cheap-worker-leica001-m-ev1.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 3081,
+            "outputTokens": 663,
+            "totalTokens": 3744,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 2953,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Sensor physical dimensions in mm are not written in the supplied data; only pixel pitch 3.76µm and pixel counts.",
+            "Stabilization (IBIS or optical lens) is not stated anywhere in the supplied data; left null rather than inferred from omission.",
+            "Video mode/rate/bitdepth/log are absent from the supplied data; left null.",
+            "Burst values (3 fps low, 4.5 fps high) are not explicitly tied to a shutter type in the source; shutter_condition left null.",
+            "Physical card slot count is not stated; only supported card types are listed, so slots left null while internal memory 64GB is explicit.",
+            "Weight variant (e.g., body color/material) is not specified; only with/without battery masses given.",
+            "Mount is a Leica M bayonet with 6-bit encoding sensor; no lens mm/aperture is supplied, so lens fields null."
+          ],
+          "summary": "{\"product\":\"Leica M EV1\",\"effective_mp\":{\"DNG_L\":60.3,\"JPG_L\":60.1,\"note\":\"total sensor listed as 60.3MP 9528x6328; effective/output per-resolution as written\"},\"sensor_physical_mm\":null,\"mount\":\"Leica M bayonet with additional sensor for 6-bit encoding\",\"lens\":null,\"mass_g\":{\"with_battery\":495,\"without_battery\":413,\"variant\":null},\"evf\":{\"built_in\":true,\"resolution_dots\":5760000,\"fps\":60,\"magnification\":0.76,\"coverage_pct\":100,\"exit_pupil_mm\":20.75,\"diopter_range\":\"-4/+2\",\"eye_sensor\":true},\"optical_finder\":false,\"lcd\":{\"size_in\":2.95,\"type\":\"Active Matrix TFT\",\"dots\":2332800,\"format\":\"3:2\",\"touch\":true,\"gorilla_glass\":true},\"stabilization\":{\"sensor_ibis\":null,\"lens_optical\":null},\"focus\":{\"mode\":\"Manual\",\"assist\":[\"Magnification\",\"Focus Peaking\"],\"auto\":null},\"video\":{\"max_internal_mode\":null,\"rate\":null,\"bit_depth\":null,\"log\":null,\"restrictions\":null},\"burst\":{\"single\":true,\"low_fps\":3,\"high_fps\":4.5,\"shutter_condition\":null},\"storage\":{\"slots\":null,\"card_types\":[\"SD/SDHC/SDXC\",\"UHS-II recommended\",\"UHS-I\"],\"sdxc_max_tb\":2,\"internal_gb\":64},\"buffer\":{\"gb\":3,\"dng_shots\":15,\"jpg_shots\":\">100\"}}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-q3",
+      "stableTaskId": "leica-production-001-q3",
+      "contextFiles": [
+        ".cheap-worker-leica001-q3.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failure",
+          "error": null,
+          "usage": {
+            "inputTokens": 7220,
+            "outputTokens": 1116,
+            "totalTokens": 8336,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 7092,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "MALFORMED_RESPONSE: raw response omitted."
+          ],
+          "summary": "Worker returned invalid structured output; parent review or one corrected retry is required.",
+          "applied": false
+        },
+        {
+          "attempt": 2,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 7220,
+            "outputTokens": 957,
+            "totalTokens": 8177,
+            "cacheHitTokens": 7040,
+            "cacheMissTokens": 180,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Physical sensor dimensions (mm) not stated; only megapixels given — coded null.",
+            "Mount not specified for fixed-lens camera — coded null.",
+            "Image stabilization described as 'Visual compensation system for photos and video recordings' — does not disambiguate sensor IBIS vs optical lens stabilization; coded null for both IBIS and lens_optical.",
+            "Mass given as approx. 743 g/658 g with/without battery; variant (black/metal gray) not tied to mass values in source — variant coded null.",
+            "Viewfinder: built-in EVF confirmed; no optical rangefinder.",
+            "Storage media type listed but number of physical card slots not stated — slots coded null; no internal memory stated.",
+            "Video: internal max C8K 29.97fps requires recording to SD at 4:2:0/10bit h.265 300Mbps; HDMI-only paths restricted (8bit without HLG/L-Log; C4K when HLG/L-Log or recording to SD). ProRes only in FHD.",
+            "Burst fps listed with bit-depth and AF/auto-settings conditions; some entries lack explicit AF or auto-per-frame text — coded null where omitted.",
+            "No prices, no invented units.",
+            "No exact equivalent mm for fixed 28mm lens stated."
+          ],
+          "summary": "{\"effective_MP\":60.3,\"total_MP\":62.39,\"physical_sensor_mm\":null,\"mount\":null,\"fixed_lens\":{\"actual_mm\":28,\"equivalent_mm\":null,\"aperture\":\"f/1.7\",\"designation\":\"Leica Summilux 28 f/1.7 ASPH.\"},\"mass_g\":{\"with_battery\":743,\"without_battery\":658,\"variant\":null,\"note\":\"specified as approx.; variant not tied to mass in source\"},\"finder\":{\"builtin_EVF\":true,\"EVF_resolution_dots\":5760000,\"EVF_fps\":120,\"optical_rangefinder\":false},\"LCD\":{\"present\":true,\"size_in\":3,\"type\":\"TFT LCD\",\"dots\":1843200,\"ppi\":384,\"touch\":true},\"stabilization\":{\"IBIS\":null,\"sensor\":null,\"lens_optical\":null,\"verbatim\":\"Visual compensation system for photos and video recordings\",\"warn\":\"source does not disambiguate sensor IBIS vs optical lens\"},\"focus\":{\"manual\":true,\"auto\":true,\"hybrid_AF\":true,\"range_cm\":30,\"macro_cm\":17},\"video_internal\":{\"max_mode\":\"C8K\",\"max_resolution\":\"8192x4320\",\"max_rate_fps\":29.97,\"conditions\":\"recording to SD: 4:2:0/10bit h.265 L-GOP 300 Mbps; HDMI output 8K 4:2:0/8bit without HLG/L-Log and without SD recording; HDMI with HLG/L-Log or during SD recording limited to C4K/4K 4:2:2/10bit\",\"log\":\"L-Log referenced only as HDMI condition\",\"max_length_min\":29,\"internal_memory\":false},\"burst\":{\"single\":true,\"fps_conditions\":[{\"fps\":2,\"bit\":14,\"af\":true,\"auto_per_frame\":true},{\"fps\":4,\"bit\":14,\"af\":true,\"auto_per_frame\":true},{\"fps\":7,\"bit\":14,\"af\":null,\"auto_per_frame\":false},{\"fps\":9,\"bit\":12,\"af\":null,\"auto_per_frame\":false},{\"fps\":15,\"bit\":12,\"af\":null,\"auto_per_frame\":false}],\"buffer_GB\":8},\"storage\":{\"physical_slots\":null,\"slot_count\":null,\"media\":\"UHS-II (recommended), UHS-I, SD/SDHC/SDXC memory card\",\"internal_memory\":false},\"interface_warn\":\"single SD media listed; number of physical slots not stated\"}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-q3-43",
+      "stableTaskId": "leica-production-001-q3-43",
+      "contextFiles": [
+        ".cheap-worker-leica001-q3-43.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failure",
+          "error": null,
+          "usage": {
+            "inputTokens": 7246,
+            "outputTokens": 2048,
+            "totalTokens": 9294,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 7118,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "INCOMPLETE_RESPONSE"
+          ],
+          "summary": "Worker response did not finish normally.",
+          "applied": false
+        },
+        {
+          "attempt": 2,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 7246,
+            "outputTokens": 1066,
+            "totalTokens": 8312,
+            "cacheHitTokens": 7040,
+            "cacheMissTokens": 206,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Physical sensor size in mm is not stated; only pixel array (9520x6336) and effective/total MP given.",
+            "Lens mount not stated (fixed-lens compact with integrated APO-Summicron 43).",
+            "Stabilization described only as 'visual compensation system for photos and video'; not explicitly labeled sensor IBIS vs optical.",
+            "Log profile (HLG/L-Log) referenced only in HDMI output contexts; no explicit internal-recording log claim.",
+            "Burst rates stated with bit-depth/AF conditions, not shutter-specific as the extraction field requested.",
+            "No internal memory row present in source; absence not inferred, marked null/UNKNOWN.",
+            "HLG/L-Log only mentioned for HDMI output transitions; no explicit internal log statement"
+          ],
+          "summary": "{\"product\":\"Leica Q3 43\",\"typeNo\":\"6506\",\"sensor\":{\"effectiveMP\":60.3,\"totalMP\":62.39,\"physicalSensorMM\":null,\"filter\":\"RGB, UV/IR, no low-pass\",\"notPhysicalMM\":\"Only pixel dimensions given (9520x6336); no physical sensor mm stated\"},\"mount\":null,\"lens\":{\"designation\":\"Leica APO-Summicron 43 f/2 ASPH.\",\"fixedActualMM\":43,\"fixedAperture\":\"f/2\",\"equivMM\":null,\"filterThread\":\"E49\",\"elements\":\"11 in 8 segments, 7 aspherical areas\",\"digitalZoomEquivalents\":[\"60mm=1.4x\",\"75mm=1.7x\",\"90mm=2.0x\",\"120mm=2.8x\",\"150mm=3.5x\"]},\"massG\":{\"withBattery\":772,\"withoutBattery\":688,\"variant\":\"standard\"},\"viewfinder\":{\"type\":\"EVF (built-in)\",\"opticalRangefinder\":false,\"resolution\":\"5,760,000 dots\",\"rate\":\"120 fps\",\"magnification\":\"0.79x (4:3) / 0.76x (3:2)\",\"frameCoverage\":\"100%\",\"exitPupilMM\":20.75,\"diopter\":\"-4/+2\"},\"lcd\":{\"present\":true,\"size\":\"3\\\" TFT LCD\",\"dots\":\"approx 1,843,200\",\"ppi\":384,\"aspect\":\"3:2\",\"touch\":true},\"stabilization\":{\"type\":\"IBIS/sensor-based visual compensation (photos and video)\",\"lensOpticalStabilization\":null,\"note\":\"Stated as visual compensation system for photos and video; source does not explicitly label as sensor IBIS\"},\"focus\":{\"modes\":\"Automatic or manual\",\"range\":\"60cm to infinity\",\"macro\":\"26.5cm to 60cm\",\"hybridAF\":\"contrast+depth+phase\",\"afFields\":315},\"video\":{\"maxInternalMode\":\"C8K (17:9) 8192x4320 to SD\",\"maxInternalRate\":\"29.97 fps\",\"conditions\":\"MOV C8K SD: 4:2:0 10-bit h.265 L-GOP 300 Mbps\",\"bitDepth\":\"10-bit internal\",\"log\":null,\"logNote\":\"HLG/L-Log mentioned only for HDMI output transitions; no explicit internal log statement\",\"maxLength\":\"29 min\",\"containers\":[\"MOV\",\"MP4\"],\"codecs\":[\"h.265\",\"h.264\",\"ProRes\",\"ProRes 422HQ\"],\"audioBit\":\"MOV LPCM 48kHz/24bit; MP4 AAC 48kHz/16bit\"},\"burst\":{\"statedAsConditional\":true,\"values\":[\"2 fps 14-bit AF\",\"4 fps 14-bit AF\",\"5 fps 12-bit AF\",\"7 fps 14-bit AF\",\"9 fps 12-bit\",\"15 fps 12-bit\"],\"note\":\"Rates given as continuous shooting with bit-depth/AF conditions, not shutter-type-conditioned\"},\"storage\":{\"physicalSlots\":\"1x SD (UHS-II recommended, UHS-I, SD/SDHC/SDXC)\",\"internalMemory\":null,\"bufferMemory\":\"8 GB\"},\"battery\":{\"model\":\"Leica BP-SCL6\",\"shots\":350,\"cipa\":true},\"missing\":[\"physical sensor mm\",\"mount\",\"internal memory\",\"equivalent focal length (non-digital)\",\"explicit internal log\"]}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-q3-monochrom",
+      "stableTaskId": "leica-production-001-q3-monochrom",
+      "contextFiles": [
+        ".cheap-worker-leica001-q3-monochrom.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 5533,
+            "outputTokens": 980,
+            "totalTokens": 6513,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 5405,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Physical sensor mm not present in supplied text.",
+            "Mount not present.",
+            "Stabilization mechanism (IBIS vs optical) not explicitly distinguished.",
+            "Weight is approximate.",
+            "Burst and video specs are conditional on settings."
+          ],
+          "summary": "{\"product\":\"Leica Q3 Monochrom\",\"source\":\"Leica Q3 Monochrome Technical Data (official PDF), Version date October 2025\",\"sensor_effective_mp\":60.3,\"sensor_total_mp\":62.39,\"sensor_physical_mm\":null,\"mount\":null,\"lens\":{\"designation\":\"Leica Summilux 28 f/1.7 ASPH., 11 lenses in 9 segments, 3 aspherical lenses\",\"actual_mm\":28,\"equivalent_mm\":null,\"aperture\":\"F1.7 to F16 in 1/3 EV increments\",\"filter_thread\":\"E49\",\"digital_zoom\":\"~1.25x (35mm), ~1.7x (50mm), ~2.7x (75mm), ~3.2x (90mm)\"},\"mass\":{\"with_battery_g\":746,\"without_battery_g\":662,\"variant\":null,\"note\":\"Approx., single figure given\"},\"finder\":{\"type\":\"EVF\",\"optical_rangefinder\":false,\"resolution_dots\":5760000,\"fps\":120,\"magnification\":\"0.79x @4:3 / 0.76x @3:2\",\"frame_coverage\":\"100%\",\"exit_pupil_mm\":20.75,\"diopter_range\":\"-4/+2 dpt\"},\"lcd\":{\"present\":true,\"size_in\":3,\"type\":\"TFT LCD\",\"dots\":1843200,\"ppi\":384,\"aspect_ratio\":\"3:2\",\"touch\":true},\"stabilization\":{\"ibis\":null,\"lens_optical\":null,\"stated\":\"Visual compensation system for photos and video recordings\",\"note\":\"Source does not attribute to sensor IBIS or optical lens stabilization\"},\"focus\":{\"manual\":true,\"auto\":true,\"focus_range\":\"30cm to infinity\",\"macro\":\"from 17cm\",\"af_system\":\"Contrast detection\",\"af_modes\":[\"Intelligent AF\",\"AFs\",\"AFc\",\"Touch AF optional\"],\"af_fields\":315},\"video_internal\":{\"max_resolution\":\"C8K 8192x4320\",\"max_rate_fps\":29.97,\"max_bitrate_mbps\":300,\"max_bit_depth\":\"4:2:0/10-bit Long GOP HEVC\",\"codecs\":[\"HEVC\",\"H264\",\"ProRes 422HQ\"],\"containers\":[\"MP4\",\"MOV\"],\"log\":\"L-Log ISO listed\",\"restriction\":\"Video max. length: 29 min\"},\"burst\":{\"2fps_14bit_AF\":\"mech or elec shutter\",\"4fps_14bit_AF\":\"mech or elec shutter\",\"5fps_12bit_AF\":\"mech or elec shutter\",\"7fps_14bit_AF\":\"elec shutter\",\"9fps_12bit_AF\":\"elec shutter\",\"15fps_12bit_AF\":\"elec shutter\",\"note\":\"Shutter-conditioned; conditions on per-series auto settings differ\"},\"storage\":{\"card_slots\":\"SD/SDHC/SDXC (UHS-II recommended, UHS-I)\",\"internal_memory\":null,\"buffer_memory_gb\":8},\"warnings\":[\"Physical sensor dimensions in mm not stated in source; left null.\",\"Mount not stated in source; left null (fixed-lens compact).\",\"Stabilization described generically ('visual compensation system'); neither sensor IBIS nor optical lens stabilization explicitly confirmed.\",\"Weight given as approximate single figure (746g/662g).\",\"Burst-frame capacity depends on shutter, bit depth and AF mode; conditional.\",\"FHD slow-motion bit depth stated as 4:2:0/10-bit Long GOP HEVC.\"]}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-sl3",
+      "stableTaskId": "leica-production-001-sl3",
+      "contextFiles": [
+        ".cheap-worker-leica001-sl3.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 6748,
+            "outputTokens": 1125,
+            "totalTokens": 7873,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 6620,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Exact physical sensor mm is not present in the supplied data; only resolution figures are given, so sensor_size_mm is UNKNOWN.",
+            "Mass with battery is not supplied; only approx. 769.7 g without battery/SD card/body cap.",
+            "Only IBIS (5-axis, up to 5 stops) is stated; no lens optical stabilization, but contract avoids inferring absence beyond supplied data.",
+            "No internal memory stated; storage is two physical slots (SD + CFexpress Type B) plus 8 GB buffer, which is not internal storage.",
+            "Video 'max internal' interpretation: highest internal MOV C8K/8K at 29.97 fps 4:2:0/10-bit h.265 300 Mbps; several modes have conditions (SD vs HDMI, HLG/L-Log).",
+            "Source is date-stamped March 2024 and subject to change; values are as-supplied only."
+          ],
+          "summary": "{\"product\":\"Leica SL3\",\"sensor_effective_mp\":60.3,\"sensor_total_mp\":62.39,\"sensor_size_mm\":null,\"mount\":\"Leica L bayonet\",\"fixed_lens_mm\":null,\"fixed_lens_equiv_mm\":null,\"fixed_lens_aperture\":null,\"mass_without_battery_g\":769.7,\"mass_with_battery_g\":null,\"mass_variant\":\"approx. 769.7 g without battery, SD card, body cap\",\"evf\":\"built-in EVF 5,760,000 dots, 60/120 fps, mag approx 0.76x (3:2)/0.78x (4:3), 100% coverage, 21 mm exit pupil, -4/+2 dpt\",\"optical_finder\":false,\"lcd\":\"3.2 in 2,332,800 dots 3:2 touch panel; plus top 1.28 in monochrome LCD\",\"stabilization_ibis\":\"5-axis image stabilization up to 5-stops\",\"stabilization_lens_optical\":null,\"focus_manual\":true,\"focus_auto\":true,\"autofocus_system\":\"Hybrid-AF (contrast, depth mapping, phase comparison), 315 metering fields\",\"video_max_internal\":\"MOV C8K 8192x4320 29.97 fps 4:2:0/10-bit h.265 L-GOP 300 Mbps (recording to SD); also 8K 7680x4320 4:2:0/10-bit h.265 300 Mbps internal\",\"video_log\":\"L-Log Rec.2020, HLG Rec.2020, Rec.709\",\"video_conditions\":\"C8K/8K internal limited to 29.97/25/24/23.98 fps; HDMI output variants differ (8-bit or lower res when HLG/L-Log or during SD recording); ProRes 422HQ up to 59.94 fps MOV FHD; max length depends on ambient temp and memory space\",\"burst_shutter_conditioned\":[{\"fps\":2,\"bit\":14,\"af\":\"AF\",\"shutter\":\"mech or electr\"},{\"fps\":4,\"bit\":14,\"af\":\"AF\",\"shutter\":\"mech or electr\"},{\"fps\":5,\"bit\":12,\"af\":\"AF\",\"shutter\":\"mech or electr\"},{\"fps\":6,\"bit\":14,\"af\":\"no refocusing\",\"shutter\":\"electr\"},{\"fps\":7,\"bit\":12,\"af\":\"no refocusing\",\"shutter\":\"electr\"},{\"fps\":9,\"bit\":12,\"af\":\"no refocusing\",\"shutter\":\"electr\"},{\"fps\":15,\"bit\":12,\"af\":\"no refocusing\",\"shutter\":\"electr\"}],\"card_slots\":\"SD/SDHC/SDXC (UHS-II recommended) + CFexpress Type B (recommended)\",\"internal_memory\":null,\"buffer_memory_gb\":8,\"battery\":\"Leica BP-SCL6\",\"shutter_type\":\"Electronically controlled focal plane shutter\",\"shutter_speeds\":\"Mech 60 min to 1/8000 s; electr 60 s to 1/16000 s; flash sync up to 1/200 s\",\"warnings\":[\"Exact physical sensor dimensions (mm) not stated in supplied data; image resolution only.\",\"Mass with battery not stated; only approx. 769.7 g without battery/SD/body cap.\",\"No lens optical stabilization stated; IBIS 5-stops only.\",\"Internal memory not stated; only two physical card slots and 8 GB buffer memory.\",\"Manufacturer/source PDF version March 2024, subject to change.\"]}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-sl3-s",
+      "stableTaskId": "leica-production-001-sl3-s",
+      "contextFiles": [
+        ".cheap-worker-leica001-sl3-s.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failure",
+          "error": null,
+          "usage": {
+            "inputTokens": 6815,
+            "outputTokens": 1919,
+            "totalTokens": 8734,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 6687,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "MALFORMED_RESPONSE: raw response omitted."
+          ],
+          "summary": "Worker returned invalid structured output; parent review or one corrected retry is required.",
+          "applied": false
+        },
+        {
+          "attempt": 2,
+          "status": "failure",
+          "error": "NETWORK_ERROR",
+          "usage": null,
+          "warnings": [],
+          "summary": null,
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "No usable returned result after two attempts; main reviewer extracted official source locally.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-sl3-p",
+      "stableTaskId": "leica-production-001-sl3-p",
+      "contextFiles": [
+        ".cheap-worker-leica001-sl3-p.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 5062,
+            "outputTokens": 798,
+            "totalTokens": 5860,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 4934,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Contract omits some fields entirely (e.g., video bitrate, exact sensor mm, mass with battery, internal memory); treated as UNKNOWN, not inferred absent.",
+            "Burst table is shutter-conditioned and bit-depth-conditioned; retained as structured conditions rather than a single number.",
+            "Supplied date 'June 2026' appears future-dated relative to typical present; reported as given without correction."
+          ],
+          "summary": "{\"product\":\"Leica SL3-P\",\"type_no\":\"3403\",\"sensor_effective_mp\":44.9,\"sensor_total_mp\":45.8,\"sensor_physical_mm\":null,\"mount\":\"Leica L bayonet\",\"mass_g_without_battery\":768,\"mass_without_battery_note\":\"Approx. 768 g (without battery, memory cards, camera bayonet cover)\",\"mass_with_battery_g\":null,\"variants\":[\"EU 10664\",\"JP 10665\",\"ROW 10666\"],\"finder\":\"EVF\",\"evf_resolution_dots\":5760000,\"evf_refresh_fps\":[60,120],\"optical_finder\":false,\"lcd_inches\":3.2,\"lcd_dots\":2332800,\"top_display\":\"1.28 in 128x128 mono LCD\",\"ibis\":true,\"ibis_axes\":5,\"ibis_stops\":5,\"lens_optical_stabilization\":null,\"focus\":\"Automatic or manual\",\"video_max_internal\":\"8K OG 8064x5376 MOV 3:2\",\"video_notable_internal\":[\"C8K 8128x4288 MOV 17:9\",\"8K 7680x4320\",\"RAW 8128x5418\",\"ProRes\",\"H.265\",\"H.264\"],\"video_bitdepth\":\"8 bit/10 bit for SD and CFe card, 10 bit HDMI\",\"video_log\":\"L-Log, HLG, Rec.2020\",\"video_time_limit\":\"No time limit nominal; temperature-dependent (8K/30 approx 20 min, 6K/30 approx 25 min, 4K/30 approx 30 min at 25C)\",\"video_bitrate\":null,\"burst_shutter_conditioned\":{\"2fps_14bit\":\"mech or electr\",\"5fps_14bit\":\"mech or electr\",\"7fps_14bit\":\"mech or electr\",\"15fps_12bit\":\"electr\",\"15fps_14bit\":\"electr\",\"25fps_12bit\":\"electr\",\"25fps_14bit\":\"electr\",\"30fps_12bit\":\"electr\",\"40fps_12bit\":\"electr\"},\"slots\":[\"SD/SDHC/SDXC UHS-II\",\"CFexpress Type B\"],\"internal_memory\":null,\"warnings\":[\"No built-in internal memory value supplied; storage listed only as card slots (UNKNOWN).\",\"No exact physical sensor dimensions in mm supplied (UNKNOWN).\",\"Mass with battery not supplied; only approx. 768 g without battery/cards/bayonet cover.\",\"No lens optical stabilization mentioned; only in-body 5-axis/5-stop IBIS supplied.\",\"Video bitrate value not supplied (UNKNOWN).\"]}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    },
+    {
+      "productId": "leica-d-lux-8",
+      "stableTaskId": "leica-production-001-d-lux-8",
+      "contextFiles": [
+        ".cheap-worker-leica001-d-lux-8.txt"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "usage": {
+            "inputTokens": 3370,
+            "outputTokens": 661,
+            "totalTokens": 4031,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 3242,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "Sensor effective 17 MP per official text; exact physical sensor dimensions in mm NOT stated in supplied data.",
+            "Mount not specified for this fixed-lens compact camera.",
+            "Image stabilization described as 'visual compensation system' - does NOT distinguish sensor IBIS vs optical lens stabilization.",
+            "4K limited to 30p/24p; 8-bit 4:2:0 H.264. No log profile stated in supplied data.",
+            "Burst fps are shutter/general continuous-shooting values; not explicitly tied to mechanical vs electronic shutter in this text.",
+            "Number of physical card slots not stated; internal memory not stated.",
+            "EVF is built-in; no optical rangefinder present."
+          ],
+          "summary": "{\"product\":\"Leica D-Lux 8\",\"sensor_effective_mp\":17,\"sensor_total_mp\":21.77,\"physical_sensor_mm\":null,\"mount\":null,\"lens_designation\":\"Leica DC Vario-Summilux 1:1.7-2.8/10.9-34 ASPH.\",\"actual_focal_mm\":[10.9,34],\"equivalent_focal_mm_35mm\":[24,75],\"mass_g_with_battery\":397,\"mass_g_without_battery\":357,\"mass_variant\":\"approx. 397 g /357 g (with/without battery)\",\"finder_type\":\"EVF OLED 2360000 dots 60fps 0.74x\",\"has_optical_rangefinder\":false,\"has_builtin_evf\":true,\"lcd\":\"3-inch TFT approx 1843200 dots 384ppi touch\",\"has_lcd\":true,\"stabilization\":\"Visual compensation system for photos and video (image stabilization) - sensor vs optical lens not specified\",\"stab_sensor_ibis\":null,\"stab_lens_optical\":null,\"focus_mode\":\"Automatic / Automatic (macro) / Manual\",\"autofocus_system\":\"Contrast detection\",\"video_max_internal_mode\":\"4K 3840x2160\",\"video_max_frame_rate\":\"29.97fps (4K 30p)\",\"video_max_bit_depth\":\"4:2:0 / 8 bit\",\"video_codec\":\"H.264 L-GOP\",\"video_max_bitrate_mbps\":100,\"video_log\":null,\"video_max_length\":\"29 min\",\"burst_mechanical_shutter_fps\":null,\"burst_conditions\":\"2 fps 12-bit AF; 7 fps 10-bit; 11 fps 10-bit (buffer DNG 12/13/23, DNG+JPG 12/13/14, JPG 100)\",\"storage_medium\":\"UHS-I/UHS Speed Class 3 SD/SDHC/SDXC card\",\"physical_card_slots\":null,\"internal_memory\":null}",
+          "applied": false
+        }
+      ],
+      "review": "reviewed; no patch automatically applied",
+      "usefulness": "Useful structured extraction crosschecked against original; absence/weight/mode/storage warnings adopted selectively.",
+      "adoptedWarnings": [
+        "No format/pixel-pitch derived sensor mm.",
+        "No omitted-feature-derived IBIS/video false.",
+        "Weight applies to stated finish and with/without battery only.",
+        "Burst shutter association and physical slot count require direct support."
+      ],
+      "discardedSuggestions": [
+        "Any unsupported physical-slot count (M11-P worker guessed1).",
+        "Any conversion of native sensor MP into output resolution (Monochrom60.3 sensor≠60.4DNG; SL3-P44.9 sensor≠44.2DNG)."
+      ],
+      "actualAdoption": "Main-reviewed supported facts only; final claim values, conditions and source selection constructed independently."
+    }
+  ],
+  "batchCheckpoint": {
+    "batchId": "production-leica-bodies-001",
+    "gate": "canonicalized",
+    "reviewedDiffDigest": "f554dc2182c9bbdb70afadd3161920230c3a5427785d0ef197547850374532b7",
+    "canonicalDigest": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+    "approvalId": "approval-09a5912ba1e9e0aaa6fe7c1086b2d87074698701c9c4643cc724b384549ba9b0",
+    "reapply": {
+      "status": "already-canonicalized",
+      "batchId": "production-leica-bodies-001",
+      "canonicalMatches": true
+    },
+    "remainingDigital": 0,
+    "next": "Leica production coverage audit; no additional ordinary batch unless official inventory delta/new field enrichment is separately requested. Do not repeat worker calls or apply.",
+    "report": "docs/OBJECTIVE_DB_LEICA_PRODUCTION_001.md",
+    "verification": {
+      "checkedAt": "2026-10-12T05:33:18.233Z",
+      "fullTests": {
+        "passed": 302,
+        "total": 302
+      },
+      "objectiveProductionCatalogCoverage": {
+        "passed": 275,
+        "total": 275
+      },
+      "leicaRegression": {
+        "passed": 14,
+        "total": 14
+      },
+      "canonicalValid": true,
+      "build": "passed; existing large chunk warning",
+      "nodeCheck": "passed: changed tests and six objective scripts",
+      "gitDiffCheck": "passed",
+      "workingTree": "uncommitted completed batch; review/commit before next clean-baseline audit",
+      "workerFixturesDeleted": true
+    }
+  },
+  "rawHelperTimestampWindow": {
+    "start": "2026-10-12T05:17:46.623Z",
+    "end": "2026-10-12T05:17:46.667Z"
+  },
+  "collectionFetches": [
+    {
+      "key": "ko-KR-m",
+      "url": "https://leica-camera.com/ko-KR/photography/m",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/m",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.274Z",
+      "sha256": "5c36ac5da3f3931168c2eb222b08c28fc26c5d7b91177d067b52c507d79048e5",
+      "bytes": 1419898
+    },
+    {
+      "key": "ko-KR-q",
+      "url": "https://leica-camera.com/ko-KR/photography/q",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/q",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.275Z",
+      "sha256": "9c354ed4a70e5ceb6d09bf22f12a2ca9a820fa648fe8709b6384f8381df0b42c",
+      "bytes": 1384273
+    },
+    {
+      "key": "ko-KR-sl",
+      "url": "https://leica-camera.com/ko-KR/photography/sl",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/sl",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.275Z",
+      "sha256": "8620a301b3b6fd6f10c2d60f75c3ea0859c15ce7c7d20e95eb0d53e49ffb5127",
+      "bytes": 1417852
+    },
+    {
+      "key": "ko-KR-compact-cameras",
+      "url": "https://leica-camera.com/ko-KR/photography/compact-cameras",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/%EC%82%AC%EC%A7%84/%EC%BB%B4%ED%8C%A9%ED%8A%B8-%EC%B9%B4%EB%A9%94%EB%9D%BC",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.275Z",
+      "sha256": "47d6e5deb1c76aa66adbe8a3b8c766b5919ed76fa73ee71f8e7c1944576a71ee",
+      "bytes": 1352797
+    },
+    {
+      "key": "ko-KR-sofort",
+      "url": "https://leica-camera.com/ko-KR/photography/sofort",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/leica-camera-online-store-international/photography/leica-sofort",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.275Z",
+      "sha256": "9ffa40365f53562084496662402aa6eb2e75b5e02356cf963b3b1c56903301ec",
+      "bytes": 1301985
+    },
+    {
+      "key": "ko-KR-cameras",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/camera",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:51:55.275Z",
+      "sha256": "d5f581ffc43ba98d51ec0c4188bc8b2bcdeab159ce15de56f698cabd85e3df05",
+      "bytes": 1509473
+    },
+    {
+      "key": "ko-KR-s",
+      "url": "https://leica-camera.com/ko-KR/photography/s",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/s",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:05.269Z",
+      "sha256": "cb4b514128942f5a7fe3fe38d16cd3c5e8581b16b494333b0fe5a54eaac08d3b",
+      "bytes": 1367754
+    },
+    {
+      "key": "en-int-m",
+      "url": "https://leica-camera.com/en-int/photography/m",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/m",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:06.935Z",
+      "sha256": "abc9214dcd7e0af782f99349122e840ec8b5011ebbe2044f8b82024671d890e1",
+      "bytes": 1398168
+    },
+    {
+      "key": "en-int-q",
+      "url": "https://leica-camera.com/en-int/photography/q",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/q",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:08.948Z",
+      "sha256": "0ed64369d1505b9cc63760ca4bbb608414671bfb5220137d368b7dfefe34985c",
+      "bytes": 1360673
+    },
+    {
+      "key": "en-int-sl",
+      "url": "https://leica-camera.com/en-int/photography/sl",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/sl",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:11.914Z",
+      "sha256": "fc0582296305111616a1c22f1825df1a392a0c9a9d0623e5003aa99b4c8fbf53",
+      "bytes": 1392907
+    },
+    {
+      "key": "en-int-compact-cameras",
+      "url": "https://leica-camera.com/en-int/photography/compact-cameras",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/compact-cameras",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:12.372Z",
+      "sha256": "cd3653ef876e9e244595953372522a6669eb2c1037bb127085a06454217c6e5e",
+      "bytes": 1329028
+    },
+    {
+      "key": "en-int-sofort",
+      "url": "https://leica-camera.com/en-int/photography/sofort",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/sofort",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:13.320Z",
+      "sha256": "d404ee8811107b562ebd1250c39a1c27e5dde293cc5e6a70380e445b36384aad",
+      "bytes": 1281597
+    },
+    {
+      "key": "en-int-cameras",
+      "url": "https://leica-camera.com/en-int/photography/cameras",
+      "resolvedUrl": "https://leica-camera.com/en-int/camera",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:15.388Z",
+      "sha256": "155c5c9eb580d41946f821ab7dec8ff9b05b563eb6186064d86572592469a5e3",
+      "bytes": 1484556
+    },
+    {
+      "key": "en-int-s",
+      "url": "https://leica-camera.com/en-int/photography/s",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/s",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:52:18.352Z",
+      "sha256": "8daef2510b245fc17f908927a2e307086fc82703e0f946e032c1674ac0a0dbb0",
+      "bytes": 1347137
+    },
+    {
+      "key": "product-ko-KR-m-ev1-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m-ev1-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-ev1-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.374Z",
+      "sha256": "530965a42b901339b8b33f2bbbf9f17922f114690ec0edc437cdc740e84ff210",
+      "bytes": 1448984
+    },
+    {
+      "key": "product-ko-KR-m11-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.375Z",
+      "sha256": "88243f8d1461cdb9976c1e32981d6dfaaee2f826b559af9db10fdf5eb1edc8de",
+      "bytes": 1397019
+    },
+    {
+      "key": "product-ko-KR-m11-d-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-d-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-d-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.375Z",
+      "sha256": "ec127a4ba612e873881969755270f23f4f6f7e1c9bcc43d871b73137aa861d65",
+      "bytes": 1404559
+    },
+    {
+      "key": "product-ko-KR-m11-glossy-black-paint-finish",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-glossy-black-paint-finish",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-glossy-black-paint-finish",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.375Z",
+      "sha256": "4cd6dace88057904a5e4356c85aaf68653c9aa54877ce4ea0f6bb28959ccb584",
+      "bytes": 1354598
+    },
+    {
+      "key": "product-ko-KR-m11-monochrom",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-monochrom",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-monochrom",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.375Z",
+      "sha256": "15b231904e2e46342b21dfbea63b1920753601ec7d93ec9f5d2a2664709cf5c4",
+      "bytes": 1401368
+    },
+    {
+      "key": "product-ko-KR-m11-p-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:25.375Z",
+      "sha256": "da06a6b3e186d20a604a45f17fc560465bad0cd5252c5b326c028da49458f04e",
+      "bytes": 1480971
+    },
+    {
+      "key": "product-ko-KR-m11-p-safari",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-safari",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-safari",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:45.715Z",
+      "sha256": "25c7f09cb8eac7ef51c66e430822ef92cf294df0b111ab380724c411d287f0cd",
+      "bytes": 1394423
+    },
+    {
+      "key": "product-ko-KR-m11-p-silver",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-silver",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-silver",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:45.948Z",
+      "sha256": "6675600270cfb333401b2078e85bd4d22ee3887736639357ddf80d035378ba95",
+      "bytes": 1481146
+    },
+    {
+      "key": "product-ko-KR-q3-43-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-43-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-43-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:46.557Z",
+      "sha256": "a4c4c87d7953ba74018ebd828025d0a448efe3760213f0c35bb295545e7ba093",
+      "bytes": 1413757
+    },
+    {
+      "key": "product-ko-KR-q3-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:47.359Z",
+      "sha256": "a9d8b9d6b8dc4982f7cabc9affd04b0b0b1bddc9dbaf95221b5b9ddbaf504a00",
+      "bytes": 1425385
+    },
+    {
+      "key": "product-ko-KR-q3-monochrom",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-monochrom",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-monochrom",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:47.368Z",
+      "sha256": "6a599e01b3181dd288f11d1c6f5b1afd89444954abe019ed4d83094b9568ce58",
+      "bytes": 1386193
+    },
+    {
+      "key": "product-ko-KR-sl3-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:51.804Z",
+      "sha256": "0264177172117f9bc863dc0dfa38bf6b0e8ece49d5c4419c05ef96a1669eb467",
+      "bytes": 1472926
+    },
+    {
+      "key": "product-ko-KR-sl3-p-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-p-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-p-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:56.857Z",
+      "sha256": "b3ae0f57c624fb36414d5daa9f9ced9bdff6c6845f88669d9b5bc29bfee4d408",
+      "bytes": 1467389
+    },
+    {
+      "key": "product-ko-KR-sl3-s-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-s-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-s-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:56.863Z",
+      "sha256": "63d99b131388a5c6700f6c69a0639331104fb320716074ede22edbb21c3d48be",
+      "bytes": 1440107
+    },
+    {
+      "key": "product-ko-KR-d-lux-8",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:57.243Z",
+      "sha256": "3f43426db620629ce8a2fecb8d6371085b6e03be7bb590afc0ccd1cd6d67bcf1",
+      "bytes": 1409010
+    },
+    {
+      "key": "product-en-int-m-ev1-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:57.678Z",
+      "sha256": "d81bf07c8c700b2ce6532320ecfe26a1f66f299e0fd3c7dfa0ad797c0541ae86",
+      "bytes": 1425847
+    },
+    {
+      "key": "product-en-int-m11-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:53:57.771Z",
+      "sha256": "ca6be7bd8b2e18d669f109946e9c9b2d1396241d6f9485f1ea9f2b78b3a9b1f8",
+      "bytes": 1373943
+    },
+    {
+      "key": "product-en-int-m11-d-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:02.174Z",
+      "sha256": "aa010cd1bc4bf42f0300dbb0e035792aed7883096776c62ba45e795d210ece0b",
+      "bytes": 1381645
+    },
+    {
+      "key": "product-en-int-m11-glossy-black-paint-finish",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-glossy-black-paint-finish",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-glossy-black-paint-finish",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:03.759Z",
+      "sha256": "4ba84c596517acb5e154dcf1bf118f5cf055d34a548e96345d72500059dbbc5a",
+      "bytes": 1332349
+    },
+    {
+      "key": "product-en-int-m11-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:06.609Z",
+      "sha256": "12deb9997c2a99b88a42a7710356719f9dfe173d5ceefc9c406baf91c6a36f29",
+      "bytes": 1375432
+    },
+    {
+      "key": "product-en-int-m11-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:06.641Z",
+      "sha256": "50ab71ce45032e4aee3a57b7636aabe8cf792134f001faf2c50308335caca89d",
+      "bytes": 1455551
+    },
+    {
+      "key": "product-en-int-m11-p-safari",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-safari",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-safari",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:07.133Z",
+      "sha256": "07e2379ac7d756cae0ea37529aabdcf7431bd4bf879c90b3dba5a1b5a2384373",
+      "bytes": 1372079
+    },
+    {
+      "key": "product-en-int-m11-p-silver",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-silver",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-silver",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:07.669Z",
+      "sha256": "2e5bed081fd1e6004d5aa6075be738ff849a83f6b8719542744e0af94257aa2a",
+      "bytes": 1455732
+    },
+    {
+      "key": "product-en-int-q3-43-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:09.835Z",
+      "sha256": "cce500515fb48b5a294068928bb59b97815cf26457cfb5681faf86456528c509",
+      "bytes": 1391001
+    },
+    {
+      "key": "product-en-int-q3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:35.606Z",
+      "sha256": "dc14ab6d7cd94f9f2295bad2183525158ae8b63044e12dc4ac34af1b74518f97",
+      "bytes": 1399555
+    },
+    {
+      "key": "product-en-int-q3-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:54:38.163Z",
+      "sha256": "4c79c23c3e9540a45be0172ac3e4a3a7a4fbc6a8c66375d805c36d5bd1b757e4",
+      "bytes": 1363987
+    },
+    {
+      "key": "product-en-int-sl3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:55:01.681Z",
+      "sha256": "e69afeb3cb7e728ad4943dcf324d960a51187deb77a4b1051aff2e573cb70783",
+      "bytes": 1446684
+    },
+    {
+      "key": "product-en-int-sl3-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:55:03.404Z",
+      "sha256": "c6007b6ec3a7b1454154c39c7b7da5b8bf3bfa8091afae95927b8a202ca7142b",
+      "bytes": 1443696
+    },
+    {
+      "key": "product-en-int-sl3-s-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:55:07.757Z",
+      "sha256": "115dbe9d7170a27f5dec672ae957cc1a5f4f6034b73d95714b4dc7111c86e3d3",
+      "bytes": 1417226
+    },
+    {
+      "key": "product-en-int-d-lux-8",
+      "url": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:55:12.316Z",
+      "sha256": "2dcd1cf1af54cb4b911032331194f134a44b88e49ab5f984a3b925d99d16a7e1",
+      "bytes": 1386472
+    },
+    {
+      "key": "gallery-ko-KR-m-page1",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m?page=1",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.530Z",
+      "sha256": "5266d369ce1644f16e9e7b9ec395f1f19271677288a0c3142a2464726dee8b01",
+      "bytes": 1349541
+    },
+    {
+      "key": "gallery-ko-KR-m-page2",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m?page=2",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.530Z",
+      "sha256": "a777b781fc5ce32c4a5f6c2e92fabce64c473ad9c58f29b8b1186c963e9747b0",
+      "bytes": 1346128
+    },
+    {
+      "key": "gallery-ko-KR-m-page3",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m?page=3",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.530Z",
+      "sha256": "8c4528c525d18835e804a00cb1b4a00e386dfb2dc5732a37d7f43283dfc17b10",
+      "bytes": 1346128
+    },
+    {
+      "key": "gallery-ko-KR-system-cameras-page1",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=1",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.530Z",
+      "sha256": "acfc545c9f59300ead3c950d2ae8ca8a42812b4d06d489f4bbec47b9eadbe5bb",
+      "bytes": 1347284
+    },
+    {
+      "key": "gallery-ko-KR-system-cameras-page2",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=2",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.531Z",
+      "sha256": "909355f9b93b40111224605a1ec80b6c57b0e59f7e920200ba29f37b119afff8",
+      "bytes": 1333873
+    },
+    {
+      "key": "gallery-ko-KR-system-cameras-page3",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=3",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/system-cameras?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:58:48.531Z",
+      "sha256": "40517a24d3af8894d82bb7b285d68a36cbfe031521f56ef8487d3ccc13047c1f",
+      "bytes": 1333873
+    },
+    {
+      "key": "gallery-ko-KR-compact-cameras-page1",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=1",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:20.510Z",
+      "sha256": "d9f375fb756b6a0acd036e304c03645d239b26353df3c6bbcd87d4f7df79ebc0",
+      "bytes": 1314550
+    },
+    {
+      "key": "gallery-ko-KR-compact-cameras-page2",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=2",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:22.675Z",
+      "sha256": "07e8f0b604ecf6015e3f19331b447144cfb8f04fefa2b070f7412eb755976fe8",
+      "bytes": 1314550
+    },
+    {
+      "key": "gallery-ko-KR-compact-cameras-page3",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=3",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/compact-cameras?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:24.827Z",
+      "sha256": "d8f267466afe57d8ae57fcd3afa2cf16ba2ddaeaf0814c8a61806532ce56e724",
+      "bytes": 1314550
+    },
+    {
+      "key": "gallery-en-int-m-page1",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m?page=1",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:24.827Z",
+      "sha256": "ce0cc2c19cea8d216d7a828a118f4c5bc3bfa4520ed88f433a3c3303937c8d24",
+      "bytes": 1329260
+    },
+    {
+      "key": "gallery-en-int-m-page2",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m?page=2",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:33.097Z",
+      "sha256": "3c08ecdb807df88ec08a71406876e6fce62f95b78ab75339115efb2be2ad6527",
+      "bytes": 1326081
+    },
+    {
+      "key": "gallery-en-int-m-page3",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m?page=3",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:33.555Z",
+      "sha256": "b245b498dd92c04a252a0ee3bae5a30377fb5f75da92a44ba901a248fb2641ec",
+      "bytes": 1326081
+    },
+    {
+      "key": "gallery-en-int-system-cameras-page1",
+      "url": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=1",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:35.416Z",
+      "sha256": "cebe8def2f874c8f18ddda2c7f7286ab67a97b546feebaf15fb1fd443c618e30",
+      "bytes": 1326484
+    },
+    {
+      "key": "gallery-en-int-system-cameras-page2",
+      "url": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=2",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:35.648Z",
+      "sha256": "bf274241c326df2b0be3926241764a40dcd9cc0f57929d0ecca1065eef818642",
+      "bytes": 1313427
+    },
+    {
+      "key": "gallery-en-int-system-cameras-page3",
+      "url": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=3",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/system-cameras?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:38.726Z",
+      "sha256": "6a0ea6b83fa13830d71c4639bc3a9b3b1b7474cd93b83d4f176539021eedc3d7",
+      "bytes": 1313427
+    },
+    {
+      "key": "gallery-en-int-compact-cameras-page1",
+      "url": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=1",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=1",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:39.288Z",
+      "sha256": "cfcf114f4ca2ef53b6b4160d51662776b0774dab83213040c2e04e52f644799c",
+      "bytes": 1294450
+    },
+    {
+      "key": "gallery-en-int-compact-cameras-page2",
+      "url": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=2",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=2",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:41.882Z",
+      "sha256": "adb71bd85c2b4a62efa03663814def50f61070671a3525ca21c9a4e93a21cf50",
+      "bytes": 1294450
+    },
+    {
+      "key": "gallery-en-int-compact-cameras-page3",
+      "url": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=3",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/compact-cameras?page=3",
+      "status": 200,
+      "accessedAt": "2026-10-12T04:59:42.318Z",
+      "sha256": "862d670454db6904facd6fcc8126a10225ac32250909758fbf55f72a22be3f4a",
+      "bytes": 1294450
+    },
+    {
+      "key": "downloads-d-lux-8",
+      "url": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.731Z",
+      "sha256": "72aa1629c8947fda052ca912b5ae1e876e5bef2ec52a6cf883d92a2801bfb962",
+      "bytes": 1394360
+    },
+    {
+      "key": "downloads-m-ev1-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.732Z",
+      "sha256": "29d2f9989191ae90e93788431922479e44e4b321022cb6fd87b3299f8f0f85e3",
+      "bytes": 1396008
+    },
+    {
+      "key": "downloads-m11-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.732Z",
+      "sha256": "930228f08a745892005421f3d8687ddb1f4494edac44a3bf737650534aa8ae28",
+      "bytes": 1409282
+    },
+    {
+      "key": "downloads-m11-d-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.732Z",
+      "sha256": "f941b1b0ce098340774b2ee9a5470c190151387b4b5fd66b736b9975b1c8be3c",
+      "bytes": 1400196
+    },
+    {
+      "key": "downloads-m11-glossy-black-paint-finish",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-glossy-black-paint-finish/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-glossy-black-paint-finish/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.732Z",
+      "sha256": "99db702e1a3e6abe9b0e399fe6068a5592cd62e5c969e1242031c4a63cd913e6",
+      "bytes": 1410718
+    },
+    {
+      "key": "downloads-m11-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:07.732Z",
+      "sha256": "1f5feb7fecda228ce838abb7101509d03357f510bba1a3342b43a7bdcd45713d",
+      "bytes": 1392098
+    },
+    {
+      "key": "downloads-m11-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:14.475Z",
+      "sha256": "25140b9a552c76d8fbba8449f5fae3aa53fd146b4b105fa80a37fe7eff5dc332",
+      "bytes": 1397604
+    },
+    {
+      "key": "downloads-m11-p-safari",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-safari/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-safari/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:16.151Z",
+      "sha256": "ea905d7ecf83c7eded9419e1ba78bff930c33e25f3dfb2f066a0a7af85dae1f3",
+      "bytes": 1397539
+    },
+    {
+      "key": "downloads-m11-p-silver",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-silver/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-silver/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:16.690Z",
+      "sha256": "e94657fc11080774ab82b9c95788a96d797386f5b1162de8c7454911becfb1d5",
+      "bytes": 1397773
+    },
+    {
+      "key": "downloads-q3-43-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:16.856Z",
+      "sha256": "09453ae3654c3d27a75590418e25031e0362e0f9998f002182684cd4ef1c1a4d",
+      "bytes": 1390655
+    },
+    {
+      "key": "downloads-q3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:16.862Z",
+      "sha256": "71c32c706212c66f71dfc9ec5ee3cb6b6c2dfa1d1dc465470fdf8edb1012c137",
+      "bytes": 1403906
+    },
+    {
+      "key": "downloads-q3-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:16.862Z",
+      "sha256": "c4bdb5c0ae825daf6ee030a923428153ec9886abd22674ae9fa5383e25c0e55e",
+      "bytes": 1396368
+    },
+    {
+      "key": "downloads-sl3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:23.400Z",
+      "sha256": "40106c8db7659209f9feaaec00c2349826cf738c7d48c84d7c4d36c6d96c775e",
+      "bytes": 1406896
+    },
+    {
+      "key": "downloads-sl3-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:26.871Z",
+      "sha256": "b8a724e2d5d89e68beb80e456bf5ccf5df8f5b5447943944e9d5426d601c54fb",
+      "bytes": 1419995
+    },
+    {
+      "key": "downloads-sl3-s-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black/downloads",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black/downloads",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:00:29.415Z",
+      "sha256": "82d5a37ed1191de0c4ab17ba389bc6a54586b8ed3175f841450adadd01d787c2",
+      "bytes": 1417186
+    },
+    {
+      "key": "spec-m11-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-13764-Leica_M11_technical_data_EN.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13764-Leica_M11_technical_data_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.976Z",
+      "sha256": "f12b2cb7f1b9fc0d7b7db056571f91dc66fcdfadc9e462d97649716b8991858c",
+      "bytes": 536488
+    },
+    {
+      "key": "spec-m11-p-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-13818-Leica-M11-P_Technical-Data_EN.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13818-Leica-M11-P_Technical-Data_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.977Z",
+      "sha256": "68ef512538439aaf2ccc753721f0facf29dc7e0a31ae094c64850820324a8c66",
+      "bytes": 596645
+    },
+    {
+      "key": "spec-m11-d-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-13912-Leica-M11-D_Technical_Data_EN.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13912-Leica-M11-D_Technical_Data_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.977Z",
+      "sha256": "7af81d90b590fc533fb41d828a2db5204e3635a3872f8f323cd6d689c50f46f3",
+      "bytes": 662415
+    },
+    {
+      "key": "spec-m11-monochrom",
+      "url": "https://leica-camera.com/sites/default/files/pm-13919-DE_Datenblatt_M11-Monochrom.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13919-DE_Datenblatt_M11-Monochrom.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.977Z",
+      "sha256": "3ee5507df6676ae07213d472f0362605cc1b28dd3e6f29c4c08bee200287f21a",
+      "bytes": 687763
+    },
+    {
+      "key": "spec-m-ev1-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-24998-Leica-M-EV1_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-24998-Leica-M-EV1_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.977Z",
+      "sha256": "eba0d8bdce7fd5234c8fe7894d790c4ec47e7db4d38adf55a20119604543bb5b",
+      "bytes": 464519
+    },
+    {
+      "key": "spec-q3-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-19567-EN_technical_data_Leica_Q3_1.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-19567-EN_technical_data_Leica_Q3_1.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:26.977Z",
+      "sha256": "83f34f022feda9746d7eda47dc6562f46caab28221f7cb275ceb10d8ce99cd9e",
+      "bytes": 1076728
+    },
+    {
+      "key": "spec-q3-43-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-13098-Leica-Q343_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13098-Leica-Q343_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:43.579Z",
+      "sha256": "6656a3ab59dfddeb63f1fd9e2a168af1e5c026fe88d9de40f219043b0e64a60d",
+      "bytes": 583507
+    },
+    {
+      "key": "spec-q3-monochrom",
+      "url": "https://leica-camera.com/sites/default/files/pm-26854-Leica-Q3-Monochrome_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-26854-Leica-Q3-Monochrome_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:43.711Z",
+      "sha256": "79e7c47ca5cb0c1abcfbfb7f1908c0a49bec420a3d8901d6142d07a6d4287a35",
+      "bytes": 1015443
+    },
+    {
+      "key": "spec-sl3-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-14627-Leica-SL3_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-14627-Leica-SL3_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:43.771Z",
+      "sha256": "234819bcabda642584ff45ec7b620e4569b4eb898446fae6fb7923b3d841dd4d",
+      "bytes": 1370255
+    },
+    {
+      "key": "spec-sl3-s-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-14708-Leica-SL3-S_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-14708-Leica-SL3-S_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:44.190Z",
+      "sha256": "ef859f2e483cb192e3cc9926f94261d01a11fb0988686e8e4753bb48446c343b",
+      "bytes": 1248841
+    },
+    {
+      "key": "spec-sl3-p-black",
+      "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:44.212Z",
+      "sha256": "9dbc95b77c602f4e82fc6c2859ad5307d5e9b456eb5abd7743ce656fdb2232e3",
+      "bytes": 1143078
+    },
+    {
+      "key": "spec-d-lux-8",
+      "url": "https://leica-camera.com/sites/default/files/pm-14928-Leica-D-Lux8_Technical-Data_en.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-14928-Leica-D-Lux8_Technical-Data_en.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:01:46.046Z",
+      "sha256": "d588c92228415e77a3c5bcf8ca15230c894b38cf3d0c12675d3c8fc80988c7af",
+      "bytes": 820954
+    },
+    {
+      "key": "card-sofort-2-burton-edition",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-burton-edition",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-burton-edition",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:05.232Z",
+      "sha256": "e15cd986718b4f3c953e2a1f756c14631ff400f388580cad52a9bd5040db1f29",
+      "bytes": 1355752
+    },
+    {
+      "key": "card-sofort-2-red",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-red",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-red",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:11.255Z",
+      "sha256": "fc2bd56fb82f3c30906dd07940036e150e7dfcb019575ae3eb2e2e0d903ab136",
+      "bytes": 1368623
+    },
+    {
+      "key": "card-sofort-2-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:14.583Z",
+      "sha256": "37cee4cec1348c326e0e2b11ed7488b5ab2e0959b8288f1bf206f1778304ef23",
+      "bytes": 1368568
+    },
+    {
+      "key": "card-sofort-2-white",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-white",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/instant-cameras/sofort-2-white",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:22.652Z",
+      "sha256": "06400c4fbd13a8deb161527227ef3b46fde03b645a23097e82b7d1fcd7dc57e7",
+      "bytes": 1368563
+    },
+    {
+      "key": "card-sofort-2-100-years",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/sofort-2-100-years",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/sofort-2-100-years",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:30.058Z",
+      "sha256": "0a91c093b6cdab8697c440419e219a0a7e41ef2367f623e1c479e186af162919",
+      "bytes": 1375196
+    },
+    {
+      "key": "card-m6",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m6",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m6",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:34.637Z",
+      "sha256": "133ca4667fd55ae76707c704b971db3b672b1ccd3f7206e424be5aa7269c25bd",
+      "bytes": 1394157
+    },
+    {
+      "key": "card-m-a-typ-127-black",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-black",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-black",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:35.919Z",
+      "sha256": "fe8f13791af0d83ca260d0df0af3cb86699365690c24c7621376e3e930379730",
+      "bytes": 1347741
+    },
+    {
+      "key": "card-m-a-typ-127-silver",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-silver",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m-a-typ-127-silver",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:40.329Z",
+      "sha256": "8f25c1fedd6b6842a74b80274e1849ea3c6a08ed923fd7738844878daed1f1da",
+      "bytes": 1347814
+    },
+    {
+      "key": "card-mp-black-lacquered",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-black-lacquered",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-black-lacquered",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:44.139Z",
+      "sha256": "285b042e2d0646f049d110068116a37ec029faa9b42af89a9719c2e2167687e9",
+      "bytes": 1349602
+    },
+    {
+      "key": "card-mp-silver",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-silver",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/mp-silver",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:44.248Z",
+      "sha256": "caf20fff59b1ad9b4ffe6e0e4ac248769a32c7c374704f7f75fe06bd1310cc11",
+      "bytes": 1349109
+    },
+    {
+      "key": "card-sl3-s-kit-vario-24-70-sl3-s-kit-vario-70-200",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70-sl3-s-kit-vario-70-200",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70-sl3-s-kit-vario-70-200",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:46.624Z",
+      "sha256": "e8215a6feb385f2f3d341fe371be2e31dc24f628110f3489845738e48487d560",
+      "bytes": 1367642
+    },
+    {
+      "key": "card-sl3-s-kit-prime-35",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-35",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-35",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:48.310Z",
+      "sha256": "abbcf34dff64ac7e1047de1a1b6f6a3e94bf2dd7a1564e0c2f2209e4677564df",
+      "bytes": 1361311
+    },
+    {
+      "key": "card-sl3-s-kit-prime-50",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-50",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-prime-50",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:48.538Z",
+      "sha256": "ba3f0afbae172ac7e1145298738478cdd67644570263d8478e948a1257bff950",
+      "bytes": 1361120
+    },
+    {
+      "key": "card-sl3-reporter",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-reporter",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-reporter",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:49.981Z",
+      "sha256": "90a732cb07c15b184ba47f321ccce3b8501224a7ee7f0dd28c5bdff183bfa348",
+      "bytes": 1400615
+    },
+    {
+      "key": "card-sl3-s-kit-vario-elmarit-28-70",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-elmarit-28-70",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-elmarit-28-70",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:51.792Z",
+      "sha256": "275cd100f81390dda35820a89210def4d303a816315e85e8ed4a943519b06ec3",
+      "bytes": 1362994
+    },
+    {
+      "key": "card-sl3-s-kit-vario-24-70",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-s-kit-vario-24-70",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:02:55.471Z",
+      "sha256": "79a0c0b37ae4cf457e7a526dfdc4618eaa4b2dbed1eb6601e1e37837aad5b2ef",
+      "bytes": 1361819
+    },
+    {
+      "key": "card-sl3-p-kit-vario-28-70",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-28-70",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-28-70",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:01.037Z",
+      "sha256": "a67658e9be9a6e49230146c73e97888e131747c60e73d03adfe4a3d2017a47f7",
+      "bytes": 1373208
+    },
+    {
+      "key": "card-sl3-p-kit-vario-24-70",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:10.409Z",
+      "sha256": "3140371cf6072342bde8626e9d0435717ceea3c82a9713b535d9cae6deb0c785",
+      "bytes": 1373090
+    },
+    {
+      "key": "card-sl3-p-kit-vario-24-70-and-vario-70-200",
+      "url": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70-and-vario-70-200",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/lenses/sl/sl3-p-kit-vario-24-70-and-vario-70-200",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:12.757Z",
+      "sha256": "5b4ab598770317108f4684557341c6b0a994ab9f6033583a5c68c3c622cfb198",
+      "bytes": 1378913
+    },
+    {
+      "key": "press-sl3p",
+      "url": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+      "resolvedUrl": "https://leica-camera.com/en-int/press/new-leica-sl3-p",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:15.726Z",
+      "sha256": "94eef4e9eb091240ac77c4d2587cf55bea85ce3482b82a0dedd73eaba76c6637",
+      "bytes": 1305824
+    },
+    {
+      "key": "press-q3mono",
+      "url": "https://leica-camera.com/en-US/press/leica-q3-monochrom",
+      "resolvedUrl": "https://leica-camera.com/en-US/press/leica-q3-monochrom",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:16.905Z",
+      "sha256": "83e4a6a27f96b685c25bf3c04abcfd20def4098312bb25e899c67ae55c859fa9",
+      "bytes": 1325820
+    },
+    {
+      "key": "shop-mev1",
+      "url": "https://leica-camera.com/en-GB/photography/cameras/m/m-ev1-black/shop-now",
+      "resolvedUrl": "https://leica-camera.com/en-GB/photography/cameras/m/m-ev1-black/shop-now",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:03:18.977Z",
+      "sha256": "70104442656ce988bd3987b5a5833c98fa81e3dfc1e8f8c6a3baea1a3147752c",
+      "bytes": 1519002
+    },
+    {
+      "key": "card-m11-p-metal-gray",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-metal-gray",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-metal-gray",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.216Z",
+      "sha256": "19d91900f42e248d5daaf465f9c695118681da7f6c7fba8410d47b363cf08c3a",
+      "bytes": 1481700
+    },
+    {
+      "key": "card-q3-metal-gray",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-metal-gray",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-metal-gray",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.216Z",
+      "sha256": "0d60efcdec1c77eb64cef45400b8032091ff7ffad157205b8a6d0cf689743cc3",
+      "bytes": 1426284
+    },
+    {
+      "key": "card-d-lux-8-metal-gray",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8-metal-gray",
+      "resolvedUrl": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8-metal-gray",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.216Z",
+      "sha256": "9b1d5c7d306b1cd56fb7054af22f1e9688a167358780d83202dc871f73ceb3da",
+      "bytes": 1409319
+    },
+    {
+      "key": "technical-m11-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.217Z",
+      "sha256": "e7cb7c0170363772bc17299082200c0c35393c14b39cfb560af3fc9b656f1740",
+      "bytes": 1317727
+    },
+    {
+      "key": "technical-m11-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-p-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.217Z",
+      "sha256": "293147feb5747404c4e49286ec626e94a4158c892fdf96fb0d50faabaa458ac3",
+      "bytes": 1314854
+    },
+    {
+      "key": "technical-m11-d-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-d-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:05:45.217Z",
+      "sha256": "21f825b11c01c26c5a33aa08560eaf2d6976b65cbb88597762d02035b755b32f",
+      "bytes": 1308031
+    },
+    {
+      "key": "technical-m11-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m11-monochrom/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:06.111Z",
+      "sha256": "4367c80bdab0e20f3bc41a5e5e67993139650ea91319a0aa0f50d88c8e147003",
+      "bytes": 1319583
+    },
+    {
+      "key": "technical-m-ev1-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/m/m-ev1-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:29.652Z",
+      "sha256": "2a68464c238c68f4d3798886e7397dd28aa8c0480cbb00fa576cf9495e1a28ee",
+      "bytes": 1305984
+    },
+    {
+      "key": "technical-q3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:46.076Z",
+      "sha256": "7759196d6e7ac20ba4b681c774fe464886afa46536484f49eb8a2cfd539c2dcf",
+      "bytes": 1337858
+    },
+    {
+      "key": "technical-q3-43-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-43-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:47.906Z",
+      "sha256": "72ece187f4b44f2febf6cbb5df3772d75f88c49168f904a39ad7036ea8c78212",
+      "bytes": 1311347
+    },
+    {
+      "key": "technical-q3-monochrom",
+      "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:53.267Z",
+      "sha256": "46e692df841809e047315d2ee637c962b717ff3dce31041d1ebd6f1663091375",
+      "bytes": 1314483
+    },
+    {
+      "key": "technical-sl3-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:54.878Z",
+      "sha256": "83bb05049f0b745851fdf222e37d2cb6e239b495e0034a291e020d58d0c3aef9",
+      "bytes": 1316571
+    },
+    {
+      "key": "technical-sl3-s-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-s-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:55.638Z",
+      "sha256": "ae1b45a370ab09d9e84fa77aaa8dd38a5802fe4442dba82e4b6270a8aead170f",
+      "bytes": 1332596
+    },
+    {
+      "key": "technical-sl3-p-black",
+      "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-p-black/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:06:58.045Z",
+      "sha256": "507e683bbf541d2c59af711fd4b965de7d19cf4a26f7836a52961f24d5cfcac9",
+      "bytes": 1332958
+    },
+    {
+      "key": "technical-d-lux-8",
+      "url": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8/technical-specification",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/cameras/d-lux/d-lux-8/technical-specification",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:07:04.516Z",
+      "sha256": "8087feee0b579d3e1f1e86f84a4bdc3efdb3e8a3f1ffcae11e66ab79cf64a102",
+      "bytes": 1308471
+    },
+    {
+      "key": "spec-m11mono-en",
+      "url": "https://leica-camera.com/sites/default/files/pm-13992-EN_Tech-Data_M11-Monochrom.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-13992-EN_Tech-Data_M11-Monochrom.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:08:17.686Z",
+      "sha256": "e8fc574ab8e164265cafeeb0f29c9b99434cdf1a7f32bcaa65f5e4dbd2f09850",
+      "bytes": 687374
+    },
+    {
+      "key": "spec-sl3p-video",
+      "url": "https://leica-camera.com/sites/default/files/pm-28338-ALL_SL3-P_VideoSpecs.pdf",
+      "resolvedUrl": "https://leica-camera.com/sites/default/files/pm-28338-ALL_SL3-P_VideoSpecs.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:08:17.686Z",
+      "sha256": "8e7bdd1bb0ca1396ceab9e543791b16ad9463d8c20624397919601a7d1878819",
+      "bytes": 149827
+    },
+    {
+      "key": "m-family-comparison",
+      "url": "https://leica-camera.com/en-int/photography/m/m11-family",
+      "resolvedUrl": "https://leica-camera.com/en-int/photography/m/m11-family",
+      "status": 200,
+      "accessedAt": "2026-10-12T05:11:23.467Z",
+      "sha256": "a9d1de9b0b82a6c2c1e7e68ae270e8e15067c1598e49746636b44033ca8874a5",
+      "bytes": 1335753
+    }
+  ],
+  "workerTotals": {
+    "inputTokens": 69950,
+    "outputTokens": 14895,
+    "totalTokens": 84845
+  },
+  "workerUsageUnavailable": [
+    {
+      "productId": "leica-m11",
+      "attempt": 1,
+      "error": "NETWORK_ERROR",
+      "usage": "not returned; not assumed zero"
+    },
+    {
+      "productId": "leica-m11",
+      "attempt": 2,
+      "error": "NETWORK_ERROR",
+      "usage": "not returned; not assumed zero"
+    },
+    {
+      "productId": "leica-sl3-s",
+      "attempt": 2,
+      "error": "NETWORK_ERROR",
+      "usage": "not returned; not assumed zero"
+    }
+  ],
+  "workerStats": {
+    "independentTasks": 12,
+    "apiAttempts": 16,
+    "retries": 4,
+    "usableProducts": 10,
+    "localFallbackProducts": [
+      "leica-m11",
+      "leica-sl3-s"
+    ]
+  },
+  "reviewDecisions": {
+    "reviewer": "GPT-6.1 Sol",
+    "userAdditionalInterventions": 0,
+    "identityReview": "12 digital independent models; variants and film/instant not new products; Q3/SL3 IDs/names/aliases/prices preserved",
+    "sourceValueConflicts": 0,
+    "initialDraftIssues": [
+      "Duplicate dedicated identity evidence rejected by normalize; fixed before any sealing.",
+      "Whole LCD object with null mechanism plus separate known mechanism leaf caused CLAIM_PRODUCT_MISMATCH; raw changed to existing LCD leaf contracts.",
+      "SL3 ordinary CIPA count260 not supported by collected source; corrected to UNKNOWN; 1350 adapted cycle kept as conditions."
+    ],
+    "schemaLimitations": [
+      "No native monochrome boolean or internal memory/optical-rangefinder fields: preserve sensor description and claim metadata.",
+      "No typed unsupported video state: M video stays null with lack-of-explicit-absence evidence noted.",
+      "No fixedLens OIS field: lens compensation not promoted to IBIS.",
+      "Leica M mount now valid but no M lenses/prices collected; recommendation suitability is a separate task.",
+      "Single video.max consumers omit mode/crop/shutter and variant restrictions.",
+      "Existing numeric normalization rounds to6decimals: shutter1/16000sec→0.000063. Exact raw0.0000625 and source fraction retained; precision fix is separate to avoid sealed digest drift."
+    ],
+    "unknownPolicy": "No inferred numeric sensor size, no unsupported equivalent focal arithmetic, no source omission→false conversion."
+  },
+  "claimCountsByProduct": {
+    "leica-m11": {
+      "claims": 33,
+      "known": 20,
+      "unknown": 13
+    },
+    "leica-m11-p": {
+      "claims": 33,
+      "known": 20,
+      "unknown": 13
+    },
+    "leica-m11-d": {
+      "claims": 29,
+      "known": 17,
+      "unknown": 12
+    },
+    "leica-m11-monochrom": {
+      "claims": 33,
+      "known": 20,
+      "unknown": 13
+    },
+    "leica-m-ev1": {
+      "claims": 33,
+      "known": 20,
+      "unknown": 13
+    },
+    "leica-q3": {
+      "claims": 40,
+      "known": 31,
+      "unknown": 9
+    },
+    "leica-q3-43": {
+      "claims": 39,
+      "known": 29,
+      "unknown": 10
+    },
+    "leica-q3-monochrom": {
+      "claims": 39,
+      "known": 30,
+      "unknown": 9
+    },
+    "leica-sl3": {
+      "claims": 34,
+      "known": 26,
+      "unknown": 8
+    },
+    "leica-sl3-s": {
+      "claims": 33,
+      "known": 25,
+      "unknown": 8
+    },
+    "leica-sl3-p": {
+      "claims": 33,
+      "known": 26,
+      "unknown": 7
+    },
+    "leica-d-lux-8": {
+      "claims": 38,
+      "known": 26,
+      "unknown": 12
+    }
+  },
+  "officialSourceCounts": {
+    "leica-m11": 2,
+    "leica-m11-p": 2,
+    "leica-m11-d": 2,
+    "leica-m11-monochrom": 2,
+    "leica-m-ev1": 2,
+    "leica-q3": 3,
+    "leica-q3-43": 2,
+    "leica-q3-monochrom": 3,
+    "leica-sl3": 3,
+    "leica-sl3-s": 2,
+    "leica-sl3-p": 3,
+    "leica-d-lux-8": 2
+  },
+  "unknownClaimsByProduct": {
+    "leica-m11": [
+      "specs.autofocus.aiUnit",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.bitDepth",
+      "specs.video.cropAtMax",
+      "specs.video.log",
+      "specs.video.max"
+    ],
+    "leica-m11-p": [
+      "specs.autofocus.aiUnit",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.bitDepth",
+      "specs.video.cropAtMax",
+      "specs.video.log",
+      "specs.video.max"
+    ],
+    "leica-m11-d": [
+      "specs.autofocus.aiUnit",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.bitDepth",
+      "specs.video.cropAtMax",
+      "specs.video.log",
+      "specs.video.max"
+    ],
+    "leica-m11-monochrom": [
+      "specs.autofocus.aiUnit",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.bitDepth",
+      "specs.video.cropAtMax",
+      "specs.video.log",
+      "specs.video.max"
+    ],
+    "leica-m-ev1": [
+      "specs.autofocus.aiUnit",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.bitDepth",
+      "specs.video.cropAtMax",
+      "specs.video.log",
+      "specs.video.max"
+    ],
+    "leica-q3": [
+      "specs.autofocus.aiUnit",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.fixedLens.equivalentFocal.max",
+      "specs.fixedLens.equivalentFocal.min",
+      "specs.ibis",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax"
+    ],
+    "leica-q3-43": [
+      "specs.autofocus.aiUnit",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.fixedLens.equivalentFocal.max",
+      "specs.fixedLens.equivalentFocal.min",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax"
+    ],
+    "leica-q3-monochrom": [
+      "specs.autofocus.aiUnit",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.fixedLens.equivalentFocal.max",
+      "specs.fixedLens.equivalentFocal.min",
+      "specs.ibis",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax"
+    ],
+    "leica-sl3": [
+      "specs.autofocus.aiUnit",
+      "specs.batteryShots",
+      "specs.dimensions",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax",
+      "specs.weight",
+      "specs.weightBasis"
+    ],
+    "leica-sl3-s": [
+      "specs.autofocus.aiUnit",
+      "specs.dimensions",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax",
+      "specs.weight",
+      "specs.weightBasis"
+    ],
+    "leica-sl3-p": [
+      "specs.autofocus.aiUnit",
+      "specs.dimensions",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.weight",
+      "specs.weightBasis"
+    ],
+    "leica-d-lux-8": [
+      "specs.autofocus.aiUnit",
+      "specs.batteryShots",
+      "specs.burst.maxElectronicFps",
+      "specs.burst.maxMechanicalFps",
+      "specs.cardSlots",
+      "specs.dimensions",
+      "specs.ibis",
+      "specs.lcd.mechanism",
+      "specs.releaseDate",
+      "specs.sensor.sizeMm",
+      "specs.video.cropAtMax",
+      "specs.video.log"
+    ]
+  },
+  "claimTotals": {
+    "claims": 417,
+    "known": 290,
+    "unknown": 127,
+    "rawSources": 28
+  },
+  "countsAfter": {
+    "bodies": 163,
+    "lenses": 36,
+    "total": 199,
+    "processedDigital": 12,
+    "newProducts": 10,
+    "existingReinforced": 2,
+    "productionUnprocessedDigital": 0,
+    "adjacentIdentities": 4,
+    "announcedUpcoming": 0
+  },
+  "workerFixturesDeleted": true
+}

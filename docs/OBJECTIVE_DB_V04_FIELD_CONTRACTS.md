@@ -76,3 +76,13 @@ node scripts/objective/raw-helper.mjs --input /path/to/reviewed-draft.json > /pa
 Panasonic pilot005에서 `mount: "B4"`와 `bodyStyle: "camcorder"`를 추가했다. B4 aliases는 공식 `B4 lens mount`, `2/3-type bayonet`이다. 기존 product shape/schemaVersion/fixedLens/weight/video 계약은 유지한다. B4는 교환식 interface이며 sensor format 또는 물리 센서 크기가 아니다. Camcorder 형태를 compact/SLR로 대신하지 않는다. 근거와 영향은 [pilot 보고서](OBJECTIVE_DB_PANASONIC_PRODUCTION_005.md)를 참조한다.
 
 Fixed camcorder의 body-only에는 integral lens가 포함될 수 있으며 배터리/카드/handle/hood 구성은 공식 조건 그대로 보존한다. 현행 weightBases에 operational을 새로 추가하지 않았고 정확한 기준을 확인하지 못한 운영무게는 UNKNOWN이다. Lens OIS/hybrid를 IBIS에 넣지 않는다. B4 lens 추천 coverage와 camcorder UI label/design preference는 후속이며 이번 engine/UI 변경은 없다.
+
+## 7. Leica production의 최소 vocabulary와 표현 경계 — 2026-10-12
+
+Leica 공식 M bayonet/M-Bajonett 근거로 mount vocab에 `Leica M`을 추가했다. Alias는 `Leica M bayonet`, `Leica M-Bajonett`, `M-Mount`이며 SL은 기존 `L-Mount`를 재사용한다. SchemaVersion/product shape/strict validators는 변경하지 않는다. 기존 mount registry와 과거 sealed archive는 유지한다. [Leica production 보고서](OBJECTIVE_DB_LEICA_PRODUCTION_001.md)의 제품별 공식 source를 참조한다.
+
+M11/P/D/Monochrom/M EV1은 센서·저장·LCD·뷰파인더·workflow 차이를 검토해 독립 identity로 유지한다. 색상/재질/Reporter/Safari/Metal Gray/kit은 base offer에 연결하며 black finish 무게를 모든 finish에 일반화하지 않는다. Monochrom은 전용 센서이고 사진 흑백 모드가 아니다. 내부 메모리 GB는 card slot 수로 변환하지 않는다. Optical rangefinder 확대율과 외장 optional EVF를 built-in EVF 수치로 넣지 않는다.
+
+IBIS는 기존 객체/false/null 계약, LCD/EVF는 기존 present 계약을 사용한다. 공식 부재 근거가 있으면 명시적 false, 자료 누락만 있으면 UNKNOWN이다. 이번 M video는 직접 부재 근거가 부족해 UNKNOWN이며 `needsExplicitAbsenceEvidence`를 남긴다. Typed no-video/내부 GB/광학 rangefinder/전용 monochrome flag는 schema를 추가하지 않고 description/claim conditions 및 후속 후보로 남긴다. Lens visual compensation을 body IBIS로 승격하지 않는다.
+
+Q/D-Lux는 기존 fixed/mount-null/fixedLens와 mm 계약을 사용한다. Actual과 equivalent를 계산으로 대체하지 않고 단렌즈/줌을 구분한다. 별도 렌즈 상품·무게·가격을 더하지 않는다. M/Q/D-Lux의 공식 battery 포함 무게는 기존 `battery`, bare는 `body-only` 기준을 사용하고 card 포함을 추정하지 않는다. SL의 bare 무게에 배터리를 임의 합산하지 않는다. Film M6/MP/M-A 및 hybrid SOFORT2는 이번 digital contract 밖 adjacent scope이며 영구 제외하지 않는다.

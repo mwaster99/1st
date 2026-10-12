@@ -1,5 +1,19 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Leica production batch 001 — 2026-10-12
+
+완료. Clean baseline `93a6704`에서 architecture/contracts/이전6브랜드audit/canonical/map/scope/vocab/pipeline/최신validators를 대조했다. Korea M/Q/SL·M/system gallery 전체pagination과마지막빈페이지·compact/instant·variant selectors를 공식global technical/press/store로 보완했다. **37offer cards(34gallery/family+3MetalGray)/16base identities, 일반released/current digital12(color10/Monochrom2), upcoming0, linked21(kit8포함), film3+hybridinstant1 adjacent, deferred-special0**. Retained S landing만으로 S3를현행추정하지않고archive수집은하지않았다. 전세계SKU/재고/생산완전성을주장하지않음.
+
+**단일12제품batch: 신규10/기존Q3·SL3보강2,153/36/189→163/36/199,일반digital미처리0**. M11/P/D/Monochrom/EV1 독립, Q3/Q343/Q3Monochrom/DLux8 fixed4, SL3/S/P L-Mount3. Leica M mount1항목만officialbayonet근거로최소vocab확장;기존L-Mount재사용. FilmM6/MP/M-A/SOFORT2는공식URL·이유·재검토조건과adjacent scope4로기록,영구제외아님. Linkedoffer는새product없음. Q/DLux별도lensproduct0/36lenses불변,기존runtime회귀에서전체무게한번·lensCount0·buycamera1검증.
+
+공식 신규raw28(제품별2–3)/417claims(known290·UNKNOWN127). NativeMP≠total/outputDNG, opticalrangefinder≠built-inEVF, internalGB≠slotcount, lenscompensation≠sensorIBIS, finish별weight·battery/card기준, CIPA≠adaptedcycle, burstshutter/bitdepth/AF 및 internalvideo OG/crop/frame-rate조건보존. SL3P8KOG24p(fullframe1.0·DRexpansionfalse)≠일반C8K29.97; M영상/IBIS부재직접근거부족은UNKNOWN,명시적없음으로추정하지않음. NoLCDM11D/광학M4built-inEVFfalse는직접근거. Sensorphysicalmm·도면dimension·일부환산초점거리등UNKNOWN. Source/canonical진짜valueconflict0. Q3/SL3기존identity/aliases/가격유지,나머지151bodies/36lenses동일.
+
+독립worker12tasks/실API16attempts/retry4/유용10제품/localfallbackM11·SL3S2제품. **확인가능usage69950input/14895output/84845total**, NETWORK_ERROR3회usage미반환으로0가정하지않음(전체청구총량미확정). 제품공식자료+최소계약만전달,전체canonical/코드/secret전송없음,fixture12삭제/자동patch0/추가사용자개입0. Main이inventory·identity·scope·모든조건/UNKNOWN·diff·approval/apply직접판단. Draftidentity중복/wholeLCD와hingeleaf불일치는기존gate가차단해seal전에교정;근거없는SL3CIPA260은UNKNOWN교정. Existing6decimalshutterquantization과no-video/internalGB/광학rangefinder/Monochromflag/fixedLensOIS/singlevideo.max표현은후속후보이며schema/validator재설계없음.
+
+Raw-helper실UTC28개 **2026-10-12T05:17:46.623Z–05:17:46.667Z**/clockbounds/digests검증. Strictvalidate12/12→humanreview→explicitCLIapproval→atomicapply→canonicalvalid→실제reapply **already-canonicalized/canonicalMatches:true**. AfterSHA `bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b`. Archivedincoming/reviewedapproval/before-after/replay보존. 추천/UI/Experience/가격/렌즈/과거productionartifact불변.
+
+전체 **302/302**, Objective/production/catalog/coverage **275/275**, 신규Leica **14/14**. Canonicalvalidation/build/변경test2+objective6script nodecheck/gitdiffcheck통과(기존chunk경고). 기존catalogtest의hardcodedmountallowlist만vocab재사용으로수정. [상세49항목보고](OBJECTIVE_DB_LEICA_PRODUCTION_001.md), [inventory/재개checkpoint](../src/data/ingestion/leica-current-2026-10-12.json), [회귀테스트](../tests/leicaProduction001.test.js). 이번작업미commit/push없음. 다음은 **Leica coverage audit**: clean요구시완료변경검토·commit후진행하며12제품raw재생성/worker재호출불필요. 추가일반batch없음;film/instant/M렌즈/가격/추천후속은별도phase. 이번production완료를fullfield completeness나coverageaudit완료로혼동하지않는다.
+
 ## Stage 4 OM SYSTEM production coverage audit — 2026-10-12
 
 완료. Clean baseline `821b4ef`에서 OM inventory/production001/보고서/canonical/map/scope/contracts/이전5브랜드audit/최신validators를 대조했다. 일본3gallery·12제품 및 official spec/guide/global/archive/region URL36개를 새로 조회했다(35 HTTP200, 미확인Korea locale404). **Japan official catalog 기준12cards/12identities, 일반released/current9/canonicalized9/productionprovenance9, upcomingPEN1(10월하순), independentASTROspecial2, linked0, 미처리0/duplicate·ambiguous0/critical0**으로 일반현행product coverage1차완료 판정. 한국판매coverage는확정하지않으며그완료를주장하지않는다. 신규/삭제/관찰된status·identity변화0; 옛snapshot/production불변.

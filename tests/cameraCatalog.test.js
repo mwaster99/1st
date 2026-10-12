@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import ingestionVocab from "../src/data/ingestion/vocab.json" with { type: "json" };
 import { CAMERA_PRODUCTS, LEGACY_CAMERA_POLICY, toLegacyPrice } from "../src/cameraCatalog.js";
 import { CAMERA_BODIES, CAMERA_LENSES, BODY_BY_ID, LENS_BY_ID, getIntegratedLens, normalizeCameraSearch, searchCameraBodies, createUnknownBody, createUnknownLens } from "../src/cameraData.js";
 import { CAMERA_ITEMS, CAMERA_DETAILS, calculateFunding, priceBand } from "../src/cameraCatalogViews.js";
@@ -8,7 +9,7 @@ import { generateScenarioCandidates, generateLensCandidates, evaluateScenario, g
 import { compareCapability, compareLens, scoreRoleCoverage, scorePhotoVideo } from "../src/cameraComparisons.js";
 
 const products = [...CAMERA_PRODUCTS.bodies, ...CAMERA_PRODUCTS.lenses];
-const mounts = ["Sony E", "Canon RF", "Nikon Z", "Fujifilm X", "L-Mount", "Micro Four Thirds", "Canon EF", "Nikon F", "Fujifilm G", "B4"];
+const mounts = ingestionVocab.mounts.map((mount) => mount.name);
 const input = (extra = {}) => ({ currentBody: BODY_BY_ID["sony-a7-iv"], currentLenses: [LENS_BY_ID["sony-fe-24-70-gm2"]], primaryLens: LENS_BY_ID["sony-fe-24-70-gm2"], pains: ["더 가볍고 작은 카메라를 원해요"], subjects: ["여행 · 일상"], extraBudget: 300, ...extra });
 
 test("canonical identifiers, model names and aliases are unique and searchable", () => {

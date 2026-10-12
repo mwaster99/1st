@@ -1,0 +1,899 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-leica-bodies-001",
+  "itemKey": "leica-m11-p",
+  "manufacturerModelCode": "M11-P",
+  "productType": "body",
+  "identityMapping": {
+    "manufacturer": "Leica",
+    "manufacturerModelCode": "M11-P",
+    "productId": "leica-m11-p",
+    "productType": "body",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-c18f11c82c122be02038",
+    "sourceId": "source-460b3f238e10d6ab",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Official product identity",
+      "row": "Leica M11-P"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-12",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "leica-m11-p",
+    "name": "Leica M11-P",
+    "brand": "Leica",
+    "series": "M",
+    "model": "M11-P",
+    "aliases": [
+      "라이카 M11-P"
+    ],
+    "mount": "Leica M",
+    "kind": "interchangeable",
+    "bodyStyle": "rangefinder",
+    "specs": {
+      "autofocus": {
+        "aiUnit": null,
+        "description": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)"
+      },
+      "batteryConditions": "CIPA rangefinder mode; not adapted cycle 1700",
+      "batteryShots": 700,
+      "bodyOnlyWeight": 455,
+      "burst": {
+        "maxElectronicFps": null,
+        "maxMechanicalFps": null
+      },
+      "cardSlots": null,
+      "dimensions": null,
+      "evf": {
+        "present": false,
+        "resolutionDots": null,
+        "magnification": null,
+        "maxRefreshHz": null
+      },
+      "ibis": null,
+      "lcd": {
+        "mechanism": null,
+        "present": true,
+        "resolutionDots": 2332800,
+        "sizeInches": 2.95,
+        "touch": true
+      },
+      "operatingTemperatureC": {
+        "max": 40,
+        "min": 0
+      },
+      "releaseDate": null,
+      "sensor": {
+        "format": "풀프레임",
+        "generation": "BSI CMOS",
+        "megapixels": 60.3,
+        "sizeMm": null
+      },
+      "shutter": {
+        "electronic": true,
+        "fastestElectronicSec": 0.000063,
+        "fastestMechanicalSec": 0.00025,
+        "mechanical": true
+      },
+      "video": {
+        "bitDepth": null,
+        "cropAtMax": null,
+        "log": null,
+        "max": null
+      },
+      "weight": 530,
+      "weightBasis": "battery"
+    }
+  },
+  "source": {
+    "sourceId": "source-460b3f238e10d6ab",
+    "sourceType": "manufacturer",
+    "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+    "publisher": "Leica Camera AG",
+    "documentTitle": "Leica M11-P official product page",
+    "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes",
+    "region": "KR",
+    "accessedAt": "2026-10-12T05:17:46.628Z",
+    "evidenceScope": "Leica M11-P only; base identity and explicitly scoped variants. Optical finder/lens compensation not body EVF/IBIS; no prices.",
+    "contentDigest": "218bd453ee88a5d6a6f89d65f3f436408eb3059ae71adcaee43162bb1e984181"
+  },
+  "sources": [
+    {
+      "sourceId": "source-01d73e4c0c9559f6",
+      "sourceType": "manufacturer",
+      "url": "https://leica-camera.com/sites/default/files/pm-13818-Leica-M11-P_Technical-Data_EN.pdf",
+      "publisher": "Leica Camera AG",
+      "documentTitle": "Leica M11-P official technical data",
+      "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes",
+      "region": "global",
+      "accessedAt": "2026-10-12T05:17:46.628Z",
+      "evidenceScope": "Leica M11-P only; base identity and explicitly scoped variants. Optical finder/lens compensation not body EVF/IBIS; no prices.",
+      "contentDigest": "1892907e6210fc1dba04e2d33f3fd04152dcd5f03ed758df03981377b9f631ac"
+    },
+    {
+      "sourceId": "source-460b3f238e10d6ab",
+      "sourceType": "manufacturer",
+      "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+      "publisher": "Leica Camera AG",
+      "documentTitle": "Leica M11-P official product page",
+      "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes",
+      "region": "KR",
+      "accessedAt": "2026-10-12T05:17:46.628Z",
+      "evidenceScope": "Leica M11-P only; base identity and explicitly scoped variants. Optical finder/lens compensation not body EVF/IBIS; no prices.",
+      "contentDigest": "218bd453ee88a5d6a6f89d65f3f436408eb3059ae71adcaee43162bb1e984181"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.autofocus.aiUnit",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Focus mode"
+      },
+      "conditions": {
+        "sourceWording": "Focus mode Manual (focus assist functions Magnification and Focus Peaking available)\nExposure\nExposure metering TTL (exposure metering through the lens), with working aperture\nMetering principle Exposure metering is done by the image sensor for all exposure metering methods (in Live View mode and in ",
+        "unknownReason": "No separately documented AI hardware; manual focus is recorded explicitly rather than an invented AF score."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-13de596ae522c2ce1af3"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.autofocus.description",
+      "value": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)",
+      "unit": null,
+      "rawValue": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Focus mode"
+      },
+      "conditions": {
+        "sourceWording": "Focus mode Manual (focus assist functions Magnification and Focus Peaking available)\nExposure\nExposure metering TTL (exposure metering through the lens), with working aperture\nMetering principle Exposure metering is done by the image sensor for all exposure metering methods (in Live View mode and in ",
+        "manualFocusOnly": true,
+        "sourceDescribesAiUnit": false
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-345f5da5625ca6ee146e"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.batteryConditions",
+      "value": "CIPA rangefinder mode; not adapted cycle 1700",
+      "unit": null,
+      "rawValue": "CIPA rangefinder mode; not adapted cycle 1700",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Approx."
+      },
+      "conditions": {
+        "sourceWording": "DNG™: 15 shots\nJPG: > 100 shots\nApprox. 700 shots (in accordance with CIPA Standard in rangefinder mode), up to approx. 1700 shots (Leica \nadapted shooting cycle)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-2f7a6e21c44320662a9c"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.batteryShots",
+      "value": 700,
+      "unit": null,
+      "rawValue": 700,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Approx."
+      },
+      "conditions": {
+        "sourceWording": "Approx. 700 shots (in accordance with CIPA Standard in rangefinder mode), up to approx. 1700 shots (Leica \nadapted shooting cycle)\nCharger  \n(Leica BC-SCL7)",
+        "standard": "CIPA",
+        "mode": "rangefinder",
+        "notAdaptedCycleMaximum": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-f2318a8c1c454a2afb54"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.bodyOnlyWeight",
+      "value": 455,
+      "unit": "g",
+      "rawValue": 455,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Weight"
+      },
+      "conditions": {
+        "sourceWording": "Weight Black/Safari/ Metal grey: approx. 530 g/455 g (with/without battery)\nSilver: approx. 640 g/565 g (with/without battery)\n\nLEICA M11-P",
+        "weightBasis": "body-only",
+        "withoutBattery": true,
+        "withoutMemoryCards": false,
+        "withoutBodyCap": false,
+        "integratedLensIncluded": false,
+        "approximate": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-015a65891e245abef80c"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.burst.maxElectronicFps",
+      "value": null,
+      "unit": "fps",
+      "rawValue": null,
+      "rawUnit": "fps",
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Drive Mode"
+      },
+      "conditions": {
+        "sourceWording": "Drive Mode  SingleSingle\n Continuous - Low SpeedContinuous - Low Speed  (3 fps)\n Continuous - High SpeedContinuous - High Speed  (4.5 fps)\n Interval shootingInterval shooting\n Exposure BracketingExposure Bracketing\n",
+        "shutter": "electronic",
+        "unknownReason": "Overall high4.5fps not explicitly assigned to shutter mechanism; no arbitrary assignment.",
+        "overallHighFps": 4.5
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-34752168520da61abc47"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.burst.maxMechanicalFps",
+      "value": null,
+      "unit": "fps",
+      "rawValue": null,
+      "rawUnit": "fps",
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Drive Mode"
+      },
+      "conditions": {
+        "sourceWording": "Drive Mode  SingleSingle\n Continuous - Low SpeedContinuous - Low Speed  (3 fps)\n Continuous - High SpeedContinuous - High Speed  (4.5 fps)\n Interval shootingInterval shooting\n Exposure BracketingExposure Bracketing\n",
+        "shutter": "mechanical",
+        "unknownReason": "Overall high4.5fps not explicitly assigned to shutter mechanism; no arbitrary assignment.",
+        "overallHighFps": 4.5
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e83d4a9c33c7b41201b2"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.cardSlots",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Storage medium"
+      },
+      "conditions": {
+        "sourceWording": "Storage medium UHS-II (recommended), UHS-I, SD/SDHC/SDXC memory card (SDXC cards up to 2 TB), internal memory: \n256 GB\nMaterial Black: full-metal housing made of magnesium and aluminum, leatherette cover\nSafari/Silver: full-metal housing made of magnesium and brass, leatherette cover",
+        "unknownReason": "Supported media is explicit; no reviewed physical slot-count statement.",
+        "supportedMedia": "SD/SDHC/SDXC",
+        "internalMemoryGB": 256,
+        "internalMemoryNotCardSlot": true,
+        "bufferNotStorage": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c5ef8961c5b369703af3"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.dimensions",
+      "value": null,
+      "unit": "mm",
+      "rawValue": null,
+      "rawUnit": "mm",
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Dimensions"
+      },
+      "conditions": {
+        "sourceWording": "Dimensions\n32.55 mm\n35.9 mm\n38.45 mm ",
+        "unknownReason": "Dimension drawing has multiple reference dimensions; no reviewed unambiguous W/H/D tuple. Existing Q3 historical dimensional ambiguity stays unresolved."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1a717e55bbf60c1165a1"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.evf",
+      "value": {
+        "present": false,
+        "resolutionDots": null,
+        "magnification": null,
+        "maxRefreshHz": null
+      },
+      "unit": null,
+      "rawValue": {
+        "present": false,
+        "resolutionDots": null,
+        "magnification": null,
+        "maxRefreshHz": null
+      },
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Viewfinder"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + ",
+        "actualFinder": "optical bright-line rangefinder",
+        "opticalMagnification": 0.73,
+        "externalOptionalAccessoryNotBuiltIn": "Visoflex2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0da57b13841ef59628af"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.ibis",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Sensor size"
+      },
+      "conditions": {
+        "sourceWording": "Sensor size BSI CMOS sensor, pixel pitch: 3.76 µm, 35 mm: 9528 x 6328 pixels (60.3 MP)\nProcessor Leica Maestro series (Maestro III)\nFilter RGB color filter, UV/IR filter, no low-pass filter\nFile formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)",
+        "unknownReason": "No explicit sensor/body stabilization presence/absence statement in collected official material; omission is not absence.",
+        "lensCompensationNotIBIS": false
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-29fbe0b3e869925c95bd"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.lcd.mechanism",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "LCD panel"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + ",
+        "unknownReason": "No explicit mechanism in selected source; do not infer fixed versus tilt from dimensions."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d7587331ab2c00c486f8"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.lcd.present",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "LCD panel"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + "
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-be071c1c2357069c0d3d"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.lcd.resolutionDots",
+      "value": 2332800,
+      "unit": "dots",
+      "rawValue": 2332800,
+      "rawUnit": "dots",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "LCD panel"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + "
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fc4ca350353c74ce5cba"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.lcd.sizeInches",
+      "value": 2.95,
+      "unit": "in",
+      "rawValue": 2.95,
+      "rawUnit": "in",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "LCD panel"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + "
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-308d783c4cc470920fb3"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.lcd.touch",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "LCD panel"
+      },
+      "conditions": {
+        "sourceWording": "Viewfinder/LCD panel\nViewfinder Large, bright-line rangefinder with automatic parallax compensation, suitable for -0.5 dpt; optional corrective \nlenses available: -3 to +3 dpt\nDisplay Four-digit digital display with items show on the top and bottom, Image field limiter: two lit frames: 35 mm + "
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d3194fd1d4f104643897"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.operatingTemperatureC.max",
+      "value": 40,
+      "unit": "°C",
+      "rawValue": 40,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Operating conditions"
+      },
+      "conditions": {
+        "sourceWording": "Operating conditions 0°C to +40°C\nInterfaces ISO accessory shoe with additional control contacts for Leica flash units and Leica Visoflex 2 viewfinder (optional \naccessory), USB 3.1 Gen1 Type-C\nTripod thread A 1⁄4 DIN 4503 (1⁄4”) with stainless steel in the base"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-11d68c4592edb75bf701"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.operatingTemperatureC.min",
+      "value": 0,
+      "unit": "°C",
+      "rawValue": 0,
+      "rawUnit": "°C",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Operating conditions"
+      },
+      "conditions": {
+        "sourceWording": "Operating conditions 0°C to +40°C\nInterfaces ISO accessory shoe with additional control contacts for Leica flash units and Leica Visoflex 2 viewfinder (optional \naccessory), USB 3.1 Gen1 Type-C\nTripod thread A 1⁄4 DIN 4503 (1⁄4”) with stainless steel in the base"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-98204fb651bc90f9ab18"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.releaseDate",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Designation"
+      },
+      "conditions": {
+        "sourceWording": "Designation Leica M11-P\nCamera type Digital system camera with rangefinder\nType No. 2416\nOrder No. Black: 20 211 (EU/US/CN), 20 212 (JP), 20 213 (ROW)",
+        "unknownReason": "Technical document version date is not release date. Status was separately verified in inventory."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5b312cc5cb53eff01f91"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.sensor.format",
+      "value": "풀프레임",
+      "unit": null,
+      "rawValue": "풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Sensor size"
+      },
+      "conditions": {
+        "sourceWording": "Sensor size BSI CMOS sensor, pixel pitch: 3.76 µm, 35 mm: 9528 x 6328 pixels (60.3 MP)\nProcessor Leica Maestro series (Maestro III)\nFilter RGB color filter, UV/IR filter, no low-pass filter\nFile formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)",
+        "formatInterpretation": "Official 35 mm sensor format, not a guessed physical size."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-6b63160cde19d8892faf"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.sensor.generation",
+      "value": "BSI CMOS",
+      "unit": null,
+      "rawValue": "BSI CMOS",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Sensor size"
+      },
+      "conditions": {
+        "sourceWording": "Sensor size BSI CMOS sensor, pixel pitch: 3.76 µm, 35 mm: 9528 x 6328 pixels (60.3 MP)\nProcessor Leica Maestro series (Maestro III)\nFilter RGB color filter, UV/IR filter, no low-pass filter\nFile formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)",
+        "dedicatedMonochromeSensor": false,
+        "colorModeNotSensorVariant": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-263faa80bc1c1e4e9697"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.sensor.megapixels",
+      "value": 60.3,
+      "unit": "MP",
+      "rawValue": 60.3,
+      "rawUnit": "MP",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Sensor size"
+      },
+      "conditions": {
+        "sourceWording": "Sensor size BSI CMOS sensor, pixel pitch: 3.76 µm, 35 mm: 9528 x 6328 pixels (60.3 MP)\nProcessor Leica Maestro series (Maestro III)\nFilter RGB color filter, UV/IR filter, no low-pass filter\nFile formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)",
+        "representation": "native sensor pixel-array MP, not JPEG/DNG output-resolution MP"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-bd25653269b9eba18dae"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.sensor.sizeMm",
+      "value": null,
+      "unit": "mm",
+      "rawValue": null,
+      "rawUnit": "mm",
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Sensor size"
+      },
+      "conditions": {
+        "sourceWording": "Sensor size BSI CMOS sensor, pixel pitch: 3.76 µm, 35 mm: 9528 x 6328 pixels (60.3 MP)\nProcessor Leica Maestro series (Maestro III)\nFilter RGB color filter, UV/IR filter, no low-pass filter\nFile formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)",
+        "unknownReason": "No unambiguous physical sensor dimensions row. Pixel pitch and format are not converted. M rangefinder framing approx23.9x35.8 at2m retained as context, not a nominal size assertion.",
+        "approximateRangefinderFramingMm": [
+          35.8,
+          23.9
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-b869f56809d0518873bc"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.shutter.electronic",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Shutter speeds"
+      },
+      "conditions": {
+        "sourceWording": "Shutter speeds Mech. shutter: 60 min to 1⁄4000 s\nElectro. shutter function: 60 s to 1⁄16000 s\nFlash Synch: up to 1⁄180 s\nOptional noise reduction via additional “black picture” (can be disabled)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1b8416b7b92d98619ae2"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.shutter.fastestElectronicSec",
+      "value": 0.000063,
+      "unit": "s",
+      "rawValue": 0.0000625,
+      "rawUnit": "s",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Shutter speeds"
+      },
+      "conditions": {
+        "sourceWording": "Shutter speeds Mech. shutter: 60 min to 1⁄4000 s\nElectro. shutter function: 60 s to 1⁄16000 s\nFlash Synch: up to 1⁄180 s\nOptional noise reduction via additional “black picture” (can be disabled)",
+        "photoNotVideo": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-073e8d8069f042f8a4fe"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.shutter.fastestMechanicalSec",
+      "value": 0.00025,
+      "unit": "s",
+      "rawValue": 0.00025,
+      "rawUnit": "s",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Shutter speeds"
+      },
+      "conditions": {
+        "sourceWording": "Shutter speeds Mech. shutter: 60 min to 1⁄4000 s\nElectro. shutter function: 60 s to 1⁄16000 s\nFlash Synch: up to 1⁄180 s\nOptional noise reduction via additional “black picture” (can be disabled)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-20daaa4165e7300130fb"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.shutter.mechanical",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Shutter type"
+      },
+      "conditions": {
+        "sourceWording": "Shutter type Electronically controlled focal plane shutter and electronic shutter function\nShutter speeds Mech. shutter: 60 min to 1⁄4000 s\nElectro. shutter function: 60 s to 1⁄16000 s\nFlash Synch: up to 1⁄180 s"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fa5d19749e547318f075"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.video.bitDepth",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "File formats"
+      },
+      "conditions": {
+        "sourceWording": "File formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)\nImage resolution DNG™ L-DNG 60.3 MP 9528 x 6328 pixels\nM-DNG 36.5 MP 7416 x 4928 pixels\nS-DNG 18.4 MP 5272 x 3498 pixels",
+        "unknownReason": "No video recording specification in collected official sources. Existing video.max lacks a typed not-supported state; do not infer false/0 from omission.",
+        "onlyStillFormatsDocumented": true,
+        "needsExplicitAbsenceEvidence": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-81edfbc1c3fe98f05cf7"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.video.cropAtMax",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "File formats"
+      },
+      "conditions": {
+        "sourceWording": "File formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)\nImage resolution DNG™ L-DNG 60.3 MP 9528 x 6328 pixels\nM-DNG 36.5 MP 7416 x 4928 pixels\nS-DNG 18.4 MP 5272 x 3498 pixels",
+        "unknownReason": "No video recording specification in collected official sources. Existing video.max lacks a typed not-supported state; do not infer false/0 from omission.",
+        "onlyStillFormatsDocumented": true,
+        "needsExplicitAbsenceEvidence": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-186593abd0aec1f7ac18"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.video.log",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "File formats"
+      },
+      "conditions": {
+        "sourceWording": "File formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)\nImage resolution DNG™ L-DNG 60.3 MP 9528 x 6328 pixels\nM-DNG 36.5 MP 7416 x 4928 pixels\nS-DNG 18.4 MP 5272 x 3498 pixels",
+        "unknownReason": "No video recording specification in collected official sources. Existing video.max lacks a typed not-supported state; do not infer false/0 from omission.",
+        "onlyStillFormatsDocumented": true,
+        "needsExplicitAbsenceEvidence": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-f8bb1fd6c1276c246879"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.video.max",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "File formats"
+      },
+      "conditions": {
+        "sourceWording": "File formats DNG™ (raw data, loss-free compression), DNG + JPG, JPG (DCF, Exif 2.30)\nImage resolution DNG™ L-DNG 60.3 MP 9528 x 6328 pixels\nM-DNG 36.5 MP 7416 x 4928 pixels\nS-DNG 18.4 MP 5272 x 3498 pixels",
+        "unknownReason": "No video recording specification in collected official sources. Existing video.max lacks a typed not-supported state; do not infer false/0 from omission.",
+        "onlyStillFormatsDocumented": true,
+        "needsExplicitAbsenceEvidence": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fc79f2b0b3eccb23c94d"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.weight",
+      "value": 530,
+      "unit": "g",
+      "rawValue": 530,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Weight"
+      },
+      "conditions": {
+        "sourceWording": "Weight Black/Safari/ Metal grey: approx. 530 g/455 g (with/without battery)\nSilver: approx. 640 g/565 g (with/without battery)\n\nLEICA M11-P",
+        "weightBasis": "battery",
+        "includesBattery": true,
+        "cardInclusion": "not stated",
+        "wholeFixedLensCamera": false,
+        "approximate": true,
+        "variant": "black",
+        "otherVariantWithBattery": 640,
+        "otherVariantBodyOnly": 565,
+        "notAllFinishes": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3000dd09015c0178f595"
+    },
+    {
+      "productId": "leica-m11-p",
+      "path": "specs.weightBasis",
+      "value": "battery",
+      "unit": null,
+      "rawValue": "battery",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-01d73e4c0c9559f6",
+      "locator": {
+        "section": "Official Technical Data",
+        "row": "Weight"
+      },
+      "conditions": {
+        "sourceWording": "Weight Black/Safari/ Metal grey: approx. 530 g/455 g (with/without battery)\nSilver: approx. 640 g/565 g (with/without battery)\n\nLEICA M11-P",
+        "weightBasis": "battery"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-12",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-9b5b5a386b71de713d45"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://leica-camera.com/sites/default/files/pm-28338-ALL_SL3-P_VideoSpecs.pdf",
+  "publisher": "Leica Camera AG",
+  "documentTitle": "Leica SL3-P official technical data",
+  "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes",
+  "region": "global",
+  "evidenceScope": "Leica SL3-P only; base identity and explicitly scoped variants. Optical finder/lens compensation not body EVF/IBIS; no prices.",
+  "accessedAt": "2026-10-12T05:17:46.665Z",
+  "evidenceExcerpt": [
+    {
+      "field": "SL3-P MOV8K Open Gate24p official mode table",
+      "value": "8K OG 24p",
+      "unit": null
+    },
+    {
+      "field": "SL3-P MOV8K Open Gate24p official mode table",
+      "value": 10,
+      "unit": null
+    },
+    {
+      "field": "SL3-P MOV8K Open Gate24p official mode table",
+      "value": false,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "leica-sl3-p",
+      "manufacturerModelCode": "SL3-P",
+      "productType": "body",
+      "identity": {
+        "name": "Leica SL3-P",
+        "brand": "Leica",
+        "series": "SL",
+        "model": "SL3-P",
+        "aliases": [
+          "라이카 SL3-P"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 0,
+          "rawValue": "8K OG 24p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Video Specification page1",
+            "row": "MOV 8K OG8064x5376 24p"
+          },
+          "conditions": {
+            "internal": true,
+            "container": "MOV",
+            "resolution": [
+              8064,
+              5376
+            ],
+            "frameRate": 24,
+            "aspectRatio": "3:2",
+            "openGate": true,
+            "fullFrameCropFactor": 1,
+            "dynamicRangeExpansion": false,
+            "codec": "HEVC",
+            "compression": "Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitrateMbps": 300,
+            "sourceWording": "MOV 8K OG\n8064x5376 \n(3:2)\n24.00p\n300Mbps 4:2:0 10bit LongGOP HEVC l\nLPCM\n48kHz/16bit\nl 1,00 \n28,3 \nn/a n/a n/a l l l n/a n/a\n4K/4:2:2 10bit\n23.98p 28,3 \n8K OG\n8064x5376 \n(3:2)\n24.00p 37,7 \n23.98p 37,9 \nC8K\n8128x4288\n(17:9)",
+            "differentModesNotCombined": "8K OG24p; C8K29.97; 4K120; internal/external RAW and DR expansion are separate modes; do not label OG30p."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-12",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 1,
+          "rawValue": 10,
+          "rawUnit": null,
+          "locator": {
+            "section": "Video Specification page1",
+            "row": "MOV 8K OG8064x5376 24p"
+          },
+          "conditions": {
+            "internal": true,
+            "container": "MOV",
+            "resolution": [
+              8064,
+              5376
+            ],
+            "frameRate": 24,
+            "aspectRatio": "3:2",
+            "openGate": true,
+            "fullFrameCropFactor": 1,
+            "dynamicRangeExpansion": false,
+            "codec": "HEVC",
+            "compression": "Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitrateMbps": 300,
+            "sourceWording": "MOV 8K OG\n8064x5376 \n(3:2)\n24.00p\n300Mbps 4:2:0 10bit LongGOP HEVC l\nLPCM\n48kHz/16bit\nl 1,00 \n28,3 \nn/a n/a n/a l l l n/a n/a\n4K/4:2:2 10bit\n23.98p 28,3 \n8K OG\n8064x5376 \n(3:2)\n24.00p 37,7 \n23.98p 37,9 \nC8K\n8128x4288\n(17:9)",
+            "differentModesNotCombined": "8K OG24p; C8K29.97; 4K120; internal/external RAW and DR expansion are separate modes; do not label OG30p."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-12",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Video Specification page1",
+            "row": "MOV 8K OG8064x5376 24p"
+          },
+          "conditions": {
+            "internal": true,
+            "container": "MOV",
+            "resolution": [
+              8064,
+              5376
+            ],
+            "frameRate": 24,
+            "aspectRatio": "3:2",
+            "openGate": true,
+            "fullFrameCropFactor": 1,
+            "dynamicRangeExpansion": false,
+            "codec": "HEVC",
+            "compression": "Long GOP",
+            "chroma": "4:2:0",
+            "bitDepth": 10,
+            "bitrateMbps": 300,
+            "sourceWording": "MOV 8K OG\n8064x5376 \n(3:2)\n24.00p\n300Mbps 4:2:0 10bit LongGOP HEVC l\nLPCM\n48kHz/16bit\nl 1,00 \n28,3 \nn/a n/a n/a l l l n/a n/a\n4K/4:2:2 10bit\n23.98p 28,3 \n8K OG\n8064x5376 \n(3:2)\n24.00p 37,7 \n23.98p 37,9 \nC8K\n8128x4288\n(17:9)",
+            "differentModesNotCombined": "8K OG24p; C8K29.97; 4K120; internal/external RAW and DR expansion are separate modes; do not label OG30p."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-12",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "bf06de61394b49fd6b5803a3b595ab20450066749ef900ad41632a2b1c31ca2e",
+  "sourceId": "source-955ecde3306a5956"
+}

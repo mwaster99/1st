@@ -2288,22 +2288,47 @@
         "sensor": {
           "format": "풀프레임",
           "megapixels": 60.3,
-          "generation": null
+          "generation": "CMOS"
         },
         "weight": 743,
         "bodyOnlyWeight": 658,
         "dimensions": null,
         "weightBasis": "battery",
         "releaseDate": null,
-        "autofocus": null,
-        "video": null,
-        "batteryShots": null,
-        "batteryConditions": null,
+        "autofocus": {
+          "description": "Hybrid AF: contrast, depth mapping and sensor phase comparison"
+        },
+        "video": {
+          "bitDepth": 10,
+          "log": true,
+          "max": "C8K 29.97p"
+        },
+        "batteryShots": 350,
+        "batteryConditions": "CIPA; automatic display/AF shutoff as specified; not adapted-cycle maximum",
         "ibis": null,
-        "evf": null,
-        "lcd": null,
-        "burst": null,
-        "shutter": null,
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "mechanism": "tilt",
+          "present": true,
+          "resolutionDots": 1843200,
+          "sizeInches": 3,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 15,
+          "maxMechanicalFps": 4
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.0005,
+          "mechanical": true
+        },
         "cardSlots": null,
         "weatherSealing": null,
         "fixedLens": {
@@ -2319,6 +2344,10 @@
             "wide": 1.7,
             "tele": 1.7
           }
+        },
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
         }
       },
       "sources": [
@@ -2345,11 +2374,283 @@
             "specs.sensor.megapixels"
           ],
           "note": "Original Q3. Weight explicitly includes battery; card inclusion not specified. Conflicting published dimensions are left null. Do not import the erroneous M-mount row in this PDF."
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-19567-EN_technical_data_Leica_Q3_1.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.evf",
+            "specs.fixedLens.aperture.tele",
+            "specs.fixedLens.aperture.wide",
+            "specs.fixedLens.focal.max",
+            "specs.fixedLens.focal.min",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.log",
+            "specs.video.max",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-b8256d7fbbece01e",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.lcd.mechanism"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-26449b63032cdc0b",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.sensor.format"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-2e45df6f2de8295d",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
         }
       ],
-      "legacyFields": [
-        "sensor.format"
-      ]
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8ee1c357cde7af12d080"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5718830745bea870db71"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dbf841415132df66ceda"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e1440bf37882982cf8a0"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d729512a05d370bb4f39"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-19f6fe601394c3145410"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7aa7fdbe1818e1b75c0b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a33534d850c78e512d1d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7c99458b490397f9cc2a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-135c00f1fe402da7eefa"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d6ed17842e5518469fe2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.mechanism": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-aeb90c27b30140f753f1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-02b8e97c0f95b5bbe41b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-95979203fd92c7e8b0e2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-aeaa34522ff9890b6d07"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8956e8ac9a7925fd45ab"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a9e761681353e7e448fd"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-35d3f05ed7f9d3cbca27"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-21d0195537817a38e834",
+            "claim-fbb3e00c64697cd7af89"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-afb6d15f404713856fc9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-66f7d5c2f010aef19cfc"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6ee416ee611fb290c1ac"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-59257b71b2793cc071f1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-79d94ac3863af34c8d94"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b144a5281ad08b774dad"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b6eca4e0c84098864692"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4b8b7de1548ef34329d5"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-47ae380733446f8a513c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-38cd62453515f83ab2ee"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-773509065bcaee839f7b"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
     },
     {
       "id": "panasonic-gx85",
@@ -7126,25 +7427,82 @@
         "sensor": {
           "format": "풀프레임",
           "megapixels": 60.3,
-          "generation": null
+          "generation": "CMOS"
         },
         "weight": null,
         "weightBasis": null,
         "bodyOnlyWeight": 769.7,
         "releaseDate": null,
         "dimensions": null,
-        "autofocus": null,
-        "video": null,
+        "autofocus": {
+          "description": "Hybrid AF: contrast, depth mapping and sensor phase comparison"
+        },
+        "video": {
+          "bitDepth": 10,
+          "log": true,
+          "max": "C8K 29.97p"
+        },
         "batteryShots": null,
-        "batteryConditions": null,
-        "ibis": null,
-        "evf": null,
-        "lcd": null,
-        "burst": null,
-        "shutter": null,
-        "cardSlots": null,
+        "batteryConditions": "1350 shots based on CIPA with All Displays Auto Off5s and alternate10/50-shot adapted cycles; normal standard CIPA count UNKNOWN",
+        "ibis": {
+          "present": true,
+          "axes": 5,
+          "stops": 5,
+          "conditions": "Manufacturer states 5-axis image stabilization up to 5 stops; test lens/rating procedure not stated in this source."
+        },
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "mechanism": "tilt",
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 3.2,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 15,
+          "maxMechanicalFps": 5
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.000125,
+          "mechanical": true
+        },
+        "cardSlots": {
+          "count": 2,
+          "slots": [
+            {
+              "index": 1,
+              "media": [
+                "CFexpress Type B"
+              ],
+              "standards": null
+            },
+            {
+              "index": 2,
+              "media": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "standards": [
+                "UHS-II",
+                "UHS-I"
+              ]
+            }
+          ]
+        },
         "weatherSealing": null,
-        "fixedLens": null
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": -10
+        }
       },
       "sources": [
         {
@@ -7158,13 +7516,248 @@
             "specs.sensor.megapixels",
             "specs.weight",
             "specs.weightBasis",
-            "specs.sensor",
+            "specs.sensor.format",
+            "specs.sensor.megapixels",
             "specs.bodyOnlyWeight"
           ],
           "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-14627-Leica-SL3_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.cardSlots",
+            "specs.evf",
+            "specs.ibis",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.log",
+            "specs.video.max"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-7747cd6a046b4716",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/en-int/photography/cameras/sl/sl3-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.lcd.mechanism"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-fdcf47b29f28fe40",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.sensor.format"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-03dccd7a8e3fc102",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
         }
       ],
-      "legacyFields": []
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4a309faa53a317bd915d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5087e0044ae482b424f9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-86c9f6afc1af2fca279e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4a6330216e74bc65ea16"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b0209e06651cfc70a1f2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.cardSlots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1379288e9cf59dea8893"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-14985ee348ff6a310180"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.ibis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4e4fb059be581d770110"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.mechanism": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2a7b5f77b3405430c761"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dcfed07bd10035e09d51"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6ccce6771fe88f0be0b6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1faee909fdb4e27ecf8d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-12186a5f91e7281ba09e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-79979fc18940d0b56e8b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-697b9d996db4aaa79523"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-72288c699caf98f9a5a2",
+            "claim-ef14740bf829e65893a3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3e7add28d3140face57c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-46e5c20b6f38be44246f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b6f28d7b07750803559a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d808df3e9e9c545567a9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f09f3e16ce3b82f79355"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-65986e3cd8f0856da6d1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-88b20bf70f8a25bb1943"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-372917874949ef6879f9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c64fbe14aeb61020419d"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
     },
     {
       "id": "sigma-bf",
@@ -35592,6 +36185,3151 @@
             "claim-58e76d7c323b4be9d1ec"
           ],
           "checkedAt": "2026-10-08"
+        }
+      }
+    },
+    {
+      "id": "leica-d-lux-8",
+      "name": "Leica D-Lux 8",
+      "brand": "Leica",
+      "series": "D-Lux",
+      "model": "D-Lux 8",
+      "aliases": [
+        "라이카 D-Lux 8"
+      ],
+      "mount": null,
+      "kind": "fixed",
+      "bodyStyle": "compact",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "마이크로포서드",
+          "megapixels": 17,
+          "generation": "CMOS",
+          "sizeMm": null
+        },
+        "weight": 397,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 357,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "Contrast detection AF"
+        },
+        "video": {
+          "max": "4K 29.97p",
+          "bitDepth": 8,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": null,
+        "releaseDate": null,
+        "batteryConditions": null,
+        "ibis": null,
+        "evf": {
+          "present": true,
+          "resolutionDots": 2360000,
+          "magnification": 0.74,
+          "maxRefreshHz": 60
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 1843200,
+          "sizeInches": 3,
+          "touch": true
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": {
+          "aperture": {
+            "tele": 2.8,
+            "wide": 1.7
+          },
+          "equivalentFocal": {
+            "max": 75,
+            "min": 24
+          },
+          "focal": {
+            "max": 34,
+            "min": 10.9
+          }
+        },
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/d-lux/d-lux-8",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-79eb66d5392d7d49",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-14928-Leica-D-Lux8_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.fixedLens.aperture.tele",
+            "specs.fixedLens.aperture.wide",
+            "specs.fixedLens.equivalentFocal.max",
+            "specs.fixedLens.equivalentFocal.min",
+            "specs.fixedLens.focal.max",
+            "specs.fixedLens.focal.min",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.max",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-b6aa9c68a70edd00",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-3ee05373a148489526d7",
+        "sourceId": "source-79eb66d5392d7d49",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-824b7cabcaa08ca7082d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-edacbf6a540eb32a9075"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6e51cdb538e4c3fd4d15"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-efdcd3ace7f9ecbb824e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b6b9997e179477186655"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.equivalentFocal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3b6cefcd0a0af655c912"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.equivalentFocal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ed82bc478fc710e878d3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c7a6c6bc86846f5fef65"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d2a1e60eacb05b39941a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f5c5dc351031e28ff0e2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5bafb33efc40e0e035ab"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-32371ec04171e9dbb7e7"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5aa0fded442db36de475"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d106e9e84f3384bace70"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-76a33f8566fda85eb7b9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7d4dae2cf77eadd4248e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a2d207f36f42b6e4ad18"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-14c79f455e6780593f9c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c29c388f688c029a89ed"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f623647ff3ca7420acf7"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-01b9a8156f7ae1003fb5"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-55c222a1da87afc3eb43"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-06b2184fa1021a49e8d7"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-27a40385d246e650d817"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7e6fb0907234162a9f90"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4699fb9e21a6a3f9ed85"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-m-ev1",
+      "name": "Leica M EV1",
+      "brand": "Leica",
+      "series": "M",
+      "model": "M EV1",
+      "aliases": [
+        "라이카 M EV1"
+      ],
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "BSI CMOS",
+          "sizeMm": null
+        },
+        "weight": 495,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 413,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "수동 초점 전용; 내장 EVF와 focus peaking/magnification"
+        },
+        "video": {
+          "max": null,
+          "bitDepth": null,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": 244,
+        "releaseDate": null,
+        "batteryConditions": "CIPA LCD Live View 244; EVF Live View 237",
+        "ibis": null,
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 60
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 2.95,
+          "touch": true
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m-ev1-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-a39dfa365c42235e",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-24998-Leica-M-EV1_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-915957e4306c9b7f",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-1de5db25f0f6e644c2e5",
+        "sourceId": "source-a39dfa365c42235e",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8ab71ffd540143baae6d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-534ea9f2952c2e978680"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0811685415952dd9912a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1173839b3733fb91a3ef"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9e35f6463c9d2d9f183a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-89e94d5ad9ab801c3a32"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-27227b333d8640ad4f45"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dda289f14e1ebc16e316"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-059ed14057b02550d17b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-20c50c6f4044d0094a9e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-97211289db9138ca8141"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e3a7d9b924c2c8428bad"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-36e6f28cf82587ecf120"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0cf879c11dfd5ddf87da"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5ee46e8804f26d70a4c8"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c0cdd3a3d6fd3a69e931"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-bd094d79958a8c1ae947"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a3068e671b19426566a3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1109e03004e9bdc1b5ff"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-82a764b766645f5edf01"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-m11",
+      "name": "Leica M11",
+      "brand": "Leica",
+      "series": "M",
+      "model": "M11",
+      "aliases": [
+        "라이카 M11"
+      ],
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "CMOS",
+          "sizeMm": null
+        },
+        "weight": 530,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 455,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)"
+        },
+        "video": {
+          "max": null,
+          "bitDepth": null,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": 700,
+        "releaseDate": null,
+        "batteryConditions": "CIPA rangefinder mode; not adapted cycle 1700",
+        "ibis": null,
+        "evf": {
+          "present": false,
+          "resolutionDots": null,
+          "magnification": null,
+          "maxRefreshHz": null
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 2.95,
+          "touch": true
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-9b3890317cfd8b0a",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-13764-Leica_M11_technical_data_EN.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-091642ad19d19fc0",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-64fd2c9ce0be885143a9",
+        "sourceId": "source-9b3890317cfd8b0a",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e5dd69f2cf5c1bb64ef6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4f26b7e4d3bf071ccc42"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-639ce4c45d4f720dcd40"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b9a9a479c9e9d081916e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-15740020c0bc16c09f2b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dec6b7e197874ade7444"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cf5deeb4abc1f939c63e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7213dc6d82f844d29859"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1313729d6d1774702342"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7fd06aa2ab61fff36629"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d851b5587be6eb7f038c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-42384d1ce38228d12565"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-92008c655ce7e8ef7d21"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f323a0f98011bd9ea3a4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-745becfe31628a41d6d2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a51dcb1cb00f3a3ef749"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c600b2c1425d74bf6fe7"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-121570241a49c034dc22"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-079f0447b166de3fb3dc"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2cb9db884ce5ce99e8d5"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-m11-d",
+      "name": "Leica M11-D",
+      "brand": "Leica",
+      "series": "M",
+      "model": "M11-D",
+      "aliases": [
+        "라이카 M11-D"
+      ],
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "BSI CMOS",
+          "sizeMm": null
+        },
+        "weight": 539,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 457,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)"
+        },
+        "video": {
+          "max": null,
+          "bitDepth": null,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": 700,
+        "releaseDate": null,
+        "batteryConditions": "CIPA rangefinder mode; not adapted cycle 1700",
+        "ibis": null,
+        "evf": {
+          "present": false,
+          "resolutionDots": null,
+          "magnification": null,
+          "maxRefreshHz": null
+        },
+        "lcd": {
+          "present": false,
+          "sizeInches": null,
+          "resolutionDots": null,
+          "mechanism": null,
+          "touch": null
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-d-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity",
+            "specs.lcd"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-1c42c350a699edae",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-13912-Leica-M11-D_Technical_Data_EN.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-63d6c0f82ac100e9",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-d170d1d01bd51e9897ca",
+        "sourceId": "source-1c42c350a699edae",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a0ea5087df8c367dc482"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cd6f16c0771b6cbf1701"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-54282bd324c4f10c1564"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-084ef76cd35089662c80"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c76587cc3c5f5efae2a4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e9521d4368bf57e8846a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-410bdc970bd8c64f096d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1e34c40b6da3288cccb2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-48ef5cc6de5882156fbf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a1263cd49d994f74fe10"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-677ab44141a6b26b4434"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6624fee4dbdf94fe91e9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1f4ab5e02511237fb8c3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-73437240c7a9a26f0434"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-42adf695561a00b6be60"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-febfd8ab0b79dc42c5bb"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2f4120cb9b08bce180ad"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-m11-monochrom",
+      "name": "Leica M11 Monochrom",
+      "brand": "Leica",
+      "series": "M",
+      "model": "M11 Monochrom",
+      "aliases": [
+        "라이카 M11 Monochrom"
+      ],
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "Monochrome BSI CMOS",
+          "sizeMm": null
+        },
+        "weight": 542,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 461,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)"
+        },
+        "video": {
+          "max": null,
+          "bitDepth": null,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": 700,
+        "releaseDate": null,
+        "batteryConditions": "CIPA rangefinder mode; not adapted cycle 1700",
+        "ibis": null,
+        "evf": {
+          "present": false,
+          "resolutionDots": null,
+          "magnification": null,
+          "maxRefreshHz": null
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 2.95,
+          "touch": true
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-monochrom",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-5f4d2b83ccf3d8ec",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-13992-EN_Tech-Data_M11-Monochrom.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-c889a4cad601da36",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-c8d248264d7641025c29",
+        "sourceId": "source-5f4d2b83ccf3d8ec",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-896061222b988c91bed0"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-21d164a1fcb4a0c7e4bf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c00820a3bc875ade6ff6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b7c035080cc740ce9d68"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a4fe3da022076e16d04b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9af854eef6d83269c1ec"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6fe5e25bbd10f5d2ed94"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8bd9798a76b34a2d0423"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-34255f39cb829337f4c7"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2a64f8c88adb02051057"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-de86af9021c9115ef806"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-41ce53fb3000d80e0442"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-db6cac1928b623ea477c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3f841fff80b40a515e3a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1c6262bd9cd8c14b0dff"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dc6d06e921c45598201e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-128ecc786ae2891d42f5"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-37d28a911166aa41f76c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-72a2162e09811c8493bd"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f9eaf99c75425988e366"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-m11-p",
+      "name": "Leica M11-P",
+      "brand": "Leica",
+      "series": "M",
+      "model": "M11-P",
+      "aliases": [
+        "라이카 M11-P"
+      ],
+      "mount": "Leica M",
+      "kind": "interchangeable",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "BSI CMOS",
+          "sizeMm": null
+        },
+        "weight": 530,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 455,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "수동 초점 전용; 광학 레인지파인더, focus peaking/magnification (전자 라이브뷰/별도 Visoflex 조건)"
+        },
+        "video": {
+          "max": null,
+          "bitDepth": null,
+          "log": null,
+          "cropAtMax": null
+        },
+        "batteryShots": 700,
+        "releaseDate": null,
+        "batteryConditions": "CIPA rangefinder mode; not adapted cycle 1700",
+        "ibis": null,
+        "evf": {
+          "present": false,
+          "resolutionDots": null,
+          "magnification": null,
+          "maxRefreshHz": null
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 2.95,
+          "touch": true
+        },
+        "burst": null,
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.00025,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/m/m11-p-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-460b3f238e10d6ab",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-13818-Leica-M11-P_Technical-Data_EN.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.evf",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-01d73e4c0c9559f6",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-c18f11c82c122be02038",
+        "sourceId": "source-460b3f238e10d6ab",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-345f5da5625ca6ee146e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2f7a6e21c44320662a9c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f2318a8c1c454a2afb54"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-015a65891e245abef80c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0da57b13841ef59628af"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-be071c1c2357069c0d3d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fc4ca350353c74ce5cba"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-308d783c4cc470920fb3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d3194fd1d4f104643897"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-11d68c4592edb75bf701"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-98204fb651bc90f9ab18"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6b63160cde19d8892faf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-263faa80bc1c1e4e9697"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-bd25653269b9eba18dae"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1b8416b7b92d98619ae2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-073e8d8069f042f8a4fe"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-20daaa4165e7300130fb"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fa5d19749e547318f075"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3000dd09015c0178f595"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9b5b5a386b71de713d45"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-q3-43",
+      "name": "Leica Q3 43",
+      "brand": "Leica",
+      "series": "Q",
+      "model": "Q3 43",
+      "aliases": [
+        "라이카 Q3 43"
+      ],
+      "mount": null,
+      "kind": "fixed",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "CMOS",
+          "sizeMm": null
+        },
+        "weight": 772,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 688,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "Hybrid AF: contrast, depth mapping and sensor phase comparison"
+        },
+        "video": {
+          "max": "C8K 29.97p",
+          "bitDepth": 10,
+          "log": true,
+          "cropAtMax": null
+        },
+        "batteryShots": 350,
+        "releaseDate": null,
+        "batteryConditions": "CIPA; automatic display/AF shutoff as specified; not adapted-cycle maximum",
+        "ibis": null,
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 1843200,
+          "sizeInches": 3,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 15,
+          "maxMechanicalFps": 5
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.0005,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": {
+          "aperture": {
+            "tele": 2,
+            "wide": 2
+          },
+          "focal": {
+            "max": 43,
+            "min": 43
+          }
+        },
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-43-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-5193ce035cec15bd",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-13098-Leica-Q343_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.evf",
+            "specs.fixedLens.aperture.tele",
+            "specs.fixedLens.aperture.wide",
+            "specs.fixedLens.focal.max",
+            "specs.fixedLens.focal.min",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.log",
+            "specs.video.max",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-65d8873ae68f1fdf",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-c0a303f0ffaf847b2422",
+        "sourceId": "source-5193ce035cec15bd",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c80fa80963066d9b8483"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-21b4759d28b02dd896b1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-020af0efbcdd3f24401e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9272dec3f4e595957dd1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b8f50eb834eb6cfef9b6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2d22efd241b8296409b4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a1f28d6e7814cf3bee55"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6ee93f3a65e85567d12f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e1e1734b017e8c74f18e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-445a1ff478f8e540993d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-604a30c6c74c94781903"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0d10ee8b95017b7723b4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-19cc2a0ab6e5992fc0cf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-01d5ee61f732afdf6e05"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0f29abb89c9a2034d8c3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b1e369dfd88e274825bf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-08708c5ff948d32b3f77"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-001d9d35ea1d0f205118"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-92210b8940b29becea2e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e11da592bf709bac1692"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4c61d460999b3b1e32de"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fb8d1bf842975c685499"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-688b0d0ef321506a30d4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-901d48bd27cdea3a0838"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4e772fc343c9bacdde01"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0b42b178c25adf10cce3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a03bf0f35134ab689a32"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-021fcb2385c8d32ab2e6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f5f30dc1d7e8c3a48252"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-q3-monochrom",
+      "name": "Leica Q3 Monochrom",
+      "brand": "Leica",
+      "series": "Q",
+      "model": "Q3 Monochrom",
+      "aliases": [
+        "라이카 Q3 Monochrom"
+      ],
+      "mount": null,
+      "kind": "fixed",
+      "bodyStyle": "rangefinder",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 60.3,
+          "generation": "Monochrome CMOS",
+          "sizeMm": null
+        },
+        "weight": 746,
+        "weightBasis": "battery",
+        "bodyOnlyWeight": 662,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "Contrast detection AF"
+        },
+        "video": {
+          "max": "C8K 29.97p",
+          "bitDepth": 10,
+          "log": true,
+          "cropAtMax": null
+        },
+        "batteryShots": 302,
+        "releaseDate": null,
+        "batteryConditions": "CIPA; automatic display/AF shutoff as specified; not adapted-cycle maximum",
+        "ibis": null,
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "mechanism": "tilt",
+          "present": true,
+          "resolutionDots": 1843200,
+          "sizeInches": 3,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 15,
+          "maxMechanicalFps": 5
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.0005,
+          "mechanical": true
+        },
+        "cardSlots": null,
+        "weatherSealing": null,
+        "fixedLens": {
+          "aperture": {
+            "tele": 1.7,
+            "wide": 1.7
+          },
+          "focal": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/q/q3-monochrom",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-5925905347b7989e",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-26854-Leica-Q3-Monochrome_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.evf",
+            "specs.fixedLens.aperture.tele",
+            "specs.fixedLens.aperture.wide",
+            "specs.fixedLens.focal.max",
+            "specs.fixedLens.focal.min",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.log",
+            "specs.video.max",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-4f5f99534b026fa3",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/en-int/photography/cameras/q/q3-monochrom",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.lcd.mechanism"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-cc60fe5eb220dfa2",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-f95cdea120af55c73797",
+        "sourceId": "source-5925905347b7989e",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7222c2fdcf7a56609bce"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c0bb2aecec46126126b1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-276dd94f522c0fdfcd36"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a87d90939d3d584f0172"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1e36d5c104a7df67ef56"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-24fe09c1c7a23b31d588"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cb1813c953a9cb3e2441"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d5d9d072a5058d15282d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a1d804b58fb48a371f04"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ccb9978400aeb4851f02"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.fixedLens.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a270a720552ba7bfc182"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.mechanism": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b5bbd250a860ea431aa9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b52439211445f90634f5"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-00590afacfa045f94295"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5c2d0e9214d74fb1f087"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-abf096e5f9fe3944313a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-62576e822ddbe7537fb4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-51ad1be255a1dd10d31a"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-de6fa2e4eea5701b1f61"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b756e42fc3a4ffa3fe76"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c74397a9e93c97ae3f3d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-56e385e56ebdc4a413b2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-927ec374e9582e4ad6f1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-20c681e782a558fa30e6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1d5d208e953801df149f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c4e6a991bc28c9b277b1"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d8ff609174215cb41e08"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4503461055658fc4b3ff"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5d78422f1e4650c8bf9f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cb7862ccc3151881b9cc"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-sl3-p",
+      "name": "Leica SL3-P",
+      "brand": "Leica",
+      "series": "SL",
+      "model": "SL3-P",
+      "aliases": [
+        "라이카 SL3-P"
+      ],
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "bodyStyle": "slr",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 44.9,
+          "generation": "CMOS",
+          "sizeMm": null
+        },
+        "weight": null,
+        "weightBasis": null,
+        "bodyOnlyWeight": 768,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "Hybrid AF: contrast, depth mapping and sensor phase comparison"
+        },
+        "video": {
+          "max": "8K OG 24p",
+          "bitDepth": 10,
+          "log": true,
+          "cropAtMax": false
+        },
+        "batteryShots": 383,
+        "releaseDate": null,
+        "batteryConditions": "CIPA AF Detection Off; not adapted1431",
+        "ibis": {
+          "present": true,
+          "axes": 5,
+          "stops": 5,
+          "conditions": "Manufacturer states 5-axis image stabilization up to 5 stops; test lens/rating procedure not stated in this source."
+        },
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 3.2,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 40,
+          "maxMechanicalFps": 7
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.000125,
+          "mechanical": true
+        },
+        "cardSlots": {
+          "count": 2,
+          "slots": [
+            {
+              "index": 1,
+              "media": [
+                "CFexpress Type B"
+              ],
+              "standards": null
+            },
+            {
+              "index": 2,
+              "media": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "standards": [
+                "UHS-II",
+                "UHS-I"
+              ]
+            }
+          ]
+        },
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": -10
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-p-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-c2a8430c473c9628",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-28258-Datenblatt-SL3-P_EN.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.cardSlots",
+            "specs.evf",
+            "specs.ibis",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.log"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-8957e35484f2fb29",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-28338-ALL_SL3-P_VideoSpecs.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.video.bitDepth",
+            "specs.video.cropAtMax",
+            "specs.video.max"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-955ecde3306a5956",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-cdf5597e26f9a6f1c98e",
+        "sourceId": "source-c2a8430c473c9628",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1e106ac658305515efa3"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-213abc44996ab1a6cd1e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-025c3d464182eee7c113"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-45fad3f6440b825716c8"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a639927196eac0b57710"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a52f4260560c9d79356f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.cardSlots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ecb55370b677a1181b7f"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f6bdf0ad93938fb2af64"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.ibis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fbb9e4077c55ca6d7bfd"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4bd3412affe0c93f4306"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b1db90831ba6368ad74b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1f85fe63da2b2cef30b5"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6dc4ff7e3bc0a72d03ca"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-234fc5f370813ce984c2"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-47148780d318f1b24d3b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-56e331fc8d73c4ae9e38"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5deb47f2509f806f9080"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9b76da80190cc1f225b9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-297548c55dbd34267e46"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2f20c6eb7d7b2b975ab9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3a404fb64222fda887bf"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-eecbe72e3f70d1c05da6"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5ab144c2974030c82318"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.cropAtMax": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-107e625fd155d9e72950"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b1df03c9907026077aa4"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0e11d1e9ab11b7dbc406"
+          ],
+          "checkedAt": "2026-10-12"
+        }
+      }
+    },
+    {
+      "id": "leica-sl3-s",
+      "name": "Leica SL3-S",
+      "brand": "Leica",
+      "series": "SL",
+      "model": "SL3-S",
+      "aliases": [
+        "라이카 SL3-S"
+      ],
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "bodyStyle": "slr",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "sensor": {
+          "format": "풀프레임",
+          "megapixels": 24.6,
+          "generation": "CMOS",
+          "sizeMm": null
+        },
+        "weight": null,
+        "weightBasis": null,
+        "bodyOnlyWeight": 768,
+        "dimensions": null,
+        "autofocus": {
+          "aiUnit": null,
+          "subjects": null,
+          "description": "Hybrid AF: contrast, depth mapping and sensor phase comparison"
+        },
+        "video": {
+          "max": "6K OG 29.97p",
+          "bitDepth": 10,
+          "log": true,
+          "cropAtMax": null
+        },
+        "batteryShots": 315,
+        "releaseDate": null,
+        "batteryConditions": "CIPA315; not adapted1042",
+        "ibis": {
+          "present": true,
+          "axes": 5,
+          "stops": 5,
+          "conditions": "Manufacturer states 5-axis image stabilization up to 5 stops; test lens/rating procedure not stated in this source."
+        },
+        "evf": {
+          "present": true,
+          "resolutionDots": 5760000,
+          "magnification": 0.76,
+          "maxRefreshHz": 120
+        },
+        "lcd": {
+          "present": true,
+          "resolutionDots": 2332800,
+          "sizeInches": 3.2,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 30,
+          "maxMechanicalFps": 7
+        },
+        "shutter": {
+          "electronic": true,
+          "fastestElectronicSec": 0.000063,
+          "fastestMechanicalSec": 0.000125,
+          "mechanical": true
+        },
+        "cardSlots": {
+          "count": 2,
+          "slots": [
+            {
+              "index": 1,
+              "media": [
+                "CFexpress Type B"
+              ],
+              "standards": null
+            },
+            {
+              "index": 2,
+              "media": [
+                "SD",
+                "SDHC",
+                "SDXC"
+              ],
+              "standards": [
+                "UHS-II",
+                "UHS-I"
+              ]
+            }
+          ]
+        },
+        "weatherSealing": null,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": -10
+        }
+      },
+      "sources": [
+        {
+          "url": "https://leica-camera.com/ko-KR/photography/cameras/sl/sl3-s-black",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-f09bffbb77682651",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        },
+        {
+          "url": "https://leica-camera.com/sites/default/files/pm-14708-Leica-SL3-S_Technical-Data_en.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-12",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.burst.maxMechanicalFps",
+            "specs.cardSlots",
+            "specs.evf",
+            "specs.ibis",
+            "specs.lcd.present",
+            "specs.lcd.resolutionDots",
+            "specs.lcd.sizeInches",
+            "specs.lcd.touch",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.fastestMechanicalSec",
+            "specs.shutter.mechanical",
+            "specs.video.bitDepth",
+            "specs.video.log",
+            "specs.video.max"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-fc86c9a30de12ccb",
+          "documentVersion": "Retrieved 2026-10-12; original version retained in claim quotes"
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-04cf0b951d6066a001f1",
+        "sourceId": "source-f09bffbb77682651",
+        "checkedAt": "2026-10-12"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3a8c3a445ca7caecb96b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dfda6de7cbabce51b22e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-879b16826a11fd62bdde"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f9105dbc8400152ac404"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-56d99d3d073c5642424d"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.burst.maxMechanicalFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-626dca0cd8346bfe7f24"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.cardSlots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-474577cefffea49c2e92"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.evf": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dbf8d34d2f7bb48001fa"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.ibis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-79b00d5bcbdc9800858b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.present": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-20134553a8f30e19d891"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.resolutionDots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b6171fb20d05edc19f23"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.sizeInches": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-054a34c702a4125acf57"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.lcd.touch": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5f2ce87caebcca7e36ed"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4f224ed8b614531d8d72"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-50b8954a8913448e2e49"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-999d156e613de37d5d06"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-86ffa4c3345f69638e70"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7031db5eb6083569e66e"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-98b80faf07afa731dad9"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-51ad663732f530dbd655"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.fastestMechanicalSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-46d2c01805e5bd31460c"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-751f33cd5b772aeb81cc"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.bitDepth": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-89726bf21135fc2c128b"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cc8865a1c9a86ea79154"
+          ],
+          "checkedAt": "2026-10-12"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-82582b4f87b8e24866cd"
+          ],
+          "checkedAt": "2026-10-12"
         }
       }
     }
