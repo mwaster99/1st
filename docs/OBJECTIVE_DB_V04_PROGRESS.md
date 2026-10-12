@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 OM SYSTEM production coverage audit — 2026-10-12
+
+완료. Clean baseline `821b4ef`에서 OM inventory/production001/보고서/canonical/map/scope/contracts/이전5브랜드audit/최신validators를 대조했다. 일본3gallery·12제품 및 official spec/guide/global/archive/region URL36개를 새로 조회했다(35 HTTP200, 미확인Korea locale404). **Japan official catalog 기준12cards/12identities, 일반released/current9/canonicalized9/productionprovenance9, upcomingPEN1(10월하순), independentASTROspecial2, linked0, 미처리0/duplicate·ambiguous0/critical0**으로 일반현행product coverage1차완료 판정. 한국판매coverage는확정하지않으며그완료를주장하지않는다. 신규/삭제/관찰된status·identity변화0; 옛snapshot/production불변.
+
+Known258specleaf 전부verified/193fieldEvidence/231claims(known193·UNKNOWN38)/raw22/canonicalsource24, reference-only·legacy-only·unclassified·source-less0. 전용identityEvidence7/9, 기존OM1II/OM5는공식stagingidentity/기존manufactureridentity근거는있지만전용객체와새JPidentityfield연결이없다. **Should-fix4**=기존2identitymetadata + 동일2JP17.4×13mm/global17.3×13mm sensor-area표기정합성검토. 반올림/하드웨어차이로추정하거나canonical값을자동변경하지않음. AcceptableUNKNOWN46=명시적nullclaim38+객체child8;전체JSONnull총조사아님.
+
+MFT8/세대·Olympus표기독립, bodyIBIS≠Sync/시험축, nativeMP≠HighRes/ProCapturebuffer≠지속연사, TG7fixed/mountnull/actual4.5–18mm/eq25–100mm/F2–4.9/센서시프트2.5stop/축수UNKNOWN/전체249g한번계산/별도렌즈0, IP렌즈조건/weightbasis9/영상모드조건검증. 온도−10°C test-only변경은기존runtime/rules/merge/vocab불변,finite/ordered/음수physical차단유지. Productcoverage와singlevideo.max/Sync/computational/IP/parser29.97→97/가격/Experience/렌즈/지역backlog를분리했다.
+
+Artifact42파일/9item chain 누락0/digestmismatch0,strictvalidate9/9/replay/idempotentafter재현일치. 실제CLIreapply **already-canonicalized/canonicalMatches:true**. Canonical **153/36/189**, SHA `d5f544b9978fc02ef6f36e62b723758d400ed5685b1b1d8383324ba95f14cd25` 불변. Worker0calls/token0,추가ingestion0,추천/UI/validators/기존sealedartifact변경0. 전체 **288/288**, Objective/production/catalog/coverage **261/261**, OM **27/27**(신규coverage14),canonicalvalid/build/nodecheck/gitdiffcheck통과(기존chunk경고).
+
+[상세감사](OBJECTIVE_DB_OM_SYSTEM_COVERAGE_AUDIT.md), [새감사snapshot](../src/data/ingestion/om-system-coverage-audit-2026-10-12.json), [회귀테스트](../tests/omSystemCoverageAudit.test.js). 감사4파일만변경,미commit/push없음. 중단후기존산출물·로그를확인하고문서작성부터재개했다. 다음은계획B6 **Leica, 이후Sigma**의공식inventory대조. PEN실제출시/ASTRO별도workflowpilot/Korea공식목록확인때해당scope재검토;완료된OMbatch재생성불필요.
+
 ## Stage 4 OM SYSTEM production batch 001 — 2026-10-08
 
 완료. Clean baseline `6711521`에서 contracts/pipeline/최신validators/기존5브랜드audit/canonical/map/scope를 확인했다. 한국 official locale은 확정하지 못하여 JP 공식 OM/OM-D9 + PEN2 + Tough1 모델카드를 global gallery/region selector/공식 archived 목록과 대조했다. **12cards/12identities, 일반 released/current9(특수포함11), upcoming PEN1(2026년10월하순), linked duplicate0, IR ASTRO2deferred**. 한국 판매/재고나 전지역SKU 완전성을 주장하지 않는다. ASTRO는 물리IR filter/H-alpha·일반촬영권고 차이로 별도scope, TG7construction/WORM은 같은identity.
