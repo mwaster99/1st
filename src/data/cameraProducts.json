@@ -7793,7 +7793,11 @@
         "sensor": {
           "format": "풀프레임",
           "megapixels": 24.6,
-          "generation": null
+          "generation": "Back-illuminated CMOS",
+          "sizeMm": [
+            35.9,
+            23.9
+          ]
         },
         "weight": 446,
         "weightBasis": "battery-internal-storage",
@@ -7804,18 +7808,45 @@
           36.8
         ],
         "releaseDate": null,
-        "autofocus": null,
-        "video": null,
-        "batteryShots": null,
-        "batteryConditions": null,
+        "autofocus": {
+          "description": "Image Plane Phase-Detection AF + Contrast detection system; Single AF, Continuous AF, Manual Focus",
+          "subjects": [
+            "Human",
+            "Animal"
+          ]
+        },
+        "video": {
+          "log": true,
+          "max": "6K 29.97p"
+        },
+        "batteryShots": 260,
+        "batteryConditions": "Sigma approx.260 still images; test procedure not specified in product specification.",
         "ibis": null,
         "evf": null,
-        "lcd": null,
-        "burst": null,
-        "shutter": null,
+        "lcd": {
+          "present": true,
+          "sizeInches": 3.15,
+          "resolutionDots": 2100000,
+          "mechanism": null,
+          "touch": true
+        },
+        "burst": {
+          "maxElectronicFps": 8
+        },
+        "shutter": {
+          "bulb": true,
+          "electronic": true,
+          "fastestElectronicSec": 0.000039,
+          "mechanical": false,
+          "slowestTimedSec": 30
+        },
         "cardSlots": null,
-        "weatherSealing": null,
-        "fixedLens": null
+        "weatherSealing": true,
+        "fixedLens": null,
+        "operatingTemperatureC": {
+          "max": 40,
+          "min": 0
+        }
       },
       "sources": [
         {
@@ -7829,14 +7860,247 @@
             "specs.sensor.megapixels",
             "specs.weight",
             "specs.weightBasis",
-            "specs.sensor",
+            "specs.sensor.format",
+            "specs.sensor.megapixels",
             "specs.bodyOnlyWeight",
             "specs.dimensions"
           ],
           "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+        },
+        {
+          "url": "https://www.sigma-global.com/en/cameras/bf/",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-14",
+          "fields": [
+            "specs.autofocus.description",
+            "specs.autofocus.subjects",
+            "specs.batteryConditions",
+            "specs.batteryShots",
+            "specs.bodyOnlyWeight",
+            "specs.burst.maxElectronicFps",
+            "specs.dimensions",
+            "specs.lcd",
+            "specs.operatingTemperatureC.max",
+            "specs.operatingTemperatureC.min",
+            "specs.sensor.format",
+            "specs.sensor.generation",
+            "specs.sensor.megapixels",
+            "specs.sensor.sizeMm",
+            "specs.shutter.bulb",
+            "specs.shutter.electronic",
+            "specs.shutter.fastestElectronicSec",
+            "specs.shutter.slowestTimedSec",
+            "specs.video.log",
+            "specs.video.max",
+            "specs.weatherSealing",
+            "specs.weight",
+            "specs.weightBasis"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-1862a4d5c1d43b2e",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-14",
+          "fields": [
+            "specs.burst.maxElectronicFps",
+            "specs.shutter.electronic",
+            "specs.shutter.mechanical",
+            "specs.video.max"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-1110da5c3bbb329c",
+          "documentVersion": "FW Ver.1.00"
+        },
+        {
+          "url": "https://sigma-photo.co.kr/pages/bf",
+          "type": "manufacturer",
+          "accessedOn": "2026-10-14",
+          "fields": [
+            "specs.sensor.format"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-936f3a7a282314f0",
+          "documentVersion": null
         }
       ],
-      "legacyFields": []
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.autofocus.description": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-55c87a56e41a7f505d79"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.autofocus.subjects": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fd7feed0567f72ae9981"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.batteryConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c2529d7bd9ba79c8c4eb"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.batteryShots": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2d0f6fe182f8d102b5a1"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.bodyOnlyWeight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-879c5bb4f4f0c4c288a2"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.burst.maxElectronicFps": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-188c6e74af2b8bd871cc",
+            "claim-50466416bf3bd5759675"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.dimensions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0051e3eb917fa47c1ffd"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.lcd": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f1dc37fb42d9ced63770"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.operatingTemperatureC.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-48e6edae1d2d12cf7f51"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.operatingTemperatureC.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2176d70915c392d68fc6"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.sensor.format": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5b95f9e2b6d232ee06d9",
+            "claim-7f13dec4d4f69ff12a5c"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.sensor.generation": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8291e751ea4554adf8f7"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.sensor.megapixels": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cdc1eaef366c75f01959"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.sensor.sizeMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a2221ec12e0af582d186"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.shutter.bulb": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-993228139fc04891ea65"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.shutter.electronic": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-762d41f1d3eb4772cee1",
+            "claim-cc55615471b21053c18f"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.shutter.fastestElectronicSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-85e1a459739703e573a8"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.shutter.mechanical": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-06156f59b276f4dba934"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.shutter.slowestTimedSec": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cbb7fe30f63f1695c54c"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.video.log": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a614cb494f2b3f435748"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.video.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1c9d013add65c4636485",
+            "claim-d9627f4104509f43f491"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.weatherSealing": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1e6f714c9566930a7c89"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-18458dd2e2a81d1afbab"
+          ],
+          "checkedAt": "2026-10-14"
+        },
+        "specs.weightBasis": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3942cbb7d53687a6f937"
+          ],
+          "checkedAt": "2026-10-14"
+        }
+      }
     },
     {
       "id": "ricoh-gr-iii",

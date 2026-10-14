@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://sigma-photo.co.kr/pages/bf",
+  "publisher": "SEKI P&C / Sigma Korea official website",
+  "documentTitle": "Sigma BF — Korea official introduction",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "BF identity and explicit internal-storage/no-SD-slot statement only. No site configuration/auth/session data.",
+  "accessedAt": "2026-10-14T01:06:30.077Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Internal230GB instead of SD card slot",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Full-frame sensor / 35mm full-frame",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "Sigma BF official identity",
+      "value": {
+        "manufacturerModelCode": "BF",
+        "productType": "body",
+        "identity": {
+          "name": "시그마 BF",
+          "brand": "Sigma",
+          "model": "BF",
+          "series": "BF",
+          "aliases": [
+            "Sigma BF"
+          ],
+          "mount": "L-Mount",
+          "kind": "interchangeable",
+          "bodyStyle": "compact"
+        }
+      },
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sigma-bf",
+      "manufacturerModelCode": "BF",
+      "productType": "body",
+      "identity": {
+        "name": "시그마 BF",
+        "brand": "Sigma",
+        "model": "BF",
+        "series": "BF",
+        "aliases": [
+          "Sigma BF"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 0,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Internal storage",
+            "row": "Internal230GB instead of SD card slot"
+          },
+          "conditions": {
+            "noPhysicalSDCardSlotConfirmed": true,
+            "internalStorageGB": 230,
+            "internalStorageNotCardSlot": true,
+            "externalUSBStorageNotCardSlot": true,
+            "unknownReason": "Official absence of removable card slot is recorded; existing cardSlots object requires positive count. Preserve absence in provenance, not a false count0 object or invented removable media."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 1,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "풀프레임 센서",
+            "row": "35mm 풀프레임 센서"
+          },
+          "conditions": {
+            "sourceFormat": "35mm full-frame",
+            "noInferredDimensions": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ],
+      "identityEvidence": {
+        "evidenceRef": 2,
+        "locator": {
+          "section": "BF official product hero / L-Mount product description",
+          "row": "Sigma BF"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-14",
+        "reviewer": "GPT-6.1 Sol"
+      }
+    }
+  ],
+  "contentDigest": "858604216b5c2a4a760ad56e2a8c2af63688727de89449b248a89a4538c17982",
+  "sourceId": "source-936f3a7a282314f0"
+}

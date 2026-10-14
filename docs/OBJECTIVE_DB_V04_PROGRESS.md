@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Sigma production batch 001 — 2026-10-14
+
+완료. Clean baseline `0a21488`에서 설계/contracts/progress/이전 브랜드 감사/canonical/map/scope/vocab/validators/tests를 대조했다. Korea CAMERAS 메뉴가 연결하는 Global 소개 목록은 **3 cards /3 identities(BF/fp L/fp)**이지만, 공식 개별 페이지·단종 목록에서 fp/fp L의 단종을 확인했다. Global/JP 현행 landing은 BF만 표시한다. **Released/current1, 단종2, named upcoming0, 과거 unnamed Foveon 개발 reference1(2026 상태 미확인), linked Silver1, special0**. 렌즈/cine/accessory 및 단종 spec ingestion은 하지 않았다. 한국 재고/전세계 모든 SKU coverage를 주장하지 않는다.
+
+`production-sigma-bodies-001`에서 기존 **sigma-bf1개 보강 /신규0**, 현행 미처리 **1→0**, duplicate/ambiguous0. Canonical **163 bodies /36 lenses /199 total 유지**, 나머지162bodies/36lenses 및 기존 BF identity/aliases/mount/kind/가격 동일. 공식 incoming raw3(KR/Global/manual), 37claims(known28/null9)/33paths, fieldEvidence24/known leaves27, 새 source3 모두 연결; 기존 reference 포함 canonical link4. Human diff same-value/new-evidence6/null-fill18/conflict0/unknown9. Strict→review→explicit approval→atomic apply→canonical validation→실제 재적용 **already-canonicalized/canonicalMatches:true**. After SHA `6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5`.
+
+BF native24.6MP/공식35.9×23.9mm/BSI CMOS/RGB filter, 기존L-Mount/interchangeable, no mechanical shutter, electronic8fps 조건, 6K29.97p internalHEVC200Mbps/L-Log/FW1.00 및 H264/EIS/DCcrop 제외 조건, 446g battery-internal-storage/388g body-only 보존. 내부230GB/no SD/USB backup은 slot/SSD recording으로 만들지 않았다. Positive-count cardSlots 계약으로 zero-slot은 null+conditions, EVF/bodyIBIS/LCDhinge/moviebitDepth/crop/AI/actualrelease는 근거 부족 UNKNOWN; 기계식 최고속·연사는 N/A. EIS/lensOIS와 IBIS 분리. 1/25600sec exact raw는 유지하며 기존 canonical6decimal quantization은 후속 후보. 기존제품 canonical identityEvidence 자동 보강·single video/fractional fps 소비도 별도 backlog다.
+
+독립 worker1task/실제API1/retry0/failure0, **input4153/output1043/total5196**, 공개 해당제품자료+최소계약만 전송, patch0/fixture삭제/추가사용자개입0. Main이 현행/단종/identity/source/조건/UNKNOWN/conflict/diff/승인apply 직접 판단; worker의 false conflict/no-IBIS 의견은 버렸다. Unsealed 온도C draft는 기존normalize가 차단해°C로 교정했고, 최초 approval의 누락된diff-digest는 기존gate가 차단했다. 두 호출 실수는 교정되었고 sealed artifact/rules/validator/schema 재설계0.
+
+전체 **335/335**, Objective/production/catalog/coverage **308/308**, 신규Sigma **14/14**. Canonical validation/build/nodecheck/gitdiffcheck 통과(기존chunk경고). Raw-helper UTC3개 **2026-10-14T01:04:14.428Z–01:06:30.077Z**, clock bounds/ISO/digests 검증. [상세49항목](OBJECTIVE_DB_SIGMA_PRODUCTION_001.md), [inventory/terminal checkpoint](../src/data/ingestion/sigma-current-2026-10-14.json), [회귀 테스트](../tests/sigmaProduction001.test.js). 중단 후 완료 production/tests를 재사용하고 문서/checkpoint만 마감했다. 이번 변경 미commit/push없음. **다음은 Sigma coverage audit**: clean 요구 시 완료 변경 검토·commit 후 진행, BF worker/raw/apply 반복 불필요. 현행 추가batch없음; 이번production완료와별도audit완료는구분한다.
+
 ## Stage 4 Leica production coverage audit — 2026-10-14
 
 완료. Clean baseline `5692810`에서 Leica inventory/batch001/보고서, architecture/contracts/progress, canonical/map/scope/vocab/최신 validators/기존 6브랜드 감사를 대조했다. Korea 공식 family/gallery 전체 pagination·마지막 빈 페이지, SL camera comparison 버튼, 상세 variant selector와 글로벌 official specs/identity/edition/release를 새로 조회했다. **37 offer cards /16 base identities, 일반 digital released/current12/canonicalized12/production provenance12, film3/hybrid1 adjacent, linked21(kit8/finish11/collaboration1/commemorative1), upcoming0, 미처리0/duplicate·ambiguous0/critical0**으로 Leica Korea 일반 digital product coverage 1차 완료 판정. 신규/삭제/확인된 identity·relation·release 변화0; 전세계 SKU·재고·전체 필드 완성을 주장하지 않는다.

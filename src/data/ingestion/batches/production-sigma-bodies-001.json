@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sigma-bodies-001",
+  "scope": "Released/current Sigma BF reinforcement only; fp/fpL explicitly discontinued, Foveon historical development not shipping SKU, lens/cine/accessory/price/engine/UI excluded.",
+  "tier": 1,
+  "baselineCommit": "0a21488f004496ce99faaab668b2d05e758f3899",
+  "canonicalBaselineDigest": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+  "lastSuccessfulGate": "apply",
+  "items": [
+    {
+      "itemKey": "sigma-bf",
+      "productId": "sigma-bf",
+      "state": "canonicalized",
+      "attempt": 1,
+      "sourceIds": [
+        "source-936f3a7a282314f0",
+        "source-1862a4d5c1d43b2e",
+        "source-1110da5c3bbb329c"
+      ],
+      "issues": [],
+      "rawDigests": [
+        "ee1b29f88cf72c2475dbfc5b2b58b851b4c8f01da728cd12223869b80feb3957",
+        "3740193042f23d8e80842395bc97128b03aa034444555e0cb4eea8b59cc5a320",
+        "4bc2d0491e4e80ab1151f409dcd77bea3877b64eaf8bdd9948d757676788ee50"
+      ],
+      "stagingDigest": "d547b72f1eb1b864adc5c8d6ed47b4d7b980c892ecd1cd656c5dbd335ee936e1",
+      "diffDigest": "1638cf12b35b25f0cf158e3d2d4ffbcddf4ff5d9756f84fcb81c641927fbf8b7",
+      "updatedAt": "2026-10-14T01:08:07.575Z"
+    }
+  ],
+  "updatedAt": "2026-10-14T01:08:07.575Z",
+  "expectedCanonicalDigest": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+  "apply": {
+    "state": "canonicalized",
+    "approvalId": "approval-ec854cb62fc3035f177cb8a18a74c8ac6a6980f9dfd1afd405134cf675c390da",
+    "completedAt": "2026-10-14T01:08:07.575Z",
+    "transaction": "transactions/production-sigma-bodies-001"
+  }
+}

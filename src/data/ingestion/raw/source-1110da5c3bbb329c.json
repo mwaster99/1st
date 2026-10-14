@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+  "publisher": "Sigma Corporation",
+  "documentTitle": "Sigma BF English instruction manual",
+  "documentVersion": "FW Ver.1.00",
+  "region": "Global",
+  "language": "en",
+  "evidenceScope": "BF electronic-only shutter; recording-mode/bitrate/EIS/DC-crop exclusions and conditional continuous drive. PDF page numbers distinguish printed numbers.",
+  "accessedAt": "2026-10-14T01:04:14.428Z",
+  "evidenceExcerpt": [
+    {
+      "field": "No mechanical shutter mechanism",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "Electronic shutter",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "6K Frame Rate / Bit Rate",
+      "value": "6K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "Maximum approximate8fps",
+      "value": 8,
+      "unit": "fps"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sigma-bf",
+      "manufacturerModelCode": "BF",
+      "productType": "body",
+      "identity": {
+        "name": "시그마 BF",
+        "brand": "Sigma",
+        "model": "BF",
+        "series": "BF",
+        "aliases": [
+          "Sigma BF"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.shutter.mechanical",
+          "evidenceRef": 0,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "PDF p20 / printed p19 Electronic Shutter",
+            "row": "No mechanical shutter mechanism"
+          },
+          "conditions": {
+            "sourceWording": "not equipped with a mechanical shutter mechanism",
+            "electronicExposure": true,
+            "flickerCanCauseUnevenExposure": true,
+            "fastSubjectCanDistort": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "evidenceRef": 1,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "PDF p20 / printed p19 Electronic Shutter",
+            "row": "Electronic shutter"
+          },
+          "conditions": {
+            "flickerCanCauseUnevenExposure": true,
+            "fastSubjectCanDistort": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 2,
+          "rawValue": "6K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "PDF p102–103 / printed p101–102 Record Settings",
+            "row": "6K Frame Rate / Bit Rate"
+          },
+          "conditions": {
+            "resolution": [
+              6016,
+              3384
+            ],
+            "frameRate": 29.97,
+            "internal": true,
+            "codec": "H.265 HEVC / L-Log",
+            "bitrateMbps": 200,
+            "eisSupported": false,
+            "dcCropModeSupported": false,
+            "h264At6K": false,
+            "firmwareDocument": "FW Ver.1.00",
+            "frameRateTable6K": [
+              23.98,
+              25,
+              29.97
+            ],
+            "eisAtLowerResolutionCropFactor": 1.25,
+            "eisWithDCLensCropFactor": 1.96,
+            "lensOISAndEISMutuallyExclusive": true,
+            "doNotConflateWith119_88FHD": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 3,
+          "rawValue": 8,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "PDF p59 / printed p58 Continuous Shooting and p70 / printed p69 Single AF",
+            "row": "Maximum approximate8fps"
+          },
+          "conditions": {
+            "selectableFrameRates": [
+              3,
+              5,
+              8
+            ],
+            "manualConditionalBufferAtLeastAround100MayBeLess": true,
+            "notConflictWithDifferentSpecFrameCountScope": true,
+            "singleAFContinuousFocusFirstFrameLocked": true,
+            "singleAFExposureLockedAtHalfPress": true,
+            "afConditionAppliesToAFSNotAllModes": true,
+            "firmwareDocument": "FW Ver.1.00"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "e2223772515da25234778ad2abe8005418b9f4b008d8be91393eb674405ccb48",
+  "sourceId": "source-1110da5c3bbb329c"
+}

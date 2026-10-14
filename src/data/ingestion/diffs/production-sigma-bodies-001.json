@@ -1,0 +1,1106 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sigma-bodies-001",
+  "canonicalBaselineDigest": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sigma-bodies-001",
+      "productId": "sigma-bf",
+      "productName": "시그마 BF",
+      "productType": "body",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": null,
+      "canonicalProductDigest": "1de6e70e877f6e6b3fc1dc2b9050d8e21d3cc25f9308cd09dc8d40279e67f4cf",
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-e24e90257be9ec5f362a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "AF System"
+            },
+            "conditions": {
+              "unknownReason": "No named hardware AI/co-processor stated in reviewed official sources."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Image Plane Phase-Detection AF + Contrast detection system; Single AF, Continuous AF, Manual Focus",
+          "unit": null,
+          "claimId": "claim-55c87a56e41a7f505d79",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Focus / AF System"
+            },
+            "conditions": {
+              "movingObjectPrediction": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Animal"
+          ],
+          "unit": null,
+          "claimId": "claim-fd7feed0567f72ae9981",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Other Focus Functions / Subject Tracking AF"
+            },
+            "conditions": {
+              "sourceModes": [
+                "Human + Animal",
+                "Human",
+                "Animal"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Sigma approx.260 still images; test procedure not specified in product specification.",
+          "unit": null,
+          "claimId": "claim-c2529d7bd9ba79c8c4eb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Power / Number of Recordable Still Images"
+            },
+            "conditions": {
+              "battery": "BP-81",
+              "recordableContinuousMovieMinutes": 60,
+              "notClaimedCIPA": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 260,
+          "unit": null,
+          "claimId": "claim-2d0f6fe182f8d102b5a1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Number of Recordable Still Images"
+            },
+            "conditions": {
+              "approximate": true,
+              "sourceTestProcedureNotSpecified": true,
+              "notVideoMinutes": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 388,
+          "incomingValue": 388,
+          "unit": "g",
+          "claimId": "claim-879c5bb4f4f0c4c288a2",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Weight / Camera Body Only"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "approximate": true,
+              "capInclusionNotSpecified": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": "fps",
+          "claimId": "claim-188c6e74af2b8bd871cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1110da5c3bbb329c",
+            "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+            "locator": {
+              "section": "PDF p59 / printed p58 Continuous Shooting and p70 / printed p69 Single AF",
+              "row": "Maximum approximate8fps"
+            },
+            "conditions": {
+              "selectableFrameRates": [
+                3,
+                5,
+                8
+              ],
+              "manualConditionalBufferAtLeastAround100MayBeLess": true,
+              "notConflictWithDifferentSpecFrameCountScope": true,
+              "singleAFContinuousFocusFirstFrameLocked": true,
+              "singleAFExposureLockedAtHalfPress": true,
+              "afConditionAppliesToAFSNotAllModes": true,
+              "firmwareDocument": "FW Ver.1.00"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": "fps",
+          "claimId": "claim-50466416bf3bd5759675",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Continuous Drive Speed / Number of Recordable Frames"
+            },
+            "conditions": {
+              "selectableFrameRates": [
+                3,
+                5,
+                8
+              ],
+              "recordableFramesJPEG": 1000,
+              "recordableFramesDNG": 350,
+              "maximumApproximate": true,
+              "notUnlimitedSustained": true,
+              "recordFormatOrSettingsCanAffectBuffer": true,
+              "afAeAtMaximumNotUniversallyGuaranteed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "fps",
+          "claimId": "claim-078cf80515f8711b25a9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter / Continuous Drive Speed"
+            },
+            "conditions": {
+              "notApplicable": true,
+              "noMechanicalShutter": true
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-232f4559a0e1dcba9e15",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-936f3a7a282314f0",
+            "url": "https://sigma-photo.co.kr/pages/bf",
+            "locator": {
+              "section": "Internal storage",
+              "row": "Internal230GB instead of SD card slot"
+            },
+            "conditions": {
+              "noPhysicalSDCardSlotConfirmed": true,
+              "internalStorageGB": 230,
+              "internalStorageNotCardSlot": true,
+              "externalUSBStorageNotCardSlot": true,
+              "unknownReason": "Official absence of removable card slot is recorded; existing cardSlots object requires positive count. Preserve absence in provenance, not a false count0 object or invented removable media."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "same-value/new-evidence",
+          "canonicalValue": [
+            130.1,
+            72.8,
+            36.8
+          ],
+          "incomingValue": [
+            130.1,
+            72.8,
+            36.8
+          ],
+          "unit": "mm",
+          "claimId": "claim-0051e3eb917fa47c1ffd",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Dimensions W x H x D"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "approximate": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-a45ed274ba622cbcb6e2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Monitor / Built-in viewfinder"
+            },
+            "conditions": {
+              "unknownReason": "Monitor is documented; no explicit built-in EVF presence/absence statement found in selected official sources. Omission is not absence."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.ibis",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-26eb1a20628b437c5e58",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Image Stabilization System"
+            },
+            "conditions": {
+              "electronicStabilization": "video only",
+              "lensOISNotBodyIBIS": true,
+              "sensorShiftNotClaimed": true,
+              "unknownReason": "EIS system documented, no direct statement confirming sensor/body-IBIS presence or absence; do not infer false."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.lcd",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.15,
+            "resolutionDots": 2100000,
+            "mechanism": null,
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-f1dc37fb42d9ced63770",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Monitor / Type and Coverage"
+            },
+            "conditions": {
+              "technology": "TFT color LCD",
+              "aspectRatio": "3:2",
+              "coverageApproxPercent": 100,
+              "resolutionApproximate": true,
+              "mechanismUnknownReason": "Hinge/movement enum not explicitly stated; do not infer fixed from photographs."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40,
+          "unit": "°C",
+          "claimId": "claim-48e6edae1d2d12cf7f51",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Operating Environment / Temperature"
+            },
+            "conditions": {
+              "humidityMaxPercent": 85,
+              "nonCondensing": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0,
+          "unit": "°C",
+          "claimId": "claim-2176d70915c392d68fc6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Operating Environment / Temperature"
+            },
+            "conditions": {
+              "humidityMaxPercent": 85,
+              "nonCondensing": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.releaseDate",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-83f3adc497ba1b8f316f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Market release date"
+            },
+            "conditions": {
+              "unknownReason": "Initial press announces launch monthApril2025, but selected sources do not verify precise actual market launch date; do not promote announcement date.",
+              "plannedLaunchMonth": "2025-04"
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-7f13dec4d4f69ff12a5c",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Image Sensor / Type"
+            },
+            "conditions": {
+              "sourceFormat": "35mm full-frame",
+              "notInferredPhysicalDimensions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "풀프레임",
+          "incomingValue": "풀프레임",
+          "unit": null,
+          "claimId": "claim-5b95f9e2b6d232ee06d9",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-936f3a7a282314f0",
+            "url": "https://sigma-photo.co.kr/pages/bf",
+            "locator": {
+              "section": "풀프레임 센서",
+              "row": "35mm 풀프레임 센서"
+            },
+            "conditions": {
+              "sourceFormat": "35mm full-frame",
+              "noInferredDimensions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Back-illuminated CMOS",
+          "unit": null,
+          "claimId": "claim-8291e751ea4554adf8f7",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Image Sensor Type / Color Filter System"
+            },
+            "conditions": {
+              "colorFilterSystem": "RGB Primary color filter",
+              "specificBayerLayoutNamed": false,
+              "notInheritedFoveon": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 24.6,
+          "incomingValue": 24.6,
+          "unit": "MP",
+          "claimId": "claim-cdc1eaef366c75f01959",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Camera Effective Pixels / Total Pixels"
+            },
+            "conditions": {
+              "approximate": true,
+              "totalMegapixels": 25.3,
+              "notOutputPixels": true,
+              "stillRawOutput": [
+                6016,
+                4012
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": [
+            35.9,
+            23.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-a2221ec12e0af582d186",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Image Sensor Type"
+            },
+            "conditions": {
+              "explicitManufacturerMm": true,
+              "notComputedFromFullFrameLabel": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.bulb",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-993228139fc04891ea65",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter Speed / Bulb"
+            },
+            "conditions": {
+              "maximumSeconds": 300
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-762d41f1d3eb4772cee1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1110da5c3bbb329c",
+            "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+            "locator": {
+              "section": "PDF p20 / printed p19 Electronic Shutter",
+              "row": "Electronic shutter"
+            },
+            "conditions": {
+              "flickerCanCauseUnevenExposure": true,
+              "fastSubjectCanDistort": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-cc55615471b21053c18f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter / Type"
+            },
+            "conditions": {
+              "type": "Electronic shutter"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0.000039,
+          "unit": "s",
+          "claimId": "claim-85e1a459739703e573a8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter Speed"
+            },
+            "conditions": {
+              "exactSourceFraction": "1/25600",
+              "existingSixDecimalQuantization": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestMechanicalSec",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "s",
+          "claimId": "claim-9ae462dee50fcc4abcc9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter Speed / Type"
+            },
+            "conditions": {
+              "notApplicable": true,
+              "noMechanicalShutter": true
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-06156f59b276f4dba934",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1110da5c3bbb329c",
+            "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+            "locator": {
+              "section": "PDF p20 / printed p19 Electronic Shutter",
+              "row": "No mechanical shutter mechanism"
+            },
+            "conditions": {
+              "sourceWording": "not equipped with a mechanical shutter mechanism",
+              "electronicExposure": true,
+              "flickerCanCauseUnevenExposure": true,
+              "fastSubjectCanDistort": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 30,
+          "unit": "s",
+          "claimId": "claim-cbb7fe30f63f1695c54c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Shutter Speed"
+            },
+            "conditions": {
+              "bulbMaximumSeconds": 300,
+              "notBulbTimedMax": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-b9336e1f97ee43e1976f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Movie Recording Format"
+            },
+            "conditions": {
+              "unknownReason": "Video bit depth not stated in reviewed product specification; DNG14-bit is still-image data, not video."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "unknown-no-change",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-baa8c5146369ffcc2c40",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "6K / EIS and DC Crop exclusions"
+            },
+            "conditions": {
+              "eisAt6K": false,
+              "dcCropAt6K": false,
+              "unknownReason": "6K exclusions stated but no direct native crop-factor/no-crop flag; do not turn mode restrictions into an inferred boolean."
+            }
+          },
+          "reviewRequired": false
+        },
+        {
+          "path": "specs.video.log",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-a614cb494f2b3f435748",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Movie Format / L-Log"
+            },
+            "conditions": {
+              "logName": "L-Log",
+              "notCinemaDngRaw": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "6K 29.97p",
+          "unit": null,
+          "claimId": "claim-d9627f4104509f43f491",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1110da5c3bbb329c",
+            "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+            "locator": {
+              "section": "PDF p102–103 / printed p101–102 Record Settings",
+              "row": "6K Frame Rate / Bit Rate"
+            },
+            "conditions": {
+              "resolution": [
+                6016,
+                3384
+              ],
+              "frameRate": 29.97,
+              "internal": true,
+              "codec": "H.265 HEVC / L-Log",
+              "bitrateMbps": 200,
+              "eisSupported": false,
+              "dcCropModeSupported": false,
+              "h264At6K": false,
+              "firmwareDocument": "FW Ver.1.00",
+              "frameRateTable6K": [
+                23.98,
+                25,
+                29.97
+              ],
+              "eisAtLowerResolutionCropFactor": 1.25,
+              "eisWithDCLensCropFactor": 1.96,
+              "lensOISAndEISMutuallyExclusive": true,
+              "doNotConflateWith119_88FHD": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "6K 29.97p",
+          "unit": null,
+          "claimId": "claim-1c9d013add65c4636485",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Movie Recording Format / Record Format and Frame rate"
+            },
+            "conditions": {
+              "resolution": [
+                6016,
+                3384
+              ],
+              "frameRate": 29.97,
+              "internal": true,
+              "storage": "Internal230GB",
+              "codec": "H.265 HEVC / L-Log",
+              "eisSupported": false,
+              "dcCropModeSupported": false,
+              "not6K120fps": true,
+              "otherFrameRatesAt6K": [
+                23.98,
+                25
+              ],
+              "fhdFrameRates": [
+                23.98,
+                25,
+                29.97,
+                50,
+                59.94,
+                100,
+                119.88
+              ],
+              "externalUSBStorageForBackupNotRecording": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weatherSealing",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-1e6f714c9566930a7c89",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Dust and Splash Resistant Structure"
+            },
+            "conditions": {
+              "notWaterproof": true,
+              "lightRainAllowed": true,
+              "noIPRatingClaimed": true,
+              "bodyConstruction": "Aluminum unibody"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 446,
+          "incomingValue": 446,
+          "unit": "g",
+          "claimId": "claim-18458dd2e2a81d1afbab",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Dimensions and Weight / Weight"
+            },
+            "conditions": {
+              "weightBasis": "battery-internal-storage",
+              "includingBattery": true,
+              "internalStorageNonRemovable": true,
+              "internalStorageGB": 230,
+              "capInclusionNotSpecified": true,
+              "approximate": true,
+              "lensExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "same-value/new-evidence",
+          "canonicalValue": "battery-internal-storage",
+          "incomingValue": "battery-internal-storage",
+          "unit": null,
+          "claimId": "claim-3942cbb7d53687a6f937",
+          "canonicalSources": [
+            {
+              "url": "https://www.sigma-global.com/en/cameras/bf",
+              "type": "manufacturer",
+              "accessedOn": "2026-09-14",
+              "fields": [
+                "identity",
+                "mount",
+                "specs.sensor.format",
+                "specs.sensor.megapixels",
+                "specs.weight",
+                "specs.weightBasis",
+                "specs.sensor",
+                "specs.bodyOnlyWeight",
+                "specs.dimensions"
+              ],
+              "note": "bodyStyle is an editorial exterior category, not a manufacturer performance rating."
+            }
+          ],
+          "incomingSource": {
+            "sourceId": "source-1862a4d5c1d43b2e",
+            "url": "https://www.sigma-global.com/en/cameras/bf/",
+            "locator": {
+              "section": "Official BF specifications",
+              "row": "Weight / Memory Media"
+            },
+            "conditions": {
+              "includesBattery": true,
+              "noRemovableCard": true,
+              "existingAllowedVocabReused": true
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

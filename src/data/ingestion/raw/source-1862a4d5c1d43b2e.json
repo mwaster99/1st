@@ -1,0 +1,807 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.sigma-global.com/en/cameras/bf/",
+  "publisher": "Sigma Corporation",
+  "documentTitle": "Sigma BF — official specifications",
+  "documentVersion": null,
+  "region": "Global",
+  "language": "en",
+  "evidenceScope": "BF only: own specification rows. NativeMP vs total/output; exact physicalmm, mass basis, LCD, EIS, recording modes, burst/shutter/battery/weather. Prices/lenses excluded.",
+  "accessedAt": "2026-10-14T01:04:55.569Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Image Sensor / Type",
+      "value": "풀프레임",
+      "unit": null
+    },
+    {
+      "field": "Camera Effective Pixels / Total Pixels",
+      "value": 24.6,
+      "unit": "MP"
+    },
+    {
+      "field": "Image Sensor Type / Color Filter System",
+      "value": "Back-illuminated CMOS",
+      "unit": null
+    },
+    {
+      "field": "Image Sensor Type",
+      "value": [
+        35.9,
+        23.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Dimensions and Weight / Weight",
+      "value": 446,
+      "unit": "g"
+    },
+    {
+      "field": "Weight / Memory Media",
+      "value": "battery-internal-storage",
+      "unit": null
+    },
+    {
+      "field": "Weight / Camera Body Only",
+      "value": 388,
+      "unit": "g"
+    },
+    {
+      "field": "Dimensions W x H x D",
+      "value": [
+        130.1,
+        72.8,
+        36.8
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Focus / AF System",
+      "value": "Image Plane Phase-Detection AF + Contrast detection system; Single AF, Continuous AF, Manual Focus",
+      "unit": null
+    },
+    {
+      "field": "Other Focus Functions / Subject Tracking AF",
+      "value": [
+        "Human",
+        "Animal"
+      ],
+      "unit": null
+    },
+    {
+      "field": "AF System",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Monitor / Type and Coverage",
+      "value": {
+        "present": true,
+        "sizeInches": 3.15,
+        "resolutionDots": 2100000,
+        "mechanism": null,
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Monitor / Built-in viewfinder",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Image Stabilization System",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Movie Recording Format / Record Format and Frame rate",
+      "value": "6K 29.97p",
+      "unit": null
+    },
+    {
+      "field": "Movie Recording Format",
+      "value": null,
+      "unit": "bit"
+    },
+    {
+      "field": "Movie Format / L-Log",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "6K / EIS and DC Crop exclusions",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Shutter / Continuous Drive Speed",
+      "value": null,
+      "unit": "fps"
+    },
+    {
+      "field": "Continuous Drive Speed / Number of Recordable Frames",
+      "value": 8,
+      "unit": "fps"
+    },
+    {
+      "field": "Shutter / Type",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "Shutter Speed",
+      "value": 0.0000390625,
+      "unit": "s"
+    },
+    {
+      "field": "Shutter Speed / Type",
+      "value": null,
+      "unit": "s"
+    },
+    {
+      "field": "Shutter Speed",
+      "value": 30,
+      "unit": "s"
+    },
+    {
+      "field": "Shutter Speed / Bulb",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "Number of Recordable Still Images",
+      "value": 260,
+      "unit": "shots"
+    },
+    {
+      "field": "Power / Number of Recordable Still Images",
+      "value": "Sigma approx.260 still images; test procedure not specified in product specification.",
+      "unit": null
+    },
+    {
+      "field": "Dust and Splash Resistant Structure",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "Operating Environment / Temperature",
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "field": "Operating Environment / Temperature",
+      "value": 40,
+      "unit": "°C"
+    },
+    {
+      "field": "Market release date",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sigma-bf",
+      "manufacturerModelCode": "BF",
+      "productType": "body",
+      "identity": {
+        "name": "시그마 BF",
+        "brand": "Sigma",
+        "model": "BF",
+        "series": "BF",
+        "aliases": [
+          "Sigma BF"
+        ],
+        "mount": "L-Mount",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.format",
+          "evidenceRef": 0,
+          "rawValue": "풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Image Sensor / Type"
+          },
+          "conditions": {
+            "sourceFormat": "35mm full-frame",
+            "notInferredPhysicalDimensions": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "evidenceRef": 1,
+          "rawValue": 24.6,
+          "rawUnit": "MP",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Camera Effective Pixels / Total Pixels"
+          },
+          "conditions": {
+            "approximate": true,
+            "totalMegapixels": 25.3,
+            "notOutputPixels": true,
+            "stillRawOutput": [
+              6016,
+              4012
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 2,
+          "rawValue": "Back-illuminated CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Image Sensor Type / Color Filter System"
+          },
+          "conditions": {
+            "colorFilterSystem": "RGB Primary color filter",
+            "specificBayerLayoutNamed": false,
+            "notInheritedFoveon": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 3,
+          "rawValue": [
+            35.9,
+            23.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Image Sensor Type"
+          },
+          "conditions": {
+            "explicitManufacturerMm": true,
+            "notComputedFromFullFrameLabel": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 446,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Dimensions and Weight / Weight"
+          },
+          "conditions": {
+            "weightBasis": "battery-internal-storage",
+            "includingBattery": true,
+            "internalStorageNonRemovable": true,
+            "internalStorageGB": 230,
+            "capInclusionNotSpecified": true,
+            "approximate": true,
+            "lensExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weightBasis",
+          "evidenceRef": 5,
+          "rawValue": "battery-internal-storage",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Weight / Memory Media"
+          },
+          "conditions": {
+            "includesBattery": true,
+            "noRemovableCard": true,
+            "existingAllowedVocabReused": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "evidenceRef": 6,
+          "rawValue": 388,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Weight / Camera Body Only"
+          },
+          "conditions": {
+            "weightBasis": "body-only",
+            "approximate": true,
+            "capInclusionNotSpecified": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.dimensions",
+          "evidenceRef": 7,
+          "rawValue": [
+            130.1,
+            72.8,
+            36.8
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Dimensions W x H x D"
+          },
+          "conditions": {
+            "order": [
+              "width",
+              "height",
+              "depth"
+            ],
+            "approximate": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 8,
+          "rawValue": "Image Plane Phase-Detection AF + Contrast detection system; Single AF, Continuous AF, Manual Focus",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Focus / AF System"
+          },
+          "conditions": {
+            "movingObjectPrediction": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "evidenceRef": 9,
+          "rawValue": [
+            "Human",
+            "Animal"
+          ],
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Other Focus Functions / Subject Tracking AF"
+          },
+          "conditions": {
+            "sourceModes": [
+              "Human + Animal",
+              "Human",
+              "Animal"
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.aiUnit",
+          "evidenceRef": 10,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "AF System"
+          },
+          "conditions": {
+            "unknownReason": "No named hardware AI/co-processor stated in reviewed official sources."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 11,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3.15,
+            "resolutionDots": 2100000,
+            "mechanism": null,
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Monitor / Type and Coverage"
+          },
+          "conditions": {
+            "technology": "TFT color LCD",
+            "aspectRatio": "3:2",
+            "coverageApproxPercent": 100,
+            "resolutionApproximate": true,
+            "mechanismUnknownReason": "Hinge/movement enum not explicitly stated; do not infer fixed from photographs."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.evf",
+          "evidenceRef": 12,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Monitor / Built-in viewfinder"
+          },
+          "conditions": {
+            "unknownReason": "Monitor is documented; no explicit built-in EVF presence/absence statement found in selected official sources. Omission is not absence."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Image Stabilization System"
+          },
+          "conditions": {
+            "electronicStabilization": "video only",
+            "lensOISNotBodyIBIS": true,
+            "sensorShiftNotClaimed": true,
+            "unknownReason": "EIS system documented, no direct statement confirming sensor/body-IBIS presence or absence; do not infer false."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 14,
+          "rawValue": "6K 29.97p",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Movie Recording Format / Record Format and Frame rate"
+          },
+          "conditions": {
+            "resolution": [
+              6016,
+              3384
+            ],
+            "frameRate": 29.97,
+            "internal": true,
+            "storage": "Internal230GB",
+            "codec": "H.265 HEVC / L-Log",
+            "eisSupported": false,
+            "dcCropModeSupported": false,
+            "not6K120fps": true,
+            "otherFrameRatesAt6K": [
+              23.98,
+              25
+            ],
+            "fhdFrameRates": [
+              23.98,
+              25,
+              29.97,
+              50,
+              59.94,
+              100,
+              119.88
+            ],
+            "externalUSBStorageForBackupNotRecording": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 15,
+          "rawValue": null,
+          "rawUnit": "bit",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Movie Recording Format"
+          },
+          "conditions": {
+            "unknownReason": "Video bit depth not stated in reviewed product specification; DNG14-bit is still-image data, not video."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.log",
+          "evidenceRef": 16,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Movie Format / L-Log"
+          },
+          "conditions": {
+            "logName": "L-Log",
+            "notCinemaDngRaw": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 17,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "6K / EIS and DC Crop exclusions"
+          },
+          "conditions": {
+            "eisAt6K": false,
+            "dcCropAt6K": false,
+            "unknownReason": "6K exclusions stated but no direct native crop-factor/no-crop flag; do not turn mode restrictions into an inferred boolean."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 18,
+          "rawValue": null,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter / Continuous Drive Speed"
+          },
+          "conditions": {
+            "notApplicable": true,
+            "noMechanicalShutter": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 19,
+          "rawValue": 8,
+          "rawUnit": "fps",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Continuous Drive Speed / Number of Recordable Frames"
+          },
+          "conditions": {
+            "selectableFrameRates": [
+              3,
+              5,
+              8
+            ],
+            "recordableFramesJPEG": 1000,
+            "recordableFramesDNG": 350,
+            "maximumApproximate": true,
+            "notUnlimitedSustained": true,
+            "recordFormatOrSettingsCanAffectBuffer": true,
+            "afAeAtMaximumNotUniversallyGuaranteed": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "evidenceRef": 20,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter / Type"
+          },
+          "conditions": {
+            "type": "Electronic shutter"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "evidenceRef": 21,
+          "rawValue": 0.0000390625,
+          "rawUnit": "s",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter Speed"
+          },
+          "conditions": {
+            "exactSourceFraction": "1/25600",
+            "existingSixDecimalQuantization": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.fastestMechanicalSec",
+          "evidenceRef": 22,
+          "rawValue": null,
+          "rawUnit": "s",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter Speed / Type"
+          },
+          "conditions": {
+            "notApplicable": true,
+            "noMechanicalShutter": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "evidenceRef": 23,
+          "rawValue": 30,
+          "rawUnit": "s",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter Speed"
+          },
+          "conditions": {
+            "bulbMaximumSeconds": 300,
+            "notBulbTimedMax": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.bulb",
+          "evidenceRef": 24,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Shutter Speed / Bulb"
+          },
+          "conditions": {
+            "maximumSeconds": 300
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.batteryShots",
+          "evidenceRef": 25,
+          "rawValue": 260,
+          "rawUnit": "shots",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Number of Recordable Still Images"
+          },
+          "conditions": {
+            "approximate": true,
+            "sourceTestProcedureNotSpecified": true,
+            "notVideoMinutes": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "evidenceRef": 26,
+          "rawValue": "Sigma approx.260 still images; test procedure not specified in product specification.",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Power / Number of Recordable Still Images"
+          },
+          "conditions": {
+            "battery": "BP-81",
+            "recordableContinuousMovieMinutes": 60,
+            "notClaimedCIPA": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weatherSealing",
+          "evidenceRef": 27,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Dust and Splash Resistant Structure"
+          },
+          "conditions": {
+            "notWaterproof": true,
+            "lightRainAllowed": true,
+            "noIPRatingClaimed": true,
+            "bodyConstruction": "Aluminum unibody"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 28,
+          "rawValue": 0,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Operating Environment / Temperature"
+          },
+          "conditions": {
+            "humidityMaxPercent": 85,
+            "nonCondensing": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 29,
+          "rawValue": 40,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Operating Environment / Temperature"
+          },
+          "conditions": {
+            "humidityMaxPercent": 85,
+            "nonCondensing": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.releaseDate",
+          "evidenceRef": 30,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official BF specifications",
+            "row": "Market release date"
+          },
+          "conditions": {
+            "unknownReason": "Initial press announces launch monthApril2025, but selected sources do not verify precise actual market launch date; do not promote announcement date.",
+            "plannedLaunchMonth": "2025-04"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "f7c18aac96404b9947f7e135330447084a4f8fccaa13464c1be1fda71090711d",
+  "sourceId": "source-1862a4d5c1d43b2e"
+}

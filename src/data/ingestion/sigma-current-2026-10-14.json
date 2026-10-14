@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "brand": "Sigma",
+  "snapshotDate": "2026-10-14",
+  "reviewedAt": "2026-10-14T00:59:38.878Z",
+  "baselineCommit": "0a21488f004496ce99faaab668b2d05e758f3899",
+  "canonicalBaselineSha256": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+  "denominatorPolicy": "Korea official home CAMERAS category delegates to Global our-cameras; Korea local BF introduction is cross-checked. Three retained camera model cards BF/fpL/fp; explicit per-product DISCONTINUED + official discontinued listing overrides retained marketing card/new-product text. Global/JP current landing show BF only. Not a Korea retail-stock guarantee or an archived-catalog collection. Lens/cine/accessory and unnamed development references excluded from current product denominator.",
+  "countsAtStart": {
+    "officialCameraCards": 3,
+    "baseIdentities": 3,
+    "releasedCurrent": 1,
+    "discontinuedArchive": 2,
+    "announcedUpcomingProducts": 0,
+    "developmentReferenceProjects": 1,
+    "linkedInlineColorVariants": 1,
+    "deferredSpecial": 0,
+    "existingCanonicalCurrent": 1,
+    "productionUnprocessedCurrent": 1,
+    "bodies": 163,
+    "lenses": 36,
+    "total": 199
+  },
+  "cards": [
+    {
+      "officialDisplayName": "BF",
+      "manufacturerModelCode": "BF",
+      "officialFamily": "BF",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "listedVia": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "classification": "released/current",
+      "status": "canonicalized",
+      "scopeStatus": "in-scope",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": "sigma-bf",
+      "canonicalExistsAtStart": true,
+      "productionProvenanceAtStart": false,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/bf/",
+        "label": "Current BF with buy/dealer and official launchApril2025; current Global/JP cameras landing",
+        "crossCheck": "https://www.sigma-global.com/en/cameras/"
+      },
+      "canonicalExistsAfter": true,
+      "productionProvenanceAfter": true,
+      "productionBatch": "production-sigma-bodies-001"
+    },
+    {
+      "officialDisplayName": "fp L",
+      "manufacturerModelCode": "fp L",
+      "officialFamily": "fp series",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/fpl/",
+      "listedVia": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "classification": "discontinued/archive",
+      "status": "excluded-current-denominator",
+      "scopeStatus": "archived-outside-current-scope",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistsAtStart": false,
+      "productionProvenanceAtStart": false,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/fpl/",
+        "label": "DISCONTINUED in product heading and tag",
+        "crossCheck": "https://www.sigma-global.com/en/discontinued/"
+      }
+    },
+    {
+      "officialDisplayName": "fp",
+      "manufacturerModelCode": "fp",
+      "officialFamily": "fp series",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/fp/",
+      "listedVia": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "classification": "discontinued/archive",
+      "status": "excluded-current-denominator",
+      "scopeStatus": "archived-outside-current-scope",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "canonicalId": null,
+      "canonicalExistsAtStart": false,
+      "productionProvenanceAtStart": false,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/fp/",
+        "label": "DISCONTINUED in product heading and tag",
+        "crossCheck": "https://www.sigma-global.com/en/discontinued/"
+      }
+    }
+  ],
+  "variants": [
+    {
+      "variantKey": "bf-silver",
+      "baseIdentity": "BF",
+      "canonicalId": "sigma-bf",
+      "relation": "linked-color-variant",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "evidence": "Available mounts L-Mount (Black) / L-Mount (Silver); same BF specs/model. Inline finish, not an additional camera model card.",
+      "newProduct": false
+    }
+  ],
+  "developmentReferences": [
+    {
+      "name": "Unnamed full-frame Foveon X3 sensor-camera project",
+      "classification": "historical development announcement; current project status not confirmed",
+      "lastReviewedAnnouncementDate": "2021-02-19",
+      "officialSources": [
+        "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+        "https://www.sigma-global.com/en/news/2021/02/19/12739/"
+      ],
+      "releaseStatus": "unreleased-development-reference",
+      "concreteCurrentModelCode": null,
+      "canonicalId": null,
+      "countsAsReleasedCurrent": false,
+      "note": "Historical official sensor redesign/R&D announcement, no dated released camera product/card found. Do not infer2026 progress/cancellation, shipping date or production camera specifications."
+    }
+  ],
+  "inventoryStatusNotes": [
+    "Global our-cameras retains fp/fpL feature cards, while individual pages and official discontinued catalog explicitly mark both discontinued. Status and display/navigation are separate.",
+    "No fixed-lens current camera found on verified current landing. Older discontinued list read only to resolve fp/fpL status; no archived model/spec ingestion."
+  ],
+  "scopeBoundary": {
+    "cameraRoute": "https://www.sigma-global.com/en/cameras/our-cameras/",
+    "koreaCameraPage": "https://sigma-photo.co.kr/pages/bf",
+    "lensRoutes": [
+      "https://sigma-photo.co.kr/pages/lenses",
+      "https://www.sigma-global.com/en/lenses/our-lenses/"
+    ],
+    "cineLensRoutes": [
+      "https://sigma-photo.co.kr/pages/cine-lenses",
+      "https://www.sigma-global.com/en/cine-lenses/our-cine-lenses/"
+    ],
+    "lensCardsInCameraDenominator": 0,
+    "lensIngestion": false,
+    "accessoryIngestion": false
+  },
+  "collectionFetches": [
+    {
+      "key": "global-fpl",
+      "url": "https://www.sigma-global.com/en/cameras/fpl/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/fpl/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:35.598Z",
+      "sha256": "4041cd15a113d60561b7493a01c8cfdca63878a2f44eca493ed62b9061551c45",
+      "bytes": 68350,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-discontinued",
+      "url": "https://www.sigma-global.com/en/discontinued/",
+      "resolvedUrl": "https://www.sigma-global.com/en/discontinued/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:35.598Z",
+      "sha256": "b260fb102ea1701cb24deb4cb0d787809faab0a364c30599d599aca95b123807",
+      "bytes": 89357,
+      "mime": "text/html"
+    },
+    {
+      "key": "jp-discontinued",
+      "url": "https://www.sigma-global.com/jp/discontinued/",
+      "resolvedUrl": "https://www.sigma-global.com/jp/discontinued/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:35.598Z",
+      "sha256": "78dd785b7d9f781a8a2d3b47f0c83b4e4f1ab293122d1bccf8a7d684f1c6efd5",
+      "bytes": 89658,
+      "mime": "text/html"
+    },
+    {
+      "key": "bf-manual",
+      "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "resolvedUrl": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:35.866Z",
+      "sha256": "fffc208973ca0bed9b3c4591ea1677001508e5788236176a4c6ba50da4953363",
+      "bytes": 2034828,
+      "mime": "application/pdf"
+    },
+    {
+      "key": "bf-catalog",
+      "url": "https://www.sigma-global.com/en/support/download/SIGMA_BF_Catalog_EN.pdf",
+      "resolvedUrl": "https://www.sigma-global.com/en/support/download/SIGMA_BF_Catalog_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:36.053Z",
+      "sha256": "c6cf9bb31de1c2f612156d068b060b5e631703e7a3743fccebec7615d4e28055",
+      "bytes": 2750192,
+      "mime": "application/pdf"
+    },
+    {
+      "key": "foveon-development2021",
+      "url": "https://www.sigma-global.com/en/news/2021/02/19/12739/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2021/02/19/12739/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:36.084Z",
+      "sha256": "de6dd4f35ec4a25ea734bfae168f679bd5993a79c50278476213d11a70ab0485",
+      "bytes": 6398,
+      "mime": "text/html"
+    },
+    {
+      "key": "foveon-development2020",
+      "url": "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:53:36.679Z",
+      "sha256": "fe7724e66345302e53db298933c0e7917dcdbdeb4211e7ea415fdcb1c90d49c6",
+      "bytes": 5996,
+      "mime": "text/html"
+    },
+    {
+      "key": "kr-home",
+      "url": "https://sigma-photo.co.kr/",
+      "resolvedUrl": "https://sigma-photo.co.kr/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.091Z",
+      "sha256": "677d3334c4fefab118dea4a6cef7a3e6a6e87d5d056947389f6b2800fdba871d",
+      "bytes": 188513,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "kr-bf",
+      "url": "https://sigma-photo.co.kr/pages/bf",
+      "resolvedUrl": "https://sigma-photo.co.kr/pages/bf",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.091Z",
+      "sha256": "f942b0c421811c14ff58cbbf4aa859e2e7310b22729491e5063b855b1279ed4d",
+      "bytes": 452886,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "global-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.091Z",
+      "sha256": "74b88c9b9671d0d7dd119b049035f5b41291354efe08dfd4df8fc71caa4115fb",
+      "bytes": 5862,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-our-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.550Z",
+      "sha256": "e7da43762c117901ced1e1c6b3e0f78e4b7890b627160e2334ae71a0c237c91e",
+      "bytes": 7783,
+      "mime": "text/html"
+    },
+    {
+      "key": "jp-cameras",
+      "url": "https://www.sigma-global.com/jp/cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/jp/cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.682Z",
+      "sha256": "341507fe02abe5ce65909e636591329e2bd71905aa80e2f85554cdea68768648",
+      "bytes": 5890,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-bf",
+      "url": "https://www.sigma-global.com/en/cameras/bf/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:16.894Z",
+      "sha256": "1b0f0d3db2ae21aad15d623fdfa36b699748e14c25934dc1ce6e19558a9a70dd",
+      "bytes": 74927,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-fp",
+      "url": "https://www.sigma-global.com/en/cameras/fp/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/fp/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:17.012Z",
+      "sha256": "1acfb83af4113aa09146bf8874cb3d1ba0a6d5523c4fc706e69f31370271ef16",
+      "bytes": 56148,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-manuals",
+      "url": "https://www.sigma-global.com/en/support/manual/",
+      "resolvedUrl": "https://www.sigma-global.com/en/support/manual/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:17.092Z",
+      "sha256": "bd9fd40d968af4af93af06f8f99a21511ff234fe6c222ba8045d2e59e6b4cb64",
+      "bytes": 172337,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-bf-launch",
+      "url": "https://www.sigma-global.com/en/news/2025/02/24/010845/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2025/02/24/010845/",
+      "status": 200,
+      "accessedAt": "2026-10-14T00:52:17.281Z",
+      "sha256": "916d25929105cc4363883529779630cbaf35a436564a765e343999727153fab6",
+      "bytes": 8747,
+      "mime": "text/html"
+    }
+  ],
+  "selected": [
+    "sigma-bf"
+  ],
+  "workerTasks": [
+    {
+      "productId": "sigma-bf",
+      "stableTaskId": "sigma-production-001-bf",
+      "state": "reviewed-success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "usage": {
+            "inputTokens": 4153,
+            "outputTokens": 1043,
+            "totalTokens": 5196,
+            "cacheHitTokens": 0,
+            "cacheMissTokens": 4153,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "warnings": [
+            "A vs B conflict (6K+EIS): Spec page footnote '6K *Cannot be used in conjunction with EIS' vs manual p.100 '6K cannot be used … Electronic Stabilization'. Both forbidding is consistent wording, but note A frames it as 'may not be used together' narrow to 6K, while manual also lists H.264 and DC Crop alongside EIS for 6K. Treat EIS as unavailable at 6K; retain condition string.",
+            "A vs B conflict (burst): Spec page lists 'Number of Recordable Frames JPEG 1000, DNG 350' and 'Selectable 3/5/8 fps'; manual p.58 caution says 'Approximately 100 or more frames … may fall below 100 depending on settings'. The 1000/350 numbering vs '100+' are different measures (JPEG total vs in-buffer continuity) and both must be preserved rather than reconciled.",
+            "A vs B conflict (EIS scope): Spec page p.92 text mixes EIS-only-in-video with LENS OPTICAL STABILIZATION and tripod advice; manual p.92-93 adds 'EIS cannot be simultaneously used with Lens Optical Stabilization' and x1.25 crop (x1.96 DC). ibis field therefore remains present:false for body while lens OIS is a separate feature; do not collapse them.",
+            "Weight basis: Spec page gives 446 g 'including battery' as the primary number and 388 g body only. Contract requires weight with basis; capture both, do not silently drop one.",
+            "Shutter: no mechanical shutter (manual p.19 explicit). Fastest 1/25600 and slowest timed 30 s with Bulb up to 5 min come only from spec page A; not repeated in manual excerpts reviewed.",
+            "video.bitDepth: A only lists codecs (H.264/H.265/L-Log) and 'RAW(DNG)14-bit' for stills; do not transfer 14-bit to video. Bit-depth for movies is unsupported → null.",
+            "video.cropAtMax: no 6K crop factor stated; only EIS crop x1.25 (x1.96 DC) and 'DC Crop Mode' exclusion for 6K. Leave null.",
+            "LCD: only '3.15 type, Approx. 2.1M dots, electrostatic capacitance touch, TFT color LCD, 3:2'. Mechanism (fixed/tilt/etc.) is not stated → null. Do not assume fixed.",
+            "EVF: no electronic viewfinder is listed anywhere in these sources. Contract asks for resolution/magnification/maxRefreshHz; the correct outcome is 'absent in sources' not 'no EVF exists on real device'. Use null/evf.present null rather than false to avoid asserting a negative.",
+            "cardSlots: sources describe internal 230 GB + USB storage backup, not a card slot. Contract explicitly excludes internal/backup from cardSlots. If cardSlots must be non-null per schema, use null, not count 0. No SD/SSD slot is documented in A/B/C excerpts provided.",
+            "sensor.generation: no back-illuminated vs stacked wording beyond 'Back-illuminated CMOS'. Do not claim BSI Gen2/Stacked; supply the literal string only.",
+            "dimensions/weight are single-source (A only); no cross-check in B/C excerpts.",
+            "source C duplicates paragraph and is marketing; treat numbers (14,000 JPEG, 4,300 RAW, 2.5h) as supplementary, not replacements, for A's 1000/350 (still different units)."
+          ],
+          "summary": "Sigma BF public sources (official global spec page A, official EN manual B, Korean regional page C) reviewed against the proposed minimal contract. Several required fields are unsatisfiable from these sources (sensor.generation, EVF resolution/magnification/refresh, LCD mechanism); others are only partially supported (weight basis, bulb duration, burst). One internal policy conflict on burst frames and one A-vs-B usability conflict on EIS coexist. Detailed field-by-field findings, conditions, and unsupported guesses below.",
+          "applied": false
+        }
+      ],
+      "adoptedWarnings": [
+        "No video bit depth from still14bit",
+        "LCD mechanism and EVF absence not explicitly supported",
+        "No card count0 or internal/USB backup as physical slots",
+        "6K excludes H264/EIS/DC crop; crop factor not directly stated",
+        "Battery and bare weights separated",
+        "Burst buffer/file-count statements need conditions"
+      ],
+      "discardedSuggestions": [
+        "No genuine6K/EIS conflict: both documents prohibit the same combination",
+        "No true conflicting burst claim: manual lower/conditional buffer statement differs scope from spec recordable frames",
+        "IBIS.present:false proposal lacks direct body-IBIS absence statement; retain UNKNOWN",
+        "Literal BSI CMOS sensor technology is supported; no generation number inferred"
+      ],
+      "contextFiles": [
+        ".cheap-worker-sigma001-bf.txt"
+      ],
+      "actualAdoption": "Review warnings only: preserve conditional modes, avoid unsupported bit depth/EVF/hinge/IBIS/zero-card inference. Main extracted all final field values from official sources.",
+      "usefulness": "Useful guardrails; false-conflict and unsupported no-IBIS suggestions rejected; no usable generated patch requested/applied."
+    }
+  ],
+  "batchCheckpoint": {
+    "batchId": "production-sigma-bodies-001",
+    "gate": "canonicalized",
+    "reviewedDiffDigest": "1638cf12b35b25f0cf158e3d2d4ffbcddf4ff5d9756f84fcb81c641927fbf8b7",
+    "approvalId": "approval-ec854cb62fc3035f177cb8a18a74c8ac6a6980f9dfd1afd405134cf675c390da",
+    "canonicalBaselineDigest": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+    "canonicalDigest": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+    "reapply": {
+      "status": "already-canonicalized",
+      "batchId": "production-sigma-bodies-001",
+      "canonicalMatches": true
+    },
+    "remainingCurrent": 0,
+    "next": "Sigma coverage audit. Production, tests, documentation and checkpoint complete; review/commit this task to satisfy a clean-tree audit precondition. Do not repeat worker calls, raw creation or apply; do not ingest discontinued fp/fpL as current.",
+    "verification": {
+      "fullTests": {
+        "passed": 335,
+        "failed": 0
+      },
+      "objectiveProductionCatalogCoverageTests": {
+        "passed": 308,
+        "failed": 0
+      },
+      "sigmaTests": {
+        "passed": 14,
+        "failed": 0
+      },
+      "canonicalValidation": true,
+      "build": "passed; existing chunk-size warning",
+      "nodeCheck": "passed; Sigma test and six Objective scripts",
+      "gitDiffCheck": "passed",
+      "canonicalCounts": {
+        "bodies": 163,
+        "lenses": 36,
+        "total": 199
+      },
+      "canonicalSha256": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+      "documents": [
+        "docs/OBJECTIVE_DB_SIGMA_PRODUCTION_001.md",
+        "docs/OBJECTIVE_DB_V04_PROGRESS.md"
+      ],
+      "workerFixtureDeleted": true,
+      "commitStatus": "uncommitted; no push",
+      "remainingTaskWork": []
+    }
+  },
+  "workerTotals": {
+    "inputTokens": 4153,
+    "outputTokens": 1043,
+    "totalTokens": 5196
+  },
+  "workerStats": {
+    "tasks": 1,
+    "apiAttempts": 1,
+    "retries": 0,
+    "failures": 0,
+    "usableProducts": 1
+  },
+  "rawHelperTimestampWindow": {
+    "start": "2026-10-14T01:04:14.399Z",
+    "end": "2026-10-14T01:06:30.079Z"
+  },
+  "selectedOfficialSourceCount": 3,
+  "rawSources": [
+    {
+      "sourceId": "source-936f3a7a282314f0",
+      "url": "https://sigma-photo.co.kr/pages/bf",
+      "accessedAt": "2026-10-14T01:06:30.077Z",
+      "contentDigest": "858604216b5c2a4a760ad56e2a8c2af63688727de89449b248a89a4538c17982",
+      "observations": 2
+    },
+    {
+      "sourceId": "source-1862a4d5c1d43b2e",
+      "url": "https://www.sigma-global.com/en/cameras/bf/",
+      "accessedAt": "2026-10-14T01:04:55.569Z",
+      "contentDigest": "f7c18aac96404b9947f7e135330447084a4f8fccaa13464c1be1fda71090711d",
+      "observations": 31
+    },
+    {
+      "sourceId": "source-1110da5c3bbb329c",
+      "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "accessedAt": "2026-10-14T01:04:14.428Z",
+      "contentDigest": "e2223772515da25234778ad2abe8005418b9f4b008d8be91393eb674405ccb48",
+      "observations": 4
+    }
+  ],
+  "workerFixtureDeleted": true,
+  "initialDraftCorrections": [
+    "Temperature rawUnit C is unsupported by existing conversion rules; changed only the unsealed draft to canonical °C, regenerated the one raw source through helper and replaced its manifest reference. No pipeline change."
+  ],
+  "sourceReviewNotes": [
+    "Korea identity source also directly verifies sensor format, so the existing-product merge links it through an accepted field; all3 raw sources have canonical spec evidence. Dedicated canonical identityEvidence behavior is unchanged."
+  ],
+  "countsAfter": {
+    "bodies": 163,
+    "lenses": 36,
+    "total": 199,
+    "processedCurrent": 1,
+    "newProducts": 0,
+    "existingReinforced": 1,
+    "productionUnprocessedCurrent": 0,
+    "duplicateAmbiguous": 0
+  },
+  "claimStatistics": {
+    "claims": 37,
+    "knownClaims": 28,
+    "nullClaims": 9,
+    "uniquePaths": 33,
+    "verifiedFieldEvidencePaths": 24,
+    "knownObjectiveLeaves": 27,
+    "incomingRawSources": 3,
+    "canonicalSourceLinks": 4,
+    "structuredCanonicalIdentityEvidence": false
+  },
+  "reviewDecisions": {
+    "reviewer": "GPT-6.1 Sol",
+    "additionalUserInterventions": 0,
+    "sourceValueConflicts": 0,
+    "canonicalValueConflicts": 0,
+    "identity": "Only existing BF current. Preserve name/id/aliases/price; fp and fpL independent archived models excluded, BF silver linked colour only.",
+    "sourceScope": "Own Sigma Korea/global/manual; all3 incoming sources linked through accepted fields. No Panasonic/Leica specs.",
+    "declaredAbsence": [
+      "mechanical shutter false from explicit manual",
+      "no removable SD slot from KR product text: preserve conditions because positive-count canonical cardSlots cannot express0"
+    ],
+    "genuineUnknown": [
+      "EVF presence/absence",
+      "sensor/body IBIS presence/absence",
+      "LCD mechanism",
+      "video bit depth",
+      "cropAtMax",
+      "AI hardware unit",
+      "actual market release date"
+    ],
+    "notApplicable": [
+      "specs.burst.maxMechanicalFps",
+      "specs.shutter.fastestMechanicalSec"
+    ],
+    "representationLimitations": [
+      "No dedicated internalStorageGB/zero-card-slot state. Known230GB/no SD slot remains archived conditions; no invented count0/card/SSD recording.",
+      "Single video.max omits conditional recording matrix;29.97 parser remains separate.",
+      "Existing numerical6decimal precision:1/25600sec0.0000390625→0.000039. Exact raw/fraction retained.",
+      "Existing-product merge keeps verified staging identity but does not attach canonical identityEvidence; separate metadata enrichment if desired."
+    ],
+    "operationalCorrections": [
+      "Unsealed raw temperature C rejected by normalize; helper regenerated only that source with existing °C unit.",
+      "First approve omitted mandatory reviewed --diff-digest; gate blocked approval/apply without canonical mutation. Exact reviewed digest supplied on next invocation."
+    ],
+    "architectureChanges": 0,
+    "validatorChanges": 0,
+    "uiRecommendationChanges": 0
+  },
+  "report": "docs/OBJECTIVE_DB_SIGMA_PRODUCTION_001.md",
+  "test": "tests/sigmaProduction001.test.js"
+}
