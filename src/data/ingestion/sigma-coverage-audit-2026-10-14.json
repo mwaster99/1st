@@ -1,0 +1,917 @@
+{
+  "schemaVersion": 1,
+  "brand": "Sigma",
+  "auditDate": "2026-10-14",
+  "reviewedAt": "2026-10-14T01:47:20.540Z",
+  "baselineCommit": "0b9735c92ce6343d2ce4baa65289c0e9e2d08df0",
+  "startWorkingTree": "clean",
+  "previousSnapshot": "sigma-current-2026-10-14.json",
+  "batchIds": [
+    "production-sigma-bodies-001"
+  ],
+  "canonicalSha256": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+  "canonicalCounts": {
+    "bodies": 163,
+    "lenses": 36,
+    "total": 199
+  },
+  "denominatorPolicy": "Korea official CAMERAS navigation delegates to Global introduction listing; use explicit product/discontinued status with Global and Japan current landing cross-check. One current BF card/identity, three retained introduction cards/identities including two discontinued. No lenses/cine/accessories, unnamed historical development or local-stock claims in current denominator.",
+  "counts": {
+    "officialCurrentCameraCards": 1,
+    "currentBaseIdentities": 1,
+    "releasedCurrentDigital": 1,
+    "canonicalizedDigital": 1,
+    "productionProvenanceCompleteDigital": 1,
+    "announcedUpcomingProducts": 0,
+    "historicalDevelopmentReferences": 1,
+    "linkedInlineColorVariants": 1,
+    "deferredSpecial": 0,
+    "discontinuedArchive": 2,
+    "unprocessedReleasedCurrent": 0,
+    "duplicateAmbiguous": 0
+  },
+  "retainedIntroductionCounts": {
+    "cards": 3,
+    "baseIdentities": 3
+  },
+  "inventoryPages": [
+    {
+      "key": "global-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/",
+      "cameraProductUrls": [
+        "https://www.sigma-global.com/en/cameras/bf/"
+      ],
+      "sha256": "74b88c9b9671d0d7dd119b049035f5b41291354efe08dfd4df8fc71caa4115fb",
+      "sameBytesAsProductionSnapshot": true
+    },
+    {
+      "key": "jp-cameras",
+      "url": "https://www.sigma-global.com/jp/cameras/",
+      "cameraProductUrls": [
+        "https://www.sigma-global.com/jp/cameras/bf/"
+      ],
+      "sha256": "341507fe02abe5ce65909e636591329e2bd71905aa80e2f85554cdea68768648",
+      "sameBytesAsProductionSnapshot": true
+    },
+    {
+      "key": "global-our-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "cameraProductUrls": [
+        "https://www.sigma-global.com/en/cameras/bf/",
+        "https://www.sigma-global.com/en/cameras/fpl/",
+        "https://www.sigma-global.com/en/cameras/fp/"
+      ],
+      "sha256": "e7da43762c117901ced1e1c6b3e0f78e4b7890b627160e2334ae71a0c237c91e",
+      "sameBytesAsProductionSnapshot": true
+    }
+  ],
+  "cards": [
+    {
+      "officialDisplayName": "BF",
+      "manufacturerModelCode": "BF",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "classification": "released/current",
+      "canonicalId": "sigma-bf",
+      "currentDenominator": true,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/bf/",
+        "label": "Current BF with buy/dealer and official launchApril2025; current Global/JP cameras landing",
+        "crossCheck": "https://www.sigma-global.com/en/cameras/"
+      },
+      "recheckedAt": "2026-10-14T01:42:59.708Z",
+      "status": 200
+    },
+    {
+      "officialDisplayName": "fp L",
+      "manufacturerModelCode": "fp L",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/fpl/",
+      "classification": "discontinued/archive",
+      "canonicalId": null,
+      "currentDenominator": false,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/fpl/",
+        "label": "DISCONTINUED in product heading and tag",
+        "crossCheck": "https://www.sigma-global.com/en/discontinued/"
+      },
+      "recheckedAt": "2026-10-14T01:42:58.119Z",
+      "status": 200
+    },
+    {
+      "officialDisplayName": "fp",
+      "manufacturerModelCode": "fp",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/fp/",
+      "classification": "discontinued/archive",
+      "canonicalId": null,
+      "currentDenominator": false,
+      "statusEvidence": {
+        "url": "https://www.sigma-global.com/en/cameras/fp/",
+        "label": "DISCONTINUED in product heading and tag",
+        "crossCheck": "https://www.sigma-global.com/en/discontinued/"
+      },
+      "recheckedAt": "2026-10-14T01:42:59.721Z",
+      "status": 200
+    }
+  ],
+  "regionalReview": {
+    "koreaCameraMenuTarget": "https://www.sigma-global.com/en/cameras/our-cameras/",
+    "koreaBFIntroduction": true,
+    "globalCurrent": [
+      "BF"
+    ],
+    "japanCurrent": [
+      "BF"
+    ],
+    "globalExplicitDiscontinued": [
+      "fp",
+      "fp L"
+    ],
+    "japanDiscontinuedList": [
+      "fp",
+      "fp L"
+    ],
+    "observedReleaseStatusDisagreement": false,
+    "koreaRetailStockNotGuaranteed": true
+  },
+  "variants": [
+    {
+      "variantKey": "bf-silver",
+      "baseIdentity": "BF",
+      "canonicalId": "sigma-bf",
+      "relation": "linked-color-variant",
+      "officialUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "evidence": "Available mounts L-Mount (Black) / L-Mount (Silver); same BF specs/model. Inline finish, not an additional camera model card.",
+      "newProduct": false
+    }
+  ],
+  "developmentReview": {
+    "references": 1,
+    "concreteProductIdentities": 0,
+    "latestOfficialAnnouncementReviewed": "2022-02-21",
+    "officialSources": [
+      "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+      "https://www.sigma-global.com/en/news/2021/02/19/12739/",
+      "https://www.sigma-global.com/en/news/2022/02/21/17697/"
+    ],
+    "historicalStage": "Stage2 small sensor prototype, Stage3 contingent; no mass-production schedule in2022 statement",
+    "current2026ProjectStatus": "UNKNOWN",
+    "countsAsReleasedCurrent": false,
+    "permanentExclusion": false
+  },
+  "archivalScope": {
+    "products": [
+      "fp",
+      "fp L"
+    ],
+    "explicitDiscontinued": true,
+    "archivedIngestion": false,
+    "permanentExclusion": false,
+    "futurePhases": [
+      "used-camera recommendations",
+      "archived catalog expansion",
+      "historical Sigma systems"
+    ]
+  },
+  "lensSeparation": {
+    "cameraRoute": "https://www.sigma-global.com/en/cameras/our-cameras/",
+    "koreaCameraPage": "https://sigma-photo.co.kr/pages/bf",
+    "lensRoutes": [
+      "https://sigma-photo.co.kr/pages/lenses",
+      "https://www.sigma-global.com/en/lenses/our-lenses/"
+    ],
+    "cineLensRoutes": [
+      "https://sigma-photo.co.kr/pages/cine-lenses",
+      "https://www.sigma-global.com/en/cine-lenses/our-cine-lenses/"
+    ],
+    "lensCardsInCameraDenominator": 0,
+    "lensIngestion": false,
+    "accessoryIngestion": false,
+    "cineLensIngestion": false,
+    "freshBoundaryPages": [
+      "https://sigma-photo.co.kr/pages/lenses",
+      "https://sigma-photo.co.kr/pages/cine-lenses"
+    ]
+  },
+  "changes": {
+    "newCurrentProducts": [],
+    "removedCurrentProducts": [],
+    "releaseStatusChanges": [],
+    "identityChanges": [],
+    "newlyReviewedEvidence": [
+      "https://www.sigma-global.com/en/news/2025/04/07/010920/",
+      "https://www.sigma-global.com/en/news/2022/02/21/17697/"
+    ]
+  },
+  "products": [
+    {
+      "productId": "sigma-bf",
+      "model": "BF",
+      "manufacturer": "Sigma",
+      "mount": "L-Mount",
+      "kind": "interchangeable",
+      "productionProvenanceComplete": true,
+      "structuredIdentityEvidence": false,
+      "stagingIdentityVerification": "verified",
+      "known": [
+        {
+          "path": "specs.sensor.format",
+          "value": "풀프레임",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "value": 24.6,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.sensor.generation",
+          "value": "Back-illuminated CMOS",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "value": [
+            35.9,
+            23.9
+          ],
+          "classification": "verified"
+        },
+        {
+          "path": "specs.weight",
+          "value": 446,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.weightBasis",
+          "value": "battery-internal-storage",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "value": 388,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.dimensions",
+          "value": [
+            130.1,
+            72.8,
+            36.8
+          ],
+          "classification": "verified"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "value": "Image Plane Phase-Detection AF + Contrast detection system; Single AF, Continuous AF, Manual Focus",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "value": [
+            "Human",
+            "Animal"
+          ],
+          "classification": "verified"
+        },
+        {
+          "path": "specs.video.log",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.video.max",
+          "value": "6K 29.97p",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.batteryShots",
+          "value": 260,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.batteryConditions",
+          "value": "Sigma approx.260 still images; test procedure not specified in product specification.",
+          "classification": "verified"
+        },
+        {
+          "path": "specs.lcd.present",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.lcd.sizeInches",
+          "value": 3.15,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.lcd.resolutionDots",
+          "value": 2100000,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.lcd.touch",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "value": 8,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.shutter.bulb",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "value": 3.9e-05,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "value": false,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "value": 30,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.weatherSealing",
+          "value": true,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "value": 40,
+          "classification": "verified"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "value": 0,
+          "classification": "verified"
+        }
+      ],
+      "rawSourceCount": 3,
+      "canonicalSourceLinks": 4
+    }
+  ],
+  "provenanceSummary": {
+    "knownObjectiveLeaves": 27,
+    "verifiedKnownLeaves": 27,
+    "manufacturerReferenceOnly": 0,
+    "legacyOnly": 0,
+    "unclassifiedKnownLeaves": 0,
+    "sourceLessKnownLeaves": 0,
+    "verifiedFieldEvidencePaths": 24,
+    "structuredIdentityEvidence": 0,
+    "indirectIdentityEvidence": 1,
+    "productionClaims": 37,
+    "knownClaims": 28,
+    "unknownClaims": 9,
+    "rawSources": 3,
+    "canonicalSourceLinks": 4
+  },
+  "acceptableUnknowns": [
+    {
+      "path": "specs.evf",
+      "reason": "EVF presence/absence"
+    },
+    {
+      "path": "specs.ibis",
+      "reason": "sensor/body IBIS presence/absence"
+    },
+    {
+      "path": "specs.lcd.mechanism",
+      "reason": "LCD mechanism"
+    },
+    {
+      "path": "specs.video.bitDepth",
+      "reason": "video bit depth"
+    },
+    {
+      "path": "specs.video.cropAtMax",
+      "reason": "cropAtMax"
+    },
+    {
+      "path": "specs.autofocus.aiUnit",
+      "reason": "AI hardware unit"
+    }
+  ],
+  "notApplicablePaths": [
+    "specs.burst.maxMechanicalFps",
+    "specs.shutter.fastestMechanicalSec"
+  ],
+  "knownAbsenceRepresentation": [
+    {
+      "path": "specs.cardSlots",
+      "canonicalValue": null,
+      "knownNoSDSlot": true,
+      "internalStorageGB": 230,
+      "reason": "Existing contract requires positive count; absence in provenance, not invented count0/slot/SSD recording."
+    }
+  ],
+  "sourceRechecks": [
+    {
+      "sourceId": "source-1110da5c3bbb329c",
+      "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "sourceType": "manufacturer",
+      "productionAccessedAt": "2026-10-14T01:04:14.428Z",
+      "productionContentDigest": "e2223772515da25234778ad2abe8005418b9f4b008d8be91393eb674405ccb48",
+      "freshFetch": {
+        "key": "bf-manual",
+        "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+        "resolvedUrl": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+        "status": 200,
+        "accessedAt": "2026-10-14T01:42:58.394Z",
+        "sha256": "fffc208973ca0bed9b3c4591ea1677001508e5788236176a4c6ba50da4953363",
+        "bytes": 2034828,
+        "mime": "application/pdf"
+      },
+      "helperClockBounds": {
+        "start": "2026-10-14T01:04:14.399Z",
+        "end": "2026-10-14T01:06:30.079Z"
+      },
+      "canonicalLinked": true
+    },
+    {
+      "sourceId": "source-1862a4d5c1d43b2e",
+      "url": "https://www.sigma-global.com/en/cameras/bf/",
+      "sourceType": "manufacturer",
+      "productionAccessedAt": "2026-10-14T01:04:55.569Z",
+      "productionContentDigest": "f7c18aac96404b9947f7e135330447084a4f8fccaa13464c1be1fda71090711d",
+      "freshFetch": {
+        "key": "global-bf",
+        "url": "https://www.sigma-global.com/en/cameras/bf/",
+        "resolvedUrl": "https://www.sigma-global.com/en/cameras/bf/",
+        "status": 200,
+        "accessedAt": "2026-10-14T01:42:59.708Z",
+        "sha256": "1b0f0d3db2ae21aad15d623fdfa36b699748e14c25934dc1ce6e19558a9a70dd",
+        "bytes": 74927,
+        "mime": "text/html"
+      },
+      "helperClockBounds": {
+        "start": "2026-10-14T01:04:14.399Z",
+        "end": "2026-10-14T01:06:30.079Z"
+      },
+      "canonicalLinked": true
+    },
+    {
+      "sourceId": "source-936f3a7a282314f0",
+      "url": "https://sigma-photo.co.kr/pages/bf",
+      "sourceType": "manufacturer",
+      "productionAccessedAt": "2026-10-14T01:06:30.077Z",
+      "productionContentDigest": "858604216b5c2a4a760ad56e2a8c2af63688727de89449b248a89a4538c17982",
+      "freshFetch": {
+        "key": "kr-bf",
+        "url": "https://sigma-photo.co.kr/pages/bf",
+        "resolvedUrl": "https://sigma-photo.co.kr/pages/bf",
+        "status": 200,
+        "accessedAt": "2026-10-14T01:42:58.855Z",
+        "sha256": "3a861350a8f318dd7ff4697bff66891b7979950ac5c57f939afbff583afadb0b",
+        "bytes": 452886,
+        "mime": "text/html; charset=UTF-8"
+      },
+      "helperClockBounds": {
+        "start": "2026-10-14T01:04:14.399Z",
+        "end": "2026-10-14T01:06:30.079Z"
+      },
+      "canonicalLinked": true
+    }
+  ],
+  "technicalManual": {
+    "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+    "sha256": "fffc208973ca0bed9b3c4591ea1677001508e5788236176a4c6ba50da4953363",
+    "sameFileAsProduction": true,
+    "firmwareDocument": "FW Ver.1.00",
+    "pdfPages": 180
+  },
+  "specReview": {
+    "sensor": {
+      "effectiveMP": 24.6,
+      "sizeMm": [
+        35.9,
+        23.9
+      ],
+      "architecture": "Back-illuminated CMOS",
+      "exactBayerLayout": "UNKNOWN",
+      "foveonInherited": false,
+      "colorFilterConditionSupportedByConnectedSource": false
+    },
+    "storage": {
+      "internalStorageGB": 230,
+      "noSDSlot": true,
+      "canonicalCardSlots": null,
+      "usbBackupNotSlotOrExternalRecording": true
+    },
+    "shutter": {
+      "mechanical": false,
+      "electronic": true,
+      "fastestRawSec": 3.90625e-05,
+      "fastestCanonicalSec": 3.9e-05,
+      "flashSync": "UNKNOWN in reviewed BF sources; no fp/fpL values inherited"
+    },
+    "display": {
+      "lcdPresent": true,
+      "lcdSizeInches": 3.15,
+      "lcdResolutionDots": 2100000,
+      "lcdMechanism": "UNKNOWN",
+      "evf": "UNKNOWN"
+    },
+    "stabilization": {
+      "bodyIBIS": "UNKNOWN, insufficient direct presence/absence evidence",
+      "eis": "video only",
+      "lensOISNotBodyIBIS": true
+    },
+    "video": {
+      "max": "6K 29.97p",
+      "internal": true,
+      "codec": "H.265 HEVC / L-Log",
+      "bitrateMbps": 200,
+      "bitDepth": "UNKNOWN",
+      "cropAtMax": "UNKNOWN",
+      "not6K119_88": true
+    },
+    "burst": {
+      "electronicFps": 8,
+      "sustainedUnlimitedClaim": false,
+      "afsConditionsNotAllModes": true
+    },
+    "weight": {
+      "weight": 446,
+      "weightBasis": "battery-internal-storage",
+      "bodyOnlyWeight": 388,
+      "capIncluded": "UNKNOWN"
+    }
+  },
+  "findings": {
+    "critical": [],
+    "shouldFix": [
+      {
+        "id": "SIGMA_IDENTITY_METADATA",
+        "productId": "sigma-bf",
+        "path": "identityEvidence",
+        "classification": "provenance-metadata-gap",
+        "reason": "Canonical lacks structured identityEvidence; verified staging identity, reviewed map and source links preserve identity indirectly.",
+        "blocking": false
+      },
+      {
+        "id": "SIGMA_RELEASE_DATE_EVIDENCE",
+        "productId": "sigma-bf",
+        "path": "specs.releaseDate",
+        "classification": "new-official-evidence",
+        "sourceUrl": "https://www.sigma-global.com/en/news/2025/04/07/010920/",
+        "officialGlobalReleaseDate": "2025-04-24",
+        "reason": "Official Apr7 update states BF Black/Silver release date Apr24. Existing null is now enrichment-needed, not acceptable lack-of-evidence; local retail availability remains separate.",
+        "blocking": false
+      },
+      {
+        "id": "SIGMA_UNSUPPORTED_RGB_CONDITION",
+        "productId": "sigma-bf",
+        "path": "specs.sensor.generation.conditions.colorFilterSystem",
+        "classification": "unsupported-provenance-condition",
+        "claimId": "claim-8291e751ea4554adf8f7",
+        "sourceUrl": "https://www.sigma-global.com/en/cameras/bf/",
+        "storedCondition": "RGB Primary color filter",
+        "reason": "Connected BF page and reviewed BF manual/Korea text do not state this filter label. fpL page does, but is a different product and cannot substantiate BF. BSI CMOS canonical value itself is directly supported. Re-review in a separate immutable follow-up; do not assert RGB false.",
+        "blocking": false
+      },
+      {
+        "id": "SIGMA_DC_CROP_SOURCE_SCOPE",
+        "productId": "sigma-bf",
+        "paths": [
+          "specs.video.max.conditions.dcCropModeSupported",
+          "specs.video.cropAtMax.conditions.dcCropAt6K"
+        ],
+        "classification": "condition-source-attribution",
+        "claimIds": [
+          "claim-baa8c5146369ffcc2c40",
+          "claim-1c9d013add65c4636485"
+        ],
+        "reason": "Global BF video footnote directly excludes EIS, not DC crop. DC crop exclusion is explicitly supported by separate BF manual PDFp102/printed101. Product fact is supported, but global-source condition attribution needs correction in a new follow-up.",
+        "sourceUrl": "https://www.sigma-global.com/en/cameras/bf/",
+        "correctSourceUrl": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+        "blocking": false
+      }
+    ]
+  },
+  "findingCounts": {
+    "critical": 0,
+    "shouldFix": 4,
+    "acceptableUnknownPaths": 6
+  },
+  "schemaBacklog": [
+    "No dedicated internalStorageGB/zero-card-slot state. Known230GB/no SD slot remains archived conditions; no invented count0/card/SSD recording.",
+    "Single video.max omits conditional recording matrix;29.97 parser remains separate.",
+    "Existing numerical6decimal precision:1/25600sec0.0000390625→0.000039. Exact raw/fraction retained.",
+    "Existing-product merge keeps verified staging identity but does not attach canonical identityEvidence; separate metadata enrichment if desired.",
+    "Flash synchronization/feature limitations if direct BF evidence is found",
+    "Absence semantics: keep explicit mechanical false and no-SD evidence distinct from EVF/IBIS insufficient evidence",
+    "Sigma still/cine lenses and non-L-mount lenses belong to separate lens phase",
+    "Legacy manufacturer reference has repeated fields/trailing-slash URL; do not count as four independent fresh sources"
+  ],
+  "sealedFileDigests": {
+    "src/data/ingestion/batches/production-sigma-bodies-001.json": "7968e417ecdced3efe5ce5d43e352b928d4096d035766acef16ce17fd2204a11",
+    "src/data/ingestion/diffs/production-sigma-bodies-001.json": "282ebd59c0e863a29a6c1b7b88075bceb9914f9eb4aab988d28059dfe1a84757",
+    "src/data/ingestion/staging/production-sigma-bodies-001/sigma-bf.json": "60cd20b1119d87d469d715eb82adb422820ceb65f483d09469483d7ab7408fb6",
+    "src/data/ingestion/approvals/production-sigma-bodies-001.json": "c227061e1689c9843c4893e1f0eedf762eb4fa81852101d4ae2e9be95b792c96",
+    "src/data/ingestion/raw/source-1110da5c3bbb329c.json": "fd17f6b6602ec0878435cf39c6373074ce9660fb6c2d88e38df8989969f3e4b8",
+    "src/data/ingestion/raw/source-1862a4d5c1d43b2e.json": "ced407cf7373babb4a5fe6e2ce16e882d286ff538af417eab9295c1f44cec4b6",
+    "src/data/ingestion/raw/source-936f3a7a282314f0.json": "64bdcab4f5e66e325b9e6391f7b1dbd5da63a804b7f649c2cf712f237a4ea773",
+    "src/data/ingestion/approvals/production-sigma-bodies-001/approval-ec854cb62fc3035f177cb8a18a74c8ac6a6980f9dfd1afd405134cf675c390da.json": "c227061e1689c9843c4893e1f0eedf762eb4fa81852101d4ae2e9be95b792c96",
+    "src/data/ingestion/transactions/production-sigma-bodies-001/after.json": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+    "src/data/ingestion/transactions/production-sigma-bodies-001/before.json": "bbda635e5dbae79e9505531dd1b4b1b916eb1e1a28331cc3ed07bc59a8a13c7b",
+    "src/data/ingestion/transactions/production-sigma-bodies-001/evidence.json": "737f0a9c353811f22857110db4ba9c9cfa1e2b625b8e0c2dba286612973ac77e",
+    "src/data/ingestion/transactions/production-sigma-bodies-001/journal.json": "f1a6303dd3ab6824a39df4efb3b202fafceabf177a5dc9986d4a741a908959ef",
+    "src/data/ingestion/vocab.json": "e2e059ed18b4bdcf44f4930cd31fc93e4de145cc66d7ce6d3e9871b608bd193f",
+    "src/data/ingestion/identity-map.json": "85d9a0617e6539dc406181b83301403eb7a4d4c85cfee9df239140285ee022e7"
+  },
+  "protectedFileDigests": {
+    "src/data/cameraProducts.json": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+    "src/data/cameraLegacyPolicy.json": "1f4574746d762b10492a21862e4c137f174f427779dd4a4cbd8d12f449a3b3be",
+    "src/data/ingestion/catalog-scope.json": "45c7e1b2664f3e440968d94638debe479819d4ec7771a9f9c1a3091f63d5a340",
+    "src/data/ingestion/sigma-current-2026-10-14.json": "fa9fa9f0e4ba958eb4fbcc6e3cefd7e6e8bb6709c9f13acb2082efce249a5385",
+    "docs/OBJECTIVE_DB_SIGMA_PRODUCTION_001.md": "63c2d8b93a0a49f2b8758ea1a1e3779dc0e6e8a382057367e551f4f3cf22e633",
+    "tests/sigmaProduction001.test.js": "c56411147d8158e2ed69a9df63d2a2063639539dcfd798b63c9b6a72dbcb69e2",
+    "scripts/objective/ingest.mjs": "b4222f4af4e66a222ce10b0a51f1182968c9019825b342e77f17b24447eb85ae",
+    "scripts/objective/rules.mjs": "5970dc26825e10bbf43055849197e3c002274d2aae8361d36cdd280b32c98e19",
+    "scripts/objective/merge.mjs": "a354587e9c5d2634f9e9cf0c9c344842bd343f26e9f1506497d9549b0ba9d3ed",
+    "scripts/objective/promotion.mjs": "a977e2616ecc4a6a26f434ef41c2e811ae1cc5799eb54f7116c7332717700b73",
+    "scripts/objective/storage.mjs": "7f7c5ec177e85f9479ec875615572f0225f400dc21c1ed764a0379ba9fdb6788",
+    "scripts/objective/raw-helper.mjs": "326645e0aa34c3d094013253755c6ec1c9d4c013d820bc25767f1d6ae1f00791",
+    "src/cameraData.js": "28b06ccb5f03308cfaaefba8e696353a27fc59d89583b95401baf23f292f89c4",
+    "src/cameraCatalog.js": "cbad1dfbf5f19731b09b947d56b0197326edd93260691d1ae16671eb39cd42ec",
+    "src/cameraCatalogViews.js": "764fbc210eaec48a0a27410be0ef14d969d6d5c3750619813e0df79496b0a6a8",
+    "src/cameraScenarioEngine.js": "cc7cad183ba9166c18a4eeb687e598158a10c3e1d2278cd72dd7627e27078819",
+    "src/firstPurchaseEngine.js": "817e0a55b9eb5010275c7124de4c2e9251ac8160e9801959f06d84fd50fe0c3d"
+  },
+  "artifactAudit": {
+    "batchIds": [
+      "production-sigma-bodies-001"
+    ],
+    "sealedBatchFiles": 12,
+    "registryContextFiles": 2,
+    "totalCheckedFiles": 14,
+    "missing": 0,
+    "digestMismatch": 0,
+    "strictValidation": "passed1/1",
+    "archiveReplay": "before→after and after→after match",
+    "canonicalized": true,
+    "reapply": {
+      "status": "already-canonicalized",
+      "batchId": "production-sigma-bodies-001",
+      "canonicalMatches": true
+    }
+  },
+  "officialFetches": [
+    {
+      "key": "global-fpl",
+      "url": "https://www.sigma-global.com/en/cameras/fpl/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/fpl/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.119Z",
+      "sha256": "4041cd15a113d60561b7493a01c8cfdca63878a2f44eca493ed62b9061551c45",
+      "bytes": 68350,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-discontinued",
+      "url": "https://www.sigma-global.com/en/discontinued/",
+      "resolvedUrl": "https://www.sigma-global.com/en/discontinued/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.120Z",
+      "sha256": "b260fb102ea1701cb24deb4cb0d787809faab0a364c30599d599aca95b123807",
+      "bytes": 89357,
+      "mime": "text/html"
+    },
+    {
+      "key": "jp-discontinued",
+      "url": "https://www.sigma-global.com/jp/discontinued/",
+      "resolvedUrl": "https://www.sigma-global.com/jp/discontinued/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.120Z",
+      "sha256": "78dd785b7d9f781a8a2d3b47f0c83b4e4f1ab293122d1bccf8a7d684f1c6efd5",
+      "bytes": 89658,
+      "mime": "text/html"
+    },
+    {
+      "key": "bf-manual",
+      "url": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "resolvedUrl": "https://www.sigma-global.com/en/support/download/BF_EN.pdf",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.394Z",
+      "sha256": "fffc208973ca0bed9b3c4591ea1677001508e5788236176a4c6ba50da4953363",
+      "bytes": 2034828,
+      "mime": "application/pdf"
+    },
+    {
+      "key": "foveon-development2021",
+      "url": "https://www.sigma-global.com/en/news/2021/02/19/12739/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2021/02/19/12739/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.406Z",
+      "sha256": "de6dd4f35ec4a25ea734bfae168f679bd5993a79c50278476213d11a70ab0485",
+      "bytes": 6398,
+      "mime": "text/html"
+    },
+    {
+      "key": "foveon-development2020",
+      "url": "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2020/02/08/10874/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.715Z",
+      "sha256": "fe7724e66345302e53db298933c0e7917dcdbdeb4211e7ea415fdcb1c90d49c6",
+      "bytes": 5996,
+      "mime": "text/html"
+    },
+    {
+      "key": "kr-home",
+      "url": "https://sigma-photo.co.kr/",
+      "resolvedUrl": "https://sigma-photo.co.kr/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.827Z",
+      "sha256": "f26a999afcb9fea6f52a5c02a298031d12f66b05b65371ae40c0f145df9fcfdc",
+      "bytes": 188513,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "kr-bf",
+      "url": "https://sigma-photo.co.kr/pages/bf",
+      "resolvedUrl": "https://sigma-photo.co.kr/pages/bf",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:58.855Z",
+      "sha256": "3a861350a8f318dd7ff4697bff66891b7979950ac5c57f939afbff583afadb0b",
+      "bytes": 452886,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "global-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.076Z",
+      "sha256": "74b88c9b9671d0d7dd119b049035f5b41291354efe08dfd4df8fc71caa4115fb",
+      "bytes": 5862,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-our-cameras",
+      "url": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/our-cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.241Z",
+      "sha256": "e7da43762c117901ced1e1c6b3e0f78e4b7890b627160e2334ae71a0c237c91e",
+      "bytes": 7783,
+      "mime": "text/html"
+    },
+    {
+      "key": "jp-cameras",
+      "url": "https://www.sigma-global.com/jp/cameras/",
+      "resolvedUrl": "https://www.sigma-global.com/jp/cameras/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.254Z",
+      "sha256": "341507fe02abe5ce65909e636591329e2bd71905aa80e2f85554cdea68768648",
+      "bytes": 5890,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-bf",
+      "url": "https://www.sigma-global.com/en/cameras/bf/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/bf/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.708Z",
+      "sha256": "1b0f0d3db2ae21aad15d623fdfa36b699748e14c25934dc1ce6e19558a9a70dd",
+      "bytes": 74927,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-fp",
+      "url": "https://www.sigma-global.com/en/cameras/fp/",
+      "resolvedUrl": "https://www.sigma-global.com/en/cameras/fp/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.721Z",
+      "sha256": "1acfb83af4113aa09146bf8874cb3d1ba0a6d5523c4fc706e69f31370271ef16",
+      "bytes": 56148,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-manuals",
+      "url": "https://www.sigma-global.com/en/support/manual/",
+      "resolvedUrl": "https://www.sigma-global.com/en/support/manual/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.782Z",
+      "sha256": "bd9fd40d968af4af93af06f8f99a21511ff234fe6c222ba8045d2e59e6b4cb64",
+      "bytes": 172337,
+      "mime": "text/html"
+    },
+    {
+      "key": "global-bf-launch",
+      "url": "https://www.sigma-global.com/en/news/2025/02/24/010845/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2025/02/24/010845/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.921Z",
+      "sha256": "916d25929105cc4363883529779630cbaf35a436564a765e343999727153fab6",
+      "bytes": 8747,
+      "mime": "text/html"
+    },
+    {
+      "key": "kr-lens-boundary",
+      "url": "https://sigma-photo.co.kr/pages/lenses",
+      "resolvedUrl": "https://sigma-photo.co.kr/pages/lenses",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:42:59.945Z",
+      "sha256": "a4a54fa38296a6e490b9b162dd48134c6f9aa6d113afccaba0ca8b47c6df1a2d",
+      "bytes": 1105398,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "kr-cine-boundary",
+      "url": "https://sigma-photo.co.kr/pages/cine-lenses",
+      "resolvedUrl": "https://sigma-photo.co.kr/pages/cine-lenses",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:43:00.081Z",
+      "sha256": "c21789687b97675bbb984c8a5aa42fdcda64cbdfa149199dee4a0997d05ba633",
+      "bytes": 693475,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "key": "foveon-development2022",
+      "url": "https://www.sigma-global.com/en/news/2022/02/21/17697/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2022/02/21/17697/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:44:38.610Z",
+      "sha256": "9a598407e0d1039a9b7bc3dcce538e2c9a5a1c9ac4cbfdff59958c2d83762031",
+      "bytes": 6250,
+      "mime": "text/html"
+    },
+    {
+      "key": "bf-release-confirmation",
+      "url": "https://www.sigma-global.com/en/news/2025/04/07/010920/",
+      "resolvedUrl": "https://www.sigma-global.com/en/news/2025/04/07/010920/",
+      "status": 200,
+      "accessedAt": "2026-10-14T01:44:38.611Z",
+      "sha256": "f5a5b5da1398650ad9b9995907c9696dce9dc24f6f53b87302350a6b0aae5e5a",
+      "bytes": 7779,
+      "mime": "text/html"
+    }
+  ],
+  "officialFetchSummary": {
+    "directRequests": 19,
+    "http200": 19,
+    "failed": 0,
+    "productionRawUrlsReachable": 3,
+    "manualByteChanges": 0,
+    "webToolKoreaProbe": "timeout; direct official HTTP subsequently200"
+  },
+  "workerUsage": {
+    "newCalls": 0,
+    "newTokens": 0,
+    "previousBatchTotals": {
+      "inputTokens": 4153,
+      "outputTokens": 1043,
+      "totalTokens": 5196
+    }
+  },
+  "report": "docs/OBJECTIVE_DB_SIGMA_COVERAGE_AUDIT.md",
+  "test": "tests/sigmaCoverageAudit.test.js",
+  "checkpoint": {
+    "state": "complete",
+    "coverageDecision": "first-pass current product coverage complete; not full field/condition completeness",
+    "remaining": [],
+    "critical": 0,
+    "shouldFix": 4,
+    "acceptableUnknownPaths": 6,
+    "coverageBlockers": 0,
+    "next": "B7 Hasselblad official current camera inventory. Review/commit this four-file audit to meet clean-tree prerequisite; Sigma ingestion/worker/artifacts need no repeat. Track four metadata/evidence issues in a separate narrow follow-up.",
+    "newCalls": 0,
+    "gitCommitStatus": "uncommitted; no push"
+  },
+  "verification": {
+    "fullTests": {
+      "passed": 350,
+      "failed": 0
+    },
+    "objectiveProductionCatalogCoverageTests": {
+      "passed": 323,
+      "failed": 0
+    },
+    "sigmaTests": {
+      "passed": 29,
+      "failed": 0,
+      "production": 14,
+      "audit": 15
+    },
+    "canonicalValidation": true,
+    "build": "passed; existing >500kB chunk warning",
+    "nodeCheck": "passed; new audit test and six Objective scripts",
+    "gitDiffCheck": "passed",
+    "canonicalUnchanged": true,
+    "sealedArtifactsUnchanged": true
+  }
+}

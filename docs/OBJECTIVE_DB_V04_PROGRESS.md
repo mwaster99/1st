@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Sigma production coverage audit — 2026-10-14
+
+완료. Clean baseline `0b9735c`에서 Sigma production001/보고서/inventory/canonical/map/scope/vocab/contracts/최신validators/기존7브랜드감사를 대조했다. Korea camera navigation과 BF페이지를 primary로 Global/JP current landing·retained introduction·개별제품·단종목록·manual·공식release/development를 새로 조회했다. DirectHTTP **19/19 HTTP200**, web Korea probe timeout은 direct 재조회성공으로 접근제약과제품상태분리. **Current cards1/base1/released-current1/canonicalized1/production provenance 연결1, 미처리0/duplicate·ambiguous0/critical0**으로 Sigma 일반현행카메라 1차product coverage 완료판정. Retained introduction3 중 fp/fpL2는명시적단종,linkedSilver1/special0/namedupcoming0. Historical unnamedFoveon1은2022Stage2공지를추가했지만2026statusUNKNOWN,현행제품아님. Lens/cine/accessory분리,한국retailstock/전세계SKU·모든필드완성은주장하지않는다.
+
+Knownobjectiveleaf **27/verified27/reference-only0/legacy-only0/unclassified0/source-less0**,fieldEvidence24,claims37(known28/null9),raw3/canonicallinks4(기존reference1포함),structuredidentity0/indirect1. **Should-fix4**: 기존BF전용identityEvidence, 새공식Global2025-04-24release근거, BF연결source에서확인되지않은RGBfilter조건, Global-source2claims의DCcrop조건이실제로는manual근거인source-attribution문제. 마지막2건은provenance data issue이며schema backlog로숨기지않는다;sealed기록을수정하지않고새감사판정으로명시했다. **Acceptable UNKNOWN6paths**(EVF/IBIS/LCDhinge/video depth/crop/AI),기계식speed/burst2N/A,noSDnull1representationgap,releaseDate는새근거로should-fix로분리.
+
+BF독립/L-Mount/native24.6MP/공식35.9×23.9mm/BSICMOS, no mechanical false, 내부230GB/noSD/USBbackup≠slot·SSDrecording, LCDstrict/EIS·lensOIS≠IBIS,6K29.97internalHEVC200Mbps/FW1.00/6K조건과FHD119.88분리,전자8fps/AFS조건,446g battery-internal-storage·388g body-only검증. 원문에없는EVF/IBISabsence·Bayerarray·moviebitdepth추정없음. 기존6decimalshutterprecision/singlevideo.max/fractionalfps/storage직접표현/렌즈는별도후속,추천/UI수정없음.
+
+Batch12files+registrycontext2=**14files**,missing/digestmismatch0/strict1/1/before-after 및after재적용replay일치. 실제CLIreapply **already-canonicalized/canonicalMatches:true**,canonical **163/36/199**, SHA `6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5`불변. Productionraw3 실제UTC clockbounds/ISO/sourceclaims연결검증,새감사조회timestamp별도보존. Manual/currentlistingbyte변화0. Worker신규호출/토큰0,기존5196token을provenance완료근거로쓰지않음.
+
+전체 **350/350**,Objective/production/catalog/coverage **323/323**,Sigma **29/29**(production14/audit15). Canonicalvalidation/build/nodecheck/gitdiffcheck통과(기존chunk경고),canonical/map/scope/vocab/validators/옛production/tests/추천/UI불변. [상세42항목](OBJECTIVE_DB_SIGMA_COVERAGE_AUDIT.md), [새감사checkpoint](../src/data/ingestion/sigma-coverage-audit-2026-10-14.json), [새회귀테스트](../tests/sigmaCoverageAudit.test.js). 감사4파일미commit/push없음. **다음B7Hasselblad현행카메라inventory**,coverageblocker0;clean요구시감사변경검토·commit후진행. 추가Sigma현행batch/worker/raw재생성불필요,should-fix4는별도좁은보강이며BF조건을무조건verified로재사용하지않는다.
+
 ## Stage 4 Sigma production batch 001 — 2026-10-14
 
 완료. Clean baseline `0a21488`에서 설계/contracts/progress/이전 브랜드 감사/canonical/map/scope/vocab/validators/tests를 대조했다. Korea CAMERAS 메뉴가 연결하는 Global 소개 목록은 **3 cards /3 identities(BF/fp L/fp)**이지만, 공식 개별 페이지·단종 목록에서 fp/fp L의 단종을 확인했다. Global/JP 현행 landing은 BF만 표시한다. **Released/current1, 단종2, named upcoming0, 과거 unnamed Foveon 개발 reference1(2026 상태 미확인), linked Silver1, special0**. 렌즈/cine/accessory 및 단종 spec ingestion은 하지 않았다. 한국 재고/전세계 모든 SKU coverage를 주장하지 않는다.
