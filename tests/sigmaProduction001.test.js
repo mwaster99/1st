@@ -39,7 +39,9 @@ test('BF native sensor and explicit physical dimensions are Sigma facts, not out
 });
 
 test('BF reuses L-Mount and reviewed identity while all evidence belongs to Sigma, never Panasonic/Leica',()=>{
- assert.equal(body.mount,'L-Mount');assert.equal(body.kind,'interchangeable');assert.equal(body.specs.fixedLens,null);assert.deepEqual(e.bundle.vocab,json(base+'vocab.json'));
+ assert.equal(body.mount,'L-Mount');assert.equal(body.kind,'interchangeable');assert.equal(body.specs.fixedLens,null);
+ const currentVocab=json(base+'vocab.json');
+ for(const [key,value]of Object.entries(e.bundle.vocab))assert.deepEqual(['brands','mounts','bodyStyles'].includes(key)?currentVocab[key].slice(0,value.length):currentVocab[key],value);
  const map=json(base+'identity-map.json').entries.filter(x=>x.manufacturer==='Sigma');assert.equal(map.length,1);assert.equal(map[0].manufacturerModelCode,'BF');assert.equal(map[0].productId,'sigma-bf');assert.deepEqual(map[0].reviewedAliases,['Sigma BF']);
  assert.equal(staging.identityEvidence.verification,'verified');assert.equal(body.identityEvidence,undefined); // Existing-product merge metadata gap remains explicit.
  for(const source of staging.sources){assert.ok(['sigma-photo.co.kr','www.sigma-global.com'].includes(new URL(source.url).hostname));assert.equal(e.bundle.raws[source.sourceId].items[0].manufacturerModelCode,'BF');assert.ok(body.sources.some(s=>s.sourceId===source.sourceId));}

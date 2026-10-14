@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+  "publisher": "Hasselblad",
+  "documentTitle": "907X & CFV 100C — official English datasheet",
+  "documentVersion": "Linked datasheet20240124",
+  "region": "Global",
+  "language": "en",
+  "evidenceScope": "Only 907X & CFV 100C. Verified public facts with exact locator/conditions; no prices, other cameras or lens products. BodyStyle is editorial form category.",
+  "accessedAt": "2026-10-14T02:22:43.313Z",
+  "evidenceExcerpt": [
+    {
+      "field": "Sensor Type",
+      "value": "Back-side illuminated (BSI) CMOS",
+      "unit": null
+    },
+    {
+      "field": "Sensor Dimensions",
+      "value": [
+        43.8,
+        32.9
+      ],
+      "unit": "mm"
+    },
+    {
+      "field": "Autofocusing Type / Method",
+      "value": "PDAF + CDAF, 294 PDAF zones; AF-S with Face Detection in 907X + CFV100C/XCD configuration.",
+      "unit": null
+    },
+    {
+      "field": "Autofocusing Method / Subject Detection",
+      "value": [
+        "Face"
+      ],
+      "unit": null
+    },
+    {
+      "field": "Display Specifications / Tilting Angle",
+      "value": {
+        "present": true,
+        "sizeInches": 3.2,
+        "resolutionDots": 2360000,
+        "mechanism": "tilt",
+        "touch": true
+      },
+      "unit": null
+    },
+    {
+      "field": "Storage Options",
+      "value": {
+        "count": 1,
+        "slots": [
+          {
+            "index": 1,
+            "media": [
+              "CFexpress Type B"
+            ],
+            "standards": null
+          }
+        ]
+      },
+      "unit": ""
+    },
+    {
+      "field": "Shutter Modes",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "Electronic shutter fastest speed",
+      "value": 0.00016666666666666666,
+      "unit": "s"
+    },
+    {
+      "field": "Electronic shutter 68 minutes",
+      "value": 4080,
+      "unit": "s"
+    },
+    {
+      "field": "Lens leaf shutter dependency",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Lens-dependent fastest leaf shutter",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Capture Rate",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Electronic capture rate not explicitly assigned",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Movie recording not specified",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Movie bit depth not specified",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Movie crop not specified",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Weather sealing not specified",
+      "value": null,
+      "unit": null
+    },
+    {
+      "field": "Operating Temperature minimum",
+      "value": -10,
+      "unit": "°C"
+    },
+    {
+      "field": "Operating Temperature maximum",
+      "value": 45,
+      "unit": "°C"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "hasselblad-907x-cfv-100c",
+      "manufacturerModelCode": "907X & CFV 100C",
+      "productType": "body",
+      "identity": {
+        "name": "하셀블라드 907X & CFV 100C",
+        "brand": "Hasselblad",
+        "model": "907X & CFV 100C",
+        "series": "907X",
+        "aliases": [
+          "Hasselblad 907X & CFV 100C"
+        ],
+        "mount": "Hasselblad X",
+        "kind": "interchangeable",
+        "bodyStyle": "compact"
+      },
+      "observations": [
+        {
+          "path": "specs.sensor.generation",
+          "evidenceRef": 0,
+          "rawValue": "Back-side illuminated (BSI) CMOS",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Sensor Type"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "noOtherGenerationInherited": true,
+            "notTotalOrOutputResolution": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "evidenceRef": 1,
+          "rawValue": [
+            43.8,
+            32.9
+          ],
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Official specification",
+            "row": "Sensor Dimensions"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "explicitManufacturerMm": true,
+            "notComputedFromMediumFormat": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.description",
+          "evidenceRef": 2,
+          "rawValue": "PDAF + CDAF, 294 PDAF zones; AF-S with Face Detection in 907X + CFV100C/XCD configuration.",
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Autofocusing Type / Method"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "pdafZones": 294,
+            "afC": false,
+            "compatibleNativeXCDConfiguration": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "evidenceRef": 3,
+          "rawValue": [
+            "Face"
+          ],
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Autofocusing Method / Subject Detection"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.lcd",
+          "evidenceRef": 4,
+          "rawValue": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2360000,
+            "mechanism": "tilt",
+            "touch": true
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Display Specifications / Tilting Angle"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "technology": "TFT",
+            "tiltUpStopsDegrees": [
+              40,
+              90
+            ],
+            "tiltDownMaxDegrees": null,
+            "stillDisplayColourDepthNotVideo": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.cardSlots",
+          "evidenceRef": 5,
+          "rawValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "rawUnit": "",
+          "locator": {
+            "section": "Official specification",
+            "row": "Storage Options"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "internalSSDNotSlot": true,
+            "internalStorageTB": 1,
+            "removableSlotCount": 1,
+            "cardCapacityMaxGB": 512,
+            "USBTransferNotRecording": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "evidenceRef": 6,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Shutter Modes"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "notMechanicalFocalPlaneClaim": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "evidenceRef": 7,
+          "rawValue": 0.00016666666666666666,
+          "rawUnit": "s",
+          "locator": {
+            "section": "Official specification",
+            "row": "Electronic shutter fastest speed"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "exactSourceFraction": "1/6000",
+            "sixDecimalCanonicalQuantization": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "evidenceRef": 8,
+          "rawValue": 4080,
+          "rawUnit": "s",
+          "locator": {
+            "section": "Official specification",
+            "row": "Electronic shutter 68 minutes"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "sourceMinutes": 68,
+            "mode": "electronic shutter"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "evidenceRef": 9,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Lens leaf shutter dependency"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "Body field does not distinguish an in-lens leaf shutter from an independent body mechanism. Preserve supported mechanical lens mode in conditions, not a body-owned performance.",
+            "mechanicalModeSupportedWithXCD": true,
+            "mechanicalShutterOwner": "compatible lens",
+            "flashSynchronization": "Mechanical lens shutter only; fastest supported speed varies by lens"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.shutter.fastestMechanicalSec",
+          "evidenceRef": 10,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Lens-dependent fastest leaf shutter"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "Specific lens maximum is not a body-independent speed.",
+            "xcdLeafFastestClaim": "up to1/4000sec, lens dependent",
+            "hcHcdClaim": "up to1/800 or1/2000sec with appropriate adapter/lens"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "evidenceRef": 11,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Capture Rate"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "Generic capture rate cannot be assigned as universal mechanical/body-shutter fps.",
+            "genericCaptureFps": 3.3,
+            "maximumOrApproximate": true,
+            "stillRawBitDepth": 14
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "evidenceRef": 12,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Electronic capture rate not explicitly assigned"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "No explicit electronic-shutter fps in selected contract-compatible source."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.max",
+          "evidenceRef": 13,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Movie recording not specified"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "Reviewed sources do not explicitly confirm movie recording or no-video. Still RAW14/16bit and HEIF10bit do not imply movie depth.",
+            "noVideoAbsenceNotVerified": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "evidenceRef": 14,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Movie bit depth not specified"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "Still colour definition is not movie bit depth."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "evidenceRef": 15,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Movie crop not specified"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "No directly supported movie crop flag."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weatherSealing",
+          "evidenceRef": 16,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official specification",
+            "row": "Weather sealing not specified"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "unknownReason": "No water-resistance inference from machined aluminium or no-waterproof FAQ."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "evidenceRef": 17,
+          "rawValue": -10,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Official specification",
+            "row": "Operating Temperature minimum"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "notIBISSubsystemTemperature": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "evidenceRef": 18,
+          "rawValue": 45,
+          "rawUnit": "°C",
+          "locator": {
+            "section": "Official specification",
+            "row": "Operating Temperature maximum"
+          },
+          "conditions": {
+            "officialAssembly": "907X + CFV 100C",
+            "sensorOwner": "CFV 100C",
+            "storageOwner": "CFV 100C",
+            "displayOwner": "CFV 100C",
+            "batteryOwner": "CFV 100C",
+            "nativeLensMountOwner": "907X",
+            "notStandalone907XSpecs": true,
+            "humidityMaxPercent": 85,
+            "nonCondensing": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "cd876ff102cde07524984e16c0b461cdcf0b04ed1706aeeac636b70d7bf10247",
+  "sourceId": "source-723688f5ca931696"
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "url": "https://www.hasselblad.com/x-system/x2d-ii-100c-faq/",
+  "publisher": "Hasselblad",
+  "documentTitle": "X2D II100C official FAQ — autofocus/IBIS conditions",
+  "documentVersion": null,
+  "region": "Global",
+  "language": "en",
+  "evidenceScope": "Only X2D II 100C. Verified public facts with exact locator/conditions; no prices, other cameras or lens products. BodyStyle is editorial form category.",
+  "accessedAt": "2026-10-14T02:20:58.270Z",
+  "evidenceExcerpt": [
+    {
+      "field": "FAQ major upgrades / stabilisation footnote",
+      "value": {
+        "present": true,
+        "axes": 5,
+        "stops": 10,
+        "conditions": "10 stops centre / 8 stops edges; Hasselblad measurement with XCD 3,5/120 Macro under CIPA standards."
+      },
+      "unit": null
+    },
+    {
+      "field": "Named AI hardware processor not stated",
+      "value": null,
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "hasselblad-x2d-ii-100c",
+      "manufacturerModelCode": "X2D II 100C",
+      "productType": "body",
+      "identity": {
+        "name": "하셀블라드 X2D II 100C",
+        "brand": "Hasselblad",
+        "model": "X2D II 100C",
+        "series": "X2D",
+        "aliases": [
+          "Hasselblad X2D II 100C"
+        ],
+        "mount": "Hasselblad X",
+        "kind": "interchangeable",
+        "bodyStyle": "slr"
+      },
+      "observations": [
+        {
+          "path": "specs.ibis",
+          "evidenceRef": 0,
+          "rawValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 10,
+            "conditions": "10 stops centre / 8 stops edges; Hasselblad measurement with XCD 3,5/120 Macro under CIPA standards."
+          },
+          "rawUnit": null,
+          "locator": {
+            "section": "FAQ Major Upgrades / footnote",
+            "row": "5-axis10-stop IBIS"
+          },
+          "conditions": {
+            "imageCentreStops": 10,
+            "imageEdgeStops": 8,
+            "axes": 5,
+            "testStandard": "CIPA",
+            "testLens": "XCD 3,5/120 Macro",
+            "sensorShiftNotLensOIS": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.autofocus.aiUnit",
+          "evidenceRef": 1,
+          "rawValue": null,
+          "rawUnit": null,
+          "locator": {
+            "section": "Official FAQ",
+            "row": "Named AI hardware processor not stated"
+          },
+          "conditions": {
+            "unknownReason": "Deep-learning AF does not name dedicated processor model."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-14",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "aec48e596acef98efa2af2ac6293970457247acc37f5116814b0c87230807c48",
+  "sourceId": "source-f478a9e5c6c0a4ef"
+}

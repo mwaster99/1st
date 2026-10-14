@@ -1,0 +1,1994 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-hasselblad-bodies-001",
+  "canonicalBaselineDigest": "6c673d9b99222e23fb56544551b4e75a7420dae39acd2c2913573c1e8a8c05d5",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-hasselblad-bodies-001",
+      "productId": "hasselblad-x2d-ii-100c",
+      "productName": "하셀블라드 X2D II 100C",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "hasselblad-x2d-ii-100c",
+        "name": "하셀블라드 X2D II 100C",
+        "brand": "Hasselblad",
+        "series": "X2D",
+        "model": "X2D II 100C",
+        "aliases": [
+          "Hasselblad X2D II 100C"
+        ],
+        "mount": "Hasselblad X",
+        "kind": "interchangeable",
+        "bodyStyle": "slr",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "중형",
+            "megapixels": 100,
+            "generation": "Back-side illuminated (BSI) CMOS",
+            "sizeMm": [
+              43.8,
+              32.9
+            ]
+          },
+          "weight": 840,
+          "weightBasis": "battery",
+          "bodyOnlyWeight": 730,
+          "dimensions": [
+            148.5,
+            106,
+            75
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": [
+              "Human",
+              "Cat/Dog",
+              "Vehicle"
+            ],
+            "description": "PDAF + CDAF + LiDAR; 425 PDAF zones; AF-S / AF-C / MF. AF-C requires compatible XCD lens/firmware and electronic shutter off."
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 327,
+          "releaseDate": null,
+          "batteryConditions": "CIPA 327 shots with XCD4/28P;466 when preview Hold/HDR off, lens-dependent.",
+          "ibis": {
+            "present": true,
+            "axes": 5,
+            "stops": 10,
+            "conditions": "10 stops centre / 8 stops edges; Hasselblad measurement with XCD 3,5/120 Macro under CIPA standards."
+          },
+          "evf": {
+            "present": true,
+            "resolutionDots": 5760000,
+            "magnification": 1,
+            "maxRefreshHz": null
+          },
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.6,
+            "resolutionDots": 2360000,
+            "mechanism": "tilt",
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": null,
+            "maxMechanicalFps": null
+          },
+          "shutter": {
+            "electronic": true,
+            "fastestElectronicSec": 0.000167,
+            "fastestMechanicalSec": null,
+            "mechanical": null,
+            "slowestTimedSec": 4080
+          },
+          "cardSlots": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 45,
+            "min": -10
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.hasselblad.com/ko-kr/x-system/x2d-ii-100c/",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-14",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-c51905009a8d9a26",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-72a1346bf5eeb3e42a3e",
+          "sourceId": "source-c51905009a8d9a26",
+          "checkedAt": "2026-10-14"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-72a1346bf5eeb3e42a3e",
+        "sourceId": "source-c51905009a8d9a26",
+        "evidenceRef": 2,
+        "locator": {
+          "section": "Official product introduction",
+          "row": "X2D II 100C"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-14",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-c51905009a8d9a26",
+          "url": "https://www.hasselblad.com/ko-kr/x-system/x2d-ii-100c/",
+          "documentTitle": "X2D II 100C — official Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.aiUnit",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-0f4659008169c07a2d40",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f478a9e5c6c0a4ef",
+            "url": "https://www.hasselblad.com/x-system/x2d-ii-100c-faq/",
+            "locator": {
+              "section": "Official FAQ",
+              "row": "Named AI hardware processor not stated"
+            },
+            "conditions": {
+              "unknownReason": "Deep-learning AF does not name dedicated processor model."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "PDAF + CDAF + LiDAR; 425 PDAF zones; AF-S / AF-C / MF. AF-C requires compatible XCD lens/firmware and electronic shutter off.",
+          "unit": null,
+          "claimId": "claim-439c2cb48d0fab73356f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Autofocusing Type / Method"
+            },
+            "conditions": {
+              "pdafZones": 425,
+              "afC": true,
+              "compatibleNativeXCDConfiguration": true,
+              "requiresLatestLensFirmware": true,
+              "afCWithElectronicShutter": false,
+              "afCCompatibleLenses": [
+                "XCD 2,8-4/35-100E",
+                "XCD 2,5/38V",
+                "XCD 2,5/55V",
+                "XCD 2,5/25V",
+                "XCD 2,5/90V",
+                "XCD 4/28P",
+                "XCD 3,4/75P"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Human",
+            "Cat/Dog",
+            "Vehicle"
+          ],
+          "unit": null,
+          "claimId": "claim-d81c0f890a02415aaf55",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Autofocusing Method / Subject Detection"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "CIPA 327 shots with XCD4/28P;466 when preview Hold/HDR off, lens-dependent.",
+          "unit": null,
+          "claimId": "claim-0ad1999f83cc6b4e1827",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Endurance / footnote6"
+            },
+            "conditions": {
+              "testStandard": "CIPA",
+              "stillNotVideo": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 327,
+          "unit": null,
+          "claimId": "claim-e9c2a824c28995930f9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Endurance CIPA"
+            },
+            "conditions": {
+              "testStandard": "CIPA",
+              "testLens": "XCD 4/28P",
+              "alternativeShots": 466,
+              "alternativeConditions": "Preview Hold, HDR off; not baseline CIPA327"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 730,
+          "unit": "g",
+          "claimId": "claim-f34181af9f82140e2ae2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Weight camera body only"
+            },
+            "conditions": {
+              "weightBasis": "body-only",
+              "lensExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "fps",
+          "claimId": "claim-1e2f1b0e1562282a1d4a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic capture rate not explicitly assigned"
+            },
+            "conditions": {
+              "unknownReason": "No explicit electronic-shutter fps in selected contract-compatible source."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "fps",
+          "claimId": "claim-71da231b3afab6217e1f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Capture Rate"
+            },
+            "conditions": {
+              "unknownReason": "Generic capture rate cannot be assigned as universal mechanical/body-shutter fps.",
+              "genericCaptureFps": 3,
+              "maximumOrApproximate": true,
+              "measuredInAF_C": true,
+              "lensAndFirmwareRequired": true,
+              "electronicShutterOffForAF_C": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-e0e2ff77f5b67f26db87",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Storage Options"
+            },
+            "conditions": {
+              "internalSSDNotSlot": true,
+              "internalStorageTB": 1,
+              "removableSlotCount": 1,
+              "cardCapacityMaxGB": 512,
+              "USBTransferNotRecording": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            148.5,
+            106,
+            75
+          ],
+          "unit": "mm",
+          "claimId": "claim-a82ea5d5cae330024cee",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Dimensions"
+            },
+            "conditions": {
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "resolutionDots": 5760000,
+            "magnification": 1,
+            "maxRefreshHz": null
+          },
+          "unit": null,
+          "claimId": "claim-821aacb32cd27f4e660d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic Viewfinder"
+            },
+            "conditions": {
+              "technology": "Micro-OLED",
+              "viewingAreaPercent": 100,
+              "measurementLens": "65mm medium format at infinity -1m-1",
+              "refreshNotSpecified": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 10,
+            "conditions": "10 stops centre / 8 stops edges; Hasselblad measurement with XCD 3,5/120 Macro under CIPA standards."
+          },
+          "unit": null,
+          "claimId": "claim-8c9fb44ff236e3de5cfc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Stabilisation / footnote7"
+            },
+            "conditions": {
+              "imageCentreStops": 10,
+              "imageEdgeStops": 8,
+              "axes": 5,
+              "testStandard": "CIPA",
+              "testLens": "XCD 3,5/120 Macro",
+              "sensorShiftNotLensOIS": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "axes": 5,
+            "stops": 10,
+            "conditions": "10 stops centre / 8 stops edges; Hasselblad measurement with XCD 3,5/120 Macro under CIPA standards."
+          },
+          "unit": null,
+          "claimId": "claim-f354d3ae8817494f039f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f478a9e5c6c0a4ef",
+            "url": "https://www.hasselblad.com/x-system/x2d-ii-100c-faq/",
+            "locator": {
+              "section": "FAQ Major Upgrades / footnote",
+              "row": "5-axis10-stop IBIS"
+            },
+            "conditions": {
+              "imageCentreStops": 10,
+              "imageEdgeStops": 8,
+              "axes": 5,
+              "testStandard": "CIPA",
+              "testLens": "XCD 3,5/120 Macro",
+              "sensorShiftNotLensOIS": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.6,
+            "resolutionDots": 2360000,
+            "mechanism": "tilt",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-522b1a9d351040c1216a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Display Specifications / Tilting Angle"
+            },
+            "conditions": {
+              "technology": "OLED",
+              "tiltUpStopsDegrees": [
+                90
+              ],
+              "tiltDownMaxDegrees": 42.7,
+              "stillDisplayColourDepthNotVideo": true,
+              "peakBrightnessNitsHDR": 1400,
+              "sustainedBrightnessNitsTypical": 1000
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45,
+          "unit": "°C",
+          "claimId": "claim-6276d7f8089ebb408cf3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Operating Temperature maximum"
+            },
+            "conditions": {
+              "humidityMaxPercent": 85,
+              "nonCondensing": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": -10,
+          "unit": "°C",
+          "claimId": "claim-16c60ad81385a91f9db5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Operating Temperature minimum"
+            },
+            "conditions": {
+              "notIBISSubsystemTemperature": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "중형",
+          "unit": null,
+          "claimId": "claim-1ed50e4a5fb34a43a106",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c51905009a8d9a26",
+            "url": "https://www.hasselblad.com/ko-kr/x-system/x2d-ii-100c/",
+            "locator": {
+              "section": "Official specification",
+              "row": "Medium format"
+            },
+            "conditions": {
+              "notInferredDimensions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Back-side illuminated (BSI) CMOS",
+          "unit": null,
+          "claimId": "claim-d0ebaa940d2d375af783",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "noOtherGenerationInherited": true,
+              "notTotalOrOutputResolution": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "MP",
+          "claimId": "claim-0c65b49b1cee043f454a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c51905009a8d9a26",
+            "url": "https://www.hasselblad.com/ko-kr/x-system/x2d-ii-100c/",
+            "locator": {
+              "section": "Official specification",
+              "row": "100-megapixel medium format BSI CMOS sensor"
+            },
+            "conditions": {
+              "manufacturerReportedSensorMP": 100,
+              "notCalculatedFromOutputPixels": true,
+              "effectiveVersusTotalNotSeparatelyLabeled": true,
+              "sourceKoreanSpelling": "1억 화소 (100 megapixels)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            43.8,
+            32.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-82ea1e5811d2f164f124",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Sensor Dimensions"
+            },
+            "conditions": {
+              "explicitManufacturerMm": true,
+              "notComputedFromMediumFormat": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-28315092fee0fd960281",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Shutter Modes"
+            },
+            "conditions": {
+              "notMechanicalFocalPlaneClaim": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.000167,
+          "unit": "s",
+          "claimId": "claim-a46d32f58cd4c8ddf4d2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic shutter fastest speed"
+            },
+            "conditions": {
+              "exactSourceFraction": "1/6000",
+              "sixDecimalCanonicalQuantization": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestMechanicalSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "s",
+          "claimId": "claim-feb5eac381d303930134",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Lens-dependent fastest leaf shutter"
+            },
+            "conditions": {
+              "unknownReason": "Specific lens maximum is not a body-independent speed.",
+              "xcdLeafFastestClaim": "up to1/4000sec, lens dependent",
+              "hcHcdClaim": "up to1/800 or1/2000sec with appropriate adapter/lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-56b2b4d999cb677f7a28",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Lens leaf shutter dependency"
+            },
+            "conditions": {
+              "unknownReason": "Body field does not distinguish an in-lens leaf shutter from an independent body mechanism. Preserve supported mechanical lens mode in conditions, not a body-owned performance.",
+              "mechanicalModeSupportedWithXCD": true,
+              "mechanicalShutterOwner": "compatible lens",
+              "flashSynchronization": "Mechanical lens shutter only; fastest supported speed varies by lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4080,
+          "unit": "s",
+          "claimId": "claim-62eba13244d53fe0f85c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic shutter 68 minutes"
+            },
+            "conditions": {
+              "sourceMinutes": 68,
+              "mode": "electronic shutter"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-cebafd39b5c50b32f038",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie bit depth not specified"
+            },
+            "conditions": {
+              "unknownReason": "Still colour definition is not movie bit depth."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-d837c29b834a0954d614",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie crop not specified"
+            },
+            "conditions": {
+              "unknownReason": "No directly supported movie crop flag."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-8b62d262b8084b6a0297",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie recording not specified"
+            },
+            "conditions": {
+              "unknownReason": "Reviewed sources do not explicitly confirm movie recording or no-video. Still RAW14/16bit and HEIF10bit do not imply movie depth.",
+              "noVideoAbsenceNotVerified": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weatherSealing",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-726e2c093da00599fb2b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Weather sealing not specified"
+            },
+            "conditions": {
+              "unknownReason": "No water-resistance inference from machined aluminium or no-waterproof FAQ."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 840,
+          "unit": "g",
+          "claimId": "claim-6d36d4820424aaf063e5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Weight camera body with battery"
+            },
+            "conditions": {
+              "weightBasis": "battery",
+              "bodyAndBatteryOnly": true,
+              "cardInclusionNotInferred": true,
+              "lensExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "battery",
+          "unit": null,
+          "claimId": "claim-90ea90a811977cbffd16",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ee053e8b679a47b",
+            "url": "https://cdn.hasselblad.com/f/77891/x/a5e78b1d54/x2d-ii-100c-datasheet-multi-language.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Weight composition"
+            },
+            "conditions": {
+              "includingBattery": true
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-hasselblad-bodies-001",
+      "productId": "hasselblad-907x-cfv-100c",
+      "productName": "하셀블라드 907X & CFV 100C",
+      "productType": "body",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "hasselblad-907x-cfv-100c",
+        "name": "하셀블라드 907X & CFV 100C",
+        "brand": "Hasselblad",
+        "series": "907X",
+        "model": "907X & CFV 100C",
+        "aliases": [
+          "Hasselblad 907X & CFV 100C"
+        ],
+        "mount": "Hasselblad X",
+        "kind": "interchangeable",
+        "bodyStyle": "compact",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "sensor": {
+            "format": "중형",
+            "megapixels": 100,
+            "generation": "Back-side illuminated (BSI) CMOS",
+            "sizeMm": [
+              43.8,
+              32.9
+            ]
+          },
+          "weight": null,
+          "weightBasis": null,
+          "bodyOnlyWeight": 620,
+          "dimensions": [
+            102,
+            92,
+            84
+          ],
+          "autofocus": {
+            "aiUnit": null,
+            "subjects": [
+              "Face"
+            ],
+            "description": "PDAF + CDAF, 294 PDAF zones; AF-S with Face Detection in 907X + CFV100C/XCD configuration."
+          },
+          "video": {
+            "max": null,
+            "bitDepth": null,
+            "log": null,
+            "cropAtMax": null
+          },
+          "batteryShots": 420,
+          "releaseDate": null,
+          "batteryConditions": "CIPA 420 images in official 907X+CFV100C system; test lens not specified.",
+          "ibis": null,
+          "evf": null,
+          "lcd": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2360000,
+            "mechanism": "tilt",
+            "touch": true
+          },
+          "burst": {
+            "maxElectronicFps": null,
+            "maxMechanicalFps": null
+          },
+          "shutter": {
+            "electronic": true,
+            "fastestElectronicSec": 0.000167,
+            "fastestMechanicalSec": null,
+            "mechanical": null,
+            "slowestTimedSec": 4080
+          },
+          "cardSlots": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "weatherSealing": null,
+          "fixedLens": null,
+          "operatingTemperatureC": {
+            "max": 45,
+            "min": -10
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.hasselblad.com/ko-kr/v-system/907x-cfv-100c/",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-14",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-daee6eaa01e17c30",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-49e4b36086dfa87a7feb",
+          "sourceId": "source-daee6eaa01e17c30",
+          "checkedAt": "2026-10-14"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-49e4b36086dfa87a7feb",
+        "sourceId": "source-daee6eaa01e17c30",
+        "evidenceRef": 2,
+        "locator": {
+          "section": "Official product introduction",
+          "row": "907X & CFV 100C"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-14",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-daee6eaa01e17c30",
+          "url": "https://www.hasselblad.com/ko-kr/v-system/907x-cfv-100c/",
+          "documentTitle": "907X & CFV 100C — official Korea product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.autofocus.description",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "PDAF + CDAF, 294 PDAF zones; AF-S with Face Detection in 907X + CFV100C/XCD configuration.",
+          "unit": null,
+          "claimId": "claim-eaa0386cf892cba97097",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Autofocusing Type / Method"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "pdafZones": 294,
+              "afC": false,
+              "compatibleNativeXCDConfiguration": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.description",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "PDAF + CDAF, 294 PDAF zones; AF-S with Face Detection in 907X + CFV100C/XCD configuration.",
+          "unit": null,
+          "claimId": "claim-74e209196b2ffd4ba254",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp12 andp16",
+              "row": "907X/CFV feature compatibility / Autofocusing"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "afC": false,
+              "compatibleNativeXCDConfiguration": true,
+              "VSystemAndTechnicalCameraManualFocusOnly": true,
+              "VOrXPanLensOn907XElectronicShutterOnly": true,
+              "requiresCorrectLensAdapter": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.autofocus.subjects",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            "Face"
+          ],
+          "unit": null,
+          "claimId": "claim-b7f30cd38c17751e1550",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Autofocusing Method / Subject Detection"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "CIPA 420 images in official 907X+CFV100C system; test lens not specified.",
+          "unit": null,
+          "claimId": "claim-7f2379d49d37e62be003",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp17",
+              "row": "Endurance CIPA"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.batteryShots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 420,
+          "unit": null,
+          "claimId": "claim-c4958a00e453e5a487b4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp17 CFV specifications",
+              "row": "Endurance CIPA"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "testStandard": "CIPA",
+              "testLensNotSpecified": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.bodyOnlyWeight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 620,
+          "unit": "g",
+          "claimId": "claim-09d88d3465e75307417d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp18 assembled specifications",
+              "row": "907X & CFV100C assembled weight excluding battery/card"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "weightBasis": "body-only",
+              "cameraBodyModuleG": 160,
+              "digitalBackModuleG": 460,
+              "officialAssemblyWeightNotCalculated": true,
+              "lensExcluded": true,
+              "batteryExcluded": true,
+              "cardExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxElectronicFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "fps",
+          "claimId": "claim-d36ec2d37421a2b7b4b3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic capture rate not explicitly assigned"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "No explicit electronic-shutter fps in selected contract-compatible source."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.burst.maxMechanicalFps",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "fps",
+          "claimId": "claim-20745453d856695c0728",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Capture Rate"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Generic capture rate cannot be assigned as universal mechanical/body-shutter fps.",
+              "genericCaptureFps": 3.3,
+              "maximumOrApproximate": true,
+              "stillRawBitDepth": 14
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.cardSlots",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "count": 1,
+            "slots": [
+              {
+                "index": 1,
+                "media": [
+                  "CFexpress Type B"
+                ],
+                "standards": null
+              }
+            ]
+          },
+          "unit": null,
+          "claimId": "claim-73b7cd2c26cd03030764",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Storage Options"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "internalSSDNotSlot": true,
+              "internalStorageTB": 1,
+              "removableSlotCount": 1,
+              "cardCapacityMaxGB": 512,
+              "USBTransferNotRecording": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.dimensions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            102,
+            92,
+            84
+          ],
+          "unit": "mm",
+          "claimId": "claim-1d1272e18cfb1de96706",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp18 assembled specifications",
+              "row": "907X & CFV100C assembled dimensions"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "order": [
+                "width",
+                "height",
+                "depth"
+              ],
+              "not907XOnly": [
+                102,
+                91,
+                28
+              ],
+              "notCFVOnly": [
+                91,
+                92,
+                61
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.evf",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-d598374abf73bc7d7f38",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual accessories",
+              "row": "Built-in EVF not directly stated"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Optional optical907X finder is not a built-in electronic finder; omission alone does not prove absence."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.ibis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-e677b7e305f2f91d1e26",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual specifications",
+              "row": "Sensor-shift IBIS not directly stated"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Do not copy X2D7/10stop IBIS or infer absent from omission."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.lcd",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": {
+            "present": true,
+            "sizeInches": 3.2,
+            "resolutionDots": 2360000,
+            "mechanism": "tilt",
+            "touch": true
+          },
+          "unit": null,
+          "claimId": "claim-163cbbdf37e9012d3bba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Display Specifications / Tilting Angle"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "technology": "TFT",
+              "tiltUpStopsDegrees": [
+                40,
+                90
+              ],
+              "tiltDownMaxDegrees": null,
+              "stillDisplayColourDepthNotVideo": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 45,
+          "unit": "°C",
+          "claimId": "claim-32684f874c08b07a70af",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Operating Temperature maximum"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "humidityMaxPercent": 85,
+              "nonCondensing": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.operatingTemperatureC.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": -10,
+          "unit": "°C",
+          "claimId": "claim-805960bfd605dc09b2bb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Operating Temperature minimum"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "notIBISSubsystemTemperature": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.format",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "중형",
+          "unit": null,
+          "claimId": "claim-294025ef457451fdc616",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-daee6eaa01e17c30",
+            "url": "https://www.hasselblad.com/ko-kr/v-system/907x-cfv-100c/",
+            "locator": {
+              "section": "Official specification",
+              "row": "Medium format"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "notInferredDimensions": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.generation",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Back-side illuminated (BSI) CMOS",
+          "unit": null,
+          "claimId": "claim-3a8ffd84902f07c598b9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Sensor Type"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "noOtherGenerationInherited": true,
+              "notTotalOrOutputResolution": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.megapixels",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "MP",
+          "claimId": "claim-4225d44c569e4cb256b1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-daee6eaa01e17c30",
+            "url": "https://www.hasselblad.com/ko-kr/v-system/907x-cfv-100c/",
+            "locator": {
+              "section": "Official specification",
+              "row": "100-megapixel medium format BSI CMOS sensor"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "manufacturerReportedSensorMP": 100,
+              "notCalculatedFromOutputPixels": true,
+              "effectiveVersusTotalNotSeparatelyLabeled": true,
+              "sourceKoreanSpelling": "1억 화소 (100 megapixels)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.sensor.sizeMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": [
+            43.8,
+            32.9
+          ],
+          "unit": "mm",
+          "claimId": "claim-e3b41aaf7f3030d4bfb3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Sensor Dimensions"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "explicitManufacturerMm": true,
+              "notComputedFromMediumFormat": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.electronic",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-fd9d31ae64aa160cacbb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Shutter Modes"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "notMechanicalFocalPlaneClaim": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestElectronicSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.000167,
+          "unit": "s",
+          "claimId": "claim-a609b12a96727e28c188",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic shutter fastest speed"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "exactSourceFraction": "1/6000",
+              "sixDecimalCanonicalQuantization": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.fastestMechanicalSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "s",
+          "claimId": "claim-e23be77b7a931b0d0c44",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Lens-dependent fastest leaf shutter"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Specific lens maximum is not a body-independent speed.",
+              "xcdLeafFastestClaim": "up to1/4000sec, lens dependent",
+              "hcHcdClaim": "up to1/800 or1/2000sec with appropriate adapter/lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.mechanical",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-225c71781a83fdf58b4a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Lens leaf shutter dependency"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Body field does not distinguish an in-lens leaf shutter from an independent body mechanism. Preserve supported mechanical lens mode in conditions, not a body-owned performance.",
+              "mechanicalModeSupportedWithXCD": true,
+              "mechanicalShutterOwner": "compatible lens",
+              "flashSynchronization": "Mechanical lens shutter only; fastest supported speed varies by lens"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.shutter.slowestTimedSec",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4080,
+          "unit": "s",
+          "claimId": "claim-5504d9efd9b624a25494",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Electronic shutter 68 minutes"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "sourceMinutes": 68,
+              "mode": "electronic shutter"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.bitDepth",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-28401bcdc02b1c8bf7de",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie bit depth not specified"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Still colour definition is not movie bit depth."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.cropAtMax",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-a89debeac1d7e4b669cd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie crop not specified"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "No directly supported movie crop flag."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.video.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-2741c9767d77ce2a2ae8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Movie recording not specified"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Reviewed sources do not explicitly confirm movie recording or no-video. Still RAW14/16bit and HEIF10bit do not imply movie depth.",
+              "noVideoAbsenceNotVerified": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weatherSealing",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-c6385ef33d112c7f6736",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-723688f5ca931696",
+            "url": "https://cdn.hasselblad.com/f/77891/x/c5cd0973cd/907x_cfv_100c_datasheet_en_20240124.pdf",
+            "locator": {
+              "section": "Official specification",
+              "row": "Weather sealing not specified"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "No water-resistance inference from machined aluminium or no-waterproof FAQ."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": "g",
+          "claimId": "claim-86e7db615b21006531ed",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp18",
+              "row": "Operational assembled weight not stated"
+            },
+            "conditions": {
+              "officialAssembly": "907X + CFV 100C",
+              "sensorOwner": "CFV 100C",
+              "storageOwner": "CFV 100C",
+              "displayOwner": "CFV 100C",
+              "batteryOwner": "CFV 100C",
+              "nativeLensMountOwner": "907X",
+              "notStandalone907XSpecs": true,
+              "unknownReason": "Do not add assumed battery mass or treat620g bare as operational weight."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weightBasis",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-a0f12c7014e986e4c9e7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-73c8bd75c1b28583",
+            "url": "https://cdn.hasselblad.com/manuals/907X_%26_CFV_100C_User_Manual/User_Manual/CFV_100C_User_Manual_v1.0_EN.pdf",
+            "locator": {
+              "section": "Manual PDFp18",
+              "row": "Operational weight basis not stated"
+            },
+            "conditions": {
+              "unknownReason": "Operational weight UNKNOWN; do not create assumed basis."
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}
