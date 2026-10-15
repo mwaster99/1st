@@ -1,5 +1,19 @@
 # Objective DB v0.4 진행 기록
 
+## Stage 4 Hasselblad production coverage audit — 2026-10-14
+
+완료. Clean baseline `84ce2a5`에서 inventory/checkpoint/batch001/보고서/contracts/canonical/map/scope/vocab/최신 validators/기존 브랜드 감사·테스트를 대조했다. 한국 공식 스토어 actual cards·빈 page2·구매페이지 SKU와 Global X/V/H, NA/EU store·구세대·edition·dealer/repair·PDF/FAQ를 새 조회했다. **KR current2/base identities2/configurations2(통합1+공식 assembled1)/component identities2/canonicalized2/provenance2, linked lens-kit7/SKU offers9, upcoming0, 명시적 단종확인0, 미처리0/duplicate·ambiguous0/critical0**. 새/삭제/current status/kit 구성 변화0. 공식 요청38개 중20036/4042; 실제 dealer locator 재조회200. 페이지 존속/품절/추정route404는 현행·전세계 단종 증거로 쓰지 않았다.
+
+**한국 Hasselblad 공식 온라인 스토어 현행 digital camera offering coverage 1차 완료. 전 세계 Hasselblad 전체 coverage 완료 미선언**: H6D/Multi-shot/H6X/Digital Back의 소개·dealer·지원은 남지만 현행 판매 미확정, KR/NA/EU collection2개 일치만으로 모든 지역을 대표하지 않는다. H/global/dealer는 unresolved status/future reconciliation이며 영구 제외도 현행 승격도 하지 않았다.
+
+907X+CFV100C는 body/back 한 camera configuration; 별도 module/kit/lens product0. CFV가100MP BSI/43.8×32.9mm 센서·internal1TB/CFexpressB1slot·배터리·3.2inch LCD를 소유하고907X는 native XCD front interface를 소유한다. Manual PDFp18의 **620g bare assembly(배터리/card 제외)**, module160/460g와 lens 제외 의미·dimensions102×92×84 확인; canonicalbodyOnlyWeight620/claimbody-only이고 operatingweight/basisUNKNOWN. 기존 catalog view도 무게미확인 유지, CFV/body/lens 이중계산0. Hasselblad X≠Fujifilm X alias/mount/compatibility 충돌0; V/technical MF·model별 sync/cable·SWC변형 예외와 lens-dependent leaf shutter를 조건으로 보존. X2DII10centre/8edge CIPA IBIS를907에복사하지 않았고 video/no-video추정없음.
+
+Known objective leaves **53/verified53/reference-only·legacy-only·unclassified·source-less0**, fieldEvidence38/structuredidentity2, raw6/claims61(known40/null21)/canonical sources6. **Should-fix3**: 기존 MP original-unit validate/approval drift, new-product summary UNKNOWN category 오해, 미승격907FAQ outputheight8472 vs datasheet/manual8742 충돌. 현재 canonicaldataerror0/비차단; schema backlog로 dataerror를 숨기지 않았다. **Acceptable canonical UNKNOWN21paths** = raw-backed13+optional8; incomingnull21 중mode/lensscope-gap8은별도이며 fixedLensN/A2/burstcontainer2는 중복집계하지 않았다.
+
+Batch16+registrycontext2=**18files**, missing/digestmismatch0/strict2/2/before-after와after재적용replay일치. 실제CLI **already-canonicalized/canonicalMatches:true**. Canonical **165/36/201**, SHA `3f971b678f83576b916ad00e9c5ff48c203ceee48d95be806754ea7c8f1c9842` 불변; raw6 실제UTC/helperclockbounds/source-link정상. PDFmanual143pages/datasheets 재조회byte동일. 신규worker/token0, 기존retry 이력과provenance완료는분리.
+
+전체 **382/382**, Objective/production/catalog/coverage **355/355**, Hasselblad **32/32**(production15/audit17). Canonicalvalidation/build/nodecheck7/gitdiffcheck·새파일whitespace검증통과(기존Vitechunk경고). [상세43항목](OBJECTIVE_DB_HASSELBLAD_COVERAGE_AUDIT.md), [새감사 terminal checkpoint](../src/data/ingestion/hasselblad-coverage-audit-2026-10-14.json), [새회귀테스트](../tests/hasselbladCoverageAudit.test.js). Audit4파일만변경/미commit·push없음; 기존canonical/map/vocab/scope/validators/production/tests/추천/UI불변. KR추가batch불필요/다음stagecoverageblocker0. 기존plan 다음은 **L1 Sony E 현행 순정렌즈**, 새bodybrand확정없음; 렌즈pilot나globalreconciliation은 별도지시로 시작. Clean요구시감사변경검토·commit후진행하며worker/raw/승인/apply를반복하지않는다.
+
 ## Stage 4 Hasselblad production batch 001 — 2026-10-14
 
 완료. Clean baseline `0b87590`에서 설계/contracts/progress/이전8브랜드감사/canonical/map/scope/vocab/최신validators/tests를확인했다. Korea 공식website/store카메라 실제cards2·page2empty,NA/EUcurrent2,retainedX/V8 및Hdealer/support4refs를대조했다. **KR currentcards2/baseconfig2/integrated1/assembled1, module2는별도물리identity, linkedlenskit7/SKUoffers9**. 기존Hasselblad0→신규2(`hasselblad-x2d-ii-100c`,`hasselblad-907x-cfv-100c`), canonical **163/36/199→165/36/201**, 확인한KRcurrent미처리0. Module/kit/lensproduct추가0,기존163bodies/36lenses·타브랜드가격값동일. 구X2D의successor/outofstock,구X1D/50C/edition 및Hdealer소개를current로추정하거나단종으로단정하지않았다. 전세계/dealer current판매는미확정이며다음coverageaudit에서확인한다.
