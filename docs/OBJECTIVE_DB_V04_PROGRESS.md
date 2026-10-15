@@ -1,5 +1,21 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony E-Mount inventory / production readiness — 2026-10-15
+
+**분석 분기 완료, 실제 production은 readiness blocker로 미실행.** Clean baseline `3047bdf`에서 architecture/field contracts/canonical36lenses/map/scope/validators/normalization/기존 tests를 대조했다. 한국 Sony 공식 gallery의 rendered73cards와 모든73product summary를 확인: **optical identities71 = released/current67 +announced/upcoming4**, teleconverter adjacent2(별도 mount-adaptors 목록도 동일2, 중복집계0), observed finish variant1/명시적 단종확인0. Upcoming은 SEL400F45GM/SEL600F63GM/SEL814G/SEL28702의 곧 공개 표기로 분리했다. 구 GM과 GMII 동시 current는 독립 code 유지; A-looking URL의 SEL28702도 공식 card 근거상 Sony E이며 URL로 mount를 추정하지 않았다. 세계/지원 archive/모든 SKU 범위 완료는 선언하지 않는다.
+
+기존 Sony lens **6개 모두 current**, 신규 필요61/기존 provenance 보강6/production 미처리67. 기존4개는 sources0+legacy, 나머지2개는 manufacturer reference만 있고 fieldEvidence 없음. 타제조사30개와 전체165bodies는 수정하지 않았다. **Canonical 165/36/201 및 SHA `3f971b678f83576b916ad00e9c5ff48c203ceee48d95be806754ea7c8f1c9842` 불변**.
+
+실제 blockers를 tmp fixture로 재현: 전체36legacy lenses의 model 누락 때문에 model 생략은 validate MISSING_REQUIRED_IDENTITY, 제공하면 approval immutable identity/model 변경으로 거절된다. 교환식 focal rawUnit 누락, aperture 문자열F2.8, OSS문자열은 validate를 통과하고 strict approval에서 차단된다. 신규 lens-only synthetic atomic/provenance/reapply는 정상이며 unsupported 전부가 아니라 **existing identity 경로와 early strict validation이 미준비**다. Lens image-circle 직접 field도 없어 physical Sony E와 FE/APSC coverage/crop의 좁은 계약 결정 필요. 사용자 지시14 안전 분기에 따라 validator/schema/identity lock 우회·canonical 수동 편집·실제 worker/raw/승인/apply를 강행하지 않았다.
+
+미실행 후보5: **SEL40F25G/SEL2470GM2/SEL2860/SELP1020G/SEL90M28G**(계획 existing3/new2). 각 제품+spec2sources, 실제 focal mm/constant·variable maximum F/FE·APSC/OSS≠IBIS/AF·MF·W·T focus/weight·D×L/배율을 검토했다. 지원하지 않는 치수·배율·minimum selectable aperture/PZ/T-stop/format을 새 canonical field로 만들지 않았다. 신규 worker/API/token/retry/failure0, production manifest/raw/staging/diff/approval/transaction0; 렌즈 미처리 actual67 유지.
+
+후속은 **lens readiness 최소 보완1세션→실제5pilot1세션→잔여62/6family batches(9/10/10/12/12/9)→coverage audit**. Special family는 T/F·STF·macro·tripod weight preflight 결과에 따라 분리되어 batch 수가 늘 수 있다. 제품별 독립worker 유지,5개 고정batch 반복 없음. Missing-model-only identity metadata의 explicit approval 경로·공통 lens contract validation·format의 최소 결정을 먼저 구현한다. DB서버/대규모schema/추천/UI/가격/Experience 작업은 포함하지 않는다.
+
+전체 **397/397**, Objective/production/catalog/coverage **370/370**, 새 Sony lens readiness **15/15** 통과. Canonicalvalidation/build/node7files/gitdiffcheck·새파일whitespace 통과(기존Vitechunk경고). **실제 production idempotency N/A**, lens-only tmp transaction은 already-canonicalized/canonicalMatches:true. Gallery actualUTC **2026-10-15T03:06:20.847Z**,73summary clock **03:07:44.048Z–03:13:32.195Z**,5spec actualtimestamp 별도 보존; production raw-helper 신규 timestamp 검증은 raw0이므로 N/A.
+
+[49항목·전체67목록·최소 구현 계획](OBJECTIVE_DB_SONY_LENS_READINESS.md), [inventory/terminal checkpoint](../src/data/ingestion/sony-e-lenses-current-2026-10-15.json), [readiness tests](../tests/sonyLensReadiness.test.js). 변경4파일/미commit·push없음; 기존canonical/map/vocab/scope/pipeline/artifacts/추천/UI unchanged. 중단 재개 시 완료 inventory와 후보를 재사용하되 다음 production 시작일 status는 재확인한다. **Sony lens production/coverage는 미완료이며 바로 대형 batch를 시작하면 안 된다.**
+
 ## Stage 4 Hasselblad production coverage audit — 2026-10-14
 
 완료. Clean baseline `84ce2a5`에서 inventory/checkpoint/batch001/보고서/contracts/canonical/map/scope/vocab/최신 validators/기존 브랜드 감사·테스트를 대조했다. 한국 공식 스토어 actual cards·빈 page2·구매페이지 SKU와 Global X/V/H, NA/EU store·구세대·edition·dealer/repair·PDF/FAQ를 새 조회했다. **KR current2/base identities2/configurations2(통합1+공식 assembled1)/component identities2/canonicalized2/provenance2, linked lens-kit7/SKU offers9, upcoming0, 명시적 단종확인0, 미처리0/duplicate·ambiguous0/critical0**. 새/삭제/current status/kit 구성 변화0. 공식 요청38개 중20036/4042; 실제 dealer locator 재조회200. 페이지 존속/품절/추정route404는 현행·전세계 단종 증거로 쓰지 않았다.

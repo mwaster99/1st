@@ -1,0 +1,3238 @@
+{
+  "schemaVersion": 1,
+  "brand": "Sony",
+  "scope": "Korea official lens gallery current native E-mount optical lenses; not worldwide or historical completeness",
+  "snapshotDate": "2026-10-15",
+  "reviewedAt": "2026-10-15T03:17:45.674Z",
+  "baselineCommit": "3047bdfc970e93f3fc53df3ffb42457360853805",
+  "startWorkingTree": "clean",
+  "canonicalBaselineSha256": "3f971b678f83576b916ad00e9c5ff48c203ceee48d95be806754ea7c8f1c9842",
+  "canonicalCountsBeforeAndAfter": {
+    "bodies": 165,
+    "lenses": 36,
+    "total": 201
+  },
+  "sources": {
+    "primary": {
+      "url": "https://www.sony.co.kr/lenses/gallery",
+      "accessedAt": "2026-10-15T03:06:20.847Z",
+      "method": "Rendered official DOM cards, all73 present; public model-code data attributes and links only",
+      "renderedCardCount": 73
+    },
+    "mountAdaptorCategory": {
+      "url": "https://www.sony.co.kr/lenses/mount-adaptors",
+      "cardCodes": [
+        "SEL14TC",
+        "SEL20TC"
+      ],
+      "sameProductsAsPrimary": true,
+      "additionalIndependentLensProducts": 0
+    },
+    "formatPolicyUrls": [
+      "https://www.sony.co.kr/electronics/support/e-mount-body-ilce-3000-series/ilce-3000k/articles/00268906",
+      "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel40f25g/articles/00095004"
+    ],
+    "directHttpFailures": [
+      {
+        "key": "kr-gallery",
+        "url": "https://www.sony.co.kr/lenses/gallery",
+        "accessedAt": "2026-10-15T03:05:48.006Z",
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "key": "kr-e",
+        "url": "https://www.sony.co.kr/lenses/e-mount",
+        "accessedAt": "2026-10-15T03:05:48.006Z",
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "key": "kr-lenses",
+        "url": "https://www.sony.co.kr/lenses",
+        "accessedAt": "2026-10-15T03:05:48.006Z",
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "browserDetailReview": {
+      "totalUniqueProducts": 73,
+      "allSummariesRead": true,
+      "unknownStatusCount": 0,
+      "clockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "selectorFailuresRecovered": 5,
+      "reason": "Older page uses product_summary_default; newer product layout uses productDetailsForCategoryNav. Five initial extraction timeouts recovered with observed common summary node. These are not source absence or worker API failures."
+    }
+  },
+  "counts": {
+    "officialCards": 73,
+    "baseOpticalLensIdentities": 71,
+    "releasedCurrentOpticalLenses": 67,
+    "announcedUpcomingOpticalLenses": 4,
+    "explicitDiscontinuedConfirmedInPrimary": 0,
+    "linkedObservedFinishVariants": 1,
+    "adjacentTeleconverters": 2,
+    "additionalAdaptersInMountAdaptorCategory": 0,
+    "aMountOpticalLensesInPrimary": 0,
+    "thirdPartyLensesInPrimary": 0,
+    "existingCanonicalLensesAllBrands": 36,
+    "existingSonyLenses": 6,
+    "existingSonyCurrent": 6,
+    "currentNewCanonicalNeeded": 61,
+    "currentExistingProvenanceNeeded": 6,
+    "currentProductionVerifiedAtStart": 0,
+    "productionUnprocessedAtStart": 67,
+    "actuallyProductionProcessed": 0,
+    "remainingCurrentProductionUnprocessed": 67
+  },
+  "items": [
+    {
+      "officialName": "FE 400 mm F4.5 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL400F45GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 400.0,
+        "max": 400.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 4.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "announced/upcoming",
+      "statusEvidence": "Official product summary explicitly says 곧 공개",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 600mm F6.3 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL600F63GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 600.0,
+        "max": 600.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 6.3,
+        "tele": 6.3,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "announced/upcoming",
+      "statusEvidence": "Official product summary explicitly says 곧 공개",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 8~14mm F3.5 어안 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL814G",
+      "officialUrl": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 8.0,
+        "max": 14.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 3.5,
+        "tele": 3.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "announced/upcoming",
+      "statusEvidence": "Official product summary explicitly says 곧 공개",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 100-400mm F5.6-8 OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL100400",
+      "officialUrl": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 100.0,
+        "max": 400.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 5.6,
+        "tele": 8.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 100-400mm F4.5 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL100400MC",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel100400mc",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 100.0,
+        "max": 400.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 4.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 28-70mm F3.5-5.6 OSS II",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL28702",
+      "officialUrl": "https://www.sony.co.kr/electronics/a-mount-lenses/sel28702",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 28.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 3.5,
+        "tele": 5.6,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "announced/upcoming",
+      "statusEvidence": "Official product summary explicitly says 곧 공개",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [
+        "Official URL includes a-mount-lenses but gallery explicitly says E mount full-frame. Do not classify mount from URL path; upcoming excluded."
+      ]
+    },
+    {
+      "officialName": "FE 100mm F2.8 Macro GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL100M28GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel100m28gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 100.0,
+        "max": 100.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50-150mm F2 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50150GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 50.0,
+        "max": 150.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.0,
+        "tele": 2.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 400-800mm F6.3-8 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL400800G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 400.0,
+        "max": 800.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 6.3,
+        "tele": 8.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 16mm F1.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL16F18G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel16f18g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 16.0,
+        "max": 16.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 28-70mm F2 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2870GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/e-mount-lenses/sel2870gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 28.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.0,
+        "tele": 2.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 85mm F1.4 GM II",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL85F14GM2",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 85.0,
+        "max": 85.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 16-25mm F2.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1625G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel1625g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 25.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24-50mm F2.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2450G",
+      "officialUrl": "https://www.sony.co.kr/lenses/products/sel2450g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 300mm F2.8 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL300F28GM",
+      "officialUrl": "https://www.sony.co.kr/lenses/products/sel300f28gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 300.0,
+        "max": 300.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 16-35mm F2.8 GM II",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1635GM2",
+      "officialUrl": "https://www.sony.co.kr/lenses/products/sel1635gm2",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 70-200mm F4 Macro G OSS Ⅱ",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70200G2",
+      "officialUrl": "https://www.sony.co.kr/lenses/products/sel70200g2",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 200.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50mm F1.4 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F14GM",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel50f14gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 20-70mm F4 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2070G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel2070g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 20.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E PZ 10-20mm F4 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SELP1020G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/selp1020g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 10.0,
+        "max": 20.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 15mm F1.4 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL15F14G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel15f14g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 15.0,
+        "max": 15.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 11mm F1.8",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL11F18",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel11f18",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 11.0,
+        "max": 11.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24-70mm F2.8 GM II",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2470GM2",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel2470gm2",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-24-70-gm2",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE PZ 16-35mm F4 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SELP1635G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/selp1635g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-pz-16-35-f4",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 70-200mm F2.8 GM OSS II",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70200GM2",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel70200gm2",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 200.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-70-200-gm2",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 14mm F1.8 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL14F18GM",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel14f18gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 14.0,
+        "max": 14.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24mm F2.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL24F28G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel24f28g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 24.0,
+        "max": 24.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 40mm F2.5 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL40F25G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel40f25g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 40.0,
+        "max": 40.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.5,
+        "tele": 2.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-40-g",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50mm F2.5 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F25G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel50f25g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.5,
+        "tele": 2.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50mm F1.2 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F12GM",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel50f12gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.2,
+        "tele": 1.2,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 35mm F1.4 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL35F14GM",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel35f14gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 35.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE C 16-35mm T3.1",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SELC1635G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/selc1635g",
+      "productFamily": "Cinema",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": null,
+      "apertureLabel": "T3.1 (not F-number)",
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [
+        "T3.1 is transmission, not the canonical maximum F-number. Leave inventory f-number null until specification review; dedicated special-family gate."
+      ]
+    },
+    {
+      "officialName": "FE 28-60mm F4-5.6",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2860",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel2860",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 28.0,
+        "max": 60.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 5.6,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-28-60",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 12-24mm F2.8 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1224GM",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel1224gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 12.0,
+        "max": 24.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 20mm F1.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL20F18G",
+      "officialUrl": "https://www.sony.co.kr/permalink/product/sel20f18g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 20.0,
+        "max": 20.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 16-55mm F2.8 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1655G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 55.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Sonnar T* FE 35mm F2.8 ZA",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL35F28Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f28z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 35.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Sonnar T* FE 55mm F1.8 ZA",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL55F18Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel55f18z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 55.0,
+        "max": 55.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 70-200mm F4 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70200G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 200.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 70-200mm F2.8 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70200GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel70200gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 200.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 85mm F1.4 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL85F14GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 85.0,
+        "max": 85.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 90mm F2.8 Macro G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL90M28G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g",
+      "productFamily": "G",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 90.0,
+        "max": 90.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 100mm F2.8 STF GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL100F28GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel100f28gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 100.0,
+        "max": 100.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [
+        "STF aperture F2.8 versus transmission T-stop must remain distinct in later claims."
+      ]
+    },
+    {
+      "officialName": "1.4x 텔레컨버터 렌즈",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL14TC",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel14tc",
+      "productFamily": "adjacent",
+      "lensType": null,
+      "focalLength": null,
+      "maximumAperture": null,
+      "apertureLabel": null,
+      "sensorFormatCoverage": null,
+      "physicalMount": null,
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "adjacent-teleconverter",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [
+        "Magnification accessory, not standalone prime/zoom; physical camera lens mount and focal/aperture product fields are not assigned."
+      ]
+    },
+    {
+      "officialName": "2x 텔레컨버터 렌즈",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL20TC",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel20tc",
+      "productFamily": "adjacent",
+      "lensType": null,
+      "focalLength": null,
+      "maximumAperture": null,
+      "apertureLabel": null,
+      "sensorFormatCoverage": null,
+      "physicalMount": null,
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "adjacent-teleconverter",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [
+        "Magnification accessory, not standalone prime/zoom; physical camera lens mount and focal/aperture product fields are not assigned."
+      ]
+    },
+    {
+      "officialName": "E 70-350mm F4.5-6.3 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70350G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 350.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 6.3,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 600mm F4 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL600F40GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel600f40gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 600.0,
+        "max": 600.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 35mm F1.8",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL35F18F",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f18f",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 35.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 200-600mm F5.6-6.3 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL200600G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel200600g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 200.0,
+        "max": 600.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 5.6,
+        "tele": 6.3,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 135mm F1.8 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL135F18GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel135f18gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 135.0,
+        "max": 135.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 400mm F2.8 GM OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL400F28GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel400f28gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 400.0,
+        "max": 400.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24mm F1.4 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL24F14GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm",
+      "productFamily": "G Master",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 24.0,
+        "max": 24.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24-105mm F4 G OSS 렌즈",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL24105G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24105g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 105.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 16-35mm F2.8 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1635GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel1635gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 16.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 12-24mm F4 G",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL1224G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel1224g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 12.0,
+        "max": 24.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "소니 fe 100-400mm 망원 줌 렌즈",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL100400GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel100400gm",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 100.0,
+        "max": 400.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 5.6,
+        "meaning": "maximum aperture at focal endpoints; verified in official specifications"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": [],
+      "additionalSpecificationSource": {
+        "url": "https://www.sony.co.kr/electronics/camera-lenses/sel100400gm/specifications",
+        "accessedAt": "2026-10-15T03:16:11.444Z",
+        "focalMm": [
+          100,
+          400
+        ],
+        "maximumFNumber": [
+          4.5,
+          5.6
+        ]
+      }
+    },
+    {
+      "officialName": "FE 85mm F1.8",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL85F18",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f18",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 85.0,
+        "max": 85.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": "sony-fe-85-f18",
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E PZ 18-105mm F4 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SELP18105G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 18.0,
+        "max": 105.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 20mm F2.8",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL20F28",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 20.0,
+        "max": 20.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24-240mm F3.5-6.3 OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL24240",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24240",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 240.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 3.5,
+        "tele": 6.3,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 24-70mm F2.8 GM",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2470GM",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel2470gm",
+      "productFamily": "G Master",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Vario-Tessar T* FE 24-70mm F4 ZA OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL2470Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel2470z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 24.0,
+        "max": 70.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Sonnar T* E 24mm F1.8 ZA",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL24F18Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 24.0,
+        "max": 24.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 28mm F2",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL28F20",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel28f20-series",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 28.0,
+        "max": 28.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.0,
+        "tele": 2.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE PZ 28-135mm F4 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SELP28135G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/selp28135g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 28.0,
+        "max": 135.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.0,
+        "tele": 4.0,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 30mm F3.5 매크로",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL30M35",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel30m35",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 30.0,
+        "max": 30.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 3.5,
+        "tele": 3.5,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Distagon T* FE 35mm F1.4 ZA",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL35F14Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f14z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 35.0,
+        "max": 35.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "Planar T* FE 50mm F1.4 ZA",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F14Z",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f14z",
+      "productFamily": "Sony/ZEISS ZA",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.4,
+        "tele": 1.4,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 50mm F1.8 OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F18",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50mm F1.8",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50F18F",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 1.8,
+        "tele": 1.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 50mm F2.8 매크로",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL50M28",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50m28",
+      "productFamily": "Sony E/FE",
+      "lensType": "prime",
+      "focalLength": {
+        "min": 50.0,
+        "max": 50.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 2.8,
+        "tele": 2.8,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "E 55-210mm F4.5-6.3 OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL55210",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel55210",
+      "productFamily": "Sony E/FE",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 55.0,
+        "max": 210.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 6.3,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "APS-C",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": {
+        "type": "finish",
+        "baseModelCode": "SEL55210",
+        "observedColors": [
+          "silver",
+          "black"
+        ],
+        "linkedVariantCount": 1
+      },
+      "normalizationNotes": []
+    },
+    {
+      "officialName": "FE 70-300mm F4.5-5.6 G OSS",
+      "manufacturer": "Sony",
+      "manufacturerModelCode": "SEL70300G",
+      "officialUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel70300g",
+      "productFamily": "G",
+      "lensType": "zoom",
+      "focalLength": {
+        "min": 70.0,
+        "max": 300.0,
+        "unit": "mm"
+      },
+      "maximumAperture": {
+        "wide": 4.5,
+        "tele": 5.6,
+        "meaning": "maximum aperture at focal endpoints; not minimum selectable aperture"
+      },
+      "apertureLabel": null,
+      "sensorFormatCoverage": "35mm full-frame",
+      "physicalMount": "Sony E",
+      "status": "released/current",
+      "statusEvidence": "Korea current gallery plus model product summary/price and support/spec links; no upcoming/discontinued marker on product summary. This is catalog status, not real-time dealer stock.",
+      "scopeClassification": "native-optical-lens",
+      "existingCanonicalId": null,
+      "productionProvenanceStatus": "not-production-verified",
+      "state": "inventory-reviewed",
+      "cardAccessedAt": "2026-10-15T03:06:20.847Z",
+      "detailReviewed": true,
+      "detailReviewClockBounds": {
+        "start": "2026-10-15T03:07:44.048Z",
+        "end": "2026-10-15T03:13:32.195Z"
+      },
+      "variantRelation": null,
+      "normalizationNotes": []
+    }
+  ],
+  "unlistedStatusPolicy": "Not listed in current Korea gallery is not proof of worldwide discontinuation. No full support/archive inventory claimed; support pages are not current product denominator. A-mount optical archive and third-party lenses excluded.",
+  "formatPolicy": {
+    "physicalMount": "Sony E",
+    "FEIsSeparateMount": false,
+    "FEImageCircle": "35mm full-frame",
+    "EImageCircle": "APS-C",
+    "apscLensOnFullFrame": "APS-C/Super35 crop conditions; preserve actual focal length. No automatic equivalent into focal.",
+    "directCanonicalCoverageFieldSupported": false,
+    "currentInventoryCoverageIsNotCanonicalField": true
+  },
+  "pilot": {
+    "plannedBatchId": "production-sony-e-lenses-001",
+    "status": "blocked-before-collection",
+    "candidates": [
+      {
+        "manufacturerModelCode": "SEL40F25G",
+        "existingCanonicalId": "sony-fe-40-g",
+        "reason": "Full-frame prime; existing ID preservation; AF/MF focus distinction",
+        "workerTaskState": "not-started"
+      },
+      {
+        "manufacturerModelCode": "SEL2470GM2",
+        "existingCanonicalId": "sony-fe-24-70-gm2",
+        "reason": "Full-frame constant F2.8 zoom; existing legacy facts/new evidence/null fill",
+        "workerTaskState": "not-started"
+      },
+      {
+        "manufacturerModelCode": "SEL2860",
+        "existingCanonicalId": "sony-fe-28-60",
+        "reason": "Variable F4–5.6 zoom; existing ID and wide/tele aperture semantics",
+        "workerTaskState": "not-started"
+      },
+      {
+        "manufacturerModelCode": "SELP1020G",
+        "existingCanonicalId": null,
+        "reason": "New APS-C Power Zoom; physical mount vs image circle; actual10–20 versus equivalent15–30",
+        "workerTaskState": "not-started"
+      },
+      {
+        "manufacturerModelCode": "SEL90M28G",
+        "existingCanonicalId": null,
+        "reason": "New macro prime with OSS; AF/MF and1:1 magnification; lens stabilization not IBIS",
+        "workerTaskState": "not-started"
+      }
+    ],
+    "wouldBeNew": 2,
+    "wouldBeExistingEnrichment": 3,
+    "actualNew": 0,
+    "actualExistingEnrichment": 0,
+    "productionManifestCreated": false,
+    "workerCalls": 0,
+    "workerInputTokens": 0,
+    "workerOutputTokens": 0,
+    "workerTotalTokens": 0,
+    "retry": 0,
+    "failure": 0,
+    "sourceRecords": [
+      {
+        "manufacturerModelCode": "SEL40F25G",
+        "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+        "accessedAt": "2026-10-15T03:14:59.984Z",
+        "focalMm": [
+          40,
+          40
+        ],
+        "equivalentOnAPSCMm": [
+          60,
+          60
+        ],
+        "maximumAperture": [
+          2.5,
+          2.5
+        ],
+        "minimumSelectableAperture": [
+          22,
+          22
+        ],
+        "coverage": "35mm full-frame",
+        "lensOss": false,
+        "minimumFocusM": {
+          "AF": 0.28,
+          "MF": 0.25
+        },
+        "maximumMagnification": {
+          "AF": 0.2,
+          "MF": 0.23
+        },
+        "filterMm": 49,
+        "diameterLengthMm": [
+          68,
+          45
+        ],
+        "weightG": 173
+      },
+      {
+        "manufacturerModelCode": "SEL2470GM2",
+        "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+        "accessedAt": "2026-10-15T03:15:03.336Z",
+        "focalMm": [
+          24,
+          70
+        ],
+        "equivalentOnAPSCMm": [
+          36,
+          105
+        ],
+        "maximumAperture": [
+          2.8,
+          2.8
+        ],
+        "minimumSelectableAperture": [
+          22,
+          22
+        ],
+        "coverage": "35mm full-frame",
+        "lensOss": false,
+        "minimumFocusM": {
+          "wide": 0.21,
+          "tele": 0.3
+        },
+        "maximumMagnification": 0.32,
+        "filterMm": 82,
+        "diameterLengthMm": [
+          87.8,
+          119.9
+        ],
+        "weightG": 695
+      },
+      {
+        "manufacturerModelCode": "SEL2860",
+        "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+        "accessedAt": "2026-10-15T03:15:03.813Z",
+        "focalMm": [
+          28,
+          60
+        ],
+        "equivalentOnAPSCMm": [
+          42,
+          90
+        ],
+        "maximumAperture": [
+          4,
+          5.6
+        ],
+        "minimumSelectableAperture": [
+          22,
+          32
+        ],
+        "coverage": "35mm full-frame",
+        "lensOss": false,
+        "minimumFocusM": {
+          "wide": 0.3,
+          "tele": 0.45
+        },
+        "maximumMagnification": 0.16,
+        "filterMm": 40.5,
+        "diameterLengthMm": [
+          66.6,
+          45
+        ],
+        "weightG": 167
+      },
+      {
+        "manufacturerModelCode": "SELP1020G",
+        "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+        "accessedAt": "2026-10-15T03:15:07.053Z",
+        "focalMm": [
+          10,
+          20
+        ],
+        "equivalentOnAPSCMm": [
+          15,
+          30
+        ],
+        "maximumAperture": [
+          4,
+          4
+        ],
+        "minimumSelectableAperture": [
+          22,
+          22
+        ],
+        "coverage": "APS-C",
+        "lensOss": false,
+        "minimumFocusM": {
+          "AF": 0.2,
+          "MFwide": 0.13,
+          "MFtele": 0.17
+        },
+        "maximumMagnification": {
+          "AF": 0.14,
+          "MF": 0.18
+        },
+        "filterMm": 62,
+        "diameterLengthMm": [
+          69.8,
+          55
+        ],
+        "weightG": 178,
+        "zoomSystem": "Power"
+      },
+      {
+        "manufacturerModelCode": "SEL90M28G",
+        "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+        "accessedAt": "2026-10-15T03:15:09.465Z",
+        "focalMm": [
+          90,
+          90
+        ],
+        "equivalentOnAPSCMm": [
+          135,
+          135
+        ],
+        "maximumAperture": [
+          2.8,
+          2.8
+        ],
+        "minimumSelectableAperture": [
+          22,
+          22
+        ],
+        "coverage": "35mm full-frame",
+        "lensOss": true,
+        "minimumFocusM": 0.28,
+        "maximumMagnification": 1,
+        "filterMm": 62,
+        "diameterLengthMm": [
+          79,
+          130.5
+        ],
+        "weightG": 602
+      }
+    ],
+    "provisionalOnly": true
+  },
+  "readiness": {
+    "newLensSyntheticAtomicPathSupported": true,
+    "existingLensProductionIdentityReady": false,
+    "lensSpecificStrictValidateReady": false,
+    "pilotProductionPermitted": false,
+    "decision": "Use user section14 safe branch: finish inventory and compatibility analysis only; do not create production raw/batch/approval/apply or workaround guards.",
+    "blockers": [
+      {
+        "id": "legacy-lens-model-identity-contract",
+        "severity": "blocking",
+        "facts": "All36 legacy lenses omit model; staging requires model. Existing identity lock rejects adding model. Sony lens identity-map entries0.",
+        "scopeForFix": "Explicit reviewed missing-model-only identity metadata enrichment for Sony existing6; stable ID/name/aliases/facts preserved. No blanket bypass or mass editing."
+      },
+      {
+        "id": "lens-validation-approval-drift",
+        "severity": "blocking",
+        "facts": "Missing focal rawUnit, string aperture and string OSS pass validate but strict approval rejects. Fixed-body focal helper is not interchangeable-lens guard.",
+        "scopeForFix": "Share canonical lens value contract with validate, generalize strict unit checks to lens focal/filter/focus/weight where needed, preserve dimensionless f-number; regression invalid types/ranges/units and legacy replay."
+      },
+      {
+        "id": "lens-image-circle-contract",
+        "severity": "contract-decision-required",
+        "facts": "No typed lens format coverage field; mount string alone cannot represent APS-C/FE crop.",
+        "scopeForFix": "Decide narrow optional lens-only coverage contract or explicit non-runtime conditions limitation before APS-C promotion. Do not create separate FE mount or silently claim consumer crop support."
+      }
+    ],
+    "supportedCanonicalLensKeys": [
+      "focal",
+      "aperture",
+      "weight",
+      "stabilization",
+      "filterMm",
+      "minFocusM",
+      "minFocusConditions"
+    ],
+    "notDirectlySupported": [
+      "format coverage",
+      "minimum selectable aperture",
+      "AF/MF mode table",
+      "maximum magnification",
+      "diameter/length",
+      "weather sealing",
+      "T-stop",
+      "Power Zoom flag"
+    ],
+    "unsupportedPolicy": "Keep official observations in inventory and future claim conditions only; do not reuse body dimensions/IBIS or invent canonical fields.",
+    "isolatedDiagnosticProbes": [
+      {
+        "name": "existing-lens-required-model-vs-immutable-identity",
+        "gates": [
+          {
+            "gate": "normalize",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "validate",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "diff",
+            "status": 0,
+            "errors": null
+          }
+        ],
+        "approval": "rejected",
+        "reason": "Identity changes require a separate reviewed schema flow: model",
+        "canonicalUnchanged": true
+      },
+      {
+        "name": "existing-lens-omitted-model",
+        "gates": [
+          {
+            "gate": "normalize",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "validate",
+            "status": 1,
+            "errors": "{\n  \"batchId\": \"stage3-new-products-fixture\",\n  \"status\": \"rejected\",\n  \"valid\": false,\n  \"items\": [\n    {\n      \"itemKey\": \"sony-stage3-test-body\",\n      \"valid\": true,\n      \"errors\": [],\n      \"warnings\": []\n    },\n    {\n      \"itemKey\": \"sony-stage3-test-lens\",\n      \"valid\": false,\n      \"errors\": [\n        {\n          \"severity\": \"error\",\n          \"code\": \"MISSING_REQUIRED_IDENTITY\",\n          \"path\": \"product.model\",\n          \"message\": \"Missing required identity field: model\"\n        },\n        {\n          \"severity\": \"error\",\n          \"code\": \"EMPTY_IDENTITY_NAME\",\n          \"path\": null,\n          \"message\": \"Product names and aliases must normalize to a nonempty value\"\n        },\n        {\n          \"severity\": \"error\",\n          \"code\": \"EMPTY_IDENTITY_NAME\",\n          \"path\": null,\n          \"message\": \"Product names and aliases must normalize to a nonempty value\"\n        }\n      ],\n      \"warnings\": []\n    }\n  ]\n}\n"
+          }
+        ],
+        "canonicalUnchanged": true
+      },
+      {
+        "name": "lens-focal-missing-unit",
+        "gates": [
+          {
+            "gate": "normalize",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "validate",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "diff",
+            "status": 0,
+            "errors": null
+          }
+        ],
+        "approval": "rejected",
+        "reason": "Explicit original unit required: specs.focal.min",
+        "canonicalUnchanged": true
+      },
+      {
+        "name": "lens-aperture-invalid-type",
+        "gates": [
+          {
+            "gate": "normalize",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "validate",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "diff",
+            "status": 0,
+            "errors": null
+          }
+        ],
+        "approval": "rejected",
+        "reason": "Invalid number: specs.aperture.wide",
+        "canonicalUnchanged": true
+      },
+      {
+        "name": "lens-OSS-invalid-type",
+        "gates": [
+          {
+            "gate": "normalize",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "validate",
+            "status": 0,
+            "errors": null
+          },
+          {
+            "gate": "diff",
+            "status": 0,
+            "errors": null
+          }
+        ],
+        "approval": "rejected",
+        "reason": "Invalid boolean: specs.stabilization",
+        "canonicalUnchanged": true
+      }
+    ]
+  },
+  "futurePlan": {
+    "conditionalOnPilotSuccess": true,
+    "pilotSize": 5,
+    "actualRemainingNow": 67,
+    "remainingAfterHypotheticalPilot": 62,
+    "largeBatchCountAfterPilot": 6,
+    "batches": [
+      {
+        "proposedBatchId": "production-sony-e-lenses-002",
+        "family": "APS-C",
+        "modelCodes": [
+          "SEL15F14G",
+          "SEL11F18",
+          "SEL1655G",
+          "SEL70350G",
+          "SELP18105G",
+          "SEL20F28",
+          "SEL24F18Z",
+          "SEL50F18",
+          "SEL55210"
+        ],
+        "count": 9,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": false
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-003",
+        "family": "FE primes",
+        "modelCodes": [
+          "SEL16F18G",
+          "SEL85F14GM2",
+          "SEL50F14GM",
+          "SEL14F18GM",
+          "SEL24F28G",
+          "SEL50F25G",
+          "SEL50F12GM",
+          "SEL35F14GM",
+          "SEL20F18G",
+          "SEL35F28Z"
+        ],
+        "count": 10,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": false
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-004",
+        "family": "FE primes",
+        "modelCodes": [
+          "SEL55F18Z",
+          "SEL85F14GM",
+          "SEL35F18F",
+          "SEL135F18GM",
+          "SEL24F14GM",
+          "SEL85F18",
+          "SEL28F20",
+          "SEL35F14Z",
+          "SEL50F14Z",
+          "SEL50F18F"
+        ],
+        "count": 10,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": false
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-005",
+        "family": "FE standard zooms",
+        "modelCodes": [
+          "SEL100400",
+          "SEL50150GM",
+          "SEL400800G",
+          "SEL2870GM",
+          "SEL1625G",
+          "SEL2450G",
+          "SEL1635GM2",
+          "SEL70200G2",
+          "SEL2070G",
+          "SELP1635G",
+          "SEL70200GM2",
+          "SEL1224GM"
+        ],
+        "count": 12,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": false
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-006",
+        "family": "FE standard zooms",
+        "modelCodes": [
+          "SEL70200G",
+          "SEL70200GM",
+          "SEL200600G",
+          "SEL24105G",
+          "SEL1635GM",
+          "SEL1224G",
+          "SEL100400GM",
+          "SEL24240",
+          "SEL2470GM",
+          "SEL2470Z",
+          "SELP28135G",
+          "SEL70300G"
+        ],
+        "count": 12,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": false
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-007",
+        "family": "Special-family review",
+        "modelCodes": [
+          "SEL100400MC",
+          "SEL100M28GM",
+          "SEL300F28GM",
+          "SELC1635G",
+          "SEL100F28GM",
+          "SEL600F40GM",
+          "SEL400F28GM",
+          "SEL30M35",
+          "SEL50M28"
+        ],
+        "count": 9,
+        "requiresReadinessFix": true,
+        "independentWorkerTaskPerProduct": true,
+        "specialFamilyPreflight": true
+      }
+    ],
+    "extraProductionStepsBeforeAudit": "Readiness implementation -> real five-product pilot -> 6 family batches for62 -> fresh inventory/provenance coverage audit",
+    "notStarted": true
+  },
+  "checkpoint": {
+    "state": "inventory-and-compatibility-complete-production-blocked",
+    "lastCompletedGate": "official inventory/canonical match/schema/pipeline diagnostics/regression/full tests/build/node/diff/report",
+    "remaining": [],
+    "nextAction": "Implement narrowly reviewed lens readiness fixes first; reuse inventory and selected candidates, do not rerun body ingestion. Recheck official statuses at next production start.",
+    "productionRestartAllowed": false,
+    "analysisBranchComplete": true,
+    "completedAt": "2026-10-15T03:24:07.540Z",
+    "deferredProductionSteps": [
+      "lens identity/validation/coverage readiness implementation",
+      "five independent worker tasks and real production pilot",
+      "six conditional family batches for62",
+      "fresh Sony lens coverage audit"
+    ]
+  },
+  "verification": {
+    "status": "passed-analysis-branch-production-not-performed",
+    "fullTests": {
+      "passed": 397,
+      "total": 397,
+      "command": "pnpm test"
+    },
+    "objectiveTests": {
+      "passed": 370,
+      "total": 370,
+      "files": 38,
+      "excludedEngineFiles": [
+        "cameraScenarioEngine.test.js",
+        "firstPurchaseEngine.test.js"
+      ]
+    },
+    "sonyLensReadinessTests": {
+      "passed": 15,
+      "total": 15
+    },
+    "canonicalValidation": true,
+    "build": true,
+    "buildWarning": "Existing Vite chunk size warning (>500kB)",
+    "nodeCheck": {
+      "passed": true,
+      "files": 7
+    },
+    "gitDiffCheck": true,
+    "newFileWhitespaceCheck": true,
+    "canonicalAndExistingArtifactsUnchanged": true,
+    "realProductionIdempotency": "N/A: no production batch created",
+    "isolatedLensTransactionIdempotency": {
+      "status": "already-canonicalized",
+      "canonicalMatches": true
+    },
+    "commitCreated": false,
+    "pushPerformed": false
+  },
+  "report": "docs/OBJECTIVE_DB_SONY_LENS_READINESS.md",
+  "test": "tests/sonyLensReadiness.test.js"
+}
