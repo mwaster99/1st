@@ -1,0 +1,1566 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-001",
+  "canonicalBaselineDigest": "3f971b678f83576b916ad00e9c5ff48c203ceee48d95be806754ea7c8f1c9842",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-001",
+      "productId": "sony-fe-40-g",
+      "productName": "Sony FE 40mm F2.5 G",
+      "productType": "lens",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": {
+        "evidenceId": "identity-60178f0b6afd7b843ee8",
+        "sourceId": "source-823b0ad2de807745",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading / support model / current gallery cross-check",
+          "row": "SEL40F25G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-823b0ad2de807745",
+          "url": "https://www.sony.co.kr/lenses/products/sel40f25g",
+          "documentTitle": "FE 40mm F2.5 G — Sony Korea official product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": "f718850e9c60376538253ff409d9364dd57cf5498d398777ad12633a8e8bfae6",
+      "modelNullFill": {
+        "path": "model",
+        "category": "null-fill",
+        "canonicalValue": null,
+        "incomingValue": "SEL40F25G",
+        "identityEvidenceId": "identity-60178f0b6afd7b843ee8"
+      },
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.5,
+          "incomingValue": 2.5,
+          "unit": null,
+          "claimId": "claim-9ca10d21459c01eaf26c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.5"
+            },
+            "conditions": {
+              "sourceText": "2.5",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.5,
+          "incomingValue": 2.5,
+          "unit": null,
+          "claimId": "claim-4c5611191e4c89856867",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.5"
+            },
+            "conditions": {
+              "sourceText": "2.5",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 49,
+          "unit": "mm",
+          "claimId": "claim-5c35f0526e6a07c4aeeb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "필터 직경(MM): 49"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 40,
+          "incomingValue": 40,
+          "unit": "mm",
+          "claimId": "claim-3ef44bb0a16a59776341",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 40"
+            },
+            "conditions": {
+              "sourceText": "40",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                60,
+                60
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 40,
+          "incomingValue": 40,
+          "unit": "mm",
+          "claimId": "claim-a9a15f8498607e984c58",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 40"
+            },
+            "conditions": {
+              "sourceText": "40",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                60,
+                60
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-6eeeff15d2b7c8146b04",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "포맷: 35mm 풀프레임"
+            },
+            "conditions": {
+              "physicalMount": "Sony E",
+              "coverageNotInferredFromName": true,
+              "cropCompatibilityNotSymmetric": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "AF 0.28m; MF 0.25m (Sony official specification)",
+          "unit": null,
+          "claimId": "claim-aab5e2f721647bd58219",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.28m(AF), 0.25m(MF)"
+            },
+            "conditions": {
+              "sourceText": "0.28m(AF), 0.25m(MF)",
+              "representativeBasis": "AF",
+              "officialFocusDistancesM": {
+                "AF": 0.28,
+                "MF": 0.25
+              },
+              "unpromotedMaximumMagnification": {
+                "AF": 0.2,
+                "MF": 0.23
+              },
+              "maximumMagnificationSourceText": "x0.2(AF), x0.23(MF)",
+              "reviewedDisplaySummary": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0.28,
+          "unit": "m",
+          "claimId": "claim-a64f28fc6007e3a9122e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.28m(AF), 0.25m(MF)"
+            },
+            "conditions": {
+              "sourceText": "0.28m(AF), 0.25m(MF)",
+              "representativeBasis": "AF",
+              "officialFocusDistancesM": {
+                "AF": 0.28,
+                "MF": 0.25
+              },
+              "unpromotedMaximumMagnification": {
+                "AF": 0.2,
+                "MF": 0.23
+              },
+              "maximumMagnificationSourceText": "x0.2(AF), x0.23(MF)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "same-value/new-evidence",
+          "canonicalValue": false,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-77fde5d1d9c21fcf8472",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "scope": "lens optical stabilization only",
+              "bodyIbisNotAsserted": true,
+              "combinedStopsNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 173,
+          "incomingValue": 173,
+          "unit": "g",
+          "claimId": "claim-21c92565ca2df9e0ae9e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ebd3b74268e7e9d8",
+            "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "무게: 173g"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyExcluded": true,
+              "accessoryInclusion": "not specified in reviewed weight row",
+              "unpromotedDiameterLengthMm": [
+                68,
+                45
+              ],
+              "dimensionSourceText": "68 x 45mm (D x L)"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-001",
+      "productId": "sony-fe-24-70-gm2",
+      "productName": "Sony FE 24-70mm F2.8 GM II",
+      "productType": "lens",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": {
+        "evidenceId": "identity-5cf516be7f554411682a",
+        "sourceId": "source-dcee726f02f76a01",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading / support model / current gallery cross-check",
+          "row": "SEL2470GM2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-dcee726f02f76a01",
+          "url": "https://www.sony.co.kr/lenses/products/sel2470gm2",
+          "documentTitle": "FE 24-70mm F2.8 GM II — Sony Korea official product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": "ef2e9509852c050ee61286ff2f3af9e99246cb02002a2ed537f482d6a748cc07",
+      "modelNullFill": {
+        "path": "model",
+        "category": "null-fill",
+        "canonicalValue": null,
+        "incomingValue": "SEL2470GM2",
+        "identityEvidenceId": "identity-5cf516be7f554411682a"
+      },
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.8,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-0ecce548438275ed877c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.8"
+            },
+            "conditions": {
+              "sourceText": "2.8",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.8,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-cc6d5855cb4a30d7ceda",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.8"
+            },
+            "conditions": {
+              "sourceText": "2.8",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 82,
+          "unit": "mm",
+          "claimId": "claim-539de82d6ee4168c8d2c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "필터 직경(MM): 82"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 70,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-4217b6edebbdbb93b5f7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 24-70"
+            },
+            "conditions": {
+              "sourceText": "24-70",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                36,
+                105
+              ],
+              "unpromotedZoomSystem": "수동"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 24,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-34ba29bdf84838a7e55b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 24-70"
+            },
+            "conditions": {
+              "sourceText": "24-70",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                36,
+                105
+              ],
+              "unpromotedZoomSystem": "수동"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-a4278da18d9b1690f9e4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "포맷: 35mm 풀프레임"
+            },
+            "conditions": {
+              "physicalMount": "Sony E",
+              "coverageNotInferredFromName": true,
+              "cropCompatibilityNotSymmetric": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Wide 24mm 0.21m; tele 70mm 0.30m; focus mode not separately specified",
+          "unit": null,
+          "claimId": "claim-daa66aedf74512b291e8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.21(W)-0.3(T)m"
+            },
+            "conditions": {
+              "sourceText": "0.21(W)-0.3(T)m",
+              "representativeBasis": "wide endpoint; AF/MF unspecified",
+              "officialFocusDistancesM": {
+                "wide": 0.21,
+                "tele": 0.3
+              },
+              "unpromotedMaximumMagnification": 0.32,
+              "maximumMagnificationSourceText": "0.32x",
+              "reviewedDisplaySummary": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0.21,
+          "unit": "m",
+          "claimId": "claim-70c3684fe20405b4171d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.21(W)-0.3(T)m"
+            },
+            "conditions": {
+              "sourceText": "0.21(W)-0.3(T)m",
+              "representativeBasis": "wide endpoint; AF/MF unspecified",
+              "officialFocusDistancesM": {
+                "wide": 0.21,
+                "tele": 0.3
+              },
+              "unpromotedMaximumMagnification": 0.32,
+              "maximumMagnificationSourceText": "0.32x"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "same-value/new-evidence",
+          "canonicalValue": false,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-f755560bdac39ca83aa9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "scope": "lens optical stabilization only",
+              "bodyIbisNotAsserted": true,
+              "combinedStopsNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 695,
+          "incomingValue": 695,
+          "unit": "g",
+          "claimId": "claim-6e498630dcd5832970ba",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9c2da4b23db30c2c",
+            "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "무게: 695g"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyExcluded": true,
+              "accessoryInclusion": "not specified in reviewed weight row",
+              "unpromotedDiameterLengthMm": [
+                87.8,
+                119.9
+              ],
+              "dimensionSourceText": "87.8 x 119.9mm (D x L)"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-001",
+      "productId": "sony-fe-28-60",
+      "productName": "Sony FE 28-60mm F4-5.6",
+      "productType": "lens",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": {
+        "evidenceId": "identity-a91b1cf804bacdd2145f",
+        "sourceId": "source-1ee15181feca7f30",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading / support model / current gallery cross-check",
+          "row": "SEL2860"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-1ee15181feca7f30",
+          "url": "https://www.sony.co.kr/lenses/products/sel2860",
+          "documentTitle": "FE 28-60mm F4-5.6 — Sony Korea official product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": "bf8c01170ef7b3299af4de83592b6c4d95bbcefd8983070cc657a639f8fa2396",
+      "modelNullFill": {
+        "path": "model",
+        "category": "null-fill",
+        "canonicalValue": null,
+        "incomingValue": "SEL2860",
+        "identityEvidenceId": "identity-a91b1cf804bacdd2145f"
+      },
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 5.6,
+          "incomingValue": 5.6,
+          "unit": null,
+          "claimId": "claim-21a364dd274435bb1fd1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 4-5.6"
+            },
+            "conditions": {
+              "sourceText": "4-5.6",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22-32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 4,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-23d760b001279a96ecf8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 4-5.6"
+            },
+            "conditions": {
+              "sourceText": "4-5.6",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22-32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 40.5,
+          "unit": "mm",
+          "claimId": "claim-94594ac4822f71e63762",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "필터 직경(MM): 40.5"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 60,
+          "incomingValue": 60,
+          "unit": "mm",
+          "claimId": "claim-95783edd0801261b6ce1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 28-60"
+            },
+            "conditions": {
+              "sourceText": "28-60",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                42,
+                90
+              ],
+              "unpromotedZoomSystem": "수동"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 28,
+          "incomingValue": 28,
+          "unit": "mm",
+          "claimId": "claim-3d530027fc3b132a552b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 28-60"
+            },
+            "conditions": {
+              "sourceText": "28-60",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                42,
+                90
+              ],
+              "unpromotedZoomSystem": "수동"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-0c34c293514b63f91cc1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "포맷: 35mm 풀프레임"
+            },
+            "conditions": {
+              "physicalMount": "Sony E",
+              "coverageNotInferredFromName": true,
+              "cropCompatibilityNotSymmetric": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+          "unit": null,
+          "claimId": "claim-d5eb5388dc8e80cda9f9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+            },
+            "conditions": {
+              "sourceText": "광각 0.3m, 망원 0.45m",
+              "representativeBasis": "wide endpoint; AF/MF unspecified",
+              "officialFocusDistancesM": {
+                "wide": 0.3,
+                "tele": 0.45
+              },
+              "unpromotedMaximumMagnification": 0.16,
+              "maximumMagnificationSourceText": "0.16",
+              "reviewedDisplaySummary": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0.3,
+          "unit": "m",
+          "claimId": "claim-4cc5f119b90078630c06",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+            },
+            "conditions": {
+              "sourceText": "광각 0.3m, 망원 0.45m",
+              "representativeBasis": "wide endpoint; AF/MF unspecified",
+              "officialFocusDistancesM": {
+                "wide": 0.3,
+                "tele": 0.45
+              },
+              "unpromotedMaximumMagnification": 0.16,
+              "maximumMagnificationSourceText": "0.16"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "same-value/new-evidence",
+          "canonicalValue": false,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-15288a14638c249ed117",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "scope": "lens optical stabilization only",
+              "bodyIbisNotAsserted": true,
+              "combinedStopsNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 167,
+          "incomingValue": 167,
+          "unit": "g",
+          "claimId": "claim-ef3ad2669d9ae39b4e42",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6982dedaaebc629f",
+            "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "무게: 167g"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyExcluded": true,
+              "accessoryInclusion": "not specified in reviewed weight row",
+              "unpromotedDiameterLengthMm": [
+                66.6,
+                45
+              ],
+              "dimensionSourceText": "66.6 x 45mm (D x L)"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-001",
+      "productId": "sony-e-pz-10-20-f4-g",
+      "productName": "Sony E PZ 10-20mm F4 G",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-pz-10-20-f4-g",
+        "name": "Sony E PZ 10-20mm F4 G",
+        "brand": "Sony",
+        "model": "SELP1020G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 10,
+            "max": 20
+          },
+          "aperture": {
+            "wide": 4,
+            "tele": 4
+          },
+          "weight": 178,
+          "stabilization": false,
+          "filterMm": 62,
+          "minFocusM": 0.2,
+          "minFocusConditions": "AF 0.20m; MF wide 0.13m / tele 0.17m (Sony official specification)",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-15",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-be8060d09f9a7b0c",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-d6a72fc93457b5a369fc",
+          "sourceId": "source-be8060d09f9a7b0c",
+          "checkedAt": "2026-10-15"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-d6a72fc93457b5a369fc",
+        "sourceId": "source-be8060d09f9a7b0c",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading / support model / current gallery cross-check",
+          "row": "SELP1020G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-be8060d09f9a7b0c",
+          "url": "https://www.sony.co.kr/lenses/products/selp1020g",
+          "documentTitle": "E PZ 10-20mm F4 G — Sony Korea official product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-d4edacad73e3b4f54774",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 4"
+            },
+            "conditions": {
+              "sourceText": "4",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-6b02bc620fcaf5f1f79a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 4"
+            },
+            "conditions": {
+              "sourceText": "4",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 62,
+          "unit": "mm",
+          "claimId": "claim-eaee9bb92275f4f87232",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "필터 직경(MM): 62"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "mm",
+          "claimId": "claim-70b38d3a337f1676693b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 10-20"
+            },
+            "conditions": {
+              "sourceText": "10-20",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                15,
+                30
+              ],
+              "unpromotedZoomSystem": "전원"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 10,
+          "unit": "mm",
+          "claimId": "claim-d758bee8b6b4ca3bd2cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 10-20"
+            },
+            "conditions": {
+              "sourceText": "10-20",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                15,
+                30
+              ],
+              "unpromotedZoomSystem": "전원"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-fe2005b576e7864025a2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "physicalMount": "Sony E",
+              "coverageNotInferredFromName": true,
+              "cropCompatibilityNotSymmetric": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "AF 0.20m; MF wide 0.13m / tele 0.17m (Sony official specification)",
+          "unit": null,
+          "claimId": "claim-b0e9a5ca41899cbe4fc7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))"
+            },
+            "conditions": {
+              "sourceText": "0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+              "representativeBasis": "AF",
+              "officialFocusDistancesM": {
+                "AF": 0.2,
+                "MFwide": 0.13,
+                "MFtele": 0.17
+              },
+              "unpromotedMaximumMagnification": {
+                "AF": 0.14,
+                "MF": 0.18
+              },
+              "maximumMagnificationSourceText": "0.14(AF), 0.18(MF)",
+              "reviewedDisplaySummary": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.2,
+          "unit": "m",
+          "claimId": "claim-19f6c49f57b8d71a53df",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))"
+            },
+            "conditions": {
+              "sourceText": "0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+              "representativeBasis": "AF",
+              "officialFocusDistancesM": {
+                "AF": 0.2,
+                "MFwide": 0.13,
+                "MFtele": 0.17
+              },
+              "unpromotedMaximumMagnification": {
+                "AF": 0.14,
+                "MF": 0.18
+              },
+              "maximumMagnificationSourceText": "0.14(AF), 0.18(MF)"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-65799eeba7d4decc0146",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "scope": "lens optical stabilization only",
+              "bodyIbisNotAsserted": true,
+              "combinedStopsNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 178,
+          "unit": "g",
+          "claimId": "claim-bd09ebfa2e29b0528d4e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-916c31ca62719834",
+            "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "무게: 178g"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyExcluded": true,
+              "accessoryInclusion": "not specified in reviewed weight row",
+              "unpromotedDiameterLengthMm": [
+                69.8,
+                55
+              ],
+              "dimensionSourceText": "69.8 x 55mm (D x L)"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-001",
+      "productId": "sony-fe-90-f28-macro-g-oss",
+      "productName": "Sony FE 90mm F2.8 Macro G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-90-f28-macro-g-oss",
+        "name": "Sony FE 90mm F2.8 Macro G OSS",
+        "brand": "Sony",
+        "model": "SEL90M28G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 90,
+            "max": 90
+          },
+          "aperture": {
+            "wide": 2.8,
+            "tele": 2.8
+          },
+          "weight": 602,
+          "stabilization": true,
+          "filterMm": 62,
+          "minFocusM": 0.28,
+          "minFocusConditions": "0.28m; AF/MF not separately specified in minimum-focus row; macro 1:1",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g",
+            "type": "manufacturer",
+            "accessedOn": "2026-10-15",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-3d82404fcb2b27ca",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-505d27f562359e464f1f",
+          "sourceId": "source-3d82404fcb2b27ca",
+          "checkedAt": "2026-10-15"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-505d27f562359e464f1f",
+        "sourceId": "source-3d82404fcb2b27ca",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Product heading / support model / current gallery cross-check",
+          "row": "SEL90M28G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-10-15",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-3d82404fcb2b27ca",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g",
+          "documentTitle": "FE 90mm F2.8 Macro G OSS — Sony Korea official product",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-f0ef08f9cf6d32bed65d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.8"
+            },
+            "conditions": {
+              "sourceText": "2.8",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-27dd9d031530e19c588f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최대 구경 (F): 2.8"
+            },
+            "conditions": {
+              "sourceText": "2.8",
+              "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+              "unpromotedMinimumSelectableAperture": "22"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 62,
+          "unit": "mm",
+          "claimId": "claim-62605d087d2ad6e96fda",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "필터 직경(MM): 62"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 90,
+          "unit": "mm",
+          "claimId": "claim-bae1b81d7de0865f1b44",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 90"
+            },
+            "conditions": {
+              "sourceText": "90",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                135,
+                135
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 90,
+          "unit": "mm",
+          "claimId": "claim-fd4fbc2300fcf3612fd7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "초점 거리(MM): 90"
+            },
+            "conditions": {
+              "sourceText": "90",
+              "meaning": "actual lens focal length; not 35mm equivalent",
+              "unpromotedEquivalentOnAPSCMm": [
+                135,
+                135
+              ]
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-c45d42d14414c6d9d576",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "포맷: 35mm 풀프레임"
+            },
+            "conditions": {
+              "physicalMount": "Sony E",
+              "coverageNotInferredFromName": true,
+              "cropCompatibilityNotSymmetric": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.28m; AF/MF not separately specified in minimum-focus row; macro 1:1",
+          "unit": null,
+          "claimId": "claim-72fd3f0f64c2770d93bc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.28m"
+            },
+            "conditions": {
+              "sourceText": "0.28m",
+              "representativeBasis": "single published distance",
+              "officialFocusDistancesM": 0.28,
+              "unpromotedMaximumMagnification": 1,
+              "maximumMagnificationSourceText": "1",
+              "reviewedDisplaySummary": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.28,
+          "unit": "m",
+          "claimId": "claim-05f27324e18b99796724",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "최소 초점 거리: 0.28m"
+            },
+            "conditions": {
+              "sourceText": "0.28m",
+              "representativeBasis": "single published distance",
+              "officialFocusDistancesM": 0.28,
+              "unpromotedMaximumMagnification": 1,
+              "maximumMagnificationSourceText": "1"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-f3754e4b617fabfd4658",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "손떨림 보정 (STEADYSHOT): Optical SteadyShot™"
+            },
+            "conditions": {
+              "sourceText": "Optical SteadyShot™",
+              "scope": "lens optical stabilization only",
+              "bodyIbisNotAsserted": true,
+              "combinedStopsNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 602,
+          "unit": "g",
+          "claimId": "claim-2780ce86255e4104992e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f1f927160d05f517",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+            "locator": {
+              "section": "렌즈 사양 / 크기 및 무게",
+              "row": "무게: 602g"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyExcluded": true,
+              "accessoryInclusion": "not specified in reviewed weight row",
+              "unpromotedDiameterLengthMm": [
+                79,
+                130.5
+              ],
+              "dimensionSourceText": "79 x 130.5mm (D x L)"
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

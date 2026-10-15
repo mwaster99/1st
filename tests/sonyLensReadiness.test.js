@@ -84,8 +84,9 @@ test('Strict existing canonical contract rejects malformed lens types and unsupp
 });
 
 test('Existing ID/model identity guard blocks implicit legacy backfill without touching canonical',async t=>{
- const old=canonical.lenses.find(l=>l.id==='sony-fe-40-g');
+ const old=json('src/data/ingestion/transactions/production-hasselblad-bodies-001/after.json').lenses.find(l=>l.id==='sony-fe-40-g');
  const f=await newProductFixture(t,{mutateRaw:r=>{const l=r.items[1];l.identity={name:old.name,brand:old.brand,model:'Unauthorized replacement model',aliases:old.aliases,mount:old.mount,type:old.type};},mutateIdentityMap:map=>{map.entries[1].productId=old.id;}});
+ const c=JSON.parse(f.before);c.lenses[c.lenses.findIndex(l=>l.id===old.id)]=structuredClone(old);f.before=JSON.stringify(c,null,2)+'\n';const {writeFile}=await import('node:fs/promises');await writeFile(f.p.canonical,f.before);const m=JSON.parse(await readFile(f.p.manifest));m.canonicalBaselineDigest=createHash('sha256').update(f.before).digest('hex');await writeFile(f.p.manifest,JSON.stringify(m,null,2)+'\n');
  const results=pipeline(f);assert.notEqual(results.at(-1).status,0);assert.match(results.at(-1).stdout,/MODEL_IDENTITY_MISMATCH/);await assert.rejects(approveNew(f));assert.equal(await readFile(f.p.canonical,'utf8'),f.before);
 });
 

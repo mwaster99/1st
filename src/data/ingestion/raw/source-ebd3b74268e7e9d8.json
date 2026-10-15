@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel40f25g/spec",
+  "documentTitle": "FE 40mm F2.5 G — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+  "accessedAt": "2026-10-15T04:56:38.908Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 40",
+      "value": 40,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F): 2.5",
+      "value": 2.5,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 49",
+      "value": 49,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 173g",
+      "value": 173,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.28m(AF), 0.25m(MF)",
+      "value": 0.28,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.28m(AF), 0.25m(MF)",
+      "value": "AF 0.28m; MF 0.25m (Sony official specification)",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-40-g",
+      "manufacturerModelCode": "SEL40F25G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 40mm F2.5 G",
+        "brand": "Sony",
+        "model": "SEL40F25G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 40,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 40"
+          },
+          "conditions": {
+            "sourceText": "40",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              60,
+              60
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 40,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 40"
+          },
+          "conditions": {
+            "sourceText": "40",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              60,
+              60
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 1,
+          "rawValue": 2.5,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.5"
+          },
+          "conditions": {
+            "sourceText": "2.5",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 1,
+          "rawValue": 2.5,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.5"
+          },
+          "conditions": {
+            "sourceText": "2.5",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 2,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "coverageNotInferredFromName": true,
+            "cropCompatibilityNotSymmetric": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 3,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "scope": "lens optical stabilization only",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 4,
+          "rawValue": 49,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "필터 직경(MM): 49"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 173,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "무게: 173g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              68,
+              45
+            ],
+            "dimensionSourceText": "68 x 45mm (D x L)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 6,
+          "rawValue": 0.28,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.28m(AF), 0.25m(MF)"
+          },
+          "conditions": {
+            "sourceText": "0.28m(AF), 0.25m(MF)",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.28,
+              "MF": 0.25
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.2,
+              "MF": 0.23
+            },
+            "maximumMagnificationSourceText": "x0.2(AF), x0.23(MF)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 7,
+          "rawValue": "AF 0.28m; MF 0.25m (Sony official specification)",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.28m(AF), 0.25m(MF)"
+          },
+          "conditions": {
+            "sourceText": "0.28m(AF), 0.25m(MF)",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.28,
+              "MF": 0.25
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.2,
+              "MF": 0.23
+            },
+            "maximumMagnificationSourceText": "x0.2(AF), x0.23(MF)",
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "da9598b1337d6c0d171562bff13d91ce06cb5bca0413a5440d89df658908cc2b",
+  "sourceId": "source-ebd3b74268e7e9d8"
+}

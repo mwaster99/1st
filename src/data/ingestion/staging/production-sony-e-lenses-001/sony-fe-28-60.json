@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-001",
+  "itemKey": "sony-fe-28-60",
+  "manufacturerModelCode": "SEL2860",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL2860",
+    "productId": "sony-fe-28-60",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-a91b1cf804bacdd2145f",
+    "sourceId": "source-1ee15181feca7f30",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL2860"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-28-60",
+    "name": "Sony FE 28-60mm F4-5.6",
+    "brand": "Sony",
+    "model": "SEL2860",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "zoom",
+    "specs": {
+      "aperture": {
+        "tele": 5.6,
+        "wide": 4
+      },
+      "filterMm": 40.5,
+      "focal": {
+        "max": 60,
+        "min": 28
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+      "minFocusM": 0.3,
+      "stabilization": false,
+      "weight": 167
+    }
+  },
+  "source": {
+    "sourceId": "source-1ee15181feca7f30",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel2860",
+    "publisher": "Sony",
+    "documentTitle": "FE 28-60mm F4-5.6 — Sony Korea official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-15T04:56:38.909Z",
+    "evidenceScope": "Identity reviewed against current gallery code/name and product support heading. Official excerpt: 컴팩트형 표준 줌 렌즈 풀프레임 성능. FE 28-60mm F4-5.6. 리니어 모터로 빠르고 조용한 AF 성능 구현. 방진/방적 설계. 지원 SEL2860. Unpromoted weather/design context: 방진/방적 설계; rating not specified",
+    "contentDigest": "1867ece443679f2188c2e190a8d54da5421653491679b0667fdf48a2102ae64c"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1ee15181feca7f30",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel2860",
+      "publisher": "Sony",
+      "documentTitle": "FE 28-60mm F4-5.6 — Sony Korea official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-15T04:56:38.909Z",
+      "evidenceScope": "Identity reviewed against current gallery code/name and product support heading. Official excerpt: 컴팩트형 표준 줌 렌즈 풀프레임 성능. FE 28-60mm F4-5.6. 리니어 모터로 빠르고 조용한 AF 성능 구현. 방진/방적 설계. 지원 SEL2860. Unpromoted weather/design context: 방진/방적 설계; rating not specified",
+      "contentDigest": "1867ece443679f2188c2e190a8d54da5421653491679b0667fdf48a2102ae64c"
+    },
+    {
+      "sourceId": "source-6982dedaaebc629f",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 28-60mm F4-5.6 — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-15T04:56:38.909Z",
+      "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+      "contentDigest": "7e01b831d6034a8928a1775052d8db566c7e6f68b4d6ec8be38ee121a7ac8082"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.aperture.tele",
+      "value": 5.6,
+      "unit": null,
+      "rawValue": 5.6,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "최대 구경 (F): 4-5.6"
+      },
+      "conditions": {
+        "sourceText": "4-5.6",
+        "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": "22-32"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-21a364dd274435bb1fd1"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.aperture.wide",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "최대 구경 (F): 4-5.6"
+      },
+      "conditions": {
+        "sourceText": "4-5.6",
+        "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": "22-32"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-23d760b001279a96ecf8"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.filterMm",
+      "value": 40.5,
+      "unit": "mm",
+      "rawValue": 40.5,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "필터 직경(MM): 40.5"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-94594ac4822f71e63762"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.focal.max",
+      "value": 60,
+      "unit": "mm",
+      "rawValue": 60,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "초점 거리(MM): 28-60"
+      },
+      "conditions": {
+        "sourceText": "28-60",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "unpromotedEquivalentOnAPSCMm": [
+          42,
+          90
+        ],
+        "unpromotedZoomSystem": "수동"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-95783edd0801261b6ce1"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.focal.min",
+      "value": 28,
+      "unit": "mm",
+      "rawValue": 28,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "초점 거리(MM): 28-60"
+      },
+      "conditions": {
+        "sourceText": "28-60",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "unpromotedEquivalentOnAPSCMm": [
+          42,
+          90
+        ],
+        "unpromotedZoomSystem": "수동"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3d530027fc3b132a552b"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "coverageNotInferredFromName": true,
+        "cropCompatibilityNotSymmetric": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0c34c293514b63f91cc1"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.minFocusConditions",
+      "value": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+      "unit": null,
+      "rawValue": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+      },
+      "conditions": {
+        "sourceText": "광각 0.3m, 망원 0.45m",
+        "representativeBasis": "wide endpoint; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "wide": 0.3,
+          "tele": 0.45
+        },
+        "unpromotedMaximumMagnification": 0.16,
+        "maximumMagnificationSourceText": "0.16",
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d5eb5388dc8e80cda9f9"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.minFocusM",
+      "value": 0.3,
+      "unit": "m",
+      "rawValue": 0.3,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+      },
+      "conditions": {
+        "sourceText": "광각 0.3m, 망원 0.45m",
+        "representativeBasis": "wide endpoint; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "wide": 0.3,
+          "tele": 0.45
+        },
+        "unpromotedMaximumMagnification": 0.16,
+        "maximumMagnificationSourceText": "0.16"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-4cc5f119b90078630c06"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "scope": "lens optical stabilization only",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-15288a14638c249ed117"
+    },
+    {
+      "productId": "sony-fe-28-60",
+      "path": "specs.weight",
+      "value": 167,
+      "unit": "g",
+      "rawValue": 167,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-6982dedaaebc629f",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게",
+        "row": "무게: 167g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          66.6,
+          45
+        ],
+        "dimensionSourceText": "66.6 x 45mm (D x L)"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-ef3ad2669d9ae39b4e42"
+    }
+  ]
+}

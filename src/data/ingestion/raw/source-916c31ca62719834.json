@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/selp1020g/spec",
+  "documentTitle": "E PZ 10-20mm F4 G — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+  "accessedAt": "2026-10-15T04:56:38.909Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 10-20",
+      "value": 10,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리(MM): 10-20",
+      "value": 20,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F): 4",
+      "value": 4,
+      "unit": null
+    },
+    {
+      "field": "포맷: APS-C",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 62",
+      "value": 62,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 178g",
+      "value": 178,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+      "value": 0.2,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+      "value": "AF 0.20m; MF wide 0.13m / tele 0.17m (Sony official specification)",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-e-pz-10-20-f4-g",
+      "manufacturerModelCode": "SELP1020G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony E PZ 10-20mm F4 G",
+        "brand": "Sony",
+        "model": "SELP1020G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 10,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 10-20"
+          },
+          "conditions": {
+            "sourceText": "10-20",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              15,
+              30
+            ],
+            "unpromotedZoomSystem": "전원"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 1,
+          "rawValue": 20,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 10-20"
+          },
+          "conditions": {
+            "sourceText": "10-20",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              15,
+              30
+            ],
+            "unpromotedZoomSystem": "전원"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 2,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 4"
+          },
+          "conditions": {
+            "sourceText": "4",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 2,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 4"
+          },
+          "conditions": {
+            "sourceText": "4",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 3,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "포맷: APS-C"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "coverageNotInferredFromName": true,
+            "cropCompatibilityNotSymmetric": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 4,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "scope": "lens optical stabilization only",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 5,
+          "rawValue": 62,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "필터 직경(MM): 62"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 6,
+          "rawValue": 178,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "무게: 178g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              69.8,
+              55
+            ],
+            "dimensionSourceText": "69.8 x 55mm (D x L)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 7,
+          "rawValue": 0.2,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))"
+          },
+          "conditions": {
+            "sourceText": "0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.2,
+              "MFwide": 0.13,
+              "MFtele": 0.17
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.14,
+              "MF": 0.18
+            },
+            "maximumMagnificationSourceText": "0.14(AF), 0.18(MF)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 8,
+          "rawValue": "AF 0.20m; MF wide 0.13m / tele 0.17m (Sony official specification)",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))"
+          },
+          "conditions": {
+            "sourceText": "0.20m(AF), 와이드: 0.13m/망원: 0.17m(MF)((0.2m(AF), 와이드: 0.13m/망원: 0.17m(MF))",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.2,
+              "MFwide": 0.13,
+              "MFtele": 0.17
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.14,
+              "MF": 0.18
+            },
+            "maximumMagnificationSourceText": "0.14(AF), 0.18(MF)",
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "74f4f6a3ea9cc5499206e025f1f74c7026a7b77ad7796b276c04e66edb840b0c",
+  "sourceId": "source-916c31ca62719834"
+}

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/electronics/camera-lenses/sel90m28g/specifications",
+  "documentTitle": "FE 90mm F2.8 Macro G OSS — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+  "accessedAt": "2026-10-15T04:56:38.910Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 90",
+      "value": 90,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F): 2.8",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT): Optical SteadyShot™",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 62",
+      "value": 62,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 602g",
+      "value": 602,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.28m",
+      "value": 0.28,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.28m",
+      "value": "0.28m; AF/MF not separately specified in minimum-focus row; macro 1:1",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-90-f28-macro-g-oss",
+      "manufacturerModelCode": "SEL90M28G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 90mm F2.8 Macro G OSS",
+        "brand": "Sony",
+        "model": "SEL90M28G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 90,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 90"
+          },
+          "conditions": {
+            "sourceText": "90",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              135,
+              135
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 90,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 90"
+          },
+          "conditions": {
+            "sourceText": "90",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              135,
+              135
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 1,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.8"
+          },
+          "conditions": {
+            "sourceText": "2.8",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 1,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.8"
+          },
+          "conditions": {
+            "sourceText": "2.8",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 2,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "coverageNotInferredFromName": true,
+            "cropCompatibilityNotSymmetric": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 3,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "손떨림 보정 (STEADYSHOT): Optical SteadyShot™"
+          },
+          "conditions": {
+            "sourceText": "Optical SteadyShot™",
+            "scope": "lens optical stabilization only",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 4,
+          "rawValue": 62,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "필터 직경(MM): 62"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 602,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "무게: 602g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              79,
+              130.5
+            ],
+            "dimensionSourceText": "79 x 130.5mm (D x L)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 6,
+          "rawValue": 0.28,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.28m"
+          },
+          "conditions": {
+            "sourceText": "0.28m",
+            "representativeBasis": "single published distance",
+            "officialFocusDistancesM": 0.28,
+            "unpromotedMaximumMagnification": 1,
+            "maximumMagnificationSourceText": "1"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 7,
+          "rawValue": "0.28m; AF/MF not separately specified in minimum-focus row; macro 1:1",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.28m"
+          },
+          "conditions": {
+            "sourceText": "0.28m",
+            "representativeBasis": "single published distance",
+            "officialFocusDistancesM": 0.28,
+            "unpromotedMaximumMagnification": 1,
+            "maximumMagnificationSourceText": "1",
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "5ae6db687bc34f0f7994fae2f05b8638cc6fdd98b68ef275af01158b0138dfe3",
+  "sourceId": "source-f1f927160d05f517"
+}

@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony E-Mount production pilot 001 완료 — 2026-10-15
+
+**실제5개 production 성공.** Clean baseline `bec609a`에서 readiness/inventory/contracts/canonical36lenses/map/vocab/scope/pipeline을 확인하고 Sony Korea rendered gallery73cards와 지정5개 product/spec을 재조회했다. **SEL40F25G/SEL2470GM2/SEL2860 기존3개 보강 +SELP1020G/SEL90M28G 신규2개**. 단일5-item atomic transaction으로 canonical **165/36/201→165/38/203**, 기존165bodies/다른33lenses/기존가격 불변. 기존 ID/name/brand/mount/type/aliases 유지, model3개 최초 null-fill에 `--allow-model-null-fill` 및 신규2개 `--allow-new-products`로 명시적 승인했다.
+
+제품별 official source2개(제품 identity-only+spec), raw10/knownspecclaims50/fieldEvidence50/structuredidentity5. Actual focal mm, 최대F W/T, OSS false4/true1, physical Sony E+coverage FF4/APSC1을 검증했다. PZ10–20 actual10–20≠equivalent15–30,28–60 F4–5.6≠minimum22–32. AF/MF·W/T 최단거리/배율 조건과 standalone lens weight·D×L/줌시스템/미지원 사실을 provenance/backlog에 보존, lens IBIS/새치수·배율 schema/가격/추천/UI 변경0. Diff18same-value/new-evidence+12specnull-fill+20new-product, modelnull-fill3별도, 진짜source/valueconflict0. Raw-helper 실제UTC capture **2026-10-15T04:56:38.907Z–04:56:38.910Z**, 날짜자정생성0.
+
+독립worker5tasks/API6/retry1/MALFORMED_RESPONSE1, corrected retry의needs_information1은 valid 추출을 main이 부분 활용하고 추가호출없음. **input4873/output4975/total9848**(제품total1353/2671/1716/2495/1613).40G전체payload누락은 명시적 검사/경고만채택,28–60가짜AF/MF/PZbodyIBIS추정/OSSnull혼용은버림. Main이5identity/50specpaths/근거/diff/approval/apply직접판단,추가사용자판단0. Public fixture5삭제/patch0/secret·canonical·코드전송0.
+
+실제reapply **already-canonicalized/canonicalMatches:true**, before/after/archive/digests/replay일치. AfterSHA **`ee99e92bf6d90a9f21353f4f1557f3546309824a4ee191446d95862580d706b5`**. 최종전체 **459/459**, Objective/production/catalog/coverage **432/432**, lens **77/77**(pilot17/contracts45/readiness15), 기존브랜드별도subset **246/246**, canonicalvalidation/build/node/gitdiffcheck통과(기존chunk경고유지). Production pipeline코드수정0. 실제model보강후 live누락가정으로실패한 readiness회귀는 immutable last-body snapshot의 legacy40G를격리root에넣도록고정했으며검사강도유지/기존sealedartifact불변.
+
+[43항목 완료보고](OBJECTIVE_DB_SONY_LENS_PRODUCTION_001.md), [운영·재개checkpoint](../src/data/ingestion/sony-e-lenses-production-001.json), [manifest](../src/data/ingestion/batches/production-sony-e-lenses-001.json), [신규회귀](../tests/sonyLensProduction001.test.js). **미commit/push없음, 실제현재provenance완료5/잔여62**(신규59/기존보강3),upcoming4/teleconverter2별도. 기존 inventory는당시67미처리진단그대로보존. 다음은완료변경검토·commit/clean확인후 **batch002 APS-C9개**,이후FEprimes10+10/FEzooms12+12/special9의6familybatch계획.9–12개일반batch가능,special은T/F·tripodweight/근거preflight후필요시분할. 이번 worker/raw/apply를반복하지않는다.
+
 ## Lens phase — Sony E-Mount production readiness 보완 완료 — 2026-10-15
 
 **구현/fixture 검증 완료, 실제 production 미시작.** Clean baseline `64e70e8`에서 기존 readiness의 3개 blocker를 보완했다. Existing lens의 absent/null model만 reviewed mapping·공식 code·verified manufacturer identity evidence로 최초 보강하며 ID/name/brand/mount/type/aliases와 non-null model 잠금은 유지한다. Diff/approval의 conditional `modelNullFill`과 **`--allow-model-null-fill`**로 명시적 승인·atomic apply·digest/recovery에 연결했다. Canonical 수동 편집이나 전체 identity lock 해제는 없다.

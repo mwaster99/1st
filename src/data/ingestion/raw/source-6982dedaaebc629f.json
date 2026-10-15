@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel2860/spec",
+  "documentTitle": "FE 28-60mm F4-5.6 — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+  "accessedAt": "2026-10-15T04:56:38.909Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 28-60",
+      "value": 28,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리(MM): 28-60",
+      "value": 60,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F): 4-5.6",
+      "value": 4,
+      "unit": null
+    },
+    {
+      "field": "최대 구경 (F): 4-5.6",
+      "value": 5.6,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 40.5",
+      "value": 40.5,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 167g",
+      "value": 167,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 광각 0.3m, 망원 0.45m",
+      "value": 0.3,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 광각 0.3m, 망원 0.45m",
+      "value": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-28-60",
+      "manufacturerModelCode": "SEL2860",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 28-60mm F4-5.6",
+        "brand": "Sony",
+        "model": "SEL2860",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 28,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 28-60"
+          },
+          "conditions": {
+            "sourceText": "28-60",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              42,
+              90
+            ],
+            "unpromotedZoomSystem": "수동"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 1,
+          "rawValue": 60,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 28-60"
+          },
+          "conditions": {
+            "sourceText": "28-60",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              42,
+              90
+            ],
+            "unpromotedZoomSystem": "수동"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 2,
+          "rawValue": 4,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 4-5.6"
+          },
+          "conditions": {
+            "sourceText": "4-5.6",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22-32"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 3,
+          "rawValue": 5.6,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 4-5.6"
+          },
+          "conditions": {
+            "sourceText": "4-5.6",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22-32"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 4,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "coverageNotInferredFromName": true,
+            "cropCompatibilityNotSymmetric": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 5,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "scope": "lens optical stabilization only",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 6,
+          "rawValue": 40.5,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "필터 직경(MM): 40.5"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 7,
+          "rawValue": 167,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "무게: 167g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              66.6,
+              45
+            ],
+            "dimensionSourceText": "66.6 x 45mm (D x L)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 8,
+          "rawValue": 0.3,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+          },
+          "conditions": {
+            "sourceText": "광각 0.3m, 망원 0.45m",
+            "representativeBasis": "wide endpoint; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "wide": 0.3,
+              "tele": 0.45
+            },
+            "unpromotedMaximumMagnification": 0.16,
+            "maximumMagnificationSourceText": "0.16"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 9,
+          "rawValue": "Wide 28mm 0.30m; tele 60mm 0.45m; focus mode not separately specified",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 광각 0.3m, 망원 0.45m"
+          },
+          "conditions": {
+            "sourceText": "광각 0.3m, 망원 0.45m",
+            "representativeBasis": "wide endpoint; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "wide": 0.3,
+              "tele": 0.45
+            },
+            "unpromotedMaximumMagnification": 0.16,
+            "maximumMagnificationSourceText": "0.16",
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "7e01b831d6034a8928a1775052d8db566c7e6f68b4d6ec8be38ee121a7ac8082",
+  "sourceId": "source-6982dedaaebc629f"
+}

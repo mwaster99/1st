@@ -12,7 +12,10 @@ import {validateLensValue} from '../scripts/objective/lens-contracts.mjs';
 
 const root=new URL('../',import.meta.url),json=p=>JSON.parse(readFileSync(new URL(p,root))),hash=b=>createHash('sha256').update(b).digest('hex');
 const base='src/data/ingestion/',live=json('src/data/cameraProducts.json'),review={verification:'verified',reviewedAt:'2026-10-15',reviewer:'Synthetic lens readiness reviewer'};
-const old=live.lenses.find(l=>l.id==='sony-fe-40-g');
+// Freeze the missing-model case at the last body transaction. Live production
+// can enrich this lens without silently changing the regression's input case.
+const legacy=json(base+'transactions/production-hasselblad-bodies-001/after.json');
+const old=legacy.lenses.find(l=>l.id==='sony-fe-40-g');
 async function lensFixture(t,{type='prime',focal=[40,40],aperture=[2.5,2.5],coverage='35mm full-frame',existing=false,model='SYNTH-LENS-40',rows=[],mutate}={}){
  const f=await newProductFixture(t,{mutateRaw(raw){
   const lens=raw.items.find(i=>i.productType==='lens');raw.items=[lens];lens.manufacturerModelCode='SYNTH-LENS-40';
@@ -26,6 +29,7 @@ async function lensFixture(t,{type='prime',focal=[40,40],aperture=[2.5,2.5],cove
   }
   mutate?.(raw,lens);
  },mutateIdentityMap(map){if(existing)map.entries[0].productId=old.id;}});
+ if(existing){const c=JSON.parse(f.before);c.lenses[c.lenses.findIndex(l=>l.id===old.id)]=structuredClone(old);f.before=JSON.stringify(c,null,2)+'\n';await writeFile(f.p.canonical,f.before);const m=JSON.parse(await readFile(f.p.manifest));m.canonicalBaselineDigest=hash(f.before);await writeFile(f.p.manifest,JSON.stringify(m,null,2)+'\n');}
  return f;
 }
 async function stage(f){return JSON.parse(await readFile(path.join(f.p.ingestion,'staging',newBatchId,'sony-stage3-test-lens.json')));}
@@ -140,5 +144,5 @@ test('CLI existing model fill requires its explicit flag then applies and repeat
 test('all sealed brand transaction bundles replay exactly under current code; live legacy36 lenses remain valid',()=>{
  assert.equal(validateCanonical(live,json(base+'vocab.json')),true);const dirs=readdirSync(new URL(base+'transactions/',root));let bodyArchives=0;const brands=new Set();
  for(const dir of dirs){const prefix=base+'transactions/'+dir+'/';const e=json(prefix+'evidence.json'),before=json(prefix+'before.json'),after=json(prefix+'after.json');const legacyFixedLensUnits=e.bundle.stagings.some(s=>s.claims.some(c=>c.path.startsWith('specs.fixedLens.equivalentFocal.')&&c.unit===null&&c.rawUnit==='mm'));verifyIncoming(e.bundle,before,{legacyFixedLensUnits});const replay=proposedCanonical(before,e.bundle,e.approval.decisions,e.approval.productOperations);assert.deepEqual(replay.canonical,after,dir);assert.deepEqual(proposedCanonical(after,e.bundle,e.approval.decisions,e.approval.productOperations).canonical,after,dir);for(const s of e.bundle.stagings)brands.add(s.product.brand);if(e.bundle.stagings.some(s=>s.productType==='body'))bodyArchives++;}
- assert.ok(bodyArchives>=9);assert.equal(brands.size,9);assert.equal(live.lenses.length,36);
+ assert.ok(bodyArchives>=9);assert.equal(brands.size,9);assert.equal(legacy.lenses.length,36);assert.equal(validateCanonical(legacy,json(base+'vocab.json')),true);for(const lens of legacy.lenses)assert.ok(live.lenses.some(p=>p.id===lens.id));
 });

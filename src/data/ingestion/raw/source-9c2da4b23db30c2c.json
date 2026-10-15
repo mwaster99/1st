@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel2470gm2/spec",
+  "documentTitle": "FE 24-70mm F2.8 GM II — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Actual focal mm / maximum F-number / format / standalone lens specifications only. Unsupported magnification, D×L and zoom-system facts retained in claim conditions, no new schema.",
+  "accessedAt": "2026-10-15T04:56:38.909Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 24-70",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리(MM): 24-70",
+      "value": 70,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F): 2.8",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 82",
+      "value": 82,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 695g",
+      "value": 695,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.21(W)-0.3(T)m",
+      "value": 0.21,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.21(W)-0.3(T)m",
+      "value": "Wide 24mm 0.21m; tele 70mm 0.30m; focus mode not separately specified",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-24-70-gm2",
+      "manufacturerModelCode": "SEL2470GM2",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 24-70mm F2.8 GM II",
+        "brand": "Sony",
+        "model": "SEL2470GM2",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 24-70"
+          },
+          "conditions": {
+            "sourceText": "24-70",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              36,
+              105
+            ],
+            "unpromotedZoomSystem": "수동"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 1,
+          "rawValue": 70,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "초점 거리(MM): 24-70"
+          },
+          "conditions": {
+            "sourceText": "24-70",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "unpromotedEquivalentOnAPSCMm": [
+              36,
+              105
+            ],
+            "unpromotedZoomSystem": "수동"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 2,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.8"
+          },
+          "conditions": {
+            "sourceText": "2.8",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 2,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최대 구경 (F): 2.8"
+          },
+          "conditions": {
+            "sourceText": "2.8",
+            "meaning": "maximum opening f-number at focal endpoints, not minimum selectable or T-stop",
+            "unpromotedMinimumSelectableAperture": "22"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 3,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "coverageNotInferredFromName": true,
+            "cropCompatibilityNotSymmetric": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 4,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "손떨림 보정 (STEADYSHOT): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "scope": "lens optical stabilization only",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 5,
+          "rawValue": 82,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "필터 직경(MM): 82"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 6,
+          "rawValue": 695,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "무게: 695g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              87.8,
+              119.9
+            ],
+            "dimensionSourceText": "87.8 x 119.9mm (D x L)"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 7,
+          "rawValue": 0.21,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.21(W)-0.3(T)m"
+          },
+          "conditions": {
+            "sourceText": "0.21(W)-0.3(T)m",
+            "representativeBasis": "wide endpoint; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "wide": 0.21,
+              "tele": 0.3
+            },
+            "unpromotedMaximumMagnification": 0.32,
+            "maximumMagnificationSourceText": "0.32x"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 8,
+          "rawValue": "Wide 24mm 0.21m; tele 70mm 0.30m; focus mode not separately specified",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게",
+            "row": "최소 초점 거리: 0.21(W)-0.3(T)m"
+          },
+          "conditions": {
+            "sourceText": "0.21(W)-0.3(T)m",
+            "representativeBasis": "wide endpoint; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "wide": 0.21,
+              "tele": 0.3
+            },
+            "unpromotedMaximumMagnification": 0.32,
+            "maximumMagnificationSourceText": "0.32x",
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-15",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2f7c65ee848ae4d54da9cad12927bb57797f3a5557469f02af8013c5f20b546a",
+  "sourceId": "source-9c2da4b23db30c2c"
+}
