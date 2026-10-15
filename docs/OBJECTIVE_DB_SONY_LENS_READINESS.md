@@ -1,5 +1,7 @@
 # Sony E-Mount 순정 렌즈 inventory 및 production readiness — 2026-10-15
 
+이 문서는 보완 이전 inventory/진단 기록이다. 이후 [readiness 구현](OBJECTIVE_DB_SONY_LENS_READINESS_IMPLEMENTATION.md)에서 3개 blocker를 보완하고 fixture로 검증했다. 아래 당시 결과와 inventory snapshot은 역사적 기록으로 보존하며 실제 production 미처리67개는 그대로다.
+
 **공식 inventory와 schema/pipeline 검증을 완료했지만, 실제 production pilot은 진행하지 않았다.** 한국 공식 gallery73cards는 일반 optical lens71개(출시/현행67·출시예정4)와 teleconverter2개다. 기존 Sony current lens6개를 매칭했고 신규등록61/기존 provenance보강6이 필요하다.
 
 사용자 지시 14번의 안전 분기를 적용했다. 신규 lens의 synthetic atomic path는 작동하지만, 기존36lens 모두 빠진 `model` 때문에 existing-ID update가 staging/approval 계약 사이에서 막힌다. 교환식 lens focal 단위 및 aperture/OSS 타입 검증도 validate와 approval 간 drift가 재현됐다. FE/APS-C image circle은 직접 canonical 계약이 없다. Guard 우회·수동 canonical 편집·5개 신규만 골라 기존 문제를 숨기는 방식은 사용하지 않았다.

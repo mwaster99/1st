@@ -86,3 +86,51 @@ M11/P/D/Monochrom/M EV1은 센서·저장·LCD·뷰파인더·workflow 차이를
 IBIS는 기존 객체/false/null 계약, LCD/EVF는 기존 present 계약을 사용한다. 공식 부재 근거가 있으면 명시적 false, 자료 누락만 있으면 UNKNOWN이다. 이번 M video는 직접 부재 근거가 부족해 UNKNOWN이며 `needsExplicitAbsenceEvidence`를 남긴다. Typed no-video/내부 GB/광학 rangefinder/전용 monochrome flag는 schema를 추가하지 않고 description/claim conditions 및 후속 후보로 남긴다. Lens visual compensation을 body IBIS로 승격하지 않는다.
 
 Q/D-Lux는 기존 fixed/mount-null/fixedLens와 mm 계약을 사용한다. Actual과 equivalent를 계산으로 대체하지 않고 단렌즈/줌을 구분한다. 별도 렌즈 상품·무게·가격을 더하지 않는다. M/Q/D-Lux의 공식 battery 포함 무게는 기존 `battery`, bare는 `body-only` 기준을 사용하고 card 포함을 추정하지 않는다. SL의 bare 무게에 배터리를 임의 합산하지 않는다. Film M6/MP/M-A 및 hybrid SOFORT2는 이번 digital contract 밖 adjacent scope이며 영구 제외하지 않는다.
+
+## 8. Interchangeable lens production readiness — 2026-10-15
+
+실제 Sony 렌즈 production apply 전, 격리 fixture로 검증한 lens 계약이다. `schemaVersion:1` 유지, 기존36lens와 sealed artifact를 일괄 수정하지 않는다. 상세 결과는 [lens readiness 구현 보고서](OBJECTIVE_DB_SONY_LENS_READINESS_IMPLEMENTATION.md)에 둔다.
+
+### Optical field와 단위
+
+| 경로 | 값/단위 | 의미 |
+| --- | --- | --- |
+| `specs.focal.min/max` | 양수 number, mm | 렌즈 자체 actual 초점거리. Prime는 두 known 값이 동일, zoom은 min≤max. 환산 화각을 넣지 않는다. |
+| `specs.aperture.wide/tele` | 양수 number, 무차원 | 각 초점거리 끝의 최대 개방 f-number. Constant는 동일, variable은 양 끝을 각각 기록한다. Prime의 두 known 값은 동일하다. 최소 선택 조리개나 T-stop이 아니다. |
+| `specs.stabilization` | boolean/null | Lens optical stabilization. True는 공식 존재, false는 공식 부재, null은 UNKNOWN. Body IBIS/combined stops는 별개다. |
+| `specs.weight` | 양수 number, g | 렌즈 자체 무게. Body의 weightBasis 필드는 요구하지 않으며 hood/foot/caps 구성은 claim conditions에 보존한다. |
+| `specs.filterMm` | 양수 number, mm | 필터 구경; 근거 부재는 null. |
+| `specs.minFocusM` | 양수 number, m | AF/MF, W/T 등 해당 대표 조건을 `minFocusConditions`와 claim conditions에 보존한다. |
+| `specs.formatCoverage` | `full-frame` / `APS-C` / null | 선택적 image-circle coverage. Physical mount와 별개다. |
+
+Known 숫자 source는 number여야 한다. `"40"`, `"F2.8"`, `"OSS"`, 객체/배열을 number/boolean으로 추정 변환하지 않는다. Unit가 있는 known claim은 rawUnit와 normalized unit가 모두 필요하다. 단위 변환은 기존 `convertNumber` 한 테이블만 사용한다: mm 대상으로 mm/cm/in, m 대상으로 m/cm/mm, g 대상으로 g/kg/oz/lb. Unsupported unit와 누락은 validate/rejected다. Aperture는 dimensionless이므로 rawUnit/unit는 null이며 `F` 문자열을 단위 대신 허용하지 않는다. Null/UNKNOWN에는 단위를 강제하지 않는다.
+
+`lens-contracts.mjs`가 field/type/range/coverage와 claim unit 검증을 제공하며 rules의 staging validate, merge의 approval, canonical validation이 재사용한다. `convertNumber`를 claim validator에 전달하므로 별도 변환 허용 목록을 중복 유지하지 않는다. Body fixedLens와 교환식 lens focal은 별도 경로이며 기존 fixedLens archive 옵션은 유지한다. Lens에 body IBIS/3D dimensions를 쓰는 것은 허용하지 않는다.
+
+### Coverage normalization과 provenance
+
+새 optional field는 `specs.formatCoverage` **하나**다. Enum의 단일 정의는 `LENS_FORMAT_COVERAGES`이며 vocabulary에는 이 claim path만 append한다. 공식 `35mm full-frame`, `35mm 풀프레임`, `full frame`을 `full-frame`, 공식 `APS-C`를 `APS-C`로 정규화한다. `FE`, `Sony FE`, mount string, product name만으로 coverage를 생성하지 않는다. Raw value/locator/검토된 source claim이 필요하며 known 값은 일반 diff/fieldEvidence/source.fields를 통해 승격한다.
+
+Missing optional field와 null/UNKNOWN은 coverage 미확정이다. 기존36개에 기본값을 넣지 않는다. New product에서 explicit coverage claim이 있으면 skeleton에 null key를 만들고 known approved claim만 채운다. Claim 자체가 없으면 과거 skeleton shape를 유지한다. Medium-format/MFT 등의 coverage는 현 Sony 최소 enum에 억지 매핑하지 않으며 향후 별도 근거와 계약으로 확장한다.
+
+Sony FE와 APS-C E 모두 physical `Sony E`다. Full-frame coverage가 APS-C body를 커버할 수 있다는 사실과 APS-C lens의 full-frame body 사용 시 crop 조건은 비대칭이다. 이번에는 저장 계약만 추가하며 추천 엔진의 crop/호환성 소비를 구현하지 않는다.
+
+### Existing lens model null-fill
+
+New lens는 검토된 identity-map과 manufacturer identity evidence로 생성한다. Existing lens는 이미 알려진 ID/name/brand/mount/type/aliases를 그대로 유지해야 한다. 다음 조건이 모두 맞을 때만 누락된 `model`(absent/null)의 최초 보강을 허용한다.
+
+1. 검토한 identity-map이 동일 manufacturer/productType/lens ID/manufacturer model code를 연결한다.
+2. Incoming model은 그 공식 model code와 일치한다(공백·기호·대소문자만 동일 code로 정규화).
+3. 공식 manufacturer source의 identity excerpt/locator/reviewer/date/verified evidence와 sourceId/evidenceId가 실제 raw와 연결된다.
+4. Name/brand/mount/type/aliases는 그대로이며 전역 ID/alias/model 중복 검사가 통과한다.
+5. Diff의 `modelNullFill`과 identity evidence를 검토한 뒤 **`--allow-model-null-fill`**을 `--confirm --reviewer --reason --diff-digest`와 함께 명시한다.
+
+기존 non-null model은 계속 exact lock이며 바꾸거나 null로 지우지 못한다. Model 자체의 부정확한 형식은 `INVALID_LENS_MODEL`, code/mapping/evidence 문제는 `MODEL_IDENTITY_MISMATCH`/`MODEL_IDENTITY_UNVERIFIED`/`MODEL_IDENTITY_SOURCE`/`RAW_IDENTITY_MISMATCH`, known conflict는 `MODEL_IDENTITY_CONFLICT`다. Other identity 변경은 `LENS_IDENTITY_CONFLICT`다. Alias/model collision·physical mount conflict·source conflict의 기존 보호도 유지한다.
+
+Model은 spec claim이 아니므로 기존 `changes[]`에 가짜 `specs.model` claim을 넣지 않는다. Diff에 conditional `modelNullFill`+identityEvidence, 승인 `productOperations[]`에 동일 검토 payload를 묶어 atomic apply/expected digest/recovery로 처리한다. Canonical에는 `model`과 연결된 `identityEvidence` 및 source `fields:[identity,model]`을 저장한다. Source excerpt는 transaction archive에서 재현한다. 기존 diff/approval은 이 속성이 없으므로 기존 digest/shape 그대로다. 실제 JSON 수동 편집이나 모든 identity lock 해제는 허용하지 않는다.
+
+### Validation error와 boundary
+
+`UNIT_REQUIRED`, `UNSUPPORTED_UNIT`, `INVALID_LENS_SPEC`, `INVALID_LENS_FOCAL`, `INVALID_LENS_APERTURE`, `INVALID_LENS_COVERAGE`, `INVALID_LENS_MODEL`, 기존 `INVALID_PHYSICAL_RANGE`/`INVALID_ORDERED_RANGE`/`UNSUPPORTED_CLAIM_PATH`를 사용한다. Lens value/identity 오류는 validate에서 rejected되며 approval도 같은 규칙으로 방어한다. Approval은 타입 검사 외에도 diff digest·explicit consent·stale baseline·value-conflict gate를 별도로 검증한다.
+
+가격, 최소 선택 조리개, maximum magnification, D×L, AF mode table, PZ/T-stop/weather flag는 새 canonical field로 확장하지 않았다. 공식 조건은 claim metadata에 유지한다. 실제 production pilot과 worker/API 호출은 이번 readiness 범위 밖이다.

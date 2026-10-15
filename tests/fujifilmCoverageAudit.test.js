@@ -165,7 +165,7 @@ test('Fuji 001–003 immutable artifacts reproduce approvals and a complete stri
       if (file === 'vocab.json') {
         const current = json(`${base}${file}`);
         for (const [key, value] of Object.entries(evidence.bundle.vocab)) {
-          if (['brands', 'mounts', 'bodyStyles'].includes(key)) {
+          if (['brands', 'mounts', 'bodyStyles', 'claimPaths'].includes(key)) {
             assert.deepEqual(current[key].slice(0, value.length), value);
           } else assert.deepEqual(current[key], value);
         }

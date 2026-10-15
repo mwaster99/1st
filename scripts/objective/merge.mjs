@@ -1,5 +1,6 @@
-import { combineStagingFragments, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateCropAtMaxValue, validateIbisValue, validateLcdValue, validateStagingBatch } from "./rules.mjs";
+import { combineStagingFragments, convertNumber, createCanonicalDiff, createNewProductSkeleton, digestValue, getAtPath, lensModelNullFill, normalizeRawDocument, normalizeSearch, stableStringify, stagingSources, validateCropAtMaxValue, validateIbisValue, validateLcdValue, validateLensIdentity, validateStagingBatch } from "./rules.mjs";
 import { jsonBytes, sha256 } from "./storage.mjs";
+import { isLensSpecPath, LENS_SPEC_KEYS, validateLensClaim, validateLensModel, validateLensSpecs, validateLensValue } from "./lens-contracts.mjs";
 
 const requireValue = (ok, message) => { if (!ok) throw Error(message); };
 const equal = (a, b) => stableStringify(a) === stableStringify(b);
@@ -17,7 +18,7 @@ const numberLeaves = /(?:weight|bodyOnlyWeight|minFocusM|filterMm|megapixels|bat
 const booleanLeaves = /(?:aiUnit|log|stabilization|present|weatherSealing|mechanical|electronic|bulb|touch)$/;
 const stringLeaves = /(?:format|generation|description|label|weightBasis|batteryConditions|minFocusConditions|conditions|mechanism)$/;
 const bodyKeys = new Set(["sensor", "weight", "weightBasis", "bodyOnlyWeight", "dimensions", "autofocus", "video", "batteryShots", "releaseDate", "batteryConditions", "ibis", "evf", "lcd", "burst", "shutter", "cardSlots", "weatherSealing", "operatingTemperatureC", "fixedLens"]);
-const lensKeys = new Set(["focal", "aperture", "weight", "stabilization", "filterMm", "minFocusM", "minFocusConditions"]);
+const lensKeys = new Set(LENS_SPEC_KEYS);
 const childKeys = {
   "specs.sensor": ["format", "megapixels", "generation", "sizeMm"],
   "specs.autofocus": ["aiUnit", "subjects", "description"],
@@ -33,7 +34,9 @@ const childKeys = {
 };
 export function validateSpecValue(value, field) {
   if (value === null) return;
-  if (field === "specs.video.cropAtMax") {
+  if (isLensSpecPath(field)) {
+    validateLensValue(value, field);
+  } else if (field === "specs.video.cropAtMax") {
     validateCropAtMaxValue(value);
   } else if (field === "specs.ibis") {
     validateIbisValue(value);
@@ -82,6 +85,7 @@ export function validateCanonical(canonical, vocab) {
       requireValue(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.id) && !p.id.startsWith("unknown-") && !p.id.endsWith("-integrated-lens") && !ids.has(p.id), `Duplicate/invalid canonical ID: ${p.id}`);
       ids.add(p.id);
       requireValue(typeof p.name === "string" && p.name.trim() && vocab.brands.some((b) => b.name === p.brand) && Array.isArray(p.aliases), `Invalid identity: ${p.id}`);
+      if (group === "lens") validateLensModel(p.model);
       for (const n of names(p)) {
         const key = normalizeSearch(n);
         requireValue(typeof n === "string" && key && (!aliases.has(key) || aliases.get(key) === p.id), `Alias collision: ${n}`);
@@ -91,6 +95,7 @@ export function validateCanonical(canonical, vocab) {
       else requireValue(vocab.lensTypes.includes(p.type), `Invalid lens type: ${p.id}`);
       requireValue(group === "body" && p.kind === "fixed" ? p.mount === null : vocab.mounts.some((m) => m.name === p.mount), `Invalid mount: ${p.id}`);
       requireValue(p.specs && typeof p.specs === "object" && !Array.isArray(p.specs), `Missing specs: ${p.id}`);
+      if (group === "lens") validateLensSpecs(p.specs, p.type);
       for (const [key, value] of Object.entries(p.specs)) {
         requireValue((group === "body" ? bodyKeys : lensKeys).has(key), `Wrong product specification: ${group}/${key}`);
         requireValue(!["roles", "photoScore", "videoScore", "portabilityScore", "designTags"].includes(key), "Subjective policy in canonical specs");
@@ -163,7 +168,10 @@ export function verifyIncoming(bundle, canonical, { legacyFixedLensUnits = false
     const products = staged.productType === "body" ? canonical.bodies : canonical.lenses;
     const existing = products.find((p) => p.id === item.productId);
     if (existing) {
+      if (staged.productType === "lens") validateLensIdentity(staged, existing);
+      const modelFill = lensModelNullFill(staged, existing);
       for (const k of ["brand", "mount", "name", "model", "series", "kind", "bodyStyle", "type"]) {
+        if (k === "model" && modelFill) continue;
         requireValue(equal(staged.product[k], existing[k]), `Identity changes require a separate reviewed schema flow: ${k}`);
       }
       requireValue(equal([...new Set(staged.product.aliases.map(normalizeSearch))].sort(), [...new Set(existing.aliases.map(normalizeSearch))].sort()), "Alias change is outside this promotion");
@@ -178,6 +186,7 @@ export function verifyIncoming(bundle, canonical, { legacyFixedLensUnits = false
     for (const claim of staged.claims) {
       requireValue(claim.path.startsWith("specs.") && vocab.claimPaths.includes(claim.path), "Stage 2 promotes physical specs only, not price summaries");
       validateSpecValue(claim.value, claim.path);
+      if (staged.productType === "lens") validateLensClaim(claim, convertNumber);
       if (claim.value !== null && claim.unit !== null) requireValue(typeof claim.rawUnit === "string" && claim.rawUnit.length > 0, `Explicit original unit required: ${claim.path}`);
       if (claim.path === "specs.weight" && staged.productType === "body" && claim.value !== null) requireValue(claim.conditions.weightBasis === staged.product.specs.weightBasis, "Weight condition and weightBasis disagree");
     }
@@ -210,6 +219,22 @@ export function proposedCanonical(canonical, bundle, decisions, productOperation
       requireValue(operation?.operation === "new-product" && operation.action === "accept", `New product ${staged.product.id} lacks explicit creation approval`);
       p = createNewProductSkeleton(staged);
       products.push(p);
+    }
+    validateLensIdentity(staged, p);
+    const modelFill = lensModelNullFill(staged, p);
+    if (modelFill) {
+      const operation = operations.get(p.id);
+      requireValue(equal(operation?.modelNullFill, modelFill), "Lens model null-fill lacks explicit creation metadata approval");
+      p.model = modelFill.incomingValue;
+      const s = stagingSources(staged).find(s => s.sourceId === staged.identityEvidence.sourceId);
+      requireValue(s?.sourceType === "manufacturer", "Model fill requires manufacturer identity source");
+      let source = p.sources.find(v => v.sourceId === s.sourceId);
+      if (!source) {
+        source = { url: s.url, type: "manufacturer", accessedOn: s.accessedAt.slice(0, 10), fields: [], note: "Reviewed lens model null-fill identity evidence retained in transaction archive", sourceId: s.sourceId, documentVersion: s.documentVersion };
+        p.sources.push(source);
+      }
+      source.fields = [...new Set([...source.fields, "identity", "model"])].sort();
+      p.identityEvidence = { verification: "verified", evidenceId: staged.identityEvidence.evidenceId, sourceId: s.sourceId, checkedAt: staged.identityEvidence.reviewedAt };
     }
     for (const claim of staged.claims) {
       const decision = allowed.get(`${p.id}:${claim.claimId}`);

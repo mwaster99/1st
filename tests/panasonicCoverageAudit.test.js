@@ -170,7 +170,7 @@ test('All six Panasonic sealed transactions reproduce strict validation, digests
       if (file === 'vocab.json') {
         // Journal/evidence bind the historical registry. Current mount/style vocab may grow.
         const v = json(`${base}${file}`);
-        for (const [key, value] of Object.entries(e.bundle.vocab)) assert.deepEqual(['brands', 'mounts', 'bodyStyles'].includes(key) ? v[key].slice(0, value.length) : v[key], value);
+        for (const [key, value] of Object.entries(e.bundle.vocab)) assert.deepEqual(['brands', 'mounts', 'bodyStyles', 'claimPaths'].includes(key) ? v[key].slice(0, value.length) : v[key], value);
       } else assert.equal(file === 'identity-map.json' ? hash(jsonBytes(e.bundle.identityMap)) : sha(`${base}${file}`), digest);
     }
     for (const item of m.items) {

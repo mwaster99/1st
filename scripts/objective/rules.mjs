@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { lensUnit, normalizeLensCoverage, validateLensClaim, validateLensModel, validateLensSpecs } from "./lens-contracts.mjs";
 
 export const BATCH_STATES = Object.freeze([
   "pending",
@@ -126,9 +127,10 @@ function isFixedFocalPath(path) {
 }
 
 function canonicalUnit(path) {
-  if (["specs.weight", "specs.bodyOnlyWeight"].includes(path)) return "g";
-  if (["specs.dimensions", "specs.sensor.sizeMm"].includes(path) || path.startsWith("specs.focal.") || path === "specs.filterMm" || isFixedFocalPath(path)) return "mm";
-  if (path === "specs.minFocusM") return "m";
+  const lensValueUnit = lensUnit(path);
+  if (lensValueUnit) return lensValueUnit;
+  if (path === "specs.bodyOnlyWeight") return "g";
+  if (["specs.dimensions", "specs.sensor.sizeMm"].includes(path) || isFixedFocalPath(path)) return "mm";
   if (path === "specs.sensor.megapixels") return "MP";
   if (path.endsWith("resolutionDots")) return "dots";
   if (path.endsWith("sizeInches")) return "in";
@@ -144,7 +146,7 @@ function roundConverted(value) {
   return Number(Number(value).toFixed(6));
 }
 
-function convertNumber(value, from, to) {
+export function convertNumber(value, from, to) {
   const conversions = {
     "kg:g": 1000,
     "oz:g": 28.349523125,
@@ -161,11 +163,16 @@ function convertNumber(value, from, to) {
   return roundConverted(value * factor);
 }
 
-export function normalizeClaimValue(path, rawValue, rawUnit, { legacyFixedLensUnits = false } = {}) {
+export function normalizeClaimValue(path, rawValue, rawUnit, { legacyFixedLensUnits = false, productType } = {}) {
   // Archive replay only: preserve the old equivalentFocal claim IDs and digests.
   const unit = legacyFixedLensUnits && path.startsWith("specs.fixedLens.equivalentFocal.") ? null : canonicalUnit(path);
   if (rawValue === null || (typeof rawValue === "string" && rawValue.trim().toUpperCase() === "UNKNOWN")) {
     return { value: null, unit, unknown: true };
+  }
+  if (path === "specs.formatCoverage") return { value: normalizeLensCoverage(rawValue), unit: null, unknown: false };
+  // Keep bad lens input visible for CLI validate/rejected; never guess numeric types.
+  if ((productType === "lens" || path.startsWith("specs.focal.")) && lensUnit(path) && typeof rawValue !== "number") {
+    return { value: rawValue, unit, unknown: false };
   }
   // Preserve rawValue in the claim/source; only the canonical value uses the alias.
   if (path === "specs.lcd" || path === "specs.lcd.mechanism") {
@@ -197,7 +204,7 @@ export function normalizeClaimValue(path, rawValue, rawUnit, { legacyFixedLensUn
       return { value: convertNumber(Number(rawValue), rawUnit, unit), unit, unknown: false };
     } catch (error) {
       // Keep unsupported focal units visible so CLI validate records rejected.
-      if (isFixedFocalPath(path)) return { value: Number(rawValue), unit: rawUnit, unknown: false };
+      if (isFixedFocalPath(path) || productType === "lens" || path.startsWith("specs.focal.")) return { value: Number(rawValue), unit: rawUnit, unknown: false };
       throw error;
     }
   }
@@ -305,7 +312,7 @@ export function normalizeRawDocument(raw, { batchId, vocab, identityMap, legacyF
       if (!evidence || stableStringify(evidence.value) !== stableStringify(observation.rawValue) || (evidence.unit ?? null) !== (observation.rawUnit ?? null)) {
         throw new Error(`Observation ${observation.path} does not match its evidenceExcerpt reference`);
       }
-      const normalized = normalizeClaimValue(observation.path, observation.rawValue, observation.rawUnit ?? null, { legacyFixedLensUnits });
+      const normalized = normalizeClaimValue(observation.path, observation.rawValue, observation.rawUnit ?? null, { legacyFixedLensUnits, productType: rawItem.productType });
       const claim = {
         productId: product.id,
         path: observation.path,
@@ -430,6 +437,34 @@ function explicitMountVariant(staging, canonicalProduct) {
     && normalizeSearch(staging.identityMapping?.variantKey) === normalizeSearch(staging.product.mount);
 }
 
+// A reviewed model-code fill is the sole exception to existing lens identity locks.
+// The actual mutation still requires a diff-bound, explicit approval operation.
+export function lensModelNullFill(staging, existing) {
+  if (staging.productType !== "lens" || !existing || existing.model != null || staging.product.model == null) return null;
+  const mapping = staging.identityMapping;
+  if (!mapping || mapping.productId !== existing.id || mapping.productType !== "lens" || mapping.manufacturer !== existing.brand
+    || mapping.manufacturerModelCode !== staging.manufacturerModelCode
+    || !normalizeSearch(staging.manufacturerModelCode) || normalizeSearch(staging.product.model) !== normalizeSearch(staging.manufacturerModelCode)) {
+    throw Object.assign(new Error("Lens model null-fill requires a reviewed mapping and matching official manufacturer model code"), { code: "MODEL_IDENTITY_MISMATCH" });
+  }
+  if (staging.identityEvidence?.verification !== "verified") throw Object.assign(new Error("Lens model null-fill requires verified manufacturer identity evidence"), { code: "MODEL_IDENTITY_UNVERIFIED" });
+  return { path: "model", category: "null-fill", canonicalValue: null, incomingValue: staging.product.model, identityEvidenceId: staging.identityEvidence.evidenceId };
+}
+
+export function validateLensIdentity(staging, existing) {
+  if (staging.productType !== "lens") return;
+  validateLensModel(staging.product.model, { required: true });
+  if (!existing) return;
+  const fill = lensModelNullFill(staging, existing);
+  for (const key of ["brand", "mount", "name", "model", "type"]) {
+    if (key === "model" && fill) continue;
+    if (stableStringify(staging.product[key]) !== stableStringify(existing[key])) throw Object.assign(new Error(`Identity changes require a separate reviewed schema flow: ${key}`), { code: key === "model" ? "MODEL_IDENTITY_CONFLICT" : "LENS_IDENTITY_CONFLICT" });
+  }
+  if (stableStringify([...new Set(staging.product.aliases.map(normalizeSearch))].sort()) !== stableStringify([...new Set(existing.aliases.map(normalizeSearch))].sort())) {
+    throw Object.assign(new Error("Alias change is outside this promotion"), { code: "LENS_IDENTITY_CONFLICT" });
+  }
+}
+
 function unknownPrice() {
   return {
     new: { value: null, currency: "KRW", asOf: null, sourceType: "unknown", sourceUrl: null },
@@ -462,6 +497,8 @@ export function createNewProductSkeleton(staging, { includeClaims = false } = {}
     id: p.id, name: p.name, brand: p.brand, model: p.model, aliases: [...p.aliases],
     mount: p.mount, type: p.type, price: unknownPrice(), specs: unknownSpecs("lens"),
   };
+  // Only opt-in coverage claims add the optional key; historical shapes stay exact.
+  if (staging.productType === "lens" && staging.claims.some(c => c.path === "specs.formatCoverage")) product.specs.formatCoverage = null;
   if (includeClaims) for (const claim of staging.claims) setAtPath(product, claim.path, structuredClone(claim.value));
   const identitySource = stagingSources(staging).find((source) => source.sourceId === staging.identityEvidence?.sourceId) ?? staging.source;
   product.sources = [{
@@ -569,6 +606,12 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   }
   const existing = canonicalIds.get(product.id);
   if (existing && existing.productType !== productType) addIssue(issues, "ID_TYPE_COLLISION", `${product.id} belongs to another product type`);
+  if (productType === "lens") {
+    try { validateLensIdentity(staging, existing?.product); }
+    catch (error) { addIssue(issues, error.code ?? "LENS_IDENTITY_CONFLICT", error.message, "product.model"); }
+    try { validateLensSpecs(product.specs ?? {}, product.type); }
+    catch (error) { addIssue(issues, error.code ?? "INVALID_LENS_SPEC", error.message, "product.specs"); }
+  }
 
   const vocabularyMounts = new Set(vocab.mounts.map((entry) => entry.name));
   for (const field of ["id", "name", "brand", "model"]) {
@@ -595,12 +638,13 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   if (!sources.length) addIssue(issues, "SOURCE_REGISTRY_EMPTY", "Staging requires at least one source", "sources");
   if (staging.source && !sourceIds.has(staging.source.sourceId)) addIssue(issues, "PRIMARY_SOURCE_MISSING", "Primary source is absent from sources[]", "source");
 
-  if (!existing) {
+  const modelFill = productType === "lens" && existing && existing.product.model == null && product.model != null;
+  if (!existing || modelFill) {
     const evidence = staging.identityEvidence;
     const identitySource = sources.find((source) => source.sourceId === evidence?.sourceId);
-    if (identitySource?.sourceType !== "manufacturer") addIssue(issues, "NEW_PRODUCT_IDENTITY_SOURCE", "A new product identity requires a manufacturer source", "source.sourceType");
+    if (identitySource?.sourceType !== "manufacturer") addIssue(issues, modelFill ? "MODEL_IDENTITY_SOURCE" : "NEW_PRODUCT_IDENTITY_SOURCE", "Reviewed product identity requires a manufacturer source", "source.sourceType");
     if (!evidence || evidence.verification !== "verified" || !evidence.reviewer || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewedAt ?? "")) {
-      addIssue(issues, "NEW_PRODUCT_IDENTITY_UNVERIFIED", "A new product requires reviewed identity evidence", "identityEvidence");
+      addIssue(issues, modelFill ? "MODEL_IDENTITY_UNVERIFIED" : "NEW_PRODUCT_IDENTITY_UNVERIFIED", "Product identity requires reviewed identity evidence", "identityEvidence");
     } else {
       if (!identitySource) addIssue(issues, "IDENTITY_SOURCE_MISMATCH", "Identity evidence source is absent from staging sources", "identityEvidence.sourceId");
       if (!evidence.locator || !Object.values(evidence.locator).some((value) => typeof value === "string" && value.trim())) addIssue(issues, "IDENTITY_LOCATOR_MISSING", "Identity evidence requires a source locator", "identityEvidence.locator");
@@ -610,8 +654,16 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
         || rawReview.verification !== evidence.verification || rawReview.reviewedAt !== evidence.reviewedAt || rawReview.reviewer !== evidence.reviewer) {
         addIssue(issues, "RAW_IDENTITY_MISMATCH", "Staged identity evidence does not match raw evidence", "identityEvidence");
       }
+      if (modelFill && (rawItem?.identity?.model !== product.model || rawItem?.manufacturerModelCode !== staging.manufacturerModelCode
+        || rawItem?.identity?.brand !== product.brand || evidence.evidenceId !== `identity-${digestValue({ productId: product.id, sourceId: evidence.sourceId, locator: evidence.locator, value: { manufacturerModelCode: rawItem.manufacturerModelCode, productType: rawItem.productType, identity: rawItem.identity } }).slice(0, 20)}`)) {
+        addIssue(issues, "RAW_IDENTITY_MISMATCH", "Model fill does not match manufacturer identity evidence", "product.model");
+      }
+      if (modelFill && stableStringify(rawDocuments.get(evidence.sourceId)?.evidenceExcerpt?.[rawReview?.evidenceRef]?.value)
+        !== stableStringify({ manufacturerModelCode: rawItem?.manufacturerModelCode, productType: rawItem?.productType, identity: rawItem?.identity })) {
+        addIssue(issues, "RAW_IDENTITY_MISMATCH", "Model fill lacks matching source excerpt", "product.model");
+      }
     }
-    const equivalent = canonicalEntries.find((entry) => entry.productType === productType && equivalentIdentity(product, entry.product));
+    const equivalent = canonicalEntries.find((entry) => entry.product.id !== product.id && entry.productType === productType && equivalentIdentity(product, entry.product));
     if (equivalent && !explicitMountVariant(staging, equivalent.product)) {
       addIssue(issues, "EQUIVALENT_EXISTING_PRODUCT", `${product.id} appears equivalent to existing ${equivalent.product.id}`, "product.id");
     }
@@ -643,6 +695,11 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
   const claimsByPath = new Map();
   const claimIds = new Set();
   for (const claim of staging.claims ?? []) {
+    if (productType !== "lens" && claim.path === "specs.formatCoverage") addIssue(issues, "UNSUPPORTED_CLAIM_PATH", "formatCoverage is a lens-only specification", claim.path);
+    if (productType === "lens") {
+      try { validateLensClaim(claim, convertNumber); }
+      catch (error) { addIssue(issues, error.code ?? "INVALID_LENS_SPEC", error.message, claim.path); }
+    }
     if (isFixedFocalPath(claim.path) && claim.value != null) {
       if (claim.rawUnit == null || claim.rawUnit === "") {
         addIssue(issues, "UNIT_REQUIRED", `Known focal length requires an explicit raw unit: ${claim.path}`, claim.path);
@@ -712,7 +769,7 @@ export function validateStaging(staging, { canonical, vocab, rawDocuments = new 
         if (isFixedFocalPath(claim.path) && claim.value != null && (claim.rawUnit ?? null) !== (rawObservation.rawUnit ?? null)) {
           addIssue(issues, "RAW_CLAIM_MISMATCH", `Focal raw unit does not match its source observation: ${claim.path}`, claim.path);
         }
-        const expected = normalizeClaimValue(claim.path, rawObservation.rawValue, rawObservation.rawUnit ?? null, { legacyFixedLensUnits });
+        const expected = normalizeClaimValue(claim.path, rawObservation.rawValue, rawObservation.rawUnit ?? null, { legacyFixedLensUnits, productType });
         if (!valuesEqual(expected.value, claim.value) || expected.unit !== claim.unit || !valuesEqual(rawObservation.locator, claim.locator)
           || !valuesEqual(rawObservation.conditions ?? {}, claim.conditions) || rawObservation.verification !== claim.verification) {
           addIssue(issues, "RAW_CLAIM_MISMATCH", `Staged claim does not match its raw observation: ${claim.path}`, claim.path);
@@ -774,6 +831,7 @@ function valuesEqual(left, right) {
 export function createCanonicalDiff(staging, canonical) {
   const entries = allCanonicalProducts(canonical);
   const existing = entries.find(({ product }) => product.id === staging.product.id)?.product ?? null;
+  const modelFill = lensModelNullFill(staging, existing);
   const sourcesById = new Map(stagingSources(staging).map((source) => [source.sourceId, source]));
   const changes = staging.claims.map((claim) => {
     const canonicalValue = existing ? getAtPath(existing, claim.path) : undefined;
@@ -808,12 +866,13 @@ export function createCanonicalDiff(staging, canonical) {
     productType: staging.productType,
     operation: existing ? "update-product" : "new-product",
     incomingProduct: existing ? null : createNewProductSkeleton(staging, { includeClaims: true }),
-    identityEvidence: existing ? null : {
+    identityEvidence: existing && !modelFill ? null : {
       ...staging.identityEvidence,
       source: { sourceId: staging.source.sourceId, url: staging.source.url, documentTitle: staging.source.documentTitle, documentVersion: staging.source.documentVersion },
     },
     canonicalProductDigest: existing ? digestValue(existing) : null,
-    status: !existing || changes.some((change) => change.reviewRequired) ? "review-required" : "no-action",
+    ...(modelFill ? { modelNullFill: modelFill } : {}),
+    status: !existing || modelFill || changes.some((change) => change.reviewRequired) ? "review-required" : "no-action",
     changes,
   };
 }
@@ -857,6 +916,7 @@ export function formatCanonicalDiff(diff) {
   if (diff.operation === "new-product") {
     lines.push("", "new canonical product:", JSON.stringify(diff.incomingProduct, null, 2), `identity source: ${diff.identityEvidence?.source?.url ?? "UNKNOWN"}`, `identity locator: ${JSON.stringify(diff.identityEvidence?.locator ?? null)}`);
   }
+  if (diff.modelNullFill) lines.push("", `model: UNKNOWN -> ${diff.modelNullFill.incomingValue} (reviewed identity null-fill; --allow-model-null-fill required)`, `identity source: ${diff.identityEvidence?.source?.url ?? "UNKNOWN"}`);
   for (const change of diff.changes) {
     lines.push("", `${change.path}:`, `  canonical: ${formatValue(change.canonicalValue, change.unit, change.path)}`, `  incoming:  ${formatValue(change.incomingValue, change.unit, change.path)}`, `  result:    ${change.category}`, `  source:    ${change.incomingSource.url}`, `  locator:   ${JSON.stringify(change.incomingSource.locator)}`);
   }

@@ -191,6 +191,7 @@ const commands = { status: runStatus, normalize: runNormalize, validate: runVali
     confirm: process.argv.includes("--confirm"), reviewer: option("--reviewer"), reason: option("--reason"),
     diffDigest: option("--diff-digest"), allowValueConflicts: process.argv.includes("--allow-value-conflicts"),
     allowNewProducts: process.argv.includes("--allow-new-products"),
+    allowModelNullFill: process.argv.includes("--allow-model-null-fill"),
   })),
   apply: async () => show(await applyBatch(projectRoot, batchId)),
   recover: async () => show(await recoverBatch(projectRoot, batchId, {

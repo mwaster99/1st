@@ -56,7 +56,7 @@ test('Actual interchangeable prime and zoom endpoints normalize independently to
  for(const [type,min,max] of [['prime',40,40],['zoom',24,70]]){
   const f=fixture([['specs.focal.min',min,'mm'],['specs.focal.max',max,'mm']],type);valid(f);assert.deepEqual(f.staging.product.specs.focal,{min,max});assert.ok(f.staging.claims.every(c=>c.unit==='mm'&&c.rawUnit==='mm'));
  }
- assert.deepEqual(normalizeClaimValue('specs.focal.min',4,'cm'),{value:40,unit:'mm',unknown:false});assert.throws(()=>normalizeClaimValue('specs.focal.min',40,'ft'),/Unsupported unit conversion/);
+ assert.deepEqual(normalizeClaimValue('specs.focal.min',4,'cm'),{value:40,unit:'mm',unknown:false});const badUnit=fixture([['specs.focal.min',40,'ft']]);assert.ok(validateStagingBatch([badUnit.staging],badUnit.context).items[0].errors.some(e=>e.code==='UNSUPPORTED_UNIT'));
 });
 
 test('Maximum constant and variable apertures preserve both endpoints and never reuse minimum selectable f-number',()=>{
@@ -78,14 +78,15 @@ test('UNKNOWN stays null; reversed/negative focal/aperture ranges and real sourc
 
 test('Strict existing canonical contract rejects malformed lens types and unsupported body/format/magnification dimensions',()=>{
  for(const [path,v] of [['specs.aperture.wide','F2.8'],['specs.focal.min',{}],['specs.stabilization','OSS'],['specs.minFocusM',[]],['specs.weight',false]])assert.throws(()=>validateSpecValue(v,path));
- for(const [key,value] of [['dimensions',[79,130.5]],['formatCoverage','APS-C'],['maximumMagnification',1],['minimumAperture',22],['ibis',{present:true}]]){const c=structuredClone(canonical);c.lenses[0].specs[key]=value;assert.throws(()=>validateCanonical(c,vocab),/Wrong product specification/);}
+ for(const [key,value] of [['dimensions',[79,130.5]],['maximumMagnification',1],['minimumAperture',22],['ibis',{present:true}]]){const c=structuredClone(canonical);c.lenses[0].specs[key]=value;assert.throws(()=>validateCanonical(c,vocab),/Wrong product specification/);}
+ const covered=structuredClone(canonical);covered.lenses[0].specs.formatCoverage='APS-C';assert.equal(validateCanonical(covered,vocab),true);covered.lenses[0].specs.formatCoverage='FE';assert.throws(()=>validateCanonical(covered,vocab),/Invalid lens format coverage/);
  assert.equal(a.readiness.pilotProductionPermitted,false);assert.equal(a.readiness.supportedCanonicalLensKeys.includes('minFocusConditions'),true);assert.equal(a.readiness.blockers.length,3);
 });
 
 test('Existing ID/model identity guard blocks implicit legacy backfill without touching canonical',async t=>{
  const old=canonical.lenses.find(l=>l.id==='sony-fe-40-g');
  const f=await newProductFixture(t,{mutateRaw:r=>{const l=r.items[1];l.identity={name:old.name,brand:old.brand,model:'Unauthorized replacement model',aliases:old.aliases,mount:old.mount,type:old.type};},mutateIdentityMap:map=>{map.entries[1].productId=old.id;}});
- const results=pipeline(f);assert.ok(results.every(r=>r.status===0),results.map(r=>r.stdout).join('\n'));await assert.rejects(approveNew(f),/Identity changes require a separate reviewed schema flow: model/);assert.equal(await readFile(f.p.canonical,'utf8'),f.before);
+ const results=pipeline(f);assert.notEqual(results.at(-1).status,0);assert.match(results.at(-1).stdout,/MODEL_IDENTITY_MISMATCH/);await assert.rejects(approveNew(f));assert.equal(await readFile(f.p.canonical,'utf8'),f.before);
 });
 
 test('Existing lens name alias prevents creating a duplicate under a new product ID',async t=>{

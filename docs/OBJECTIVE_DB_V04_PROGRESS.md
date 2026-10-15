@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony E-Mount production readiness 보완 완료 — 2026-10-15
+
+**구현/fixture 검증 완료, 실제 production 미시작.** Clean baseline `64e70e8`에서 기존 readiness의 3개 blocker를 보완했다. Existing lens의 absent/null model만 reviewed mapping·공식 code·verified manufacturer identity evidence로 최초 보강하며 ID/name/brand/mount/type/aliases와 non-null model 잠금은 유지한다. Diff/approval의 conditional `modelNullFill`과 **`--allow-model-null-fill`**로 명시적 승인·atomic apply·digest/recovery에 연결했다. Canonical 수동 편집이나 전체 identity lock 해제는 없다.
+
+새 `scripts/objective/lens-contracts.mjs`를 staging/approval/canonical에서 공유한다. Actual focal은 explicit mm/기존 변환, maximum aperture는 dimensionless 양수 number, OSS는 boolean/null이며 잘못된 타입/단위/범위는 CLI validate에서 rejected다. Optional **`specs.formatCoverage: full-frame | APS-C | null`** 하나만 추가했고 공식 fieldEvidence/source 경로로 승격한다. FE/APSC 모두 physical `Sony E`, 이름/mount 추정 coverage 생성0. 기존36lens에 model/coverage default를 주입하지 않는다. Vocab claimPaths는 coverage 하나만 append, 과거 registry prefix와 digest는 유지한다.
+
+격리 fixture에서 신규 prime/constant zoom/variable zoom, 기존 model null-fill/same-value/new-evidence/value-conflict/null-fill, identity-only+spec multi-source, explicit flag/forged approval 차단, interruption recovery/atomic apply/실제 CLI 재적용 **already-canonicalized/canonicalMatches:true**를 확인했다. **30sealed transactions/9brands** before→after/after→after exact replay 일치. Fixture cleanup 및 actual canonical byte 불변 확인. 실제 body/lens 제품·identity-map·scope·sealed artifacts·inventory·추천/UI/가격 변경0, worker/API/token0.
+
+최종 전체 **442/442**, Objective/production/catalog/coverage **415/415**, lens **60/60**(신규45/기존15), canonical validation/build/node11files/gitdiffcheck·신규 whitespace 통과(기존 Vite chunk 경고 유지). Canonical **165bodies/36lenses/201total**, SHA `3f971b678f83576b916ad00e9c5ff48c203ceee48d95be806754ea7c8f1c9842` 불변. 변경17파일/미commit·push없음. [26항목 상세·변경 파일·다음 실행 checkpoint](OBJECTIVE_DB_SONY_LENS_READINESS_IMPLEMENTATION.md), [계약](OBJECTIVE_DB_V04_FIELD_CONTRACTS.md#8-interchangeable-lens-production-readiness--2026-10-15).
+
+**Readiness blocker0, 별도 실제5개 pilot 가능.** Actual Sony lens production 미처리67은 그대로(current67/upcoming4/teleconverter2는 이전 공식 inventory 분류). 다음은 완료 변경 검토·commit 후 clean 상태에서 공식 현행/출시 재확인과 제품별 수집부터 시작한다. 후보 existing3/new2: SEL40F25G/SEL2470GM2/SEL2860/SELP1020G/SEL90M28G. Existing는 기존 ID에 reviewed code mapping+identity evidence와 explicit model-fill 승인, new는 explicit new-product 승인을 사용한다. 이 구현이나 fixture를 처음부터 재작성하지 않는다. D×L/배율/T-stop/runtime crop 소비는 별도 후속이며 이번에 추가하지 않았다.
+
 ## Lens phase — Sony E-Mount inventory / production readiness — 2026-10-15
 
 **분석 분기 완료, 실제 production은 readiness blocker로 미실행.** Clean baseline `3047bdf`에서 architecture/field contracts/canonical36lenses/map/scope/validators/normalization/기존 tests를 대조했다. 한국 Sony 공식 gallery의 rendered73cards와 모든73product summary를 확인: **optical identities71 = released/current67 +announced/upcoming4**, teleconverter adjacent2(별도 mount-adaptors 목록도 동일2, 중복집계0), observed finish variant1/명시적 단종확인0. Upcoming은 SEL400F45GM/SEL600F63GM/SEL814G/SEL28702의 곧 공개 표기로 분리했다. 구 GM과 GMII 동시 current는 독립 code 유지; A-looking URL의 SEL28702도 공식 card 근거상 Sony E이며 URL로 mount를 추정하지 않았다. 세계/지원 archive/모든 SKU 범위 완료는 선언하지 않는다.

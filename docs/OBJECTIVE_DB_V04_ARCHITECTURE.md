@@ -28,6 +28,7 @@ src/data/ingestion/
   prices/<batchId>.json                       가격 관찰 기록; 가격 단계에서 사용
 scripts/objective/ingest.mjs                 status/normalize/validate/diff/apply CLI
 scripts/objective/rules.mjs                  스키마·단위·규칙과 오류 분류
+scripts/objective/lens-contracts.mjs         lens 공통 field/type/range/coverage 계약
 scripts/objective/merge.mjs                  결정적 diff·충돌 검사·원자적 병합
 scripts/objective/raw-helper.mjs             raw evidence/source ID 반복 작성 도우미
 tests/objectiveIngest.test.js                파이프라인 경계·재실행·복구 테스트
@@ -186,3 +187,7 @@ manifest는 각 게이트를 통과한 후 원자적으로 기록한다. `status
 미래 Experience DB의 외래 키는 변경되지 않는 canonical `productId`다. 경험 기록은 `experienceId`, `productId`, 사용자/작성 맥락, 사용 기간, 촬영 상황, 관찰 시점, 주관 평가 및 출처를 별도 저장한다. 객관 사양의 `fieldEvidence`나 `cameraLegacyPolicy.json`에 경험을 섞지 않는다. 실제 정식 제품 ID만 참조한다. 미등록 장비는 검토 후 제품 ID에 연결하고, 가상 내장 렌즈 ID는 참조 대상에서 제외한다. 향후 단종/병합은 tombstone/redirect와 참조 무결성 테스트로 처리한다. v0.4에서는 이 **연결 계약만** 정하고 Experience DB 자체는 만들지 않는다.
 
 초기 v0.4는 `schemaVersion: 1`을 유지한다. `cameraProducts.json`은 기존 읽기 코드가 그대로 import하며, 선택적 메타데이터는 기존 `cameraCatalog.js`/엔진이 무시할 수 있다. `toLegacyPrice`의 원→만원 변환, `null` 가격, 기존 5개 첫 구매 구성·추가 구매 정책, 고정렌즈의 합성 렌즈 처리, 기존 제품 ID를 보존한다. 파이프라인 변경과 추천 엔진 변경을 같은 배치에 묶지 않는다. 필수 필드 변경이 실제로 필요해질 때만 명시적 `schemaVersion` 승격, 이행 스크립트, 전후 회귀 테스트를 별도 작업으로 수행한다.
+
+## Lens production readiness 보완 — 2026-10-15
+
+Lens는 기존 productType 경로를 사용한다. `specs.formatCoverage` 선택적 field와 공식 code에 근거한 existing lens missing-model-only null-fill을 최소 추가했다. Staging/approval/canonical은 lens 공통 validator를 재사용하고 단위 변환은 기존 테이블 한 곳을 참조한다. Null-fill은 conditional diff/승인 productOperation으로 explicit 승인·atomic apply·archive replay에 결합된다. 기존 legacy JSON과 sealed artifact는 변경하지 않는다. 구현 계약은 [field contracts 8절](OBJECTIVE_DB_V04_FIELD_CONTRACTS.md#8-interchangeable-lens-production-readiness--2026-10-15), 검증/실행 경계는 [구현 보고서](OBJECTIVE_DB_SONY_LENS_READINESS_IMPLEMENTATION.md)를 참조한다. 실제 Sony pilot은 별도 작업이다.

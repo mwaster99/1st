@@ -42,6 +42,17 @@ function approvalId(approval) {
   const { approvalId: ignored, ...body } = approval;
   return `approval-${digestValue(body)}`;
 }
+function productOperation(item, reason) {
+  const operation = item.operation ?? "update-product";
+  return {
+    productId: item.productId, operation, action: operation === "new-product" ? "accept" : "update",
+    incomingProductDigest: item.incomingProduct ? digestValue(item.incomingProduct) : null,
+    canonicalProductDigest: item.canonicalProductDigest,
+    identityEvidenceId: item.identityEvidence?.evidenceId ?? null,
+    reason,
+    ...(item.modelNullFill ? { modelNullFill: item.modelNullFill } : {}),
+  };
+}
 function checkApproval(approval, bundle) {
   ensure(approval.schemaVersion === 1 && approval.approvalId === approvalId(approval), "Approval integrity mismatch");
   ensure(approval.approvedBy?.name?.trim() && ["cli-explicit", "test-fixture"].includes(approval.approvedBy.method) && Number.isFinite(Date.parse(approval.approvedAt)), "Explicit approval identity/time missing");
@@ -49,18 +60,7 @@ function checkApproval(approval, bundle) {
   ensure(same(approval.incomingArtifactDigests, bundle.artifactDigests), "Approval invalid: staging/diff/raw/config changed; regenerate diff and approval");
   ensure(approval.incomingDigest === digestValue(bundle.artifactDigests), "Approval incoming digest mismatch");
   ensure(approval.diffDigest === digestValue(bundle.diff) && approval.diffFileDigest === bundle.artifactDigests[`diffs/${approval.batchId}.json`], "Approval diff mismatch");
-  const expectedOperations = bundle.diff.items.map((item) => {
-    const operation = item.operation ?? "update-product";
-    return {
-      productId: item.productId,
-      operation,
-      action: operation === "new-product" ? "accept" : "update",
-      incomingProductDigest: item.incomingProduct ? digestValue(item.incomingProduct) : null,
-      canonicalProductDigest: item.canonicalProductDigest,
-      identityEvidenceId: item.identityEvidence?.evidenceId ?? null,
-      reason: approval.approvalReason,
-    };
-  });
+  const expectedOperations = bundle.diff.items.map(item => productOperation(item, approval.approvalReason));
   ensure(approval.approvalReason?.trim() && same(approval.productOperations, expectedOperations), "Approval product operation mismatch");
 }
 
@@ -80,16 +80,9 @@ export async function approveBatch(root, batchId, options) {
     const productOperations = bundle.diff.items.map((item) => {
       const operation = item.operation ?? "update-product";
       if (operation === "new-product") ensure(options.allowNewProducts === true, "New product creation requires --allow-new-products and an explicit reason");
+      if (item.modelNullFill) ensure(options.allowModelNullFill === true, "Lens model null-fill requires --allow-model-null-fill and an explicit reason");
       ensure(["new-product", "update-product"].includes(operation), `Unsupported product operation: ${operation}`);
-      return {
-        productId: item.productId,
-        operation,
-        action: operation === "new-product" ? "accept" : "update",
-        incomingProductDigest: item.incomingProduct ? digestValue(item.incomingProduct) : null,
-        canonicalProductDigest: item.canonicalProductDigest,
-        identityEvidenceId: item.identityEvidence?.evidenceId ?? null,
-        reason: options.reason.trim(),
-      };
+      return productOperation(item, options.reason.trim());
     });
     const decisions = bundle.diff.items.flatMap((item) => item.changes.map((c) => {
       if (c.category === "value-conflict") ensure(options.allowValueConflicts === true, "Value conflict requires --allow-value-conflicts and an explicit reason");
@@ -97,7 +90,7 @@ export async function approveBatch(root, batchId, options) {
       return { productId: item.productId, path: c.path, claimId: c.claimId, category: c.category,
         action: c.incomingValue === null ? "ignore" : "accept", reason: options.reason.trim() };
     }));
-    ensure(decisions.some((d) => d.action === "accept") || productOperations.some((operation) => operation.operation === "new-product" && operation.action === "accept"), "No known facts/evidence to promote");
+    ensure(decisions.some((d) => d.action === "accept") || productOperations.some((operation) => operation.modelNullFill || operation.operation === "new-product" && operation.action === "accept"), "No known facts/evidence to promote");
     const candidate = proposedCanonical(canonical, bundle, decisions, productOperations);
     const approval = {
       schemaVersion: 1, batchId, productIds: bundle.manifest.items.map((i) => i.productId),
