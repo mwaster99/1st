@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-24-f14-gm",
+  "manufacturerModelCode": "SEL24F14GM",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL24F14GM",
+    "productId": "sony-fe-24-f14-gm",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-6b53cf497d64de0e65af",
+    "sourceId": "source-14f9e4362bb86e51",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL24F14GM"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-24-f14-gm",
+    "name": "Sony FE 24mm F1.4 GM",
+    "brand": "Sony",
+    "model": "SEL24F14GM",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.4,
+        "wide": 1.4
+      },
+      "filterMm": 67,
+      "focal": {
+        "max": 24,
+        "min": 24
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.24m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.24,
+      "stabilization": false,
+      "weight": 445
+    }
+  },
+  "source": {
+    "sourceId": "source-14f9e4362bb86e51",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm",
+    "publisher": "Sony",
+    "documentTitle": "FE 24mm F1.4 GM — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.279Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: 방진방적 설계12 및 불소 전면 코팅. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "81f144476ed91fb6395c5d17109e5709b36fcb0d96d185c1b12b9c8e301e9ab8"
+  },
+  "sources": [
+    {
+      "sourceId": "source-14f9e4362bb86e51",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm",
+      "publisher": "Sony",
+      "documentTitle": "FE 24mm F1.4 GM — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.279Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: 방진방적 설계12 및 불소 전면 코팅. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "81f144476ed91fb6395c5d17109e5709b36fcb0d96d185c1b12b9c8e301e9ab8"
+    },
+    {
+      "sourceId": "source-d1eb82e37b725dc7",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 24mm F1.4 GM — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.279Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:33.269Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.4k is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "c082d3bf329e08d60b395e26181c6d578ef321466e3aedc00b0a325daca1dab7"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.aperture.tele",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-14f9e4362bb86e51",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "가장 넓은 F1.4 조리개 설정에서도 일관적인 고해상도와 부드럽고 자연스러운 보케를 제공합니다."
+      },
+      "conditions": {
+        "sourceText": "가장 넓은 F1.4 조리개 설정에서도 일관적인 고해상도와 부드럽고 자연스러운 보케를 제공합니다.",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm/specifications",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-078ba2760abf33817bfa"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.aperture.wide",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-14f9e4362bb86e51",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "가장 넓은 F1.4 조리개 설정에서도 일관적인 고해상도와 부드럽고 자연스러운 보케를 제공합니다."
+      },
+      "conditions": {
+        "sourceText": "가장 넓은 F1.4 조리개 설정에서도 일관적인 고해상도와 부드럽고 자연스러운 보케를 제공합니다.",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm/specifications",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel24f14gm"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-2441da44af7fe80c0163"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.filterMm",
+      "value": 67,
+      "unit": "mm",
+      "rawValue": 67,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 67"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-8fe2f35c410724f688c9"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.focal.max",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 24"
+      },
+      "conditions": {
+        "sourceText": "24",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-9f907ab431e6a410f813"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.focal.min",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 24"
+      },
+      "conditions": {
+        "sourceText": "24",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5cc210b2ab0144b18048"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-503ec5e373e3ee1b7cad"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.24m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "Published 0.24m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.24m"
+      },
+      "conditions": {
+        "sourceText": "0.24m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.24
+        },
+        "unpromotedMaximumMagnification": 0.17,
+        "maximumMagnificationSourceText": "0.17",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a082ac824ea46247d5e0"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.minFocusM",
+      "value": 0.24,
+      "unit": "m",
+      "rawValue": 0.24,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.24m"
+      },
+      "conditions": {
+        "sourceText": "0.24m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.24
+        },
+        "unpromotedMaximumMagnification": 0.17,
+        "maximumMagnificationSourceText": "0.17",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c03283f9e1a4bd1764ee"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-8d9d36eeee9b9b1b55d4"
+    },
+    {
+      "productId": "sony-fe-24-f14-gm",
+      "path": "specs.weight",
+      "value": 445,
+      "unit": "g",
+      "rawValue": 445,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-d1eb82e37b725dc7",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 445g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          75.4,
+          92.4
+        ],
+        "dimensionSourceText": "75.4 x 92.4mm (D x L)",
+        "unpromotedOpticalConstruction": "10-13",
+        "sourceObservedAt": "2026-10-16T03:16:33.269Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-124b7a4f200f758d2ce7"
+    }
+  ]
+}

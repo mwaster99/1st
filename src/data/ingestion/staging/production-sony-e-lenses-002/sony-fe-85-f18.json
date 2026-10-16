@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-85-f18",
+  "manufacturerModelCode": "SEL85F18",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL85F18",
+    "productId": "sony-fe-85-f18",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-6715d0bd861a87c26a31",
+    "sourceId": "source-aee104d001ea7f6a",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL85F18"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-85-f18",
+    "name": "Sony FE 85mm F1.8",
+    "brand": "Sony",
+    "model": "SEL85F18",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.8,
+        "wide": 1.8
+      },
+      "filterMm": 67,
+      "focal": {
+        "max": 85,
+        "min": 85
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.8m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.8,
+      "stabilization": false,
+      "weight": 371
+    }
+  },
+  "source": {
+    "sourceId": "source-aee104d001ea7f6a",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f18",
+    "publisher": "Sony",
+    "documentTitle": "FE 85mm F1.8 — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.281Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: 방진/방습12 설계. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "4ec2a12c395ea256947b0d276d9c3de0a8c2d70748c52eab5c6cc907d98e9b20"
+  },
+  "sources": [
+    {
+      "sourceId": "source-aee104d001ea7f6a",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f18",
+      "publisher": "Sony",
+      "documentTitle": "FE 85mm F1.8 — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.281Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: 방진/방습12 설계. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "4ec2a12c395ea256947b0d276d9c3de0a8c2d70748c52eab5c6cc907d98e9b20"
+    },
+    {
+      "sourceId": "source-dd0937521146765a",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f18/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 85mm F1.8 — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.281Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:46.563Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.8 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "f61489bd85e3d7e65d1fafb80b1cacab4ca5bffbaa7b9821ac01b9e6101f58d5"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.aperture.tele",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3269050037e16e39f65c"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.aperture.wide",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-27476152a0d4a7e11486"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.filterMm",
+      "value": 67,
+      "unit": "mm",
+      "rawValue": 67,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 67"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-b6d36029e6c4346f0602"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.focal.max",
+      "value": 85,
+      "unit": "mm",
+      "rawValue": 85,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 85"
+      },
+      "conditions": {
+        "sourceText": "85",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-76f610cfd71429b32937"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.focal.min",
+      "value": 85,
+      "unit": "mm",
+      "rawValue": 85,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 85"
+      },
+      "conditions": {
+        "sourceText": "85",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7e44293e3a4b790407ee"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-ee88ed7e1247df853d90"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.8m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "Published 0.8m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.8m"
+      },
+      "conditions": {
+        "sourceText": "0.8m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.8
+        },
+        "unpromotedMaximumMagnification": 0.13,
+        "maximumMagnificationSourceText": "0.13",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-6a2db9875f7f3743691e"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.minFocusM",
+      "value": 0.8,
+      "unit": "m",
+      "rawValue": 0.8,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.8m"
+      },
+      "conditions": {
+        "sourceText": "0.8m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.8
+        },
+        "unpromotedMaximumMagnification": 0.13,
+        "maximumMagnificationSourceText": "0.13",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-2b66672c1570981ab82d"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-24c03a8e9fa392ba9341"
+    },
+    {
+      "productId": "sony-fe-85-f18",
+      "path": "specs.weight",
+      "value": 371,
+      "unit": "g",
+      "rawValue": 371,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-dd0937521146765a",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 371g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          78,
+          82
+        ],
+        "dimensionSourceText": "78 x 82mm (D x L)",
+        "unpromotedOpticalConstruction": "8-9",
+        "sourceObservedAt": "2026-10-16T03:16:46.563Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-8b2ff739a5649e116963"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel50f14gm/spec",
+  "documentTitle": "FE 50mm F1.4 GM — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:15:55.309Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.4k is not parsed if alternate explicit evidence is used.",
+  "accessedAt": "2026-10-16T03:25:45.279Z",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 50",
+      "value": 50,
+      "unit": "mm"
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정(SteadyShot): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 67",
+      "value": 67,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 516g",
+      "value": 516,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.41m(AF), 0.38m(MF)",
+      "value": 0.41,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.41m(AF), 0.38m(MF)",
+      "value": "AF 0.41m; MF 0.38m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-50-f14-gm",
+      "manufacturerModelCode": "SEL50F14GM",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 50mm F1.4 GM",
+        "brand": "Sony",
+        "model": "SEL50F14GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "초점 거리(MM): 50"
+          },
+          "conditions": {
+            "sourceText": "50",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "초점 거리(MM): 50"
+          },
+          "conditions": {
+            "sourceText": "50",
+            "meaning": "actual lens focal length; not 35mm equivalent",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 1,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "mountSourceText": "마운트: 소니 E-마운트",
+            "coverageNotInferredFromName": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true,
+            "scope": "lens optical stabilization only"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 3,
+          "rawValue": 67,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "필터 직경(MM): 67"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 516,
+          "rawUnit": "g",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "무게: 516g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "not specified in reviewed weight row",
+            "unpromotedDiameterLengthMm": [
+              80.6,
+              96
+            ],
+            "dimensionSourceText": "80.6 x 96mm (D x L)",
+            "unpromotedOpticalConstruction": "11-14",
+            "sourceObservedAt": "2026-10-16T03:15:55.309Z"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 5,
+          "rawValue": 0.41,
+          "rawUnit": "m",
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "최소 초점 거리: 0.41m(AF), 0.38m(MF)"
+          },
+          "conditions": {
+            "sourceText": "0.41m(AF), 0.38m(MF)",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.41,
+              "MF": 0.38
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.16,
+              "MF": 0.18
+            },
+            "maximumMagnificationSourceText": "0.16(AF), 0.18(MF)",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+            "frontElementWorkingDistanceNotDerived": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 6,
+          "rawValue": "AF 0.41m; MF 0.38m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+          "rawUnit": null,
+          "locator": {
+            "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+            "row": "최소 초점 거리: 0.41m(AF), 0.38m(MF)"
+          },
+          "conditions": {
+            "sourceText": "0.41m(AF), 0.38m(MF)",
+            "representativeBasis": "AF",
+            "officialFocusDistancesM": {
+              "AF": 0.41,
+              "MF": 0.38
+            },
+            "unpromotedMaximumMagnification": {
+              "AF": 0.16,
+              "MF": 0.18
+            },
+            "maximumMagnificationSourceText": "0.16(AF), 0.18(MF)",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+            "frontElementWorkingDistanceNotDerived": true,
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "58996125735eca8c8c87cf962f590afa222986016393230455b16cafcc850e78",
+  "sourceId": "source-b7d115e18d1fa865"
+}

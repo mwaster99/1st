@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-24-f28-g",
+  "manufacturerModelCode": "SEL24F28G",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL24F28G",
+    "productId": "sony-fe-24-f28-g",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-ce095ddce472e6a7fadb",
+    "sourceId": "source-a26c11cbbd5a0642",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL24F28G"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-24-f28-g",
+    "name": "Sony FE 24mm F2.8 G",
+    "brand": "Sony",
+    "model": "SEL24F28G",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 2.8,
+        "wide": 2.8
+      },
+      "filterMm": 49,
+      "focal": {
+        "max": 24,
+        "min": 24
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 0.24m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.24,
+      "stabilization": false,
+      "weight": 162
+    }
+  },
+  "source": {
+    "sourceId": "source-a26c11cbbd5a0642",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel24f28g",
+    "publisher": "Sony",
+    "documentTitle": "FE 24mm F2.8 G — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.278Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "f1f447d03ab097f3b83426e33a9e986c7ee11629a0649188a9cb8eb10709a508"
+  },
+  "sources": [
+    {
+      "sourceId": "source-858535ac1f1a2e16",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel24f28g/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 24mm F2.8 G — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.278Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:08.151Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 2.8 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "93e93dd064994e4875fb506aaa21d3de0bd132736c3a93f77dcd721b2441c236"
+    },
+    {
+      "sourceId": "source-a26c11cbbd5a0642",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel24f28g",
+      "publisher": "Sony",
+      "documentTitle": "FE 24mm F2.8 G — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.278Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "f1f447d03ab097f3b83426e33a9e986c7ee11629a0649188a9cb8eb10709a508"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.aperture.tele",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 2.8"
+      },
+      "conditions": {
+        "sourceText": "2.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-39d22151ff83f9f933c0"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.aperture.wide",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 2.8"
+      },
+      "conditions": {
+        "sourceText": "2.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-4a1cb55acb01767a5b7d"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.filterMm",
+      "value": 49,
+      "unit": "mm",
+      "rawValue": 49,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 49"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c656d4be19def2068d1d"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.focal.max",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 24"
+      },
+      "conditions": {
+        "sourceText": "24",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7d43898e836bd3a67c0c"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.focal.min",
+      "value": 24,
+      "unit": "mm",
+      "rawValue": 24,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 24"
+      },
+      "conditions": {
+        "sourceText": "24",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1fef1bb280643d9ee140"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a7b124db180e7308ca73"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.minFocusConditions",
+      "value": "AF 0.24m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "AF 0.24m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.24m(AF), 0.18m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.24m(AF), 0.18m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.24,
+          "MF": 0.18
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.13,
+          "MF": 0.19
+        },
+        "maximumMagnificationSourceText": "0.13배(AF), 0.19배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-61e1087ba1408d67e74a"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.minFocusM",
+      "value": 0.24,
+      "unit": "m",
+      "rawValue": 0.24,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.24m(AF), 0.18m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.24m(AF), 0.18m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.24,
+          "MF": 0.18
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.13,
+          "MF": 0.19
+        },
+        "maximumMagnificationSourceText": "0.13배(AF), 0.19배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a37c91d84583725e4b17"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d7d1fca51c7f15812c93"
+    },
+    {
+      "productId": "sony-fe-24-f28-g",
+      "path": "specs.weight",
+      "value": 162,
+      "unit": "g",
+      "rawValue": 162,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-858535ac1f1a2e16",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 162g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          68,
+          45
+        ],
+        "dimensionSourceText": "68 x 45mm (D x L)",
+        "unpromotedOpticalConstruction": "7-8",
+        "sourceObservedAt": "2026-10-16T03:16:08.151Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-77011e756763d8023d69"
+    }
+  ]
+}

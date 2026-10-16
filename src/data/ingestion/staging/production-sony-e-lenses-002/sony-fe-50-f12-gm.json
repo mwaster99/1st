@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-50-f12-gm",
+  "manufacturerModelCode": "SEL50F12GM",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL50F12GM",
+    "productId": "sony-fe-50-f12-gm",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-078954e985dbaae8778d",
+    "sourceId": "source-c3ceb20e19cfd507",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL50F12GM"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-50-f12-gm",
+    "name": "Sony FE 50mm F1.2 GM",
+    "brand": "Sony",
+    "model": "SEL50F12GM",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.2,
+        "wide": 1.2
+      },
+      "filterMm": 72,
+      "focal": {
+        "max": 50,
+        "min": 50
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.4m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.4,
+      "stabilization": false,
+      "weight": 778
+    }
+  },
+  "source": {
+    "sourceId": "source-c3ceb20e19cfd507",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel50f12gm",
+    "publisher": "Sony",
+    "documentTitle": "FE 50mm F1.2 GM — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.280Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "f46e0e821010d3033c1df179b61601be499eb653322f58d496cb985e3c6b5722"
+  },
+  "sources": [
+    {
+      "sourceId": "source-ac81252724d37b2b",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel50f12gm/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F1.2 GM — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:38.217Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.2 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "8eb527fc7ff6460f42c01d580652b2295905d0618816c158a3db82968c90710f"
+    },
+    {
+      "sourceId": "source-c3ceb20e19cfd507",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel50f12gm",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F1.2 GM — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "f46e0e821010d3033c1df179b61601be499eb653322f58d496cb985e3c6b5722"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.aperture.tele",
+      "value": 1.2,
+      "unit": null,
+      "rawValue": 1.2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.2"
+      },
+      "conditions": {
+        "sourceText": "1.2",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a86eddaaa7739904e8a7"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.aperture.wide",
+      "value": 1.2,
+      "unit": null,
+      "rawValue": 1.2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.2"
+      },
+      "conditions": {
+        "sourceText": "1.2",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7bc2277ac0f202f8b468"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.filterMm",
+      "value": 72,
+      "unit": "mm",
+      "rawValue": 72,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 72"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3abf871820e398b0bdbe"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.focal.max",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "sourceText": "50",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e04ca67a9a4ff6132762"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.focal.min",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "sourceText": "50",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-51f949cad8b73fd7bd66"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0c9f418251f3888c6051"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.4m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "Published 0.4m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.4m(1.32피트)"
+      },
+      "conditions": {
+        "sourceText": "0.4m(1.32피트)",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.4
+        },
+        "unpromotedMaximumMagnification": 0.17,
+        "maximumMagnificationSourceText": "0.17",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-56e0590d53b22337eadf"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.minFocusM",
+      "value": 0.4,
+      "unit": "m",
+      "rawValue": 0.4,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.4m(1.32피트)"
+      },
+      "conditions": {
+        "sourceText": "0.4m(1.32피트)",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.4
+        },
+        "unpromotedMaximumMagnification": 0.17,
+        "maximumMagnificationSourceText": "0.17",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-8425aebb6388a5df156e"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1ab146cecc7af252b4c4"
+    },
+    {
+      "productId": "sony-fe-50-f12-gm",
+      "path": "specs.weight",
+      "value": 778,
+      "unit": "g",
+      "rawValue": 778,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-ac81252724d37b2b",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 778g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          87,
+          108
+        ],
+        "dimensionSourceText": "87 x 108mm (D x L)",
+        "unpromotedOpticalConstruction": "10-14",
+        "sourceObservedAt": "2026-10-16T03:16:38.217Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-137185d2fb93d393c688"
+    }
+  ]
+}

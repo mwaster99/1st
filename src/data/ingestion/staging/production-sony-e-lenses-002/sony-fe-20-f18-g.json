@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-20-f18-g",
+  "manufacturerModelCode": "SEL20F18G",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL20F18G",
+    "productId": "sony-fe-20-f18-g",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-cab1714a65e7964e60b3",
+    "sourceId": "source-5079afa31e79eb6b",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL20F18G"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-20-f18-g",
+    "name": "Sony FE 20mm F1.8 G",
+    "brand": "Sony",
+    "model": "SEL20F18G",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.8,
+        "wide": 1.8
+      },
+      "filterMm": 67,
+      "focal": {
+        "max": 20,
+        "min": 20
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 0.19m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.19,
+      "stabilization": false,
+      "weight": 373
+    }
+  },
+  "source": {
+    "sourceId": "source-5079afa31e79eb6b",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel20f18g",
+    "publisher": "Sony",
+    "documentTitle": "FE 20mm F1.8 G — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.277Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "f70857b45c727a311906ee19046ddfe3a59135f70abf591cb8fd67805bbe9bdd"
+  },
+  "sources": [
+    {
+      "sourceId": "source-5079afa31e79eb6b",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel20f18g",
+      "publisher": "Sony",
+      "documentTitle": "FE 20mm F1.8 G — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.277Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "f70857b45c727a311906ee19046ddfe3a59135f70abf591cb8fd67805bbe9bdd"
+    },
+    {
+      "sourceId": "source-56c33d469de68995",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel20f18g/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 20mm F1.8 G — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.277Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:04.428Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.8 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "57e1c7914a5dbe2d1282e6d3f75a3d7ba6b331b417514f4e1bf926004020250f"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.aperture.tele",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e0b31d69861a780fc62b"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.aperture.wide",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d5f77d1bf25314064c81"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.filterMm",
+      "value": 67,
+      "unit": "mm",
+      "rawValue": 67,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 67"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0001791dd7a8a61d2443"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.focal.max",
+      "value": 20,
+      "unit": "mm",
+      "rawValue": 20,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 20"
+      },
+      "conditions": {
+        "sourceText": "20",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-00265f1fc997b0c8ce14"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.focal.min",
+      "value": 20,
+      "unit": "mm",
+      "rawValue": 20,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 20"
+      },
+      "conditions": {
+        "sourceText": "20",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d10306ac8cc5f16d1d25"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-4f7fa9b9cb9341efb935"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.minFocusConditions",
+      "value": "AF 0.19m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "AF 0.19m; MF 0.18m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.19m(AF), 0.18m(MF) (0.63ft(AF), 0.59ft(MF))"
+      },
+      "conditions": {
+        "sourceText": "0.19m(AF), 0.18m(MF) (0.63ft(AF), 0.59ft(MF))",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.19,
+          "MF": 0.18
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.2,
+          "MF": 0.22
+        },
+        "maximumMagnificationSourceText": "0.20(AF), 0.22(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a9e61a6660e9aa26558e"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.minFocusM",
+      "value": 0.19,
+      "unit": "m",
+      "rawValue": 0.19,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.19m(AF), 0.18m(MF) (0.63ft(AF), 0.59ft(MF))"
+      },
+      "conditions": {
+        "sourceText": "0.19m(AF), 0.18m(MF) (0.63ft(AF), 0.59ft(MF))",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.19,
+          "MF": 0.18
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.2,
+          "MF": 0.22
+        },
+        "maximumMagnificationSourceText": "0.20(AF), 0.22(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-b9d647cd293563de8045"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7058c1986de72dfc1412"
+    },
+    {
+      "productId": "sony-fe-20-f18-g",
+      "path": "specs.weight",
+      "value": 373,
+      "unit": "g",
+      "rawValue": 373,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-56c33d469de68995",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 373g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          73.5,
+          84.7
+        ],
+        "dimensionSourceText": "73.5 x 84.7mm (D x L)",
+        "unpromotedOpticalConstruction": "12-14",
+        "sourceObservedAt": "2026-10-16T03:16:04.428Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-93988d508c79906f3b6b"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-50-f25-g",
+  "manufacturerModelCode": "SEL50F25G",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL50F25G",
+    "productId": "sony-fe-50-f25-g",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-d47bcbd916a4412a800e",
+    "sourceId": "source-74f91a36a0e79ebc",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL50F25G"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-50-f25-g",
+    "name": "Sony FE 50mm F2.5 G",
+    "brand": "Sony",
+    "model": "SEL50F25G",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 2.5,
+        "wide": 2.5
+      },
+      "filterMm": 49,
+      "focal": {
+        "max": 50,
+        "min": 50
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 0.35m; MF 0.31m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.35,
+      "stabilization": false,
+      "weight": 174
+    }
+  },
+  "source": {
+    "sourceId": "source-74f91a36a0e79ebc",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel50f25g",
+    "publisher": "Sony",
+    "documentTitle": "FE 50mm F2.5 G — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.280Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "c96a22cb2e7332f520c5126659c54eeffc3187f657bfcd2d89c50e7044ad22c4"
+  },
+  "sources": [
+    {
+      "sourceId": "source-74f91a36a0e79ebc",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel50f25g",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F2.5 G — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "c96a22cb2e7332f520c5126659c54eeffc3187f657bfcd2d89c50e7044ad22c4"
+    },
+    {
+      "sourceId": "source-944aa63cb856e4e4",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel50f25g/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F2.5 G — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:41.807Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 2.5 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "622ec1c5bbdd81b543102037d3a662bac76f53fed9dbc24d0a375cbc4e1908ef"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.aperture.tele",
+      "value": 2.5,
+      "unit": null,
+      "rawValue": 2.5,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 2.5"
+      },
+      "conditions": {
+        "sourceText": "2.5",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-344655c174f0d006c912"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.aperture.wide",
+      "value": 2.5,
+      "unit": null,
+      "rawValue": 2.5,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 2.5"
+      },
+      "conditions": {
+        "sourceText": "2.5",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-36f3a73e8bb5a008adc3"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.filterMm",
+      "value": 49,
+      "unit": "mm",
+      "rawValue": 49,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 49"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-2866ae343c3e0702d59d"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.focal.max",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "sourceText": "50",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-eeca34262d331df447b5"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.focal.min",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "sourceText": "50",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e7ca06b5d3fb472f2364"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-300d7ed5396f9c0e9139"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.minFocusConditions",
+      "value": "AF 0.35m; MF 0.31m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "AF 0.35m; MF 0.31m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.35m(AF), 0.31m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.35m(AF), 0.31m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.35,
+          "MF": 0.31
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.18,
+          "MF": 0.21
+        },
+        "maximumMagnificationSourceText": "0.18배(AF), 0.21배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-9e3d1c646e5dec8e75a9"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.minFocusM",
+      "value": 0.35,
+      "unit": "m",
+      "rawValue": 0.35,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.35m(AF), 0.31m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.35m(AF), 0.31m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.35,
+          "MF": 0.31
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.18,
+          "MF": 0.21
+        },
+        "maximumMagnificationSourceText": "0.18배(AF), 0.21배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-168eebd95274eee6e806"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-15c462ed65f43bdacff0"
+    },
+    {
+      "productId": "sony-fe-50-f25-g",
+      "path": "specs.weight",
+      "value": 174,
+      "unit": "g",
+      "rawValue": 174,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-944aa63cb856e4e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 174g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          68,
+          45
+        ],
+        "dimensionSourceText": "68 x 45mm (D x L)",
+        "unpromotedOpticalConstruction": "9-9",
+        "sourceObservedAt": "2026-10-16T03:16:41.807Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-676176298ec50c122ed1"
+    }
+  ]
+}

@@ -1,5 +1,17 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony E-Mount production batch 002 완료 — 2026-10-16
+
+**일반 FE 단렌즈12개 실제 production 성공.** Clean baseline5b1f70d에서 inventory/readiness/pilot001/field contracts/map/vocab/canonical과 Sony 공식 current gallery/개별spec을 대조했다. Selection을 worker 전에 고정: SEL16F18G/SEL14F18GM/SEL20F18G/SEL24F28G/SEL24F14GM/SEL35F14GM/SEL50F14GM/SEL50F12GM/SEL50F25G/SEL85F14GM2/SEL55F18Z/SEL85F18. **신규11+기존sony-fe-85-f18보강1**, 단일12-item atomic transaction으로 canonical **165/38/203→165/49/214**. 기존165bodies/다른37lenses/기존identity·가격 불변.85F18 model최초보강만 --allow-model-null-fill,신규 --allow-new-products;value-conflict허용0.
+
+Raw26(제품별2,35GM/50F1.4GM3),120specclaims/known118/UNKNOWN2/fieldEvidence118/structuredidentity12. Actual prime mm/maxF동일endpoints/physicalSonyE/full-frame/OSSfalse11·55ZAUNKNOWN/AF·MF대표거리/배율·D×L·minimumF·design provenance 유지.14GM filter숫자UNKNOWN.24/35/50F1.4/85GMII사양1.4k는parse금지,별도공식F1.4본문에연결.진짜source/valueconflict0.기존85F18legacyreference보존으로canonicalsources3(이번batch2);identity-onlysource포함집계. Timestamp **2026-10-16T03:25:45.253Z–2026-10-16T03:25:45.281Z**는raw-helper실제UTCcapture,앞선browser조회시각별도보존.가격/추천/UI/schema/pipelinecode변경0.
+
+독립worker12tasks/API12/retry0/failure0, **input10,071/output5,960/total16,031**.숫자추출/오기경고채택,과도한OSSnull/prime tele null/미지원facts누락은main이공식자료·기존계약으로교정.review12제품/120paths/추가사용자판단0,publicfixture12삭제,patch0. Diff110new+8same-value/new-evidence+2specnull-fill,model-fill1별도;approval118accept/2UNKNOWNignore. 실제재적용 **already-canonicalized/canonicalMatches:true**,exactsealedbefore/after/replay검증. AfterSHA **c853a3f834890184df74aebc76f8c7ecc10fd56f2a2876f27f3e36ecff3ddb66**.
+
+최종전체 **478/478**,Objective **451/451**,lens **96/96**(신규19/기존77),기존body/brand **246/246**,canonicalvalidation/build/node8files/gitdiffcheck·신규whitespace통과(기존chunk경고유지).기존회귀/기존sealedartifact수정0. [44항목 상세보고](OBJECTIVE_DB_SONY_LENS_PRODUCTION_002.md),[재개checkpoint](../src/data/ingestion/sony-e-lenses-production-002.json),[신규회귀](../tests/sonyLensProduction002.test.js).
+
+**Sony lens 실제production17/67완료,잔여50**(신규48/기존보강2),upcoming4/TC2별도.잔여family FEprimes8/APSC9/FEzooms24/special9.다음은완료변경검토·commit/clean확인후 **003 remaining FE primes8개**,004APSC9/005zoom12/006zoom12/007special9preflight의5개batch+freshcoverageaudit계획.기존002APSC제안은이번사용자FEprime지시로대체,과거snapshot보존.이번12개worker/raw/apply를반복하지않는다. 변경은미commit상태이며commit/push실행0.
+
 ## Lens phase — Sony E-Mount production pilot 001 완료 — 2026-10-15
 
 **실제5개 production 성공.** Clean baseline `bec609a`에서 readiness/inventory/contracts/canonical36lenses/map/vocab/scope/pipeline을 확인하고 Sony Korea rendered gallery73cards와 지정5개 product/spec을 재조회했다. **SEL40F25G/SEL2470GM2/SEL2860 기존3개 보강 +SELP1020G/SEL90M28G 신규2개**. 단일5-item atomic transaction으로 canonical **165/36/201→165/38/203**, 기존165bodies/다른33lenses/기존가격 불변. 기존 ID/name/brand/mount/type/aliases 유지, model3개 최초 null-fill에 `--allow-model-null-fill` 및 신규2개 `--allow-new-products`로 명시적 승인했다.

@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-14-f18-gm",
+  "manufacturerModelCode": "SEL14F18GM",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL14F18GM",
+    "productId": "sony-fe-14-f18-gm",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-0dfad66d70280e9bc4b6",
+    "sourceId": "source-d5cfd632cc2cd180",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL14F18GM"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-14-f18-gm",
+    "name": "Sony FE 14mm F1.8 GM",
+    "brand": "Sony",
+    "model": "SEL14F18GM",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.8,
+        "wide": 1.8
+      },
+      "filterMm": null,
+      "focal": {
+        "max": 14,
+        "min": 14
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.25m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.25,
+      "stabilization": false,
+      "weight": 460
+    }
+  },
+  "source": {
+    "sourceId": "source-d5cfd632cc2cd180",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel14f18gm",
+    "publisher": "Sony",
+    "documentTitle": "FE 14mm F1.8 GM — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.261Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "ede05711bccd64b35f61c3dcd792d5e9bf1507d96357bd0d76252d3bc58c0942"
+  },
+  "sources": [
+    {
+      "sourceId": "source-68f88bc835175096",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel14f18gm/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 14mm F1.8 GM — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.261Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:00.483Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.8 is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "6ef71007df7dab9920fd03018811428faa8fa11eed0d0716e936ab6c7b9bac92"
+    },
+    {
+      "sourceId": "source-d5cfd632cc2cd180",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel14f18gm",
+      "publisher": "Sony",
+      "documentTitle": "FE 14mm F1.8 GM — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.261Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "ede05711bccd64b35f61c3dcd792d5e9bf1507d96357bd0d76252d3bc58c0942"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.aperture.tele",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-cadfa32535bb06cb39d6"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.aperture.wide",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3c6ee5dcf907c3eb5086"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.filterMm",
+      "value": null,
+      "unit": "mm",
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): -"
+      },
+      "conditions": {
+        "interpretation": "No numeric front-filter diameter; rear-filter template context, not zero."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c97064f73a792d58d7fa"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.focal.max",
+      "value": 14,
+      "unit": "mm",
+      "rawValue": 14,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 14"
+      },
+      "conditions": {
+        "sourceText": "14",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a0437a107251661908b5"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.focal.min",
+      "value": 14,
+      "unit": "mm",
+      "rawValue": 14,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 14"
+      },
+      "conditions": {
+        "sourceText": "14",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-653851d7f65bc7df0721"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d19563bcb2805ac36a12"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.25m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "Published 0.25m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.25m"
+      },
+      "conditions": {
+        "sourceText": "0.25m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.25
+        },
+        "unpromotedMaximumMagnification": 0.1,
+        "maximumMagnificationSourceText": "0.1",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d689a6fcdfd0eda068d6"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.minFocusM",
+      "value": 0.25,
+      "unit": "m",
+      "rawValue": 0.25,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.25m"
+      },
+      "conditions": {
+        "sourceText": "0.25m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.25
+        },
+        "unpromotedMaximumMagnification": 0.1,
+        "maximumMagnificationSourceText": "0.1",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e1e54592813d03a9a58d"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a326f81d5b4e2a18d4ed"
+    },
+    {
+      "productId": "sony-fe-14-f18-gm",
+      "path": "specs.weight",
+      "value": 460,
+      "unit": "g",
+      "rawValue": 460,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-68f88bc835175096",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 460g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          83,
+          99.8
+        ],
+        "dimensionSourceText": "83 x 99.8mm (D x L)",
+        "unpromotedOpticalConstruction": "11-14",
+        "sourceObservedAt": "2026-10-16T03:16:00.483Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d31783a4c0ea2fda72f1"
+    }
+  ]
+}

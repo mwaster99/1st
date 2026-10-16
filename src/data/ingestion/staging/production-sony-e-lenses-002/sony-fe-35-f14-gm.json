@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-35-f14-gm",
+  "manufacturerModelCode": "SEL35F14GM",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL35F14GM",
+    "productId": "sony-fe-35-f14-gm",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-62f3f70bce0c0e227ed0",
+    "sourceId": "source-833ccf386eca54ee",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL35F14GM"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-35-f14-gm",
+    "name": "Sony FE 35mm F1.4 GM",
+    "brand": "Sony",
+    "model": "SEL35F14GM",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.4,
+        "wide": 1.4
+      },
+      "filterMm": 67,
+      "focal": {
+        "max": 35,
+        "min": 35
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 0.27m; MF 0.25m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.27,
+      "stabilization": false,
+      "weight": 524
+    }
+  },
+  "source": {
+    "sourceId": "source-833ccf386eca54ee",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel35f14gm",
+    "publisher": "Sony",
+    "documentTitle": "FE 35mm F1.4 GM — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.279Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "3587c91dd5b7bd29d06f250f5976bbd07b006d479c362a6df63ff8ec17c7c8ab"
+  },
+  "sources": [
+    {
+      "sourceId": "source-833ccf386eca54ee",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel35f14gm",
+      "publisher": "Sony",
+      "documentTitle": "FE 35mm F1.4 GM — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.279Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: UNKNOWN; not inferred. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "3587c91dd5b7bd29d06f250f5976bbd07b006d479c362a6df63ff8ec17c7c8ab"
+    },
+    {
+      "sourceId": "source-c3493f73b9bd783e",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel35f14gm/spec",
+      "publisher": "Sony",
+      "documentTitle": "FE 35mm F1.4 GM — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.279Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:34.313Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.4k is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "58de70ec466782cc8971f2c1d7ad78e0d4a9e018d97745baae70f3d051c76a66"
+    },
+    {
+      "sourceId": "source-ce418f6d854e43e4",
+      "sourceType": "manufacturer",
+      "url": "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel35f14gm?rid=1",
+      "publisher": "Sony",
+      "documentTitle": "FE 35mm F1.4 GM — Sony official aperture feature",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-10-16T03:25:45.279Z",
+      "evidenceScope": "Explicit maximum F1.4 statement, static manufacturer feature only; excludes generated FAQ.",
+      "contentDigest": "1ce6382f4637058f0b43eaf021444248c0f97846ea64db3ec5522bf03ad200c2"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.aperture.tele",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ce418f6d854e43e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "F1.4 max aperture for extraordinary brightness and depth of field"
+      },
+      "conditions": {
+        "sourceText": "F1.4 max aperture for extraordinary brightness and depth of field",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/lenses/products/sel35f14gm/spec",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel35f14gm?rid=1"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-cfdb4eb85de221c9d983"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.aperture.wide",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-ce418f6d854e43e4",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "F1.4 max aperture for extraordinary brightness and depth of field"
+      },
+      "conditions": {
+        "sourceText": "F1.4 max aperture for extraordinary brightness and depth of field",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/lenses/products/sel35f14gm/spec",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel35f14gm?rid=1"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1b6456e740e7164b38e1"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.filterMm",
+      "value": 67,
+      "unit": "mm",
+      "rawValue": 67,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 67"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5253becefd861fd94155"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.focal.max",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 35"
+      },
+      "conditions": {
+        "sourceText": "35",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c73325e193ac91014a0d"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.focal.min",
+      "value": 35,
+      "unit": "mm",
+      "rawValue": 35,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 35"
+      },
+      "conditions": {
+        "sourceText": "35",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-020bc4c66f7dea4521bc"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fd16c3cd5bbde8606ca7"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.minFocusConditions",
+      "value": "AF 0.27m; MF 0.25m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "AF 0.27m; MF 0.25m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.27m(AF), 0.25m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.27m(AF), 0.25m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.27,
+          "MF": 0.25
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.23,
+          "MF": 0.26
+        },
+        "maximumMagnificationSourceText": "0.23배(AF) 0.26배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3101540be8866ac29fc3"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.minFocusM",
+      "value": 0.27,
+      "unit": "m",
+      "rawValue": 0.27,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.27m(AF), 0.25m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.27m(AF), 0.25m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.27,
+          "MF": 0.25
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.23,
+          "MF": 0.26
+        },
+        "maximumMagnificationSourceText": "0.23배(AF) 0.26배(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-f96c09b5754883b4487e"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-dfac153ac3fa1e404038"
+    },
+    {
+      "productId": "sony-fe-35-f14-gm",
+      "path": "specs.weight",
+      "value": 524,
+      "unit": "g",
+      "rawValue": 524,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-c3493f73b9bd783e",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 524g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          76,
+          96
+        ],
+        "dimensionSourceText": "76 x 96mm (D x L)",
+        "unpromotedOpticalConstruction": "10-14",
+        "sourceObservedAt": "2026-10-16T03:16:34.313Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fd93d98d94787d302ece"
+    }
+  ]
+}

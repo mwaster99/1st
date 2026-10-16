@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-002",
+  "itemKey": "sony-fe-85-f14-gm2",
+  "manufacturerModelCode": "SEL85F14GM2",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL85F14GM2",
+    "productId": "sony-fe-85-f14-gm2",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-b05e9e0fbf230752538a",
+    "sourceId": "source-9041620a1180e6bf",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Product heading / support model / current gallery cross-check",
+      "row": "SEL85F14GM2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-85-f14-gm2",
+    "name": "Sony FE 85mm F1.4 GM II",
+    "brand": "Sony",
+    "model": "SEL85F14GM2",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.4,
+        "wide": 1.4
+      },
+      "filterMm": 77,
+      "focal": {
+        "max": 85,
+        "min": 85
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 0.85m; MF 0.8m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.85,
+      "stabilization": false,
+      "weight": 642
+    }
+  },
+  "source": {
+    "sourceId": "source-9041620a1180e6bf",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2",
+    "publisher": "Sony",
+    "documentTitle": "FE 85mm F1.4 GM II — Sony official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:25:45.280Z",
+    "evidenceScope": "Exact current product identity. Unpromoted design: 나노 AR 코팅 II; 방진방적 디자인18; 전면 불소 코팅. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+    "contentDigest": "a49f4eef86d6dd5856f9f19956de0f953fee04ebd3a7786614a1f7b2edb5b206"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1856c27af76755ec",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 85mm F1.4 GM II — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact-model numerical rows individually browser reviewed at 2026-10-16T03:16:43.851Z. Raw-helper records actual UTC capture time; original observation timestamp retained. Malformed aperture 1.4k is not parsed if alternate explicit evidence is used.",
+      "contentDigest": "3ee23b5ae4bbb2a8c06d64486e4fd6a1b5b0b39447c1f528d8f8d38502a07c4d"
+    },
+    {
+      "sourceId": "source-9041620a1180e6bf",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2",
+      "publisher": "Sony",
+      "documentTitle": "FE 85mm F1.4 GM II — Sony official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:25:45.280Z",
+      "evidenceScope": "Exact current product identity. Unpromoted design: 나노 AR 코팅 II; 방진방적 디자인18; 전면 불소 코팅. Snapshot observed before capture; capture clock supplied automatically by raw-helper.",
+      "contentDigest": "a49f4eef86d6dd5856f9f19956de0f953fee04ebd3a7786614a1f7b2edb5b206"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.aperture.tele",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9041620a1180e6bf",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "대구경 F1.4 최대 조리개와 11날 원형 조리개 유닛이 정교한 보케를 선사합니다."
+      },
+      "conditions": {
+        "sourceText": "대구경 F1.4 최대 조리개와 11날 원형 조리개 유닛이 정교한 보케를 선사합니다.",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2/specifications",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5157180d1ad2572fc203"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.aperture.wide",
+      "value": 1.4,
+      "unit": null,
+      "rawValue": 1.4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-9041620a1180e6bf",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "대구경 F1.4 최대 조리개와 11날 원형 조리개 유닛이 정교한 보케를 선사합니다."
+      },
+      "conditions": {
+        "sourceText": "대구경 F1.4 최대 조리개와 11날 원형 조리개 유닛이 정교한 보케를 선사합니다.",
+        "meaning": "maximum opening f-number at both prime endpoints; not minimum selectable or T-stop",
+        "unpromotedMinimumSelectableAperture": 16,
+        "malformedSpecText": "1.4k",
+        "malformedSpecUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2/specifications",
+        "malformedTextNotParsed": true,
+        "explicitAlternateEvidenceUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm2"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-45ad1c8fac92c9e16020"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.filterMm",
+      "value": 77,
+      "unit": "mm",
+      "rawValue": 77,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "필터 직경(MM): 77"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3ee08b3056ee98d0c225"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.focal.max",
+      "value": 85,
+      "unit": "mm",
+      "rawValue": 85,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 85"
+      },
+      "conditions": {
+        "sourceText": "85",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-39156541c6081d445361"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.focal.min",
+      "value": 85,
+      "unit": "mm",
+      "rawValue": 85,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "초점 거리(MM): 85"
+      },
+      "conditions": {
+        "sourceText": "85",
+        "meaning": "actual lens focal length; not 35mm equivalent",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a8aad0086ef036663dbf"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "마운트: 소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-085fc69c0e91bd57217d"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.minFocusConditions",
+      "value": "AF 0.85m; MF 0.8m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "AF 0.85m; MF 0.8m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.85m(AF), 0.80m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.85m(AF), 0.80m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.85,
+          "MF": 0.8
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.11,
+          "MF": 0.12
+        },
+        "maximumMagnificationSourceText": "0.11(AF), 0.12(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-2e736ae0c4430ca90f8d"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.minFocusM",
+      "value": 0.85,
+      "unit": "m",
+      "rawValue": 0.85,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "최소 초점 거리: 0.85m(AF), 0.80m(MF)"
+      },
+      "conditions": {
+        "sourceText": "0.85m(AF), 0.80m(MF)",
+        "representativeBasis": "AF",
+        "officialFocusDistancesM": {
+          "AF": 0.85,
+          "MF": 0.8
+        },
+        "unpromotedMaximumMagnification": {
+          "AF": 0.11,
+          "MF": 0.12
+        },
+        "maximumMagnificationSourceText": "0.11(AF), 0.12(MF)",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "Sony general image-sensor-plane to subject convention; model numeric row does not restate measurement origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-f1f019b2d05ba4d9d028"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+      },
+      "conditions": {
+        "sourceText": "- (바디 통합)",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "scope": "lens optical stabilization only"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5aafda6838be36a6ea68"
+    },
+    {
+      "productId": "sony-fe-85-f14-gm2",
+      "path": "specs.weight",
+      "value": 642,
+      "unit": "g",
+      "rawValue": 642,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-1856c27af76755ec",
+      "locator": {
+        "section": "렌즈 사양 / 크기 및 무게 or explicit product feature",
+        "row": "무게: 642g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "not specified in reviewed weight row",
+        "unpromotedDiameterLengthMm": [
+          84.7,
+          107.3
+        ],
+        "dimensionSourceText": "84.7 x 107.3mm (D x L)",
+        "unpromotedOpticalConstruction": "11-14",
+        "sourceObservedAt": "2026-10-16T03:16:43.851Z"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c89a1e6f76eca626099a"
+    }
+  ]
+}
