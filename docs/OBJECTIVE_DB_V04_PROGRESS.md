@@ -1,5 +1,11 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony Batch 004 완료 — 2026-11-04
+
+일반 APS-C 9개 신규 등록, 단일 atomic apply. Canonical **165/57/222 → 165/66/231**. 기존 제품·가격·schema·추천·UI·sealed artifact 유지. 공식 갤러리 73카드, upcoming 2/TC 2 제외 **69 현행, 34 완료, 35 잔여**. 일반 APS-C 0 / FE 줌 24 / 특수 11(APS-C 매크로 1 포함). 400/600 신형 망원은 현행이지만 이번 범위 제외.
+
+공식 raw 18, identity 9, fieldEvidence 88, UNKNOWN 2. Worker 9회, 실패/재시도 0, 총 9633토큰. 전체 503, Objective 476, 렌즈 121, 브랜드 246 테스트와 build/validator 통과. 실제 재적용 already-canonicalized / canonicalMatches:true. [47항목 보고](OBJECTIVE_DB_SONY_LENS_PRODUCTION_004.md). 다음 005 FE 줌 12개는 이 변경을 검토·커밋하고 clean 확인 후 시작한다.
+
 ## Lens phase — Sony E-Mount production batch 003 완료 — 2026-10-16
 
 **잔여 FE 일반 단렌즈8개 모두신규production성공.** Clean baseline9400703에서001~002artifact/readiness/contracts/canonical49/map/vocab/validators/tests와공식gallery73cards/product/spec을대조했다. Selection고정후 SEL35F28Z/SEL85F14GM/SEL35F18F/SEL135F18GM/SEL28F20/SEL35F14Z/SEL50F14Z/SEL50F18F를1개8-itematomictransaction으로적용. Canonical **165/49/214→165/57/222**,기존165bodies/49lenses/가격/identity불변,modelnull-fill0,explicitnew-product승인. FE일반prime미처리0.

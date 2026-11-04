@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-004",
+  "productIds": [
+    "sony-e-15-f14-g",
+    "sony-e-11-f18",
+    "sony-e-16-55-f28-g",
+    "sony-e-70-350-f45-63-g-oss",
+    "sony-e-pz-18-105-f4-g-oss",
+    "sony-e-20-f28",
+    "sony-e-24-f18-za",
+    "sony-e-50-f18-oss",
+    "sony-e-55-210-f45-63-oss"
+  ],
+  "approvedAt": "2026-11-04T00:14:47.971Z",
+  "approvedBy": {
+    "name": "GPT-6.1 Sol",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts.",
+  "diffDigest": "416e7b9b59d985d82e2c00f7639a27f9103a14f0c4a1ddf32d153b4da5a0924c",
+  "diffFileDigest": "77008d268750351be9e7786b6f8b28e1f009a81bbae6fd21bb44d1269d51daac",
+  "baselineCanonicalDigest": "2c63212888a655494888604c12f2a8ab5d71e669400ef8d8089d161d5e417eb3",
+  "expectedCanonicalDigest": "7e4e5fb76a37759917921dd839c418c07031cf4a4be2fe000c08f137f2263e20",
+  "incomingDigest": "e3381c4b4c9a912185d1c626641de5e691b992beea8c78800377c6d9b234d606",
+  "incomingArtifactDigests": {
+    "vocab.json": "b5462e0831fc4df97916972130d16144b248ea76bface94373795d4c66cf995b",
+    "identity-map.json": "1ffc457e081eaffbd09a9971993dd47b4ef5f219bb28f6a881b861bb2e1e9047",
+    "diffs/production-sony-e-lenses-004.json": "77008d268750351be9e7786b6f8b28e1f009a81bbae6fd21bb44d1269d51daac",
+    "staging/production-sony-e-lenses-004/sony-e-15-f14-g.json": "c3906ce2602d60bd50e1e78af80d00088187dd9158daac9fdffb6deb2fd2355a",
+    "raw/source-db27839ee91ea983.json": "e15e7d1b69ea381a1de13ff37a62a089bb92ba1fa6c535480107e487accead17",
+    "raw/source-13047bede47c227a.json": "b717085683cb33346dd1899b85d241db09c1eba37cb5a96fc24cd86ddc2a56eb",
+    "staging/production-sony-e-lenses-004/sony-e-11-f18.json": "262866bcab4eb072b02b044853977094dc5be1125c5e4558b43b05c68dffc6a8",
+    "raw/source-33d8f401b28d5cf8.json": "0889dcf25e3c6f1a77d14675bbddb5d22d3eba503818154abbfdfa40a6c928bb",
+    "raw/source-89811529eb8412ea.json": "29f6f72755910cc3fa2c2f4905660e1097cd9c4fe16bce886638078caacf4bbc",
+    "staging/production-sony-e-lenses-004/sony-e-16-55-f28-g.json": "9f6f27e1b6ee00a18bd047fa156fbb5ba840ad785a14b09707f0a3999a29004c",
+    "raw/source-d6dc01c527c0700f.json": "9e409657732205134a5360d5be55b4ae6c581d0c704a837616541a4bb80757d9",
+    "raw/source-7321769510ad858f.json": "6b3084f699c68d64446df2ca4ee3b1167d3b6000a18b147e91accf514d8ac67e",
+    "staging/production-sony-e-lenses-004/sony-e-70-350-f45-63-g-oss.json": "676f764587a59b904306b4edc0f658cf8b714316f0d567ad5b31c3aab89d6393",
+    "raw/source-dd5be3a2d33a429e.json": "503a6069ea0afeeb066a3913ba7defc0cb7e8930c9394e61909900561a3e3b6a",
+    "raw/source-7f7702c451eec157.json": "681763b152d0aba4bbf05241e09431df613f4e773c17fa90806f014e06d2e24d",
+    "staging/production-sony-e-lenses-004/sony-e-pz-18-105-f4-g-oss.json": "5aae14a62c86b6fd30592aa9aa99aaf49726346f95bb89dd34f8d9184b20cbdf",
+    "raw/source-51e6481ffa4d1aca.json": "c8f36ced3deb154291382c7c30f42f40449bda1e96793ca1c2a283f50fd869c3",
+    "raw/source-c943f203ae03b02c.json": "6a3e744a4bc400e4978d046d0e2d88c65ee486e33a3fdf57666576d630e8c485",
+    "staging/production-sony-e-lenses-004/sony-e-20-f28.json": "d3dc74505e3a26ec2228fa208c9da5697a972be53b0c64be447d70fe41ff83b1",
+    "raw/source-a3d612f195287d11.json": "cf30f3115cf9babbdc343631179e18c5aef419be1fb54fca89be799e8774fb39",
+    "raw/source-ab56429e0b4d0ccd.json": "39e5cbc3ba406c5530062c08154a80a213d64fee0f34a1a9446dd9bc96553ea5",
+    "staging/production-sony-e-lenses-004/sony-e-24-f18-za.json": "ef070266c2109dbd67d6d410cff77f83ee6ca6dcfa5026628774d89ec9eb25b5",
+    "raw/source-72171d369bd896b5.json": "7d49df3e079e2f201351b0f42950260181d2c2708cc413b89ab1822e08cafa09",
+    "raw/source-8c8ea86e7e62645a.json": "b373c78b017b44383770d1c7a1f22c3f2c7d03d8b2f95c54f3a02005a48ef618",
+    "staging/production-sony-e-lenses-004/sony-e-50-f18-oss.json": "a9bbdab8f2d80a3420be9ac01060466f776faaae9e7a5539be23390ce86e7847",
+    "raw/source-62bd1a652c3b6a62.json": "ceed61160b263077a7fd9306175a20e518efaaad7c211f5a3ff53cc4aa1959c7",
+    "raw/source-63b67b06e5dc4317.json": "2331f3cf9de4c16fe6f6cd9c3417f1105b9f68f2aedebdfe437c40a29af3a7c0",
+    "staging/production-sony-e-lenses-004/sony-e-55-210-f45-63-oss.json": "7032db1db5213915f63fe490a626bb74de481900e2aac1c43dcd017e12198f5e",
+    "raw/source-cf4ab0ed55a99087.json": "8273e64294038a81e330fd0cb3793e5dfd67555a436d2791743b2afb95f7f542",
+    "raw/source-2afbc986ab0ef25a.json": "c124a90c2c32b85f33bd298da54ea2a9141b73717eea22156d897b6d5ed894bc"
+  },
+  "productOperations": [
+    {
+      "productId": "sony-e-15-f14-g",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "d7d150c531dfc3bc8a8817d62d92e9b5d648c5e328d85ced0c1d276d0ae53bf5",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-46df9c4750e681a4a432",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "91bde8bab8a1eaafce461b157118e11adfe4c10b518dbefe30f6170ad2ce5f9b",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-dc3325b1fab1f2b8b598",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "b8ef6a2632aa0b8def512aa5d77201788c157dfcb56ac7dfda7561a58e700854",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-ddfdfe5ab2fc62eae0f7",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "44549ee8ce9b2823eeaf39d224d68a877a6641629b007cd3074f19037c9d0ffb",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-f2037386a88171dceb6b",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "5a3f85b4a4afcf7806280312d4c65cf39d16789c59533f35a8e89dbe78aee50e",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-b8fd1513216ab9bbc47e",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "1b138c782428b8436f89a35eb8e7ab7121b7d8aba235076dfd60e800712498e3",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-2a98956419387bffe2bf",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "9fc1291cae909aa1b39ca7932ab98ee9ec5b3eefebb6aad5a7b2050eafd98efc",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-e994c5927ed09845dbb7",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "4b31a9309f329b2641d7416545f6048365f2804a0472b3076b025a4c0c859296",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-1ffbb86b4fbc0c2a577d",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "03677c7be937ffc87322eee6eee8bd838665cae52eae14a224dcea4b70ddbb3d",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-cc1cacba8ba0dd8d1c5b",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-e04ec3774984b770ba81",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-b6d54b3883e79d7b5367",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.filterMm",
+      "claimId": "claim-f4a4a2320ce921ec9ab6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.focal.max",
+      "claimId": "claim-6c522debece87bf0599c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.focal.min",
+      "claimId": "claim-8c2f359a14f8dd1bc19d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-3ca4389dabc73278e8a1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-de69ae1ca016411106a7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.minFocusM",
+      "claimId": "claim-ca489ab274bedc55601d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.stabilization",
+      "claimId": "claim-a5d8085319d722cfe45c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-15-f14-g",
+      "path": "specs.weight",
+      "claimId": "claim-e2b7eaf91c6ceea51ccb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-ca6e9966dfd52f046d71",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-ba41cd6f53b56dc1520b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.filterMm",
+      "claimId": "claim-5b0b4069d282a09e7858",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.focal.max",
+      "claimId": "claim-cede75db439d17c1a5cc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.focal.min",
+      "claimId": "claim-7d60926a9f9019245083",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-7ee718fbeb237b2483e6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-7ce5c6bf8611ce929b69",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.minFocusM",
+      "claimId": "claim-21d642ee118bc1b0916d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.stabilization",
+      "claimId": "claim-1422dc7bf27d15d2111b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-11-f18",
+      "path": "specs.weight",
+      "claimId": "claim-542e470b5fe87338746b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-3dbadc754430fffa2d39",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-b5a2873f156956df14ec",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.filterMm",
+      "claimId": "claim-58d8228d53fd583254c6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.focal.max",
+      "claimId": "claim-492959bc9b90ec711d52",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.focal.min",
+      "claimId": "claim-76afd4fd3542f304fcda",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-e529ba24421b66798661",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-386b1b5ac7f15e712543",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.minFocusM",
+      "claimId": "claim-20a5b2bfb4858fe909d3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.stabilization",
+      "claimId": "claim-a6e6778775de858fd281",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-16-55-f28-g",
+      "path": "specs.weight",
+      "claimId": "claim-4db0268da5875f4c18d1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-0cb81641c276d41bbf98",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-2e447b81e1ef42cfb594",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.filterMm",
+      "claimId": "claim-7e5bec276c44a040f3b8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.focal.max",
+      "claimId": "claim-24f35b9cd44d1dedce72",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.focal.min",
+      "claimId": "claim-fd062afe31e218292876",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-160dbf8ef13456efb989",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-43c4fcc7e8948a7a1e9f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.minFocusM",
+      "claimId": "claim-299ff1342eb40bf2f712",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.stabilization",
+      "claimId": "claim-85d0ab91391b86dd2122",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "path": "specs.weight",
+      "claimId": "claim-e17b0a23cd483b67a54c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-b8841b478d79de0f96a6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-7cfb4698fe1a948a4536",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.filterMm",
+      "claimId": "claim-384ca6e5550a1da98800",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.focal.max",
+      "claimId": "claim-e97901d6bf94e15f7ad3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.focal.min",
+      "claimId": "claim-d5eb6432059d0dc19a6c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-4874f1bbda52c31ac3ec",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-db668462e68630ce02cc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.minFocusM",
+      "claimId": "claim-f6a344a55dc348f881a8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.stabilization",
+      "claimId": "claim-3132c43979d7e194987a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "path": "specs.weight",
+      "claimId": "claim-e760355a966d9bf34576",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-342b96a96b6d2503a651",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-7069e99c2d19276e4beb",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.filterMm",
+      "claimId": "claim-506a6a40c89ebab8a86c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.focal.max",
+      "claimId": "claim-009d5547a2c139ce8948",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.focal.min",
+      "claimId": "claim-48221a102e96b4a06bf5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-3166b91ed5a602863fca",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-383cebb160f9da793590",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.minFocusM",
+      "claimId": "claim-850f539c00df6c3c008a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.stabilization",
+      "claimId": "claim-c9425c3d8f548e991bf4",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-20-f28",
+      "path": "specs.weight",
+      "claimId": "claim-4f913d2ddc57bdc5df3c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-f7e7687a2182c52aecd3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-f9196e812602b67f4fc9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.filterMm",
+      "claimId": "claim-72e15344d82572a14e44",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.focal.max",
+      "claimId": "claim-1ff0147b69bc63ae118c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.focal.min",
+      "claimId": "claim-401381d539306f80d008",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-2704277472d3da1c5833",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-fed94fa2646f9edf60ac",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.minFocusM",
+      "claimId": "claim-a3faedb293ef48b49c07",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.stabilization",
+      "claimId": "claim-90cd4f42e2a950d69bfb",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-24-f18-za",
+      "path": "specs.weight",
+      "claimId": "claim-fc5b8454bd4e975c73e5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-2ae37e1da0818980059f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-1e576fb1a7800d6b92b0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.filterMm",
+      "claimId": "claim-bba56e5b653fb7fed51b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.focal.max",
+      "claimId": "claim-b728551e4c504e6f765c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.focal.min",
+      "claimId": "claim-befd6f8dd2b01b3db03a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-b86cad6193a906a62b0a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-58073de189604e45f9c2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.minFocusM",
+      "claimId": "claim-938efedca6e5745d6010",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.stabilization",
+      "claimId": "claim-ffc6691c4efb44414b8b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-50-f18-oss",
+      "path": "specs.weight",
+      "claimId": "claim-356f71aff5f8bf4efcce",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-b7475fc956b853a79e91",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-f9c6b14d76b18b401ca0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.filterMm",
+      "claimId": "claim-062521276253873a70a5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.focal.max",
+      "claimId": "claim-446bd4719adc4a8012bd",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.focal.min",
+      "claimId": "claim-122f0d50170258eb7bb6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-b68dc8e10a3e94f7b9c3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-8c76517424de6a0c35d2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.minFocusM",
+      "claimId": "claim-f9f70ef386f4d6165e14",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.stabilization",
+      "claimId": "claim-148196214df1cf343dd3",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    },
+    {
+      "productId": "sony-e-55-210-f45-63-oss",
+      "path": "specs.weight",
+      "claimId": "claim-58399ba49fcde7658ccf",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed all nine new APS-C identities, independent Sony E mount, actual focal endpoints, aperture, lens OSS, conditioned focus, and manufacturer provenance; no existing changes or value conflicts."
+    }
+  ],
+  "approvalId": "approval-9f4187ff7fe2ee8fe519e11ba6bc30015d5eac7a0c4b84dcf46223e3b6700134"
+}

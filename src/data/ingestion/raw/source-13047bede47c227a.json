@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+  "documentTitle": "E 15mm F1.4 G — Sony Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "accessedAt": "2026-11-04T00:12:12.112Z",
+  "evidenceScope": "Exact-model identity/specification; conditions retained independently of physical mount and image coverage.",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM)",
+      "value": 15,
+      "unit": "mm"
+    },
+    {
+      "field": "포맷: APS-C",
+      "value": "APS-C",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM)",
+      "value": 55,
+      "unit": "mm"
+    },
+    {
+      "field": "무게",
+      "value": 219,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리",
+      "value": 0.2,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: reviewed condition summary",
+      "value": "0.20m AF; 0.17m MF",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-e-15-f14-g",
+      "manufacturerModelCode": "SEL15F14G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony E 15mm F1.4 G",
+        "brand": "Sony",
+        "model": "SEL15F14G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 15,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "actualOpticalFocal": true,
+            "powerZoom": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 15,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "actualOpticalFocal": true,
+            "powerZoom": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 1,
+          "rawValue": "APS-C",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "포맷: APS-C"
+          },
+          "conditions": {
+            "mountSourceText": "소니 E-마운트"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "손떨림 보정 (STEADYSHOT)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "lensOnly": true,
+            "bodyIbisNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 3,
+          "rawValue": 55,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "필터 직경(MM)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 219,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "무게"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "accessoryInclusion": "unspecified",
+            "unpromotedDiameterLengthMm": [
+              66.6,
+              69.5
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 5,
+          "rawValue": 0.2,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최소 초점 거리"
+          },
+          "conditions": {
+            "sourceCondition": "0.20m AF; 0.17m MF",
+            "maximumMagnification": "0.12x AF; 0.15x MF",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 6,
+          "rawValue": "0.20m AF; 0.17m MF",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최소 초점 거리: reviewed condition summary"
+          },
+          "conditions": {
+            "maximumMagnification": "0.12x AF; 0.15x MF"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "1ac657f4871a4bb8c19b8d70157ec32d9b5e0d7ca4222aecd04606a118178dd0",
+  "sourceId": "source-13047bede47c227a"
+}

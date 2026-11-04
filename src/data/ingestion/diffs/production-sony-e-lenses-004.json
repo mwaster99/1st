@@ -1,0 +1,2832 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-004",
+  "canonicalBaselineDigest": "2c63212888a655494888604c12f2a8ab5d71e669400ef8d8089d161d5e417eb3",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-15-f14-g",
+      "productName": "Sony E 15mm F1.4 G",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-15-f14-g",
+        "name": "Sony E 15mm F1.4 G",
+        "brand": "Sony",
+        "model": "SEL15F14G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 15,
+            "max": 15
+          },
+          "aperture": {
+            "wide": 1.4,
+            "tele": 1.4
+          },
+          "weight": 219,
+          "stabilization": false,
+          "filterMm": 55,
+          "minFocusM": 0.2,
+          "minFocusConditions": "0.20m AF; 0.17m MF",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-db27839ee91ea983",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-46df9c4750e681a4a432",
+          "sourceId": "source-db27839ee91ea983",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-46df9c4750e681a4a432",
+        "sourceId": "source-db27839ee91ea983",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL15F14G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-db27839ee91ea983",
+          "url": "https://www.sony.co.kr/lenses/products/sel15f14g",
+          "documentTitle": "E 15mm F1.4 G — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.4,
+          "unit": null,
+          "claimId": "claim-e04ec3774984b770ba81",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-db27839ee91ea983",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "Official product description: F1.4"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16,
+              "malformedSpecText": "1.4k",
+              "malformedSpecUrl": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+              "malformedTextNotParsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.4,
+          "unit": null,
+          "claimId": "claim-b6d54b3883e79d7b5367",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-db27839ee91ea983",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "Official product description: F1.4"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16,
+              "malformedSpecText": "1.4k",
+              "malformedSpecUrl": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+              "malformedTextNotParsed": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 55,
+          "unit": "mm",
+          "claimId": "claim-f4a4a2320ce921ec9ab6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15,
+          "unit": "mm",
+          "claimId": "claim-6c522debece87bf0599c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 15,
+          "unit": "mm",
+          "claimId": "claim-8c2f359a14f8dd1bc19d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-3ca4389dabc73278e8a1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.20m AF; 0.17m MF",
+          "unit": null,
+          "claimId": "claim-de69ae1ca016411106a7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.12x AF; 0.15x MF"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.2,
+          "unit": "m",
+          "claimId": "claim-ca489ab274bedc55601d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.20m AF; 0.17m MF",
+              "maximumMagnification": "0.12x AF; 0.15x MF",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-a5d8085319d722cfe45c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 219,
+          "unit": "g",
+          "claimId": "claim-e2b7eaf91c6ceea51ccb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-13047bede47c227a",
+            "url": "https://www.sony.co.kr/lenses/products/sel15f14g/spec?sku=sel15f14g-csyx",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                66.6,
+                69.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-11-f18",
+      "productName": "Sony E 11mm F1.8",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-11-f18",
+        "name": "Sony E 11mm F1.8",
+        "brand": "Sony",
+        "model": "SEL11F18",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 11,
+            "max": 11
+          },
+          "aperture": {
+            "wide": 1.8,
+            "tele": 1.8
+          },
+          "weight": 181,
+          "stabilization": false,
+          "filterMm": 55,
+          "minFocusM": 0.15,
+          "minFocusConditions": "0.15m AF; 0.12m MF",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-33d8f401b28d5cf8",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-dc3325b1fab1f2b8b598",
+          "sourceId": "source-33d8f401b28d5cf8",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-dc3325b1fab1f2b8b598",
+        "sourceId": "source-33d8f401b28d5cf8",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL11F18"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-33d8f401b28d5cf8",
+          "url": "https://www.sony.co.kr/lenses/products/sel11f18",
+          "documentTitle": "E 11mm F1.8 — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-ca6e9966dfd52f046d71",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-ba41cd6f53b56dc1520b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 55,
+          "unit": "mm",
+          "claimId": "claim-5b0b4069d282a09e7858",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 11,
+          "unit": "mm",
+          "claimId": "claim-cede75db439d17c1a5cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 11,
+          "unit": "mm",
+          "claimId": "claim-7d60926a9f9019245083",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-7ee718fbeb237b2483e6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.15m AF; 0.12m MF",
+          "unit": null,
+          "claimId": "claim-7ce5c6bf8611ce929b69",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.13x AF; 0.20x MF"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.15,
+          "unit": "m",
+          "claimId": "claim-21d642ee118bc1b0916d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.15m AF; 0.12m MF",
+              "maximumMagnification": "0.13x AF; 0.20x MF",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-1422dc7bf27d15d2111b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 181,
+          "unit": "g",
+          "claimId": "claim-542e470b5fe87338746b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-89811529eb8412ea",
+            "url": "https://www.sony.co.kr/lenses/products/sel11f18/spec",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                66,
+                57.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-16-55-f28-g",
+      "productName": "Sony E 16-55mm F2.8 G",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-16-55-f28-g",
+        "name": "Sony E 16-55mm F2.8 G",
+        "brand": "Sony",
+        "model": "SEL1655G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 16,
+            "max": 55
+          },
+          "aperture": {
+            "wide": 2.8,
+            "tele": 2.8
+          },
+          "weight": 494,
+          "stabilization": false,
+          "filterMm": 67,
+          "minFocusM": 0.33,
+          "minFocusConditions": "Published 0.33m; AF/MF and zoom position not specified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-d6dc01c527c0700f",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-ddfdfe5ab2fc62eae0f7",
+          "sourceId": "source-d6dc01c527c0700f",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-ddfdfe5ab2fc62eae0f7",
+        "sourceId": "source-d6dc01c527c0700f",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL1655G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-d6dc01c527c0700f",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g",
+          "documentTitle": "E 16-55mm F2.8 G — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-3dbadc754430fffa2d39",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-b5a2873f156956df14ec",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 67,
+          "unit": "mm",
+          "claimId": "claim-58d8228d53fd583254c6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 55,
+          "unit": "mm",
+          "claimId": "claim-492959bc9b90ec711d52",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 16,
+          "unit": "mm",
+          "claimId": "claim-76afd4fd3542f304fcda",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-e529ba24421b66798661",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.33m; AF/MF and zoom position not specified",
+          "unit": null,
+          "claimId": "claim-386b1b5ac7f15e712543",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.20x"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.33,
+          "unit": "m",
+          "claimId": "claim-20a5b2bfb4858fe909d3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.33m; AF/MF and zoom position not specified",
+              "maximumMagnification": "0.20x",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-a6e6778775de858fd281",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "- (바디 통합)",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 494,
+          "unit": "g",
+          "claimId": "claim-4db0268da5875f4c18d1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7321769510ad858f",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1655g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                73,
+                100
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-70-350-f45-63-g-oss",
+      "productName": "Sony E 70-350mm F4.5-6.3 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-70-350-f45-63-g-oss",
+        "name": "Sony E 70-350mm F4.5-6.3 G OSS",
+        "brand": "Sony",
+        "model": "SEL70350G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 70,
+            "max": 350
+          },
+          "aperture": {
+            "wide": 4.5,
+            "tele": 6.3
+          },
+          "weight": 625,
+          "stabilization": true,
+          "filterMm": 67,
+          "minFocusM": 1.1,
+          "minFocusConditions": "Published range 1.1–1.5m; 1.1m is lower bound only; exact focal position and AF/MF unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-dd5be3a2d33a429e",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-f2037386a88171dceb6b",
+          "sourceId": "source-dd5be3a2d33a429e",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-f2037386a88171dceb6b",
+        "sourceId": "source-dd5be3a2d33a429e",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70350G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-dd5be3a2d33a429e",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g",
+          "documentTitle": "E 70-350mm F4.5-6.3 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.3,
+          "unit": null,
+          "claimId": "claim-0cb81641c276d41bbf98",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": "22–32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-2e447b81e1ef42cfb594",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": "22–32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 67,
+          "unit": "mm",
+          "claimId": "claim-7e5bec276c44a040f3b8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 350,
+          "unit": "mm",
+          "claimId": "claim-24f35b9cd44d1dedce72",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-fd062afe31e218292876",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-160dbf8ef13456efb989",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published range 1.1–1.5m; 1.1m is lower bound only; exact focal position and AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-43c4fcc7e8948a7a1e9f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.23x; focal position not specified"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.1,
+          "unit": "m",
+          "claimId": "claim-299ff1342eb40bf2f712",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published range 1.1–1.5m; 1.1m is lower bound only; exact focal position and AF/MF unspecified",
+              "maximumMagnification": "0.23x; focal position not specified",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-85d0ab91391b86dd2122",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "Optical SteadyShot™",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 625,
+          "unit": "g",
+          "claimId": "claim-e17b0a23cd483b67a54c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7f7702c451eec157",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70350g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                77,
+                142
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-pz-18-105-f4-g-oss",
+      "productName": "Sony E PZ 18-105mm F4 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-pz-18-105-f4-g-oss",
+        "name": "Sony E PZ 18-105mm F4 G OSS",
+        "brand": "Sony",
+        "model": "SELP18105G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 18,
+            "max": 105
+          },
+          "aperture": {
+            "wide": 4,
+            "tele": 4
+          },
+          "weight": 427,
+          "stabilization": true,
+          "filterMm": 72,
+          "minFocusM": 0.45,
+          "minFocusConditions": "0.45m wide; 0.95m tele; AF/MF unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-51e6481ffa4d1aca",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-b8fd1513216ab9bbc47e",
+          "sourceId": "source-51e6481ffa4d1aca",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-b8fd1513216ab9bbc47e",
+        "sourceId": "source-51e6481ffa4d1aca",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SELP18105G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-51e6481ffa4d1aca",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g",
+          "documentTitle": "E PZ 18-105mm F4 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-b8841b478d79de0f96a6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-7cfb4698fe1a948a4536",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-384ca6e5550a1da98800",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 105,
+          "unit": "mm",
+          "claimId": "claim-e97901d6bf94e15f7ad3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": true,
+              "zoomOperation": "motorized power zoom, distinct from OSS"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 18,
+          "unit": "mm",
+          "claimId": "claim-d5eb6432059d0dc19a6c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": true,
+              "zoomOperation": "motorized power zoom, distinct from OSS"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-4874f1bbda52c31ac3ec",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.45m wide; 0.95m tele; AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-db668462e68630ce02cc",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.11x; focal position not specified"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.45,
+          "unit": "m",
+          "claimId": "claim-f6a344a55dc348f881a8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.45m wide; 0.95m tele; AF/MF unspecified",
+              "maximumMagnification": "0.11x; focal position not specified",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-3132c43979d7e194987a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "Optical SteadyShot™",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 427,
+          "unit": "g",
+          "claimId": "claim-e760355a966d9bf34576",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-c943f203ae03b02c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp18105g/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                78,
+                110
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-20-f28",
+      "productName": "Sony E 20mm F2.8",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-20-f28",
+        "name": "Sony E 20mm F2.8",
+        "brand": "Sony",
+        "model": "SEL20F28",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 20,
+            "max": 20
+          },
+          "aperture": {
+            "wide": 2.8,
+            "tele": 2.8
+          },
+          "weight": 69,
+          "stabilization": null,
+          "filterMm": 49,
+          "minFocusM": 0.2,
+          "minFocusConditions": "Published 0.20m; mode unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-a3d612f195287d11",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-2a98956419387bffe2bf",
+          "sourceId": "source-a3d612f195287d11",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-2a98956419387bffe2bf",
+        "sourceId": "source-a3d612f195287d11",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL20F28"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-a3d612f195287d11",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28",
+          "documentTitle": "E 20mm F2.8 — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-342b96a96b6d2503a651",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-7069e99c2d19276e4beb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 16
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 49,
+          "unit": "mm",
+          "claimId": "claim-506a6a40c89ebab8a86c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "mm",
+          "claimId": "claim-009d5547a2c139ce8948",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 20,
+          "unit": "mm",
+          "claimId": "claim-48221a102e96b4a06bf5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-3166b91ed5a602863fca",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.20m; mode unspecified",
+          "unit": null,
+          "claimId": "claim-383cebb160f9da793590",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.12x"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.2,
+          "unit": "m",
+          "claimId": "claim-850f539c00df6c3c008a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.20m; mode unspecified",
+              "maximumMagnification": "0.12x",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-c9425c3d8f548e991bf4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "No specification row",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 69,
+          "unit": "g",
+          "claimId": "claim-4f913d2ddc57bdc5df3c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ab56429e0b4d0ccd",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel20f28/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                62.6,
+                20.4
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-24-f18-za",
+      "productName": "Sony Sonnar T* E 24mm F1.8 ZA",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-24-f18-za",
+        "name": "Sony Sonnar T* E 24mm F1.8 ZA",
+        "brand": "Sony",
+        "model": "SEL24F18Z",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 24,
+            "max": 24
+          },
+          "aperture": {
+            "wide": 1.8,
+            "tele": 1.8
+          },
+          "weight": 225,
+          "stabilization": null,
+          "filterMm": 49,
+          "minFocusM": 0.16,
+          "minFocusConditions": "Published 0.16m; mode unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-72171d369bd896b5",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-e994c5927ed09845dbb7",
+          "sourceId": "source-72171d369bd896b5",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-e994c5927ed09845dbb7",
+        "sourceId": "source-72171d369bd896b5",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL24F18Z"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-72171d369bd896b5",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z",
+          "documentTitle": "Sonnar T* E 24mm F1.8 ZA — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-f7e7687a2182c52aecd3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-f9196e812602b67f4fc9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 49,
+          "unit": "mm",
+          "claimId": "claim-72e15344d82572a14e44",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-1ff0147b69bc63ae118c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-401381d539306f80d008",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-2704277472d3da1c5833",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.16m; mode unspecified",
+          "unit": null,
+          "claimId": "claim-fed94fa2646f9edf60ac",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.25x (1:4); inconsistent 4:1 feature wording not used"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.16,
+          "unit": "m",
+          "claimId": "claim-a3faedb293ef48b49c07",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.16m; mode unspecified",
+              "maximumMagnification": "0.25x (1:4); inconsistent 4:1 feature wording not used",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": null,
+          "unit": null,
+          "claimId": "claim-90cd4f42e2a950d69bfb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "No specification row",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 225,
+          "unit": "g",
+          "claimId": "claim-fc5b8454bd4e975c73e5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-8c8ea86e7e62645a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24f18z/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                63,
+                65.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-50-f18-oss",
+      "productName": "Sony E 50mm F1.8 OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-50-f18-oss",
+        "name": "Sony E 50mm F1.8 OSS",
+        "brand": "Sony",
+        "model": "SEL50F18",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 50,
+            "max": 50
+          },
+          "aperture": {
+            "wide": 1.8,
+            "tele": 1.8
+          },
+          "weight": 202,
+          "stabilization": true,
+          "filterMm": 49,
+          "minFocusM": 0.39,
+          "minFocusConditions": "Published 0.39m; mode unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-62bd1a652c3b6a62",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-1ffbb86b4fbc0c2a577d",
+          "sourceId": "source-62bd1a652c3b6a62",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-1ffbb86b4fbc0c2a577d",
+        "sourceId": "source-62bd1a652c3b6a62",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL50F18"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-62bd1a652c3b6a62",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18",
+          "documentTitle": "E 50mm F1.8 OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-2ae37e1da0818980059f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.8,
+          "unit": null,
+          "claimId": "claim-1e576fb1a7800d6b92b0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": 22
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 49,
+          "unit": "mm",
+          "claimId": "claim-bba56e5b653fb7fed51b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": "mm",
+          "claimId": "claim-b728551e4c504e6f765c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": "mm",
+          "claimId": "claim-befd6f8dd2b01b3db03a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-b86cad6193a906a62b0a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.39m; mode unspecified",
+          "unit": null,
+          "claimId": "claim-58073de189604e45f9c2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.16x"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.39,
+          "unit": "m",
+          "claimId": "claim-938efedca6e5745d6010",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.39m; mode unspecified",
+              "maximumMagnification": "0.16x",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-ffc6691c4efb44414b8b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "Optical SteadyShot™",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 202,
+          "unit": "g",
+          "claimId": "claim-356f71aff5f8bf4efcce",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-63b67b06e5dc4317",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                62,
+                62
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-004",
+      "productId": "sony-e-55-210-f45-63-oss",
+      "productName": "Sony E 55-210mm F4.5-6.3 OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-e-55-210-f45-63-oss",
+        "name": "Sony E 55-210mm F4.5-6.3 OSS",
+        "brand": "Sony",
+        "model": "SEL55210",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 55,
+            "max": 210
+          },
+          "aperture": {
+            "wide": 4.5,
+            "tele": 6.3
+          },
+          "weight": 345,
+          "stabilization": true,
+          "filterMm": 49,
+          "minFocusM": 1,
+          "minFocusConditions": "1m at tele; wide not specified; AF/MF unspecified",
+          "formatCoverage": "APS-C"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-cf4ab0ed55a99087",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-cc1cacba8ba0dd8d1c5b",
+          "sourceId": "source-cf4ab0ed55a99087",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-cc1cacba8ba0dd8d1c5b",
+        "sourceId": "source-cf4ab0ed55a99087",
+        "evidenceRef": 0,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL55210"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-cf4ab0ed55a99087",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210",
+          "documentTitle": "E 55-210mm F4.5-6.3 OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.3,
+          "unit": null,
+          "claimId": "claim-b7475fc956b853a79e91",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": "22–32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-f9c6b14d76b18b401ca0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "unpromotedMinimumSelectableAperture": "22–32"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 49,
+          "unit": "mm",
+          "claimId": "claim-062521276253873a70a5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 210,
+          "unit": "mm",
+          "claimId": "claim-446bd4719adc4a8012bd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 55,
+          "unit": "mm",
+          "claimId": "claim-122f0d50170258eb7bb6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "actualOpticalFocal": true,
+              "powerZoom": false
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "APS-C",
+          "unit": null,
+          "claimId": "claim-b68dc8e10a3e94f7b9c3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "포맷: APS-C"
+            },
+            "conditions": {
+              "mountSourceText": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1m at tele; wide not specified; AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-8c76517424de6a0c35d2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리: reviewed condition summary"
+            },
+            "conditions": {
+              "maximumMagnification": "0.225x; focal position not specified"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1,
+          "unit": "m",
+          "claimId": "claim-f9f70ef386f4d6165e14",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "1m at tele; wide not specified; AF/MF unspecified",
+              "maximumMagnification": "0.225x; focal position not specified",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-148196214df1cf343dd3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "sourceText": "Optical SteadyShot™",
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 345,
+          "unit": "g",
+          "claimId": "claim-58399ba49fcde7658ccf",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2afbc986ab0ef25a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel55210/specifications",
+            "locator": {
+              "section": "Exact model product specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "accessoryInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                63.8,
+                108
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}
