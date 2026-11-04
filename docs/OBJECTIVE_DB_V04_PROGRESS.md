@@ -1,5 +1,11 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony Batch 007 사전 검토 완료 — 2026-11-04
+
+Sony Korea 공식 현행 **58/69 완료, 특수군 11개 잔여**를 재확인했다. 출시 예정 SEL814G·SEL28702와 TC 2종 별도. 신규 후보 11개 중 A 2 / B 8 / D 1이며 10개 단일 후속 거래와 SEL100F28GM STF 1개 별도 pilot을 권장한다. SEL400F28GM의 공식 2,895/2,897g 차이는 기준 확인 전 무게 UNKNOWN. 시네 SELC1635G는 공식 F2.8과 T3.1을 분리한다.
+
+Canonical **165/88/253**, baseline SHA 동일, production apply·worker 호출 0. 전체 516 / Objective 489 / Sony 렌즈 134 테스트, canonical/build/syntax/diff 통과. [사전 검토 보고](OBJECTIVE_DB_SONY_LENS_SPECIAL_PREFLIGHT_007.md) · [범위와 후속 계획](../src/data/ingestion/sony-e-lenses-special-preflight-007.json).
+
 ## Lens phase — Sony Batch 006 완료 — 2026-11-04
 
 잔여 일반 FE 줌 12개를 atomic apply했다. 신규 11개, 기존 SEL70200GM2 모델 코드 및 공식 근거 보강 1개. Canonical **165/77/242 → 165/88/253**. Sony 공식 현행 **58/69 완료, 11 잔여**(일반 FE 줌 0 / 특수 11). 공식 raw 28개, 승격 사양 120개 경로, 승인 diff 값 충돌 0건. KR 공식 표기 차이 2건은 Sony USA와 대조했다.
