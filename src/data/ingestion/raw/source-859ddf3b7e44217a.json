@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/electronics/camera-lenses/sel35f18f/specifications",
+  "documentTitle": "FE 35mm F1.8 — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "accessedAt": "2026-10-16T03:49:11.597Z",
+  "evidenceScope": "Exact-model actual focal/maxF/coverage/focus/filter/weight, manufacturer table individually reviewed. Unsupported magnification,D×L,optics retained in conditions. Conditional accessory scopes remain separate.",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 35",
+      "value": 35,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경(F): 1.8",
+      "value": 1.8,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정(SteadyShot): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 55",
+      "value": 55,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 280g",
+      "value": 280,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.22m",
+      "value": 0.22,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.22m",
+      "value": "Published 0.22m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-35-f18",
+      "manufacturerModelCode": "SEL35F18F",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 35mm F1.8",
+        "brand": "Sony",
+        "model": "SEL35F18F",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 35,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "초점 거리(MM): 35"
+          },
+          "conditions": {
+            "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 35,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "초점 거리(MM): 35"
+          },
+          "conditions": {
+            "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 1,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최대 구경(F): 1.8"
+          },
+          "conditions": {
+            "sourceText": "1.8",
+            "meaning": "maximum opening F-number at both prime endpoints; not T-stop or minimum selectable F",
+            "unpromotedMinimumSelectableAperture": 22
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 1,
+          "rawValue": 1.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최대 구경(F): 1.8"
+          },
+          "conditions": {
+            "sourceText": "1.8",
+            "meaning": "maximum opening F-number at both prime endpoints; not T-stop or minimum selectable F",
+            "unpromotedMinimumSelectableAperture": 22
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 2,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "mountSourceText": "소니 E-마운트",
+            "coverageNotInferredFromName": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 3,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true,
+            "lensOssOnly": true,
+            "absenceNotInferredFromName": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 4,
+          "rawValue": 55,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "필터 직경(MM): 55"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 5,
+          "rawValue": 280,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "무게: 280g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "hood/cap inclusion not specified in official weight row",
+            "unpromotedDiameterLengthMm": [
+              65.6,
+              73
+            ],
+            "dimensionSourceText": "65.6 x 73mm (D x L)",
+            "unpromotedOpticalConstruction": "9-11"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 6,
+          "rawValue": 0.22,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최소 초점 거리: 0.22m"
+          },
+          "conditions": {
+            "sourceText": "0.22m",
+            "representativeBasis": "published distance; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "published": 0.22
+            },
+            "unpromotedMaximumMagnification": 0.24,
+            "maximumMagnificationSourceText": "0.24",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+            "frontElementWorkingDistanceNotDerived": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 7,
+          "rawValue": "Published 0.22m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최소 초점 거리: 0.22m"
+          },
+          "conditions": {
+            "sourceText": "0.22m",
+            "representativeBasis": "published distance; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "published": 0.22
+            },
+            "unpromotedMaximumMagnification": 0.24,
+            "maximumMagnificationSourceText": "0.24",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+            "frontElementWorkingDistanceNotDerived": true,
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "5c4f0bf39824331b39799ba62f0e9d0880dda167c65d6b97890b7f8105a0f09f",
+  "sourceId": "source-859ddf3b7e44217a"
+}

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f14z/specifications",
+  "documentTitle": "Planar T* FE 50mm F1.4 ZA — Sony Korea official specifications",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "accessedAt": "2026-10-16T03:49:28.907Z",
+  "evidenceScope": "Exact-model actual focal/maxF/coverage/focus/filter/weight, manufacturer table individually reviewed. Unsupported magnification,D×L,optics retained in conditions. Conditional accessory scopes remain separate.",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM): 50",
+      "value": 50,
+      "unit": "mm"
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정(SteadyShot): - (바디 통합)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM): 72",
+      "value": 72,
+      "unit": "mm"
+    },
+    {
+      "field": "무게: 778g",
+      "value": 778,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리: 0.45m",
+      "value": 0.45,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: 0.45m",
+      "value": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-planar-t-fe-50-f14-za",
+      "manufacturerModelCode": "SEL50F14Z",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony Planar T* FE 50mm F1.4 ZA",
+        "brand": "Sony",
+        "model": "SEL50F14Z",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "초점 거리(MM): 50"
+          },
+          "conditions": {
+            "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "초점 거리(MM): 50"
+          },
+          "conditions": {
+            "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+            "primeEndpointsEqual": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 1,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "physicalMount": "Sony E",
+            "mountSourceText": "소니 E-마운트",
+            "coverageNotInferredFromName": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 2,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "손떨림 보정(SteadyShot): - (바디 통합)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "bodyIbisNotAsserted": true,
+            "combinedStopsNotAsserted": true,
+            "lensOssOnly": true,
+            "absenceNotInferredFromName": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 3,
+          "rawValue": 72,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "필터 직경(MM): 72"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 4,
+          "rawValue": 778,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "무게: 778g"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyExcluded": true,
+            "accessoryInclusion": "hood/cap inclusion not specified in official weight row",
+            "unpromotedDiameterLengthMm": [
+              83.5,
+              108
+            ],
+            "dimensionSourceText": "83.5 x 108mm (D x L)",
+            "unpromotedOpticalConstruction": "9/12"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 5,
+          "rawValue": 0.45,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최소 초점 거리: 0.45m"
+          },
+          "conditions": {
+            "sourceText": "0.45m",
+            "representativeBasis": "published distance; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "published": 0.45
+            },
+            "unpromotedMaximumMagnification": 0.15,
+            "maximumMagnificationSourceText": "0.15 x",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+            "frontElementWorkingDistanceNotDerived": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 6,
+          "rawValue": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+            "row": "최소 초점 거리: 0.45m"
+          },
+          "conditions": {
+            "sourceText": "0.45m",
+            "representativeBasis": "published distance; AF/MF unspecified",
+            "officialFocusDistancesM": {
+              "published": 0.45
+            },
+            "unpromotedMaximumMagnification": 0.15,
+            "maximumMagnificationSourceText": "0.15 x",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+            "frontElementWorkingDistanceNotDerived": true,
+            "reviewedDisplaySummary": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-10-16",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "7ab3c91efce0b9c67bdfcc162c6b62e56e448f05cafa13f1f5e2f5e0f1bfa83f",
+  "sourceId": "source-f5dbb9fe97d1893a"
+}

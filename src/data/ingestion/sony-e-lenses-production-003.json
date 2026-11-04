@@ -1,0 +1,1320 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-003",
+  "brand": "Sony",
+  "scope": "Remaining8 ordinary FE primes; excludes every completed001/002,APS-C,zoom,special and prior upcoming from production.",
+  "startWorkingTree": "clean",
+  "baselineCommit": "94007034cece6e133455d1ed2e783c25964958ff",
+  "canonicalBaselineSha256": "c853a3f834890184df74aebc76f8c7ecc10fd56f2a2876f27f3e36ecff3ddb66",
+  "countsBefore": {
+    "bodies": 165,
+    "lenses": 49,
+    "total": 214
+  },
+  "inventoryReference": "sony-e-lenses-current-2026-10-15.json",
+  "previousBatches": [
+    "production-sony-e-lenses-001",
+    "production-sony-e-lenses-002"
+  ],
+  "countsAtStart": {
+    "historicalCurrent": 67,
+    "completedProduction": 17,
+    "historicalUnprocessed": 50,
+    "currentReleased": 69,
+    "currentUnprocessed": 52,
+    "upcoming": 2,
+    "teleconverters": 2
+  },
+  "selection": {
+    "fixedBeforeWorker": true,
+    "fixedAt": "2026-10-16T04:16:54.027Z",
+    "codes": [
+      "SEL35F28Z",
+      "SEL85F14GM",
+      "SEL35F18F",
+      "SEL135F18GM",
+      "SEL28F20",
+      "SEL35F14Z",
+      "SEL50F14Z",
+      "SEL50F18F"
+    ],
+    "count": 8,
+    "reason": "Exact remaining ordinary FE prime family from inventory minus actual001/002 artifact identities; fresh gallery+product/spec checked. All8 are new, no STF/T-stop/macro/supertele/built-in TC schema blocker."
+  },
+  "officialCurrentReview": {
+    "url": "https://www.sony.co.kr/lenses/gallery",
+    "accessedAt": "2026-10-16T03:48:35.835Z",
+    "renderedCards": 73,
+    "selectedPresent": 8,
+    "allSelectedHaveCurrentCards": true,
+    "selectedInventoryDifferences": [],
+    "statusChangesOutsideSelection": [
+      {
+        "code": "SEL400F45GM",
+        "before": "announced/upcoming",
+        "now": "released/current",
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel400f45gm",
+        "accessedAt": "2026-10-16T04:15:10.956Z",
+        "evidence": "Exact model/SKU in rendered product summary; product purchase detail link, no 곧 공개; current gallery card. Catalog-state policy, not dealer stock or inferred launch date."
+      },
+      {
+        "code": "SEL600F63GM",
+        "before": "announced/upcoming",
+        "now": "released/current",
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel600f63gm",
+        "accessedAt": "2026-10-16T04:15:10.598Z",
+        "evidence": "Exact model/SKU in rendered product summary; product purchase detail link, no 곧 공개; current gallery card. Date/cause of change from historical snapshot not established."
+      }
+    ],
+    "stillUpcoming": [
+      {
+        "code": "SEL814G",
+        "evidence": "Rendered exact-model summary: 가격 미정 / 곧 공개",
+        "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel814g",
+        "reviewedAt": "2026-10-16T04:15:21.169Z"
+      },
+      {
+        "code": "SEL28702",
+        "evidence": "Rendered exact-model summary: 가격 미정 / 곧 공개",
+        "url": "https://www.sony.co.kr/electronics/a-mount-lenses/sel28702",
+        "reviewedAt": "2026-10-16T04:15:10.320Z"
+      }
+    ],
+    "scope": "Current means official catalog state under existing inventory policy, not dealer stock. Old67 snapshot kept immutable. Observed same73cards; two prior upcoming now catalog-current. Only8 ordinary primes ingested.",
+    "limitations": [
+      "SSR gallery parser lacks cards; actual browser DOM used.",
+      "Product summary hydrates later than editorial text: awaited/read exact model/SKU summary before release classification.",
+      "No claim of exact launch date or global inventory completeness."
+    ]
+  },
+  "measurementReference": {
+    "url": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+    "article": "Measuring the exact distance to the subject",
+    "interpretation": "Camera image-sensor-plane to subject; minimum lens shooting distance is not front-element working distance. General manufacturer measurement convention, not a numeric source for any model.",
+    "numericWorkingDistanceDerived": false
+  },
+  "products": [
+    {
+      "manufacturerModelCode": "SEL35F28Z",
+      "officialName": "Sonnar T* FE 35mm F2.8 ZA",
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f28z",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f28z/specifications",
+      "productRetrievedAt": "2026-10-16T03:48:52.966Z",
+      "specRetrievedAt": "2026-10-16T03:49:02.202Z",
+      "focalMm": 35,
+      "maximumAperture": 2.8,
+      "minimumSelectableAperture": 22,
+      "minFocusM": 0.35,
+      "focusModes": null,
+      "focusRaw": "0.35m",
+      "maximumMagnification": 0.12,
+      "magnificationRaw": "0.12x",
+      "filterMm": 49,
+      "diameterLengthMm": [
+        61.5,
+        36.5
+      ],
+      "weightG": 120,
+      "stabilization": null,
+      "specApertureRaw": "2.8",
+      "apertureAlternate": null,
+      "unpromoted": {
+        "opticalConstruction": "5/7",
+        "designStatement": "ZEISS T* coating; 방진/방습 설계",
+        "hoodFilterMm": 40.5,
+        "hood": "ALC-SH129",
+        "filterScope": "49mm lens thread;40.5mm optional mounting on supplied cap hood is separate scope",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "lens OSS row absent: UNKNOWN, not false based on name",
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel35f28z",
+      "identity": {
+        "name": "Sony Sonnar T* FE 35mm F2.8 ZA",
+        "brand": "Sony",
+        "model": "SEL35F28Z",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.35m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-85af7231411e4268",
+        "source-0ca0d6b95f6d6ac7"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 818,
+        "outputTokens": 538,
+        "totalTokens": 1356
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL85F14GM",
+      "officialName": "FE 85mm F1.4 GM",
+      "productId": "sony-fe-85-f14-gm",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm/specifications",
+      "productRetrievedAt": "2026-10-16T03:48:54.864Z",
+      "specRetrievedAt": "2026-10-16T03:49:02.420Z",
+      "focalMm": 85,
+      "maximumAperture": 1.4,
+      "minimumSelectableAperture": 16,
+      "minFocusM": 0.85,
+      "focusModes": {
+        "AF": 0.85,
+        "MF": 0.8
+      },
+      "focusRaw": "AF 0.85m, MF 0.8m",
+      "maximumMagnification": 0.12,
+      "magnificationRaw": "0.12 x",
+      "filterMm": 77,
+      "diameterLengthMm": [
+        89.5,
+        107.5
+      ],
+      "weightG": 820,
+      "stabilization": null,
+      "specApertureRaw": "1.4k",
+      "apertureAlternate": {
+        "url": "https://www.sony.co.kr/electronics/camera-lenses/sel85f14gm",
+        "text": "최대 F1.4의 밝은 조리개"
+      },
+      "unpromoted": {
+        "opticalConstruction": "8 / 11",
+        "designStatement": "나노 AR 코팅; 방진/방습 설계; 2-sensor autofocus RDSSM, not a new optical contract",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "lens OSS row absent: UNKNOWN, not false based on name",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel85f14gm",
+      "identity": {
+        "name": "Sony FE 85mm F1.4 GM",
+        "brand": "Sony",
+        "model": "SEL85F14GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "AF 0.85m; MF 0.8m; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-fe1f1d6ad9c7a2b8",
+        "source-f51e8e0cf6da3ed7"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 1702,
+        "outputTokens": 1124,
+        "totalTokens": 2826
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL35F18F",
+      "officialName": "FE 35mm F1.8",
+      "productId": "sony-fe-35-f18",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f18f",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f18f/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:11.234Z",
+      "specRetrievedAt": "2026-10-16T03:49:11.597Z",
+      "focalMm": 35,
+      "maximumAperture": 1.8,
+      "minimumSelectableAperture": 22,
+      "minFocusM": 0.22,
+      "focusModes": null,
+      "focusRaw": "0.22m",
+      "maximumMagnification": 0.24,
+      "magnificationRaw": "0.24",
+      "filterMm": 55,
+      "diameterLengthMm": [
+        65.6,
+        73
+      ],
+      "weightG": 280,
+      "stabilization": false,
+      "specApertureRaw": "1.8",
+      "apertureAlternate": null,
+      "unpromoted": {
+        "opticalConstruction": "9-11",
+        "designStatement": "방진/방적 설계; 100% protection not guaranteed; coating UNKNOWN",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel35f18f",
+      "identity": {
+        "name": "Sony FE 35mm F1.8",
+        "brand": "Sony",
+        "model": "SEL35F18F",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.22m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-256b28a9dfb594e5",
+        "source-859ddf3b7e44217a"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 783,
+        "outputTokens": 480,
+        "totalTokens": 1263
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL135F18GM",
+      "officialName": "FE 135mm F1.8 GM",
+      "productId": "sony-fe-135-f18-gm",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel135f18gm",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel135f18gm/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:13.604Z",
+      "specRetrievedAt": "2026-10-16T03:49:14.008Z",
+      "focalMm": 135,
+      "maximumAperture": 1.8,
+      "minimumSelectableAperture": 22,
+      "minFocusM": 0.7,
+      "focusModes": null,
+      "focusRaw": "0.7m",
+      "maximumMagnification": 0.25,
+      "magnificationRaw": "0.25",
+      "filterMm": 82,
+      "diameterLengthMm": [
+        89.5,
+        127
+      ],
+      "weightG": 950,
+      "stabilization": false,
+      "specApertureRaw": "1.8",
+      "apertureAlternate": null,
+      "unpromoted": {
+        "opticalConstruction": "10-13",
+        "designStatement": "나노 AR 코팅; 전면 불소 코팅; 방진방적 not100% guaranteed; floating focus and focus limiter retained as design, no STF/T-stop",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel135f18gm",
+      "identity": {
+        "name": "Sony FE 135mm F1.8 GM",
+        "brand": "Sony",
+        "model": "SEL135F18GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.7m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-db97e5a6f538fa7d",
+        "source-4da4fc92bd96f914"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 803,
+        "outputTokens": 446,
+        "totalTokens": 1249
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL28F20",
+      "officialName": "FE 28mm F2",
+      "productId": "sony-fe-28-f2",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel28f20-series",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel28f20-series/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:15.805Z",
+      "specRetrievedAt": "2026-10-16T03:49:16.634Z",
+      "focalMm": 28,
+      "maximumAperture": 2,
+      "minimumSelectableAperture": 22,
+      "minFocusM": 0.29,
+      "focusModes": null,
+      "focusRaw": "0.29m",
+      "maximumMagnification": 0.13,
+      "magnificationRaw": "0.13",
+      "filterMm": 49,
+      "diameterLengthMm": [
+        64,
+        60
+      ],
+      "weightG": 200,
+      "stabilization": null,
+      "specApertureRaw": "2",
+      "apertureAlternate": null,
+      "unpromoted": {
+        "opticalConstruction": "8/9",
+        "designStatement": "멀티 코팅; 방진/방습 설계; optional external21mm wide/16mm fisheye converters excluded from bare lens focal",
+        "externalConverters": {
+          "wideEquivalentSystemFocalMm": 21,
+          "fisheyeSystemFocalMm": 16
+        },
+        "builtInTeleconverter": false,
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "lens OSS row absent: UNKNOWN, not false based on name",
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel28f20",
+      "identity": {
+        "name": "Sony FE 28mm F2",
+        "brand": "Sony",
+        "model": "SEL28F20",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.29m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-ef9a34b2de594fe5",
+        "source-81f60ac8caa36ebb"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 810,
+        "outputTokens": 472,
+        "totalTokens": 1282
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL35F14Z",
+      "officialName": "Distagon T* FE 35mm F1.4 ZA",
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f14z",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel35f14z/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:25.450Z",
+      "specRetrievedAt": "2026-10-16T03:49:26.510Z",
+      "focalMm": 35,
+      "maximumAperture": 1.4,
+      "minimumSelectableAperture": 16,
+      "minFocusM": 0.3,
+      "focusModes": null,
+      "focusRaw": "0.3m",
+      "maximumMagnification": 0.18,
+      "magnificationRaw": "0.18x",
+      "filterMm": 72,
+      "diameterLengthMm": [
+        78.5,
+        112
+      ],
+      "weightG": 630,
+      "stabilization": null,
+      "specApertureRaw": "1.4k",
+      "apertureAlternate": {
+        "url": "https://www.sony.co.kr/electronics/camera-lenses/sel35f14z",
+        "text": "F1.4 최대 조리개로 저조도 환경에서도 선명한 이미지를 촬영할 수 있습니다."
+      },
+      "unpromoted": {
+        "opticalConstruction": "8/12",
+        "designStatement": "ZEISS T* coating; 방진/방습 설계; DDSSM focus drive, no new schema",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "lens OSS row absent: UNKNOWN, not false based on name",
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel35f14z",
+      "identity": {
+        "name": "Sony Distagon T* FE 35mm F1.4 ZA",
+        "brand": "Sony",
+        "model": "SEL35F14Z",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.3m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-3174418d8be946a3",
+        "source-6f163d51b28ffbe6"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 834,
+        "outputTokens": 503,
+        "totalTokens": 1337
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL50F14Z",
+      "officialName": "Planar T* FE 50mm F1.4 ZA",
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f14z",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f14z/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:28.112Z",
+      "specRetrievedAt": "2026-10-16T03:49:28.907Z",
+      "focalMm": 50,
+      "maximumAperture": 1.4,
+      "minimumSelectableAperture": 16,
+      "minFocusM": 0.45,
+      "focusModes": null,
+      "focusRaw": "0.45m",
+      "maximumMagnification": 0.15,
+      "magnificationRaw": "0.15 x",
+      "filterMm": 72,
+      "diameterLengthMm": [
+        83.5,
+        108
+      ],
+      "weightG": 778,
+      "stabilization": false,
+      "specApertureRaw": "1.4k",
+      "apertureAlternate": {
+        "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f14z",
+        "text": "이 고성능 ZEISS® 50mm 단 렌즈는 밝은 F1.4 최대 조리개를 탑재하여 어떠한 이미지에서도 탁월한 콘트라스트와 해상도를 제공합니다."
+      },
+      "unpromoted": {
+        "opticalConstruction": "9/12",
+        "designStatement": "ZEISS T* coating; sealed dust/moisture resistant design, not100% protection guarantee",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel50f14z",
+      "identity": {
+        "name": "Sony Planar T* FE 50mm F1.4 ZA",
+        "brand": "Sony",
+        "model": "SEL50F14Z",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-dfc6b32c16e2905e",
+        "source-f5dbb9fe97d1893a"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 857,
+        "outputTokens": 368,
+        "totalTokens": 1225
+      },
+      "canonicalOfficialSourceCount": 2
+    },
+    {
+      "manufacturerModelCode": "SEL50F18F",
+      "officialName": "FE 50mm F1.8",
+      "productId": "sony-fe-50-f18",
+      "existing": false,
+      "classification": "released/current",
+      "state": "canonicalized",
+      "officialCurrentConfirmed": true,
+      "type": "prime",
+      "physicalMount": "Sony E",
+      "formatCoverage": "full-frame",
+      "productUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f",
+      "specUrl": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f/specifications",
+      "productRetrievedAt": "2026-10-16T03:49:30.133Z",
+      "specRetrievedAt": "2026-10-16T03:49:30.843Z",
+      "focalMm": 50,
+      "maximumAperture": 1.8,
+      "minimumSelectableAperture": 22,
+      "minFocusM": 0.45,
+      "focusModes": null,
+      "focusRaw": "0.45m",
+      "maximumMagnification": 0.14,
+      "magnificationRaw": "0.14x",
+      "filterMm": 49,
+      "diameterLengthMm": [
+        68.6,
+        59.5
+      ],
+      "weightG": 186,
+      "stabilization": null,
+      "specApertureRaw": "1.8",
+      "apertureAlternate": null,
+      "unpromoted": {
+        "opticalConstruction": "5/6",
+        "designStatement": "weather/coating UNKNOWN; source discusses stabilized camera bodies, not lens OSS",
+        "schemaExtensionRequired": false
+      },
+      "unknowns": [
+        "lens OSS row absent: UNKNOWN, not false based on name",
+        "AF/MF not separately specified",
+        "weight hood/cap inclusion unspecified",
+        "weather sealing/coating not substantiated in selected official source"
+      ],
+      "workerTaskId": "sony-e-lenses-production-003-sel50f18f",
+      "identity": {
+        "name": "Sony FE 50mm F1.8",
+        "brand": "Sony",
+        "model": "SEL50F18F",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "prime"
+      },
+      "representativeFocusConditions": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "sourceIds": [
+        "source-806998b1bf06ba1c",
+        "source-235a1af60b4213cd"
+      ],
+      "batchOfficialSourceCount": 2,
+      "workerUsage": {
+        "inputTokens": 786,
+        "outputTokens": 553,
+        "totalTokens": 1339
+      },
+      "canonicalOfficialSourceCount": 2
+    }
+  ],
+  "workerTasks": [
+    {
+      "manufacturerModelCode": "SEL35F28Z",
+      "taskId": "sony-e-lenses-production-003-sel35f28z",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 818,
+            "outputTokens": 538,
+            "totalTokens": 1356,
+            "cacheHitTokens": 0,
+            "cacheMissTokens": 818,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL35F28Z\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":35,\"max\":35},\"aperture\":{\"wide\":2.8,\"tele\":2.8},\"stabilization\":null,\"filterMm\":49,\"weightG\":120,\"minFocus\":{\"representativeM\":0.35,\"conditions\":\"official Sonar T* FE 35mm F2.8 ZA specification; focus-mode not enumerated by source\",\"alternatives\":null},\"unsupportedFacts\":{\"magnification\":0.12,\"diameterLengthMm\":\"61.5 x 36.5mm\",\"design\":\"ZEISS T* coating; 5 groups / 7 elements; dust/moisture resistant design\"},\"warnings\":[\"SteadyShot row absent in reviewed specification -> stabilization UNKNOWN mapped to null; explicit no-OSS row would be false, but no such explicit row present, so null retained.\",\"Supplied hood ALC-SH129 has 40.5mm thread vs lens 49mm filter thread: different scopes, not a conflict; accessory scope not converted into base specs.\",\"Spec listed minimum aperture F22 and maximum aperture F2.8; no '1.4k' token present in source. If an alternate official aperture spec said 1.4, it would be malformed/unparseable and must not be parsed; no explicit alternate official maximum-F evidence provided, so aperture remains 2.8.\",\"AF/MF mode not specified by source; not inferred.\"]}",
+          "warnings": [
+            "Envelope summary is a serialized JSON string per instruction.",
+            "Stabilization set to null strictly because OSS row is absent; no IBIS/body-stabilization inference made.",
+            "No alternate official aperture evidence provided for any '1.4k' value; not parsed or converted."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 818,
+        "outputTokens": 538,
+        "totalTokens": 1356
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL85F14GM",
+      "taskId": "sony-e-lenses-production-003-sel85f14gm",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failure",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 830,
+            "outputTokens": 630,
+            "totalTokens": 1460,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 702,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "Worker returned invalid structured output; parent review or one corrected retry is required.",
+          "warnings": [
+            "MALFORMED_RESPONSE: raw response omitted."
+          ],
+          "apiAttempt": true
+        },
+        {
+          "attempt": 2,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 872,
+            "outputTokens": 494,
+            "totalTokens": 1366,
+            "cacheHitTokens": 0,
+            "cacheMissTokens": 872,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL85F14GM\",\"focal\":{\"min\":85,\"max\":85},\"aperture\":{\"wide\":1.4,\"tele\":1.4},\"stabilization\":null,\"filterMm\":77,\"weightG\":820,\"minFocus\":{\"representativeM\":0.8,\"conditions\":\"MF (manual focus)\",\"alternatives\":[{\"mode\":\"AF\",\"meters\":0.85},{\"mode\":\"MF\",\"meters\":0.8}]},\"unsupportedFacts\":{\"magnification\":{\"value\":\"0.12\",\"unit\":\"x\"},\"diameterLengthMm\":{\"diameter\":89.5,\"length\":107.5},\"design\":\"8 groups / 11 elements; Nano AR coating; dust/moisture resistant design; 2-sensor autofocus RDSSM\"},\"warnings\":[\"Stabilization: OSS/SteadyShot row absent in reviewed official specification, so stabilization is null (not false); do not infer body IBIS.\",\"Aperture maximum F1.4 taken from explicit official product evidence; the specification value \\\"1.4k\\\" is malformed and was not parsed (no parseFloat/k-stripping applied).\",\"Minimum focus distance has two conditions: AF 0.85 m and MF 0.8 m; both retained.\",\"Accessory inclusion not specified in source.\",\"Minimum aperture F16 noted in source but not included in required contract keys.\",\"Focal endpoint values are equal (prime lens) per contract.\"]}",
+          "warnings": [
+            "Summary field contains the serialized lens JSON as required by the task; envelope intentionally limited to standard keys.",
+            "No tests executed; no tools available."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 1702,
+        "outputTokens": 1124,
+        "totalTokens": 2826
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields.",
+        "Malformed first response adopted0. Retry selected MF0.8m as representative: main keeps AF0.85m as representative and MF0.8m alternative."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL35F18F",
+      "taskId": "sony-e-lenses-production-003-sel35f18f",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 783,
+            "outputTokens": 480,
+            "totalTokens": 1263,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 655,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL35F18F\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":35,\"max\":35},\"aperture\":{\"wide\":1.8,\"tele\":1.8},\"stabilization\":null,\"filterMm\":55,\"weightG\":280,\"minFocus\":{\"representativeM\":0.22,\"conditions\":null,\"alternatives\":null},\"unsupportedFacts\":{\"magnification\":null,\"diameterLengthMm\":null,\"design\":null},\"warnings\":[\"OSS/SteadyShot row present as '-' (body-integrated): no-lens-OSS row false at source, but OSS boolean not explicit; stabilization kept null per rule not to infer body IBIS.\",\"Aperture 1.4k never parsed; explicit official max F=1.8 used.\",\"Min focus 0.22m is a single value; conditions/alternatives unknown (null).\",\"Magnification 0.24x, dimensions 65.6 x 73mm, lens construction 9-11 groups/elements, and dust/moisture design reported as unsupported facts (null) per contract: not mapped to schema fields.\",\"AF/MF focus mode not stated; left unknown (not inferred).\",\"Accessory inclusion not specified; not converted into base specs.\"]}",
+          "warnings": [
+            "Single-source extraction; only Sony Korea official page excerpts provided.",
+            "stabilization left null because the source marks the row as '-' (body-integrated) rather than an explicit boolean OSS yes/no.",
+            "Aperture '{wide,tele}' both set to 1.8 (prime), not a T-stop or minimum aperture 22."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 783,
+        "outputTokens": 480,
+        "totalTokens": 1263
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields.",
+        "Worker stabilization null despite explicit no-OSS dash row: main uses false under existing manufacturer/pilot policy."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL135F18GM",
+      "taskId": "sony-e-lenses-production-003-sel135f18gm",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 803,
+            "outputTokens": 446,
+            "totalTokens": 1249,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 675,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL135F18GM\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":135,\"max\":135},\"aperture\":{\"wide\":1.8,\"tele\":1.8},\"stabilization\":false,\"filterMm\":82,\"weightG\":950,\"minFocus\":{\"representativeM\":0.7,\"conditions\":\"minimum focus distance as stated on official specs page\",\"alternatives\":null},\"unsupportedFacts\":{\"magnification\":{\"value\":0.25,\"unit\":\"x\",\"supported\":false,\"reason\":\"present on source but not in contract fields\"},\"diameterLengthMm\":{\"value\":\"89.5 x 127\",\"supported\":false,\"reason\":\"present on source but not in contract fields\"},\"design\":{\"groupsElements\":\"10-13\",\"coating\":\"Nano AR coating; front fluorine coating\",\"dustMoistureResistant\":\"not 100% guaranteed\",\"floatingFocus\":true,\"focusLimiter\":true,\"notes\":\"no STF/T-stop\"}},\"warnings\":[\"aperture wide/tele both set to maximum F 1.8 from official 최대 구경(F) field; malformed '1.4k' not used\",\"stabilization set to false from explicit '손떨림 보정(SteadyShot): - (바디 통합)' no-lens-OSS row; body IBIS not inferred\",\"focus mode (AF/MF) not present in source and not inferred\",\"accessory inclusion not specified; not converted into base specs\",\"magnification 0.25x, dimensions 89.5x127mm, and optical design present in source but excluded from contract fields, recorded under unsupportedFacts\"]}",
+          "warnings": [],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 803,
+        "outputTokens": 446,
+        "totalTokens": 1249
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL28F20",
+      "taskId": "sony-e-lenses-production-003-sel28f20",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 810,
+            "outputTokens": 472,
+            "totalTokens": 1282,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 682,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL28F20\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":28,\"max\":28},\"aperture\":{\"wide\":2,\"tele\":2},\"stabilization\":null,\"filterMm\":49,\"weightG\":200,\"minFocus\":{\"representativeM\":0.29,\"conditions\":\"0.29m minimum focus distance as listed in reviewed Sony Korea specifications\",\"alternatives\":[]},\"unsupportedFacts\":{\"magnification\":null,\"diameterLengthMm\":null,\"design\":null},\"warnings\":[\"Maximum aperture recorded as F2 per official spec; spec string '1.4k' treated as malformed and not parsed or converted\",\"SteadyShot/OSS row absent in reviewed specifications; stabilization left null and body IBIS not inferred\",\"No explicit no-OSS row present, so OSS not asserted false; absent row mapped to null\",\"Focus mode (AF/MF) not stated in source; not inferred\",\"Optional external 21mm wide and 16mm fisheye converters excluded from bare lens focal; base focal remains 28mm\",\"Maximum magnification 0.13 and dimensions 64 x 60mm present in source but excluded from contract-based unsupportedFacts set per provided contract and thus null\"]}",
+          "warnings": [
+            "stabilization reported null because OSS row absent, not because OSS confirmed absent",
+            "aperture '1.4k' token not parsed; only explicit official F2 maximum used",
+            "magnification and diameterLengthMm nulled despite source presence, per delegated contract scope, not because evidence missing"
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 810,
+        "outputTokens": 472,
+        "totalTokens": 1282
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL35F14Z",
+      "taskId": "sony-e-lenses-production-003-sel35f14z",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 834,
+            "outputTokens": 503,
+            "totalTokens": 1337,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 706,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL35F14Z\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":35,\"max\":35},\"aperture\":{\"wide\":1.4,\"tele\":1.4},\"stabilization\":null,\"filterMm\":72,\"weightG\":630,\"minFocus\":{\"representativeM\":0.3,\"conditions\":\"official specifications minimum focus distance 0.3m\",\"alternatives\":[]},\"unsupportedFacts\":{\"magnification\":\"0.18x\",\"diameterLengthMm\":\"78.5 x 112mm\",\"design\":\"ZEISS T* coating; dust/moisture resistant design; DDSSM focus drive; lens construction 8 groups/12 elements\"},\"warnings\":[\"Spec sheet lists maximum aperture as '1.4k', which is malformed and was not parsed; aperture maximum F1.4 taken only from the separate explicit official product evidence stating F1.4 maximum aperture.\",\"Specifications row for SteadyShot (OSS) absent in reviewed source; stabilization set to null (UNKNOWN), not inferred false; body IBIS not assumed.\",\"AF/MF focus mode not stated in reviewed source and not inferred.\",\"Accessory inclusion (e.g., hood/case) not specified; not treated as base specifications.\",\"Minimum aperture F16, focal 35mm prime, mount/format per official Sony Korea pages.\"]}",
+          "warnings": [
+            "Aperture '1.4k' is malformed and was not numerically parsed; F1.4 sourced solely from explicit official product-maximum-aperture evidence.",
+            "OSS row absent -> stabilization null (no inference of either OSS or IBIS).",
+            "AF/MF not inferred from DDSSM mention.",
+            "Accessory scope not promoted into base specs."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 834,
+        "outputTokens": 503,
+        "totalTokens": 1337
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL50F14Z",
+      "taskId": "sony-e-lenses-production-003-sel50f14z",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 857,
+            "outputTokens": 368,
+            "totalTokens": 1225,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 729,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL50F14Z\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":50,\"max\":50},\"aperture\":{\"wide\":1.4,\"tele\":1.4},\"stabilization\":false,\"filterMm\":72,\"weightG\":778,\"minFocus\":{\"representativeM\":0.45,\"conditions\":\"official specifications page minimum focus distance\",\"alternatives\":null},\"unsupportedFacts\":{\"magnification\":null,\"diameterLengthMm\":null,\"design\":null},\"warnings\":[\"Specification page shows maximum aperture as '1.4k' which is malformed and not parsed; aperture 1.4 taken only from explicit official product description stating F1.4 maximum aperture.\",\"OSS row listed as '-' (body-integrated stabilization); stabilization set false as lens has no optical stabilizer; body IBIS not inferred.\",\"AF/MF focus mode not specified in sources and not inferred.\",\"Magnification 0.15x, dimensions 83.5x108mm, and 9/12 design present in source but excluded per contract unsupportedFacts scope.\",\"Accessory inclusion not specified; not converted into base specs.\"]}",
+          "warnings": [
+            "Source excerpt '1.4k' is malformed for aperture; only explicit product text F1.4 used, not stripped or parsed.",
+            "Accessory/scope details omitted; AF/MF not inferred.",
+            "No tests executed; analysis-only output."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 857,
+        "outputTokens": 368,
+        "totalTokens": 1225
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    },
+    {
+      "manufacturerModelCode": "SEL50F18F",
+      "taskId": "sony-e-lenses-production-003-sel50f18f",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success",
+          "error": null,
+          "message": null,
+          "usage": {
+            "inputTokens": 786,
+            "outputTokens": 553,
+            "totalTokens": 1339,
+            "cacheHitTokens": 128,
+            "cacheMissTokens": 658,
+            "estimatedCostUSD": null,
+            "costBasis": null
+          },
+          "summary": "{\"modelCode\":\"SEL50F18F\",\"mount\":\"Sony E-mount\",\"formatCoverage\":\"35mm full-frame\",\"focal\":{\"min\":50,\"max\":50},\"aperture\":{\"wide\":1.8,\"tele\":1.8},\"stabilization\":null,\"filterMm\":49,\"weightG\":186,\"minFocus\":{\"representativeM\":0.45,\"conditions\":\"minimum focus distance as published\",\"alternatives\":null},\"unsupportedFacts\":{\"magnification\":{\"value\":\"0.14x\",\"supported\":false,\"note\":\"not in minimal contract scope; reported only\"},\"diameterLengthMm\":{\"value\":\"68.6 x 59.5mm\",\"supported\":false,\"note\":\"not in minimal contract scope; reported only\"},\"design\":{\"value\":\"5 groups / 6 elements\",\"supported\":false,\"note\":\"not in minimal contract scope; reported only\"}},\"warnings\":[\"stabilization row absent in official specification; set to null (UNKNOWN), not false; no lens OSS claim and no body IBIS inference\",\"1.4k aperture value was malformed; not parsed; maximum F explicit evidence is 1.8 so aperture wide/tele=1.8\",\"accessory inclusion not specified; weight 186g treated as base lens only\",\"AF/MF focus mode not stated; not inferred\",\"weather sealing/coating UNKNOWN; omitted as unsupported\"]}",
+          "warnings": [
+            "Parsed only public Sony Korea official gallery/specification excerpts provided as untrusted data, not instructions.",
+            "No tests were executed; no tools available.",
+            "Output is analysis-only; not guaranteed to be applied automatically.",
+            "1.4k string explicitly rejected as malformed rather than coerced.",
+            "Minimum aperture F22 seen in source but excluded from minimal contract fields; not carried in aperture wide/tele which denote maximum aperture."
+          ],
+          "apiAttempt": true
+        }
+      ],
+      "patchApplied": false,
+      "reviewed": true,
+      "preApiFailures": [
+        {
+          "status": "failure",
+          "error": "STATE_UNAVAILABLE",
+          "message": "Worker lock could not be created.",
+          "apiAttempt": false
+        }
+      ],
+      "usage": {
+        "inputTokens": 786,
+        "outputTokens": 553,
+        "totalTokens": 1339
+      },
+      "adopted": [
+        "Focal/maximum aperture/filter/weight numerical extraction independently matched official exact-model table or explicit product narrative.",
+        "Missing OSS row as UNKNOWN; AF/MF alternatives and separate accessory scope warnings where sourced."
+      ],
+      "discarded": [
+        "Generic warnings referring to1.4k on models without that malformed source row are not evidence.",
+        "Unsupported magnification/D×L omitted by some responses: main retains exact official values in provenance, not new canonical fields."
+      ]
+    }
+  ],
+  "checkpoint": {
+    "stage": "complete",
+    "productionApplied": true,
+    "workerCompleted": 8,
+    "apply": {
+      "status": "canonicalized",
+      "batchId": "production-sony-e-lenses-003",
+      "approvalId": "approval-fefeb621c74ec1f43db68ab1a5580cf3f80282b5d43c40587406b6b2e4292daf",
+      "canonicalDigest": "2c63212888a655494888604c12f2a8ab5d71e669400ef8d8089d161d5e417eb3"
+    },
+    "reapply": {
+      "status": "already-canonicalized",
+      "batchId": "production-sony-e-lenses-003",
+      "canonicalMatches": true
+    },
+    "next": "Batch003 complete. Review/commit completed changes and check clean before batch004APS-C9. No repeat successful workers/raw/apply. Remaining ordinaryFEprime0; historical67coverage25/67, fresh catalog status69coverage25/69 with44pending. Special11 includes two newly catalog-current supertele for later preflight."
+  },
+  "workerTotals": {
+    "inputTokens": 7393,
+    "outputTokens": 4484,
+    "totalTokens": 11877
+  },
+  "workerStats": {
+    "actualApiAttempts": 9,
+    "retries": 1,
+    "failures": 1,
+    "preApiStateFailures": 8,
+    "successfulProducts": 8
+  },
+  "humanIntervention": {
+    "extraUserProductDecisions": 0,
+    "mainReviewProducts": 8,
+    "supportedSpecClaimsReviewed": 80,
+    "measuredHumanMinutes": null,
+    "note": "Main Codex performed source/identity/claim/diff review. End-user extra decisions0; exact human labor time not measured."
+  },
+  "rawHelperCreatedAt": "2026-10-16T04:19:25.168Z",
+  "rawHelperCreatedThrough": "2026-10-16T04:19:25.173Z",
+  "accessedAtPolicy": "Explicit actual browser retrieval UTC ISO timestamps are preserved verbatim by raw-helper. No date-only midnight construction; creation clock is separate.",
+  "workerFixturesDeleted": true,
+  "countsAfter": {
+    "bodies": 165,
+    "lenses": 57,
+    "total": 222,
+    "currentSonyLensesProductionCompleted": 25,
+    "currentReleased": 69,
+    "currentSonyLensesProductionUnprocessed": 44,
+    "historicalCurrent": 67,
+    "historicalSonyLensesProductionUnprocessed": 42,
+    "ordinaryFePrimesUnprocessed": 0,
+    "upcoming": 2,
+    "teleconverters": 2,
+    "newProducts": 8,
+    "existingEnriched": 0
+  },
+  "approval": {
+    "reviewer": "GPT-6.1 Sol",
+    "authority": "User authorized complete main review/explicit approval/atomic apply. No extra human-user review claimed.",
+    "allowNewProducts": true,
+    "allowModelNullFill": false,
+    "modelNullFillNeeded": false,
+    "allowValueConflicts": false,
+    "approvalId": "approval-fefeb621c74ec1f43db68ab1a5580cf3f80282b5d43c40587406b6b2e4292daf",
+    "diffDigest": "a2925d371bbe0769e2ff2f0eacff1d7a4877429bbff29d1b52ec3c6e9bbf9b1c",
+    "expectedCanonicalDigest": "2c63212888a655494888604c12f2a8ab5d71e669400ef8d8089d161d5e417eb3"
+  },
+  "productionStatistics": {
+    "products": 8,
+    "newProducts": 8,
+    "enrichedExisting": 0,
+    "rawDocuments": 16,
+    "totalSpecClaims": 80,
+    "knownSpecClaims": 75,
+    "unknownSpecClaims": 5,
+    "verifiedFieldEvidence": 75,
+    "structuredIdentityEvidence": 8,
+    "modelNullFills": 0,
+    "valueConflicts": 0,
+    "promotedSourceConflicts": 0,
+    "diffCategories": {
+      "new-product": 80
+    },
+    "acceptedClaims": 75,
+    "ignoredUnknownClaims": 5
+  },
+  "review": {
+    "humanSummaryReviewed": true,
+    "allProductIdentitiesReviewed": true,
+    "allSpecPathsReviewed": 80,
+    "humanSummarySha256": "a8bc0546e0cb47ba9221cd31d4c89cfe5494475b93e08d7e987ad536f12021fa",
+    "malformedApertureTokensNotParsed": 3,
+    "sourceOwnershipAndScopeReviewed": true,
+    "sourceCounts": "2/product,16raw total; identity-only sources count as product provenance",
+    "identityLocksPreserved": true,
+    "knownUnknowns": [
+      "SEL35F28Z OSS",
+      "SEL85F14GM OSS",
+      "SEL28F20 OSS",
+      "SEL35F14Z OSS",
+      "SEL50F18F OSS"
+    ],
+    "pipelineCodeChanges": 0,
+    "schemaChanges": 0,
+    "normalizationNotes": [
+      "SEL35F28Z49mm lens thread vs40.5mm ALC-SH129 hood thread are distinct scopes, not value conflict.",
+      "SEL28F20 optional external converters21mm/16mm do not change bare-lens28mm prime or create integrated TC.",
+      "135GM floating focus and85GM2-sensor RDSSM remain ordinary focus mechanisms under current core schema.",
+      "No STF/T-stop/apodization/macro/supertele/integrated-TC selected.",
+      "3 malformed1.4k source rows replaced by explicit product maximum-F evidence, not numeric coercion.",
+      "Late product summary hydration can hide coming-soon on first body read: exact model/SKU rendered summary is required before current classification."
+    ]
+  },
+  "futurePlan": {
+    "inventoryDenominator": 69,
+    "historicalDenominator": 67,
+    "actualRemainingNow": 44,
+    "historicalRemaining": 42,
+    "familyRemaining": {
+      "FE primes": 0,
+      "APS-C": 9,
+      "FE wide/standard/telephoto zooms": 24,
+      "Special-family review": 11
+    },
+    "batches": [
+      {
+        "proposedBatchId": "production-sony-e-lenses-004",
+        "family": "APS-C",
+        "modelCodes": [
+          "SEL15F14G",
+          "SEL11F18",
+          "SEL1655G",
+          "SEL70350G",
+          "SELP18105G",
+          "SEL20F28",
+          "SEL24F18Z",
+          "SEL50F18",
+          "SEL55210"
+        ],
+        "count": 9,
+        "specialFamilyPreflight": false,
+        "state": "pending",
+        "independentWorkerTaskPerProduct": true
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-005",
+        "family": "FE wide/standard/telephoto zooms",
+        "modelCodes": [
+          "SEL100400",
+          "SEL50150GM",
+          "SEL400800G",
+          "SEL2870GM",
+          "SEL1625G",
+          "SEL2450G",
+          "SEL1635GM2",
+          "SEL70200G2",
+          "SEL2070G",
+          "SELP1635G",
+          "SEL70200GM2",
+          "SEL1224GM"
+        ],
+        "count": 12,
+        "specialFamilyPreflight": false,
+        "state": "pending",
+        "independentWorkerTaskPerProduct": true
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-006",
+        "family": "FE wide/standard/telephoto zooms",
+        "modelCodes": [
+          "SEL70200G",
+          "SEL70200GM",
+          "SEL200600G",
+          "SEL24105G",
+          "SEL1635GM",
+          "SEL1224G",
+          "SEL100400GM",
+          "SEL24240",
+          "SEL2470GM",
+          "SEL2470Z",
+          "SELP28135G",
+          "SEL70300G"
+        ],
+        "count": 12,
+        "specialFamilyPreflight": false,
+        "state": "pending",
+        "independentWorkerTaskPerProduct": true
+      },
+      {
+        "proposedBatchId": "production-sony-e-lenses-007",
+        "family": "Special-family review",
+        "modelCodes": [
+          "SEL100400MC",
+          "SEL100M28GM",
+          "SEL300F28GM",
+          "SELC1635G",
+          "SEL100F28GM",
+          "SEL600F40GM",
+          "SEL400F28GM",
+          "SEL30M35",
+          "SEL50M28",
+          "SEL400F45GM",
+          "SEL600F63GM"
+        ],
+        "count": 11,
+        "specialFamilyPreflight": true,
+        "state": "pending",
+        "independentWorkerTaskPerProduct": true,
+        "addedAfterFreshStatusReview": [
+          "SEL400F45GM",
+          "SEL600F63GM"
+        ]
+      }
+    ],
+    "finalCoverageAuditRequired": true,
+    "nextFamily": "APS-C9",
+    "structuralRisks": [
+      "Special family11 includes two prior-upcoming now catalog-current supertele; fresh release/weight/optical preflight required before production.",
+      "STF T-stop/F-number,macro,cine/PZ and supertele tripod/hood weight must not be coerced.",
+      "Two remaining legacy lenses need explicit reviewed model-null-fill approval.",
+      "Current status is catalog-based, not dealer stock."
+    ],
+    "estimatedRemainingBatches": 4
+  },
+  "verification": {
+    "regression": {
+      "tests": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    "full": {
+      "tests": 498,
+      "passed": 498,
+      "failed": 0
+    },
+    "objective": {
+      "tests": 471,
+      "passed": 471,
+      "failed": 0
+    },
+    "sonyLens": {
+      "tests": 116,
+      "passed": 116,
+      "failed": 0
+    },
+    "bodyBrand": {
+      "tests": 246,
+      "passed": 246,
+      "failed": 0
+    },
+    "canonicalValidation": true,
+    "build": "passed; existing >500kB chunk warning, generated JS1046.97kB",
+    "nodeCheck": {
+      "passed": true,
+      "files": 8
+    },
+    "gitDiffCheck": true,
+    "baselineMatchesHead": true,
+    "afterMatchesCanonical": true,
+    "oldBodiesLensesPricesUnchanged": true,
+    "oldSealedArtifactsUnchanged": true,
+    "identityMapAppendOnlyEntries": 8,
+    "codeSchemaRecommendationUiChanges": 0
+  }
+}

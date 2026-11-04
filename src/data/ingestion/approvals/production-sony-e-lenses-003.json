@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-003",
+  "productIds": [
+    "sony-sonnar-t-fe-35-f28-za",
+    "sony-fe-85-f14-gm",
+    "sony-fe-35-f18",
+    "sony-fe-135-f18-gm",
+    "sony-fe-28-f2",
+    "sony-distagon-t-fe-35-f14-za",
+    "sony-planar-t-fe-50-f14-za",
+    "sony-fe-50-f18"
+  ],
+  "approvedAt": "2026-10-16T04:19:40.725Z",
+  "approvedBy": {
+    "name": "GPT-6.1 Sol",
+    "method": "cli-explicit"
+  },
+  "approvalReason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply.",
+  "diffDigest": "a2925d371bbe0769e2ff2f0eacff1d7a4877429bbff29d1b52ec3c6e9bbf9b1c",
+  "diffFileDigest": "d6a06037068d58fb487a08c26ff46f47920d158c30cda57047126546cd8ef6ef",
+  "baselineCanonicalDigest": "c853a3f834890184df74aebc76f8c7ecc10fd56f2a2876f27f3e36ecff3ddb66",
+  "expectedCanonicalDigest": "2c63212888a655494888604c12f2a8ab5d71e669400ef8d8089d161d5e417eb3",
+  "incomingDigest": "19c0bd98d42e75fc85c512093f74829e72f0a9d91a996a41c3c735f1fa9c469d",
+  "incomingArtifactDigests": {
+    "vocab.json": "b5462e0831fc4df97916972130d16144b248ea76bface94373795d4c66cf995b",
+    "identity-map.json": "6e4d4372d42101ad9d0e2ab653a88ff58616e0ef8c2eaa6cb00db3bed20c89d6",
+    "diffs/production-sony-e-lenses-003.json": "d6a06037068d58fb487a08c26ff46f47920d158c30cda57047126546cd8ef6ef",
+    "staging/production-sony-e-lenses-003/sony-sonnar-t-fe-35-f28-za.json": "5a048755a629fa19ab524f4e507f0760d0932d821cabb4ba9208cd8f283f2eeb",
+    "raw/source-85af7231411e4268.json": "c77a9d19a494ad25224114b5b7b1ee93e736f325802bd1e2ce7794e853dbb985",
+    "raw/source-0ca0d6b95f6d6ac7.json": "d130a733ab39c7d4e82cb4b339657377c1bf5f67f2671ca60b6bf6eb4d066108",
+    "staging/production-sony-e-lenses-003/sony-fe-85-f14-gm.json": "577bc148fbcb6ede7b1f79a1156fee4eadbacf12bd2d0370555424e374efd180",
+    "raw/source-fe1f1d6ad9c7a2b8.json": "f0735a2e60037862afc33f5f80d7dcb74cc77102d7f3c1b588fda60ec1e9881a",
+    "raw/source-f51e8e0cf6da3ed7.json": "7cbaddd8bd48477454c1260d73ec66a14eb52eed00b27019d2c294392178f194",
+    "staging/production-sony-e-lenses-003/sony-fe-35-f18.json": "681133aa5df8b4af73374b4ed8c691851054eb3b220999f2ea1c524adc2ca1ea",
+    "raw/source-256b28a9dfb594e5.json": "81fca29548df8beff3b5c85b1d6ca9516040052e6c2a29c52ed1768e7fffc3a3",
+    "raw/source-859ddf3b7e44217a.json": "cf8916742cee221210d904775c64f143e2c8c11939cb7eb58e872749c0f4e836",
+    "staging/production-sony-e-lenses-003/sony-fe-135-f18-gm.json": "30da5f9c81b6eefdae9f6648d1be3c70b4998306492befdaf456453c9b837f64",
+    "raw/source-db97e5a6f538fa7d.json": "266f5827daa49af51be50afa2f6418934787709af4ed7d6a5f04b4dd4e99ac1e",
+    "raw/source-4da4fc92bd96f914.json": "a93e9946375cbd9549efa0088ae94b060806070c67bdf67960a3d07edfc8a67c",
+    "staging/production-sony-e-lenses-003/sony-fe-28-f2.json": "fa77144def3d642f2e151c6f75301c76e1f77bb81f7f2bda1f1a77343452d548",
+    "raw/source-ef9a34b2de594fe5.json": "03b1a95eeccf1d361ca30ce6b5269ce4897ae01ed2735e06c31dbef05952eee5",
+    "raw/source-81f60ac8caa36ebb.json": "d813d4eaec8c364b3f8157a5636f59c9a522db56c397087f1b6076a22107691c",
+    "staging/production-sony-e-lenses-003/sony-distagon-t-fe-35-f14-za.json": "b8ec1b8ef7a4fc1d5ddec5263878c3d5fc113c0660394d206f1817a630a2ec08",
+    "raw/source-3174418d8be946a3.json": "98480c6926ef7508c90a3b419405cad1e8970aa7a70da6d472428ab62f6b65ae",
+    "raw/source-6f163d51b28ffbe6.json": "4a5010914fab0d29a628f315417b567d553c8cb6827ddc8bf4bb63d99c8dba37",
+    "staging/production-sony-e-lenses-003/sony-planar-t-fe-50-f14-za.json": "18de6da713f02a90a47dae84ac3e52ee3b0d79a21f74cba706ba4b667583c18e",
+    "raw/source-dfc6b32c16e2905e.json": "d453f4f6bbc9e364c70b8ee22ea5e698032b052c4b5a261952bc4e616ad067e1",
+    "raw/source-f5dbb9fe97d1893a.json": "af6bf814a30823e5b7859502e62f1b2549e97008920a2014d9b550d20b7d5c7c",
+    "staging/production-sony-e-lenses-003/sony-fe-50-f18.json": "156f8342994483d934b20ccb01cd4187a9bf1c278ea9a7be7a9173895024d066",
+    "raw/source-806998b1bf06ba1c.json": "fea5828b76b28ae8dace404f6048d33d9f95ca591073eab973162b72b399d698",
+    "raw/source-235a1af60b4213cd.json": "66e4d1913e10b14c34aa3a66e1e059d8c1cae4d84e2e4421caa3445a13c17fb4"
+  },
+  "productOperations": [
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "bd2096460546fc09a3391322cbdd5d97e0aee5e129938e11cc468bac1a18431f",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-0c5c7fc1815a7e36434f",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "02b71fd66b4048e07e35cc5c6bf49fab9b37a8daa991481f62735c6ea3cc3113",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-ce12261ab16cc4295291",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "cb8e02d3ecd8d8a0df7d54406e4c9d8741f03f372cc406dc4e083b56ba48aed1",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-e2e089a7df326050db84",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "eb09eb739e2d6d868c9e5f77c0bf752eedd2e81479c76905cb1eb37ac35d1ffc",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-cef45bbf1a1d8928353c",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "8110cc0a6b1ec4c1adad1b7615365a0d18640195c5efbdd695f762acc33ad814",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-28fed571e40d07b0b6f0",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "042285daf930233abea175f69ea9882587193f519caeeba8b958a257c6854fa4",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-e0a9506822b226547114",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "58c01349a566d4021d8dcb1593cbf753d19cf857c5b7b435dc94d743590037a6",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-b38af5ac5db541de749f",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "operation": "new-product",
+      "action": "accept",
+      "incomingProductDigest": "a0ace10fb996016464ddd5d6b54e398ddba37f3912a106c80d751f1ef8fac13d",
+      "canonicalProductDigest": null,
+      "identityEvidenceId": "identity-7e34c3bed64393ece52b",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    }
+  ],
+  "decisions": [
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-87e35c6fbb4fe923bde8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-1aa2fdffbadbbdb5072a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.filterMm",
+      "claimId": "claim-be2dd262892f42b441f1",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.focal.max",
+      "claimId": "claim-104bc26f4c74e6d6fa54",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.focal.min",
+      "claimId": "claim-ca52b7680cb9379ea609",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-7c1f1e089b2731aabd8e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-b0af8ccacb9601e3c39a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.minFocusM",
+      "claimId": "claim-c0dbc7032bcfb1f6352d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.stabilization",
+      "claimId": "claim-9f03b943a6172685105e",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-sonnar-t-fe-35-f28-za",
+      "path": "specs.weight",
+      "claimId": "claim-12563a73abd591e49f66",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-3d61b37e31466bcfd34d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-3a72337761b3d1627272",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.filterMm",
+      "claimId": "claim-d318ae7d7faf379769a9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.focal.max",
+      "claimId": "claim-b6ba3d349f792d214de4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.focal.min",
+      "claimId": "claim-fd0903ff5eac90c77e98",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-1a630e8119a9395ba4d2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-50d1c9f55d326aca8817",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.minFocusM",
+      "claimId": "claim-7f9fa418913d04c7d0e9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.stabilization",
+      "claimId": "claim-8e1e0f6e56e8832d3f2e",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-85-f14-gm",
+      "path": "specs.weight",
+      "claimId": "claim-810157e19e19549f5899",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-5a5c225fd8558c2a191d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-a82f61d400dd9fc439ad",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.filterMm",
+      "claimId": "claim-6225ffd575682f3201a4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.focal.max",
+      "claimId": "claim-3b5dd581cf4ad9677e6f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.focal.min",
+      "claimId": "claim-8bb6ace151dfb2ad2e1d",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-2218a7ce404c8566565a",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-ce25344c6b84e6a14732",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.minFocusM",
+      "claimId": "claim-01926858fa6878400324",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.stabilization",
+      "claimId": "claim-ecbff009eb60d81b4d70",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-35-f18",
+      "path": "specs.weight",
+      "claimId": "claim-6d43f2341c92e5869502",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-ffe8d1d8661f9cf02cd0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-fb289ff2bd5a1a1b026f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.filterMm",
+      "claimId": "claim-bd117eb9a9097af4c0d7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.focal.max",
+      "claimId": "claim-294a9505897e9ccd2a93",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.focal.min",
+      "claimId": "claim-605b1da6a2a478aff8c5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-87590644e3112fe234d9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-2a73cf19dd00475ef22f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.minFocusM",
+      "claimId": "claim-7a7a779ba0187f616039",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.stabilization",
+      "claimId": "claim-85814e23c70e12047ef7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-135-f18-gm",
+      "path": "specs.weight",
+      "claimId": "claim-b48e9707e7e27cdedbbe",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-46eb3d8fe3dadb388026",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-69959ec7caf3dcf4a15e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.filterMm",
+      "claimId": "claim-8ea68725792af243592e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.focal.max",
+      "claimId": "claim-b85b3c362b79d9982f05",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.focal.min",
+      "claimId": "claim-a5de0afba885f0560e45",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-67f91c17de558c2ad26c",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-9099f684f7adfa319bd0",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.minFocusM",
+      "claimId": "claim-b68a389b1e3766fa75e5",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.stabilization",
+      "claimId": "claim-eaf1f93c4686a1c39ddd",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-28-f2",
+      "path": "specs.weight",
+      "claimId": "claim-8c2409d2d509bf375cfc",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-fefdbd117f9b42a8a74e",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-9241e6f9db42fb31fb0f",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.filterMm",
+      "claimId": "claim-f50770079cd7859dd0c7",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.focal.max",
+      "claimId": "claim-9ac597b0bf233529cf16",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.focal.min",
+      "claimId": "claim-0f44a4e897449b3a4211",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-2695f6dd63c9566b79c9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-ffd2c9194cea5ef0d960",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.minFocusM",
+      "claimId": "claim-93c8880241727c032ab4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.stabilization",
+      "claimId": "claim-0b4b5c0f66d5c4523409",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-distagon-t-fe-35-f14-za",
+      "path": "specs.weight",
+      "claimId": "claim-a6cf952cf0fa74271fb4",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-778131c2c6d9ed5624da",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-f1791352daa5af926699",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.filterMm",
+      "claimId": "claim-4971a6fb3a661854e074",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.focal.max",
+      "claimId": "claim-471a8095cf73ba02a322",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.focal.min",
+      "claimId": "claim-1140c775f213a7ee7c51",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-fed1818fdaf809dceca6",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-1749dbf4081d344c3913",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.minFocusM",
+      "claimId": "claim-ddd4e1885fc0d59f83ae",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.stabilization",
+      "claimId": "claim-d0a874575cf5d7852b20",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-planar-t-fe-50-f14-za",
+      "path": "specs.weight",
+      "claimId": "claim-abb4073f9891e47f9c0b",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.aperture.tele",
+      "claimId": "claim-0d6dc39f99dac43c0845",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.aperture.wide",
+      "claimId": "claim-61660a6d1937a7ff3e33",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.filterMm",
+      "claimId": "claim-862bad7abbb3045d4716",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.focal.max",
+      "claimId": "claim-98a02f7dd1b752381fa9",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.focal.min",
+      "claimId": "claim-972b2f9d777560da4ad2",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.formatCoverage",
+      "claimId": "claim-d828b70ae545f3dacc49",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.minFocusConditions",
+      "claimId": "claim-b8ad3aa2c8654ada10c8",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.minFocusM",
+      "claimId": "claim-b01364fc6c1fad56c425",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.stabilization",
+      "claimId": "claim-0dd499d6325ba1f4e882",
+      "category": "new-product",
+      "action": "ignore",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.weight",
+      "claimId": "claim-7f556829a27837a97a34",
+      "category": "new-product",
+      "action": "accept",
+      "reason": "Reviewed8 exact current ordinary FE primes and80 claim paths: allnew,75known/5UNKNOWN; explicit product F1.4 instead of malformed1.4k;49mm lens/40.5mm hood and bare28mm/external-converter scopes separated; OSS unknown not inferred; no value conflicts/prices. User authorized full production apply."
+    }
+  ],
+  "approvalId": "approval-fefeb621c74ec1f43db68ab1a5580cf3f80282b5d43c40587406b6b2e4292daf"
+}

@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-003",
+  "itemKey": "sony-fe-50-f18",
+  "manufacturerModelCode": "SEL50F18F",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL50F18F",
+    "productId": "sony-fe-50-f18",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-7e34c3bed64393ece52b",
+    "sourceId": "source-806998b1bf06ba1c",
+    "evidenceRef": 0,
+    "locator": {
+      "section": "Product heading/support model and current gallery card",
+      "row": "SEL50F18F"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-10-16",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-50-f18",
+    "name": "Sony FE 50mm F1.8",
+    "brand": "Sony",
+    "model": "SEL50F18F",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "prime",
+    "specs": {
+      "aperture": {
+        "tele": 1.8,
+        "wide": 1.8
+      },
+      "filterMm": 49,
+      "focal": {
+        "max": 50,
+        "min": 50
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "minFocusM": 0.45,
+      "stabilization": null,
+      "weight": 186
+    }
+  },
+  "source": {
+    "sourceId": "source-806998b1bf06ba1c",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f",
+    "publisher": "Sony",
+    "documentTitle": "FE 50mm F1.8 — Sony Korea official product",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-10-16T03:49:30.133Z",
+    "evidenceScope": "Exact identity and explicit maximum-F evidence where applicable. Unpromoted design: weather/coating UNKNOWN; source discusses stabilized camera bodies, not lens OSS. No IP rating/complete weather guarantee inferred.",
+    "contentDigest": "fbc3e6548fd498abd3803e085eeaeeeeaa246ca272fac893c6e0541c335f264e"
+  },
+  "sources": [
+    {
+      "sourceId": "source-235a1af60b4213cd",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F1.8 — Sony Korea official specifications",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:49:30.843Z",
+      "evidenceScope": "Exact-model actual focal/maxF/coverage/focus/filter/weight, manufacturer table individually reviewed. Unsupported magnification,D×L,optics retained in conditions. Conditional accessory scopes remain separate.",
+      "contentDigest": "14523ee4fdd98a3090a9c987a94b9b0626ceeea2bd8ae4f89c915e016c027220"
+    },
+    {
+      "sourceId": "source-806998b1bf06ba1c",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50f18f",
+      "publisher": "Sony",
+      "documentTitle": "FE 50mm F1.8 — Sony Korea official product",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-10-16T03:49:30.133Z",
+      "evidenceScope": "Exact identity and explicit maximum-F evidence where applicable. Unpromoted design: weather/coating UNKNOWN; source discusses stabilized camera bodies, not lens OSS. No IP rating/complete weather guarantee inferred.",
+      "contentDigest": "fbc3e6548fd498abd3803e085eeaeeeeaa246ca272fac893c6e0541c335f264e"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.aperture.tele",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening F-number at both prime endpoints; not T-stop or minimum selectable F",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0d6dc39f99dac43c0845"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.aperture.wide",
+      "value": 1.8,
+      "unit": null,
+      "rawValue": 1.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "최대 구경(F): 1.8"
+      },
+      "conditions": {
+        "sourceText": "1.8",
+        "meaning": "maximum opening F-number at both prime endpoints; not T-stop or minimum selectable F",
+        "unpromotedMinimumSelectableAperture": 22
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-61660a6d1937a7ff3e33"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.filterMm",
+      "value": 49,
+      "unit": "mm",
+      "rawValue": 49,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "필터 직경(MM): 49"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-862bad7abbb3045d4716"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.focal.max",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-98a02f7dd1b752381fa9"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.focal.min",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "초점 거리(MM): 50"
+      },
+      "conditions": {
+        "meaning": "actual physical focal length; not APS-C equivalent or external-converter system focal",
+        "primeEndpointsEqual": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-972b2f9d777560da4ad2"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "포맷: 35mm 풀프레임"
+      },
+      "conditions": {
+        "physicalMount": "Sony E",
+        "mountSourceText": "소니 E-마운트",
+        "coverageNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-d828b70ae545f3dacc49"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "unit": null,
+      "rawValue": "Published 0.45m; focus mode not separately specified; Sony sensor-plane distance convention (general helpguide), not front-element working distance",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "최소 초점 거리: 0.45m"
+      },
+      "conditions": {
+        "sourceText": "0.45m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.45
+        },
+        "unpromotedMaximumMagnification": 0.14,
+        "maximumMagnificationSourceText": "0.14x",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+        "frontElementWorkingDistanceNotDerived": true,
+        "reviewedDisplaySummary": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-b8ad3aa2c8654ada10c8"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.minFocusM",
+      "value": 0.45,
+      "unit": "m",
+      "rawValue": 0.45,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "최소 초점 거리: 0.45m"
+      },
+      "conditions": {
+        "sourceText": "0.45m",
+        "representativeBasis": "published distance; AF/MF unspecified",
+        "officialFocusDistancesM": {
+          "published": 0.45
+        },
+        "unpromotedMaximumMagnification": 0.14,
+        "maximumMagnificationSourceText": "0.14x",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+        "measurementBasis": "General Sony sensor-plane to subject convention; exact-model numeric row does not restate origin",
+        "frontElementWorkingDistanceNotDerived": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-b01364fc6c1fad56c425"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.stabilization",
+      "value": null,
+      "unit": null,
+      "rawValue": null,
+      "rawUnit": null,
+      "unknown": true,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "손떨림 보정(SteadyShot): row absent; UNKNOWN"
+      },
+      "conditions": {
+        "sourceText": "row absent in reviewed exact-model specification",
+        "bodyIbisNotAsserted": true,
+        "combinedStopsNotAsserted": true,
+        "lensOssOnly": true,
+        "absenceNotInferredFromName": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-0dd499d6325ba1f4e882"
+    },
+    {
+      "productId": "sony-fe-50-f18",
+      "path": "specs.weight",
+      "value": 186,
+      "unit": "g",
+      "rawValue": 186,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-235a1af60b4213cd",
+      "locator": {
+        "section": "Exact-model lens specifications or explicit product maximum-F narrative",
+        "row": "무게: 186g"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyExcluded": true,
+        "accessoryInclusion": "hood/cap inclusion not specified in official weight row",
+        "unpromotedDiameterLengthMm": [
+          68.6,
+          59.5
+        ],
+        "dimensionSourceText": "68.6 x 59.5mm (D x L)",
+        "unpromotedOpticalConstruction": "5/6"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-10-16",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7f556829a27837a97a34"
+    }
+  ]
+}
