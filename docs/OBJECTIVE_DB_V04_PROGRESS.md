@@ -1,5 +1,11 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony Batch 005 완료 — 2026-11-04
+
+광각·표준 FE 줌 12개를 atomic apply했다. 신규 11개와 기존 SELP1635G 모델 코드 및 사양 보강 1개. Canonical **165/66/231 → 165/77/242**. Sony 공식 현행 **46/69 완료, 23 잔여**(FE 줌 12 / 특수 11). 공식 raw 24개, 알려진 사양 117개, UNKNOWN 3개, 값 충돌 0건.
+
+Worker 12회, 재시도/실패 0, 총 12918토큰. 테스트 전체 508 / Objective 481 / 렌즈 126 / 기존 브랜드 246 통과. Canonical validation, build, syntax, diff 확인 및 실제 already-canonicalized / canonicalMatches:true 확인. [44항목 보고](OBJECTIVE_DB_SONY_LENS_PRODUCTION_005.md). 다음은 검토·커밋 후 clean 상태에서 Batch 006 잔여 FE 줌 사전 검토.
+
 ## Lens phase — Sony Batch 004 완료 — 2026-11-04
 
 일반 APS-C 9개 신규 등록, 단일 atomic apply. Canonical **165/57/222 → 165/66/231**. 기존 제품·가격·schema·추천·UI·sealed artifact 유지. 공식 갤러리 73카드, upcoming 2/TC 2 제외 **69 현행, 34 완료, 35 잔여**. 일반 APS-C 0 / FE 줌 24 / 특수 11(APS-C 매크로 1 포함). 400/600 신형 망원은 현행이지만 이번 범위 제외.

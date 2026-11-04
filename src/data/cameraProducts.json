@@ -41285,10 +41285,11 @@
           "tele": 4
         },
         "weight": 353,
-        "stabilization": null,
-        "filterMm": null,
-        "minFocusM": null,
-        "minFocusConditions": null
+        "stabilization": false,
+        "filterMm": 72,
+        "minFocusM": 0.24,
+        "minFocusConditions": "Published 0.28–0.24m; 0.24m lower bound, mode not specified",
+        "formatCoverage": "full-frame"
       },
       "sources": [
         {
@@ -41303,9 +41304,120 @@
             "specs.weight"
           ],
           "note": "Only verified specifications imported; no subjective scores or inferred market prices."
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/selp1635g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity",
+            "model"
+          ],
+          "note": "Reviewed lens model null-fill identity evidence retained in transaction archive",
+          "sourceId": "source-c6975d37f79c4131",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/selp1635g/spec?sku=selp1635g-csyx",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-0d103df44a8ef930",
+          "documentVersion": null
         }
       ],
-      "legacyFields": []
+      "legacyFields": [],
+      "model": "SELP1635G",
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-c0d197031f78d5f7a970",
+        "sourceId": "source-c6975d37f79c4131",
+        "checkedAt": "2026-11-04"
+      },
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-baf453e7323d1150bdd7"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-40a88a2f8af870fdad89"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-46f4e46d75cd1318c1ef"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-cf05293a2ac303ed93e5"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-936b66946beac9e7e270"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0bc67f428b326ee4429a"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-527edb00367e4b050745"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-18045af5b22837fb8df5"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-138fd38aaaeba4c0eba8"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-30c4664ca9155abb3695"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
     },
     {
       "id": "canon-rf-50-f18",
@@ -47250,6 +47362,1687 @@
           "verification": "verified",
           "claimIds": [
             "claim-e760355a966d9bf34576"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-12-24-f28-gm",
+      "name": "Sony FE 12-24mm F2.8 GM",
+      "brand": "Sony",
+      "model": "SEL1224GM",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 12,
+          "max": 24
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 847,
+        "stabilization": false,
+        "filterMm": null,
+        "minFocusM": 0.28,
+        "minFocusConditions": "0.28m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel1224gm",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-660662720beb473f",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel1224gm/spec",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-43dce937f3154d0e",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-5b8d63429bc0ed0ea69d",
+        "sourceId": "source-660662720beb473f",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-64df2f3a55ebd489c7b2"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4c9b180baead3c3d26d0"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9f5d1dab197e8b577604"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-827f55f775b421cd09ae"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4c5b1613c88361013ded"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b00031069eab3e0bfb8e"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-41bb00c072104d48b1ef"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-da47175c902b1634a379"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7ee81bc055383ea27c14"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-12-24-f4-g",
+      "name": "Sony FE 12-24mm F4 G",
+      "brand": "Sony",
+      "model": "SEL1224G",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 12,
+          "max": 24
+        },
+        "aperture": {
+          "wide": 4,
+          "tele": 4
+        },
+        "weight": 565,
+        "stabilization": false,
+        "filterMm": null,
+        "minFocusM": 0.28,
+        "minFocusConditions": "0.28m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1224g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-827fabdefbe8943d",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1224g/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-662b5413b9c87062",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-8cbe56464356801c592c",
+        "sourceId": "source-827fabdefbe8943d",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2c4c7791d8c2a9de5996"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-63e486902d174e1524f5"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-35b1d54a981771ecbcb0"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-81b7c54349793ac05a36"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b38830ee64ca8dc393d7"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-545ee378ac974b5b4d47"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-56655b2d16b9be230d11"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-bd00d425293a56d457d2"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-544b1e4c0941a06cefe7"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-16-25-f28-g",
+      "name": "Sony FE 16-25mm F2.8 G",
+      "brand": "Sony",
+      "model": "SEL1625G",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 16,
+          "max": 25
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 409,
+        "stabilization": false,
+        "filterMm": 67,
+        "minFocusM": 0.18,
+        "minFocusConditions": "AF W 0.18m/T 0.24m; MF W 0.17m/T 0.22m",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1625g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-a21f42289b4e70a7",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1625g/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-b78d7e7c471c137c",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-b463507fa27559c3a385",
+        "sourceId": "source-a21f42289b4e70a7",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-45eb03e148d031a18997"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-c36d2aa32aace23d55b4"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9a1acca5b73123a4f697"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d14b8e48612b1c1bc30a"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-690c3ca39ece76d7cadd"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1638171992dd0a16d6c2"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ce628239d4ba2399013b"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-769e8276b02f2548ec0a"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-35b7f8ea6fb6d4aed102"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1ba11447ea48cea5778e"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-16-35-f28-gm",
+      "name": "Sony FE 16-35mm F2.8 GM",
+      "brand": "Sony",
+      "model": "SEL1635GM",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 16,
+          "max": 35
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 680,
+        "stabilization": false,
+        "filterMm": 82,
+        "minFocusM": 0.28,
+        "minFocusConditions": "0.28m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1635gm",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-800743aa76f3903c",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel1635gm/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-cc895f68d9467036",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-5348ab1290c589916083",
+        "sourceId": "source-800743aa76f3903c",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5bdbc6c501a40f5d926a"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-74021ab2075c725f4693"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1b2a4356805202541fd9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-dcac225219886d3bb714"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-7d28df0148597f20b7e8"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a74a400c68aa6be05605"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8ae3641a34f243c72962"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b6e19d801317491cf154"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-94a3b66645f7f0b3c847"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a6e5f307a7182f3d1559"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-16-35-f28-gm2",
+      "name": "Sony FE 16-35mm F2.8 GM II",
+      "brand": "Sony",
+      "model": "SEL1635GM2",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 16,
+          "max": 35
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 547,
+        "stabilization": false,
+        "filterMm": 82,
+        "minFocusM": 0.22,
+        "minFocusConditions": "0.22m W/T; mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel1635gm2",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-f6abbf604d083fdb",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel1635gm2/spec",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-aa076cd9cd5eb3a8",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-49d36cf602a5cff14014",
+        "sourceId": "source-f6abbf604d083fdb",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e5d90ab35139154bb9f1"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6f5ae6c69b8de629a381"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ee854f1139f76cb1a490"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-54fd76f45db74344fa3e"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-27a5cb07be6c6d1b29b9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fd0feb5a7ec7d11c2eeb"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4b0dfeef9b46e80f2708"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b249b5f42848d844d054"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ff5fe5c7c7ac5fa6ec4c"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4b93f236984c414d246e"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-20-70-f4-g",
+      "name": "Sony FE 20-70mm F4 G",
+      "brand": "Sony",
+      "model": "SEL2070G",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 20,
+          "max": 70
+        },
+        "aperture": {
+          "wide": 4,
+          "tele": 4
+        },
+        "weight": 488,
+        "stabilization": false,
+        "filterMm": 72,
+        "minFocusM": 0.25,
+        "minFocusConditions": "AF W 0.30m/T 0.25m; MF 0.25m",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel2070g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-086b1345a3281eac",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel2070g/spec",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-005a74b8919c672f",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-fb6648c09d17bea62ac0",
+        "sourceId": "source-086b1345a3281eac",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-98b6c77ad635194a510e"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ab0f63f9798681ddbdce"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e3f1c9743113a2aa5a5f"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0780f4adda49fd2c0630"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-020e87cc9b5c9397fadb"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-99945b6e53a6fa348fc9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-45bbd42f7131f1265eed"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-0b6ee8ec33dc2e12ed5b"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-08f49ea2d5cb83f02e4b"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-73f8cabbad3a71d261a9"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-24-105-f4-g-oss",
+      "name": "Sony FE 24-105mm F4 G OSS 렌즈",
+      "brand": "Sony",
+      "model": "SEL24105G",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 24,
+          "max": 105
+        },
+        "aperture": {
+          "wide": 4,
+          "tele": 4
+        },
+        "weight": 663,
+        "stabilization": true,
+        "filterMm": 77,
+        "minFocusM": 0.38,
+        "minFocusConditions": "0.38m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24105g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-7207148915de0dd9",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24105g/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-8e5fa940c9312268",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-f5c257314d15747f4490",
+        "sourceId": "source-7207148915de0dd9",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-455e1a4429ad253cb214"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1ec7d772001282200aca"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-56643d404186b8fbfb20"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a7e5fd74255367a07f2f"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-81e196c57d9b0a97049b"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f06e2155c0862e6a62aa"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9051181acb994b89fea4"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ce47ed3745c0767f7d27"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a19a5e487b2448f8d229"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-deb2d23ffc3db0bfac6e"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-24-50-f28-g",
+      "name": "Sony FE 24-50mm F2.8 G",
+      "brand": "Sony",
+      "model": "SEL2450G",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 24,
+          "max": 50
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 440,
+        "stabilization": false,
+        "filterMm": 67,
+        "minFocusM": 0.19,
+        "minFocusConditions": "AF W 0.19m/T 0.30m; MF W 0.18m/T 0.29m",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel2450g",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-37a31d06e29402f8",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/lenses/products/sel2450g/spec?sku=sel2450g.amea",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-ea105f6157a40114",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-d6388fcc8df6330dee97",
+        "sourceId": "source-37a31d06e29402f8",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5b4bac2663fb4b608ad9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b072c00644e918b4f62f"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1dfc181dd1696041c8ae"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-fb491af592420f259eab"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-18e9969aec5744e324e9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8e01024e2ad15d0385ad"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4390c8e6180d7441bc1d"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-84098d46d11a6e111aca"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-5d74545ded306f6c3334"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-6c67d5d796e184415ae5"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-24-70-f28-gm",
+      "name": "Sony FE 24-70mm F2.8 GM",
+      "brand": "Sony",
+      "model": "SEL2470GM",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 24,
+          "max": 70
+        },
+        "aperture": {
+          "wide": 2.8,
+          "tele": 2.8
+        },
+        "weight": 886,
+        "stabilization": null,
+        "filterMm": 82,
+        "minFocusM": 0.38,
+        "minFocusConditions": "0.38m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel2470gm",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-585632d6acc31f7b",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel2470gm/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-f85be17103f91467",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-4524b7edebacd515ebd6",
+        "sourceId": "source-585632d6acc31f7b",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-1d3aa82c53201feb9802"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-690245758cac7d6808da"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-2e0de53b8107112984df"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-30cdbd84a0617fb61379"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d0327174374fe8f99d0d"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d906032335a429bcc011"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-78e908934ae6622511e0"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-779b7cd62aa28ba08e19"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-3a225cf2776e79b4b6d5"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-24-70-f4-za-oss",
+      "name": "Sony Vario-Tessar T* FE 24-70mm F4 ZA OSS",
+      "brand": "Sony",
+      "model": "SEL2470Z",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 24,
+          "max": 70
+        },
+        "aperture": {
+          "wide": 4,
+          "tele": 4
+        },
+        "weight": 426,
+        "stabilization": true,
+        "filterMm": 67,
+        "minFocusM": 0.4,
+        "minFocusConditions": "0.40m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel2470z",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-27bcb5ee1d5b505f",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel2470z/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-c42849a13c1c3fa1",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-4be2943fb9f8c3393f42",
+        "sourceId": "source-27bcb5ee1d5b505f",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b5e70dd6663d90e7c23c"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-89de6a3371e7efaaec52"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d7e1499c66c6d5b4ee8c"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-4680acba7f2979ad2ff9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e088be8134d293ea9be9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-d51933e92fc7c921e441"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-bc2dec1ca69177fc9200"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ec78e51f3f0262d2cda4"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-46a8108b9e88f6d445e9"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-8522b5619b2af5963197"
+          ],
+          "checkedAt": "2026-11-04"
+        }
+      }
+    },
+    {
+      "id": "sony-fe-28-70-f2-gm",
+      "name": "Sony FE 28-70mm F2 GM",
+      "brand": "Sony",
+      "model": "SEL2870GM",
+      "aliases": [],
+      "mount": "Sony E",
+      "type": "zoom",
+      "price": {
+        "new": {
+          "value": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        },
+        "used": {
+          "low": null,
+          "typical": null,
+          "high": null,
+          "currency": "KRW",
+          "asOf": null,
+          "sourceType": "unknown",
+          "sourceUrl": null
+        }
+      },
+      "specs": {
+        "focal": {
+          "min": 28,
+          "max": 70
+        },
+        "aperture": {
+          "wide": 2,
+          "tele": 2
+        },
+        "weight": 918,
+        "stabilization": false,
+        "filterMm": 86,
+        "minFocusM": 0.38,
+        "minFocusConditions": "0.38m; position/mode unspecified",
+        "formatCoverage": "full-frame"
+      },
+      "sources": [
+        {
+          "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel2870gm",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "identity"
+          ],
+          "note": "Identity evidence retained in ingestion transaction archive",
+          "sourceId": "source-d5fb1d12c305da80",
+          "documentVersion": null
+        },
+        {
+          "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel2870gm/specifications",
+          "type": "manufacturer",
+          "accessedOn": "2026-11-04",
+          "fields": [
+            "specs.aperture.tele",
+            "specs.aperture.wide",
+            "specs.filterMm",
+            "specs.focal.max",
+            "specs.focal.min",
+            "specs.formatCoverage",
+            "specs.minFocusConditions",
+            "specs.minFocusM",
+            "specs.stabilization",
+            "specs.weight"
+          ],
+          "note": "Field evidence retained in ingestion transaction archive",
+          "sourceId": "source-0530333b452ba4df",
+          "documentVersion": null
+        }
+      ],
+      "identityEvidence": {
+        "verification": "verified",
+        "evidenceId": "identity-fc7091505820007818fa",
+        "sourceId": "source-d5fb1d12c305da80",
+        "checkedAt": "2026-11-04"
+      },
+      "legacyFields": [],
+      "fieldEvidence": {
+        "specs.aperture.tele": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-588c41e599aa411392b1"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.aperture.wide": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-b8fd524a11da6623225c"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.filterMm": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-16ccf531fdf8a3db2ac4"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.max": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-ed66daa59f0afc7e0c0c"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.focal.min": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a21157685bdf22e7d96a"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.formatCoverage": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-a4bea1d19ac91f13b119"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusConditions": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-eaf46109cf8686e28288"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.minFocusM": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-e6563f2dacadbb249ec8"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.stabilization": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-9095973e27b01e3e052e"
+          ],
+          "checkedAt": "2026-11-04"
+        },
+        "specs.weight": {
+          "verification": "verified",
+          "claimIds": [
+            "claim-f3e484a4f2213cdd41e2"
           ],
           "checkedAt": "2026-11-04"
         }

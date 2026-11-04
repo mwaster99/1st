@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/lenses/products/sel2450g/spec?sku=sel2450g.amea",
+  "documentTitle": "FE 24-50mm F2.8 G — Sony Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "accessedAt": "2026-11-04T00:41:08.575Z",
+  "evidenceScope": "Exact-model identity/specification; conditions retained independently of physical mount and image coverage.",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM)",
+      "value": 24,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리(MM)",
+      "value": 50,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F)",
+      "value": 2.8,
+      "unit": null
+    },
+    {
+      "field": "포맷: 35mm 풀프레임",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT)",
+      "value": false,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM)",
+      "value": 67,
+      "unit": "mm"
+    },
+    {
+      "field": "무게",
+      "value": 440,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리",
+      "value": 0.19,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리: reviewed condition summary",
+      "value": "AF W 0.19m/T 0.30m; MF W 0.18m/T 0.29m",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-24-50-f28-g",
+      "manufacturerModelCode": "SEL2450G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 24-50mm F2.8 G",
+        "brand": "Sony",
+        "model": "SEL2450G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 24,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "actualOpticalFocal": true,
+            "powerZoom": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 1,
+          "rawValue": 50,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "actualOpticalFocal": true,
+            "powerZoom": false
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 2,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최대 구경 (F)"
+          },
+          "conditions": {
+            "unpromotedMinimumSelectableAperture": 22
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 2,
+          "rawValue": 2.8,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최대 구경 (F)"
+          },
+          "conditions": {
+            "unpromotedMinimumSelectableAperture": 22
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 3,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "포맷: 35mm 풀프레임"
+          },
+          "conditions": {
+            "mountSourceText": "소니 E-마운트"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 4,
+          "rawValue": false,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "손떨림 보정 (STEADYSHOT)"
+          },
+          "conditions": {
+            "sourceText": "- (바디 통합)",
+            "lensOnly": true,
+            "bodyIbisNotAsserted": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 5,
+          "rawValue": 67,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "필터 직경(MM)"
+          },
+          "conditions": {
+            "sourceText": "67"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 6,
+          "rawValue": 440,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "무게"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "accessoryInclusion": "unspecified",
+            "unpromotedDiameterLengthMm": [
+              74.8,
+              92.3
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 7,
+          "rawValue": 0.19,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최소 초점 거리"
+          },
+          "conditions": {
+            "sourceCondition": "AF W 0.19m/T 0.30m; MF W 0.18m/T 0.29m",
+            "maximumMagnification": "0.30x AF; 0.33x MF",
+            "sourceDiscrepancy": null,
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "measurementBasis": "General Sony sensor-plane convention; numeric row does not separately state origin"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 8,
+          "rawValue": "AF W 0.19m/T 0.30m; MF W 0.18m/T 0.29m",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact model product specifications",
+            "row": "최소 초점 거리: reviewed condition summary"
+          },
+          "conditions": {
+            "maximumMagnification": "0.30x AF; 0.33x MF"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "6506e0ac09f5a1ae7f8ce5553aadc435496c8346f77d5fb872380d1253db9c41",
+  "sourceId": "source-ea105f6157a40114"
+}
