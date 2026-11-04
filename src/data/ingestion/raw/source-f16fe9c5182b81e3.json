@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+  "documentTitle": "FE 24-240mm F3.5-6.3 OSS — Sony USA",
+  "documentVersion": null,
+  "region": "US",
+  "language": "en",
+  "accessedAt": "2026-11-04T03:38:53.329Z",
+  "evidenceScope": "Exact-model cross-check of value and its measurement conditions.",
+  "evidenceExcerpt": [
+    {
+      "field": "Minimum Focus Distance",
+      "value": 0.5,
+      "unit": "m"
+    },
+    {
+      "field": "Minimum Focus Distance",
+      "value": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-24-240-f35-63-oss",
+      "manufacturerModelCode": "SEL24240",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 24-240mm F3.5-6.3 OSS",
+        "brand": "Sony",
+        "model": "SEL24240",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 0,
+          "rawValue": 0.5,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "Minimum Focus Distance"
+          },
+          "conditions": {
+            "sourceCondition": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+            "maximumMagnification": 0.27,
+            "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "sourceDiscrepancy": {
+              "code": "SEL24240",
+              "field": "specs.minFocusM",
+              "sonyKoreaText": "0.5~0.8m, 0.5m-0.8mm",
+              "resolution": "First KR range agrees with Sony USA 0.5–0.8 m (1.64–2.63 ft). Duplicate mm suffix is inconsistent with both."
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 1,
+          "rawValue": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "Minimum Focus Distance"
+          },
+          "conditions": {
+            "sourceCondition": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+            "maximumMagnification": 0.27,
+            "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+            "sourceDiscrepancy": {
+              "code": "SEL24240",
+              "field": "specs.minFocusM",
+              "sonyKoreaText": "0.5~0.8m, 0.5m-0.8mm",
+              "resolution": "First KR range agrees with Sony USA 0.5–0.8 m (1.64–2.63 ft). Duplicate mm suffix is inconsistent with both."
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "7a100bde54945cce4f59dc7e1f80d6c26dcc302cf1bdb40c586223c11dad822a",
+  "sourceId": "source-f16fe9c5182b81e3"
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/detail.php?area=us&lang=en&value1=ILCE-6300&value2=SEL100400",
+  "documentTitle": "FE 100-400mm F5.6-8 OSS — Sony USA",
+  "documentVersion": null,
+  "region": "US",
+  "language": "en",
+  "accessedAt": "2026-11-04T03:40:20.732Z",
+  "evidenceScope": "Sony model and camera combination compatibility.",
+  "evidenceExcerpt": [
+    {
+      "field": "SEL100400 FE 100-400mm F5.6-8 OSS",
+      "value": 400,
+      "unit": "mm"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-100-400-f56-8-oss",
+      "manufacturerModelCode": "SEL100400",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 100-400mm F5.6-8 OSS",
+        "brand": "Sony",
+        "model": "SEL100400",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 0,
+          "rawValue": 400,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Teleconverter lens compatibility notes",
+            "row": "SEL100400 FE 100-400mm F5.6-8 OSS"
+          },
+          "conditions": {
+            "nativeOpticalFocal": true,
+            "body": "ILCE-6300",
+            "SEL14TC": "Exposure Setting Guide values over F64 display incorrectly.",
+            "SEL20TC": "Contrast AF replaces focal-plane phase detection for maximum aperture F13 or higher on this body; Exposure Setting Guide values over F64 display incorrectly."
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "3f5d9d1aec3237ce777f6716b1fda1f11c7e1561103fa1391da0ab3b0389e5dc",
+  "sourceId": "source-59750f08971e339d"
+}

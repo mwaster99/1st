@@ -1,0 +1,4459 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-006",
+  "canonicalBaselineDigest": "1fc8e78e53ac36d885adbfeeca1badcc6af055428a2884c458523e30130aee3f",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-100-400-f56-8-oss",
+      "productName": "Sony FE 100-400mm F5.6-8 OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-100-400-f56-8-oss",
+        "name": "Sony FE 100-400mm F5.6-8 OSS",
+        "brand": "Sony",
+        "model": "SEL100400",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 100,
+            "max": 400
+          },
+          "aperture": {
+            "wide": 5.6,
+            "tele": 8
+          },
+          "weight": 654,
+          "stabilization": true,
+          "filterMm": 67,
+          "minFocusM": 0.86,
+          "minFocusConditions": "1.13 m W / 0.86 m T; AF/MF unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-7451a3dc9a6dbeb6",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-95c95f18ae0ebdf73142",
+          "sourceId": "source-7451a3dc9a6dbeb6",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-95c95f18ae0ebdf73142",
+        "sourceId": "source-7451a3dc9a6dbeb6",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL100400"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-7451a3dc9a6dbeb6",
+          "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
+          "documentTitle": "FE 100-400mm F5.6-8 OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": null,
+          "claimId": "claim-fa5b970d214ec4361fb1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F32–45",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5.6,
+          "unit": null,
+          "claimId": "claim-6dadf4cffd8fd0f852ec",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F32–45",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 67,
+          "unit": "mm",
+          "claimId": "claim-d77bdbb1ee89eb21ab5a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 400,
+          "unit": "mm",
+          "claimId": "claim-5dd7496adddcee9f91a7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 400,
+          "unit": "mm",
+          "claimId": "claim-e79eac3f015604ae1a9b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-59750f08971e339d",
+            "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/detail.php?area=us&lang=en&value1=ILCE-6300&value2=SEL100400",
+            "locator": {
+              "section": "Teleconverter lens compatibility notes",
+              "row": "SEL100400 FE 100-400mm F5.6-8 OSS"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "body": "ILCE-6300",
+              "SEL14TC": "Exposure Setting Guide values over F64 display incorrectly.",
+              "SEL20TC": "Contrast AF replaces focal-plane phase detection for maximum aperture F13 or higher on this body; Exposure Setting Guide values over F64 display incorrectly."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "mm",
+          "claimId": "claim-3b1214fd0ccc184b3144",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "mm",
+          "claimId": "claim-522052818935407daf59",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-7451a3dc9a6dbeb6",
+            "url": "https://www.sony.co.kr/electronics/e-mount-lenses/sel100400",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Zoom lock; focus range switch AF FULL / AF infinity–3 m / MF; focus hold; dust/moisture resistant with limitations; 2x reaches 800 mm (1200 mm APS-C equivalent)."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-1f1a6499641d7cb742bb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "1.13 m W / 0.86 m T; AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-5b0260237a09040f6196",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "1.13 m W / 0.86 m T; AF/MF unspecified",
+              "maximumMagnification": 0.41,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.86,
+          "unit": "m",
+          "claimId": "claim-ebff5a2c8c25c57bc618",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "1.13 m W / 0.86 m T; AF/MF unspecified",
+              "maximumMagnification": 0.41,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-81f9a0c30107ad51ea82",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 654,
+          "unit": "g",
+          "claimId": "claim-ef796131720cff33d993",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-34980222c764694b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "unspecified",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                78.2,
+                164.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-50-150-f2-gm",
+      "productName": "Sony FE 50-150mm F2 GM",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-50-150-f2-gm",
+        "name": "Sony FE 50-150mm F2 GM",
+        "brand": "Sony",
+        "model": "SEL50150GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 50,
+            "max": 150
+          },
+          "aperture": {
+            "wide": 2,
+            "tele": 2
+          },
+          "weight": 1340,
+          "stabilization": false,
+          "filterMm": 95,
+          "minFocusM": 0.4,
+          "minFocusConditions": "0.40 m W / 0.74 m T; AF/MF unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-0c9588c05e293cec",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-0652c64d519bf7ef3f65",
+          "sourceId": "source-0c9588c05e293cec",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-0652c64d519bf7ef3f65",
+        "sourceId": "source-0c9588c05e293cec",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL50150GM"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-0c9588c05e293cec",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+          "documentTitle": "FE 50-150mm F2 GM — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-65dc18c1f611de5ace2d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2,
+          "unit": null,
+          "claimId": "claim-865a07370bce0b8837e6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 95,
+          "unit": "mm",
+          "claimId": "claim-a861dc97e345ad145e9a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 150,
+          "unit": "mm",
+          "claimId": "claim-300faf0949297b33404e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": false,
+                "SEL20TC": false,
+                "sourceStatus": "Sony specification explicitly incompatible with both.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": "mm",
+          "claimId": "claim-614003c19312d43c05c6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-0c9588c05e293cec",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Internal zoom, detachable tripod foot, full-time DMF, three focus hold buttons, dust/moisture resistance qualified. Full features may need camera software update; AF-C burst depends on conditions."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 50,
+          "unit": "mm",
+          "claimId": "claim-c45a5c2132ba7af0f31f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": false,
+                "SEL20TC": false,
+                "sourceStatus": "Sony specification explicitly incompatible with both.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-45a0be5b89fe6093b489",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.40 m W / 0.74 m T; AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-183f85e3f504f710ff16",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.40 m W / 0.74 m T; AF/MF unspecified",
+              "maximumMagnification": 0.2,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.4,
+          "unit": "m",
+          "claimId": "claim-858d9c2861c5f8d4e62e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.40 m W / 0.74 m T; AF/MF unspecified",
+              "maximumMagnification": 0.2,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": false,
+          "unit": null,
+          "claimId": "claim-fa8f7ae825f588728402",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Body-integrated only per Sony"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1340,
+          "unit": "g",
+          "claimId": "claim-76382b8ecf7f836e5148",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fa9634b0ba70138f",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod base per product; without tripod mount per spec",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                102.8,
+                200
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "productName": "Sony FE 400-800mm F6.3-8 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-400-800-f63-8-g-oss",
+        "name": "Sony FE 400-800mm F6.3-8 G OSS",
+        "brand": "Sony",
+        "model": "SEL400800G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 400,
+            "max": 800
+          },
+          "aperture": {
+            "wide": 6.3,
+            "tele": 8
+          },
+          "weight": 2475,
+          "stabilization": true,
+          "filterMm": 105,
+          "minFocusM": 1.7,
+          "minFocusConditions": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-303285793238221b",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-eb27ff001c2d7ac96675",
+          "sourceId": "source-303285793238221b",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-eb27ff001c2d7ac96675",
+        "sourceId": "source-303285793238221b",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL400800G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-303285793238221b",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+          "documentTitle": "FE 400-800mm F6.3-8 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 8,
+          "unit": null,
+          "claimId": "claim-8815c85ce0a61fec2d36",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F36–45",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.3,
+          "unit": null,
+          "claimId": "claim-3559ae95791616de1c1e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F36–45",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 105,
+          "unit": "mm",
+          "claimId": "claim-e0bcab937b9cd476202f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 800,
+          "unit": "mm",
+          "claimId": "claim-ede5ca1b32f9286382b1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 400,
+          "unit": "mm",
+          "claimId": "claim-a2ce5136b1771dc60a1a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 400,
+          "unit": "mm",
+          "claimId": "claim-3da3e01c3558dd6c57f0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-303285793238221b",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Internal zoom; fixed rotating foot; three focus hold buttons; focus limiter; OSS mode switch, no combined body rating; hood filter access; dust/moisture resistance qualified. With 2x reaches 1600 mm; AF-C burst depends on camera and conditions."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-6ac68448423d9d44128a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+          "unit": null,
+          "claimId": "claim-ee7fb9f91f221abce5da",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+              "maximumMagnification": 0.23,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1.7,
+          "unit": "m",
+          "claimId": "claim-47a7f566cd1895f8d8c6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+              "maximumMagnification": 0.23,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-e7490236067c6121f33c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2475,
+          "unit": "g",
+          "claimId": "claim-99043b2767d86786d37b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-16733d00ec0b25fc",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "fixed tripod foot per product; weight table gives no separate accessory basis",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                119.8,
+                346
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-70-200-f4-macro-g-oss2",
+      "productName": "Sony FE 70-200mm F4 Macro G OSS II",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-70-200-f4-macro-g-oss2",
+        "name": "Sony FE 70-200mm F4 Macro G OSS II",
+        "brand": "Sony",
+        "model": "SEL70200G2",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 70,
+            "max": 200
+          },
+          "aperture": {
+            "wide": 4,
+            "tele": 4
+          },
+          "weight": 794,
+          "stabilization": true,
+          "filterMm": 72,
+          "minFocusM": 0.26,
+          "minFocusConditions": "Published 0.26–0.42 m; 0.26 m lower bound; mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/lenses/products/sel70200g2",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-813762424c391f53",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-e9c20a02abbeb666de4e",
+          "sourceId": "source-813762424c391f53",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-e9c20a02abbeb666de4e",
+        "sourceId": "source-813762424c391f53",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70200G2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-813762424c391f53",
+          "url": "https://www.sony.co.kr/lenses/products/sel70200g2",
+          "documentTitle": "FE 70-200mm F4 Macro G OSS II — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-2d5e2f1bad50c72810ae",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-87a4e1c3d5ce77cb87f3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-855d0f5bfef15f5eafe2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-7868fef2ed6020b03966",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-480cf1fca47017245406",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-794384f1653d3f3121a0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-813762424c391f53",
+            "url": "https://www.sony.co.kr/lenses/products/sel70200g2",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Native 0.5x across zoom; optional 2x gives 1.0x across zoom."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-90426e263cf095253e59",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.26–0.42 m; 0.26 m lower bound; mode unspecified",
+          "unit": null,
+          "claimId": "claim-502bd6845eea0500850b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.26–0.42 m; 0.26 m lower bound; mode unspecified",
+              "maximumMagnification": 0.5,
+              "magnificationBasis": "0.5x native across zoom, optional 2x TC combination yields up to 1x.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.26,
+          "unit": "m",
+          "claimId": "claim-a229ddb12eb800f2ee9f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.26–0.42 m; 0.26 m lower bound; mode unspecified",
+              "maximumMagnification": 0.5,
+              "magnificationBasis": "0.5x native across zoom, optional 2x TC combination yields up to 1x.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-8f4f2a7405c9f7827919",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-17a59f58fa81fc5e",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 794,
+          "unit": "g",
+          "claimId": "claim-5a92fa50814d9b450b0c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-dd80fefbe0f98000",
+            "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "Weight and tripod mount exclusion"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount (Sony specification footnote)",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                82.2,
+                149
+              ],
+              "sourceDiscrepancy": null
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-70-200-gm2",
+      "productName": "Sony FE 70-200mm F2.8 GM II",
+      "productType": "lens",
+      "operation": "update-product",
+      "incomingProduct": null,
+      "identityEvidence": {
+        "evidenceId": "identity-1d5a1d4b09366d062806",
+        "sourceId": "source-6ccd5ea8b5d34a8e",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70200GM2"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-6ccd5ea8b5d34a8e",
+          "url": "https://www.sony.co.kr/lenses/products/sel70200gm2",
+          "documentTitle": "FE 70-200mm F2.8 GM OSS II — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": "453e3aa60f32726118c54a820d6afc8120b1049480bfe5878e247eb7bc6e52e7",
+      "modelNullFill": {
+        "path": "model",
+        "category": "null-fill",
+        "canonicalValue": null,
+        "incomingValue": "SEL70200GM2",
+        "identityEvidenceId": "identity-1d5a1d4b09366d062806"
+      },
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.8,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-e4f2cbf1cb60e41bc9cb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 2.8,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-6598058461e55d6d7c91",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 77,
+          "unit": "mm",
+          "claimId": "claim-41e6fab9d65948aba223",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 200,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-6a3f2421d5b38fe56874",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 70,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-9581f63f8b73830b9136",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 70,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-775f3d9c0191319e02fd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6ccd5ea8b5d34a8e",
+            "url": "https://www.sony.co.kr/lenses/products/sel70200gm2",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "GM II and GM first generation are separate identities; tripod mount listed separately; lens-only OSS."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-007c0aa197eccb9c779e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+          "unit": null,
+          "claimId": "claim-7697e5dbeb57027a4d19",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+              "maximumMagnification": 0.3,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "null-fill",
+          "canonicalValue": null,
+          "incomingValue": 0.4,
+          "unit": "m",
+          "claimId": "claim-01deb9cb5af7db8c3a01",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+              "maximumMagnification": 0.3,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "same-value/new-evidence",
+          "canonicalValue": true,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-4d8501a93c2a2b1de02f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "same-value/new-evidence",
+          "canonicalValue": 1045,
+          "incomingValue": 1045,
+          "unit": "g",
+          "claimId": "claim-a9972f5529049ae2c75e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-19f913ef8b427394",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                88,
+                200
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "productName": "Sony FE 70-200mm F4 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-70-200-f4-g-oss",
+        "name": "Sony FE 70-200mm F4 G OSS",
+        "brand": "Sony",
+        "model": "SEL70200G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 70,
+            "max": 200
+          },
+          "aperture": {
+            "wide": 4,
+            "tele": 4
+          },
+          "weight": 840,
+          "stabilization": true,
+          "filterMm": 72,
+          "minFocusM": 1,
+          "minFocusConditions": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-1f08c0eaed6f27f0",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-31f9e690b185cf2afda0",
+          "sourceId": "source-1f08c0eaed6f27f0",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-31f9e690b185cf2afda0",
+        "sourceId": "source-1f08c0eaed6f27f0",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70200G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-1f08c0eaed6f27f0",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+          "documentTitle": "FE 70-200mm F4 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-9338a5259352f07265ad",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-1a1e20007b343856245b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-5e3544ed14b279888c75",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-707ac3d8b28c336fb4ae",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-7a58d49027fea80435d7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-1f08c0eaed6f27f0",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "First generation G; lens OSS; qualified dust/moisture resistance. KR weight typo 8.40 kg; Sony USA exact-model metric and imperial rows agree on 840 g."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-4bf06dced28f3d8a2e3f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-11965e948afccb8dcb57",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+          "unit": null,
+          "claimId": "claim-eea7b7d3d15e291f0594",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+              "maximumMagnification": 0.13,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1,
+          "unit": "m",
+          "claimId": "claim-65cf98cc1ab86c5452d9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+              "maximumMagnification": 0.13,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-5bb2e89022aab08b1da0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-938ba40b4569c562",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 840,
+          "unit": "g",
+          "claimId": "claim-268f1b36ff2bbdbe5e8b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-fca1763f2b273f80",
+            "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "Weight and tripod mount exclusion"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount per Sony US",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                80,
+                175
+              ],
+              "sourceDiscrepancy": {
+                "code": "SEL70200G",
+                "field": "specs.weight",
+                "sonyKoreaText": "8.40kg (삼각대 마운트 제외)",
+                "resolution": "Exact-model Sony USA lists 29.7 oz (840 g) without tripod mount. Use USA value and preserve KR typo here and in claim metadata."
+              }
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-70-200-f28-gm-oss",
+      "productName": "Sony FE 70-200mm F2.8 GM OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-70-200-f28-gm-oss",
+        "name": "Sony FE 70-200mm F2.8 GM OSS",
+        "brand": "Sony",
+        "model": "SEL70200GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 70,
+            "max": 200
+          },
+          "aperture": {
+            "wide": 2.8,
+            "tele": 2.8
+          },
+          "weight": 1480,
+          "stabilization": true,
+          "filterMm": 77,
+          "minFocusM": 0.96,
+          "minFocusConditions": "0.96 m; focal position and focus mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200gm",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-9080758bb9660146",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-ee3f8019d87c689d1a42",
+          "sourceId": "source-9080758bb9660146",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-ee3f8019d87c689d1a42",
+        "sourceId": "source-9080758bb9660146",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70200GM"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-9080758bb9660146",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200gm",
+          "documentTitle": "FE 70-200mm F2.8 GM OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-31f49039cd843b231bd7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.8,
+          "unit": null,
+          "claimId": "claim-df4aad493217e9183313",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 77,
+          "unit": "mm",
+          "claimId": "claim-2092f51deddfb596d904",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-f31eb8519cd0460968fd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-db537b0e98109d5d1ab2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-9080758bb9660146",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200gm",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "First generation GM; focus limiter, focus hold, optical stabilization mode switch and tripod mounting."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-77985b0649dcfecd6bdd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-e7a44749fca4db7c9e37",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.96 m; focal position and focus mode unspecified",
+          "unit": null,
+          "claimId": "claim-59fabb73cbd4fc99e87a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.96 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.25,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.96,
+          "unit": "m",
+          "claimId": "claim-2004ad7368fe1f9a14f6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.96 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.25,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-a4053afe4d57495fde3e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1480,
+          "unit": "g",
+          "claimId": "claim-6cb4013ad6b84bc7d4f0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-ced1ca5aba5bc0b7",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                88,
+                200
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-200-600-f56-63-g-oss",
+      "productName": "Sony FE 200-600mm F5.6-6.3 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-200-600-f56-63-g-oss",
+        "name": "Sony FE 200-600mm F5.6-6.3 G OSS",
+        "brand": "Sony",
+        "model": "SEL200600G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 200,
+            "max": 600
+          },
+          "aperture": {
+            "wide": 5.6,
+            "tele": 6.3
+          },
+          "weight": 2115,
+          "stabilization": true,
+          "filterMm": 95,
+          "minFocusM": 2.4,
+          "minFocusConditions": "2.4 m; focal position and focus mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel200600g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-2fe894d2c376ce9a",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-13f4755a6c38d485b1c3",
+          "sourceId": "source-2fe894d2c376ce9a",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-13f4755a6c38d485b1c3",
+        "sourceId": "source-2fe894d2c376ce9a",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL200600G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-2fe894d2c376ce9a",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel200600g",
+          "documentTitle": "FE 200-600mm F5.6-6.3 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.3,
+          "unit": null,
+          "claimId": "claim-46eea05cd67a4eb97b65",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F32–36",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5.6,
+          "unit": null,
+          "claimId": "claim-4a275df33636bb9d2ed9",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F32–36",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 95,
+          "unit": "mm",
+          "claimId": "claim-5ede4de7a9c504f5b753",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 600,
+          "unit": "mm",
+          "claimId": "claim-118614c489e2f1064701",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-509be2f4cfc6fc4ecfd1",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-2fe894d2c376ce9a",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel200600g",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Internal zoom; 3 focus hold buttons and focus limiter; OSS mode switch; qualified dust/moisture resistance; optional 1.4x: 280–840 mm F8–9, 2x: 400–1200 mm F11–13."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 200,
+          "unit": "mm",
+          "claimId": "claim-46b87872ec1779443551",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-df1a97b9d9d1509dbecd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "2.4 m; focal position and focus mode unspecified",
+          "unit": null,
+          "claimId": "claim-c07bf8de07f082346a9d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "2.4 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.2,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2.4,
+          "unit": "m",
+          "claimId": "claim-2c3ad71d826bea76efd6",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "2.4 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.2,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-76e428b8faa313000474",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 2115,
+          "unit": "g",
+          "claimId": "claim-43f346a9272547022bd2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-6cec2cf3b318b15b",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "tripod mount/collar present, published mass does not specify inclusion",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                111.5,
+                318
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-100-400-f45-56-gm-oss",
+      "productName": "Sony FE 100-400mm F4.5-5.6 GM OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-100-400-f45-56-gm-oss",
+        "name": "Sony FE 100-400mm F4.5-5.6 GM OSS",
+        "brand": "Sony",
+        "model": "SEL100400GM",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 100,
+            "max": 400
+          },
+          "aperture": {
+            "wide": 4.5,
+            "tele": 5.6
+          },
+          "weight": 1395,
+          "stabilization": true,
+          "filterMm": 77,
+          "minFocusM": 0.98,
+          "minFocusConditions": "0.98 m; focal position and focus mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel100400gm",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-a49cf6f7f010625d",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-aa4f39e9986561b5584a",
+          "sourceId": "source-a49cf6f7f010625d",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-aa4f39e9986561b5584a",
+        "sourceId": "source-a49cf6f7f010625d",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL100400GM"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-a49cf6f7f010625d",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel100400gm",
+          "documentTitle": "FE 100-400mm F4.5-5.6 GM OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5.6,
+          "unit": null,
+          "claimId": "claim-641591379d9a36b32819",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F32–40",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-ab906c731826c16f2248",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F32–40",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 77,
+          "unit": "mm",
+          "claimId": "claim-55814d278cfe09ddc579",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 400,
+          "unit": "mm",
+          "claimId": "claim-8a51f3794cab7c63208f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "mm",
+          "claimId": "claim-e0e34a9eb80eb01139c3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": true,
+                "SEL20TC": true,
+                "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 100,
+          "unit": "mm",
+          "claimId": "claim-2228bb70db87b592a2d8",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-a49cf6f7f010625d",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel100400gm",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Focus limiter, focus hold, zoom torque adjustment, OSS mode switch. Distinct from SEL100400 and SEL100400MC."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-8584d6d36ef7215c903e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.98 m; focal position and focus mode unspecified",
+          "unit": null,
+          "claimId": "claim-f281eefcc173313950d0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.98 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.35,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.98,
+          "unit": "m",
+          "claimId": "claim-bfee0482249789dcd99a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.98 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.35,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-3f3f2c4df0f8a06269fd",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1395,
+          "unit": "g",
+          "claimId": "claim-409e9e8e6f6d66737210",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-669b8ef98e78485c",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                93.9,
+                205
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-24-240-f35-63-oss",
+      "productName": "Sony FE 24-240mm F3.5-6.3 OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-24-240-f35-63-oss",
+        "name": "Sony FE 24-240mm F3.5-6.3 OSS",
+        "brand": "Sony",
+        "model": "SEL24240",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 24,
+            "max": 240
+          },
+          "aperture": {
+            "wide": 3.5,
+            "tele": 6.3
+          },
+          "weight": 780,
+          "stabilization": true,
+          "filterMm": 72,
+          "minFocusM": 0.5,
+          "minFocusConditions": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24240",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-76e9241b11ed5e72",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-6c7f929f7c6674518edd",
+          "sourceId": "source-76e9241b11ed5e72",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-6c7f929f7c6674518edd",
+        "sourceId": "source-76e9241b11ed5e72",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL24240"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-76e9241b11ed5e72",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24240",
+          "documentTitle": "FE 24-240mm F3.5-6.3 OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 6.3,
+          "unit": null,
+          "claimId": "claim-add7cb3852087ebd9722",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22–40",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 3.5,
+          "unit": null,
+          "claimId": "claim-2795310ae1aa1ae1a347",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22–40",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-5fa815ba27108f68146c",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 240,
+          "unit": "mm",
+          "claimId": "claim-0c2f3f4a0aae640b17a2",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-bc866c322a1b3feced0e",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 24,
+          "unit": "mm",
+          "claimId": "claim-3545d4d86000a3a1f4e7",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-76e9241b11ed5e72",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel24240",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "10x zoom; lens OSS; qualified dust/moisture resistance. Duplicate KR value ends in 0.8 mm; official US metric/imperial and first KR value agree on 0.80 m."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-b6644d24dedce6d00094",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+          "unit": null,
+          "claimId": "claim-2c8e97d4d77ee3018400",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f16fe9c5182b81e3",
+            "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "Minimum Focus Distance"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+              "maximumMagnification": 0.27,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "sourceDiscrepancy": {
+                "code": "SEL24240",
+                "field": "specs.minFocusM",
+                "sonyKoreaText": "0.5~0.8m, 0.5m-0.8mm",
+                "resolution": "First KR range agrees with Sony USA 0.5–0.8 m (1.64–2.63 ft). Duplicate mm suffix is inconsistent with both."
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.5,
+          "unit": "m",
+          "claimId": "claim-722fb9f6bd4ccdcc71d5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-f16fe9c5182b81e3",
+            "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "Minimum Focus Distance"
+            },
+            "conditions": {
+              "sourceCondition": "Published 0.50–0.80 m; 0.50 m lower bound; AF/MF unspecified",
+              "maximumMagnification": 0.27,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html",
+              "sourceDiscrepancy": {
+                "code": "SEL24240",
+                "field": "specs.minFocusM",
+                "sonyKoreaText": "0.5~0.8m, 0.5m-0.8mm",
+                "resolution": "First KR range agrees with Sony USA 0.5–0.8 m (1.64–2.63 ft). Duplicate mm suffix is inconsistent with both."
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-e15feecf4a85d50b5c1a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 780,
+          "unit": "g",
+          "claimId": "claim-c877418eaad77e63d689",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-353749915cef89f8",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel24240/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "unspecified",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                80.5,
+                118.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-pz-28-135-f4-g-oss",
+      "productName": "Sony FE PZ 28-135mm F4 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-pz-28-135-f4-g-oss",
+        "name": "Sony FE PZ 28-135mm F4 G OSS",
+        "brand": "Sony",
+        "model": "SELP28135G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 28,
+            "max": 135
+          },
+          "aperture": {
+            "wide": 4,
+            "tele": 4
+          },
+          "weight": 1215,
+          "stabilization": true,
+          "filterMm": 95,
+          "minFocusM": 0.4,
+          "minFocusConditions": "AF/MF 0.40 m W / 0.95 m T; Full MF 0.95 m",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp28135g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-37bf0ff0ad47c2bc",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-12009ca94b7e22c57e76",
+          "sourceId": "source-37bf0ff0ad47c2bc",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-12009ca94b7e22c57e76",
+        "sourceId": "source-37bf0ff0ad47c2bc",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SELP28135G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-37bf0ff0ad47c2bc",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/selp28135g",
+          "documentTitle": "FE PZ 28-135mm F4 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-2bd8aafa1a438d246497",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4,
+          "unit": null,
+          "claimId": "claim-8c2407caadf9ff327b45",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 95,
+          "unit": "mm",
+          "claimId": "claim-2b49254722d3ec4bfb95",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 135,
+          "unit": "mm",
+          "claimId": "claim-6148640ab420b3f28d9d",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 28,
+          "unit": "mm",
+          "claimId": "claim-1a85170daef680d24990",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-37bf0ff0ad47c2bc",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/selp28135g",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "SSM power zoom or manual zoom; designed to limit focus breathing and image shift, distinct from camera digital compensation; qualified dust/moisture resistance."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 28,
+          "unit": "mm",
+          "claimId": "claim-93ed6f3b19c118c871fa",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-b555927a77d996f56ca0",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "AF/MF 0.40 m W / 0.95 m T; Full MF 0.95 m",
+          "unit": null,
+          "claimId": "claim-9ef63ecbd7ff406acb6f",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "AF/MF 0.40 m W / 0.95 m T; Full MF 0.95 m",
+              "maximumMagnification": 0.15,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.4,
+          "unit": "m",
+          "claimId": "claim-5f1f2f3dff02b6b33687",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "AF/MF 0.40 m W / 0.95 m T; Full MF 0.95 m",
+              "maximumMagnification": 0.15,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-513d52f613e1adf359e4",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 1215,
+          "unit": "g",
+          "claimId": "claim-0a107a66435cc473a169",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-aad5423d5d21b0ff",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/selp28135g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "without tripod mount",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                105,
+                162.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "batchId": "production-sony-e-lenses-006",
+      "productId": "sony-fe-70-300-f45-56-g-oss",
+      "productName": "Sony FE 70-300mm F4.5-5.6 G OSS",
+      "productType": "lens",
+      "operation": "new-product",
+      "incomingProduct": {
+        "id": "sony-fe-70-300-f45-56-g-oss",
+        "name": "Sony FE 70-300mm F4.5-5.6 G OSS",
+        "brand": "Sony",
+        "model": "SEL70300G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom",
+        "price": {
+          "new": {
+            "value": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          },
+          "used": {
+            "low": null,
+            "typical": null,
+            "high": null,
+            "currency": "KRW",
+            "asOf": null,
+            "sourceType": "unknown",
+            "sourceUrl": null
+          }
+        },
+        "specs": {
+          "focal": {
+            "min": 70,
+            "max": 300
+          },
+          "aperture": {
+            "wide": 4.5,
+            "tele": 5.6
+          },
+          "weight": 854,
+          "stabilization": true,
+          "filterMm": 72,
+          "minFocusM": 0.9,
+          "minFocusConditions": "0.90 m; focal position and focus mode unspecified",
+          "formatCoverage": "full-frame"
+        },
+        "sources": [
+          {
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70300g",
+            "type": "manufacturer",
+            "accessedOn": "2026-11-04",
+            "fields": [
+              "identity"
+            ],
+            "note": "Identity evidence retained in ingestion transaction archive",
+            "sourceId": "source-36ab486f5842747c",
+            "documentVersion": null
+          }
+        ],
+        "identityEvidence": {
+          "verification": "verified",
+          "evidenceId": "identity-153bb4d35848c51ca154",
+          "sourceId": "source-36ab486f5842747c",
+          "checkedAt": "2026-11-04"
+        },
+        "legacyFields": []
+      },
+      "identityEvidence": {
+        "evidenceId": "identity-153bb4d35848c51ca154",
+        "sourceId": "source-36ab486f5842747c",
+        "evidenceRef": 1,
+        "locator": {
+          "section": "Official product and current gallery card",
+          "row": "SEL70300G"
+        },
+        "verification": "verified",
+        "reviewedAt": "2026-11-04",
+        "reviewer": "GPT-6.1 Sol",
+        "source": {
+          "sourceId": "source-36ab486f5842747c",
+          "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70300g",
+          "documentTitle": "FE 70-300mm F4.5-5.6 G OSS — Sony Korea",
+          "documentVersion": null
+        }
+      },
+      "canonicalProductDigest": null,
+      "status": "review-required",
+      "changes": [
+        {
+          "path": "specs.aperture.tele",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 5.6,
+          "unit": null,
+          "claimId": "claim-3b1ff5752d24ddfd4249",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "tele",
+              "minimumSelectableAperture": "F22–29",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.aperture.wide",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 4.5,
+          "unit": null,
+          "claimId": "claim-72e0af1b6600b227637a",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최대 구경 (F)"
+            },
+            "conditions": {
+              "endpoint": "wide",
+              "minimumSelectableAperture": "F22–29",
+              "teleconverterExcluded": true
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.filterMm",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 72,
+          "unit": "mm",
+          "claimId": "claim-a53ca4694ef10afd8cc5",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "필터 직경(MM)"
+            },
+            "conditions": {}
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.max",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 300,
+          "unit": "mm",
+          "claimId": "claim-dac90771ebba6f644efb",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-9f5c1564b54c1533cd25",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "초점 거리(MM)"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "powerZoom": false,
+              "teleconverterCompatibility": {
+                "SEL14TC": null,
+                "SEL20TC": null,
+                "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+                "catalogReferences": {
+                  "SEL14TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                    "accessedAt": "2026-11-04T03:41:09.313Z"
+                  },
+                  "SEL20TC": {
+                    "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                    "accessedAt": "2026-11-04T03:40:20.571Z"
+                  }
+                }
+              }
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.focal.min",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 70,
+          "unit": "mm",
+          "claimId": "claim-1dd92f2b711fad923956",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-36ab486f5842747c",
+            "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70300g",
+            "locator": {
+              "section": "Official product features",
+              "row": "Product model and operation"
+            },
+            "conditions": {
+              "nativeOpticalFocal": true,
+              "unpromotedOperations": "Lens OSS; qualified dust/moisture resistance."
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.formatCoverage",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "full-frame",
+          "unit": null,
+          "claimId": "claim-f9380311e448b8a7ed14",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "포맷"
+            },
+            "conditions": {
+              "physicalMount": "소니 E-마운트"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": "0.90 m; focal position and focus mode unspecified",
+          "unit": null,
+          "claimId": "claim-33452500071cfbe0202b",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.90 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.31,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.minFocusM",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 0.9,
+          "unit": "m",
+          "claimId": "claim-8b8c95b6b405d199f176",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "최소 초점 거리"
+            },
+            "conditions": {
+              "sourceCondition": "0.90 m; focal position and focus mode unspecified",
+              "maximumMagnification": 0.31,
+              "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+              "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.stabilization",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": true,
+          "unit": null,
+          "claimId": "claim-0a8003660a4097b9eef3",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "손떨림 보정 (STEADYSHOT)"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "bodyIbisNotAsserted": true,
+              "sourceBasis": "Optical SteadyShot / supported"
+            }
+          },
+          "reviewRequired": true
+        },
+        {
+          "path": "specs.weight",
+          "category": "new-product",
+          "canonicalValue": null,
+          "incomingValue": 854,
+          "unit": "g",
+          "claimId": "claim-ad3b0d5ec30ed7a1be62",
+          "canonicalSources": [],
+          "incomingSource": {
+            "sourceId": "source-26b615d368e7d5f1",
+            "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+            "locator": {
+              "section": "Exact-model lens specifications",
+              "row": "무게"
+            },
+            "conditions": {
+              "lensOnly": true,
+              "tripodMountBasis": "unspecified",
+              "hoodAndCapsInclusion": "unspecified",
+              "unpromotedDiameterLengthMm": [
+                84,
+                143.5
+              ]
+            }
+          },
+          "reviewRequired": true
+        }
+      ]
+    }
+  ]
+}

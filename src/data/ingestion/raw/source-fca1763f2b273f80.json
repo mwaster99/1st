@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+  "documentTitle": "FE 70-200mm F4 G OSS — Sony USA",
+  "documentVersion": null,
+  "region": "US",
+  "language": "en",
+  "accessedAt": "2026-11-04T03:38:53.056Z",
+  "evidenceScope": "Exact-model cross-check of value and its measurement conditions.",
+  "evidenceExcerpt": [
+    {
+      "field": "Weight and tripod mount exclusion",
+      "value": 840,
+      "unit": "g"
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-70-200-f4-g-oss",
+      "manufacturerModelCode": "SEL70200G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 70-200mm F4 G OSS",
+        "brand": "Sony",
+        "model": "SEL70200G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.weight",
+          "evidenceRef": 0,
+          "rawValue": 840,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "Weight and tripod mount exclusion"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "tripodMountBasis": "without tripod mount per Sony US",
+            "hoodAndCapsInclusion": "unspecified",
+            "unpromotedDiameterLengthMm": [
+              80,
+              175
+            ],
+            "sourceDiscrepancy": {
+              "code": "SEL70200G",
+              "field": "specs.weight",
+              "sonyKoreaText": "8.40kg (삼각대 마운트 제외)",
+              "resolution": "Exact-model Sony USA lists 29.7 oz (840 g) without tripod mount. Use USA value and preserve KR typo here and in claim metadata."
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "2b1edae71ae7bc4b09244ce752d21cd21324f5b987298baef0126fa8c31ad84d",
+  "sourceId": "source-fca1763f2b273f80"
+}

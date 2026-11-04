@@ -1,5 +1,11 @@
 # Objective DB v0.4 진행 기록
 
+## Lens phase — Sony Batch 006 완료 — 2026-11-04
+
+잔여 일반 FE 줌 12개를 atomic apply했다. 신규 11개, 기존 SEL70200GM2 모델 코드 및 공식 근거 보강 1개. Canonical **165/77/242 → 165/88/253**. Sony 공식 현행 **58/69 완료, 11 잔여**(일반 FE 줌 0 / 특수 11). 공식 raw 28개, 승격 사양 120개 경로, 승인 diff 값 충돌 0건. KR 공식 표기 차이 2건은 Sony USA와 대조했다.
+
+Worker 14회, 재시도 2회, 총 21216토큰. 전체 513 / Objective 486 / 렌즈 131 / 기존 브랜드 246 테스트 통과. Canonical validation, build, syntax, diff 확인 및 실제 already-canonicalized / canonicalMatches:true 확인. [45항목 보고](OBJECTIVE_DB_SONY_LENS_PRODUCTION_006.md). 다음은 검토·커밋 후 clean 상태에서 특수군 Batch 007 사전 검토.
+
 ## Lens phase — Sony Batch 005 완료 — 2026-11-04
 
 광각·표준 FE 줌 12개를 atomic apply했다. 신규 11개와 기존 SELP1635G 모델 코드 및 사양 보강 1개. Canonical **165/66/231 → 165/77/242**. Sony 공식 현행 **46/69 완료, 23 잔여**(FE 줌 12 / 특수 11). 공식 raw 24개, 알려진 사양 117개, UNKNOWN 3개, 값 충돌 0건.

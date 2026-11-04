@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-006",
+  "itemKey": "sony-fe-70-200-gm2",
+  "manufacturerModelCode": "SEL70200GM2",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL70200GM2",
+    "productId": "sony-fe-70-200-gm2",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-1d5a1d4b09366d062806",
+    "sourceId": "source-6ccd5ea8b5d34a8e",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Official product and current gallery card",
+      "row": "SEL70200GM2"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-11-04",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-70-200-gm2",
+    "name": "Sony FE 70-200mm F2.8 GM II",
+    "brand": "Sony",
+    "model": "SEL70200GM2",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "zoom",
+    "specs": {
+      "aperture": {
+        "tele": 2.8,
+        "wide": 2.8
+      },
+      "filterMm": 77,
+      "focal": {
+        "max": 200,
+        "min": 70
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+      "minFocusM": 0.4,
+      "stabilization": true,
+      "weight": 1045
+    }
+  },
+  "source": {
+    "sourceId": "source-6ccd5ea8b5d34a8e",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/lenses/products/sel70200gm2",
+    "publisher": "Sony",
+    "documentTitle": "FE 70-200mm F2.8 GM OSS II — Sony Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-11-04T03:38:26.234Z",
+    "evidenceScope": "Exact model identification and published operating conditions.",
+    "contentDigest": "b6bf65e0eac8109aff55cb7ab30e1cc739b2e093d201376b3e58a0112c89ce6f"
+  },
+  "sources": [
+    {
+      "sourceId": "source-19f913ef8b427394",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 70-200mm F2.8 GM OSS II — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:27.993Z",
+      "evidenceScope": "Exact-model specification table. ",
+      "contentDigest": "10d18decfb9ef3b3c4bcb44eaa6c16ad173edb8dc7b69d801844197a37865b45"
+    },
+    {
+      "sourceId": "source-6ccd5ea8b5d34a8e",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/lenses/products/sel70200gm2",
+      "publisher": "Sony",
+      "documentTitle": "FE 70-200mm F2.8 GM OSS II — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:26.234Z",
+      "evidenceScope": "Exact model identification and published operating conditions.",
+      "contentDigest": "b6bf65e0eac8109aff55cb7ab30e1cc739b2e093d201376b3e58a0112c89ce6f"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.aperture.tele",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "tele",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e4f2cbf1cb60e41bc9cb"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.aperture.wide",
+      "value": 2.8,
+      "unit": null,
+      "rawValue": 2.8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "wide",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-6598058461e55d6d7c91"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.filterMm",
+      "value": 77,
+      "unit": "mm",
+      "rawValue": 77,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "필터 직경(MM)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-41e6fab9d65948aba223"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.focal.max",
+      "value": 200,
+      "unit": "mm",
+      "rawValue": 200,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "teleconverterCompatibility": {
+          "SEL14TC": true,
+          "SEL20TC": true,
+          "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-6a3f2421d5b38fe56874"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.focal.min",
+      "value": 70,
+      "unit": "mm",
+      "rawValue": 70,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "powerZoom": false,
+        "teleconverterCompatibility": {
+          "SEL14TC": true,
+          "SEL20TC": true,
+          "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-9581f63f8b73830b9136"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.focal.min",
+      "value": 70,
+      "unit": "mm",
+      "rawValue": 70,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-6ccd5ea8b5d34a8e",
+      "locator": {
+        "section": "Official product features",
+        "row": "Product model and operation"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "unpromotedOperations": "GM II and GM first generation are separate identities; tripod mount listed separately; lens-only OSS."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-775f3d9c0191319e02fd"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "포맷"
+      },
+      "conditions": {
+        "physicalMount": "소니 E-마운트"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-007c0aa197eccb9c779e"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.minFocusConditions",
+      "value": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+      "unit": null,
+      "rawValue": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+        "maximumMagnification": 0.3,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7697e5dbeb57027a4d19"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.minFocusM",
+      "value": 0.4,
+      "unit": "m",
+      "rawValue": 0.4,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "Published 0.40–0.82 m; 0.40 m lower bound; mode unspecified",
+        "maximumMagnification": 0.3,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-01deb9cb5af7db8c3a01"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.stabilization",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "손떨림 보정 (STEADYSHOT)"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyIbisNotAsserted": true,
+        "sourceBasis": "Optical SteadyShot / supported"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-4d8501a93c2a2b1de02f"
+    },
+    {
+      "productId": "sony-fe-70-200-gm2",
+      "path": "specs.weight",
+      "value": 1045,
+      "unit": "g",
+      "rawValue": 1045,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-19f913ef8b427394",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "무게"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "tripodMountBasis": "without tripod mount",
+        "hoodAndCapsInclusion": "unspecified",
+        "unpromotedDiameterLengthMm": [
+          88,
+          200
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a9972f5529049ae2c75e"
+    }
+  ]
+}

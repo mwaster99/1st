@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "sourceType": "manufacturer",
+  "publisher": "Sony",
+  "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70300g/specifications",
+  "documentTitle": "FE 70-300mm F4.5-5.6 G OSS — Sony Korea",
+  "documentVersion": null,
+  "region": "KR",
+  "language": "ko",
+  "accessedAt": "2026-11-04T03:38:35.761Z",
+  "evidenceScope": "Exact-model specification table. ",
+  "evidenceExcerpt": [
+    {
+      "field": "초점 거리(MM)",
+      "value": 70,
+      "unit": "mm"
+    },
+    {
+      "field": "초점 거리(MM)",
+      "value": 300,
+      "unit": "mm"
+    },
+    {
+      "field": "최대 구경 (F)",
+      "value": 4.5,
+      "unit": null
+    },
+    {
+      "field": "최대 구경 (F)",
+      "value": 5.6,
+      "unit": null
+    },
+    {
+      "field": "포맷",
+      "value": "35mm 풀프레임",
+      "unit": null
+    },
+    {
+      "field": "손떨림 보정 (STEADYSHOT)",
+      "value": true,
+      "unit": null
+    },
+    {
+      "field": "필터 직경(MM)",
+      "value": 72,
+      "unit": "mm"
+    },
+    {
+      "field": "무게",
+      "value": 854,
+      "unit": "g"
+    },
+    {
+      "field": "최소 초점 거리",
+      "value": 0.9,
+      "unit": "m"
+    },
+    {
+      "field": "최소 초점 거리",
+      "value": "0.90 m; focal position and focus mode unspecified",
+      "unit": null
+    }
+  ],
+  "items": [
+    {
+      "itemKey": "sony-fe-70-300-f45-56-g-oss",
+      "manufacturerModelCode": "SEL70300G",
+      "productType": "lens",
+      "identity": {
+        "name": "Sony FE 70-300mm F4.5-5.6 G OSS",
+        "brand": "Sony",
+        "model": "SEL70300G",
+        "aliases": [],
+        "mount": "Sony E",
+        "type": "zoom"
+      },
+      "observations": [
+        {
+          "path": "specs.focal.min",
+          "evidenceRef": 0,
+          "rawValue": 70,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "nativeOpticalFocal": true,
+            "powerZoom": false,
+            "teleconverterCompatibility": {
+              "SEL14TC": null,
+              "SEL20TC": null,
+              "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+              "catalogReferences": {
+                "SEL14TC": {
+                  "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                  "accessedAt": "2026-11-04T03:41:09.313Z"
+                },
+                "SEL20TC": {
+                  "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                  "accessedAt": "2026-11-04T03:40:20.571Z"
+                }
+              }
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.focal.max",
+          "evidenceRef": 1,
+          "rawValue": 300,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "초점 거리(MM)"
+          },
+          "conditions": {
+            "nativeOpticalFocal": true,
+            "teleconverterCompatibility": {
+              "SEL14TC": null,
+              "SEL20TC": null,
+              "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+              "catalogReferences": {
+                "SEL14TC": {
+                  "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+                  "accessedAt": "2026-11-04T03:41:09.313Z"
+                },
+                "SEL20TC": {
+                  "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+                  "accessedAt": "2026-11-04T03:40:20.571Z"
+                }
+              }
+            }
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.wide",
+          "evidenceRef": 2,
+          "rawValue": 4.5,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "최대 구경 (F)"
+          },
+          "conditions": {
+            "endpoint": "wide",
+            "minimumSelectableAperture": "F22–29",
+            "teleconverterExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.aperture.tele",
+          "evidenceRef": 3,
+          "rawValue": 5.6,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "최대 구경 (F)"
+          },
+          "conditions": {
+            "endpoint": "tele",
+            "minimumSelectableAperture": "F22–29",
+            "teleconverterExcluded": true
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.formatCoverage",
+          "evidenceRef": 4,
+          "rawValue": "35mm 풀프레임",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "포맷"
+          },
+          "conditions": {
+            "physicalMount": "소니 E-마운트"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.stabilization",
+          "evidenceRef": 5,
+          "rawValue": true,
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "손떨림 보정 (STEADYSHOT)"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "bodyIbisNotAsserted": true,
+            "sourceBasis": "Optical SteadyShot / supported"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.filterMm",
+          "evidenceRef": 6,
+          "rawValue": 72,
+          "rawUnit": "mm",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "필터 직경(MM)"
+          },
+          "conditions": {},
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.weight",
+          "evidenceRef": 7,
+          "rawValue": 854,
+          "rawUnit": "g",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "무게"
+          },
+          "conditions": {
+            "lensOnly": true,
+            "tripodMountBasis": "unspecified",
+            "hoodAndCapsInclusion": "unspecified",
+            "unpromotedDiameterLengthMm": [
+              84,
+              143.5
+            ]
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusM",
+          "evidenceRef": 8,
+          "rawValue": 0.9,
+          "rawUnit": "m",
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "최소 초점 거리"
+          },
+          "conditions": {
+            "sourceCondition": "0.90 m; focal position and focus mode unspecified",
+            "maximumMagnification": 0.31,
+            "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        },
+        {
+          "path": "specs.minFocusConditions",
+          "evidenceRef": 9,
+          "rawValue": "0.90 m; focal position and focus mode unspecified",
+          "rawUnit": null,
+          "locator": {
+            "section": "Exact-model lens specifications",
+            "row": "최소 초점 거리"
+          },
+          "conditions": {
+            "sourceCondition": "0.90 m; focal position and focus mode unspecified",
+            "maximumMagnification": 0.31,
+            "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+            "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+          },
+          "verification": "verified",
+          "reviewedAt": "2026-11-04",
+          "reviewer": "GPT-6.1 Sol"
+        }
+      ]
+    }
+  ],
+  "contentDigest": "8430672ae37c8f83babb145a046ee1c9f644da5fe93ae4ebf02267b3c8349225",
+  "sourceId": "source-26b615d368e7d5f1"
+}

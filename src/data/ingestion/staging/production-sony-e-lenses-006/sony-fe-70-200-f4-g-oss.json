@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-006",
+  "itemKey": "sony-fe-70-200-f4-g-oss",
+  "manufacturerModelCode": "SEL70200G",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL70200G",
+    "productId": "sony-fe-70-200-f4-g-oss",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-31f9e690b185cf2afda0",
+    "sourceId": "source-1f08c0eaed6f27f0",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Official product and current gallery card",
+      "row": "SEL70200G"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-11-04",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-70-200-f4-g-oss",
+    "name": "Sony FE 70-200mm F4 G OSS",
+    "brand": "Sony",
+    "model": "SEL70200G",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "zoom",
+    "specs": {
+      "aperture": {
+        "tele": 4,
+        "wide": 4
+      },
+      "filterMm": 72,
+      "focal": {
+        "max": 200,
+        "min": 70
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+      "minFocusM": 1,
+      "stabilization": true,
+      "weight": 840
+    }
+  },
+  "source": {
+    "sourceId": "source-1f08c0eaed6f27f0",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+    "publisher": "Sony",
+    "documentTitle": "FE 70-200mm F4 G OSS — Sony Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-11-04T03:38:27.465Z",
+    "evidenceScope": "Exact model identification and published operating conditions.",
+    "contentDigest": "2a1cd05727628851bc6947ad1f2f0e68077b6e541a158ba4941041a9318a965f"
+  },
+  "sources": [
+    {
+      "sourceId": "source-1f08c0eaed6f27f0",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel70200g",
+      "publisher": "Sony",
+      "documentTitle": "FE 70-200mm F4 G OSS — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:27.465Z",
+      "evidenceScope": "Exact model identification and published operating conditions.",
+      "contentDigest": "2a1cd05727628851bc6947ad1f2f0e68077b6e541a158ba4941041a9318a965f"
+    },
+    {
+      "sourceId": "source-938ba40b4569c562",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 70-200mm F4 G OSS — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:28.052Z",
+      "evidenceScope": "Exact-model specification table. Exact-model Sony USA lists 29.7 oz (840 g) without tripod mount. Use USA value and preserve KR typo here and in claim metadata.",
+      "contentDigest": "57ca3b2e44b93081b96f0d786fa73db04aaa894e0b2aa7ec4843bdc21dcdf942"
+    },
+    {
+      "sourceId": "source-fca1763f2b273f80",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200g/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 70-200mm F4 G OSS — Sony USA",
+      "documentVersion": null,
+      "region": "US",
+      "accessedAt": "2026-11-04T03:38:53.056Z",
+      "evidenceScope": "Exact-model cross-check of value and its measurement conditions.",
+      "contentDigest": "2b1edae71ae7bc4b09244ce752d21cd21324f5b987298baef0126fa8c31ad84d"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.aperture.tele",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "tele",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-9338a5259352f07265ad"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.aperture.wide",
+      "value": 4,
+      "unit": null,
+      "rawValue": 4,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "wide",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-1a1e20007b343856245b"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.filterMm",
+      "value": 72,
+      "unit": "mm",
+      "rawValue": 72,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "필터 직경(MM)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5e3544ed14b279888c75"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.focal.max",
+      "value": 200,
+      "unit": "mm",
+      "rawValue": 200,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "teleconverterCompatibility": {
+          "SEL14TC": null,
+          "SEL20TC": null,
+          "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-707ac3d8b28c336fb4ae"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.focal.min",
+      "value": 70,
+      "unit": "mm",
+      "rawValue": 70,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-1f08c0eaed6f27f0",
+      "locator": {
+        "section": "Official product features",
+        "row": "Product model and operation"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "unpromotedOperations": "First generation G; lens OSS; qualified dust/moisture resistance. KR weight typo 8.40 kg; Sony USA exact-model metric and imperial rows agree on 840 g."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-7a58d49027fea80435d7"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.focal.min",
+      "value": 70,
+      "unit": "mm",
+      "rawValue": 70,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "powerZoom": false,
+        "teleconverterCompatibility": {
+          "SEL14TC": null,
+          "SEL20TC": null,
+          "sourceStatus": "No per-lens specification row; model is absent in both Sony compatibility lists.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-4bf06dced28f3d8a2e3f"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "포맷"
+      },
+      "conditions": {
+        "physicalMount": "소니 E-마운트"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-11965e948afccb8dcb57"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.minFocusConditions",
+      "value": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+      "unit": null,
+      "rawValue": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+        "maximumMagnification": 0.13,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-eea7b7d3d15e291f0594"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.minFocusM",
+      "value": 1,
+      "unit": "m",
+      "rawValue": 1,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "AF 1–1.5 m / MF 1–1.35 m; 1 m lower bound",
+        "maximumMagnification": 0.13,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-65cf98cc1ab86c5452d9"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.stabilization",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-938ba40b4569c562",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "손떨림 보정 (STEADYSHOT)"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyIbisNotAsserted": true,
+        "sourceBasis": "Optical SteadyShot / supported"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-5bb2e89022aab08b1da0"
+    },
+    {
+      "productId": "sony-fe-70-200-f4-g-oss",
+      "path": "specs.weight",
+      "value": 840,
+      "unit": "g",
+      "rawValue": 840,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-fca1763f2b273f80",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "Weight and tripod mount exclusion"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "tripodMountBasis": "without tripod mount per Sony US",
+        "hoodAndCapsInclusion": "unspecified",
+        "unpromotedDiameterLengthMm": [
+          80,
+          175
+        ],
+        "sourceDiscrepancy": {
+          "code": "SEL70200G",
+          "field": "specs.weight",
+          "sonyKoreaText": "8.40kg (삼각대 마운트 제외)",
+          "resolution": "Exact-model Sony USA lists 29.7 oz (840 g) without tripod mount. Use USA value and preserve KR typo here and in claim metadata."
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-268f1b36ff2bbdbe5e8b"
+    }
+  ]
+}

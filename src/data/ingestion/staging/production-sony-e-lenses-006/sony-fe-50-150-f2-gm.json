@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-006",
+  "itemKey": "sony-fe-50-150-f2-gm",
+  "manufacturerModelCode": "SEL50150GM",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL50150GM",
+    "productId": "sony-fe-50-150-f2-gm",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-0652c64d519bf7ef3f65",
+    "sourceId": "source-0c9588c05e293cec",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Official product and current gallery card",
+      "row": "SEL50150GM"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-11-04",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-50-150-f2-gm",
+    "name": "Sony FE 50-150mm F2 GM",
+    "brand": "Sony",
+    "model": "SEL50150GM",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "zoom",
+    "specs": {
+      "aperture": {
+        "tele": 2,
+        "wide": 2
+      },
+      "filterMm": 95,
+      "focal": {
+        "max": 150,
+        "min": 50
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "0.40 m W / 0.74 m T; AF/MF unspecified",
+      "minFocusM": 0.4,
+      "stabilization": false,
+      "weight": 1340
+    }
+  },
+  "source": {
+    "sourceId": "source-0c9588c05e293cec",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+    "publisher": "Sony",
+    "documentTitle": "FE 50-150mm F2 GM — Sony Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-11-04T03:38:00.479Z",
+    "evidenceScope": "Exact model identification and published operating conditions.",
+    "contentDigest": "16a01b9b1042defd55a8d7dfdfcedd5ab92e2241f1867ccd5c7f97a0f2b07168"
+  },
+  "sources": [
+    {
+      "sourceId": "source-0c9588c05e293cec",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel50150gm",
+      "publisher": "Sony",
+      "documentTitle": "FE 50-150mm F2 GM — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:00.479Z",
+      "evidenceScope": "Exact model identification and published operating conditions.",
+      "contentDigest": "16a01b9b1042defd55a8d7dfdfcedd5ab92e2241f1867ccd5c7f97a0f2b07168"
+    },
+    {
+      "sourceId": "source-fa9634b0ba70138f",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel50150gm/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 50-150mm F2 GM — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:38:00.617Z",
+      "evidenceScope": "Exact-model specification table. ",
+      "contentDigest": "2b8fc904d07bdab69ced4082657bad0798ffce52f1c272072a266382b71dc395"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.aperture.tele",
+      "value": 2,
+      "unit": null,
+      "rawValue": 2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "tele",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-65dc18c1f611de5ace2d"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.aperture.wide",
+      "value": 2,
+      "unit": null,
+      "rawValue": 2,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "wide",
+        "minimumSelectableAperture": "F22",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-865a07370bce0b8837e6"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.filterMm",
+      "value": 95,
+      "unit": "mm",
+      "rawValue": 95,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "필터 직경(MM)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a861dc97e345ad145e9a"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.focal.max",
+      "value": 150,
+      "unit": "mm",
+      "rawValue": 150,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "teleconverterCompatibility": {
+          "SEL14TC": false,
+          "SEL20TC": false,
+          "sourceStatus": "Sony specification explicitly incompatible with both.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-300faf0949297b33404e"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.focal.min",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-0c9588c05e293cec",
+      "locator": {
+        "section": "Official product features",
+        "row": "Product model and operation"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "unpromotedOperations": "Internal zoom, detachable tripod foot, full-time DMF, three focus hold buttons, dust/moisture resistance qualified. Full features may need camera software update; AF-C burst depends on conditions."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-614003c19312d43c05c6"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.focal.min",
+      "value": 50,
+      "unit": "mm",
+      "rawValue": 50,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "powerZoom": false,
+        "teleconverterCompatibility": {
+          "SEL14TC": false,
+          "SEL20TC": false,
+          "sourceStatus": "Sony specification explicitly incompatible with both.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-c45a5c2132ba7af0f31f"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "포맷"
+      },
+      "conditions": {
+        "physicalMount": "소니 E-마운트"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-45a0be5b89fe6093b489"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.minFocusConditions",
+      "value": "0.40 m W / 0.74 m T; AF/MF unspecified",
+      "unit": null,
+      "rawValue": "0.40 m W / 0.74 m T; AF/MF unspecified",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "0.40 m W / 0.74 m T; AF/MF unspecified",
+        "maximumMagnification": 0.2,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-183f85e3f504f710ff16"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.minFocusM",
+      "value": 0.4,
+      "unit": "m",
+      "rawValue": 0.4,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "0.40 m W / 0.74 m T; AF/MF unspecified",
+        "maximumMagnification": 0.2,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-858d9c2861c5f8d4e62e"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.stabilization",
+      "value": false,
+      "unit": null,
+      "rawValue": false,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "손떨림 보정 (STEADYSHOT)"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyIbisNotAsserted": true,
+        "sourceBasis": "Body-integrated only per Sony"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-fa8f7ae825f588728402"
+    },
+    {
+      "productId": "sony-fe-50-150-f2-gm",
+      "path": "specs.weight",
+      "value": 1340,
+      "unit": "g",
+      "rawValue": 1340,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-fa9634b0ba70138f",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "무게"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "tripodMountBasis": "without tripod base per product; without tripod mount per spec",
+        "hoodAndCapsInclusion": "unspecified",
+        "unpromotedDiameterLengthMm": [
+          102.8,
+          200
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-76382b8ecf7f836e5148"
+    }
+  ]
+}

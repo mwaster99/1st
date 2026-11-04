@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "batchId": "production-sony-e-lenses-006",
+  "itemKey": "sony-fe-400-800-f63-8-g-oss",
+  "manufacturerModelCode": "SEL400800G",
+  "productType": "lens",
+  "identityMapping": {
+    "manufacturer": "Sony",
+    "manufacturerModelCode": "SEL400800G",
+    "productId": "sony-fe-400-800-f63-8-g-oss",
+    "productType": "lens",
+    "variantKey": null
+  },
+  "identityEvidence": {
+    "evidenceId": "identity-eb27ff001c2d7ac96675",
+    "sourceId": "source-303285793238221b",
+    "evidenceRef": 1,
+    "locator": {
+      "section": "Official product and current gallery card",
+      "row": "SEL400800G"
+    },
+    "verification": "verified",
+    "reviewedAt": "2026-11-04",
+    "reviewer": "GPT-6.1 Sol"
+  },
+  "product": {
+    "id": "sony-fe-400-800-f63-8-g-oss",
+    "name": "Sony FE 400-800mm F6.3-8 G OSS",
+    "brand": "Sony",
+    "model": "SEL400800G",
+    "aliases": [],
+    "mount": "Sony E",
+    "type": "zoom",
+    "specs": {
+      "aperture": {
+        "tele": 8,
+        "wide": 6.3
+      },
+      "filterMm": 105,
+      "focal": {
+        "max": 800,
+        "min": 400
+      },
+      "formatCoverage": "full-frame",
+      "minFocusConditions": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+      "minFocusM": 1.7,
+      "stabilization": true,
+      "weight": 2475
+    }
+  },
+  "source": {
+    "sourceId": "source-303285793238221b",
+    "sourceType": "manufacturer",
+    "url": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+    "publisher": "Sony",
+    "documentTitle": "FE 400-800mm F6.3-8 G OSS — Sony Korea",
+    "documentVersion": null,
+    "region": "KR",
+    "accessedAt": "2026-11-04T03:37:59.765Z",
+    "evidenceScope": "Exact model identification and published operating conditions.",
+    "contentDigest": "f781432f3a350042d5e0de38d6365b282d4131376171dc0f33fcaac7b8a33ba5"
+  },
+  "sources": [
+    {
+      "sourceId": "source-16733d00ec0b25fc",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/support/lenses-e-mount-lenses/sel400800g/specifications",
+      "publisher": "Sony",
+      "documentTitle": "FE 400-800mm F6.3-8 G OSS — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:37:59.766Z",
+      "evidenceScope": "Exact-model specification table. ",
+      "contentDigest": "5aa2622331e40c5a51df71ff93b6801c2cf25a7b34826b85ffa9538dc882113d"
+    },
+    {
+      "sourceId": "source-303285793238221b",
+      "sourceType": "manufacturer",
+      "url": "https://www.sony.co.kr/electronics/camera-lenses/sel400800g",
+      "publisher": "Sony",
+      "documentTitle": "FE 400-800mm F6.3-8 G OSS — Sony Korea",
+      "documentVersion": null,
+      "region": "KR",
+      "accessedAt": "2026-11-04T03:37:59.765Z",
+      "evidenceScope": "Exact model identification and published operating conditions.",
+      "contentDigest": "f781432f3a350042d5e0de38d6365b282d4131376171dc0f33fcaac7b8a33ba5"
+    }
+  ],
+  "claims": [
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.aperture.tele",
+      "value": 8,
+      "unit": null,
+      "rawValue": 8,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "tele",
+        "minimumSelectableAperture": "F36–45",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-8815c85ce0a61fec2d36"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.aperture.wide",
+      "value": 6.3,
+      "unit": null,
+      "rawValue": 6.3,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최대 구경 (F)"
+      },
+      "conditions": {
+        "endpoint": "wide",
+        "minimumSelectableAperture": "F36–45",
+        "teleconverterExcluded": true
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3559ae95791616de1c1e"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.filterMm",
+      "value": 105,
+      "unit": "mm",
+      "rawValue": 105,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "필터 직경(MM)"
+      },
+      "conditions": {},
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e0bcab937b9cd476202f"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.focal.max",
+      "value": 800,
+      "unit": "mm",
+      "rawValue": 800,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "teleconverterCompatibility": {
+          "SEL14TC": true,
+          "SEL20TC": true,
+          "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-ede5ca1b32f9286382b1"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.focal.min",
+      "value": 400,
+      "unit": "mm",
+      "rawValue": 400,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "초점 거리(MM)"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "powerZoom": false,
+        "teleconverterCompatibility": {
+          "SEL14TC": true,
+          "SEL20TC": true,
+          "sourceStatus": "Sony specification verifies compatible; AF and camera restrictions can depend on combination.",
+          "catalogReferences": {
+            "SEL14TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL14TC",
+              "accessedAt": "2026-11-04T03:41:09.313Z"
+            },
+            "SEL20TC": {
+              "url": "https://support.d-imaging.sony.co.jp/www/cscs/accessories/compatibility.php?area=us&cat=8&lang=en&mdl=SEL20TC",
+              "accessedAt": "2026-11-04T03:40:20.571Z"
+            }
+          }
+        }
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-a2ce5136b1771dc60a1a"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.focal.min",
+      "value": 400,
+      "unit": "mm",
+      "rawValue": 400,
+      "rawUnit": "mm",
+      "unknown": false,
+      "sourceId": "source-303285793238221b",
+      "locator": {
+        "section": "Official product features",
+        "row": "Product model and operation"
+      },
+      "conditions": {
+        "nativeOpticalFocal": true,
+        "unpromotedOperations": "Internal zoom; fixed rotating foot; three focus hold buttons; focus limiter; OSS mode switch, no combined body rating; hood filter access; dust/moisture resistance qualified. With 2x reaches 1600 mm; AF-C burst depends on camera and conditions."
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-3da3e01c3558dd6c57f0"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.formatCoverage",
+      "value": "full-frame",
+      "unit": null,
+      "rawValue": "35mm 풀프레임",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "포맷"
+      },
+      "conditions": {
+        "physicalMount": "소니 E-마운트"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-6ac68448423d9d44128a"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.minFocusConditions",
+      "value": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+      "unit": null,
+      "rawValue": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+        "maximumMagnification": 0.23,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-ee7fb9f91f221abce5da"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.minFocusM",
+      "value": 1.7,
+      "unit": "m",
+      "rawValue": 1.7,
+      "rawUnit": "m",
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "최소 초점 거리"
+      },
+      "conditions": {
+        "sourceCondition": "Published 1.7–3.5 m; 1.7 m lower bound; mode unspecified",
+        "maximumMagnification": 0.23,
+        "magnificationBasis": "Native lens, position and AF/MF unspecified in spec row.",
+        "measurementReference": "https://helpguide.sony.net/ilc/1420/v1/en/contents/TP0000226547.html"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-47a7f566cd1895f8d8c6"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.stabilization",
+      "value": true,
+      "unit": null,
+      "rawValue": true,
+      "rawUnit": null,
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "손떨림 보정 (STEADYSHOT)"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "bodyIbisNotAsserted": true,
+        "sourceBasis": "Optical SteadyShot / supported"
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-e7490236067c6121f33c"
+    },
+    {
+      "productId": "sony-fe-400-800-f63-8-g-oss",
+      "path": "specs.weight",
+      "value": 2475,
+      "unit": "g",
+      "rawValue": 2475,
+      "rawUnit": "g",
+      "unknown": false,
+      "sourceId": "source-16733d00ec0b25fc",
+      "locator": {
+        "section": "Exact-model lens specifications",
+        "row": "무게"
+      },
+      "conditions": {
+        "lensOnly": true,
+        "tripodMountBasis": "fixed tripod foot per product; weight table gives no separate accessory basis",
+        "hoodAndCapsInclusion": "unspecified",
+        "unpromotedDiameterLengthMm": [
+          119.8,
+          346
+        ]
+      },
+      "verification": "verified",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "GPT-6.1 Sol",
+      "claimId": "claim-99043b2767d86786d37b"
+    }
+  ]
+}
